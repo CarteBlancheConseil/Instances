@@ -1,0 +1,9 @@
+/*MESSAGES*/
+"data structure"				="Table Structure";
+"lossy conversion"				="Warning";
+"lossy conversion exp"			="This modification may result in a loss of data. Would you like to continue?";
+"init existing"					="Would you like to initialize existing objects with the default value?";
+"init existing exp"				="This operation lets you create constraints on this field.";
+"unsupported def val err exp"	="Unsupported default value";
+
+

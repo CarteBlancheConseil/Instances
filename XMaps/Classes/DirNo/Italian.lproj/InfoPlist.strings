@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Nessuna orientazione";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Nessuna orientazione versione 1.2, Copyright 2005 Carte Blanche Conseil.";

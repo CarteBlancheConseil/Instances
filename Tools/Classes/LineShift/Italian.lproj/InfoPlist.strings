@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Spostamento della linea";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Spostamento della linea 1.2, Copyright 2005 Carte Blanche Conseil.";

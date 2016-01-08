@@ -1,0 +1,11 @@
+/*MESSAGES*/
+"NewStyle"	="New Style…";
+"NoEditor"	="Style without editor";
+"AskToSave"	="Would you like to save the current view?";
+
+"Save"		="Save";
+"SaveAs"	="Save as…";
+"DontSave"	="Ignore";
+"NameView"	="Name view";
+
+/*ERRORS*/

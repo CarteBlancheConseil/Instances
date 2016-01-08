@@ -1,0 +1,9 @@
+/*MESSAGES*/
+"Association"				="Associa";
+"IndexErr"					="Errore di associazione";
+"CloneObjectErr"			="Errore di allocazionen";
+"SetVerticesErr"			="Errore di scrittura";
+"VerticesErr"				="Impossibile associare questi oggetti";
+"ObjNotAssociatedWarning"	="Alcuni oggetti non sono stati associati";
+
+/*ERRORS*/

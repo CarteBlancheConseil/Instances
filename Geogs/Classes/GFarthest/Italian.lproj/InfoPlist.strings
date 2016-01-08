@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "I più lontani…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "I più lontani… versione 1.2, Copyright 2005 Carte Blanche Conseil.";

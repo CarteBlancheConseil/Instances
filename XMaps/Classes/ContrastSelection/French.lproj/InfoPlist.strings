@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Contraster la sélection";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Contraster la sélection version 1.2, Copyright 2005 Carte Blanche Conseil.";

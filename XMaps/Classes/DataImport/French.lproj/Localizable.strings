@@ -1,0 +1,14 @@
+/*MESSAGES*/
+"DataImport"			="Importer les données";
+"LineNumber"			="Ligne n°";
+"ErrorsOccurs"			="Des erreurs sont survenues";
+"ReadLog"				="Consultez le log MacMap®";
+"Continue"				="Désirez-vous continuer ?";
+
+/*ERRORS*/
+"-1"					="Format non supporté";
+"-2"					="Erreur à l'ouverture de la table";
+"-3"					="Clef de recherche non définie";
+"-4"					="Pas de champ à remplir";
+"-5"					="Pas d'objet";
+"-6"					="Plusieurs objets";

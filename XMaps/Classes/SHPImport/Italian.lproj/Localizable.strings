@@ -1,0 +1,16 @@
+/*MESSAGES*/
+"FieldCreate"		="Creazione dei campi";
+"ObjCreate"			="Creazione degli oggetti";
+"FieldCreateErr"	="Errore durante la creazione dei campi";
+"ObjCreateErr"		="Errore durante la creazione degli oggetti";
+"ExplErr"			="Consulta il documento log per avere maggiori informazioni";
+"IGridNotFoundErr"	="Estensione \"Griglia di importazione\" introvabile";
+"IGridNotFoundExpl"	="Questa estensione permette di specificare in quale Tipo devono essere importati i dati.";
+"OpenSHPErr"		="Errore all'apertura del documento SHP";
+"OpenDBFErr"		="Errore all'apertura del documento DBF";
+"GridErr"			="Errata configurazione della Griglia di importazione";
+
+"GlobalErr"         ="Si è verificato un errore durante la compilazione";
+"GlobalExpl"        ="%d tipi respinto\n%d oggetti respinto\n%d errore di riempimento";
+
+/*ERRORS*/

@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		140DCD53159461AE0018B1BF /* vdef_lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140DCD52159461AE0018B1BF /* vdef_lib.framework */; };
+		1498EEEF14D93338006E920C /* DefPat.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1498EEEE14D93338006E920C /* DefPat.pdf */; };
+		14A6BF2C12C21A6400E6FBDB /* Palette.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A6BF2A12C21A6400E6FBDB /* Palette.xib */; };
+		14A6BF4012C21B3600E6FBDB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A6BF3F12C21B3600E6FBDB /* QuartzCore.framework */; };
+		14A6C7A912C26F2C00E6FBDB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14A6C7A712C26F2C00E6FBDB /* Localizable.strings */; };
+		14C3363E0E0BED6300E8813A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14C3363C0E0BED6300E8813A /* InfoPlist.strings */; };
+		14CA52E90DF9640E0080DF70 /* xmap_lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA52E80DF9640E0080DF70 /* xmap_lib.framework */; };
+		14CA540D0DF9642C0080DF70 /* std_ext.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA540C0DF9642C0080DF70 /* std_ext.framework */; };
+		14CA54330DF964320080DF70 /* mox_intf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA54320DF964320080DF70 /* mox_intf.framework */; };
+		14CA54380DF964990080DF70 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14CA54360DF964990080DF70 /* main.cpp */; };
+		14CA54550DF967F30080DF70 /* MacMapStats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA54530DF967F30080DF70 /* MacMapStats.framework */; };
+		14CA54560DF967F30080DF70 /* MacMapSuite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA54540DF967F30080DF70 /* MacMapSuite.framework */; };
+		14CC148515EFAD14007901A1 /* bvDefPaletteRangeLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14CC147F15EFAD14007901A1 /* bvDefPaletteRangeLine.cpp */; };
+		14CC148615EFAD14007901A1 /* bvDefRangeLineStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14CC148115EFAD14007901A1 /* bvDefRangeLineStyle.cpp */; };
+		14CC148715EFAD14007901A1 /* vDefPaletteRangeLineWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14CC148415EFAD14007901A1 /* vDefPaletteRangeLineWindowController.mm */; };
+		14EFCE261292E8730038AAD4 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EFCE251292E8730038AAD4 /* Carbon.framework */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		140DCD52159461AE0018B1BF /* vdef_lib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vdef_lib.framework; path = "/Users/benoit/Encours/MacMap2005/Sources/Applis/Current/MacMap®/build/Release/vdef_lib.framework"; sourceTree = "<absolute>"; };
+		140DD3671594AF240018B1BF /* CocoaBundle_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaBundle_Prefix.pch; sourceTree = "<group>"; };
+		140DD3681594AF240018B1BF /* CocoaStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaStuff.h; sourceTree = "<group>"; };
+		1498EEEE14D93338006E920C /* DefPat.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = DefPat.pdf; sourceTree = "<group>"; };
+		14A6BF2B12C21A6400E6FBDB /* French */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = French; path = French.lproj/Palette.xib; sourceTree = "<group>"; };
+		14A6BF3F12C21B3600E6FBDB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		14A6C7A812C26F2C00E6FBDB /* French */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
+		14C3363D0E0BED6300E8813A /* French */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14CA52E80DF9640E0080DF70 /* xmap_lib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = xmap_lib.framework; path = "../../../../Applis/Current/MacMap®/build/Release/xmap_lib.framework"; sourceTree = SOURCE_ROOT; };
+		14CA540C0DF9642C0080DF70 /* std_ext.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = std_ext.framework; path = "../../../../Applis/Current/MacMap®/build/Release/std_ext.framework"; sourceTree = SOURCE_ROOT; };
+		14CA54320DF964320080DF70 /* mox_intf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mox_intf.framework; path = "../../../../Applis/Current/MacMap®/build/Release/mox_intf.framework"; sourceTree = SOURCE_ROOT; };
+		14CA54360DF964990080DF70 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		14CA54370DF964990080DF70 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		14CA54530DF967F30080DF70 /* MacMapStats.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacMapStats.framework; path = /Library/Frameworks/MacMapStats.framework; sourceTree = "<absolute>"; };
+		14CA54540DF967F30080DF70 /* MacMapSuite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacMapSuite.framework; path = /Library/Frameworks/MacMapSuite.framework; sourceTree = "<absolute>"; };
+		14CC147F15EFAD14007901A1 /* bvDefPaletteRangeLine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bvDefPaletteRangeLine.cpp; sourceTree = "<group>"; };
+		14CC148015EFAD14007901A1 /* bvDefPaletteRangeLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bvDefPaletteRangeLine.h; sourceTree = "<group>"; };
+		14CC148115EFAD14007901A1 /* bvDefRangeLineStyle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bvDefRangeLineStyle.cpp; sourceTree = "<group>"; };
+		14CC148215EFAD14007901A1 /* bvDefRangeLineStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bvDefRangeLineStyle.h; sourceTree = "<group>"; };
+		14CC148315EFAD14007901A1 /* vDefPaletteRangeLineWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vDefPaletteRangeLineWindowController.h; sourceTree = "<group>"; };
+		14CC148415EFAD14007901A1 /* vDefPaletteRangeLineWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = vDefPaletteRangeLineWindowController.mm; sourceTree = "<group>"; };
+		14CFE31A16B9515F00DA262B /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14CFE31B16B9515F00DA262B /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		14CFE31C16B9515F00DA262B /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Palette.xib; sourceTree = "<group>"; };
+		14CFE31D16B9515F00DA262B /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14CFE31E16B9515F00DA262B /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/Localizable.strings; sourceTree = "<group>"; };
+		14CFE31F16B9515F00DA262B /* Italian */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Italian; path = Italian.lproj/Palette.xib; sourceTree = "<group>"; };
+		14EFCE251292E8730038AAD4 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		8D5B49B6048680CD000E48DA /* vDefPaletteRangeLine.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vDefPaletteRangeLine.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+				14CA52E90DF9640E0080DF70 /* xmap_lib.framework in Frameworks */,
+				14CA540D0DF9642C0080DF70 /* std_ext.framework in Frameworks */,
+				14CA54330DF964320080DF70 /* mox_intf.framework in Frameworks */,
+				14CA54550DF967F30080DF70 /* MacMapStats.framework in Frameworks */,
+				14CA54560DF967F30080DF70 /* MacMapSuite.framework in Frameworks */,
+				14EFCE261292E8730038AAD4 /* Carbon.framework in Frameworks */,
+				14A6BF4012C21B3600E6FBDB /* QuartzCore.framework in Frameworks */,
+				140DCD53159461AE0018B1BF /* vdef_lib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* CocoaBundle */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = CocoaBundle;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1498EEEE14D93338006E920C /* DefPat.pdf */,
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				14C3363C0E0BED6300E8813A /* InfoPlist.strings */,
+				14A6C7A712C26F2C00E6FBDB /* Localizable.strings */,
+				14A6BF2A12C21A6400E6FBDB /* Palette.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				14CC147F15EFAD14007901A1 /* bvDefPaletteRangeLine.cpp */,
+				14CC148015EFAD14007901A1 /* bvDefPaletteRangeLine.h */,
+				14CC148115EFAD14007901A1 /* bvDefRangeLineStyle.cpp */,
+				14CC148215EFAD14007901A1 /* bvDefRangeLineStyle.h */,
+				14CC148315EFAD14007901A1 /* vDefPaletteRangeLineWindowController.h */,
+				14CC148415EFAD14007901A1 /* vDefPaletteRangeLineWindowController.mm */,
+				140DD3681594AF240018B1BF /* CocoaStuff.h */,
+				140DD3671594AF240018B1BF /* CocoaBundle_Prefix.pch */,
+				14CA54370DF964990080DF70 /* main.h */,
+				14CA54360DF964990080DF70 /* main.cpp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14A6BF3F12C21B3600E6FBDB /* QuartzCore.framework */,
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14CA54530DF967F30080DF70 /* MacMapStats.framework */,
+				14CA54540DF967F30080DF70 /* MacMapSuite.framework */,
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+				D2F7E65807B2D6F200F64583 /* CoreData.framework */,
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+				14CA54320DF964320080DF70 /* mox_intf.framework */,
+				14CA540C0DF9642C0080DF70 /* std_ext.framework */,
+				14CA52E80DF9640E0080DF70 /* xmap_lib.framework */,
+				140DCD52159461AE0018B1BF /* vdef_lib.framework */,
+				14EFCE251292E8730038AAD4 /* Carbon.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* vDefPaletteRangeLine.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* vDefPaletteRangeLine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "vDefPaletteRangeLine" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vDefPaletteRangeLine;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = CocoaBundle;
+			productReference = 8D5B49B6048680CD000E48DA /* vDefPaletteRangeLine.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "vDefPaletteRangeLine" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				Italian,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* CocoaBundle */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* vDefPaletteRangeLine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C3363E0E0BED6300E8813A /* InfoPlist.strings in Resources */,
+				14A6BF2C12C21A6400E6FBDB /* Palette.xib in Resources */,
+				14A6C7A912C26F2C00E6FBDB /* Localizable.strings in Resources */,
+				1498EEEF14D93338006E920C /* DefPat.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14CA54380DF964990080DF70 /* main.cpp in Sources */,
+				14CC148515EFAD14007901A1 /* bvDefPaletteRangeLine.cpp in Sources */,
+				14CC148615EFAD14007901A1 /* bvDefRangeLineStyle.cpp in Sources */,
+				14CC148715EFAD14007901A1 /* vDefPaletteRangeLineWindowController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		14A6BF2A12C21A6400E6FBDB /* Palette.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14A6BF2B12C21A6400E6FBDB /* French */,
+				14CFE31C16B9515F00DA262B /* English */,
+				14CFE31F16B9515F00DA262B /* Italian */,
+			);
+			name = Palette.xib;
+			sourceTree = "<group>";
+		};
+		14A6C7A712C26F2C00E6FBDB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14A6C7A812C26F2C00E6FBDB /* French */,
+				14CFE31B16B9515F00DA262B /* English */,
+				14CFE31E16B9515F00DA262B /* Italian */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		14C3363C0E0BED6300E8813A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14C3363D0E0BED6300E8813A /* French */,
+				14CFE31A16B9515F00DA262B /* English */,
+				14CFE31D16B9515F00DA262B /* Italian */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "$(SRCROOT)/../../../../Applis/Current/MacMap®/build/Release";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CocoaBundle_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_NAME = CocoaBundle;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "$(SRCROOT)/../../../../Applis/Current/MacMap®/build/Release";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+
+				GCC_MODEL_TUNING = G5;
+				GCC_OBJC_CALL_CXX_CDTORS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GENERATE_PKGINFO_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = ../../build;
+				OBJROOT = ../../build;
+				PRODUCT_NAME = vDefPaletteRangeLine;
+				SKIP_INSTALL = YES;
+				SYMROOT = ../../build;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		1DEB913F08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.8.sdk;
+			};
+			name = Debug;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OBJROOT = "../../zXCode Div/buildprod";
+				PREBINDING = YES;
+				SDKROOT = /Developer/SDKs/MacOSX10.8.sdk;
+				SYMROOT = ../../build;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "vDefPaletteRangeLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Debug */,
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "vDefPaletteRangeLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Debug */,
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

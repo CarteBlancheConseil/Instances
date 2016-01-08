@@ -1,0 +1,96 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <string name="targetFramework">IBCarbonFramework</string>
+  <object name="rootObject" class="NSCustomObject" id="1">
+    <string name="customClass">NSApplication</string>
+  </object>
+  <array count="7" name="allObjects">
+    <object class="IBCarbonWindow" id="242">
+      <string name="windowRect">346 462 446 877 </string>
+      <string name="title">Simplify…</string>
+      <object name="rootControl" class="IBCarbonRootControl" id="258">
+        <string name="bounds">0 0 100 415 </string>
+        <string name="viewFrame">0 0 415 100 </string>
+        <array count="5" name="subviews">
+          <object class="IBCarbonButton" id="274">
+            <string name="bounds">60 325 80 395 </string>
+            <string name="viewFrame">325 60 70 20 </string>
+            <ostype name="controlSignature">stuf</ostype>
+            <int name="controlID">1</int>
+            <string name="title">OK</string>
+            <ostype name="command">ok  </ostype>
+            <object name="layoutInfo" class="IBCarbonHILayoutInfo">
+              <int name="bindingBottomKind">2</int>
+              <int name="bindingRightKind">2</int>
+            </object>
+            <boolean name="layoutSuspended">TRUE</boolean>
+            <int name="buttonType">1</int>
+          </object>
+          <object class="IBCarbonButton" id="263">
+            <string name="bounds">60 20 80 90 </string>
+            <string name="viewFrame">20 60 70 20 </string>
+            <ostype name="controlSignature">stuf</ostype>
+            <int name="controlID">2</int>
+            <string name="title">Cancel</string>
+            <ostype name="command">not!</ostype>
+            <object name="layoutInfo" class="IBCarbonHILayoutInfo">
+              <int name="bindingBottomKind">2</int>
+              <int name="bindingRightKind">2</int>
+            </object>
+            <boolean name="layoutSuspended">TRUE</boolean>
+            <int name="buttonType">2</int>
+          </object>
+          <object class="IBCarbonEditText" id="407">
+            <string name="bounds">21 320 37 372 </string>
+            <string name="viewFrame">320 21 52 16 </string>
+            <ostype name="controlSignature">xSim</ostype>
+            <int name="controlID">5</int>
+            <boolean name="isUnicode">TRUE</boolean>
+          </object>
+          <object class="IBCarbonStaticText" id="419">
+            <string name="bounds">20 383 36 395 </string>
+            <string name="viewFrame">383 20 12 16 </string>
+            <ostype name="controlSignature">xSim</ostype>
+            <int name="controlID">6</int>
+            <string name="title">°</string>
+          </object>
+          <object class="IBCarbonStaticText" id="422">
+            <string name="bounds">20 20 36 309 </string>
+            <string name="viewFrame">20 20 289 16 </string>
+            <ostype name="controlSignature">xSim</ostype>
+            <int name="controlID">3</int>
+            <string name="title">Delete points forming an angle of less than:</string>
+          </object>
+        </array>
+      </object>
+      <boolean name="receiveUpdates">FALSE</boolean>
+      <boolean name="isResizable">FALSE</boolean>
+      <boolean name="compositing">TRUE</boolean>
+      <int name="carbonWindowClass">4</int>
+      <int name="windowPosition">1</int>
+      <boolean name="isConstrained">FALSE</boolean>
+    </object>
+    <reference idRef="258"/>
+    <reference idRef="263"/>
+    <reference idRef="274"/>
+    <reference idRef="407"/>
+    <reference idRef="419"/>
+    <reference idRef="422"/>
+  </array>
+  <array count="7" name="allParents">
+    <reference idRef="1"/>
+    <reference idRef="242"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+  </array>
+  <dictionary count="2" name="nameTable">
+    <string>Files Owner</string>
+    <reference idRef="1"/>
+    <string>Window</string>
+    <reference idRef="242"/>
+  </dictionary>
+  <unsigned_int name="nextObjectID">438</unsigned_int>
+</object>

@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Détecteur de doublons";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Détecteur de doublons version 1.2, Copyright 2005 Carte Blanche Conseil.";

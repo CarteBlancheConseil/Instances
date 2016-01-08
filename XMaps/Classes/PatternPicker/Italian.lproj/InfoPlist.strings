@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Gestione dei riempimenti…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Gestione dei riempimenti… versione 1.2, Copyright 2005 Carte Blanche Conseil.";

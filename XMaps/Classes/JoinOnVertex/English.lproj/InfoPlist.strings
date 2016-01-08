@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Join at Angularities";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Join at Angularities version 1.2, Copyright 2005 Carte Blanche Conseil.";

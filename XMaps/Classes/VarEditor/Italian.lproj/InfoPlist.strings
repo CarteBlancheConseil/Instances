@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Editor di costanti…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Editor di costanti… versione 1.2, Copyright 2005 Carte Blanche Conseil.";

@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Mif-Mid Export…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Mif-Mid Export… version 1.2, Copyright 2005 Carte Blanche Conseil.";

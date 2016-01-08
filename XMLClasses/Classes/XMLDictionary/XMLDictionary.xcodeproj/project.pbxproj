@@ -1,0 +1,2010 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14023DCD12717B1F0078B43B /* bXMLBgShiftX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14023DC912717B1F0078B43B /* bXMLBgShiftX.cpp */; };
+		14023DCE12717B1F0078B43B /* bXMLBgShiftX.h in Headers */ = {isa = PBXBuildFile; fileRef = 14023DCA12717B1F0078B43B /* bXMLBgShiftX.h */; };
+		14023DCF12717B1F0078B43B /* bXMLBgShiftY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14023DCB12717B1F0078B43B /* bXMLBgShiftY.cpp */; };
+		14023DD012717B1F0078B43B /* bXMLBgShiftY.h in Headers */ = {isa = PBXBuildFile; fileRef = 14023DCC12717B1F0078B43B /* bXMLBgShiftY.h */; };
+		140CE3080F0E001A0000CAD1 /* bXMLString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 140CE3060F0E001A0000CAD1 /* bXMLString.cpp */; };
+		140CE3090F0E001A0000CAD1 /* bXMLString.h in Headers */ = {isa = PBXBuildFile; fileRef = 140CE3070F0E001A0000CAD1 /* bXMLString.h */; };
+		140FCFEF1005CE4A005ACD1F /* bXMLBoxPos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 140FCFED1005CE4A005ACD1F /* bXMLBoxPos.cpp */; };
+		140FCFF01005CE4A005ACD1F /* bXMLBoxPos.h in Headers */ = {isa = PBXBuildFile; fileRef = 140FCFEE1005CE4A005ACD1F /* bXMLBoxPos.h */; };
+		1413DAD50F30904E00C70B11 /* bXMLVirtualLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1413DAD30F30904E00C70B11 /* bXMLVirtualLayer.cpp */; };
+		1413DAD60F30904E00C70B11 /* bXMLVirtualLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1413DAD40F30904E00C70B11 /* bXMLVirtualLayer.h */; };
+		141FB1260C017E6F00C8C8B7 /* bXMLAverage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 141FB1240C017E6F00C8C8B7 /* bXMLAverage.cpp */; };
+		141FB1270C017E6F00C8C8B7 /* bXMLAverage.h in Headers */ = {isa = PBXBuildFile; fileRef = 141FB1250C017E6F00C8C8B7 /* bXMLAverage.h */; };
+		141FB1FA0C0188DC00C8C8B7 /* bXMLFirst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 141FB1E80C0188DC00C8C8B7 /* bXMLFirst.cpp */; };
+		141FB1FB0C0188DC00C8C8B7 /* bXMLFirst.h in Headers */ = {isa = PBXBuildFile; fileRef = 141FB1E90C0188DC00C8C8B7 /* bXMLFirst.h */; };
+		141FB1FC0C0188DC00C8C8B7 /* bXMLLast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 141FB1EA0C0188DC00C8C8B7 /* bXMLLast.cpp */; };
+		141FB1FD0C0188DC00C8C8B7 /* bXMLLast.h in Headers */ = {isa = PBXBuildFile; fileRef = 141FB1EB0C0188DC00C8C8B7 /* bXMLLast.h */; };
+		141FB1FE0C0188DC00C8C8B7 /* bXMLMax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 141FB1EC0C0188DC00C8C8B7 /* bXMLMax.cpp */; };
+		141FB1FF0C0188DC00C8C8B7 /* bXMLMax.h in Headers */ = {isa = PBXBuildFile; fileRef = 141FB1ED0C0188DC00C8C8B7 /* bXMLMax.h */; };
+		141FB2000C0188DC00C8C8B7 /* bXMLMedian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 141FB1EE0C0188DC00C8C8B7 /* bXMLMedian.cpp */; };
+		141FB2010C0188DC00C8C8B7 /* bXMLMedian.h in Headers */ = {isa = PBXBuildFile; fileRef = 141FB1EF0C0188DC00C8C8B7 /* bXMLMedian.h */; };
+		141FB2020C0188DC00C8C8B7 /* bXMLMin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 141FB1F00C0188DC00C8C8B7 /* bXMLMin.cpp */; };
+		141FB2030C0188DC00C8C8B7 /* bXMLMin.h in Headers */ = {isa = PBXBuildFile; fileRef = 141FB1F10C0188DC00C8C8B7 /* bXMLMin.h */; };
+		141FB2040C0188DC00C8C8B7 /* bXMLProduct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 141FB1F20C0188DC00C8C8B7 /* bXMLProduct.cpp */; };
+		141FB2050C0188DC00C8C8B7 /* bXMLProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = 141FB1F30C0188DC00C8C8B7 /* bXMLProduct.h */; };
+		141FB2060C0188DC00C8C8B7 /* bXMLSingle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 141FB1F40C0188DC00C8C8B7 /* bXMLSingle.cpp */; };
+		141FB2070C0188DC00C8C8B7 /* bXMLSingle.h in Headers */ = {isa = PBXBuildFile; fileRef = 141FB1F50C0188DC00C8C8B7 /* bXMLSingle.h */; };
+		141FB2080C0188DC00C8C8B7 /* bXMLStdDeviation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 141FB1F60C0188DC00C8C8B7 /* bXMLStdDeviation.cpp */; };
+		141FB2090C0188DC00C8C8B7 /* bXMLStdDeviation.h in Headers */ = {isa = PBXBuildFile; fileRef = 141FB1F70C0188DC00C8C8B7 /* bXMLStdDeviation.h */; };
+		141FB20A0C0188DC00C8C8B7 /* bXMLVariance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 141FB1F80C0188DC00C8C8B7 /* bXMLVariance.cpp */; };
+		141FB20B0C0188DC00C8C8B7 /* bXMLVariance.h in Headers */ = {isa = PBXBuildFile; fileRef = 141FB1F90C0188DC00C8C8B7 /* bXMLVariance.h */; };
+		141FB2A90C01C36F00C8C8B7 /* bXMLModulo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 141FB2A50C01C36F00C8C8B7 /* bXMLModulo.cpp */; };
+		141FB2AA0C01C36F00C8C8B7 /* bXMLModulo.h in Headers */ = {isa = PBXBuildFile; fileRef = 141FB2A60C01C36F00C8C8B7 /* bXMLModulo.h */; };
+		141FB2AB0C01C36F00C8C8B7 /* bXMLXOr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 141FB2A70C01C36F00C8C8B7 /* bXMLXOr.cpp */; };
+		141FB2AC0C01C36F00C8C8B7 /* bXMLXOr.h in Headers */ = {isa = PBXBuildFile; fileRef = 141FB2A80C01C36F00C8C8B7 /* bXMLXOr.h */; };
+		1423FA3818C4772700068626 /* bXMLTMSRaster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1423FA3618C4772700068626 /* bXMLTMSRaster.cpp */; };
+		1423FA3918C4772700068626 /* bXMLTMSRaster.h in Headers */ = {isa = PBXBuildFile; fileRef = 1423FA3718C4772700068626 /* bXMLTMSRaster.h */; };
+		14283D8F18DC5C1E00808913 /* bXMLPerpendicularLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14283D8D18DC5C1E00808913 /* bXMLPerpendicularLine.cpp */; };
+		14283D9018DC5C1E00808913 /* bXMLPerpendicularLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 14283D8E18DC5C1E00808913 /* bXMLPerpendicularLine.h */; };
+		142D9EA813C4453E00982A65 /* bXMLNthChar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 142D9EA613C4453E00982A65 /* bXMLNthChar.cpp */; };
+		142D9EA913C4453E00982A65 /* bXMLNthChar.h in Headers */ = {isa = PBXBuildFile; fileRef = 142D9EA713C4453E00982A65 /* bXMLNthChar.h */; };
+		143BEB5C0F949AE000A42930 /* bXMLDBQuestion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 143BEB5A0F949AE000A42930 /* bXMLDBQuestion.cpp */; };
+		143BEB5D0F949AE000A42930 /* bXMLDBQuestion.h in Headers */ = {isa = PBXBuildFile; fileRef = 143BEB5B0F949AE000A42930 /* bXMLDBQuestion.h */; };
+		1448EC850FCAC94100861CB5 /* bXMLDBSetNext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1448EC830FCAC94000861CB5 /* bXMLDBSetNext.cpp */; };
+		1448EC860FCAC94100861CB5 /* bXMLDBSetNext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1448EC840FCAC94100861CB5 /* bXMLDBSetNext.h */; };
+		1448EDB40FCAEF5000861CB5 /* bXMLDBAddToContrast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1448EDB00FCAEF5000861CB5 /* bXMLDBAddToContrast.cpp */; };
+		1448EDB50FCAEF5000861CB5 /* bXMLDBAddToContrast.h in Headers */ = {isa = PBXBuildFile; fileRef = 1448EDB10FCAEF5000861CB5 /* bXMLDBAddToContrast.h */; };
+		1448EDB60FCAEF5000861CB5 /* bXMLDBAddToMasked.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1448EDB20FCAEF5000861CB5 /* bXMLDBAddToMasked.cpp */; };
+		1448EDB70FCAEF5000861CB5 /* bXMLDBAddToMasked.h in Headers */ = {isa = PBXBuildFile; fileRef = 1448EDB30FCAEF5000861CB5 /* bXMLDBAddToMasked.h */; };
+		1457998E099B8A28009FE4A5 /* MacMapSuite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1457998D099B8A28009FE4A5 /* MacMapSuite.framework */; };
+		1467C526100B59DA009AC28D /* bXMLPrintAreaGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1467C524100B59DA009AC28D /* bXMLPrintAreaGeometry.cpp */; };
+		1467C527100B59DA009AC28D /* bXMLPrintAreaGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 1467C525100B59DA009AC28D /* bXMLPrintAreaGeometry.h */; };
+		1468A7040EF15ECD00C89A5A /* bXMLLegible.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1468A7020EF15ECD00C89A5A /* bXMLLegible.cpp */; };
+		1468A7050EF15ECD00C89A5A /* bXMLLegible.h in Headers */ = {isa = PBXBuildFile; fileRef = 1468A7030EF15ECD00C89A5A /* bXMLLegible.h */; };
+		1477A42D18C0B6E000EE0D34 /* bXMLGoogleMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1477A42B18C0B6E000EE0D34 /* bXMLGoogleMap.cpp */; };
+		1477A42E18C0B6E000EE0D34 /* bXMLGoogleMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 1477A42C18C0B6E000EE0D34 /* bXMLGoogleMap.h */; };
+		147DEAF90F0B7C8A0034A3CC /* bXMLScript.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 147DEAF70F0B7C8A0034A3CC /* bXMLScript.cpp */; };
+		147DEAFA0F0B7C8A0034A3CC /* bXMLScript.h in Headers */ = {isa = PBXBuildFile; fileRef = 147DEAF80F0B7C8A0034A3CC /* bXMLScript.h */; };
+		1497571308C381270084C913 /* main.h in Headers */ = {isa = PBXBuildFile; fileRef = 1497571208C381270084C913 /* main.h */; };
+		1499702E0729169F00742B1A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1499702D0729169F00742B1A /* main.cpp */; };
+		14997030072916AB00742B1A /* XML_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 1499702F072916AB00742B1A /* XML_Prefix.pch */; };
+		14C29AF008C3851700E8920D /* mox_intf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C29AEB08C3851700E8920D /* mox_intf.framework */; };
+		14C29AF108C3851700E8920D /* std_ext.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C29AEC08C3851700E8920D /* std_ext.framework */; };
+		14CD41CA0E18C0C8006DD04C /* bXMLEndAngle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14CD41C60E18C0C8006DD04C /* bXMLEndAngle.cpp */; };
+		14CD41CB0E18C0C8006DD04C /* bXMLEndAngle.h in Headers */ = {isa = PBXBuildFile; fileRef = 14CD41C70E18C0C8006DD04C /* bXMLEndAngle.h */; };
+		14CD41CC0E18C0C8006DD04C /* bXMLStartAngle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14CD41C80E18C0C8006DD04C /* bXMLStartAngle.cpp */; };
+		14CD41CD0E18C0C8006DD04C /* bXMLStartAngle.h in Headers */ = {isa = PBXBuildFile; fileRef = 14CD41C90E18C0C8006DD04C /* bXMLStartAngle.h */; };
+		14CD423D0E18E58B006DD04C /* bXMLPropAngle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14CD423B0E18E58B006DD04C /* bXMLPropAngle.cpp */; };
+		14CD423E0E18E58B006DD04C /* bXMLPropAngle.h in Headers */ = {isa = PBXBuildFile; fileRef = 14CD423C0E18E58B006DD04C /* bXMLPropAngle.h */; };
+		14CD47920DE709640038F8EE /* bXMLContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14CD478E0DE709640038F8EE /* bXMLContainer.cpp */; };
+		14CD47930DE709640038F8EE /* bXMLContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 14CD478F0DE709640038F8EE /* bXMLContainer.h */; };
+		14CD47940DE709640038F8EE /* bXMLObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14CD47900DE709640038F8EE /* bXMLObject.cpp */; };
+		14CD47950DE709640038F8EE /* bXMLObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 14CD47910DE709640038F8EE /* bXMLObject.h */; };
+		14CE81F11111D65800479A6C /* bXMLfCast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14CE81ED1111D65800479A6C /* bXMLfCast.cpp */; };
+		14CE81F21111D65800479A6C /* bXMLfCast.h in Headers */ = {isa = PBXBuildFile; fileRef = 14CE81EE1111D65800479A6C /* bXMLfCast.h */; };
+		14CE81F31111D65800479A6C /* bXMLiCast.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14CE81EF1111D65800479A6C /* bXMLiCast.cpp */; };
+		14CE81F41111D65800479A6C /* bXMLiCast.h in Headers */ = {isa = PBXBuildFile; fileRef = 14CE81F01111D65800479A6C /* bXMLiCast.h */; };
+		14D547FC13B252AF00B93CE7 /* bXMLHVSizeJustification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D547FA13B252AF00B93CE7 /* bXMLHVSizeJustification.cpp */; };
+		14D547FD13B252AF00B93CE7 /* bXMLHVSizeJustification.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D547FB13B252AF00B93CE7 /* bXMLHVSizeJustification.h */; };
+		14D5480D13B254BE00B93CE7 /* bXMLPropHVSize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D5480B13B254BE00B93CE7 /* bXMLPropHVSize.cpp */; };
+		14D5480E13B254BE00B93CE7 /* bXMLPropHVSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D5480C13B254BE00B93CE7 /* bXMLPropHVSize.h */; };
+		14D988E30BFB068E004B2CA3 /* bXMLBool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D987DB0BFB068D004B2CA3 /* bXMLBool.cpp */; };
+		14D988E40BFB068E004B2CA3 /* bXMLBool.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D987DC0BFB068D004B2CA3 /* bXMLBool.h */; };
+		14D988E50BFB068E004B2CA3 /* bXMLDirectory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D987DD0BFB068D004B2CA3 /* bXMLDirectory.cpp */; };
+		14D988E60BFB068E004B2CA3 /* bXMLDirectory.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D987DE0BFB068D004B2CA3 /* bXMLDirectory.h */; };
+		14D988E70BFB068E004B2CA3 /* bXMLFloat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D987DF0BFB068D004B2CA3 /* bXMLFloat.cpp */; };
+		14D988E80BFB068E004B2CA3 /* bXMLFloat.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D987E00BFB068D004B2CA3 /* bXMLFloat.h */; };
+		14D988E90BFB068E004B2CA3 /* bXMLInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D987E10BFB068D004B2CA3 /* bXMLInt.cpp */; };
+		14D988EA0BFB068E004B2CA3 /* bXMLInt.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D987E20BFB068D004B2CA3 /* bXMLInt.h */; };
+		14D988EB0BFB068E004B2CA3 /* bXMLName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D987E30BFB068D004B2CA3 /* bXMLName.cpp */; };
+		14D988EC0BFB068E004B2CA3 /* bXMLName.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D987E40BFB068D004B2CA3 /* bXMLName.h */; };
+		14D988ED0BFB068E004B2CA3 /* bXMLParam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D987E50BFB068D004B2CA3 /* bXMLParam.cpp */; };
+		14D988EE0BFB068E004B2CA3 /* bXMLParam.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D987E60BFB068D004B2CA3 /* bXMLParam.h */; };
+		14D988EF0BFB068E004B2CA3 /* bXMLPath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D987E70BFB068D004B2CA3 /* bXMLPath.cpp */; };
+		14D988F00BFB068E004B2CA3 /* bXMLPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D987E80BFB068D004B2CA3 /* bXMLPath.h */; };
+		14D988F10BFB068E004B2CA3 /* bXMLSign.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D987E90BFB068D004B2CA3 /* bXMLSign.cpp */; };
+		14D988F20BFB068E004B2CA3 /* bXMLSign.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D987EA0BFB068D004B2CA3 /* bXMLSign.h */; };
+		14D988F30BFB068E004B2CA3 /* bXMLVersion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D987EB0BFB068D004B2CA3 /* bXMLVersion.cpp */; };
+		14D988F40BFB068E004B2CA3 /* bXMLVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D987EC0BFB068D004B2CA3 /* bXMLVersion.h */; };
+		14D988F50BFB068E004B2CA3 /* bXMLClassBound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D987EE0BFB068D004B2CA3 /* bXMLClassBound.cpp */; };
+		14D988F60BFB068E004B2CA3 /* bXMLClassBound.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D987EF0BFB068D004B2CA3 /* bXMLClassBound.h */; };
+		14D988F70BFB068E004B2CA3 /* bXMLClassBoundsArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D987F00BFB068D004B2CA3 /* bXMLClassBoundsArray.cpp */; };
+		14D988F80BFB068E004B2CA3 /* bXMLClassBoundsArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D987F10BFB068D004B2CA3 /* bXMLClassBoundsArray.h */; };
+		14D988F90BFB068E004B2CA3 /* bXMLClassField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D987F20BFB068D004B2CA3 /* bXMLClassField.cpp */; };
+		14D988FA0BFB068E004B2CA3 /* bXMLClassField.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D987F30BFB068D004B2CA3 /* bXMLClassField.h */; };
+		14D988FB0BFB068E004B2CA3 /* bXMLClassMax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D987F40BFB068D004B2CA3 /* bXMLClassMax.cpp */; };
+		14D988FC0BFB068E004B2CA3 /* bXMLClassMax.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D987F50BFB068D004B2CA3 /* bXMLClassMax.h */; };
+		14D988FD0BFB068E004B2CA3 /* bXMLClassMin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D987F60BFB068D004B2CA3 /* bXMLClassMin.cpp */; };
+		14D988FE0BFB068E004B2CA3 /* bXMLClassMin.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D987F70BFB068D004B2CA3 /* bXMLClassMin.h */; };
+		14D988FF0BFB068E004B2CA3 /* bXMLClassName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D987F80BFB068D004B2CA3 /* bXMLClassName.cpp */; };
+		14D989000BFB068E004B2CA3 /* bXMLClassName.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D987F90BFB068D004B2CA3 /* bXMLClassName.h */; };
+		14D989010BFB068E004B2CA3 /* bXMLSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D987FA0BFB068D004B2CA3 /* bXMLSort.cpp */; };
+		14D989020BFB068E004B2CA3 /* bXMLSort.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D987FB0BFB068D004B2CA3 /* bXMLSort.h */; };
+		14D989030BFB068E004B2CA3 /* bXMLAlpha.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D987FD0BFB068D004B2CA3 /* bXMLAlpha.cpp */; };
+		14D989040BFB068E004B2CA3 /* bXMLAlpha.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D987FE0BFB068D004B2CA3 /* bXMLAlpha.h */; };
+		14D989050BFB068E004B2CA3 /* bXMLBlack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D987FF0BFB068D004B2CA3 /* bXMLBlack.cpp */; };
+		14D989060BFB068E004B2CA3 /* bXMLBlack.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988000BFB068D004B2CA3 /* bXMLBlack.h */; };
+		14D989070BFB068E004B2CA3 /* bXMLBlue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988010BFB068D004B2CA3 /* bXMLBlue.cpp */; };
+		14D989080BFB068E004B2CA3 /* bXMLBlue.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988020BFB068D004B2CA3 /* bXMLBlue.h */; };
+		14D989090BFB068E004B2CA3 /* bXMLCyan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988030BFB068D004B2CA3 /* bXMLCyan.cpp */; };
+		14D9890A0BFB068E004B2CA3 /* bXMLCyan.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988040BFB068D004B2CA3 /* bXMLCyan.h */; };
+		14D9890B0BFB068E004B2CA3 /* bXMLFill.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988050BFB068D004B2CA3 /* bXMLFill.cpp */; };
+		14D9890C0BFB068E004B2CA3 /* bXMLFill.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988060BFB068D004B2CA3 /* bXMLFill.h */; };
+		14D9890D0BFB068E004B2CA3 /* bXMLFillPattern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988070BFB068D004B2CA3 /* bXMLFillPattern.cpp */; };
+		14D9890E0BFB068E004B2CA3 /* bXMLFillPattern.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988080BFB068D004B2CA3 /* bXMLFillPattern.h */; };
+		14D9890F0BFB068E004B2CA3 /* bXMLGreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988090BFB068D004B2CA3 /* bXMLGreen.cpp */; };
+		14D989100BFB068E004B2CA3 /* bXMLGreen.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9880A0BFB068D004B2CA3 /* bXMLGreen.h */; };
+		14D989110BFB068E004B2CA3 /* bXMLMagenta.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9880B0BFB068D004B2CA3 /* bXMLMagenta.cpp */; };
+		14D989120BFB068E004B2CA3 /* bXMLMagenta.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9880C0BFB068D004B2CA3 /* bXMLMagenta.h */; };
+		14D989130BFB068E004B2CA3 /* bXMLRed.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9880D0BFB068D004B2CA3 /* bXMLRed.cpp */; };
+		14D989140BFB068E004B2CA3 /* bXMLRed.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9880E0BFB068D004B2CA3 /* bXMLRed.h */; };
+		14D989150BFB068E004B2CA3 /* bXMLStroke.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9880F0BFB068D004B2CA3 /* bXMLStroke.cpp */; };
+		14D989160BFB068E004B2CA3 /* bXMLStroke.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988100BFB068D004B2CA3 /* bXMLStroke.h */; };
+		14D989170BFB068E004B2CA3 /* bXMLStrokePattern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988110BFB068D004B2CA3 /* bXMLStrokePattern.cpp */; };
+		14D989180BFB068E004B2CA3 /* bXMLStrokePattern.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988120BFB068D004B2CA3 /* bXMLStrokePattern.h */; };
+		14D989190BFB068E004B2CA3 /* bXMLYellow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988130BFB068D004B2CA3 /* bXMLYellow.cpp */; };
+		14D9891A0BFB068E004B2CA3 /* bXMLYellow.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988140BFB068D004B2CA3 /* bXMLYellow.h */; };
+		14D9891B0BFB068E004B2CA3 /* bXMLDBBool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988160BFB068D004B2CA3 /* bXMLDBBool.cpp */; };
+		14D9891C0BFB068E004B2CA3 /* bXMLDBBool.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988170BFB068D004B2CA3 /* bXMLDBBool.h */; };
+		14D9891D0BFB068E004B2CA3 /* bXMLDBChar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988180BFB068D004B2CA3 /* bXMLDBChar.cpp */; };
+		14D9891E0BFB068E004B2CA3 /* bXMLDBChar.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988190BFB068D004B2CA3 /* bXMLDBChar.h */; };
+		14D9891F0BFB068E004B2CA3 /* bXMLDBDate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9881A0BFB068D004B2CA3 /* bXMLDBDate.cpp */; };
+		14D989200BFB068E004B2CA3 /* bXMLDBDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9881B0BFB068D004B2CA3 /* bXMLDBDate.h */; };
+		14D989210BFB068E004B2CA3 /* bXMLDBField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9881C0BFB068D004B2CA3 /* bXMLDBField.cpp */; };
+		14D989220BFB068E004B2CA3 /* bXMLDBField.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9881D0BFB068D004B2CA3 /* bXMLDBField.h */; };
+		14D989230BFB068E004B2CA3 /* bXMLDBFloat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9881E0BFB068D004B2CA3 /* bXMLDBFloat.cpp */; };
+		14D989240BFB068E004B2CA3 /* bXMLDBFloat.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9881F0BFB068D004B2CA3 /* bXMLDBFloat.h */; };
+		14D989250BFB068E004B2CA3 /* bXMLDBInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988200BFB068D004B2CA3 /* bXMLDBInt.cpp */; };
+		14D989260BFB068E004B2CA3 /* bXMLDBInt.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988210BFB068D004B2CA3 /* bXMLDBInt.h */; };
+		14D989270BFB068E004B2CA3 /* bXMLDBSelKind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988220BFB068D004B2CA3 /* bXMLDBSelKind.cpp */; };
+		14D989280BFB068E004B2CA3 /* bXMLDBSelKind.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988230BFB068D004B2CA3 /* bXMLDBSelKind.h */; };
+		14D989290BFB068E004B2CA3 /* bXMLDBTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988240BFB068D004B2CA3 /* bXMLDBTime.cpp */; };
+		14D9892A0BFB068E004B2CA3 /* bXMLDBTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988250BFB068D004B2CA3 /* bXMLDBTime.h */; };
+		14D9892B0BFB068E004B2CA3 /* bXMLDBType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988260BFB068D004B2CA3 /* bXMLDBType.cpp */; };
+		14D9892C0BFB068E004B2CA3 /* bXMLDBType.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988270BFB068D004B2CA3 /* bXMLDBType.h */; };
+		14D9892D0BFB068E004B2CA3 /* bXMLDBUseMasked.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988280BFB068D004B2CA3 /* bXMLDBUseMasked.cpp */; };
+		14D9892E0BFB068E004B2CA3 /* bXMLDBUseMasked.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988290BFB068D004B2CA3 /* bXMLDBUseMasked.h */; };
+		14D9892F0BFB068E004B2CA3 /* bSubStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9882B0BFB068D004B2CA3 /* bSubStyle.cpp */; };
+		14D989300BFB068E004B2CA3 /* bSubStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9882C0BFB068D004B2CA3 /* bSubStyle.h */; };
+		14D989310BFB068E004B2CA3 /* bXMLColorField8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9882E0BFB068D004B2CA3 /* bXMLColorField8.cpp */; };
+		14D989320BFB068E004B2CA3 /* bXMLColorField8.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9882F0BFB068D004B2CA3 /* bXMLColorField8.h */; };
+		14D989330BFB068E004B2CA3 /* bXMLField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988300BFB068D004B2CA3 /* bXMLField.cpp */; };
+		14D989340BFB068E004B2CA3 /* bXMLField.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988310BFB068D004B2CA3 /* bXMLField.h */; };
+		14D989350BFB068E004B2CA3 /* bXMLValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988320BFB068D004B2CA3 /* bXMLValue.cpp */; };
+		14D989360BFB068E004B2CA3 /* bXMLValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988330BFB068D004B2CA3 /* bXMLValue.h */; };
+		14D989370BFB068E004B2CA3 /* bXMLStrLen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988350BFB068D004B2CA3 /* bXMLStrLen.cpp */; };
+		14D989380BFB068E004B2CA3 /* bXMLStrLen.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988360BFB068D004B2CA3 /* bXMLStrLen.h */; };
+		14D989390BFB068E004B2CA3 /* bXMLStrLwr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988370BFB068D004B2CA3 /* bXMLStrLwr.cpp */; };
+		14D9893A0BFB068E004B2CA3 /* bXMLStrLwr.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988380BFB068D004B2CA3 /* bXMLStrLwr.h */; };
+		14D9893B0BFB068E004B2CA3 /* bXMLStrSntFCUpr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988390BFB068D004B2CA3 /* bXMLStrSntFCUpr.cpp */; };
+		14D9893C0BFB068E004B2CA3 /* bXMLStrSntFCUpr.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9883A0BFB068D004B2CA3 /* bXMLStrSntFCUpr.h */; };
+		14D9893D0BFB068E004B2CA3 /* bXMLStrUpr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9883B0BFB068D004B2CA3 /* bXMLStrUpr.cpp */; };
+		14D9893E0BFB068E004B2CA3 /* bXMLStrUpr.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9883C0BFB068D004B2CA3 /* bXMLStrUpr.h */; };
+		14D9893F0BFB068E004B2CA3 /* bXMLStrWrdFCUpr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9883D0BFB068D004B2CA3 /* bXMLStrWrdFCUpr.cpp */; };
+		14D989400BFB068E004B2CA3 /* bXMLStrWrdFCUpr.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9883E0BFB068D004B2CA3 /* bXMLStrWrdFCUpr.h */; };
+		14D989410BFB068E004B2CA3 /* bXMLArrow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988400BFB068D004B2CA3 /* bXMLArrow.cpp */; };
+		14D989420BFB068E004B2CA3 /* bXMLArrow.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988410BFB068D004B2CA3 /* bXMLArrow.h */; };
+		14D989430BFB068E004B2CA3 /* bXMLCentroid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988420BFB068D004B2CA3 /* bXMLCentroid.cpp */; };
+		14D989440BFB068E004B2CA3 /* bXMLCentroid.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988430BFB068D004B2CA3 /* bXMLCentroid.h */; };
+		14D989450BFB068E004B2CA3 /* bXMLDecal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988440BFB068D004B2CA3 /* bXMLDecal.cpp */; };
+		14D989460BFB068E004B2CA3 /* bXMLDecal.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988450BFB068E004B2CA3 /* bXMLDecal.h */; };
+		14D989470BFB068E004B2CA3 /* bXMLLineTo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988460BFB068E004B2CA3 /* bXMLLineTo.cpp */; };
+		14D989480BFB068E004B2CA3 /* bXMLLineTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988470BFB068E004B2CA3 /* bXMLLineTo.h */; };
+		14D989490BFB068E004B2CA3 /* bXMLOffsetCoord.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988480BFB068E004B2CA3 /* bXMLOffsetCoord.cpp */; };
+		14D9894A0BFB068E004B2CA3 /* bXMLOffsetCoord.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988490BFB068E004B2CA3 /* bXMLOffsetCoord.h */; };
+		14D9894B0BFB068E004B2CA3 /* bXMLPointJustification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9884A0BFB068E004B2CA3 /* bXMLPointJustification.cpp */; };
+		14D9894C0BFB068E004B2CA3 /* bXMLPointJustification.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9884B0BFB068E004B2CA3 /* bXMLPointJustification.h */; };
+		14D9894D0BFB068E004B2CA3 /* bXMLPolyJustification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9884C0BFB068E004B2CA3 /* bXMLPolyJustification.cpp */; };
+		14D9894E0BFB068E004B2CA3 /* bXMLPolyJustification.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9884D0BFB068E004B2CA3 /* bXMLPolyJustification.h */; };
+		14D9894F0BFB068E004B2CA3 /* bXMLSmooth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9884E0BFB068E004B2CA3 /* bXMLSmooth.cpp */; };
+		14D989500BFB068E004B2CA3 /* bXMLSmooth.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9884F0BFB068E004B2CA3 /* bXMLSmooth.h */; };
+		14D989510BFB068E004B2CA3 /* bXMLLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988510BFB068E004B2CA3 /* bXMLLayer.cpp */; };
+		14D989520BFB068E004B2CA3 /* bXMLLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988520BFB068E004B2CA3 /* bXMLLayer.h */; };
+		14D989530BFB068E004B2CA3 /* bXMLLayerArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988530BFB068E004B2CA3 /* bXMLLayerArray.cpp */; };
+		14D989540BFB068E004B2CA3 /* bXMLLayerArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988540BFB068E004B2CA3 /* bXMLLayerArray.h */; };
+		14D989550BFB068E004B2CA3 /* bXMLSelectable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988550BFB068E004B2CA3 /* bXMLSelectable.cpp */; };
+		14D989560BFB068E004B2CA3 /* bXMLSelectable.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988560BFB068E004B2CA3 /* bXMLSelectable.h */; };
+		14D989570BFB068E004B2CA3 /* bXMLStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988570BFB068E004B2CA3 /* bXMLStyle.cpp */; };
+		14D989580BFB068E004B2CA3 /* bXMLStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988580BFB068E004B2CA3 /* bXMLStyle.h */; };
+		14D989590BFB068E004B2CA3 /* bXMLType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988590BFB068E004B2CA3 /* bXMLType.cpp */; };
+		14D9895A0BFB068E004B2CA3 /* bXMLType.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9885A0BFB068E004B2CA3 /* bXMLType.h */; };
+		14D9895B0BFB068E004B2CA3 /* bXMLView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9885B0BFB068E004B2CA3 /* bXMLView.cpp */; };
+		14D9895C0BFB068E004B2CA3 /* bXMLView.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9885C0BFB068E004B2CA3 /* bXMLView.h */; };
+		14D9895D0BFB068E004B2CA3 /* bXMLVisible.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9885D0BFB068E004B2CA3 /* bXMLVisible.cpp */; };
+		14D9895E0BFB068E004B2CA3 /* bXMLVisible.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9885E0BFB068E004B2CA3 /* bXMLVisible.h */; };
+		14D9895F0BFB068E004B2CA3 /* bXMLAnd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988600BFB068E004B2CA3 /* bXMLAnd.cpp */; };
+		14D989600BFB068E004B2CA3 /* bXMLAnd.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988610BFB068E004B2CA3 /* bXMLAnd.h */; };
+		14D989610BFB068E004B2CA3 /* bXMLBeginWith.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988620BFB068E004B2CA3 /* bXMLBeginWith.cpp */; };
+		14D989620BFB068E004B2CA3 /* bXMLBeginWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988630BFB068E004B2CA3 /* bXMLBeginWith.h */; };
+		14D989630BFB068E004B2CA3 /* bXMLContain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988640BFB068E004B2CA3 /* bXMLContain.cpp */; };
+		14D989640BFB068E004B2CA3 /* bXMLContain.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988650BFB068E004B2CA3 /* bXMLContain.h */; };
+		14D989650BFB068E004B2CA3 /* bXMLDiv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988660BFB068E004B2CA3 /* bXMLDiv.cpp */; };
+		14D989660BFB068E004B2CA3 /* bXMLDiv.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988670BFB068E004B2CA3 /* bXMLDiv.h */; };
+		14D989670BFB068E004B2CA3 /* bXMLEndWith.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988680BFB068E004B2CA3 /* bXMLEndWith.cpp */; };
+		14D989680BFB068E004B2CA3 /* bXMLEndWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988690BFB068E004B2CA3 /* bXMLEndWith.h */; };
+		14D989690BFB068E004B2CA3 /* bXMLEqual.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9886A0BFB068E004B2CA3 /* bXMLEqual.cpp */; };
+		14D9896A0BFB068E004B2CA3 /* bXMLEqual.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9886B0BFB068E004B2CA3 /* bXMLEqual.h */; };
+		14D9896B0BFB068E004B2CA3 /* bXMLFormula.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9886C0BFB068E004B2CA3 /* bXMLFormula.cpp */; };
+		14D9896C0BFB068E004B2CA3 /* bXMLFormula.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9886D0BFB068E004B2CA3 /* bXMLFormula.h */; };
+		14D9896D0BFB068E004B2CA3 /* bXMLHigher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9886E0BFB068E004B2CA3 /* bXMLHigher.cpp */; };
+		14D9896E0BFB068E004B2CA3 /* bXMLHigher.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9886F0BFB068E004B2CA3 /* bXMLHigher.h */; };
+		14D9896F0BFB068E004B2CA3 /* bXMLHigherOrEqual.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988700BFB068E004B2CA3 /* bXMLHigherOrEqual.cpp */; };
+		14D989700BFB068E004B2CA3 /* bXMLHigherOrEqual.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988710BFB068E004B2CA3 /* bXMLHigherOrEqual.h */; };
+		14D989710BFB068E004B2CA3 /* bXMLLower.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988720BFB068E004B2CA3 /* bXMLLower.cpp */; };
+		14D989720BFB068E004B2CA3 /* bXMLLower.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988730BFB068E004B2CA3 /* bXMLLower.h */; };
+		14D989730BFB068E004B2CA3 /* bXMLLowerOrEqual.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988740BFB068E004B2CA3 /* bXMLLowerOrEqual.cpp */; };
+		14D989740BFB068E004B2CA3 /* bXMLLowerOrEqual.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988750BFB068E004B2CA3 /* bXMLLowerOrEqual.h */; };
+		14D989750BFB068E004B2CA3 /* bXMLMinus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988760BFB068E004B2CA3 /* bXMLMinus.cpp */; };
+		14D989760BFB068E004B2CA3 /* bXMLMinus.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988770BFB068E004B2CA3 /* bXMLMinus.h */; };
+		14D989770BFB068E004B2CA3 /* bXMLMult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988780BFB068E004B2CA3 /* bXMLMult.cpp */; };
+		14D989780BFB068E004B2CA3 /* bXMLMult.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988790BFB068E004B2CA3 /* bXMLMult.h */; };
+		14D989790BFB068E004B2CA3 /* bXMLNotEqual.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9887A0BFB068E004B2CA3 /* bXMLNotEqual.cpp */; };
+		14D9897A0BFB068E004B2CA3 /* bXMLNotEqual.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9887B0BFB068E004B2CA3 /* bXMLNotEqual.h */; };
+		14D9897B0BFB068E004B2CA3 /* bXMLOr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9887C0BFB068E004B2CA3 /* bXMLOr.cpp */; };
+		14D9897C0BFB068E004B2CA3 /* bXMLOr.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9887D0BFB068E004B2CA3 /* bXMLOr.h */; };
+		14D9897D0BFB068E004B2CA3 /* bXMLPlus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9887E0BFB068E004B2CA3 /* bXMLPlus.cpp */; };
+		14D9897E0BFB068E004B2CA3 /* bXMLPlus.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9887F0BFB068E004B2CA3 /* bXMLPlus.h */; };
+		14D9897F0BFB068E004B2CA3 /* bXMLPow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988800BFB068E004B2CA3 /* bXMLPow.cpp */; };
+		14D989800BFB068E004B2CA3 /* bXMLPow.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988810BFB068E004B2CA3 /* bXMLPow.h */; };
+		14D989810BFB068E004B2CA3 /* bXMLStrCat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988820BFB068E004B2CA3 /* bXMLStrCat.cpp */; };
+		14D989820BFB068E004B2CA3 /* bXMLStrCat.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988830BFB068E004B2CA3 /* bXMLStrCat.h */; };
+		14D989830BFB068E004B2CA3 /* bXMLPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988850BFB068E004B2CA3 /* bXMLPass.cpp */; };
+		14D989840BFB068E004B2CA3 /* bXMLPass.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988860BFB068E004B2CA3 /* bXMLPass.h */; };
+		14D989850BFB068E004B2CA3 /* bXMLPassCount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988870BFB068E004B2CA3 /* bXMLPassCount.cpp */; };
+		14D989860BFB068E004B2CA3 /* bXMLPassCount.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988880BFB068E004B2CA3 /* bXMLPassCount.h */; };
+		14D989870BFB068E004B2CA3 /* bXMLAngle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9888A0BFB068E004B2CA3 /* bXMLAngle.cpp */; };
+		14D989880BFB068E004B2CA3 /* bXMLAngle.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9888B0BFB068E004B2CA3 /* bXMLAngle.h */; };
+		14D989890BFB068E004B2CA3 /* bXMLCap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9888C0BFB068E004B2CA3 /* bXMLCap.cpp */; };
+		14D9898A0BFB068E004B2CA3 /* bXMLCap.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9888D0BFB068E004B2CA3 /* bXMLCap.h */; };
+		14D9898B0BFB068E004B2CA3 /* bXMLCharSpacing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9888E0BFB068E004B2CA3 /* bXMLCharSpacing.cpp */; };
+		14D9898C0BFB068E004B2CA3 /* bXMLCharSpacing.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9888F0BFB068E004B2CA3 /* bXMLCharSpacing.h */; };
+		14D9898D0BFB068E004B2CA3 /* bXMLDash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988900BFB068E004B2CA3 /* bXMLDash.cpp */; };
+		14D9898E0BFB068E004B2CA3 /* bXMLDash.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988910BFB068E004B2CA3 /* bXMLDash.h */; };
+		14D9898F0BFB068E004B2CA3 /* bXMLFont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988920BFB068E004B2CA3 /* bXMLFont.cpp */; };
+		14D989900BFB068E004B2CA3 /* bXMLFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988930BFB068E004B2CA3 /* bXMLFont.h */; };
+		14D989910BFB068E004B2CA3 /* bXMLHSize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988940BFB068E004B2CA3 /* bXMLHSize.cpp */; };
+		14D989920BFB068E004B2CA3 /* bXMLHSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988950BFB068E004B2CA3 /* bXMLHSize.h */; };
+		14D989930BFB068E004B2CA3 /* bXMLImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988960BFB068E004B2CA3 /* bXMLImage.cpp */; };
+		14D989940BFB068E004B2CA3 /* bXMLImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988970BFB068E004B2CA3 /* bXMLImage.h */; };
+		14D989950BFB068E004B2CA3 /* bXMLJoin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988980BFB068E004B2CA3 /* bXMLJoin.cpp */; };
+		14D989960BFB068E004B2CA3 /* bXMLJoin.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988990BFB068E004B2CA3 /* bXMLJoin.h */; };
+		14D989970BFB068E004B2CA3 /* bXMLLeading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9889A0BFB068E004B2CA3 /* bXMLLeading.cpp */; };
+		14D989980BFB068E004B2CA3 /* bXMLLeading.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9889B0BFB068E004B2CA3 /* bXMLLeading.h */; };
+		14D989990BFB068E004B2CA3 /* bXMLMiterLimit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9889C0BFB068E004B2CA3 /* bXMLMiterLimit.cpp */; };
+		14D9899A0BFB068E004B2CA3 /* bXMLMiterLimit.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9889D0BFB068E004B2CA3 /* bXMLMiterLimit.h */; };
+		14D9899B0BFB068E004B2CA3 /* bXMLPDFDocument.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D9889E0BFB068E004B2CA3 /* bXMLPDFDocument.cpp */; };
+		14D9899C0BFB068E004B2CA3 /* bXMLPDFDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D9889F0BFB068E004B2CA3 /* bXMLPDFDocument.h */; };
+		14D9899E0BFB068E004B2CA3 /* bXMLPropSize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988A10BFB068E004B2CA3 /* bXMLPropSize.cpp */; };
+		14D9899F0BFB068E004B2CA3 /* bXMLPropSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988A20BFB068E004B2CA3 /* bXMLPropSize.h */; };
+		14D989A00BFB068E004B2CA3 /* bXMLPropWidth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988A30BFB068E004B2CA3 /* bXMLPropWidth.cpp */; };
+		14D989A10BFB068E004B2CA3 /* bXMLPropWidth.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988A40BFB068E004B2CA3 /* bXMLPropWidth.h */; };
+		14D989A20BFB068E004B2CA3 /* bXMLRaster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988A50BFB068E004B2CA3 /* bXMLRaster.cpp */; };
+		14D989A30BFB068E004B2CA3 /* bXMLRaster.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988A60BFB068E004B2CA3 /* bXMLRaster.h */; };
+		14D989A40BFB068E004B2CA3 /* bXMLSize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988A70BFB068E004B2CA3 /* bXMLSize.cpp */; };
+		14D989A50BFB068E004B2CA3 /* bXMLSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988A80BFB068E004B2CA3 /* bXMLSize.h */; };
+		14D989A60BFB068E004B2CA3 /* bXMLSubStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988A90BFB068E004B2CA3 /* bXMLSubStyle.cpp */; };
+		14D989A70BFB068E004B2CA3 /* bXMLSubStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988AA0BFB068E004B2CA3 /* bXMLSubStyle.h */; };
+		14D989A80BFB068E004B2CA3 /* bXMLText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988AB0BFB068E004B2CA3 /* bXMLText.cpp */; };
+		14D989A90BFB068E004B2CA3 /* bXMLText.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988AC0BFB068E004B2CA3 /* bXMLText.h */; };
+		14D989AA0BFB068E004B2CA3 /* bXMLVSize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988AD0BFB068E004B2CA3 /* bXMLVSize.cpp */; };
+		14D989AB0BFB068E004B2CA3 /* bXMLVSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988AE0BFB068E004B2CA3 /* bXMLVSize.h */; };
+		14D989AC0BFB068E004B2CA3 /* bXMLWidth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988AF0BFB068E004B2CA3 /* bXMLWidth.cpp */; };
+		14D989AD0BFB068E004B2CA3 /* bXMLWidth.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988B00BFB068E004B2CA3 /* bXMLWidth.h */; };
+		14D989AE0BFB068E004B2CA3 /* bXMLWordSpacing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988B10BFB068E004B2CA3 /* bXMLWordSpacing.cpp */; };
+		14D989AF0BFB068E004B2CA3 /* bXMLWordSpacing.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988B20BFB068E004B2CA3 /* bXMLWordSpacing.h */; };
+		14D989B00BFB068E004B2CA3 /* bXMLScaleMax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988B40BFB068E004B2CA3 /* bXMLScaleMax.cpp */; };
+		14D989B10BFB068E004B2CA3 /* bXMLScaleMax.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988B50BFB068E004B2CA3 /* bXMLScaleMax.h */; };
+		14D989B20BFB068E004B2CA3 /* bXMLScaleMin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988B60BFB068E004B2CA3 /* bXMLScaleMin.cpp */; };
+		14D989B30BFB068E004B2CA3 /* bXMLScaleMin.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988B70BFB068E004B2CA3 /* bXMLScaleMin.h */; };
+		14D989B40BFB068E004B2CA3 /* bXMLScaleRef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988B80BFB068E004B2CA3 /* bXMLScaleRef.cpp */; };
+		14D989B50BFB068E004B2CA3 /* bXMLScaleRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988B90BFB068E004B2CA3 /* bXMLScaleRef.h */; };
+		14D989B60BFB068E004B2CA3 /* bXMLUnitCoef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988BA0BFB068E004B2CA3 /* bXMLUnitCoef.cpp */; };
+		14D989B70BFB068E004B2CA3 /* bXMLUnitCoef.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988BB0BFB068E004B2CA3 /* bXMLUnitCoef.h */; };
+		14D989B80BFB068E004B2CA3 /* bXMLCondition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988BD0BFB068E004B2CA3 /* bXMLCondition.cpp */; };
+		14D989B90BFB068E004B2CA3 /* bXMLCondition.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988BE0BFB068E004B2CA3 /* bXMLCondition.h */; };
+		14D989BA0BFB068E004B2CA3 /* bXMLGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988BF0BFB068E004B2CA3 /* bXMLGeometry.cpp */; };
+		14D989BB0BFB068E004B2CA3 /* bXMLGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988C00BFB068E004B2CA3 /* bXMLGeometry.h */; };
+		14D989BC0BFB068E004B2CA3 /* bXMLGlobals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988C10BFB068E004B2CA3 /* bXMLGlobals.cpp */; };
+		14D989BD0BFB068E004B2CA3 /* bXMLGlobals.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988C20BFB068E004B2CA3 /* bXMLGlobals.h */; };
+		14D989BE0BFB068E004B2CA3 /* bXMLRender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988C30BFB068E004B2CA3 /* bXMLRender.cpp */; };
+		14D989BF0BFB068E004B2CA3 /* bXMLRender.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988C40BFB068E004B2CA3 /* bXMLRender.h */; };
+		14D989C00BFB068E004B2CA3 /* bXMLStdGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988C50BFB068E004B2CA3 /* bXMLStdGeometry.cpp */; };
+		14D989C10BFB068E004B2CA3 /* bXMLStdGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988C60BFB068E004B2CA3 /* bXMLStdGeometry.h */; };
+		14D989C20BFB068E004B2CA3 /* bXMLStyleIdentification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988C70BFB068E004B2CA3 /* bXMLStyleIdentification.cpp */; };
+		14D989C30BFB068E004B2CA3 /* bXMLStyleIdentification.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988C80BFB068E004B2CA3 /* bXMLStyleIdentification.h */; };
+		14D989C40BFB068E004B2CA3 /* bXMLStyleRun.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988C90BFB068E004B2CA3 /* bXMLStyleRun.cpp */; };
+		14D989C50BFB068E004B2CA3 /* bXMLStyleRun.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988CA0BFB068E004B2CA3 /* bXMLStyleRun.h */; };
+		14D989C60BFB068E004B2CA3 /* bXMLValidity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988CB0BFB068E004B2CA3 /* bXMLValidity.cpp */; };
+		14D989C70BFB068E004B2CA3 /* bXMLValidity.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988CC0BFB068E004B2CA3 /* bXMLValidity.h */; };
+		14D989C80BFB068E004B2CA3 /* bXMLCircleStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988CE0BFB068E004B2CA3 /* bXMLCircleStyle.cpp */; };
+		14D989C90BFB068E004B2CA3 /* bXMLCircleStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988CF0BFB068E004B2CA3 /* bXMLCircleStyle.h */; };
+		14D989CA0BFB068E004B2CA3 /* bXMLIconStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988D00BFB068E004B2CA3 /* bXMLIconStyle.cpp */; };
+		14D989CB0BFB068E004B2CA3 /* bXMLIconStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988D10BFB068E004B2CA3 /* bXMLIconStyle.h */; };
+		14D989CC0BFB068E004B2CA3 /* bXMLPolygonStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988D20BFB068E004B2CA3 /* bXMLPolygonStyle.cpp */; };
+		14D989CD0BFB068E004B2CA3 /* bXMLPolygonStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988D30BFB068E004B2CA3 /* bXMLPolygonStyle.h */; };
+		14D989CE0BFB068E004B2CA3 /* bXMLPolylineStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988D40BFB068E004B2CA3 /* bXMLPolylineStyle.cpp */; };
+		14D989CF0BFB068E004B2CA3 /* bXMLPolylineStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988D50BFB068E004B2CA3 /* bXMLPolylineStyle.h */; };
+		14D989D00BFB068E004B2CA3 /* bXMLRasterStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988D60BFB068E004B2CA3 /* bXMLRasterStyle.cpp */; };
+		14D989D10BFB068E004B2CA3 /* bXMLRasterStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988D70BFB068E004B2CA3 /* bXMLRasterStyle.h */; };
+		14D989D20BFB068E004B2CA3 /* bXMLRectStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988D80BFB068E004B2CA3 /* bXMLRectStyle.cpp */; };
+		14D989D30BFB068E004B2CA3 /* bXMLRectStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988D90BFB068E004B2CA3 /* bXMLRectStyle.h */; };
+		14D989D40BFB068E004B2CA3 /* bXMLTextStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988DA0BFB068E004B2CA3 /* bXMLTextStyle.cpp */; };
+		14D989D50BFB068E004B2CA3 /* bXMLTextStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988DB0BFB068E004B2CA3 /* bXMLTextStyle.h */; };
+		14D989D60BFB068E004B2CA3 /* bXMLfcalcUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988DD0BFB068E004B2CA3 /* bXMLfcalcUser.cpp */; };
+		14D989D70BFB068E004B2CA3 /* bXMLfcalcUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988DE0BFB068E004B2CA3 /* bXMLfcalcUser.h */; };
+		14D989D80BFB068E004B2CA3 /* bXMLfmacroUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988DF0BFB068E004B2CA3 /* bXMLfmacroUser.cpp */; };
+		14D989D90BFB068E004B2CA3 /* bXMLfmacroUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988E00BFB068E004B2CA3 /* bXMLfmacroUser.h */; };
+		14D989DA0BFB068E004B2CA3 /* bXMLfvarUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D988E10BFB068E004B2CA3 /* bXMLfvarUser.cpp */; };
+		14D989DB0BFB068E004B2CA3 /* bXMLfvarUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D988E20BFB068E004B2CA3 /* bXMLfvarUser.h */; };
+		14D98A240BFB0CAE004B2CA3 /* bXMLSubStyleRun.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D98A220BFB0CAE004B2CA3 /* bXMLSubStyleRun.cpp */; };
+		14D98A250BFB0CAE004B2CA3 /* bXMLSubStyleRun.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D98A230BFB0CAE004B2CA3 /* bXMLSubStyleRun.h */; };
+		14D98A420BFB0D9F004B2CA3 /* bXMLSubGlobals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D98A400BFB0D9F004B2CA3 /* bXMLSubGlobals.cpp */; };
+		14D98A430BFB0D9F004B2CA3 /* bXMLSubGlobals.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D98A410BFB0D9F004B2CA3 /* bXMLSubGlobals.h */; };
+		14D98A960BFB1130004B2CA3 /* bXMLSubRender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D98A940BFB1130004B2CA3 /* bXMLSubRender.cpp */; };
+		14D98A970BFB1130004B2CA3 /* bXMLSubRender.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D98A950BFB1130004B2CA3 /* bXMLSubRender.h */; };
+		14D98AA00BFB11E0004B2CA3 /* bXMLSubClassBound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D98A980BFB11E0004B2CA3 /* bXMLSubClassBound.cpp */; };
+		14D98AA10BFB11E0004B2CA3 /* bXMLSubClassBound.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D98A990BFB11E0004B2CA3 /* bXMLSubClassBound.h */; };
+		14D98AA20BFB11E0004B2CA3 /* bXMLSubClassBoundsArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D98A9A0BFB11E0004B2CA3 /* bXMLSubClassBoundsArray.cpp */; };
+		14D98AA30BFB11E0004B2CA3 /* bXMLSubClassBoundsArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D98A9B0BFB11E0004B2CA3 /* bXMLSubClassBoundsArray.h */; };
+		14D98AA40BFB11E0004B2CA3 /* bXMLSubClassField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D98A9C0BFB11E0004B2CA3 /* bXMLSubClassField.cpp */; };
+		14D98AA50BFB11E0004B2CA3 /* bXMLSubClassField.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D98A9D0BFB11E0004B2CA3 /* bXMLSubClassField.h */; };
+		14D98AA60BFB11E0004B2CA3 /* bXMLSubClassName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D98A9E0BFB11E0004B2CA3 /* bXMLSubClassName.cpp */; };
+		14D98AA70BFB11E0004B2CA3 /* bXMLSubClassName.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D98A9F0BFB11E0004B2CA3 /* bXMLSubClassName.h */; };
+		14D98BF20BFB3179004B2CA3 /* bXMLSqrt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D98BF00BFB3179004B2CA3 /* bXMLSqrt.cpp */; };
+		14D98BF30BFB3179004B2CA3 /* bXMLSqrt.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D98BF10BFB3179004B2CA3 /* bXMLSqrt.h */; };
+		14D98C100BFB34F2004B2CA3 /* bXMLCeil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D98BF80BFB34F2004B2CA3 /* bXMLCeil.cpp */; };
+		14D98C110BFB34F2004B2CA3 /* bXMLCeil.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D98BF90BFB34F2004B2CA3 /* bXMLCeil.h */; };
+		14D98C120BFB34F2004B2CA3 /* bXMLCos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D98BFA0BFB34F2004B2CA3 /* bXMLCos.cpp */; };
+		14D98C130BFB34F2004B2CA3 /* bXMLCos.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D98BFB0BFB34F2004B2CA3 /* bXMLCos.h */; };
+		14D98C140BFB34F2004B2CA3 /* bXMLExp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D98BFC0BFB34F2004B2CA3 /* bXMLExp.cpp */; };
+		14D98C150BFB34F2004B2CA3 /* bXMLExp.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D98BFD0BFB34F2004B2CA3 /* bXMLExp.h */; };
+		14D98C160BFB34F2004B2CA3 /* bXMLFloor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D98BFE0BFB34F2004B2CA3 /* bXMLFloor.cpp */; };
+		14D98C170BFB34F2004B2CA3 /* bXMLFloor.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D98BFF0BFB34F2004B2CA3 /* bXMLFloor.h */; };
+		14D98C180BFB34F2004B2CA3 /* bXMLInv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D98C000BFB34F2004B2CA3 /* bXMLInv.cpp */; };
+		14D98C190BFB34F2004B2CA3 /* bXMLInv.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D98C010BFB34F2004B2CA3 /* bXMLInv.h */; };
+		14D98C1A0BFB34F2004B2CA3 /* bXMLLn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D98C020BFB34F2004B2CA3 /* bXMLLn.cpp */; };
+		14D98C1B0BFB34F2004B2CA3 /* bXMLLn.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D98C030BFB34F2004B2CA3 /* bXMLLn.h */; };
+		14D98C1C0BFB34F2004B2CA3 /* bXMLLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D98C040BFB34F2004B2CA3 /* bXMLLog.cpp */; };
+		14D98C1D0BFB34F2004B2CA3 /* bXMLLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D98C050BFB34F2004B2CA3 /* bXMLLog.h */; };
+		14D98C1E0BFB34F2004B2CA3 /* bXMLNot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D98C060BFB34F2004B2CA3 /* bXMLNot.cpp */; };
+		14D98C1F0BFB34F2004B2CA3 /* bXMLNot.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D98C070BFB34F2004B2CA3 /* bXMLNot.h */; };
+		14D98C200BFB34F2004B2CA3 /* bXMLRound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D98C080BFB34F2004B2CA3 /* bXMLRound.cpp */; };
+		14D98C210BFB34F2004B2CA3 /* bXMLRound.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D98C090BFB34F2004B2CA3 /* bXMLRound.h */; };
+		14D98C220BFB34F2004B2CA3 /* bXMLSin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D98C0A0BFB34F2004B2CA3 /* bXMLSin.cpp */; };
+		14D98C230BFB34F2004B2CA3 /* bXMLSin.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D98C0B0BFB34F2004B2CA3 /* bXMLSin.h */; };
+		14D98C240BFB34F2004B2CA3 /* bXMLSqr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D98C0C0BFB34F2004B2CA3 /* bXMLSqr.cpp */; };
+		14D98C250BFB34F2004B2CA3 /* bXMLSqr.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D98C0D0BFB34F2004B2CA3 /* bXMLSqr.h */; };
+		14D98C260BFB34F2004B2CA3 /* bXMLTan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D98C0E0BFB34F2004B2CA3 /* bXMLTan.cpp */; };
+		14D98C270BFB34F2004B2CA3 /* bXMLTan.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D98C0F0BFB34F2004B2CA3 /* bXMLTan.h */; };
+		14D98C2D0BFB38C0004B2CA3 /* bXMLFact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D98C2B0BFB38C0004B2CA3 /* bXMLFact.cpp */; };
+		14D98C2E0BFB38C0004B2CA3 /* bXMLFact.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D98C2C0BFB38C0004B2CA3 /* bXMLFact.h */; };
+		14D98C3F0BFB3F3B004B2CA3 /* MacMapStats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D98C3E0BFB3F3B004B2CA3 /* MacMapStats.framework */; };
+		14D98CE30BFB5821004B2CA3 /* bXMLSum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14D98CE10BFB5821004B2CA3 /* bXMLSum.cpp */; };
+		14D98CE40BFB5821004B2CA3 /* bXMLSum.h in Headers */ = {isa = PBXBuildFile; fileRef = 14D98CE20BFB5821004B2CA3 /* bXMLSum.h */; };
+		14DE77BA0C3BDDC10025B780 /* bXMLColorField16M.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14DE77B80C3BDDC10025B780 /* bXMLColorField16M.cpp */; };
+		14DE77BB0C3BDDC10025B780 /* bXMLColorField16M.h in Headers */ = {isa = PBXBuildFile; fileRef = 14DE77B90C3BDDC10025B780 /* bXMLColorField16M.h */; };
+		14DE77F60C3BE3750025B780 /* bXMLBgFill.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14DE77F40C3BE3750025B780 /* bXMLBgFill.cpp */; };
+		14DE77F70C3BE3750025B780 /* bXMLBgFill.h in Headers */ = {isa = PBXBuildFile; fileRef = 14DE77F50C3BE3750025B780 /* bXMLBgFill.h */; };
+		14DE78090C3BE8B50025B780 /* bXMLShiftX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14DE78050C3BE8B50025B780 /* bXMLShiftX.cpp */; };
+		14DE780A0C3BE8B50025B780 /* bXMLShiftX.h in Headers */ = {isa = PBXBuildFile; fileRef = 14DE78060C3BE8B50025B780 /* bXMLShiftX.h */; };
+		14DE780B0C3BE8B50025B780 /* bXMLShiftY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14DE78070C3BE8B50025B780 /* bXMLShiftY.cpp */; };
+		14DE780C0C3BE8B50025B780 /* bXMLShiftY.h in Headers */ = {isa = PBXBuildFile; fileRef = 14DE78080C3BE8B50025B780 /* bXMLShiftY.h */; };
+		14DE784B0C3BF9D70025B780 /* info.txt in Resources */ = {isa = PBXBuildFile; fileRef = 14DE784A0C3BF9D70025B780 /* info.txt */; };
+		14E0BD910FF4B25D00992A80 /* bXMLScreenGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E0BD8F0FF4B25D00992A80 /* bXMLScreenGeometry.cpp */; };
+		14E0BD920FF4B25D00992A80 /* bXMLScreenGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 14E0BD900FF4B25D00992A80 /* bXMLScreenGeometry.h */; };
+		14E0BDB60FF4C54D00992A80 /* bXMLWMSRaster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E0BDB40FF4C54D00992A80 /* bXMLWMSRaster.cpp */; };
+		14E0BDB70FF4C54D00992A80 /* bXMLWMSRaster.h in Headers */ = {isa = PBXBuildFile; fileRef = 14E0BDB50FF4C54D00992A80 /* bXMLWMSRaster.h */; };
+		14E79953125B18E9008A5A1B /* bXMLBgStroke.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E79951125B18E9008A5A1B /* bXMLBgStroke.cpp */; };
+		14E79954125B18EA008A5A1B /* bXMLBgStroke.h in Headers */ = {isa = PBXBuildFile; fileRef = 14E79952125B18E9008A5A1B /* bXMLBgStroke.h */; };
+		14E7996F125B1AB0008A5A1B /* bXMLBgHeightMaj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E79967125B1AB0008A5A1B /* bXMLBgHeightMaj.cpp */; };
+		14E79970125B1AB0008A5A1B /* bXMLBgHeightMaj.h in Headers */ = {isa = PBXBuildFile; fileRef = 14E79968125B1AB0008A5A1B /* bXMLBgHeightMaj.h */; };
+		14E79971125B1AB0008A5A1B /* bXMLBgWidth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E79969125B1AB0008A5A1B /* bXMLBgWidth.cpp */; };
+		14E79972125B1AB0008A5A1B /* bXMLBgWidth.h in Headers */ = {isa = PBXBuildFile; fileRef = 14E7996A125B1AB0008A5A1B /* bXMLBgWidth.h */; };
+		14E79973125B1AB0008A5A1B /* bXMLBgWidthMaj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E7996B125B1AB0008A5A1B /* bXMLBgWidthMaj.cpp */; };
+		14E79974125B1AB0008A5A1B /* bXMLBgWidthMaj.h in Headers */ = {isa = PBXBuildFile; fileRef = 14E7996C125B1AB0008A5A1B /* bXMLBgWidthMaj.h */; };
+		14E79975125B1AB0008A5A1B /* bXMLRoundedRadius.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14E7996D125B1AB0008A5A1B /* bXMLRoundedRadius.cpp */; };
+		14E79976125B1AB0008A5A1B /* bXMLRoundedRadius.h in Headers */ = {isa = PBXBuildFile; fileRef = 14E7996E125B1AB0008A5A1B /* bXMLRoundedRadius.h */; };
+		14EB5EBE14F52B610076415A /* bXMLTextRptJustification.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14EB5EBC14F52B610076415A /* bXMLTextRptJustification.cpp */; };
+		14EB5EBF14F52B610076415A /* bXMLTextRptJustification.h in Headers */ = {isa = PBXBuildFile; fileRef = 14EB5EBD14F52B610076415A /* bXMLTextRptJustification.h */; };
+		14EC7B650E1919FD009E8CBE /* bXMLPropColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14EC7B630E1919FD009E8CBE /* bXMLPropColor.cpp */; };
+		14EC7B660E1919FD009E8CBE /* bXMLPropColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 14EC7B640E1919FD009E8CBE /* bXMLPropColor.h */; };
+		8D01CCCA0486CAD60068D4B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		14023DC912717B1F0078B43B /* bXMLBgShiftX.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLBgShiftX.cpp; sourceTree = "<group>"; };
+		14023DCA12717B1F0078B43B /* bXMLBgShiftX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLBgShiftX.h; sourceTree = "<group>"; };
+		14023DCB12717B1F0078B43B /* bXMLBgShiftY.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLBgShiftY.cpp; sourceTree = "<group>"; };
+		14023DCC12717B1F0078B43B /* bXMLBgShiftY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLBgShiftY.h; sourceTree = "<group>"; };
+		140CE3060F0E001A0000CAD1 /* bXMLString.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLString.cpp; sourceTree = "<group>"; };
+		140CE3070F0E001A0000CAD1 /* bXMLString.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = bXMLString.h; sourceTree = "<group>"; };
+		140FCFED1005CE4A005ACD1F /* bXMLBoxPos.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLBoxPos.cpp; sourceTree = "<group>"; };
+		140FCFEE1005CE4A005ACD1F /* bXMLBoxPos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLBoxPos.h; sourceTree = "<group>"; };
+		1413DAD30F30904E00C70B11 /* bXMLVirtualLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLVirtualLayer.cpp; sourceTree = "<group>"; };
+		1413DAD40F30904E00C70B11 /* bXMLVirtualLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLVirtualLayer.h; sourceTree = "<group>"; };
+		141FB1240C017E6F00C8C8B7 /* bXMLAverage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLAverage.cpp; sourceTree = "<group>"; };
+		141FB1250C017E6F00C8C8B7 /* bXMLAverage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLAverage.h; sourceTree = "<group>"; };
+		141FB1E80C0188DC00C8C8B7 /* bXMLFirst.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLFirst.cpp; sourceTree = "<group>"; };
+		141FB1E90C0188DC00C8C8B7 /* bXMLFirst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLFirst.h; sourceTree = "<group>"; };
+		141FB1EA0C0188DC00C8C8B7 /* bXMLLast.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLLast.cpp; sourceTree = "<group>"; };
+		141FB1EB0C0188DC00C8C8B7 /* bXMLLast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLLast.h; sourceTree = "<group>"; };
+		141FB1EC0C0188DC00C8C8B7 /* bXMLMax.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLMax.cpp; sourceTree = "<group>"; };
+		141FB1ED0C0188DC00C8C8B7 /* bXMLMax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLMax.h; sourceTree = "<group>"; };
+		141FB1EE0C0188DC00C8C8B7 /* bXMLMedian.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLMedian.cpp; sourceTree = "<group>"; };
+		141FB1EF0C0188DC00C8C8B7 /* bXMLMedian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLMedian.h; sourceTree = "<group>"; };
+		141FB1F00C0188DC00C8C8B7 /* bXMLMin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLMin.cpp; sourceTree = "<group>"; };
+		141FB1F10C0188DC00C8C8B7 /* bXMLMin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLMin.h; sourceTree = "<group>"; };
+		141FB1F20C0188DC00C8C8B7 /* bXMLProduct.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLProduct.cpp; sourceTree = "<group>"; };
+		141FB1F30C0188DC00C8C8B7 /* bXMLProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLProduct.h; sourceTree = "<group>"; };
+		141FB1F40C0188DC00C8C8B7 /* bXMLSingle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLSingle.cpp; sourceTree = "<group>"; };
+		141FB1F50C0188DC00C8C8B7 /* bXMLSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLSingle.h; sourceTree = "<group>"; };
+		141FB1F60C0188DC00C8C8B7 /* bXMLStdDeviation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLStdDeviation.cpp; sourceTree = "<group>"; };
+		141FB1F70C0188DC00C8C8B7 /* bXMLStdDeviation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLStdDeviation.h; sourceTree = "<group>"; };
+		141FB1F80C0188DC00C8C8B7 /* bXMLVariance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLVariance.cpp; sourceTree = "<group>"; };
+		141FB1F90C0188DC00C8C8B7 /* bXMLVariance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLVariance.h; sourceTree = "<group>"; };
+		141FB2A50C01C36F00C8C8B7 /* bXMLModulo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLModulo.cpp; sourceTree = "<group>"; };
+		141FB2A60C01C36F00C8C8B7 /* bXMLModulo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLModulo.h; sourceTree = "<group>"; };
+		141FB2A70C01C36F00C8C8B7 /* bXMLXOr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLXOr.cpp; sourceTree = "<group>"; };
+		141FB2A80C01C36F00C8C8B7 /* bXMLXOr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLXOr.h; sourceTree = "<group>"; };
+		1423FA3618C4772700068626 /* bXMLTMSRaster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLTMSRaster.cpp; sourceTree = "<group>"; };
+		1423FA3718C4772700068626 /* bXMLTMSRaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLTMSRaster.h; sourceTree = "<group>"; };
+		14283D8D18DC5C1E00808913 /* bXMLPerpendicularLine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLPerpendicularLine.cpp; sourceTree = "<group>"; };
+		14283D8E18DC5C1E00808913 /* bXMLPerpendicularLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLPerpendicularLine.h; sourceTree = "<group>"; };
+		142D9EA613C4453E00982A65 /* bXMLNthChar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLNthChar.cpp; sourceTree = "<group>"; };
+		142D9EA713C4453E00982A65 /* bXMLNthChar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLNthChar.h; sourceTree = "<group>"; };
+		143BEB5A0F949AE000A42930 /* bXMLDBQuestion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLDBQuestion.cpp; sourceTree = "<group>"; };
+		143BEB5B0F949AE000A42930 /* bXMLDBQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLDBQuestion.h; sourceTree = "<group>"; };
+		1448EC830FCAC94000861CB5 /* bXMLDBSetNext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLDBSetNext.cpp; sourceTree = "<group>"; };
+		1448EC840FCAC94100861CB5 /* bXMLDBSetNext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLDBSetNext.h; sourceTree = "<group>"; };
+		1448EDB00FCAEF5000861CB5 /* bXMLDBAddToContrast.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLDBAddToContrast.cpp; sourceTree = "<group>"; };
+		1448EDB10FCAEF5000861CB5 /* bXMLDBAddToContrast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLDBAddToContrast.h; sourceTree = "<group>"; };
+		1448EDB20FCAEF5000861CB5 /* bXMLDBAddToMasked.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLDBAddToMasked.cpp; sourceTree = "<group>"; };
+		1448EDB30FCAEF5000861CB5 /* bXMLDBAddToMasked.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLDBAddToMasked.h; sourceTree = "<group>"; };
+		1457998D099B8A28009FE4A5 /* MacMapSuite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacMapSuite.framework; path = /Library/Frameworks/MacMapSuite.framework; sourceTree = "<absolute>"; };
+		1467C524100B59DA009AC28D /* bXMLPrintAreaGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLPrintAreaGeometry.cpp; sourceTree = "<group>"; };
+		1467C525100B59DA009AC28D /* bXMLPrintAreaGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLPrintAreaGeometry.h; sourceTree = "<group>"; };
+		1468A7020EF15ECD00C89A5A /* bXMLLegible.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLLegible.cpp; sourceTree = "<group>"; };
+		1468A7030EF15ECD00C89A5A /* bXMLLegible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLLegible.h; sourceTree = "<group>"; };
+		1477A42B18C0B6E000EE0D34 /* bXMLGoogleMap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLGoogleMap.cpp; sourceTree = "<group>"; };
+		1477A42C18C0B6E000EE0D34 /* bXMLGoogleMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLGoogleMap.h; sourceTree = "<group>"; };
+		147DEAF70F0B7C8A0034A3CC /* bXMLScript.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLScript.cpp; sourceTree = "<group>"; };
+		147DEAF80F0B7C8A0034A3CC /* bXMLScript.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = bXMLScript.h; sourceTree = "<group>"; };
+		1497571208C381270084C913 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		149970220729167500742B1A /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1499702D0729169F00742B1A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1499702F072916AB00742B1A /* XML_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XML_Prefix.pch; sourceTree = "<group>"; };
+		14C29AEB08C3851700E8920D /* mox_intf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mox_intf.framework; path = "../../../../Applis/Current/MacMap®/build/Release/mox_intf.framework"; sourceTree = SOURCE_ROOT; };
+		14C29AEC08C3851700E8920D /* std_ext.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = std_ext.framework; path = "../../../../Applis/Current/MacMap®/build/Release/std_ext.framework"; sourceTree = SOURCE_ROOT; };
+		14CD41C60E18C0C8006DD04C /* bXMLEndAngle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLEndAngle.cpp; sourceTree = "<group>"; };
+		14CD41C70E18C0C8006DD04C /* bXMLEndAngle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLEndAngle.h; sourceTree = "<group>"; };
+		14CD41C80E18C0C8006DD04C /* bXMLStartAngle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLStartAngle.cpp; sourceTree = "<group>"; };
+		14CD41C90E18C0C8006DD04C /* bXMLStartAngle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLStartAngle.h; sourceTree = "<group>"; };
+		14CD423B0E18E58B006DD04C /* bXMLPropAngle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLPropAngle.cpp; sourceTree = "<group>"; };
+		14CD423C0E18E58B006DD04C /* bXMLPropAngle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLPropAngle.h; sourceTree = "<group>"; };
+		14CD478E0DE709640038F8EE /* bXMLContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLContainer.cpp; sourceTree = "<group>"; };
+		14CD478F0DE709640038F8EE /* bXMLContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLContainer.h; sourceTree = "<group>"; };
+		14CD47900DE709640038F8EE /* bXMLObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLObject.cpp; sourceTree = "<group>"; };
+		14CD47910DE709640038F8EE /* bXMLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLObject.h; sourceTree = "<group>"; };
+		14CE81ED1111D65800479A6C /* bXMLfCast.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLfCast.cpp; sourceTree = "<group>"; };
+		14CE81EE1111D65800479A6C /* bXMLfCast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLfCast.h; sourceTree = "<group>"; };
+		14CE81EF1111D65800479A6C /* bXMLiCast.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLiCast.cpp; sourceTree = "<group>"; };
+		14CE81F01111D65800479A6C /* bXMLiCast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLiCast.h; sourceTree = "<group>"; };
+		14D547FA13B252AF00B93CE7 /* bXMLHVSizeJustification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLHVSizeJustification.cpp; sourceTree = "<group>"; };
+		14D547FB13B252AF00B93CE7 /* bXMLHVSizeJustification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLHVSizeJustification.h; sourceTree = "<group>"; };
+		14D5480B13B254BE00B93CE7 /* bXMLPropHVSize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLPropHVSize.cpp; sourceTree = "<group>"; };
+		14D5480C13B254BE00B93CE7 /* bXMLPropHVSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLPropHVSize.h; sourceTree = "<group>"; };
+		14D5C6F00CD1E3160003D1AA /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14D7585D0C4DEDCE00EA64F2 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14D987DB0BFB068D004B2CA3 /* bXMLBool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLBool.cpp; sourceTree = "<group>"; };
+		14D987DC0BFB068D004B2CA3 /* bXMLBool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLBool.h; sourceTree = "<group>"; };
+		14D987DD0BFB068D004B2CA3 /* bXMLDirectory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLDirectory.cpp; sourceTree = "<group>"; };
+		14D987DE0BFB068D004B2CA3 /* bXMLDirectory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLDirectory.h; sourceTree = "<group>"; };
+		14D987DF0BFB068D004B2CA3 /* bXMLFloat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLFloat.cpp; sourceTree = "<group>"; };
+		14D987E00BFB068D004B2CA3 /* bXMLFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLFloat.h; sourceTree = "<group>"; };
+		14D987E10BFB068D004B2CA3 /* bXMLInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLInt.cpp; sourceTree = "<group>"; };
+		14D987E20BFB068D004B2CA3 /* bXMLInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLInt.h; sourceTree = "<group>"; };
+		14D987E30BFB068D004B2CA3 /* bXMLName.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLName.cpp; sourceTree = "<group>"; };
+		14D987E40BFB068D004B2CA3 /* bXMLName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLName.h; sourceTree = "<group>"; };
+		14D987E50BFB068D004B2CA3 /* bXMLParam.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLParam.cpp; sourceTree = "<group>"; };
+		14D987E60BFB068D004B2CA3 /* bXMLParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLParam.h; sourceTree = "<group>"; };
+		14D987E70BFB068D004B2CA3 /* bXMLPath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLPath.cpp; sourceTree = "<group>"; };
+		14D987E80BFB068D004B2CA3 /* bXMLPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLPath.h; sourceTree = "<group>"; };
+		14D987E90BFB068D004B2CA3 /* bXMLSign.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLSign.cpp; sourceTree = "<group>"; };
+		14D987EA0BFB068D004B2CA3 /* bXMLSign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLSign.h; sourceTree = "<group>"; };
+		14D987EB0BFB068D004B2CA3 /* bXMLVersion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLVersion.cpp; sourceTree = "<group>"; };
+		14D987EC0BFB068D004B2CA3 /* bXMLVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLVersion.h; sourceTree = "<group>"; };
+		14D987EE0BFB068D004B2CA3 /* bXMLClassBound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLClassBound.cpp; sourceTree = "<group>"; };
+		14D987EF0BFB068D004B2CA3 /* bXMLClassBound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLClassBound.h; sourceTree = "<group>"; };
+		14D987F00BFB068D004B2CA3 /* bXMLClassBoundsArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLClassBoundsArray.cpp; sourceTree = "<group>"; };
+		14D987F10BFB068D004B2CA3 /* bXMLClassBoundsArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLClassBoundsArray.h; sourceTree = "<group>"; };
+		14D987F20BFB068D004B2CA3 /* bXMLClassField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLClassField.cpp; sourceTree = "<group>"; };
+		14D987F30BFB068D004B2CA3 /* bXMLClassField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLClassField.h; sourceTree = "<group>"; };
+		14D987F40BFB068D004B2CA3 /* bXMLClassMax.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLClassMax.cpp; sourceTree = "<group>"; };
+		14D987F50BFB068D004B2CA3 /* bXMLClassMax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLClassMax.h; sourceTree = "<group>"; };
+		14D987F60BFB068D004B2CA3 /* bXMLClassMin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLClassMin.cpp; sourceTree = "<group>"; };
+		14D987F70BFB068D004B2CA3 /* bXMLClassMin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLClassMin.h; sourceTree = "<group>"; };
+		14D987F80BFB068D004B2CA3 /* bXMLClassName.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLClassName.cpp; sourceTree = "<group>"; };
+		14D987F90BFB068D004B2CA3 /* bXMLClassName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLClassName.h; sourceTree = "<group>"; };
+		14D987FA0BFB068D004B2CA3 /* bXMLSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLSort.cpp; sourceTree = "<group>"; };
+		14D987FB0BFB068D004B2CA3 /* bXMLSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLSort.h; sourceTree = "<group>"; };
+		14D987FD0BFB068D004B2CA3 /* bXMLAlpha.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLAlpha.cpp; sourceTree = "<group>"; };
+		14D987FE0BFB068D004B2CA3 /* bXMLAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLAlpha.h; sourceTree = "<group>"; };
+		14D987FF0BFB068D004B2CA3 /* bXMLBlack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLBlack.cpp; sourceTree = "<group>"; };
+		14D988000BFB068D004B2CA3 /* bXMLBlack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLBlack.h; sourceTree = "<group>"; };
+		14D988010BFB068D004B2CA3 /* bXMLBlue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLBlue.cpp; sourceTree = "<group>"; };
+		14D988020BFB068D004B2CA3 /* bXMLBlue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLBlue.h; sourceTree = "<group>"; };
+		14D988030BFB068D004B2CA3 /* bXMLCyan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLCyan.cpp; sourceTree = "<group>"; };
+		14D988040BFB068D004B2CA3 /* bXMLCyan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLCyan.h; sourceTree = "<group>"; };
+		14D988050BFB068D004B2CA3 /* bXMLFill.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLFill.cpp; sourceTree = "<group>"; };
+		14D988060BFB068D004B2CA3 /* bXMLFill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLFill.h; sourceTree = "<group>"; };
+		14D988070BFB068D004B2CA3 /* bXMLFillPattern.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLFillPattern.cpp; sourceTree = "<group>"; };
+		14D988080BFB068D004B2CA3 /* bXMLFillPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLFillPattern.h; sourceTree = "<group>"; };
+		14D988090BFB068D004B2CA3 /* bXMLGreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLGreen.cpp; sourceTree = "<group>"; };
+		14D9880A0BFB068D004B2CA3 /* bXMLGreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLGreen.h; sourceTree = "<group>"; };
+		14D9880B0BFB068D004B2CA3 /* bXMLMagenta.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLMagenta.cpp; sourceTree = "<group>"; };
+		14D9880C0BFB068D004B2CA3 /* bXMLMagenta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLMagenta.h; sourceTree = "<group>"; };
+		14D9880D0BFB068D004B2CA3 /* bXMLRed.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLRed.cpp; sourceTree = "<group>"; };
+		14D9880E0BFB068D004B2CA3 /* bXMLRed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLRed.h; sourceTree = "<group>"; };
+		14D9880F0BFB068D004B2CA3 /* bXMLStroke.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLStroke.cpp; sourceTree = "<group>"; };
+		14D988100BFB068D004B2CA3 /* bXMLStroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLStroke.h; sourceTree = "<group>"; };
+		14D988110BFB068D004B2CA3 /* bXMLStrokePattern.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLStrokePattern.cpp; sourceTree = "<group>"; };
+		14D988120BFB068D004B2CA3 /* bXMLStrokePattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLStrokePattern.h; sourceTree = "<group>"; };
+		14D988130BFB068D004B2CA3 /* bXMLYellow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLYellow.cpp; sourceTree = "<group>"; };
+		14D988140BFB068D004B2CA3 /* bXMLYellow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLYellow.h; sourceTree = "<group>"; };
+		14D988160BFB068D004B2CA3 /* bXMLDBBool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLDBBool.cpp; sourceTree = "<group>"; };
+		14D988170BFB068D004B2CA3 /* bXMLDBBool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLDBBool.h; sourceTree = "<group>"; };
+		14D988180BFB068D004B2CA3 /* bXMLDBChar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLDBChar.cpp; sourceTree = "<group>"; };
+		14D988190BFB068D004B2CA3 /* bXMLDBChar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLDBChar.h; sourceTree = "<group>"; };
+		14D9881A0BFB068D004B2CA3 /* bXMLDBDate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLDBDate.cpp; sourceTree = "<group>"; };
+		14D9881B0BFB068D004B2CA3 /* bXMLDBDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLDBDate.h; sourceTree = "<group>"; };
+		14D9881C0BFB068D004B2CA3 /* bXMLDBField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLDBField.cpp; sourceTree = "<group>"; };
+		14D9881D0BFB068D004B2CA3 /* bXMLDBField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLDBField.h; sourceTree = "<group>"; };
+		14D9881E0BFB068D004B2CA3 /* bXMLDBFloat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLDBFloat.cpp; sourceTree = "<group>"; };
+		14D9881F0BFB068D004B2CA3 /* bXMLDBFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLDBFloat.h; sourceTree = "<group>"; };
+		14D988200BFB068D004B2CA3 /* bXMLDBInt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLDBInt.cpp; sourceTree = "<group>"; };
+		14D988210BFB068D004B2CA3 /* bXMLDBInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLDBInt.h; sourceTree = "<group>"; };
+		14D988220BFB068D004B2CA3 /* bXMLDBSelKind.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLDBSelKind.cpp; sourceTree = "<group>"; };
+		14D988230BFB068D004B2CA3 /* bXMLDBSelKind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLDBSelKind.h; sourceTree = "<group>"; };
+		14D988240BFB068D004B2CA3 /* bXMLDBTime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLDBTime.cpp; sourceTree = "<group>"; };
+		14D988250BFB068D004B2CA3 /* bXMLDBTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLDBTime.h; sourceTree = "<group>"; };
+		14D988260BFB068D004B2CA3 /* bXMLDBType.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLDBType.cpp; sourceTree = "<group>"; };
+		14D988270BFB068D004B2CA3 /* bXMLDBType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLDBType.h; sourceTree = "<group>"; };
+		14D988280BFB068D004B2CA3 /* bXMLDBUseMasked.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLDBUseMasked.cpp; sourceTree = "<group>"; };
+		14D988290BFB068D004B2CA3 /* bXMLDBUseMasked.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLDBUseMasked.h; sourceTree = "<group>"; };
+		14D9882B0BFB068D004B2CA3 /* bSubStyle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bSubStyle.cpp; sourceTree = "<group>"; };
+		14D9882C0BFB068D004B2CA3 /* bSubStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bSubStyle.h; sourceTree = "<group>"; };
+		14D9882E0BFB068D004B2CA3 /* bXMLColorField8.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLColorField8.cpp; sourceTree = "<group>"; };
+		14D9882F0BFB068D004B2CA3 /* bXMLColorField8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLColorField8.h; sourceTree = "<group>"; };
+		14D988300BFB068D004B2CA3 /* bXMLField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLField.cpp; sourceTree = "<group>"; };
+		14D988310BFB068D004B2CA3 /* bXMLField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLField.h; sourceTree = "<group>"; };
+		14D988320BFB068D004B2CA3 /* bXMLValue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLValue.cpp; sourceTree = "<group>"; };
+		14D988330BFB068D004B2CA3 /* bXMLValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLValue.h; sourceTree = "<group>"; };
+		14D988350BFB068D004B2CA3 /* bXMLStrLen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLStrLen.cpp; sourceTree = "<group>"; };
+		14D988360BFB068D004B2CA3 /* bXMLStrLen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLStrLen.h; sourceTree = "<group>"; };
+		14D988370BFB068D004B2CA3 /* bXMLStrLwr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLStrLwr.cpp; sourceTree = "<group>"; };
+		14D988380BFB068D004B2CA3 /* bXMLStrLwr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLStrLwr.h; sourceTree = "<group>"; };
+		14D988390BFB068D004B2CA3 /* bXMLStrSntFCUpr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLStrSntFCUpr.cpp; sourceTree = "<group>"; };
+		14D9883A0BFB068D004B2CA3 /* bXMLStrSntFCUpr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLStrSntFCUpr.h; sourceTree = "<group>"; };
+		14D9883B0BFB068D004B2CA3 /* bXMLStrUpr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLStrUpr.cpp; sourceTree = "<group>"; };
+		14D9883C0BFB068D004B2CA3 /* bXMLStrUpr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLStrUpr.h; sourceTree = "<group>"; };
+		14D9883D0BFB068D004B2CA3 /* bXMLStrWrdFCUpr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLStrWrdFCUpr.cpp; sourceTree = "<group>"; };
+		14D9883E0BFB068D004B2CA3 /* bXMLStrWrdFCUpr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLStrWrdFCUpr.h; sourceTree = "<group>"; };
+		14D988400BFB068D004B2CA3 /* bXMLArrow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLArrow.cpp; sourceTree = "<group>"; };
+		14D988410BFB068D004B2CA3 /* bXMLArrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLArrow.h; sourceTree = "<group>"; };
+		14D988420BFB068D004B2CA3 /* bXMLCentroid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLCentroid.cpp; sourceTree = "<group>"; };
+		14D988430BFB068D004B2CA3 /* bXMLCentroid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLCentroid.h; sourceTree = "<group>"; };
+		14D988440BFB068D004B2CA3 /* bXMLDecal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLDecal.cpp; sourceTree = "<group>"; };
+		14D988450BFB068E004B2CA3 /* bXMLDecal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLDecal.h; sourceTree = "<group>"; };
+		14D988460BFB068E004B2CA3 /* bXMLLineTo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLLineTo.cpp; sourceTree = "<group>"; };
+		14D988470BFB068E004B2CA3 /* bXMLLineTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLLineTo.h; sourceTree = "<group>"; };
+		14D988480BFB068E004B2CA3 /* bXMLOffsetCoord.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLOffsetCoord.cpp; sourceTree = "<group>"; };
+		14D988490BFB068E004B2CA3 /* bXMLOffsetCoord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLOffsetCoord.h; sourceTree = "<group>"; };
+		14D9884A0BFB068E004B2CA3 /* bXMLPointJustification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLPointJustification.cpp; sourceTree = "<group>"; };
+		14D9884B0BFB068E004B2CA3 /* bXMLPointJustification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLPointJustification.h; sourceTree = "<group>"; };
+		14D9884C0BFB068E004B2CA3 /* bXMLPolyJustification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLPolyJustification.cpp; sourceTree = "<group>"; };
+		14D9884D0BFB068E004B2CA3 /* bXMLPolyJustification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLPolyJustification.h; sourceTree = "<group>"; };
+		14D9884E0BFB068E004B2CA3 /* bXMLSmooth.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLSmooth.cpp; sourceTree = "<group>"; };
+		14D9884F0BFB068E004B2CA3 /* bXMLSmooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLSmooth.h; sourceTree = "<group>"; };
+		14D988510BFB068E004B2CA3 /* bXMLLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLLayer.cpp; sourceTree = "<group>"; };
+		14D988520BFB068E004B2CA3 /* bXMLLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLLayer.h; sourceTree = "<group>"; };
+		14D988530BFB068E004B2CA3 /* bXMLLayerArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLLayerArray.cpp; sourceTree = "<group>"; };
+		14D988540BFB068E004B2CA3 /* bXMLLayerArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLLayerArray.h; sourceTree = "<group>"; };
+		14D988550BFB068E004B2CA3 /* bXMLSelectable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLSelectable.cpp; sourceTree = "<group>"; };
+		14D988560BFB068E004B2CA3 /* bXMLSelectable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLSelectable.h; sourceTree = "<group>"; };
+		14D988570BFB068E004B2CA3 /* bXMLStyle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLStyle.cpp; sourceTree = "<group>"; };
+		14D988580BFB068E004B2CA3 /* bXMLStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLStyle.h; sourceTree = "<group>"; };
+		14D988590BFB068E004B2CA3 /* bXMLType.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLType.cpp; sourceTree = "<group>"; };
+		14D9885A0BFB068E004B2CA3 /* bXMLType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLType.h; sourceTree = "<group>"; };
+		14D9885B0BFB068E004B2CA3 /* bXMLView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLView.cpp; sourceTree = "<group>"; };
+		14D9885C0BFB068E004B2CA3 /* bXMLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLView.h; sourceTree = "<group>"; };
+		14D9885D0BFB068E004B2CA3 /* bXMLVisible.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLVisible.cpp; sourceTree = "<group>"; };
+		14D9885E0BFB068E004B2CA3 /* bXMLVisible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLVisible.h; sourceTree = "<group>"; };
+		14D988600BFB068E004B2CA3 /* bXMLAnd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLAnd.cpp; sourceTree = "<group>"; };
+		14D988610BFB068E004B2CA3 /* bXMLAnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLAnd.h; sourceTree = "<group>"; };
+		14D988620BFB068E004B2CA3 /* bXMLBeginWith.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLBeginWith.cpp; sourceTree = "<group>"; };
+		14D988630BFB068E004B2CA3 /* bXMLBeginWith.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLBeginWith.h; sourceTree = "<group>"; };
+		14D988640BFB068E004B2CA3 /* bXMLContain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLContain.cpp; sourceTree = "<group>"; };
+		14D988650BFB068E004B2CA3 /* bXMLContain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLContain.h; sourceTree = "<group>"; };
+		14D988660BFB068E004B2CA3 /* bXMLDiv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLDiv.cpp; sourceTree = "<group>"; };
+		14D988670BFB068E004B2CA3 /* bXMLDiv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLDiv.h; sourceTree = "<group>"; };
+		14D988680BFB068E004B2CA3 /* bXMLEndWith.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLEndWith.cpp; sourceTree = "<group>"; };
+		14D988690BFB068E004B2CA3 /* bXMLEndWith.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLEndWith.h; sourceTree = "<group>"; };
+		14D9886A0BFB068E004B2CA3 /* bXMLEqual.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLEqual.cpp; sourceTree = "<group>"; };
+		14D9886B0BFB068E004B2CA3 /* bXMLEqual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLEqual.h; sourceTree = "<group>"; };
+		14D9886C0BFB068E004B2CA3 /* bXMLFormula.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLFormula.cpp; sourceTree = "<group>"; };
+		14D9886D0BFB068E004B2CA3 /* bXMLFormula.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLFormula.h; sourceTree = "<group>"; };
+		14D9886E0BFB068E004B2CA3 /* bXMLHigher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLHigher.cpp; sourceTree = "<group>"; };
+		14D9886F0BFB068E004B2CA3 /* bXMLHigher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLHigher.h; sourceTree = "<group>"; };
+		14D988700BFB068E004B2CA3 /* bXMLHigherOrEqual.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLHigherOrEqual.cpp; sourceTree = "<group>"; };
+		14D988710BFB068E004B2CA3 /* bXMLHigherOrEqual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLHigherOrEqual.h; sourceTree = "<group>"; };
+		14D988720BFB068E004B2CA3 /* bXMLLower.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLLower.cpp; sourceTree = "<group>"; };
+		14D988730BFB068E004B2CA3 /* bXMLLower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLLower.h; sourceTree = "<group>"; };
+		14D988740BFB068E004B2CA3 /* bXMLLowerOrEqual.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLLowerOrEqual.cpp; sourceTree = "<group>"; };
+		14D988750BFB068E004B2CA3 /* bXMLLowerOrEqual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLLowerOrEqual.h; sourceTree = "<group>"; };
+		14D988760BFB068E004B2CA3 /* bXMLMinus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLMinus.cpp; sourceTree = "<group>"; };
+		14D988770BFB068E004B2CA3 /* bXMLMinus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLMinus.h; sourceTree = "<group>"; };
+		14D988780BFB068E004B2CA3 /* bXMLMult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLMult.cpp; sourceTree = "<group>"; };
+		14D988790BFB068E004B2CA3 /* bXMLMult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLMult.h; sourceTree = "<group>"; };
+		14D9887A0BFB068E004B2CA3 /* bXMLNotEqual.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLNotEqual.cpp; sourceTree = "<group>"; };
+		14D9887B0BFB068E004B2CA3 /* bXMLNotEqual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLNotEqual.h; sourceTree = "<group>"; };
+		14D9887C0BFB068E004B2CA3 /* bXMLOr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLOr.cpp; sourceTree = "<group>"; };
+		14D9887D0BFB068E004B2CA3 /* bXMLOr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLOr.h; sourceTree = "<group>"; };
+		14D9887E0BFB068E004B2CA3 /* bXMLPlus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLPlus.cpp; sourceTree = "<group>"; };
+		14D9887F0BFB068E004B2CA3 /* bXMLPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLPlus.h; sourceTree = "<group>"; };
+		14D988800BFB068E004B2CA3 /* bXMLPow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLPow.cpp; sourceTree = "<group>"; };
+		14D988810BFB068E004B2CA3 /* bXMLPow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLPow.h; sourceTree = "<group>"; };
+		14D988820BFB068E004B2CA3 /* bXMLStrCat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLStrCat.cpp; sourceTree = "<group>"; };
+		14D988830BFB068E004B2CA3 /* bXMLStrCat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLStrCat.h; sourceTree = "<group>"; };
+		14D988850BFB068E004B2CA3 /* bXMLPass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLPass.cpp; sourceTree = "<group>"; };
+		14D988860BFB068E004B2CA3 /* bXMLPass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLPass.h; sourceTree = "<group>"; };
+		14D988870BFB068E004B2CA3 /* bXMLPassCount.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLPassCount.cpp; sourceTree = "<group>"; };
+		14D988880BFB068E004B2CA3 /* bXMLPassCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLPassCount.h; sourceTree = "<group>"; };
+		14D9888A0BFB068E004B2CA3 /* bXMLAngle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLAngle.cpp; sourceTree = "<group>"; };
+		14D9888B0BFB068E004B2CA3 /* bXMLAngle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLAngle.h; sourceTree = "<group>"; };
+		14D9888C0BFB068E004B2CA3 /* bXMLCap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLCap.cpp; sourceTree = "<group>"; };
+		14D9888D0BFB068E004B2CA3 /* bXMLCap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLCap.h; sourceTree = "<group>"; };
+		14D9888E0BFB068E004B2CA3 /* bXMLCharSpacing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLCharSpacing.cpp; sourceTree = "<group>"; };
+		14D9888F0BFB068E004B2CA3 /* bXMLCharSpacing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLCharSpacing.h; sourceTree = "<group>"; };
+		14D988900BFB068E004B2CA3 /* bXMLDash.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLDash.cpp; sourceTree = "<group>"; };
+		14D988910BFB068E004B2CA3 /* bXMLDash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLDash.h; sourceTree = "<group>"; };
+		14D988920BFB068E004B2CA3 /* bXMLFont.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLFont.cpp; sourceTree = "<group>"; };
+		14D988930BFB068E004B2CA3 /* bXMLFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLFont.h; sourceTree = "<group>"; };
+		14D988940BFB068E004B2CA3 /* bXMLHSize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLHSize.cpp; sourceTree = "<group>"; };
+		14D988950BFB068E004B2CA3 /* bXMLHSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLHSize.h; sourceTree = "<group>"; };
+		14D988960BFB068E004B2CA3 /* bXMLImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLImage.cpp; sourceTree = "<group>"; };
+		14D988970BFB068E004B2CA3 /* bXMLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLImage.h; sourceTree = "<group>"; };
+		14D988980BFB068E004B2CA3 /* bXMLJoin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLJoin.cpp; sourceTree = "<group>"; };
+		14D988990BFB068E004B2CA3 /* bXMLJoin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLJoin.h; sourceTree = "<group>"; };
+		14D9889A0BFB068E004B2CA3 /* bXMLLeading.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLLeading.cpp; sourceTree = "<group>"; };
+		14D9889B0BFB068E004B2CA3 /* bXMLLeading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLLeading.h; sourceTree = "<group>"; };
+		14D9889C0BFB068E004B2CA3 /* bXMLMiterLimit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLMiterLimit.cpp; sourceTree = "<group>"; };
+		14D9889D0BFB068E004B2CA3 /* bXMLMiterLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLMiterLimit.h; sourceTree = "<group>"; };
+		14D9889E0BFB068E004B2CA3 /* bXMLPDFDocument.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLPDFDocument.cpp; sourceTree = "<group>"; };
+		14D9889F0BFB068E004B2CA3 /* bXMLPDFDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLPDFDocument.h; sourceTree = "<group>"; };
+		14D988A10BFB068E004B2CA3 /* bXMLPropSize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLPropSize.cpp; sourceTree = "<group>"; };
+		14D988A20BFB068E004B2CA3 /* bXMLPropSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLPropSize.h; sourceTree = "<group>"; };
+		14D988A30BFB068E004B2CA3 /* bXMLPropWidth.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLPropWidth.cpp; sourceTree = "<group>"; };
+		14D988A40BFB068E004B2CA3 /* bXMLPropWidth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLPropWidth.h; sourceTree = "<group>"; };
+		14D988A50BFB068E004B2CA3 /* bXMLRaster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLRaster.cpp; sourceTree = "<group>"; };
+		14D988A60BFB068E004B2CA3 /* bXMLRaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLRaster.h; sourceTree = "<group>"; };
+		14D988A70BFB068E004B2CA3 /* bXMLSize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLSize.cpp; sourceTree = "<group>"; };
+		14D988A80BFB068E004B2CA3 /* bXMLSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLSize.h; sourceTree = "<group>"; };
+		14D988A90BFB068E004B2CA3 /* bXMLSubStyle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLSubStyle.cpp; sourceTree = "<group>"; };
+		14D988AA0BFB068E004B2CA3 /* bXMLSubStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLSubStyle.h; sourceTree = "<group>"; };
+		14D988AB0BFB068E004B2CA3 /* bXMLText.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLText.cpp; sourceTree = "<group>"; };
+		14D988AC0BFB068E004B2CA3 /* bXMLText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLText.h; sourceTree = "<group>"; };
+		14D988AD0BFB068E004B2CA3 /* bXMLVSize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLVSize.cpp; sourceTree = "<group>"; };
+		14D988AE0BFB068E004B2CA3 /* bXMLVSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLVSize.h; sourceTree = "<group>"; };
+		14D988AF0BFB068E004B2CA3 /* bXMLWidth.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLWidth.cpp; sourceTree = "<group>"; };
+		14D988B00BFB068E004B2CA3 /* bXMLWidth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLWidth.h; sourceTree = "<group>"; };
+		14D988B10BFB068E004B2CA3 /* bXMLWordSpacing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLWordSpacing.cpp; sourceTree = "<group>"; };
+		14D988B20BFB068E004B2CA3 /* bXMLWordSpacing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLWordSpacing.h; sourceTree = "<group>"; };
+		14D988B40BFB068E004B2CA3 /* bXMLScaleMax.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLScaleMax.cpp; sourceTree = "<group>"; };
+		14D988B50BFB068E004B2CA3 /* bXMLScaleMax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLScaleMax.h; sourceTree = "<group>"; };
+		14D988B60BFB068E004B2CA3 /* bXMLScaleMin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLScaleMin.cpp; sourceTree = "<group>"; };
+		14D988B70BFB068E004B2CA3 /* bXMLScaleMin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLScaleMin.h; sourceTree = "<group>"; };
+		14D988B80BFB068E004B2CA3 /* bXMLScaleRef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLScaleRef.cpp; sourceTree = "<group>"; };
+		14D988B90BFB068E004B2CA3 /* bXMLScaleRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLScaleRef.h; sourceTree = "<group>"; };
+		14D988BA0BFB068E004B2CA3 /* bXMLUnitCoef.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLUnitCoef.cpp; sourceTree = "<group>"; };
+		14D988BB0BFB068E004B2CA3 /* bXMLUnitCoef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLUnitCoef.h; sourceTree = "<group>"; };
+		14D988BD0BFB068E004B2CA3 /* bXMLCondition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLCondition.cpp; sourceTree = "<group>"; };
+		14D988BE0BFB068E004B2CA3 /* bXMLCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLCondition.h; sourceTree = "<group>"; };
+		14D988BF0BFB068E004B2CA3 /* bXMLGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLGeometry.cpp; sourceTree = "<group>"; };
+		14D988C00BFB068E004B2CA3 /* bXMLGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLGeometry.h; sourceTree = "<group>"; };
+		14D988C10BFB068E004B2CA3 /* bXMLGlobals.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLGlobals.cpp; sourceTree = "<group>"; };
+		14D988C20BFB068E004B2CA3 /* bXMLGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLGlobals.h; sourceTree = "<group>"; };
+		14D988C30BFB068E004B2CA3 /* bXMLRender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLRender.cpp; sourceTree = "<group>"; };
+		14D988C40BFB068E004B2CA3 /* bXMLRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLRender.h; sourceTree = "<group>"; };
+		14D988C50BFB068E004B2CA3 /* bXMLStdGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLStdGeometry.cpp; sourceTree = "<group>"; };
+		14D988C60BFB068E004B2CA3 /* bXMLStdGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLStdGeometry.h; sourceTree = "<group>"; };
+		14D988C70BFB068E004B2CA3 /* bXMLStyleIdentification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLStyleIdentification.cpp; sourceTree = "<group>"; };
+		14D988C80BFB068E004B2CA3 /* bXMLStyleIdentification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLStyleIdentification.h; sourceTree = "<group>"; };
+		14D988C90BFB068E004B2CA3 /* bXMLStyleRun.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLStyleRun.cpp; sourceTree = "<group>"; };
+		14D988CA0BFB068E004B2CA3 /* bXMLStyleRun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLStyleRun.h; sourceTree = "<group>"; };
+		14D988CB0BFB068E004B2CA3 /* bXMLValidity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLValidity.cpp; sourceTree = "<group>"; };
+		14D988CC0BFB068E004B2CA3 /* bXMLValidity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLValidity.h; sourceTree = "<group>"; };
+		14D988CE0BFB068E004B2CA3 /* bXMLCircleStyle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLCircleStyle.cpp; sourceTree = "<group>"; };
+		14D988CF0BFB068E004B2CA3 /* bXMLCircleStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLCircleStyle.h; sourceTree = "<group>"; };
+		14D988D00BFB068E004B2CA3 /* bXMLIconStyle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLIconStyle.cpp; sourceTree = "<group>"; };
+		14D988D10BFB068E004B2CA3 /* bXMLIconStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLIconStyle.h; sourceTree = "<group>"; };
+		14D988D20BFB068E004B2CA3 /* bXMLPolygonStyle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLPolygonStyle.cpp; sourceTree = "<group>"; };
+		14D988D30BFB068E004B2CA3 /* bXMLPolygonStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLPolygonStyle.h; sourceTree = "<group>"; };
+		14D988D40BFB068E004B2CA3 /* bXMLPolylineStyle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLPolylineStyle.cpp; sourceTree = "<group>"; };
+		14D988D50BFB068E004B2CA3 /* bXMLPolylineStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLPolylineStyle.h; sourceTree = "<group>"; };
+		14D988D60BFB068E004B2CA3 /* bXMLRasterStyle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLRasterStyle.cpp; sourceTree = "<group>"; };
+		14D988D70BFB068E004B2CA3 /* bXMLRasterStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLRasterStyle.h; sourceTree = "<group>"; };
+		14D988D80BFB068E004B2CA3 /* bXMLRectStyle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLRectStyle.cpp; sourceTree = "<group>"; };
+		14D988D90BFB068E004B2CA3 /* bXMLRectStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLRectStyle.h; sourceTree = "<group>"; };
+		14D988DA0BFB068E004B2CA3 /* bXMLTextStyle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLTextStyle.cpp; sourceTree = "<group>"; };
+		14D988DB0BFB068E004B2CA3 /* bXMLTextStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLTextStyle.h; sourceTree = "<group>"; };
+		14D988DD0BFB068E004B2CA3 /* bXMLfcalcUser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLfcalcUser.cpp; sourceTree = "<group>"; };
+		14D988DE0BFB068E004B2CA3 /* bXMLfcalcUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLfcalcUser.h; sourceTree = "<group>"; };
+		14D988DF0BFB068E004B2CA3 /* bXMLfmacroUser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLfmacroUser.cpp; sourceTree = "<group>"; };
+		14D988E00BFB068E004B2CA3 /* bXMLfmacroUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLfmacroUser.h; sourceTree = "<group>"; };
+		14D988E10BFB068E004B2CA3 /* bXMLfvarUser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLfvarUser.cpp; sourceTree = "<group>"; };
+		14D988E20BFB068E004B2CA3 /* bXMLfvarUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLfvarUser.h; sourceTree = "<group>"; };
+		14D98A220BFB0CAE004B2CA3 /* bXMLSubStyleRun.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLSubStyleRun.cpp; sourceTree = "<group>"; };
+		14D98A230BFB0CAE004B2CA3 /* bXMLSubStyleRun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLSubStyleRun.h; sourceTree = "<group>"; };
+		14D98A400BFB0D9F004B2CA3 /* bXMLSubGlobals.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLSubGlobals.cpp; sourceTree = "<group>"; };
+		14D98A410BFB0D9F004B2CA3 /* bXMLSubGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLSubGlobals.h; sourceTree = "<group>"; };
+		14D98A940BFB1130004B2CA3 /* bXMLSubRender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLSubRender.cpp; sourceTree = "<group>"; };
+		14D98A950BFB1130004B2CA3 /* bXMLSubRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLSubRender.h; sourceTree = "<group>"; };
+		14D98A980BFB11E0004B2CA3 /* bXMLSubClassBound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLSubClassBound.cpp; sourceTree = "<group>"; };
+		14D98A990BFB11E0004B2CA3 /* bXMLSubClassBound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLSubClassBound.h; sourceTree = "<group>"; };
+		14D98A9A0BFB11E0004B2CA3 /* bXMLSubClassBoundsArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLSubClassBoundsArray.cpp; sourceTree = "<group>"; };
+		14D98A9B0BFB11E0004B2CA3 /* bXMLSubClassBoundsArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLSubClassBoundsArray.h; sourceTree = "<group>"; };
+		14D98A9C0BFB11E0004B2CA3 /* bXMLSubClassField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLSubClassField.cpp; sourceTree = "<group>"; };
+		14D98A9D0BFB11E0004B2CA3 /* bXMLSubClassField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLSubClassField.h; sourceTree = "<group>"; };
+		14D98A9E0BFB11E0004B2CA3 /* bXMLSubClassName.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLSubClassName.cpp; sourceTree = "<group>"; };
+		14D98A9F0BFB11E0004B2CA3 /* bXMLSubClassName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLSubClassName.h; sourceTree = "<group>"; };
+		14D98BF00BFB3179004B2CA3 /* bXMLSqrt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLSqrt.cpp; sourceTree = "<group>"; };
+		14D98BF10BFB3179004B2CA3 /* bXMLSqrt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLSqrt.h; sourceTree = "<group>"; };
+		14D98BF80BFB34F2004B2CA3 /* bXMLCeil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLCeil.cpp; sourceTree = "<group>"; };
+		14D98BF90BFB34F2004B2CA3 /* bXMLCeil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLCeil.h; sourceTree = "<group>"; };
+		14D98BFA0BFB34F2004B2CA3 /* bXMLCos.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLCos.cpp; sourceTree = "<group>"; };
+		14D98BFB0BFB34F2004B2CA3 /* bXMLCos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLCos.h; sourceTree = "<group>"; };
+		14D98BFC0BFB34F2004B2CA3 /* bXMLExp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLExp.cpp; sourceTree = "<group>"; };
+		14D98BFD0BFB34F2004B2CA3 /* bXMLExp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLExp.h; sourceTree = "<group>"; };
+		14D98BFE0BFB34F2004B2CA3 /* bXMLFloor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLFloor.cpp; sourceTree = "<group>"; };
+		14D98BFF0BFB34F2004B2CA3 /* bXMLFloor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLFloor.h; sourceTree = "<group>"; };
+		14D98C000BFB34F2004B2CA3 /* bXMLInv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLInv.cpp; sourceTree = "<group>"; };
+		14D98C010BFB34F2004B2CA3 /* bXMLInv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLInv.h; sourceTree = "<group>"; };
+		14D98C020BFB34F2004B2CA3 /* bXMLLn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLLn.cpp; sourceTree = "<group>"; };
+		14D98C030BFB34F2004B2CA3 /* bXMLLn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLLn.h; sourceTree = "<group>"; };
+		14D98C040BFB34F2004B2CA3 /* bXMLLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLLog.cpp; sourceTree = "<group>"; };
+		14D98C050BFB34F2004B2CA3 /* bXMLLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLLog.h; sourceTree = "<group>"; };
+		14D98C060BFB34F2004B2CA3 /* bXMLNot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLNot.cpp; sourceTree = "<group>"; };
+		14D98C070BFB34F2004B2CA3 /* bXMLNot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLNot.h; sourceTree = "<group>"; };
+		14D98C080BFB34F2004B2CA3 /* bXMLRound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLRound.cpp; sourceTree = "<group>"; };
+		14D98C090BFB34F2004B2CA3 /* bXMLRound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLRound.h; sourceTree = "<group>"; };
+		14D98C0A0BFB34F2004B2CA3 /* bXMLSin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLSin.cpp; sourceTree = "<group>"; };
+		14D98C0B0BFB34F2004B2CA3 /* bXMLSin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLSin.h; sourceTree = "<group>"; };
+		14D98C0C0BFB34F2004B2CA3 /* bXMLSqr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLSqr.cpp; sourceTree = "<group>"; };
+		14D98C0D0BFB34F2004B2CA3 /* bXMLSqr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLSqr.h; sourceTree = "<group>"; };
+		14D98C0E0BFB34F2004B2CA3 /* bXMLTan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLTan.cpp; sourceTree = "<group>"; };
+		14D98C0F0BFB34F2004B2CA3 /* bXMLTan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLTan.h; sourceTree = "<group>"; };
+		14D98C2B0BFB38C0004B2CA3 /* bXMLFact.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLFact.cpp; sourceTree = "<group>"; };
+		14D98C2C0BFB38C0004B2CA3 /* bXMLFact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLFact.h; sourceTree = "<group>"; };
+		14D98C3E0BFB3F3B004B2CA3 /* MacMapStats.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacMapStats.framework; path = /Library/Frameworks/MacMapStats.framework; sourceTree = "<absolute>"; };
+		14D98CE10BFB5821004B2CA3 /* bXMLSum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLSum.cpp; sourceTree = "<group>"; };
+		14D98CE20BFB5821004B2CA3 /* bXMLSum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLSum.h; sourceTree = "<group>"; };
+		14DE77B80C3BDDC10025B780 /* bXMLColorField16M.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLColorField16M.cpp; sourceTree = "<group>"; };
+		14DE77B90C3BDDC10025B780 /* bXMLColorField16M.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLColorField16M.h; sourceTree = "<group>"; };
+		14DE77F40C3BE3750025B780 /* bXMLBgFill.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLBgFill.cpp; sourceTree = "<group>"; };
+		14DE77F50C3BE3750025B780 /* bXMLBgFill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLBgFill.h; sourceTree = "<group>"; };
+		14DE78050C3BE8B50025B780 /* bXMLShiftX.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLShiftX.cpp; sourceTree = "<group>"; };
+		14DE78060C3BE8B50025B780 /* bXMLShiftX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLShiftX.h; sourceTree = "<group>"; };
+		14DE78070C3BE8B50025B780 /* bXMLShiftY.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLShiftY.cpp; sourceTree = "<group>"; };
+		14DE78080C3BE8B50025B780 /* bXMLShiftY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLShiftY.h; sourceTree = "<group>"; };
+		14DE784A0C3BF9D70025B780 /* info.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = info.txt; sourceTree = "<group>"; };
+		14E0BD8F0FF4B25D00992A80 /* bXMLScreenGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLScreenGeometry.cpp; sourceTree = "<group>"; };
+		14E0BD900FF4B25D00992A80 /* bXMLScreenGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLScreenGeometry.h; sourceTree = "<group>"; };
+		14E0BDB40FF4C54D00992A80 /* bXMLWMSRaster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLWMSRaster.cpp; sourceTree = "<group>"; };
+		14E0BDB50FF4C54D00992A80 /* bXMLWMSRaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLWMSRaster.h; sourceTree = "<group>"; };
+		14E79951125B18E9008A5A1B /* bXMLBgStroke.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLBgStroke.cpp; sourceTree = "<group>"; };
+		14E79952125B18E9008A5A1B /* bXMLBgStroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLBgStroke.h; sourceTree = "<group>"; };
+		14E79967125B1AB0008A5A1B /* bXMLBgHeightMaj.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLBgHeightMaj.cpp; sourceTree = "<group>"; };
+		14E79968125B1AB0008A5A1B /* bXMLBgHeightMaj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLBgHeightMaj.h; sourceTree = "<group>"; };
+		14E79969125B1AB0008A5A1B /* bXMLBgWidth.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLBgWidth.cpp; sourceTree = "<group>"; };
+		14E7996A125B1AB0008A5A1B /* bXMLBgWidth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLBgWidth.h; sourceTree = "<group>"; };
+		14E7996B125B1AB0008A5A1B /* bXMLBgWidthMaj.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLBgWidthMaj.cpp; sourceTree = "<group>"; };
+		14E7996C125B1AB0008A5A1B /* bXMLBgWidthMaj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLBgWidthMaj.h; sourceTree = "<group>"; };
+		14E7996D125B1AB0008A5A1B /* bXMLRoundedRadius.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLRoundedRadius.cpp; sourceTree = "<group>"; };
+		14E7996E125B1AB0008A5A1B /* bXMLRoundedRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLRoundedRadius.h; sourceTree = "<group>"; };
+		14EB5EBC14F52B610076415A /* bXMLTextRptJustification.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLTextRptJustification.cpp; sourceTree = "<group>"; };
+		14EB5EBD14F52B610076415A /* bXMLTextRptJustification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLTextRptJustification.h; sourceTree = "<group>"; };
+		14EC7B630E1919FD009E8CBE /* bXMLPropColor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLPropColor.cpp; sourceTree = "<group>"; };
+		14EC7B640E1919FD009E8CBE /* bXMLPropColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLPropColor.h; sourceTree = "<group>"; };
+		8D01CCD10486CAD60068D4B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D01CCD20486CAD60068D4B7 /* XMLDictionary.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMLDictionary.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D01CCCD0486CAD60068D4B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */,
+				14C29AF008C3851700E8920D /* mox_intf.framework in Frameworks */,
+				14C29AF108C3851700E8920D /* std_ext.framework in Frameworks */,
+				1457998E099B8A28009FE4A5 /* MacMapSuite.framework in Frameworks */,
+				14D98C3F0BFB3F3B004B2CA3 /* MacMapStats.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77ADFE841716C02AAC07 /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				19C28FB4FE9D528D11CA2CBB /* Products */,
+			);
+			name = Template;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				14D98C3E0BFB3F3B004B2CA3 /* MacMapStats.framework */,
+				1457998D099B8A28009FE4A5 /* MacMapSuite.framework */,
+				14C29AEB08C3851700E8920D /* mox_intf.framework */,
+				14C29AEC08C3851700E8920D /* std_ext.framework */,
+				08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D01CCD10486CAD60068D4B7 /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77ADFE841716C02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1499702F072916AB00742B1A /* XML_Prefix.pch */,
+				1499702D0729169F00742B1A /* main.cpp */,
+				1497571208C381270084C913 /* main.h */,
+				14D987D90BFB068D004B2CA3 /* units */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		14D987D90BFB068D004B2CA3 /* units */ = {
+			isa = PBXGroup;
+			children = (
+				14D9882A0BFB068D004B2CA3 /* div */,
+				14D987DA0BFB068D004B2CA3 /* base */,
+				14D987ED0BFB068D004B2CA3 /* class */,
+				14D987FC0BFB068D004B2CA3 /* colors */,
+				14D988150BFB068D004B2CA3 /* dbvalues */,
+				14D9882D0BFB068D004B2CA3 /* fields */,
+				14D988340BFB068D004B2CA3 /* functions */,
+				14D9883F0BFB068D004B2CA3 /* geometry */,
+				14D988500BFB068E004B2CA3 /* layers */,
+				14D9885F0BFB068E004B2CA3 /* operators */,
+				14D98CE00BFB5821004B2CA3 /* iterators */,
+				14D988840BFB068E004B2CA3 /* pass */,
+				14D988890BFB068E004B2CA3 /* render */,
+				14D988B30BFB068E004B2CA3 /* scales */,
+				14D988BC0BFB068E004B2CA3 /* styleruns */,
+				14D988CD0BFB068E004B2CA3 /* styles */,
+				14D988DC0BFB068E004B2CA3 /* user */,
+			);
+			path = units;
+			sourceTree = "<group>";
+		};
+		14D987DA0BFB068D004B2CA3 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				140CE3060F0E001A0000CAD1 /* bXMLString.cpp */,
+				140CE3070F0E001A0000CAD1 /* bXMLString.h */,
+				147DEAF70F0B7C8A0034A3CC /* bXMLScript.cpp */,
+				147DEAF80F0B7C8A0034A3CC /* bXMLScript.h */,
+				14CD478E0DE709640038F8EE /* bXMLContainer.cpp */,
+				14CD478F0DE709640038F8EE /* bXMLContainer.h */,
+				14CD47900DE709640038F8EE /* bXMLObject.cpp */,
+				14CD47910DE709640038F8EE /* bXMLObject.h */,
+				14D9886C0BFB068E004B2CA3 /* bXMLFormula.cpp */,
+				14D9886D0BFB068E004B2CA3 /* bXMLFormula.h */,
+				14D987DB0BFB068D004B2CA3 /* bXMLBool.cpp */,
+				14D987DC0BFB068D004B2CA3 /* bXMLBool.h */,
+				14D987DD0BFB068D004B2CA3 /* bXMLDirectory.cpp */,
+				14D987DE0BFB068D004B2CA3 /* bXMLDirectory.h */,
+				14D987DF0BFB068D004B2CA3 /* bXMLFloat.cpp */,
+				14D987E00BFB068D004B2CA3 /* bXMLFloat.h */,
+				14D987E10BFB068D004B2CA3 /* bXMLInt.cpp */,
+				14D987E20BFB068D004B2CA3 /* bXMLInt.h */,
+				14D987E30BFB068D004B2CA3 /* bXMLName.cpp */,
+				14D987E40BFB068D004B2CA3 /* bXMLName.h */,
+				14D987E50BFB068D004B2CA3 /* bXMLParam.cpp */,
+				14D987E60BFB068D004B2CA3 /* bXMLParam.h */,
+				14D987E70BFB068D004B2CA3 /* bXMLPath.cpp */,
+				14D987E80BFB068D004B2CA3 /* bXMLPath.h */,
+				14D987E90BFB068D004B2CA3 /* bXMLSign.cpp */,
+				14D987EA0BFB068D004B2CA3 /* bXMLSign.h */,
+				14D987EB0BFB068D004B2CA3 /* bXMLVersion.cpp */,
+				14D987EC0BFB068D004B2CA3 /* bXMLVersion.h */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		14D987ED0BFB068D004B2CA3 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				14D98A980BFB11E0004B2CA3 /* bXMLSubClassBound.cpp */,
+				14D98A990BFB11E0004B2CA3 /* bXMLSubClassBound.h */,
+				14D98A9A0BFB11E0004B2CA3 /* bXMLSubClassBoundsArray.cpp */,
+				14D98A9B0BFB11E0004B2CA3 /* bXMLSubClassBoundsArray.h */,
+				14D98A9C0BFB11E0004B2CA3 /* bXMLSubClassField.cpp */,
+				14D98A9D0BFB11E0004B2CA3 /* bXMLSubClassField.h */,
+				14D98A9E0BFB11E0004B2CA3 /* bXMLSubClassName.cpp */,
+				14D98A9F0BFB11E0004B2CA3 /* bXMLSubClassName.h */,
+				14D987EE0BFB068D004B2CA3 /* bXMLClassBound.cpp */,
+				14D987EF0BFB068D004B2CA3 /* bXMLClassBound.h */,
+				14D987F00BFB068D004B2CA3 /* bXMLClassBoundsArray.cpp */,
+				14D987F10BFB068D004B2CA3 /* bXMLClassBoundsArray.h */,
+				14D987F20BFB068D004B2CA3 /* bXMLClassField.cpp */,
+				14D987F30BFB068D004B2CA3 /* bXMLClassField.h */,
+				14D987F40BFB068D004B2CA3 /* bXMLClassMax.cpp */,
+				14D987F50BFB068D004B2CA3 /* bXMLClassMax.h */,
+				14D987F60BFB068D004B2CA3 /* bXMLClassMin.cpp */,
+				14D987F70BFB068D004B2CA3 /* bXMLClassMin.h */,
+				14D987F80BFB068D004B2CA3 /* bXMLClassName.cpp */,
+				14D987F90BFB068D004B2CA3 /* bXMLClassName.h */,
+				14D987FA0BFB068D004B2CA3 /* bXMLSort.cpp */,
+				14D987FB0BFB068D004B2CA3 /* bXMLSort.h */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		14D987FC0BFB068D004B2CA3 /* colors */ = {
+			isa = PBXGroup;
+			children = (
+				14DE784A0C3BF9D70025B780 /* info.txt */,
+				14D987FD0BFB068D004B2CA3 /* bXMLAlpha.cpp */,
+				14D987FE0BFB068D004B2CA3 /* bXMLAlpha.h */,
+				14DE77F40C3BE3750025B780 /* bXMLBgFill.cpp */,
+				14DE77F50C3BE3750025B780 /* bXMLBgFill.h */,
+				14E79951125B18E9008A5A1B /* bXMLBgStroke.cpp */,
+				14E79952125B18E9008A5A1B /* bXMLBgStroke.h */,
+				14D987FF0BFB068D004B2CA3 /* bXMLBlack.cpp */,
+				14D988000BFB068D004B2CA3 /* bXMLBlack.h */,
+				14D988010BFB068D004B2CA3 /* bXMLBlue.cpp */,
+				14D988020BFB068D004B2CA3 /* bXMLBlue.h */,
+				14D988030BFB068D004B2CA3 /* bXMLCyan.cpp */,
+				14D988040BFB068D004B2CA3 /* bXMLCyan.h */,
+				14D988050BFB068D004B2CA3 /* bXMLFill.cpp */,
+				14D988060BFB068D004B2CA3 /* bXMLFill.h */,
+				14D988070BFB068D004B2CA3 /* bXMLFillPattern.cpp */,
+				14D988080BFB068D004B2CA3 /* bXMLFillPattern.h */,
+				14D988090BFB068D004B2CA3 /* bXMLGreen.cpp */,
+				14D9880A0BFB068D004B2CA3 /* bXMLGreen.h */,
+				14D9880B0BFB068D004B2CA3 /* bXMLMagenta.cpp */,
+				14D9880C0BFB068D004B2CA3 /* bXMLMagenta.h */,
+				14D9880D0BFB068D004B2CA3 /* bXMLRed.cpp */,
+				14D9880E0BFB068D004B2CA3 /* bXMLRed.h */,
+				14D9880F0BFB068D004B2CA3 /* bXMLStroke.cpp */,
+				14D988100BFB068D004B2CA3 /* bXMLStroke.h */,
+				14D988110BFB068D004B2CA3 /* bXMLStrokePattern.cpp */,
+				14D988120BFB068D004B2CA3 /* bXMLStrokePattern.h */,
+				14D988130BFB068D004B2CA3 /* bXMLYellow.cpp */,
+				14D988140BFB068D004B2CA3 /* bXMLYellow.h */,
+			);
+			path = colors;
+			sourceTree = "<group>";
+		};
+		14D988150BFB068D004B2CA3 /* dbvalues */ = {
+			isa = PBXGroup;
+			children = (
+				1448EDB00FCAEF5000861CB5 /* bXMLDBAddToContrast.cpp */,
+				1448EDB10FCAEF5000861CB5 /* bXMLDBAddToContrast.h */,
+				1448EDB20FCAEF5000861CB5 /* bXMLDBAddToMasked.cpp */,
+				1448EDB30FCAEF5000861CB5 /* bXMLDBAddToMasked.h */,
+				1448EC830FCAC94000861CB5 /* bXMLDBSetNext.cpp */,
+				1448EC840FCAC94100861CB5 /* bXMLDBSetNext.h */,
+				143BEB5A0F949AE000A42930 /* bXMLDBQuestion.cpp */,
+				143BEB5B0F949AE000A42930 /* bXMLDBQuestion.h */,
+				14D988160BFB068D004B2CA3 /* bXMLDBBool.cpp */,
+				14D988170BFB068D004B2CA3 /* bXMLDBBool.h */,
+				14D988180BFB068D004B2CA3 /* bXMLDBChar.cpp */,
+				14D988190BFB068D004B2CA3 /* bXMLDBChar.h */,
+				14D9881A0BFB068D004B2CA3 /* bXMLDBDate.cpp */,
+				14D9881B0BFB068D004B2CA3 /* bXMLDBDate.h */,
+				14D9881C0BFB068D004B2CA3 /* bXMLDBField.cpp */,
+				14D9881D0BFB068D004B2CA3 /* bXMLDBField.h */,
+				14D9881E0BFB068D004B2CA3 /* bXMLDBFloat.cpp */,
+				14D9881F0BFB068D004B2CA3 /* bXMLDBFloat.h */,
+				14D988200BFB068D004B2CA3 /* bXMLDBInt.cpp */,
+				14D988210BFB068D004B2CA3 /* bXMLDBInt.h */,
+				14D988220BFB068D004B2CA3 /* bXMLDBSelKind.cpp */,
+				14D988230BFB068D004B2CA3 /* bXMLDBSelKind.h */,
+				14D988240BFB068D004B2CA3 /* bXMLDBTime.cpp */,
+				14D988250BFB068D004B2CA3 /* bXMLDBTime.h */,
+				14D988260BFB068D004B2CA3 /* bXMLDBType.cpp */,
+				14D988270BFB068D004B2CA3 /* bXMLDBType.h */,
+				14D988280BFB068D004B2CA3 /* bXMLDBUseMasked.cpp */,
+				14D988290BFB068D004B2CA3 /* bXMLDBUseMasked.h */,
+			);
+			path = dbvalues;
+			sourceTree = "<group>";
+		};
+		14D9882A0BFB068D004B2CA3 /* div */ = {
+			isa = PBXGroup;
+			children = (
+				14D9882B0BFB068D004B2CA3 /* bSubStyle.cpp */,
+				14D9882C0BFB068D004B2CA3 /* bSubStyle.h */,
+			);
+			path = div;
+			sourceTree = "<group>";
+		};
+		14D9882D0BFB068D004B2CA3 /* fields */ = {
+			isa = PBXGroup;
+			children = (
+				14DE77B80C3BDDC10025B780 /* bXMLColorField16M.cpp */,
+				14DE77B90C3BDDC10025B780 /* bXMLColorField16M.h */,
+				14D9882E0BFB068D004B2CA3 /* bXMLColorField8.cpp */,
+				14D9882F0BFB068D004B2CA3 /* bXMLColorField8.h */,
+				14D988300BFB068D004B2CA3 /* bXMLField.cpp */,
+				14D988310BFB068D004B2CA3 /* bXMLField.h */,
+				14D988320BFB068D004B2CA3 /* bXMLValue.cpp */,
+				14D988330BFB068D004B2CA3 /* bXMLValue.h */,
+			);
+			path = fields;
+			sourceTree = "<group>";
+		};
+		14D988340BFB068D004B2CA3 /* functions */ = {
+			isa = PBXGroup;
+			children = (
+				14CE81ED1111D65800479A6C /* bXMLfCast.cpp */,
+				14CE81EE1111D65800479A6C /* bXMLfCast.h */,
+				14CE81EF1111D65800479A6C /* bXMLiCast.cpp */,
+				14CE81F01111D65800479A6C /* bXMLiCast.h */,
+				14D98C2B0BFB38C0004B2CA3 /* bXMLFact.cpp */,
+				14D98C2C0BFB38C0004B2CA3 /* bXMLFact.h */,
+				14D98BF80BFB34F2004B2CA3 /* bXMLCeil.cpp */,
+				14D98BF90BFB34F2004B2CA3 /* bXMLCeil.h */,
+				14D98BFA0BFB34F2004B2CA3 /* bXMLCos.cpp */,
+				14D98BFB0BFB34F2004B2CA3 /* bXMLCos.h */,
+				14D98BFC0BFB34F2004B2CA3 /* bXMLExp.cpp */,
+				14D98BFD0BFB34F2004B2CA3 /* bXMLExp.h */,
+				14D98BFE0BFB34F2004B2CA3 /* bXMLFloor.cpp */,
+				14D98BFF0BFB34F2004B2CA3 /* bXMLFloor.h */,
+				14D98C000BFB34F2004B2CA3 /* bXMLInv.cpp */,
+				14D98C010BFB34F2004B2CA3 /* bXMLInv.h */,
+				14D98C020BFB34F2004B2CA3 /* bXMLLn.cpp */,
+				14D98C030BFB34F2004B2CA3 /* bXMLLn.h */,
+				14D98C040BFB34F2004B2CA3 /* bXMLLog.cpp */,
+				14D98C050BFB34F2004B2CA3 /* bXMLLog.h */,
+				14D98C060BFB34F2004B2CA3 /* bXMLNot.cpp */,
+				14D98C070BFB34F2004B2CA3 /* bXMLNot.h */,
+				14D98C080BFB34F2004B2CA3 /* bXMLRound.cpp */,
+				14D98C090BFB34F2004B2CA3 /* bXMLRound.h */,
+				14D98C0A0BFB34F2004B2CA3 /* bXMLSin.cpp */,
+				14D98C0B0BFB34F2004B2CA3 /* bXMLSin.h */,
+				14D98C0C0BFB34F2004B2CA3 /* bXMLSqr.cpp */,
+				14D98C0D0BFB34F2004B2CA3 /* bXMLSqr.h */,
+				14D98C0E0BFB34F2004B2CA3 /* bXMLTan.cpp */,
+				14D98C0F0BFB34F2004B2CA3 /* bXMLTan.h */,
+				14D98BF00BFB3179004B2CA3 /* bXMLSqrt.cpp */,
+				14D98BF10BFB3179004B2CA3 /* bXMLSqrt.h */,
+				14D988350BFB068D004B2CA3 /* bXMLStrLen.cpp */,
+				14D988360BFB068D004B2CA3 /* bXMLStrLen.h */,
+				14D988370BFB068D004B2CA3 /* bXMLStrLwr.cpp */,
+				14D988380BFB068D004B2CA3 /* bXMLStrLwr.h */,
+				14D988390BFB068D004B2CA3 /* bXMLStrSntFCUpr.cpp */,
+				14D9883A0BFB068D004B2CA3 /* bXMLStrSntFCUpr.h */,
+				14D9883B0BFB068D004B2CA3 /* bXMLStrUpr.cpp */,
+				14D9883C0BFB068D004B2CA3 /* bXMLStrUpr.h */,
+				14D9883D0BFB068D004B2CA3 /* bXMLStrWrdFCUpr.cpp */,
+				14D9883E0BFB068D004B2CA3 /* bXMLStrWrdFCUpr.h */,
+			);
+			path = functions;
+			sourceTree = "<group>";
+		};
+		14D9883F0BFB068D004B2CA3 /* geometry */ = {
+			isa = PBXGroup;
+			children = (
+				14283D8D18DC5C1E00808913 /* bXMLPerpendicularLine.cpp */,
+				14283D8E18DC5C1E00808913 /* bXMLPerpendicularLine.h */,
+				14EB5EBC14F52B610076415A /* bXMLTextRptJustification.cpp */,
+				14EB5EBD14F52B610076415A /* bXMLTextRptJustification.h */,
+				14D547FA13B252AF00B93CE7 /* bXMLHVSizeJustification.cpp */,
+				14D547FB13B252AF00B93CE7 /* bXMLHVSizeJustification.h */,
+				14023DC912717B1F0078B43B /* bXMLBgShiftX.cpp */,
+				14023DCA12717B1F0078B43B /* bXMLBgShiftX.h */,
+				14023DCB12717B1F0078B43B /* bXMLBgShiftY.cpp */,
+				14023DCC12717B1F0078B43B /* bXMLBgShiftY.h */,
+				140FCFED1005CE4A005ACD1F /* bXMLBoxPos.cpp */,
+				140FCFEE1005CE4A005ACD1F /* bXMLBoxPos.h */,
+				1468A7020EF15ECD00C89A5A /* bXMLLegible.cpp */,
+				1468A7030EF15ECD00C89A5A /* bXMLLegible.h */,
+				14DE78050C3BE8B50025B780 /* bXMLShiftX.cpp */,
+				14DE78060C3BE8B50025B780 /* bXMLShiftX.h */,
+				14DE78070C3BE8B50025B780 /* bXMLShiftY.cpp */,
+				14DE78080C3BE8B50025B780 /* bXMLShiftY.h */,
+				14D988400BFB068D004B2CA3 /* bXMLArrow.cpp */,
+				14D988410BFB068D004B2CA3 /* bXMLArrow.h */,
+				14D988420BFB068D004B2CA3 /* bXMLCentroid.cpp */,
+				14D988430BFB068D004B2CA3 /* bXMLCentroid.h */,
+				14D988440BFB068D004B2CA3 /* bXMLDecal.cpp */,
+				14D988450BFB068E004B2CA3 /* bXMLDecal.h */,
+				14D988460BFB068E004B2CA3 /* bXMLLineTo.cpp */,
+				14D988470BFB068E004B2CA3 /* bXMLLineTo.h */,
+				14D988480BFB068E004B2CA3 /* bXMLOffsetCoord.cpp */,
+				14D988490BFB068E004B2CA3 /* bXMLOffsetCoord.h */,
+				14D9884A0BFB068E004B2CA3 /* bXMLPointJustification.cpp */,
+				14D9884B0BFB068E004B2CA3 /* bXMLPointJustification.h */,
+				14D9884C0BFB068E004B2CA3 /* bXMLPolyJustification.cpp */,
+				14D9884D0BFB068E004B2CA3 /* bXMLPolyJustification.h */,
+				14D9884E0BFB068E004B2CA3 /* bXMLSmooth.cpp */,
+				14D9884F0BFB068E004B2CA3 /* bXMLSmooth.h */,
+			);
+			path = geometry;
+			sourceTree = "<group>";
+		};
+		14D988500BFB068E004B2CA3 /* layers */ = {
+			isa = PBXGroup;
+			children = (
+				1413DAD30F30904E00C70B11 /* bXMLVirtualLayer.cpp */,
+				1413DAD40F30904E00C70B11 /* bXMLVirtualLayer.h */,
+				14D988510BFB068E004B2CA3 /* bXMLLayer.cpp */,
+				14D988520BFB068E004B2CA3 /* bXMLLayer.h */,
+				14D988530BFB068E004B2CA3 /* bXMLLayerArray.cpp */,
+				14D988540BFB068E004B2CA3 /* bXMLLayerArray.h */,
+				14D988550BFB068E004B2CA3 /* bXMLSelectable.cpp */,
+				14D988560BFB068E004B2CA3 /* bXMLSelectable.h */,
+				14D988570BFB068E004B2CA3 /* bXMLStyle.cpp */,
+				14D988580BFB068E004B2CA3 /* bXMLStyle.h */,
+				14D988590BFB068E004B2CA3 /* bXMLType.cpp */,
+				14D9885A0BFB068E004B2CA3 /* bXMLType.h */,
+				14D9885B0BFB068E004B2CA3 /* bXMLView.cpp */,
+				14D9885C0BFB068E004B2CA3 /* bXMLView.h */,
+				14D9885D0BFB068E004B2CA3 /* bXMLVisible.cpp */,
+				14D9885E0BFB068E004B2CA3 /* bXMLVisible.h */,
+			);
+			path = layers;
+			sourceTree = "<group>";
+		};
+		14D9885F0BFB068E004B2CA3 /* operators */ = {
+			isa = PBXGroup;
+			children = (
+				142D9EA613C4453E00982A65 /* bXMLNthChar.cpp */,
+				142D9EA713C4453E00982A65 /* bXMLNthChar.h */,
+				14D988600BFB068E004B2CA3 /* bXMLAnd.cpp */,
+				14D988610BFB068E004B2CA3 /* bXMLAnd.h */,
+				14D988620BFB068E004B2CA3 /* bXMLBeginWith.cpp */,
+				14D988630BFB068E004B2CA3 /* bXMLBeginWith.h */,
+				14D988640BFB068E004B2CA3 /* bXMLContain.cpp */,
+				14D988650BFB068E004B2CA3 /* bXMLContain.h */,
+				14D988660BFB068E004B2CA3 /* bXMLDiv.cpp */,
+				14D988670BFB068E004B2CA3 /* bXMLDiv.h */,
+				14D988680BFB068E004B2CA3 /* bXMLEndWith.cpp */,
+				14D988690BFB068E004B2CA3 /* bXMLEndWith.h */,
+				14D9886A0BFB068E004B2CA3 /* bXMLEqual.cpp */,
+				14D9886B0BFB068E004B2CA3 /* bXMLEqual.h */,
+				14D9886E0BFB068E004B2CA3 /* bXMLHigher.cpp */,
+				14D9886F0BFB068E004B2CA3 /* bXMLHigher.h */,
+				14D988700BFB068E004B2CA3 /* bXMLHigherOrEqual.cpp */,
+				14D988710BFB068E004B2CA3 /* bXMLHigherOrEqual.h */,
+				14D988720BFB068E004B2CA3 /* bXMLLower.cpp */,
+				14D988730BFB068E004B2CA3 /* bXMLLower.h */,
+				14D988740BFB068E004B2CA3 /* bXMLLowerOrEqual.cpp */,
+				14D988750BFB068E004B2CA3 /* bXMLLowerOrEqual.h */,
+				14D988760BFB068E004B2CA3 /* bXMLMinus.cpp */,
+				14D988770BFB068E004B2CA3 /* bXMLMinus.h */,
+				141FB2A50C01C36F00C8C8B7 /* bXMLModulo.cpp */,
+				141FB2A60C01C36F00C8C8B7 /* bXMLModulo.h */,
+				14D988780BFB068E004B2CA3 /* bXMLMult.cpp */,
+				14D988790BFB068E004B2CA3 /* bXMLMult.h */,
+				14D9887A0BFB068E004B2CA3 /* bXMLNotEqual.cpp */,
+				14D9887B0BFB068E004B2CA3 /* bXMLNotEqual.h */,
+				14D9887C0BFB068E004B2CA3 /* bXMLOr.cpp */,
+				14D9887D0BFB068E004B2CA3 /* bXMLOr.h */,
+				14D9887E0BFB068E004B2CA3 /* bXMLPlus.cpp */,
+				14D9887F0BFB068E004B2CA3 /* bXMLPlus.h */,
+				14D988800BFB068E004B2CA3 /* bXMLPow.cpp */,
+				14D988810BFB068E004B2CA3 /* bXMLPow.h */,
+				14D988820BFB068E004B2CA3 /* bXMLStrCat.cpp */,
+				14D988830BFB068E004B2CA3 /* bXMLStrCat.h */,
+				141FB2A70C01C36F00C8C8B7 /* bXMLXOr.cpp */,
+				141FB2A80C01C36F00C8C8B7 /* bXMLXOr.h */,
+			);
+			path = operators;
+			sourceTree = "<group>";
+		};
+		14D988840BFB068E004B2CA3 /* pass */ = {
+			isa = PBXGroup;
+			children = (
+				14D988850BFB068E004B2CA3 /* bXMLPass.cpp */,
+				14D988860BFB068E004B2CA3 /* bXMLPass.h */,
+				14D988870BFB068E004B2CA3 /* bXMLPassCount.cpp */,
+				14D988880BFB068E004B2CA3 /* bXMLPassCount.h */,
+			);
+			path = pass;
+			sourceTree = "<group>";
+		};
+		14D988890BFB068E004B2CA3 /* render */ = {
+			isa = PBXGroup;
+			children = (
+				14D5480B13B254BE00B93CE7 /* bXMLPropHVSize.cpp */,
+				14D5480C13B254BE00B93CE7 /* bXMLPropHVSize.h */,
+				14E79967125B1AB0008A5A1B /* bXMLBgHeightMaj.cpp */,
+				14E79968125B1AB0008A5A1B /* bXMLBgHeightMaj.h */,
+				14E79969125B1AB0008A5A1B /* bXMLBgWidth.cpp */,
+				14E7996A125B1AB0008A5A1B /* bXMLBgWidth.h */,
+				14E7996B125B1AB0008A5A1B /* bXMLBgWidthMaj.cpp */,
+				14E7996C125B1AB0008A5A1B /* bXMLBgWidthMaj.h */,
+				14E7996D125B1AB0008A5A1B /* bXMLRoundedRadius.cpp */,
+				14E7996E125B1AB0008A5A1B /* bXMLRoundedRadius.h */,
+				1477A42B18C0B6E000EE0D34 /* bXMLGoogleMap.cpp */,
+				1477A42C18C0B6E000EE0D34 /* bXMLGoogleMap.h */,
+				1423FA3618C4772700068626 /* bXMLTMSRaster.cpp */,
+				1423FA3718C4772700068626 /* bXMLTMSRaster.h */,
+				14E0BDB40FF4C54D00992A80 /* bXMLWMSRaster.cpp */,
+				14E0BDB50FF4C54D00992A80 /* bXMLWMSRaster.h */,
+				14EC7B630E1919FD009E8CBE /* bXMLPropColor.cpp */,
+				14EC7B640E1919FD009E8CBE /* bXMLPropColor.h */,
+				14CD423B0E18E58B006DD04C /* bXMLPropAngle.cpp */,
+				14CD423C0E18E58B006DD04C /* bXMLPropAngle.h */,
+				14CD41C60E18C0C8006DD04C /* bXMLEndAngle.cpp */,
+				14CD41C70E18C0C8006DD04C /* bXMLEndAngle.h */,
+				14CD41C80E18C0C8006DD04C /* bXMLStartAngle.cpp */,
+				14CD41C90E18C0C8006DD04C /* bXMLStartAngle.h */,
+				14D9888A0BFB068E004B2CA3 /* bXMLAngle.cpp */,
+				14D9888B0BFB068E004B2CA3 /* bXMLAngle.h */,
+				14D9888C0BFB068E004B2CA3 /* bXMLCap.cpp */,
+				14D9888D0BFB068E004B2CA3 /* bXMLCap.h */,
+				14D9888E0BFB068E004B2CA3 /* bXMLCharSpacing.cpp */,
+				14D9888F0BFB068E004B2CA3 /* bXMLCharSpacing.h */,
+				14D988900BFB068E004B2CA3 /* bXMLDash.cpp */,
+				14D988910BFB068E004B2CA3 /* bXMLDash.h */,
+				14D988920BFB068E004B2CA3 /* bXMLFont.cpp */,
+				14D988930BFB068E004B2CA3 /* bXMLFont.h */,
+				14D988940BFB068E004B2CA3 /* bXMLHSize.cpp */,
+				14D988950BFB068E004B2CA3 /* bXMLHSize.h */,
+				14D988960BFB068E004B2CA3 /* bXMLImage.cpp */,
+				14D988970BFB068E004B2CA3 /* bXMLImage.h */,
+				14D988980BFB068E004B2CA3 /* bXMLJoin.cpp */,
+				14D988990BFB068E004B2CA3 /* bXMLJoin.h */,
+				14D9889A0BFB068E004B2CA3 /* bXMLLeading.cpp */,
+				14D9889B0BFB068E004B2CA3 /* bXMLLeading.h */,
+				14D9889C0BFB068E004B2CA3 /* bXMLMiterLimit.cpp */,
+				14D9889D0BFB068E004B2CA3 /* bXMLMiterLimit.h */,
+				14D9889E0BFB068E004B2CA3 /* bXMLPDFDocument.cpp */,
+				14D9889F0BFB068E004B2CA3 /* bXMLPDFDocument.h */,
+				14D988A10BFB068E004B2CA3 /* bXMLPropSize.cpp */,
+				14D988A20BFB068E004B2CA3 /* bXMLPropSize.h */,
+				14D988A30BFB068E004B2CA3 /* bXMLPropWidth.cpp */,
+				14D988A40BFB068E004B2CA3 /* bXMLPropWidth.h */,
+				14D988A50BFB068E004B2CA3 /* bXMLRaster.cpp */,
+				14D988A60BFB068E004B2CA3 /* bXMLRaster.h */,
+				14D988A70BFB068E004B2CA3 /* bXMLSize.cpp */,
+				14D988A80BFB068E004B2CA3 /* bXMLSize.h */,
+				14D988A90BFB068E004B2CA3 /* bXMLSubStyle.cpp */,
+				14D988AA0BFB068E004B2CA3 /* bXMLSubStyle.h */,
+				14D988AB0BFB068E004B2CA3 /* bXMLText.cpp */,
+				14D988AC0BFB068E004B2CA3 /* bXMLText.h */,
+				14D988AD0BFB068E004B2CA3 /* bXMLVSize.cpp */,
+				14D988AE0BFB068E004B2CA3 /* bXMLVSize.h */,
+				14D988AF0BFB068E004B2CA3 /* bXMLWidth.cpp */,
+				14D988B00BFB068E004B2CA3 /* bXMLWidth.h */,
+				14D988B10BFB068E004B2CA3 /* bXMLWordSpacing.cpp */,
+				14D988B20BFB068E004B2CA3 /* bXMLWordSpacing.h */,
+			);
+			path = render;
+			sourceTree = "<group>";
+		};
+		14D988B30BFB068E004B2CA3 /* scales */ = {
+			isa = PBXGroup;
+			children = (
+				14D988B40BFB068E004B2CA3 /* bXMLScaleMax.cpp */,
+				14D988B50BFB068E004B2CA3 /* bXMLScaleMax.h */,
+				14D988B60BFB068E004B2CA3 /* bXMLScaleMin.cpp */,
+				14D988B70BFB068E004B2CA3 /* bXMLScaleMin.h */,
+				14D988B80BFB068E004B2CA3 /* bXMLScaleRef.cpp */,
+				14D988B90BFB068E004B2CA3 /* bXMLScaleRef.h */,
+				14D988BA0BFB068E004B2CA3 /* bXMLUnitCoef.cpp */,
+				14D988BB0BFB068E004B2CA3 /* bXMLUnitCoef.h */,
+			);
+			path = scales;
+			sourceTree = "<group>";
+		};
+		14D988BC0BFB068E004B2CA3 /* styleruns */ = {
+			isa = PBXGroup;
+			children = (
+				1467C524100B59DA009AC28D /* bXMLPrintAreaGeometry.cpp */,
+				1467C525100B59DA009AC28D /* bXMLPrintAreaGeometry.h */,
+				14E0BD8F0FF4B25D00992A80 /* bXMLScreenGeometry.cpp */,
+				14E0BD900FF4B25D00992A80 /* bXMLScreenGeometry.h */,
+				14D98A940BFB1130004B2CA3 /* bXMLSubRender.cpp */,
+				14D98A950BFB1130004B2CA3 /* bXMLSubRender.h */,
+				14D988BD0BFB068E004B2CA3 /* bXMLCondition.cpp */,
+				14D988BE0BFB068E004B2CA3 /* bXMLCondition.h */,
+				14D988BF0BFB068E004B2CA3 /* bXMLGeometry.cpp */,
+				14D988C00BFB068E004B2CA3 /* bXMLGeometry.h */,
+				14D988C10BFB068E004B2CA3 /* bXMLGlobals.cpp */,
+				14D988C20BFB068E004B2CA3 /* bXMLGlobals.h */,
+				14D988C30BFB068E004B2CA3 /* bXMLRender.cpp */,
+				14D988C40BFB068E004B2CA3 /* bXMLRender.h */,
+				14D988C50BFB068E004B2CA3 /* bXMLStdGeometry.cpp */,
+				14D988C60BFB068E004B2CA3 /* bXMLStdGeometry.h */,
+				14D988C70BFB068E004B2CA3 /* bXMLStyleIdentification.cpp */,
+				14D988C80BFB068E004B2CA3 /* bXMLStyleIdentification.h */,
+				14D988C90BFB068E004B2CA3 /* bXMLStyleRun.cpp */,
+				14D988CA0BFB068E004B2CA3 /* bXMLStyleRun.h */,
+				14D98A400BFB0D9F004B2CA3 /* bXMLSubGlobals.cpp */,
+				14D98A410BFB0D9F004B2CA3 /* bXMLSubGlobals.h */,
+				14D98A220BFB0CAE004B2CA3 /* bXMLSubStyleRun.cpp */,
+				14D98A230BFB0CAE004B2CA3 /* bXMLSubStyleRun.h */,
+				14D988CB0BFB068E004B2CA3 /* bXMLValidity.cpp */,
+				14D988CC0BFB068E004B2CA3 /* bXMLValidity.h */,
+			);
+			path = styleruns;
+			sourceTree = "<group>";
+		};
+		14D988CD0BFB068E004B2CA3 /* styles */ = {
+			isa = PBXGroup;
+			children = (
+				14D988CE0BFB068E004B2CA3 /* bXMLCircleStyle.cpp */,
+				14D988CF0BFB068E004B2CA3 /* bXMLCircleStyle.h */,
+				14D988D00BFB068E004B2CA3 /* bXMLIconStyle.cpp */,
+				14D988D10BFB068E004B2CA3 /* bXMLIconStyle.h */,
+				14D988D20BFB068E004B2CA3 /* bXMLPolygonStyle.cpp */,
+				14D988D30BFB068E004B2CA3 /* bXMLPolygonStyle.h */,
+				14D988D40BFB068E004B2CA3 /* bXMLPolylineStyle.cpp */,
+				14D988D50BFB068E004B2CA3 /* bXMLPolylineStyle.h */,
+				14D988D60BFB068E004B2CA3 /* bXMLRasterStyle.cpp */,
+				14D988D70BFB068E004B2CA3 /* bXMLRasterStyle.h */,
+				14D988D80BFB068E004B2CA3 /* bXMLRectStyle.cpp */,
+				14D988D90BFB068E004B2CA3 /* bXMLRectStyle.h */,
+				14D988DA0BFB068E004B2CA3 /* bXMLTextStyle.cpp */,
+				14D988DB0BFB068E004B2CA3 /* bXMLTextStyle.h */,
+			);
+			path = styles;
+			sourceTree = "<group>";
+		};
+		14D988DC0BFB068E004B2CA3 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				14D988DD0BFB068E004B2CA3 /* bXMLfcalcUser.cpp */,
+				14D988DE0BFB068E004B2CA3 /* bXMLfcalcUser.h */,
+				14D988DF0BFB068E004B2CA3 /* bXMLfmacroUser.cpp */,
+				14D988E00BFB068E004B2CA3 /* bXMLfmacroUser.h */,
+				14D988E10BFB068E004B2CA3 /* bXMLfvarUser.cpp */,
+				14D988E20BFB068E004B2CA3 /* bXMLfvarUser.h */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		14D98CE00BFB5821004B2CA3 /* iterators */ = {
+			isa = PBXGroup;
+			children = (
+				141FB1240C017E6F00C8C8B7 /* bXMLAverage.cpp */,
+				141FB1250C017E6F00C8C8B7 /* bXMLAverage.h */,
+				141FB1E80C0188DC00C8C8B7 /* bXMLFirst.cpp */,
+				141FB1E90C0188DC00C8C8B7 /* bXMLFirst.h */,
+				141FB1EA0C0188DC00C8C8B7 /* bXMLLast.cpp */,
+				141FB1EB0C0188DC00C8C8B7 /* bXMLLast.h */,
+				141FB1EC0C0188DC00C8C8B7 /* bXMLMax.cpp */,
+				141FB1ED0C0188DC00C8C8B7 /* bXMLMax.h */,
+				141FB1EE0C0188DC00C8C8B7 /* bXMLMedian.cpp */,
+				141FB1EF0C0188DC00C8C8B7 /* bXMLMedian.h */,
+				141FB1F00C0188DC00C8C8B7 /* bXMLMin.cpp */,
+				141FB1F10C0188DC00C8C8B7 /* bXMLMin.h */,
+				141FB1F20C0188DC00C8C8B7 /* bXMLProduct.cpp */,
+				141FB1F30C0188DC00C8C8B7 /* bXMLProduct.h */,
+				141FB1F40C0188DC00C8C8B7 /* bXMLSingle.cpp */,
+				141FB1F50C0188DC00C8C8B7 /* bXMLSingle.h */,
+				141FB1F60C0188DC00C8C8B7 /* bXMLStdDeviation.cpp */,
+				141FB1F70C0188DC00C8C8B7 /* bXMLStdDeviation.h */,
+				14D98CE10BFB5821004B2CA3 /* bXMLSum.cpp */,
+				14D98CE20BFB5821004B2CA3 /* bXMLSum.h */,
+				141FB1F80C0188DC00C8C8B7 /* bXMLVariance.cpp */,
+				141FB1F90C0188DC00C8C8B7 /* bXMLVariance.h */,
+			);
+			path = iterators;
+			sourceTree = "<group>";
+		};
+		19C28FB4FE9D528D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D01CCD20486CAD60068D4B7 /* XMLDictionary.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8D01CCC70486CAD60068D4B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14997030072916AB00742B1A /* XML_Prefix.pch in Headers */,
+				1497571308C381270084C913 /* main.h in Headers */,
+				14D988E40BFB068E004B2CA3 /* bXMLBool.h in Headers */,
+				14D988E60BFB068E004B2CA3 /* bXMLDirectory.h in Headers */,
+				14D988E80BFB068E004B2CA3 /* bXMLFloat.h in Headers */,
+				14D988EA0BFB068E004B2CA3 /* bXMLInt.h in Headers */,
+				14D988EC0BFB068E004B2CA3 /* bXMLName.h in Headers */,
+				14D988EE0BFB068E004B2CA3 /* bXMLParam.h in Headers */,
+				14D988F00BFB068E004B2CA3 /* bXMLPath.h in Headers */,
+				14D988F20BFB068E004B2CA3 /* bXMLSign.h in Headers */,
+				14D988F40BFB068E004B2CA3 /* bXMLVersion.h in Headers */,
+				14D988F60BFB068E004B2CA3 /* bXMLClassBound.h in Headers */,
+				14D988F80BFB068E004B2CA3 /* bXMLClassBoundsArray.h in Headers */,
+				14D988FA0BFB068E004B2CA3 /* bXMLClassField.h in Headers */,
+				14D988FC0BFB068E004B2CA3 /* bXMLClassMax.h in Headers */,
+				14D988FE0BFB068E004B2CA3 /* bXMLClassMin.h in Headers */,
+				14D989000BFB068E004B2CA3 /* bXMLClassName.h in Headers */,
+				14D989020BFB068E004B2CA3 /* bXMLSort.h in Headers */,
+				14D989040BFB068E004B2CA3 /* bXMLAlpha.h in Headers */,
+				14D989060BFB068E004B2CA3 /* bXMLBlack.h in Headers */,
+				14D989080BFB068E004B2CA3 /* bXMLBlue.h in Headers */,
+				14D9890A0BFB068E004B2CA3 /* bXMLCyan.h in Headers */,
+				14D9890C0BFB068E004B2CA3 /* bXMLFill.h in Headers */,
+				14D9890E0BFB068E004B2CA3 /* bXMLFillPattern.h in Headers */,
+				14D989100BFB068E004B2CA3 /* bXMLGreen.h in Headers */,
+				14D989120BFB068E004B2CA3 /* bXMLMagenta.h in Headers */,
+				14D989140BFB068E004B2CA3 /* bXMLRed.h in Headers */,
+				14D989160BFB068E004B2CA3 /* bXMLStroke.h in Headers */,
+				14D989180BFB068E004B2CA3 /* bXMLStrokePattern.h in Headers */,
+				14D9891A0BFB068E004B2CA3 /* bXMLYellow.h in Headers */,
+				14D9891C0BFB068E004B2CA3 /* bXMLDBBool.h in Headers */,
+				14D9891E0BFB068E004B2CA3 /* bXMLDBChar.h in Headers */,
+				14D989200BFB068E004B2CA3 /* bXMLDBDate.h in Headers */,
+				14D989220BFB068E004B2CA3 /* bXMLDBField.h in Headers */,
+				14D989240BFB068E004B2CA3 /* bXMLDBFloat.h in Headers */,
+				14D989260BFB068E004B2CA3 /* bXMLDBInt.h in Headers */,
+				14D989280BFB068E004B2CA3 /* bXMLDBSelKind.h in Headers */,
+				14D9892A0BFB068E004B2CA3 /* bXMLDBTime.h in Headers */,
+				14D9892C0BFB068E004B2CA3 /* bXMLDBType.h in Headers */,
+				14D9892E0BFB068E004B2CA3 /* bXMLDBUseMasked.h in Headers */,
+				14D989300BFB068E004B2CA3 /* bSubStyle.h in Headers */,
+				14D989320BFB068E004B2CA3 /* bXMLColorField8.h in Headers */,
+				14D989340BFB068E004B2CA3 /* bXMLField.h in Headers */,
+				14D989360BFB068E004B2CA3 /* bXMLValue.h in Headers */,
+				14D989380BFB068E004B2CA3 /* bXMLStrLen.h in Headers */,
+				14D9893A0BFB068E004B2CA3 /* bXMLStrLwr.h in Headers */,
+				14D9893C0BFB068E004B2CA3 /* bXMLStrSntFCUpr.h in Headers */,
+				14D9893E0BFB068E004B2CA3 /* bXMLStrUpr.h in Headers */,
+				14D989400BFB068E004B2CA3 /* bXMLStrWrdFCUpr.h in Headers */,
+				14D989420BFB068E004B2CA3 /* bXMLArrow.h in Headers */,
+				14D989440BFB068E004B2CA3 /* bXMLCentroid.h in Headers */,
+				14D989460BFB068E004B2CA3 /* bXMLDecal.h in Headers */,
+				14D989480BFB068E004B2CA3 /* bXMLLineTo.h in Headers */,
+				14D9894A0BFB068E004B2CA3 /* bXMLOffsetCoord.h in Headers */,
+				14D9894C0BFB068E004B2CA3 /* bXMLPointJustification.h in Headers */,
+				14D9894E0BFB068E004B2CA3 /* bXMLPolyJustification.h in Headers */,
+				14D989500BFB068E004B2CA3 /* bXMLSmooth.h in Headers */,
+				14D989520BFB068E004B2CA3 /* bXMLLayer.h in Headers */,
+				14D989540BFB068E004B2CA3 /* bXMLLayerArray.h in Headers */,
+				14D989560BFB068E004B2CA3 /* bXMLSelectable.h in Headers */,
+				14D989580BFB068E004B2CA3 /* bXMLStyle.h in Headers */,
+				14D9895A0BFB068E004B2CA3 /* bXMLType.h in Headers */,
+				14D9895C0BFB068E004B2CA3 /* bXMLView.h in Headers */,
+				14D9895E0BFB068E004B2CA3 /* bXMLVisible.h in Headers */,
+				14D989600BFB068E004B2CA3 /* bXMLAnd.h in Headers */,
+				14D989620BFB068E004B2CA3 /* bXMLBeginWith.h in Headers */,
+				14D989640BFB068E004B2CA3 /* bXMLContain.h in Headers */,
+				14D989660BFB068E004B2CA3 /* bXMLDiv.h in Headers */,
+				14D989680BFB068E004B2CA3 /* bXMLEndWith.h in Headers */,
+				14D9896A0BFB068E004B2CA3 /* bXMLEqual.h in Headers */,
+				14D9896C0BFB068E004B2CA3 /* bXMLFormula.h in Headers */,
+				14D9896E0BFB068E004B2CA3 /* bXMLHigher.h in Headers */,
+				14D989700BFB068E004B2CA3 /* bXMLHigherOrEqual.h in Headers */,
+				14D989720BFB068E004B2CA3 /* bXMLLower.h in Headers */,
+				14D989740BFB068E004B2CA3 /* bXMLLowerOrEqual.h in Headers */,
+				14D989760BFB068E004B2CA3 /* bXMLMinus.h in Headers */,
+				14D989780BFB068E004B2CA3 /* bXMLMult.h in Headers */,
+				14D9897A0BFB068E004B2CA3 /* bXMLNotEqual.h in Headers */,
+				14D9897C0BFB068E004B2CA3 /* bXMLOr.h in Headers */,
+				14D9897E0BFB068E004B2CA3 /* bXMLPlus.h in Headers */,
+				14D989800BFB068E004B2CA3 /* bXMLPow.h in Headers */,
+				14D989820BFB068E004B2CA3 /* bXMLStrCat.h in Headers */,
+				14D989840BFB068E004B2CA3 /* bXMLPass.h in Headers */,
+				14D989860BFB068E004B2CA3 /* bXMLPassCount.h in Headers */,
+				14D989880BFB068E004B2CA3 /* bXMLAngle.h in Headers */,
+				14D9898A0BFB068E004B2CA3 /* bXMLCap.h in Headers */,
+				14D9898C0BFB068E004B2CA3 /* bXMLCharSpacing.h in Headers */,
+				14D9898E0BFB068E004B2CA3 /* bXMLDash.h in Headers */,
+				14D989900BFB068E004B2CA3 /* bXMLFont.h in Headers */,
+				14D989920BFB068E004B2CA3 /* bXMLHSize.h in Headers */,
+				14D989940BFB068E004B2CA3 /* bXMLImage.h in Headers */,
+				14D989960BFB068E004B2CA3 /* bXMLJoin.h in Headers */,
+				14D989980BFB068E004B2CA3 /* bXMLLeading.h in Headers */,
+				14D9899A0BFB068E004B2CA3 /* bXMLMiterLimit.h in Headers */,
+				14D9899C0BFB068E004B2CA3 /* bXMLPDFDocument.h in Headers */,
+				14D9899F0BFB068E004B2CA3 /* bXMLPropSize.h in Headers */,
+				14D989A10BFB068E004B2CA3 /* bXMLPropWidth.h in Headers */,
+				14D989A30BFB068E004B2CA3 /* bXMLRaster.h in Headers */,
+				14D989A50BFB068E004B2CA3 /* bXMLSize.h in Headers */,
+				14D989A70BFB068E004B2CA3 /* bXMLSubStyle.h in Headers */,
+				14D989A90BFB068E004B2CA3 /* bXMLText.h in Headers */,
+				14D989AB0BFB068E004B2CA3 /* bXMLVSize.h in Headers */,
+				14D989AD0BFB068E004B2CA3 /* bXMLWidth.h in Headers */,
+				14D989AF0BFB068E004B2CA3 /* bXMLWordSpacing.h in Headers */,
+				14D989B10BFB068E004B2CA3 /* bXMLScaleMax.h in Headers */,
+				14D989B30BFB068E004B2CA3 /* bXMLScaleMin.h in Headers */,
+				14D989B50BFB068E004B2CA3 /* bXMLScaleRef.h in Headers */,
+				14D989B70BFB068E004B2CA3 /* bXMLUnitCoef.h in Headers */,
+				14D989B90BFB068E004B2CA3 /* bXMLCondition.h in Headers */,
+				14D989BB0BFB068E004B2CA3 /* bXMLGeometry.h in Headers */,
+				14D989BD0BFB068E004B2CA3 /* bXMLGlobals.h in Headers */,
+				14D989BF0BFB068E004B2CA3 /* bXMLRender.h in Headers */,
+				14D989C10BFB068E004B2CA3 /* bXMLStdGeometry.h in Headers */,
+				14D989C30BFB068E004B2CA3 /* bXMLStyleIdentification.h in Headers */,
+				14D989C50BFB068E004B2CA3 /* bXMLStyleRun.h in Headers */,
+				14D989C70BFB068E004B2CA3 /* bXMLValidity.h in Headers */,
+				14D989C90BFB068E004B2CA3 /* bXMLCircleStyle.h in Headers */,
+				14D989CB0BFB068E004B2CA3 /* bXMLIconStyle.h in Headers */,
+				14D989CD0BFB068E004B2CA3 /* bXMLPolygonStyle.h in Headers */,
+				14D989CF0BFB068E004B2CA3 /* bXMLPolylineStyle.h in Headers */,
+				14D989D10BFB068E004B2CA3 /* bXMLRasterStyle.h in Headers */,
+				14D989D30BFB068E004B2CA3 /* bXMLRectStyle.h in Headers */,
+				14D989D50BFB068E004B2CA3 /* bXMLTextStyle.h in Headers */,
+				14D989D70BFB068E004B2CA3 /* bXMLfcalcUser.h in Headers */,
+				14D989D90BFB068E004B2CA3 /* bXMLfmacroUser.h in Headers */,
+				14D989DB0BFB068E004B2CA3 /* bXMLfvarUser.h in Headers */,
+				14D98A250BFB0CAE004B2CA3 /* bXMLSubStyleRun.h in Headers */,
+				14D98A430BFB0D9F004B2CA3 /* bXMLSubGlobals.h in Headers */,
+				14D98A970BFB1130004B2CA3 /* bXMLSubRender.h in Headers */,
+				14D98AA10BFB11E0004B2CA3 /* bXMLSubClassBound.h in Headers */,
+				14D98AA30BFB11E0004B2CA3 /* bXMLSubClassBoundsArray.h in Headers */,
+				14D98AA50BFB11E0004B2CA3 /* bXMLSubClassField.h in Headers */,
+				14D98AA70BFB11E0004B2CA3 /* bXMLSubClassName.h in Headers */,
+				14D98BF30BFB3179004B2CA3 /* bXMLSqrt.h in Headers */,
+				14D98C110BFB34F2004B2CA3 /* bXMLCeil.h in Headers */,
+				14D98C130BFB34F2004B2CA3 /* bXMLCos.h in Headers */,
+				14D98C150BFB34F2004B2CA3 /* bXMLExp.h in Headers */,
+				14D98C170BFB34F2004B2CA3 /* bXMLFloor.h in Headers */,
+				14D98C190BFB34F2004B2CA3 /* bXMLInv.h in Headers */,
+				14D98C1B0BFB34F2004B2CA3 /* bXMLLn.h in Headers */,
+				14D98C1D0BFB34F2004B2CA3 /* bXMLLog.h in Headers */,
+				14D98C1F0BFB34F2004B2CA3 /* bXMLNot.h in Headers */,
+				14D98C210BFB34F2004B2CA3 /* bXMLRound.h in Headers */,
+				14D98C230BFB34F2004B2CA3 /* bXMLSin.h in Headers */,
+				14D98C250BFB34F2004B2CA3 /* bXMLSqr.h in Headers */,
+				14D98C270BFB34F2004B2CA3 /* bXMLTan.h in Headers */,
+				14D98C2E0BFB38C0004B2CA3 /* bXMLFact.h in Headers */,
+				14D98CE40BFB5821004B2CA3 /* bXMLSum.h in Headers */,
+				141FB1270C017E6F00C8C8B7 /* bXMLAverage.h in Headers */,
+				141FB1FB0C0188DC00C8C8B7 /* bXMLFirst.h in Headers */,
+				141FB1FD0C0188DC00C8C8B7 /* bXMLLast.h in Headers */,
+				141FB1FF0C0188DC00C8C8B7 /* bXMLMax.h in Headers */,
+				141FB2010C0188DC00C8C8B7 /* bXMLMedian.h in Headers */,
+				141FB2030C0188DC00C8C8B7 /* bXMLMin.h in Headers */,
+				141FB2050C0188DC00C8C8B7 /* bXMLProduct.h in Headers */,
+				141FB2070C0188DC00C8C8B7 /* bXMLSingle.h in Headers */,
+				141FB2090C0188DC00C8C8B7 /* bXMLStdDeviation.h in Headers */,
+				141FB20B0C0188DC00C8C8B7 /* bXMLVariance.h in Headers */,
+				141FB2AA0C01C36F00C8C8B7 /* bXMLModulo.h in Headers */,
+				141FB2AC0C01C36F00C8C8B7 /* bXMLXOr.h in Headers */,
+				14DE77BB0C3BDDC10025B780 /* bXMLColorField16M.h in Headers */,
+				14DE77F70C3BE3750025B780 /* bXMLBgFill.h in Headers */,
+				14DE780A0C3BE8B50025B780 /* bXMLShiftX.h in Headers */,
+				14DE780C0C3BE8B50025B780 /* bXMLShiftY.h in Headers */,
+				14CD47930DE709640038F8EE /* bXMLContainer.h in Headers */,
+				14CD47950DE709640038F8EE /* bXMLObject.h in Headers */,
+				14CD41CB0E18C0C8006DD04C /* bXMLEndAngle.h in Headers */,
+				14CD41CD0E18C0C8006DD04C /* bXMLStartAngle.h in Headers */,
+				14CD423E0E18E58B006DD04C /* bXMLPropAngle.h in Headers */,
+				14EC7B660E1919FD009E8CBE /* bXMLPropColor.h in Headers */,
+				1468A7050EF15ECD00C89A5A /* bXMLLegible.h in Headers */,
+				147DEAFA0F0B7C8A0034A3CC /* bXMLScript.h in Headers */,
+				140CE3090F0E001A0000CAD1 /* bXMLString.h in Headers */,
+				1413DAD60F30904E00C70B11 /* bXMLVirtualLayer.h in Headers */,
+				143BEB5D0F949AE000A42930 /* bXMLDBQuestion.h in Headers */,
+				1448EC860FCAC94100861CB5 /* bXMLDBSetNext.h in Headers */,
+				1448EDB50FCAEF5000861CB5 /* bXMLDBAddToContrast.h in Headers */,
+				1448EDB70FCAEF5000861CB5 /* bXMLDBAddToMasked.h in Headers */,
+				14E0BD920FF4B25D00992A80 /* bXMLScreenGeometry.h in Headers */,
+				14E0BDB70FF4C54D00992A80 /* bXMLWMSRaster.h in Headers */,
+				140FCFF01005CE4A005ACD1F /* bXMLBoxPos.h in Headers */,
+				1467C527100B59DA009AC28D /* bXMLPrintAreaGeometry.h in Headers */,
+				14CE81F21111D65800479A6C /* bXMLfCast.h in Headers */,
+				14CE81F41111D65800479A6C /* bXMLiCast.h in Headers */,
+				14E79954125B18EA008A5A1B /* bXMLBgStroke.h in Headers */,
+				14E79970125B1AB0008A5A1B /* bXMLBgHeightMaj.h in Headers */,
+				14E79972125B1AB0008A5A1B /* bXMLBgWidth.h in Headers */,
+				14E79974125B1AB0008A5A1B /* bXMLBgWidthMaj.h in Headers */,
+				14E79976125B1AB0008A5A1B /* bXMLRoundedRadius.h in Headers */,
+				14023DCE12717B1F0078B43B /* bXMLBgShiftX.h in Headers */,
+				14023DD012717B1F0078B43B /* bXMLBgShiftY.h in Headers */,
+				14D547FD13B252AF00B93CE7 /* bXMLHVSizeJustification.h in Headers */,
+				14D5480E13B254BE00B93CE7 /* bXMLPropHVSize.h in Headers */,
+				142D9EA913C4453E00982A65 /* bXMLNthChar.h in Headers */,
+				14EB5EBF14F52B610076415A /* bXMLTextRptJustification.h in Headers */,
+				1477A42E18C0B6E000EE0D34 /* bXMLGoogleMap.h in Headers */,
+				1423FA3918C4772700068626 /* bXMLTMSRaster.h in Headers */,
+				14283D9018DC5C1E00808913 /* bXMLPerpendicularLine.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D01CCC60486CAD60068D4B7 /* XMLDictionary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1497562008C380AF0084C913 /* Build configuration list for PBXNativeTarget "XMLDictionary" */;
+			buildPhases = (
+				8D01CCC70486CAD60068D4B7 /* Headers */,
+				8D01CCC90486CAD60068D4B7 /* Resources */,
+				8D01CCCB0486CAD60068D4B7 /* Sources */,
+				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
+				8D01CCCF0486CAD60068D4B7 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMLDictionary;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = Template;
+			productReference = 8D01CCD20486CAD60068D4B7 /* XMLDictionary.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1497562408C380AF0084C913 /* Build configuration list for PBXProject "XMLDictionary" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				Italian,
+				Spanish,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* Template */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D01CCC60486CAD60068D4B7 /* XMLDictionary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D01CCC90486CAD60068D4B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D01CCCA0486CAD60068D4B7 /* InfoPlist.strings in Resources */,
+				14DE784B0C3BF9D70025B780 /* info.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		8D01CCCF0486CAD60068D4B7 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D01CCCB0486CAD60068D4B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1499702E0729169F00742B1A /* main.cpp in Sources */,
+				14D988E30BFB068E004B2CA3 /* bXMLBool.cpp in Sources */,
+				14D988E50BFB068E004B2CA3 /* bXMLDirectory.cpp in Sources */,
+				14D988E70BFB068E004B2CA3 /* bXMLFloat.cpp in Sources */,
+				14D988E90BFB068E004B2CA3 /* bXMLInt.cpp in Sources */,
+				14D988EB0BFB068E004B2CA3 /* bXMLName.cpp in Sources */,
+				14D988ED0BFB068E004B2CA3 /* bXMLParam.cpp in Sources */,
+				14D988EF0BFB068E004B2CA3 /* bXMLPath.cpp in Sources */,
+				14D988F10BFB068E004B2CA3 /* bXMLSign.cpp in Sources */,
+				14D988F30BFB068E004B2CA3 /* bXMLVersion.cpp in Sources */,
+				14D988F50BFB068E004B2CA3 /* bXMLClassBound.cpp in Sources */,
+				14D988F70BFB068E004B2CA3 /* bXMLClassBoundsArray.cpp in Sources */,
+				14D988F90BFB068E004B2CA3 /* bXMLClassField.cpp in Sources */,
+				14D988FB0BFB068E004B2CA3 /* bXMLClassMax.cpp in Sources */,
+				14D988FD0BFB068E004B2CA3 /* bXMLClassMin.cpp in Sources */,
+				14D988FF0BFB068E004B2CA3 /* bXMLClassName.cpp in Sources */,
+				14D989010BFB068E004B2CA3 /* bXMLSort.cpp in Sources */,
+				14D989030BFB068E004B2CA3 /* bXMLAlpha.cpp in Sources */,
+				14D989050BFB068E004B2CA3 /* bXMLBlack.cpp in Sources */,
+				14D989070BFB068E004B2CA3 /* bXMLBlue.cpp in Sources */,
+				14D989090BFB068E004B2CA3 /* bXMLCyan.cpp in Sources */,
+				14D9890B0BFB068E004B2CA3 /* bXMLFill.cpp in Sources */,
+				14D9890D0BFB068E004B2CA3 /* bXMLFillPattern.cpp in Sources */,
+				14D9890F0BFB068E004B2CA3 /* bXMLGreen.cpp in Sources */,
+				14D989110BFB068E004B2CA3 /* bXMLMagenta.cpp in Sources */,
+				14D989130BFB068E004B2CA3 /* bXMLRed.cpp in Sources */,
+				14D989150BFB068E004B2CA3 /* bXMLStroke.cpp in Sources */,
+				14D989170BFB068E004B2CA3 /* bXMLStrokePattern.cpp in Sources */,
+				14D989190BFB068E004B2CA3 /* bXMLYellow.cpp in Sources */,
+				14D9891B0BFB068E004B2CA3 /* bXMLDBBool.cpp in Sources */,
+				14D9891D0BFB068E004B2CA3 /* bXMLDBChar.cpp in Sources */,
+				14D9891F0BFB068E004B2CA3 /* bXMLDBDate.cpp in Sources */,
+				14D989210BFB068E004B2CA3 /* bXMLDBField.cpp in Sources */,
+				14D989230BFB068E004B2CA3 /* bXMLDBFloat.cpp in Sources */,
+				14D989250BFB068E004B2CA3 /* bXMLDBInt.cpp in Sources */,
+				14D989270BFB068E004B2CA3 /* bXMLDBSelKind.cpp in Sources */,
+				14D989290BFB068E004B2CA3 /* bXMLDBTime.cpp in Sources */,
+				14D9892B0BFB068E004B2CA3 /* bXMLDBType.cpp in Sources */,
+				14D9892D0BFB068E004B2CA3 /* bXMLDBUseMasked.cpp in Sources */,
+				14D9892F0BFB068E004B2CA3 /* bSubStyle.cpp in Sources */,
+				14D989310BFB068E004B2CA3 /* bXMLColorField8.cpp in Sources */,
+				14D989330BFB068E004B2CA3 /* bXMLField.cpp in Sources */,
+				14D989350BFB068E004B2CA3 /* bXMLValue.cpp in Sources */,
+				14D989370BFB068E004B2CA3 /* bXMLStrLen.cpp in Sources */,
+				14D989390BFB068E004B2CA3 /* bXMLStrLwr.cpp in Sources */,
+				14D9893B0BFB068E004B2CA3 /* bXMLStrSntFCUpr.cpp in Sources */,
+				14D9893D0BFB068E004B2CA3 /* bXMLStrUpr.cpp in Sources */,
+				14D9893F0BFB068E004B2CA3 /* bXMLStrWrdFCUpr.cpp in Sources */,
+				14D989410BFB068E004B2CA3 /* bXMLArrow.cpp in Sources */,
+				14D989430BFB068E004B2CA3 /* bXMLCentroid.cpp in Sources */,
+				14D989450BFB068E004B2CA3 /* bXMLDecal.cpp in Sources */,
+				14D989470BFB068E004B2CA3 /* bXMLLineTo.cpp in Sources */,
+				14D989490BFB068E004B2CA3 /* bXMLOffsetCoord.cpp in Sources */,
+				14D9894B0BFB068E004B2CA3 /* bXMLPointJustification.cpp in Sources */,
+				14D9894D0BFB068E004B2CA3 /* bXMLPolyJustification.cpp in Sources */,
+				14D9894F0BFB068E004B2CA3 /* bXMLSmooth.cpp in Sources */,
+				14D989510BFB068E004B2CA3 /* bXMLLayer.cpp in Sources */,
+				14D989530BFB068E004B2CA3 /* bXMLLayerArray.cpp in Sources */,
+				14D989550BFB068E004B2CA3 /* bXMLSelectable.cpp in Sources */,
+				14D989570BFB068E004B2CA3 /* bXMLStyle.cpp in Sources */,
+				14D989590BFB068E004B2CA3 /* bXMLType.cpp in Sources */,
+				14D9895B0BFB068E004B2CA3 /* bXMLView.cpp in Sources */,
+				14D9895D0BFB068E004B2CA3 /* bXMLVisible.cpp in Sources */,
+				14D9895F0BFB068E004B2CA3 /* bXMLAnd.cpp in Sources */,
+				14D989610BFB068E004B2CA3 /* bXMLBeginWith.cpp in Sources */,
+				14D989630BFB068E004B2CA3 /* bXMLContain.cpp in Sources */,
+				14D989650BFB068E004B2CA3 /* bXMLDiv.cpp in Sources */,
+				14D989670BFB068E004B2CA3 /* bXMLEndWith.cpp in Sources */,
+				14D989690BFB068E004B2CA3 /* bXMLEqual.cpp in Sources */,
+				14D9896B0BFB068E004B2CA3 /* bXMLFormula.cpp in Sources */,
+				14D9896D0BFB068E004B2CA3 /* bXMLHigher.cpp in Sources */,
+				14D9896F0BFB068E004B2CA3 /* bXMLHigherOrEqual.cpp in Sources */,
+				14D989710BFB068E004B2CA3 /* bXMLLower.cpp in Sources */,
+				14D989730BFB068E004B2CA3 /* bXMLLowerOrEqual.cpp in Sources */,
+				14D989750BFB068E004B2CA3 /* bXMLMinus.cpp in Sources */,
+				14D989770BFB068E004B2CA3 /* bXMLMult.cpp in Sources */,
+				14D989790BFB068E004B2CA3 /* bXMLNotEqual.cpp in Sources */,
+				14D9897B0BFB068E004B2CA3 /* bXMLOr.cpp in Sources */,
+				14D9897D0BFB068E004B2CA3 /* bXMLPlus.cpp in Sources */,
+				14D9897F0BFB068E004B2CA3 /* bXMLPow.cpp in Sources */,
+				14D989810BFB068E004B2CA3 /* bXMLStrCat.cpp in Sources */,
+				14D989830BFB068E004B2CA3 /* bXMLPass.cpp in Sources */,
+				14D989850BFB068E004B2CA3 /* bXMLPassCount.cpp in Sources */,
+				14D989870BFB068E004B2CA3 /* bXMLAngle.cpp in Sources */,
+				14D989890BFB068E004B2CA3 /* bXMLCap.cpp in Sources */,
+				14D9898B0BFB068E004B2CA3 /* bXMLCharSpacing.cpp in Sources */,
+				14D9898D0BFB068E004B2CA3 /* bXMLDash.cpp in Sources */,
+				14D9898F0BFB068E004B2CA3 /* bXMLFont.cpp in Sources */,
+				14D989910BFB068E004B2CA3 /* bXMLHSize.cpp in Sources */,
+				14D989930BFB068E004B2CA3 /* bXMLImage.cpp in Sources */,
+				14D989950BFB068E004B2CA3 /* bXMLJoin.cpp in Sources */,
+				14D989970BFB068E004B2CA3 /* bXMLLeading.cpp in Sources */,
+				14D989990BFB068E004B2CA3 /* bXMLMiterLimit.cpp in Sources */,
+				14D9899B0BFB068E004B2CA3 /* bXMLPDFDocument.cpp in Sources */,
+				14D9899E0BFB068E004B2CA3 /* bXMLPropSize.cpp in Sources */,
+				14D989A00BFB068E004B2CA3 /* bXMLPropWidth.cpp in Sources */,
+				14D989A20BFB068E004B2CA3 /* bXMLRaster.cpp in Sources */,
+				14D989A40BFB068E004B2CA3 /* bXMLSize.cpp in Sources */,
+				14D989A60BFB068E004B2CA3 /* bXMLSubStyle.cpp in Sources */,
+				14D989A80BFB068E004B2CA3 /* bXMLText.cpp in Sources */,
+				14D989AA0BFB068E004B2CA3 /* bXMLVSize.cpp in Sources */,
+				14D989AC0BFB068E004B2CA3 /* bXMLWidth.cpp in Sources */,
+				14D989AE0BFB068E004B2CA3 /* bXMLWordSpacing.cpp in Sources */,
+				14D989B00BFB068E004B2CA3 /* bXMLScaleMax.cpp in Sources */,
+				14D989B20BFB068E004B2CA3 /* bXMLScaleMin.cpp in Sources */,
+				14D989B40BFB068E004B2CA3 /* bXMLScaleRef.cpp in Sources */,
+				14D989B60BFB068E004B2CA3 /* bXMLUnitCoef.cpp in Sources */,
+				14D989B80BFB068E004B2CA3 /* bXMLCondition.cpp in Sources */,
+				14D989BA0BFB068E004B2CA3 /* bXMLGeometry.cpp in Sources */,
+				14D989BC0BFB068E004B2CA3 /* bXMLGlobals.cpp in Sources */,
+				14D989BE0BFB068E004B2CA3 /* bXMLRender.cpp in Sources */,
+				14D989C00BFB068E004B2CA3 /* bXMLStdGeometry.cpp in Sources */,
+				14D989C20BFB068E004B2CA3 /* bXMLStyleIdentification.cpp in Sources */,
+				14D989C40BFB068E004B2CA3 /* bXMLStyleRun.cpp in Sources */,
+				14D989C60BFB068E004B2CA3 /* bXMLValidity.cpp in Sources */,
+				14D989C80BFB068E004B2CA3 /* bXMLCircleStyle.cpp in Sources */,
+				14D989CA0BFB068E004B2CA3 /* bXMLIconStyle.cpp in Sources */,
+				14D989CC0BFB068E004B2CA3 /* bXMLPolygonStyle.cpp in Sources */,
+				14D989CE0BFB068E004B2CA3 /* bXMLPolylineStyle.cpp in Sources */,
+				14D989D00BFB068E004B2CA3 /* bXMLRasterStyle.cpp in Sources */,
+				14D989D20BFB068E004B2CA3 /* bXMLRectStyle.cpp in Sources */,
+				14D989D40BFB068E004B2CA3 /* bXMLTextStyle.cpp in Sources */,
+				14D989D60BFB068E004B2CA3 /* bXMLfcalcUser.cpp in Sources */,
+				14D989D80BFB068E004B2CA3 /* bXMLfmacroUser.cpp in Sources */,
+				14D989DA0BFB068E004B2CA3 /* bXMLfvarUser.cpp in Sources */,
+				14D98A240BFB0CAE004B2CA3 /* bXMLSubStyleRun.cpp in Sources */,
+				14D98A420BFB0D9F004B2CA3 /* bXMLSubGlobals.cpp in Sources */,
+				14D98A960BFB1130004B2CA3 /* bXMLSubRender.cpp in Sources */,
+				14D98AA00BFB11E0004B2CA3 /* bXMLSubClassBound.cpp in Sources */,
+				14D98AA20BFB11E0004B2CA3 /* bXMLSubClassBoundsArray.cpp in Sources */,
+				14D98AA40BFB11E0004B2CA3 /* bXMLSubClassField.cpp in Sources */,
+				14D98AA60BFB11E0004B2CA3 /* bXMLSubClassName.cpp in Sources */,
+				14D98BF20BFB3179004B2CA3 /* bXMLSqrt.cpp in Sources */,
+				14D98C100BFB34F2004B2CA3 /* bXMLCeil.cpp in Sources */,
+				14D98C120BFB34F2004B2CA3 /* bXMLCos.cpp in Sources */,
+				14D98C140BFB34F2004B2CA3 /* bXMLExp.cpp in Sources */,
+				14D98C160BFB34F2004B2CA3 /* bXMLFloor.cpp in Sources */,
+				14D98C180BFB34F2004B2CA3 /* bXMLInv.cpp in Sources */,
+				14D98C1A0BFB34F2004B2CA3 /* bXMLLn.cpp in Sources */,
+				14D98C1C0BFB34F2004B2CA3 /* bXMLLog.cpp in Sources */,
+				14D98C1E0BFB34F2004B2CA3 /* bXMLNot.cpp in Sources */,
+				14D98C200BFB34F2004B2CA3 /* bXMLRound.cpp in Sources */,
+				14D98C220BFB34F2004B2CA3 /* bXMLSin.cpp in Sources */,
+				14D98C240BFB34F2004B2CA3 /* bXMLSqr.cpp in Sources */,
+				14D98C260BFB34F2004B2CA3 /* bXMLTan.cpp in Sources */,
+				14D98C2D0BFB38C0004B2CA3 /* bXMLFact.cpp in Sources */,
+				14D98CE30BFB5821004B2CA3 /* bXMLSum.cpp in Sources */,
+				141FB1260C017E6F00C8C8B7 /* bXMLAverage.cpp in Sources */,
+				141FB1FA0C0188DC00C8C8B7 /* bXMLFirst.cpp in Sources */,
+				141FB1FC0C0188DC00C8C8B7 /* bXMLLast.cpp in Sources */,
+				141FB1FE0C0188DC00C8C8B7 /* bXMLMax.cpp in Sources */,
+				141FB2000C0188DC00C8C8B7 /* bXMLMedian.cpp in Sources */,
+				141FB2020C0188DC00C8C8B7 /* bXMLMin.cpp in Sources */,
+				141FB2040C0188DC00C8C8B7 /* bXMLProduct.cpp in Sources */,
+				141FB2060C0188DC00C8C8B7 /* bXMLSingle.cpp in Sources */,
+				141FB2080C0188DC00C8C8B7 /* bXMLStdDeviation.cpp in Sources */,
+				141FB20A0C0188DC00C8C8B7 /* bXMLVariance.cpp in Sources */,
+				141FB2A90C01C36F00C8C8B7 /* bXMLModulo.cpp in Sources */,
+				141FB2AB0C01C36F00C8C8B7 /* bXMLXOr.cpp in Sources */,
+				14DE77BA0C3BDDC10025B780 /* bXMLColorField16M.cpp in Sources */,
+				14DE77F60C3BE3750025B780 /* bXMLBgFill.cpp in Sources */,
+				14DE78090C3BE8B50025B780 /* bXMLShiftX.cpp in Sources */,
+				14DE780B0C3BE8B50025B780 /* bXMLShiftY.cpp in Sources */,
+				14CD47920DE709640038F8EE /* bXMLContainer.cpp in Sources */,
+				14CD47940DE709640038F8EE /* bXMLObject.cpp in Sources */,
+				14CD41CA0E18C0C8006DD04C /* bXMLEndAngle.cpp in Sources */,
+				14CD41CC0E18C0C8006DD04C /* bXMLStartAngle.cpp in Sources */,
+				14CD423D0E18E58B006DD04C /* bXMLPropAngle.cpp in Sources */,
+				14EC7B650E1919FD009E8CBE /* bXMLPropColor.cpp in Sources */,
+				1468A7040EF15ECD00C89A5A /* bXMLLegible.cpp in Sources */,
+				147DEAF90F0B7C8A0034A3CC /* bXMLScript.cpp in Sources */,
+				140CE3080F0E001A0000CAD1 /* bXMLString.cpp in Sources */,
+				1413DAD50F30904E00C70B11 /* bXMLVirtualLayer.cpp in Sources */,
+				143BEB5C0F949AE000A42930 /* bXMLDBQuestion.cpp in Sources */,
+				1448EC850FCAC94100861CB5 /* bXMLDBSetNext.cpp in Sources */,
+				1448EDB40FCAEF5000861CB5 /* bXMLDBAddToContrast.cpp in Sources */,
+				1448EDB60FCAEF5000861CB5 /* bXMLDBAddToMasked.cpp in Sources */,
+				14E0BD910FF4B25D00992A80 /* bXMLScreenGeometry.cpp in Sources */,
+				14E0BDB60FF4C54D00992A80 /* bXMLWMSRaster.cpp in Sources */,
+				140FCFEF1005CE4A005ACD1F /* bXMLBoxPos.cpp in Sources */,
+				1467C526100B59DA009AC28D /* bXMLPrintAreaGeometry.cpp in Sources */,
+				14CE81F11111D65800479A6C /* bXMLfCast.cpp in Sources */,
+				14CE81F31111D65800479A6C /* bXMLiCast.cpp in Sources */,
+				14E79953125B18E9008A5A1B /* bXMLBgStroke.cpp in Sources */,
+				14E7996F125B1AB0008A5A1B /* bXMLBgHeightMaj.cpp in Sources */,
+				14E79971125B1AB0008A5A1B /* bXMLBgWidth.cpp in Sources */,
+				14E79973125B1AB0008A5A1B /* bXMLBgWidthMaj.cpp in Sources */,
+				14E79975125B1AB0008A5A1B /* bXMLRoundedRadius.cpp in Sources */,
+				14023DCD12717B1F0078B43B /* bXMLBgShiftX.cpp in Sources */,
+				14023DCF12717B1F0078B43B /* bXMLBgShiftY.cpp in Sources */,
+				14D547FC13B252AF00B93CE7 /* bXMLHVSizeJustification.cpp in Sources */,
+				14D5480D13B254BE00B93CE7 /* bXMLPropHVSize.cpp in Sources */,
+				142D9EA813C4453E00982A65 /* bXMLNthChar.cpp in Sources */,
+				14EB5EBE14F52B610076415A /* bXMLTextRptJustification.cpp in Sources */,
+				1477A42D18C0B6E000EE0D34 /* bXMLGoogleMap.cpp in Sources */,
+				1423FA3818C4772700068626 /* bXMLTMSRaster.cpp in Sources */,
+				14283D8F18DC5C1E00808913 /* bXMLPerpendicularLine.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				149970220729167500742B1A /* French */,
+				14D7585D0C4DEDCE00EA64F2 /* English */,
+				14D5C6F00CD1E3160003D1AA /* Italian */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1497562208C380AF0084C913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_LOCATION = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "$(SRCROOT)/../../../../Applis/Current/MacMap®/build/Release";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = XML_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = ../../build;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../../ThirdPart/UXLibs/INTEL-LIBS/CURL\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../../ThirdPart/UXLibs/PPC-LIBS/CURL\"";
+				LIBRARY_STYLE = Bundle;
+				OBJROOT = ../../build;
+				OTHER_CFLAGS = "-xobjective-c++";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = XMLDictionary;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				SYMROOT = ../../build;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1497562608C380AF0084C913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx10.8;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1497562008C380AF0084C913 /* Build configuration list for PBXNativeTarget "XMLDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1497562208C380AF0084C913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1497562408C380AF0084C913 /* Build configuration list for PBXProject "XMLDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1497562608C380AF0084C913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

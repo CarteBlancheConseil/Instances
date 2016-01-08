@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Calcs…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Calcs… versione 1.2, Copyright 2015 Carte Blanche Conseil.";

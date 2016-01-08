@@ -1,0 +1,105 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <string name="targetFramework">IBCarbonFramework</string>
+  <object name="rootObject" class="NSCustomObject" id="1">
+    <string name="customClass">NSApplication</string>
+  </object>
+  <array count="8" name="allObjects">
+    <object class="IBCarbonWindow" id="242">
+      <string name="windowRect">140 250 262 536 </string>
+      <string name="title">Scatter...</string>
+      <object name="rootControl" class="IBCarbonRootControl" id="258">
+        <string name="bounds">0 0 122 286 </string>
+        <string name="viewFrame">0 0 286 122 </string>
+        <array count="6" name="subviews">
+          <object class="IBCarbonButton" id="274">
+            <string name="bounds">82 196 102 266 </string>
+            <string name="viewFrame">196 82 70 20 </string>
+            <ostype name="controlSignature">stuf</ostype>
+            <int name="controlID">1</int>
+            <string name="title">OK</string>
+            <ostype name="command">ok  </ostype>
+            <object name="layoutInfo" class="IBCarbonHILayoutInfo">
+              <int name="bindingBottomKind">2</int>
+              <int name="bindingRightKind">2</int>
+            </object>
+            <boolean name="layoutSuspended">TRUE</boolean>
+            <int name="buttonType">1</int>
+          </object>
+          <object class="IBCarbonButton" id="263">
+            <string name="bounds">82 20 102 90 </string>
+            <string name="viewFrame">20 82 70 20 </string>
+            <ostype name="controlSignature">stuf</ostype>
+            <int name="controlID">2</int>
+            <string name="title">Cancel</string>
+            <ostype name="command">not!</ostype>
+            <object name="layoutInfo" class="IBCarbonHILayoutInfo">
+              <int name="bindingBottomKind">2</int>
+              <int name="bindingRightKind">2</int>
+            </object>
+            <boolean name="layoutSuspended">TRUE</boolean>
+            <int name="buttonType">2</int>
+          </object>
+          <object class="IBCarbonEditText" id="407">
+            <string name="bounds">47 41 63 141 </string>
+            <string name="viewFrame">41 47 100 16 </string>
+            <ostype name="controlSignature">xShk</ostype>
+            <int name="controlID">5</int>
+            <boolean name="isUnicode">TRUE</boolean>
+          </object>
+          <object class="IBCarbonStaticText" id="419">
+            <string name="bounds">46 152 62 179 </string>
+            <string name="viewFrame">152 46 27 16 </string>
+            <ostype name="controlSignature">xShk</ostype>
+            <int name="controlID">6</int>
+            <string name="title">_</string>
+          </object>
+          <object class="IBCarbonStaticText" id="422">
+            <string name="bounds">20 20 36 266 </string>
+            <string name="viewFrame">20 20 246 16 </string>
+            <ostype name="controlSignature">xShk</ostype>
+            <int name="controlID">3</int>
+            <string name="title">Randomly scatter selection of:</string>
+          </object>
+          <object class="IBCarbonStaticText" id="437">
+            <string name="bounds">46 20 62 30 </string>
+            <string name="viewFrame">20 46 10 16 </string>
+            <ostype name="controlSignature">xShk</ostype>
+            <int name="controlID">4</int>
+            <string name="title">±</string>
+          </object>
+        </array>
+      </object>
+      <boolean name="receiveUpdates">FALSE</boolean>
+      <boolean name="isResizable">FALSE</boolean>
+      <boolean name="compositing">TRUE</boolean>
+      <int name="carbonWindowClass">4</int>
+      <int name="windowPosition">1</int>
+      <boolean name="isConstrained">FALSE</boolean>
+    </object>
+    <reference idRef="258"/>
+    <reference idRef="263"/>
+    <reference idRef="274"/>
+    <reference idRef="407"/>
+    <reference idRef="419"/>
+    <reference idRef="422"/>
+    <reference idRef="437"/>
+  </array>
+  <array count="8" name="allParents">
+    <reference idRef="1"/>
+    <reference idRef="242"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+  </array>
+  <dictionary count="2" name="nameTable">
+    <string>Files Owner</string>
+    <reference idRef="1"/>
+    <string>Window</string>
+    <reference idRef="242"/>
+  </dictionary>
+  <unsigned_int name="nextObjectID">438</unsigned_int>
+</object>

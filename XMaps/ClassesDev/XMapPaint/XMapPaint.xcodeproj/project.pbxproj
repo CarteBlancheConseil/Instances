@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14A6BF4012C21B3600E6FBDB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A6BF3F12C21B3600E6FBDB /* QuartzCore.framework */; };
+		14B1510F1B861C2800D464F7 /* bXMapPaint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14B1510B1B861C2800D464F7 /* bXMapPaint.cpp */; };
+		14B151101B861C2800D464F7 /* PaintWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14B1510E1B861C2800D464F7 /* PaintWindowController.mm */; };
+		14B151121B861C8600D464F7 /* Palette.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14B151111B861C8600D464F7 /* Palette.xib */; };
+		14B151161B862AE800D464F7 /* blk.png in Resources */ = {isa = PBXBuildFile; fileRef = 14B151141B862AE800D464F7 /* blk.png */; };
+		14B151171B862AE800D464F7 /* wht.png in Resources */ = {isa = PBXBuildFile; fileRef = 14B151151B862AE800D464F7 /* wht.png */; };
+		14B1511E1B862EA200D464F7 /* blu.png in Resources */ = {isa = PBXBuildFile; fileRef = 14B151181B862EA200D464F7 /* blu.png */; };
+		14B1511F1B862EA200D464F7 /* cyn.png in Resources */ = {isa = PBXBuildFile; fileRef = 14B151191B862EA200D464F7 /* cyn.png */; };
+		14B151201B862EA200D464F7 /* grn.png in Resources */ = {isa = PBXBuildFile; fileRef = 14B1511A1B862EA200D464F7 /* grn.png */; };
+		14B151211B862EA200D464F7 /* mgt.png in Resources */ = {isa = PBXBuildFile; fileRef = 14B1511B1B862EA200D464F7 /* mgt.png */; };
+		14B151221B862EA200D464F7 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 14B1511C1B862EA200D464F7 /* red.png */; };
+		14B151231B862EA200D464F7 /* ylw.png in Resources */ = {isa = PBXBuildFile; fileRef = 14B1511D1B862EA200D464F7 /* ylw.png */; };
+		14C3363E0E0BED6300E8813A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14C3363C0E0BED6300E8813A /* InfoPlist.strings */; };
+		14CA52E90DF9640E0080DF70 /* xmap_lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA52E80DF9640E0080DF70 /* xmap_lib.framework */; };
+		14CA540D0DF9642C0080DF70 /* std_ext.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA540C0DF9642C0080DF70 /* std_ext.framework */; };
+		14CA54330DF964320080DF70 /* mox_intf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA54320DF964320080DF70 /* mox_intf.framework */; };
+		14CA54380DF964990080DF70 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14CA54360DF964990080DF70 /* main.cpp */; };
+		14CA54550DF967F30080DF70 /* MacMapStats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA54530DF967F30080DF70 /* MacMapStats.framework */; };
+		14CA54560DF967F30080DF70 /* MacMapSuite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA54540DF967F30080DF70 /* MacMapSuite.framework */; };
+		14EFCE261292E8730038AAD4 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EFCE251292E8730038AAD4 /* Carbon.framework */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		147BC62419921554008AECAA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		147BC6271992155D008AECAA /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14A6BF3F12C21B3600E6FBDB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		14B1510B1B861C2800D464F7 /* bXMapPaint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMapPaint.cpp; sourceTree = "<group>"; };
+		14B1510C1B861C2800D464F7 /* bXMapPaint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMapPaint.h; sourceTree = "<group>"; };
+		14B1510D1B861C2800D464F7 /* PaintWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintWindowController.h; sourceTree = "<group>"; };
+		14B1510E1B861C2800D464F7 /* PaintWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PaintWindowController.mm; sourceTree = "<group>"; };
+		14B151111B861C8600D464F7 /* Palette.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Palette.xib; sourceTree = "<group>"; };
+		14B151141B862AE800D464F7 /* blk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blk.png; sourceTree = "<group>"; };
+		14B151151B862AE800D464F7 /* wht.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wht.png; sourceTree = "<group>"; };
+		14B151181B862EA200D464F7 /* blu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blu.png; sourceTree = "<group>"; };
+		14B151191B862EA200D464F7 /* cyn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cyn.png; sourceTree = "<group>"; };
+		14B1511A1B862EA200D464F7 /* grn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grn.png; sourceTree = "<group>"; };
+		14B1511B1B862EA200D464F7 /* mgt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mgt.png; sourceTree = "<group>"; };
+		14B1511C1B862EA200D464F7 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		14B1511D1B862EA200D464F7 /* ylw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ylw.png; sourceTree = "<group>"; };
+		14C3363D0E0BED6300E8813A /* French */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14CA52E80DF9640E0080DF70 /* xmap_lib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = xmap_lib.framework; path = "../../../../Applis/Current/MacMap®/build/Release/xmap_lib.framework"; sourceTree = SOURCE_ROOT; };
+		14CA540C0DF9642C0080DF70 /* std_ext.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = std_ext.framework; path = "../../../../Applis/Current/MacMap®/build/Release/std_ext.framework"; sourceTree = SOURCE_ROOT; };
+		14CA54320DF964320080DF70 /* mox_intf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mox_intf.framework; path = "../../../../Applis/Current/MacMap®/build/Release/mox_intf.framework"; sourceTree = SOURCE_ROOT; };
+		14CA54360DF964990080DF70 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		14CA54370DF964990080DF70 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		14CA54530DF967F30080DF70 /* MacMapStats.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacMapStats.framework; path = /Library/Frameworks/MacMapStats.framework; sourceTree = "<absolute>"; };
+		14CA54540DF967F30080DF70 /* MacMapSuite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacMapSuite.framework; path = /Library/Frameworks/MacMapSuite.framework; sourceTree = "<absolute>"; };
+		14CA57C20DF973C30080DF70 /* CocoaStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaStuff.h; sourceTree = "<group>"; };
+		14EFCE251292E8730038AAD4 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		32DBCF630370AF2F00C91783 /* CocoaBundle_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaBundle_Prefix.pch; sourceTree = "<group>"; };
+		8D5B49B6048680CD000E48DA /* XMapPaint.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMapPaint.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+				14CA52E90DF9640E0080DF70 /* xmap_lib.framework in Frameworks */,
+				14CA540D0DF9642C0080DF70 /* std_ext.framework in Frameworks */,
+				14CA54330DF964320080DF70 /* mox_intf.framework in Frameworks */,
+				14CA54550DF967F30080DF70 /* MacMapStats.framework in Frameworks */,
+				14CA54560DF967F30080DF70 /* MacMapSuite.framework in Frameworks */,
+				14EFCE261292E8730038AAD4 /* Carbon.framework in Frameworks */,
+				14A6BF4012C21B3600E6FBDB /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* CocoaBundle */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = CocoaBundle;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14B151131B862AE800D464F7 /* Images */,
+				14B151111B861C8600D464F7 /* Palette.xib */,
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				14C3363C0E0BED6300E8813A /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				14B1510B1B861C2800D464F7 /* bXMapPaint.cpp */,
+				14B1510C1B861C2800D464F7 /* bXMapPaint.h */,
+				14B1510D1B861C2800D464F7 /* PaintWindowController.h */,
+				14B1510E1B861C2800D464F7 /* PaintWindowController.mm */,
+				14CA57C20DF973C30080DF70 /* CocoaStuff.h */,
+				14CA54370DF964990080DF70 /* main.h */,
+				14CA54360DF964990080DF70 /* main.cpp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14A6BF3F12C21B3600E6FBDB /* QuartzCore.framework */,
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14CA54530DF967F30080DF70 /* MacMapStats.framework */,
+				14CA54540DF967F30080DF70 /* MacMapSuite.framework */,
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+				D2F7E65807B2D6F200F64583 /* CoreData.framework */,
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+				14CA54320DF964320080DF70 /* mox_intf.framework */,
+				14CA540C0DF9642C0080DF70 /* std_ext.framework */,
+				14CA52E80DF9640E0080DF70 /* xmap_lib.framework */,
+				14EFCE251292E8730038AAD4 /* Carbon.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		14B151131B862AE800D464F7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				14B151181B862EA200D464F7 /* blu.png */,
+				14B151191B862EA200D464F7 /* cyn.png */,
+				14B1511A1B862EA200D464F7 /* grn.png */,
+				14B1511B1B862EA200D464F7 /* mgt.png */,
+				14B1511C1B862EA200D464F7 /* red.png */,
+				14B151141B862AE800D464F7 /* blk.png */,
+				14B151151B862AE800D464F7 /* wht.png */,
+				14B1511D1B862EA200D464F7 /* ylw.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* XMapPaint.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF630370AF2F00C91783 /* CocoaBundle_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* XMapFiche */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "XMapFiche" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMapFiche;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = CocoaBundle;
+			productReference = 8D5B49B6048680CD000E48DA /* XMapPaint.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "XMapPaint" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				Italian,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* CocoaBundle */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* XMapFiche */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C3363E0E0BED6300E8813A /* InfoPlist.strings in Resources */,
+				14B151201B862EA200D464F7 /* grn.png in Resources */,
+				14B151171B862AE800D464F7 /* wht.png in Resources */,
+				14B151221B862EA200D464F7 /* red.png in Resources */,
+				14B151211B862EA200D464F7 /* mgt.png in Resources */,
+				14B151121B861C8600D464F7 /* Palette.xib in Resources */,
+				14B1511F1B862EA200D464F7 /* cyn.png in Resources */,
+				14B151231B862EA200D464F7 /* ylw.png in Resources */,
+				14B1511E1B862EA200D464F7 /* blu.png in Resources */,
+				14B151161B862AE800D464F7 /* blk.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B151101B861C2800D464F7 /* PaintWindowController.mm in Sources */,
+				14CA54380DF964990080DF70 /* main.cpp in Sources */,
+				14B1510F1B861C2800D464F7 /* bXMapPaint.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		14C3363C0E0BED6300E8813A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14C3363D0E0BED6300E8813A /* French */,
+				147BC62419921554008AECAA /* English */,
+				147BC6271992155D008AECAA /* Italian */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "$(SRCROOT)/../../../../Applis/Current/MacMap®/build/Release";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OBJC_CALL_CXX_CDTORS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = ../../build;
+				OBJROOT = ../../build;
+				PRODUCT_NAME = XMapPaint;
+				SKIP_INSTALL = YES;
+				SYMROOT = ../../build;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OBJROOT = "../../zXCode Div/buildprod";
+				PREBINDING = YES;
+				SDKROOT = macosx10.8;
+				SYMROOT = ../../build;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "XMapFiche" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "XMapPaint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

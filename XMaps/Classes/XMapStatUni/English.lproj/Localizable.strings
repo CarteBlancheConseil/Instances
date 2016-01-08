@@ -1,0 +1,27 @@
+/*MESSAGES*/
+"browser"				="Spreadsheet";
+"empty_col"				="Empty column";
+"data_load"				="Loading data…";
+"sort_prog"				="Sorting…";
+
+"indicators"			="Indicators";
+"min"					="Minimum";
+"max"					="Maximum";
+"extend"				="Extend";
+"sum"					="Sum";
+"average"				="Average";
+"median"				="Median";
+"stddeviation"			="Standard Deviation";
+"variance"				="Variance";
+"cvariation"			="Variation coeff.";
+"cskewness"				="Skewness coeff.";
+"cpearson"				="Pearson coeff.";
+"cfischer"				="Fisher coeff.";
+
+"histogram"				="Histogram";
+"nofield"				="No Field";
+
+"distributiondiagram"	="Distribution Diagram";
+"manning"				="Counts";
+
+/*ERRORS*/

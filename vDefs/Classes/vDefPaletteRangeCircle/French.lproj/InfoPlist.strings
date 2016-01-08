@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Points colorés";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Points colorés version 1.2, Copyright 2012 Carte Blanche Conseil.";

@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Publish as TIFF...";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Publish as TIFF… version 1.2, Copyright 2005 Carte Blanche Conseil.";

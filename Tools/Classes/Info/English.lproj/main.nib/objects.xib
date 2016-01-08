@@ -1,0 +1,172 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <string name="targetFramework">IBCarbonFramework</string>
+  <object name="rootObject" class="NSCustomObject" id="1">
+    <string name="customClass">NSApplication</string>
+  </object>
+  <array count="13" name="allObjects">
+    <object class="IBCarbonWindow" id="216">
+      <string name="windowRect">113 75 373 361 </string>
+      <string name="title">Tooltip Tool</string>
+      <object name="rootControl" class="IBCarbonRootControl" id="222">
+        <string name="bounds">0 0 260 286 </string>
+        <string name="viewFrame">0 0 286 260 </string>
+        <array count="5" name="subviews">
+          <object class="IBCarbonButton" id="223">
+            <string name="bounds">220 196 240 266 </string>
+            <string name="viewFrame">196 220 70 20 </string>
+            <ostype name="controlSignature">info</ostype>
+            <int name="controlID">1</int>
+            <string name="title">OK</string>
+            <ostype name="command">ok  </ostype>
+            <int name="buttonType">1</int>
+          </object>
+          <object class="IBCarbonButton" id="226">
+            <string name="bounds">220 20 240 90 </string>
+            <string name="viewFrame">20 220 70 20 </string>
+            <ostype name="controlSignature">info</ostype>
+            <int name="controlID">2</int>
+            <string name="title">Cancel</string>
+            <ostype name="command">not!</ostype>
+            <int name="buttonType">2</int>
+          </object>
+          <object class="IBCarbonDBListView" id="228">
+            <string name="bounds">70 20 200 266 </string>
+            <string name="viewFrame">20 70 246 130 </string>
+            <ostype name="controlSignature">info</ostype>
+            <int name="controlID">5</int>
+            <int name="fontStyle">-2</int>
+            <ostype name="command">flds</ostype>
+            <string name="helpTagText">Field List</string>
+            <string name="helpTagExtendedText">Liste des champs du type sélectionné</string>
+            <int name="hiliteStyle">1</int>
+            <boolean name="horzScrollBar">FALSE</boolean>
+            <int name="selectionFlags">11</int>
+            <array count="2" name="listViewColumns">
+              <object class="IBCarbonDBListViewColumn">
+                <ostype name="propertyID">chck</ostype>
+                <ostype name="propertyType">chbx</ostype>
+                <int name="propertyFlags">0</int>
+                <int name="sortOrder">1</int>
+                <int name="minWidth">24</int>
+                <int name="maxWidth">24</int>
+                <int name="textAlignment">-2</int>
+              </object>
+              <object class="IBCarbonDBListViewColumn">
+                <ostype name="propertyID">name</ostype>
+                <int name="propertyFlags">262144</int>
+                <int name="sortOrder">1</int>
+                <int name="minWidth">202</int>
+                <int name="maxWidth">202</int>
+                <int name="textAlignment">-2</int>
+                <string name="titleString">Field</string>
+              </object>
+            </array>
+          </object>
+          <object class="IBCarbonPopupButton" id="239">
+            <string name="bounds">42 20 62 266 </string>
+            <string name="viewFrame">20 42 246 20 </string>
+            <ostype name="controlSignature">info</ostype>
+            <int name="controlID">4</int>
+            <string name="title">Type: </string>
+            <ostype name="command">popt</ostype>
+            <string name="helpTagText">Type List</string>
+            <string name="helpTagExtendedText">Liste des types</string>
+            <boolean name="variableWith">TRUE</boolean>
+            <int name="titleJustification">-2</int>
+            <object name="menu" class="IBCarbonMenu" id="237">
+              <string name="title">Popup:</string>
+              <array count="3" name="items">
+                <object class="IBCarbonMenuItem" id="238">
+                  <boolean name="checked">TRUE</boolean>
+                  <boolean name="updateSingleItem">TRUE</boolean>
+                  <string name="title">Item 1</string>
+                </object>
+                <object class="IBCarbonMenuItem" id="236">
+                  <boolean name="updateSingleItem">TRUE</boolean>
+                  <string name="title">Item 2</string>
+                </object>
+                <object class="IBCarbonMenuItem" id="235">
+                  <boolean name="updateSingleItem">TRUE</boolean>
+                  <string name="title">Item 3</string>
+                </object>
+              </array>
+            </object>
+          </object>
+          <object class="IBCarbonCheckBox" id="240">
+            <string name="bounds">20 20 34 266 </string>
+            <string name="viewFrame">20 20 246 14 </string>
+            <ostype name="controlSignature">info</ostype>
+            <int name="controlID">3</int>
+            <string name="title">Display Type</string>
+            <ostype name="command">uset</ostype>
+            <string name="helpTagText">Show Type in Tooltip</string>
+            <string name="helpTagExtendedText">Permet l&apos;affichage du type dans la visubulle</string>
+          </object>
+        </array>
+      </object>
+      <boolean name="receiveUpdates">FALSE</boolean>
+      <boolean name="isResizable">FALSE</boolean>
+      <boolean name="compositing">TRUE</boolean>
+      <int name="carbonWindowClass">4</int>
+      <int name="windowPosition">1</int>
+      <boolean name="isConstrained">FALSE</boolean>
+    </object>
+    <reference idRef="222"/>
+    <reference idRef="223"/>
+    <reference idRef="226"/>
+    <reference idRef="228"/>
+    <object class="IBCarbonWindow" id="233">
+      <string name="windowRect">55 14 254 250 </string>
+      <string name="title">Info</string>
+      <object name="rootControl" class="IBCarbonRootControl" id="234">
+        <string name="bounds">0 0 199 236 </string>
+        <string name="viewFrame">0 0 236 199 </string>
+      </object>
+      <boolean name="receiveActivates">FALSE</boolean>
+      <boolean name="receiveUpdates">FALSE</boolean>
+      <boolean name="hasCloseBox">FALSE</boolean>
+      <boolean name="hasCollapseBox">FALSE</boolean>
+      <boolean name="hasHorizontalZoom">FALSE</boolean>
+      <boolean name="isResizable">FALSE</boolean>
+      <boolean name="hasVerticalZoom">FALSE</boolean>
+      <boolean name="compositing">TRUE</boolean>
+      <int name="carbonWindowClass">10</int>
+      <boolean name="isConstrained">FALSE</boolean>
+      <boolean name="hideOnSuspend">TRUE</boolean>
+    </object>
+    <reference idRef="234"/>
+    <reference idRef="235"/>
+    <reference idRef="236"/>
+    <reference idRef="237"/>
+    <reference idRef="238"/>
+    <reference idRef="239"/>
+    <reference idRef="240"/>
+  </array>
+  <array count="13" name="allParents">
+    <reference idRef="1"/>
+    <reference idRef="216"/>
+    <reference idRef="222"/>
+    <reference idRef="222"/>
+    <reference idRef="222"/>
+    <reference idRef="1"/>
+    <reference idRef="233"/>
+    <reference idRef="237"/>
+    <reference idRef="237"/>
+    <reference idRef="239"/>
+    <reference idRef="237"/>
+    <reference idRef="222"/>
+    <reference idRef="222"/>
+  </array>
+  <dictionary count="4" name="nameTable">
+    <string>Files Owner</string>
+    <reference idRef="1"/>
+    <string>Info</string>
+    <reference idRef="233"/>
+    <string>ListView</string>
+    <reference idRef="228"/>
+    <string>Window</string>
+    <reference idRef="216"/>
+  </dictionary>
+  <unsigned_int name="nextObjectID">241</unsigned_int>
+</object>

@@ -1,0 +1,16 @@
+/*MESSAGES*/
+"FieldCreate"		="Field Creation…";
+"ObjCreate"			="Object Creation…";
+"FieldCreateErr"	="Error creating fields";
+"ObjCreateErr"		="Error creating objects";
+"ExplErr"			="Check the log file for more information";
+"IGridNotFoundErr"	="Cannot find Import Grid plug-in";
+"IGridNotFoundExpl"	="This plug-in lets you specify in which type the data should be imported.";
+"OpenSHPErr"		="Error opening SHP file";
+"OpenDBFErr"		="Error opening DBF file";
+"GridErr"			="Incorrect configuration of import grid";
+
+"GlobalErr"         ="Errors occurred, check the log file for details.";
+"GlobalExpl"        ="%d type(s) rejected\n%d object(s) rejected\n%d filling error(s)";
+
+/*ERRORS*/

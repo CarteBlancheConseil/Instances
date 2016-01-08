@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Create Grid…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Create Grid… version 1.2, Copyright 2005 Carte Blanche Conseil.";

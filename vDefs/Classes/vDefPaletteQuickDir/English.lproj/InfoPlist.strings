@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "(Orientation";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Orientation version 1.2, Copyright 2012 Carte Blanche Conseil.";

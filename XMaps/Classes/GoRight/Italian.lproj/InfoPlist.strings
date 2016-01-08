@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "A destra";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "A destra versione 1.2, Copyright 2005 Carte Blanche Conseil.";

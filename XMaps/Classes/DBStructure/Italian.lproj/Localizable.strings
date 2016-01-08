@@ -1,0 +1,9 @@
+/*MESSAGES*/
+"data structure"				="Struttura degli archivis";
+"lossy conversion"				="Attenzione";
+"lossy conversion exp"			="Questa modifica potrebbe causare la perdita dei dati. Vuoi continuare ?";
+"init existing"					="Vuoi inizializzare gli oggetti esistenti al valore di default ?";
+"init existing exp"				="Questa operazione consente di creare dei valori predefiniti per questo campo.";
+"unsupported def val err exp"	="Valore di default non supportato";
+
+

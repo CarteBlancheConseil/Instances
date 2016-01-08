@@ -1,0 +1,109 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <object name="rootObject" class="NSCustomObject" id="1">
+  </object>
+  <array count="10" name="allObjects">
+    <object class="IBCarbonMenuItem" id="243">
+      <string name="title">Rectangle</string>
+      <boolean name="updateSingleItem">TRUE</boolean>
+    </object>
+    <object class="IBCarbonButton" id="226">
+      <ostype name="controlSignature">stuf</ostype>
+      <int name="controlID">2</int>
+      <ostype name="command">not!</ostype>
+      <int name="buttonType">2</int>
+      <string name="title">Cancel</string>
+      <string name="viewFrame">20 106 70 20 </string>
+      <string name="bounds">106 20 126 90 </string>
+    </object>
+    <object class="IBCarbonCheckBox" id="245">
+      <ostype name="controlSignature">Shap</ostype>
+      <int name="controlID">1</int>
+      <string name="title">Center on Entry Point</string>
+      <string name="viewFrame">20 20 294 18 </string>
+      <string name="bounds">20 20 38 314 </string>
+    </object>
+    <object class="IBCarbonCheckBox" id="253">
+      <ostype name="controlSignature">Shap</ostype>
+      <int name="controlID">2</int>
+      <string name="title">Open card</string>
+      <string name="viewFrame">20 44 294 18 </string>
+      <string name="bounds">44 20 62 314 </string>
+    </object>
+    <object class="IBCarbonWindow" id="216">
+      <boolean name="hasCloseBox">TRUE</boolean>
+      <boolean name="hasHorizontalZoom">TRUE</boolean>
+      <boolean name="hasVerticalZoom">TRUE</boolean>
+      <boolean name="receiveUpdates">FALSE</boolean>
+      <boolean name="isResizable">FALSE</boolean>
+      <boolean name="compositing">TRUE</boolean>
+      <boolean name="isConstrained">FALSE</boolean>
+      <int name="carbonWindowClass">4</int>
+      <int name="windowPosition">1</int>
+      <string name="title">Simple Shapes</string>
+      <object name="rootControl" class="IBCarbonRootControl" id="222">
+        <string name="viewFrame">0 0 334 146 </string>
+        <array count="5" name="subviews">
+          <object class="IBCarbonButton" id="223">
+            <ostype name="controlSignature">stuf</ostype>
+            <int name="controlID">1</int>
+            <ostype name="command">ok  </ostype>
+            <int name="buttonType">1</int>
+            <string name="title">OK</string>
+            <string name="viewFrame">244 106 70 20 </string>
+            <string name="bounds">106 244 126 314 </string>
+          </object>
+          <reference idRef="226"/>
+          <reference idRef="245"/>
+          <reference idRef="253"/>
+          <object class="IBCarbonCheckBox" id="255">
+            <ostype name="controlSignature">Shap</ostype>
+            <int name="controlID">3</int>
+            <string name="title">Measurements in cm to scale</string>
+            <string name="viewFrame">20 68 294 18 </string>
+            <string name="bounds">68 20 86 314 </string>
+          </object>
+        </array>
+        <string name="bounds">0 0 146 334 </string>
+      </object>
+      <string name="windowRect">364 563 510 897 </string>
+      <string name="ScreenRectAtEncodeTime">0 0 768 1024 </string>
+    </object>
+    <reference idRef="255"/>
+    <reference idRef="223"/>
+    <object class="IBCarbonMenu" id="242">
+      <string name="title">Menu</string>
+      <array count="2" name="items">
+        <reference idRef="243"/>
+        <object class="IBCarbonMenuItem" id="244">
+          <string name="title">Circle</string>
+          <boolean name="updateSingleItem">TRUE</boolean>
+        </object>
+      </array>
+    </object>
+    <reference idRef="222"/>
+    <reference idRef="244"/>
+  </array>
+  <array count="10" name="allParents">
+    <reference idRef="242"/>
+    <reference idRef="222"/>
+    <reference idRef="222"/>
+    <reference idRef="222"/>
+    <reference idRef="1"/>
+    <reference idRef="222"/>
+    <reference idRef="222"/>
+    <reference idRef="1"/>
+    <reference idRef="216"/>
+    <reference idRef="242"/>
+  </array>
+  <dictionary count="3" name="nameTable">
+    <string>File&apos;s Owner</string>
+    <reference idRef="1"/>
+    <string>Menu</string>
+    <reference idRef="242"/>
+    <string>Window</string>
+    <reference idRef="216"/>
+  </dictionary>
+  <string name="targetFramework">IBCarbonFramework</string>
+  <unsigned_int name="nextObjectID">256</unsigned_int>
+</object>

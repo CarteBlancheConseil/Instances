@@ -1,0 +1,11 @@
+/*MESSAGES*/
+"XStdCursor.png"	="8";
+"YStdCursor.png"		="9";
+
+"XEraseCursor.png"	="4";
+"YEraseCursor.png"	="10";
+
+"XAddCursor.png"	="8";
+"YAddCursor.png"		="9";
+
+/*ERRORS*/

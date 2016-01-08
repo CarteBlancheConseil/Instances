@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Inverti la segmentazione";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Inverti la segmentazione versione 1.2, Copyright 2005 Carte Blanche Conseil.";

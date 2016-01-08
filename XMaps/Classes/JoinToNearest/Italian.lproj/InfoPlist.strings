@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Giunzione al punto più vicino";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Giunzione al punto più vicino versione 1.2, Copyright 2005 Carte Blanche Conseil.";

@@ -1,0 +1,6 @@
+/*MESSAGES*/
+"join on ends"		="Giunzione alle estremità";
+"too_far"			="Oggetti troppo lontani :";
+"already_joined"	="Oggetti già uniti :";
+
+/*ERRORS*/

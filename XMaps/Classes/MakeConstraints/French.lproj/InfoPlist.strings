@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Contraintes de saisie…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Contraintes de saisie… version 1.2, Copyright 2005 Carte Blanche Conseil.";

@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Page Setup…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Page Setup… version 1.2, Copyright 2005 Carte Blanche Conseil.";

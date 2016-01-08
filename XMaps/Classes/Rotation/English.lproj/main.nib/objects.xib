@@ -1,0 +1,226 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <string name="targetFramework">IBCarbonFramework</string>
+  <object name="rootObject" class="NSCustomObject" id="1">
+    <string name="customClass">NSApplication</string>
+  </object>
+  <array count="23" name="allObjects">
+    <object class="IBCarbonWindow" id="242">
+      <string name="windowRect">139 250 389 536 </string>
+      <string name="title">Rotate...</string>
+      <object name="rootControl" class="IBCarbonRootControl" id="258">
+        <string name="bounds">0 0 250 286 </string>
+        <string name="viewFrame">0 0 286 250 </string>
+        <array count="15" name="subviews">
+          <object class="IBCarbonButton" id="274">
+            <string name="bounds">210 196 230 266 </string>
+            <string name="viewFrame">196 210 70 20 </string>
+            <ostype name="controlSignature">stuf</ostype>
+            <int name="controlID">1</int>
+            <string name="title">OK</string>
+            <ostype name="command">ok  </ostype>
+            <object name="layoutInfo" class="IBCarbonHILayoutInfo">
+              <int name="bindingBottomKind">2</int>
+              <int name="bindingRightKind">2</int>
+            </object>
+            <boolean name="layoutSuspended">TRUE</boolean>
+            <int name="buttonType">1</int>
+          </object>
+          <object class="IBCarbonButton" id="263">
+            <string name="bounds">210 20 230 90 </string>
+            <string name="viewFrame">20 210 70 20 </string>
+            <ostype name="controlSignature">stuf</ostype>
+            <int name="controlID">2</int>
+            <string name="title">Cancel</string>
+            <ostype name="command">not!</ostype>
+            <object name="layoutInfo" class="IBCarbonHILayoutInfo">
+              <int name="bindingBottomKind">2</int>
+              <int name="bindingRightKind">2</int>
+            </object>
+            <boolean name="layoutSuspended">TRUE</boolean>
+            <int name="buttonType">2</int>
+          </object>
+          <object class="IBCarbonStaticText" id="403">
+            <string name="bounds">143 34 159 49 </string>
+            <string name="viewFrame">34 143 15 16 </string>
+            <ostype name="controlSignature">xRot</ostype>
+            <int name="controlID">10</int>
+            <string name="title">x</string>
+          </object>
+          <object class="IBCarbonStaticText" id="404">
+            <string name="bounds">174 34 190 49 </string>
+            <string name="viewFrame">34 174 15 16 </string>
+            <ostype name="controlSignature">xRot</ostype>
+            <int name="controlID">13</int>
+            <string name="title">y</string>
+          </object>
+          <object class="IBCarbonEditText" id="407">
+            <string name="bounds">143 60 159 228 </string>
+            <string name="viewFrame">60 143 168 16 </string>
+            <ostype name="controlSignature">xRot</ostype>
+            <int name="controlID">11</int>
+            <boolean name="isUnicode">TRUE</boolean>
+          </object>
+          <object class="IBCarbonEditText" id="408">
+            <string name="bounds">175 60 191 228 </string>
+            <string name="viewFrame">60 175 168 16 </string>
+            <ostype name="controlSignature">xRot</ostype>
+            <int name="controlID">14</int>
+            <boolean name="isUnicode">TRUE</boolean>
+          </object>
+          <object class="IBCarbonStaticText" id="419">
+            <string name="bounds">142 239 158 266 </string>
+            <string name="viewFrame">239 142 27 16 </string>
+            <ostype name="controlSignature">xRot</ostype>
+            <int name="controlID">12</int>
+            <string name="title">_</string>
+          </object>
+          <object class="IBCarbonStaticText" id="421">
+            <string name="bounds">174 239 190 266 </string>
+            <string name="viewFrame">239 174 27 16 </string>
+            <ostype name="controlSignature">xRot</ostype>
+            <int name="controlID">15</int>
+            <string name="title">_</string>
+          </object>
+          <object class="IBCarbonStaticText" id="422">
+            <string name="bounds">20 20 36 181 </string>
+            <string name="viewFrame">20 20 161 16 </string>
+            <ostype name="controlSignature">xRot</ostype>
+            <int name="controlID">3</int>
+            <string name="title">Rotate Selection:</string>
+          </object>
+          <object class="IBCarbonEditText" id="423">
+            <string name="bounds">47 23 63 73 </string>
+            <string name="viewFrame">23 47 50 16 </string>
+            <ostype name="controlSignature">xRot</ostype>
+            <int name="controlID">4</int>
+            <boolean name="isUnicode">TRUE</boolean>
+          </object>
+          <object class="IBCarbonStaticText" id="424">
+            <string name="bounds">46 82 62 90 </string>
+            <string name="viewFrame">82 46 8 16 </string>
+            <ostype name="controlSignature">xRot</ostype>
+            <int name="controlID">5</int>
+            <string name="title">°</string>
+          </object>
+          <object class="IBCarbonEditText" id="425">
+            <string name="bounds">47 98 63 148 </string>
+            <string name="viewFrame">98 47 50 16 </string>
+            <ostype name="controlSignature">xRot</ostype>
+            <int name="controlID">6</int>
+            <boolean name="isUnicode">TRUE</boolean>
+          </object>
+          <object class="IBCarbonStaticText" id="426">
+            <string name="bounds">46 157 62 165 </string>
+            <string name="viewFrame">157 46 8 16 </string>
+            <ostype name="controlSignature">xRot</ostype>
+            <int name="controlID">7</int>
+            <string name="title">&apos;</string>
+          </object>
+          <object class="IBCarbonPopupButton" id="427">
+            <string name="bounds">74 20 94 231 </string>
+            <string name="viewFrame">20 74 211 20 </string>
+            <ostype name="controlSignature">xRot</ostype>
+            <int name="controlID">8</int>
+            <string name="title">In the Direction:</string>
+            <object name="menu" class="IBCarbonMenu" id="428">
+              <string name="title">Popup</string>
+              <array count="2" name="items">
+                <object class="IBCarbonMenuItem" id="429">
+                  <boolean name="checked">TRUE</boolean>
+                  <boolean name="updateSingleItem">TRUE</boolean>
+                  <string name="title">backward</string>
+                </object>
+                <object class="IBCarbonMenuItem" id="431">
+                  <boolean name="updateSingleItem">TRUE</boolean>
+                  <string name="title">forward</string>
+                </object>
+              </array>
+            </object>
+          </object>
+          <object class="IBCarbonPopupButton" id="432">
+            <string name="bounds">104 20 124 231 </string>
+            <string name="viewFrame">20 104 211 20 </string>
+            <ostype name="controlSignature">xRot</ostype>
+            <int name="controlID">9</int>
+            <ostype name="command">PopK</ostype>
+            <object name="menu" class="IBCarbonMenu" id="433">
+              <string name="title">Popup</string>
+              <array count="2" name="items">
+                <object class="IBCarbonMenuItem" id="434">
+                  <boolean name="checked">TRUE</boolean>
+                  <boolean name="updateSingleItem">TRUE</boolean>
+                  <string name="title">Around Itself</string>
+                </object>
+                <object class="IBCarbonMenuItem" id="436">
+                  <boolean name="updateSingleItem">TRUE</boolean>
+                  <string name="title">Around Point</string>
+                </object>
+              </array>
+            </object>
+          </object>
+        </array>
+      </object>
+      <boolean name="receiveUpdates">FALSE</boolean>
+      <boolean name="isResizable">FALSE</boolean>
+      <boolean name="compositing">TRUE</boolean>
+      <int name="carbonWindowClass">4</int>
+      <int name="windowPosition">1</int>
+      <boolean name="isConstrained">FALSE</boolean>
+    </object>
+    <reference idRef="258"/>
+    <reference idRef="263"/>
+    <reference idRef="274"/>
+    <reference idRef="403"/>
+    <reference idRef="404"/>
+    <reference idRef="407"/>
+    <reference idRef="408"/>
+    <reference idRef="419"/>
+    <reference idRef="421"/>
+    <reference idRef="422"/>
+    <reference idRef="423"/>
+    <reference idRef="424"/>
+    <reference idRef="425"/>
+    <reference idRef="426"/>
+    <reference idRef="427"/>
+    <reference idRef="428"/>
+    <reference idRef="429"/>
+    <reference idRef="431"/>
+    <reference idRef="432"/>
+    <reference idRef="433"/>
+    <reference idRef="434"/>
+    <reference idRef="436"/>
+  </array>
+  <array count="23" name="allParents">
+    <reference idRef="1"/>
+    <reference idRef="242"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="427"/>
+    <reference idRef="428"/>
+    <reference idRef="428"/>
+    <reference idRef="258"/>
+    <reference idRef="432"/>
+    <reference idRef="433"/>
+    <reference idRef="433"/>
+  </array>
+  <dictionary count="2" name="nameTable">
+    <string>Files Owner</string>
+    <reference idRef="1"/>
+    <string>Window</string>
+    <reference idRef="242"/>
+  </dictionary>
+  <unsigned_int name="nextObjectID">437</unsigned_int>
+</object>

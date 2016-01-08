@@ -1,0 +1,13 @@
+/*MESSAGES*/
+"XStdCursor.png"		="8";
+"YStdCursor.png"		="8";
+"XMoveCursor.png"		="8";
+"YMoveCursor.png"		="8";
+"XXResizeCursor.png"	="8";
+"YXResizeCursor.png"	="8";
+"XYResizeCursor.png"	="8";
+"YYResizeCursor.png"	="8";
+"XXYResizeCursor.png"	="8";
+"YXYResizeCursor.png"	="8";
+
+/*ERRORS*/

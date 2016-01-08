@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Centra sul successivo";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Centra sul successivo versione 1.2, Copyright 2005 Carte Blanche Conseil.";

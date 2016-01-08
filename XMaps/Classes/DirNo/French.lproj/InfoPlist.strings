@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Ne pas orienter";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Ne pas orienter version 1.2, Copyright 2005 Carte Blanche Conseil.";

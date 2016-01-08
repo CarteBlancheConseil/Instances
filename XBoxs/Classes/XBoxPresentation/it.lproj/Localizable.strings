@@ -1,0 +1,11 @@
+/*MESSAGES*/
+"NewStyle"	="Nuovo stile…";
+"NoEditor"	="Stile senza editor";
+"AskToSave"	="Vuoi registrare la vista in corso?";
+
+"Save"		="Registra";
+"SaveAs"	="Registra col nome…";
+"DontSave"	="Ignora";
+"NameView"	="Nomina la vista";
+
+/*ERRORS*/

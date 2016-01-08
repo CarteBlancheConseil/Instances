@@ -1,0 +1,27 @@
+/*MESSAGES*/
+"browser"				="Tabella";
+"empty_col"				="Colonna vuota";
+"data_load"				="Caricamento dei dati";
+"sort_prog"				="Ordinamento in corso";
+
+"indicators"			="Indicatori";
+"min"					="Minimo";
+"max"					="Massimo";
+"extend"				="Esteso";
+"sum"					="Somma";
+"average"				="Media";
+"median"				="Mediana";
+"stddeviation"			="Scarto tipo";
+"variance"				="Varianza";
+"cvariation"			="Coef. di variazione";
+"cskewness"				="Coef. d'asimmetria";
+"cpearson"				="Coef. di Pearson";
+"cfischer"				="Coef. di Fisher";
+
+"histogram"				="Istogramma";
+"nofield"				="Nessun campo";
+
+"distributiondiagram"	="Diagramma di ripartizione";
+"manning"				="Effettivi";
+
+/*ERRORS*/

@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Publier en PNG…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Publier en PNG… version 1.2, Copyright 2005 Carte Blanche Conseil.";

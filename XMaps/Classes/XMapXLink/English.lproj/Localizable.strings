@@ -1,0 +1,7 @@
+/*MESSAGES*/
+"LinkField"		="URL";
+"TooMuchObject"	="Several objects";
+"NoObject"		="No object";
+"DeadLink"		="Nonexistent Link";
+
+/*ERRORS*/

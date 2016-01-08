@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Analyse univariée…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Analyse univariée… version 1.2, Copyright 2005 Carte Blanche Conseil.";

@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Configuration du menu contextuel outil…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Configuration du menu contextuel outil… version 1.2, Copyright 2005 Carte Blanche Conseil.";

@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "XML Dictionary";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "XML Dictionary version 1.2, Copyright 2005 Carte Blanche Conseil.";

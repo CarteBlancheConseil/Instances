@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Gestionnaire de symboles…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Gestionnaire de symboles… version 1.2, Copyright 2005 Carte Blanche Conseil.";

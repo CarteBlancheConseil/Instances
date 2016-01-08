@@ -1,0 +1,5 @@
+/*MESSAGES*/
+"join on vertex"	="Joindre aux angularités";
+"too_far"			="Objets trop éloignés :";
+"already_joined"	="Objets déjà joints :";
+/*ERRORS*/

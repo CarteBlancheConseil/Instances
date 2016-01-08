@@ -1,0 +1,9 @@
+﻿/*MESSAGES*/
+"AssociationWithField"		="Associazione sul campo";
+"IndexErr"					="Errore di indicizzazione";
+"CloneObjectErr"			="Errore di allocazione";
+"SetVerticesErr"			="Errore di scrittura";
+"VerticesErr"				="Impossibile associare questi oggetti";
+"ObjNotAssociatedWarning"	="Non è stato possibile associare alcuni oggetti";
+
+/*ERRORS*/

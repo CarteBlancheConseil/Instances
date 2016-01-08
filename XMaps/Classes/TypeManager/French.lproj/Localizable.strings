@@ -1,0 +1,6 @@
+/*MESSAGES*/
+"close database"		="Veuillez fermer cette base de données";
+"close database exp"	="Les modifications seront prises en compte à la prochaine ouverture";
+"type manager"			="Gestion des types";
+
+/*ERRORS*/

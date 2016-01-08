@@ -1,0 +1,5 @@
+/*MESSAGES*/
+"CloneFound"	="The detected duplicates have been contrasted.";
+"NoCloneFound"	="The selected objects have no duplicates.";
+
+/*ERRORS*/

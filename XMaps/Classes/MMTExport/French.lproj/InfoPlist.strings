@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Export MMT…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Export MMT… version 1.2, Copyright 2005 Carte Blanche Conseil.";

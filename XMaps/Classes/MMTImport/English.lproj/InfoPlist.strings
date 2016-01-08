@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "MMT Import…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "MMT Import… version 1.2, Copyright 2005 Carte Blanche Conseil.";

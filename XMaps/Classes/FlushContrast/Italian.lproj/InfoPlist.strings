@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Annulla i contrasti";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Annulla i contrasti versione 1.2, Copyright 2005 Carte Blanche Conseil.";

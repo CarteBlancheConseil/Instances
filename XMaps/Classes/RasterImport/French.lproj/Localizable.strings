@@ -1,0 +1,10 @@
+/*MESSAGES*/
+"rasterimport"		="Importer un raster";
+"IGridNotFoundErr"	="Externe \"Grille d'import\" introuvable";
+"IGridNotFoundExpl"	="Cette externe permet de spécifier dans quels types les données doivent être importées.";
+"GridErr"			="Configuration de la grille d'import incorrecte";
+
+"GlobalErr"         ="Des erreurs sont survenues, consultez le fichier log pour plus de détails.";
+"GlobalExpl"        ="%d type(s) rejeté(s)\n%d objet(s) rejeté(s)\n%d erreur(s) au remplissage";
+
+/*ERRORS*/

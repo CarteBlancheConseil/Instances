@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Formato scheda…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Formato scheda… versione 1.2, Copyright 2005 Carte Blanche Conseil.";

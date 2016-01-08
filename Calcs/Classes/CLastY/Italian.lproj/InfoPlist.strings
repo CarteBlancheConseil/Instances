@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Punto terminale Y";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Punto terminale Y versione 1.2, Copyright 2005 Carte Blanche Conseil.";

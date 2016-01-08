@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Editor di testo";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Editor di testo versione 1.2, Copyright 2005 Carte Blanche Conseil.";

@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Surfaces";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Surfaces version 1.2, Copyright 2012 Carte Blanche Conseil.";

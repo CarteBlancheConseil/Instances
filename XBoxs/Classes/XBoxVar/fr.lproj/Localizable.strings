@@ -1,0 +1,5 @@
+/*MESSAGES*/
+"delete"	="Supprimer une constante";
+"clone"		="Dupliquer une constante";
+
+/*ERRORS*/

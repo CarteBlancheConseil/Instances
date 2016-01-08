@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Data di modifica";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Data di modifica versione 1.2, Copyright 2005 Carte Blanche Conseil.";

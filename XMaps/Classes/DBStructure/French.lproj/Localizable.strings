@@ -1,0 +1,9 @@
+/*MESSAGES*/
+"data structure"				="Structure des tables";
+"lossy conversion"				="Attention";
+"lossy conversion exp"			="Cette modification risque d'entrainer la perte de données. Désirez-vous continuer ?";
+"init existing"					="Désirez-vous initialiser les objets existants à la valeur par défaut ?";
+"init existing exp"				="Cette opération vous permettra de créer des contraintes sur ce champ.";
+"unsupported def val err exp"	="Valeur par défaut non supportée";
+
+

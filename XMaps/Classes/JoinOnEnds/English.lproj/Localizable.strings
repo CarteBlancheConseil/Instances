@@ -1,0 +1,6 @@
+/*MESSAGES*/
+"join on ends"		="Join on Ends";
+"too_far"			="Objects too far apart :";
+"already_joined"	="Objects already joined :";
+
+/*ERRORS*/

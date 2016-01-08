@@ -1,0 +1,114 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <string name="targetFramework">IBCarbonFramework</string>
+  <object name="rootObject" class="NSCustomObject" id="1">
+    <string name="customClass">NSApplication</string>
+  </object>
+  <array count="7" name="allObjects">
+    <object class="IBCarbonWindow" id="242">
+      <string name="windowRect">219 542 489 834 </string>
+      <string name="title">Gestione dei tratteggi…</string>
+      <object name="rootControl" class="IBCarbonRootControl" id="258">
+        <string name="bounds">0 0 270 292 </string>
+        <string name="viewFrame">0 0 292 270 </string>
+        <array count="5" name="subviews">
+          <object class="IBCarbonDBListView" id="403">
+            <string name="bounds">20 20 122 244 </string>
+            <string name="viewFrame">20 20 224 102 </string>
+            <ostype name="controlSignature">Pick</ostype>
+            <int name="controlID">1</int>
+            <int name="hiliteStyle">1</int>
+            <boolean name="horzScrollBar">FALSE</boolean>
+            <int name="selectionFlags">10</int>
+            <array count="1" name="listViewColumns">
+              <object class="IBCarbonDBListViewColumn">
+                <ostype name="propertyID">Name</ostype>
+                <int name="propertyFlags">458752</int>
+                <int name="sortOrder">1</int>
+                <int name="minWidth">218</int>
+                <int name="maxWidth">218</int>
+                <int name="textAlignment">-2</int>
+              </object>
+            </array>
+          </object>
+          <object class="IBCarbonButton" id="274">
+            <string name="bounds">230 172 250 245 </string>
+            <string name="viewFrame">172 230 73 20 </string>
+            <ostype name="controlSignature">stuf</ostype>
+            <int name="controlID">1</int>
+            <string name="title">Scegli</string>
+            <ostype name="command">ok  </ostype>
+            <object name="layoutInfo" class="IBCarbonHILayoutInfo">
+              <int name="bindingBottomKind">2</int>
+              <int name="bindingRightKind">2</int>
+            </object>
+            <boolean name="layoutSuspended">TRUE</boolean>
+            <int name="buttonType">1</int>
+          </object>
+          <object class="IBCarbonButton" id="263">
+            <string name="bounds">230 17 250 93 </string>
+            <string name="viewFrame">17 230 76 20 </string>
+            <ostype name="controlSignature">stuf</ostype>
+            <int name="controlID">2</int>
+            <string name="title">Annulla</string>
+            <ostype name="command">not!</ostype>
+            <object name="layoutInfo" class="IBCarbonHILayoutInfo">
+              <int name="bindingBottomKind">2</int>
+              <int name="bindingRightKind">2</int>
+            </object>
+            <boolean name="layoutSuspended">TRUE</boolean>
+            <int name="buttonType">2</int>
+          </object>
+          <object class="IBCarbonHIView" id="405">
+            <string name="bounds">130 20 210 244 </string>
+            <string name="viewFrame">20 130 224 80 </string>
+            <ostype name="controlSignature">Pick</ostype>
+            <int name="controlID">2</int>
+          </object>
+          <object class="IBCarbonBevelButton" id="406">
+            <string name="bounds">20 252 40 272 </string>
+            <string name="viewFrame">252 20 20 20 </string>
+            <ostype name="controlSignature">Pick</ostype>
+            <int name="controlID">3</int>
+            <string name="title">+</string>
+            <ostype name="command">Impo</ostype>
+            <int name="contentType">0</int>
+            <int name="textPlacement">3</int>
+          </object>
+        </array>
+      </object>
+      <boolean name="receiveUpdates">FALSE</boolean>
+      <boolean name="isResizable">FALSE</boolean>
+      <boolean name="compositing">TRUE</boolean>
+      <int name="carbonWindowClass">4</int>
+      <int name="windowPosition">1</int>
+      <boolean name="isConstrained">FALSE</boolean>
+    </object>
+    <reference idRef="258"/>
+    <reference idRef="263"/>
+    <reference idRef="274"/>
+    <reference idRef="403"/>
+    <reference idRef="405"/>
+    <reference idRef="406"/>
+  </array>
+  <array count="7" name="allParents">
+    <reference idRef="1"/>
+    <reference idRef="242"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+  </array>
+  <dictionary count="4" name="nameTable">
+    <string>Files Owner</string>
+    <reference idRef="1"/>
+    <string>ListView1</string>
+    <reference idRef="403"/>
+    <string>View1</string>
+    <reference idRef="405"/>
+    <string>Window</string>
+    <reference idRef="242"/>
+  </dictionary>
+  <unsigned_int name="nextObjectID">407</unsigned_int>
+</object>

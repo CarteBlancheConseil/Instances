@@ -1,0 +1,7 @@
+/*MESSAGES*/
+"browser"		="Vue tableur";
+"empty_col"		="Colonne vide";
+"data_load"		="Chargement des données…";
+"sort_prog"		="Tri en cours…";
+
+/*ERRORS*/

@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Ora di creazione";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Ora di creazione versione 1.2, Copyright 2005 Carte Blanche Conseil.";

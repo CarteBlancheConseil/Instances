@@ -1,0 +1,6 @@
+/*MESSAGES*/
+"join on vertex"	="Giunzione agli angoli";
+"too_far"			="Oggetti troppo lontani :";
+"already_joined"	="Oggetti già uniti :";
+
+/*ERRORS*/

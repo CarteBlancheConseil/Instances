@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Afficher uniquement ceci";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Afficher uniquement ceci version 1.2, Copyright 2005 Carte Blanche Conseil.";

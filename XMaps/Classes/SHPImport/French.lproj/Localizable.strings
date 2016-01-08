@@ -1,0 +1,18 @@
+/*MESSAGES*/
+"FieldCreate"		="creation.
+ des champs…";
+"ObjCreate"			="creation.
+ des objets…";
+"FieldCreateErr"	="Erreur à la création des champs";
+"ObjCreateErr"		="Erreur à la création des objets";
+"ExplErr"			="Consultez le fichier log pour plus d'information";
+"IGridNotFoundErr"	="Externe \"Grille d'import\" introuvable";
+"IGridNotFoundExpl"	="Cette externe permet de spécifier dans quels types les données doivent être importées.";
+"OpenSHPErr"		="Erreur à l'ouverture du fichier SHP";
+"OpenDBFErr"		="Erreur à l'ouverture du fichier DBF";
+"GridErr"			="Configuration de la grille d'import incorrecte";
+
+"GlobalErr"         ="Des erreurs sont survenues, consultez le fichier log pour plus de détails.";
+"GlobalExpl"        ="%d type(s) rejeté(s)\n%d objet(s) rejeté(s)\n%d erreur(s) au remplissage";
+
+/*ERRORS*/

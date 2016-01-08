@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Proportional Rectangles";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Proportional Rectangles version 1.2, Copyright 2013 Carte Blanche Conseil.";

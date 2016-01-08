@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Joindre dans la direction";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Joindre dans la direction version 1.2, Copyright 2005 Carte Blanche Conseil.";

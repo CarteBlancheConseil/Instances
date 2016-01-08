@@ -1,0 +1,463 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <string name="targetFramework">IBCarbonFramework</string>
+  <object name="rootObject" class="NSCustomObject" id="1">
+    <string name="customClass">NSApplication</string>
+  </object>
+  <array count="48" name="allObjects">
+    <object class="IBCarbonWindow" id="242">
+      <string name="windowRect">44 2 368 429 </string>
+      <string name="title">Cleanup Options</string>
+      <object name="rootControl" class="IBCarbonRootControl" id="258">
+        <string name="bounds">0 0 324 427 </string>
+        <string name="viewFrame">0 0 427 324 </string>
+        <array count="7" name="subviews">
+          <object class="IBCarbonButton" id="274">
+            <string name="bounds">284 337 304 407 </string>
+            <string name="viewFrame">337 284 70 20 </string>
+            <ostype name="controlSignature">stuf</ostype>
+            <int name="controlID">1</int>
+            <string name="title">OK</string>
+            <ostype name="command">ok  </ostype>
+            <object name="layoutInfo" class="IBCarbonHILayoutInfo">
+              <int name="bindingBottomKind">2</int>
+              <int name="bindingRightKind">2</int>
+            </object>
+            <boolean name="layoutSuspended">TRUE</boolean>
+            <int name="buttonType">1</int>
+          </object>
+          <object class="IBCarbonButton" id="263">
+            <string name="bounds">284 20 304 90 </string>
+            <string name="viewFrame">20 284 70 20 </string>
+            <ostype name="controlSignature">stuf</ostype>
+            <int name="controlID">2</int>
+            <string name="title">Cancel</string>
+            <ostype name="command">not!</ostype>
+            <object name="layoutInfo" class="IBCarbonHILayoutInfo">
+              <int name="bindingBottomKind">2</int>
+              <int name="bindingRightKind">2</int>
+            </object>
+            <boolean name="layoutSuspended">TRUE</boolean>
+            <int name="buttonType">2</int>
+          </object>
+          <object class="IBCarbonGroupBox" id="404">
+            <string name="bounds">6 20 111 203 </string>
+            <string name="viewFrame">20 6 183 105 </string>
+            <array count="2" name="subviews">
+              <object class="IBCarbonBevelButton" id="448">
+                <string name="bounds">34 38 50 185 </string>
+                <string name="viewFrame">18 28 147 16 </string>
+                <ostype name="controlSignature">NtCO</ostype>
+                <int name="controlID">10</int>
+                <string name="title">Nodes</string>
+                <ostype name="command">tNod</ostype>
+                <int name="contentType">0</int>
+                <int name="textPlacement">3</int>
+                <int name="menuBehavior">16384</int>
+                <object name="menu" class="IBCarbonMenu" id="449">
+                  <string name="title">BevelMenu</string>
+                  <array count="3" name="items">
+                    <object class="IBCarbonMenuItem" id="450">
+                      <boolean name="checked">TRUE</boolean>
+                      <boolean name="updateSingleItem">TRUE</boolean>
+                      <string name="title">Item1</string>
+                    </object>
+                    <object class="IBCarbonMenuItem" id="451">
+                      <boolean name="updateSingleItem">TRUE</boolean>
+                      <string name="title">Item2</string>
+                    </object>
+                    <object class="IBCarbonMenuItem" id="452">
+                      <boolean name="updateSingleItem">TRUE</boolean>
+                      <string name="title">Item3</string>
+                    </object>
+                  </array>
+                </object>
+                <int name="selectedItem">1</int>
+                <boolean name="rounded">TRUE</boolean>
+              </object>
+              <object class="IBCarbonBevelButton" id="461">
+                <string name="bounds">58 38 74 185 </string>
+                <string name="viewFrame">18 52 147 16 </string>
+                <ostype name="controlSignature">NtCO</ostype>
+                <int name="controlID">11</int>
+                <string name="title">Edges</string>
+                <ostype name="command">tLnk</ostype>
+                <int name="contentType">0</int>
+                <int name="textPlacement">3</int>
+                <int name="menuBehavior">16384</int>
+                <object name="menu" class="IBCarbonMenu" id="462">
+                  <string name="title">BevelMenu</string>
+                  <array count="3" name="items">
+                    <object class="IBCarbonMenuItem" id="464">
+                      <boolean name="checked">TRUE</boolean>
+                      <boolean name="updateSingleItem">TRUE</boolean>
+                      <string name="title">Item1</string>
+                    </object>
+                    <object class="IBCarbonMenuItem" id="463">
+                      <boolean name="updateSingleItem">TRUE</boolean>
+                      <string name="title">Item2</string>
+                    </object>
+                    <object class="IBCarbonMenuItem" id="465">
+                      <boolean name="updateSingleItem">TRUE</boolean>
+                      <string name="title">Item3</string>
+                    </object>
+                  </array>
+                </object>
+                <int name="selectedItem">1</int>
+                <boolean name="rounded">TRUE</boolean>
+              </object>
+            </array>
+            <ostype name="controlSignature">NtCO</ostype>
+            <int name="controlID">1</int>
+            <boolean name="small">TRUE</boolean>
+            <int name="controlSize">3</int>
+            <string name="title">Types involved in cleanup</string>
+          </object>
+          <object class="IBCarbonGroupBox" id="405">
+            <string name="bounds">6 223 111 406 </string>
+            <string name="viewFrame">223 6 183 105 </string>
+            <array count="4" name="subviews">
+              <object class="IBCarbonPopupButton" id="419">
+                <string name="bounds">35 238 51 391 </string>
+                <string name="viewFrame">15 29 153 16 </string>
+                <ostype name="controlSignature">NtCO</ostype>
+                <int name="controlID">20</int>
+                <boolean name="small">TRUE</boolean>
+                <int name="controlSize">3</int>
+                <string name="title">Type:</string>
+                <ostype name="command">tCrN</ostype>
+                <object name="menu" class="IBCarbonMenu" id="420">
+                  <string name="title">Popup</string>
+                  <array count="3" name="items">
+                    <object class="IBCarbonMenuItem" id="421">
+                      <boolean name="updateSingleItem">TRUE</boolean>
+                      <string name="title">Item 1</string>
+                    </object>
+                    <object class="IBCarbonMenuItem" id="423">
+                      <boolean name="updateSingleItem">TRUE</boolean>
+                      <string name="title">Item 2</string>
+                    </object>
+                    <object class="IBCarbonMenuItem" id="422">
+                      <boolean name="updateSingleItem">TRUE</boolean>
+                      <string name="title">Item 3</string>
+                    </object>
+                  </array>
+                </object>
+              </object>
+              <object class="IBCarbonPopupButton" id="424">
+                <string name="bounds">56 238 72 391 </string>
+                <string name="viewFrame">15 50 153 16 </string>
+                <ostype name="controlSignature">NtCO</ostype>
+                <int name="controlID">21</int>
+                <boolean name="small">TRUE</boolean>
+                <int name="controlSize">3</int>
+                <string name="title">Subtype:</string>
+                <ostype name="command">sCrN</ostype>
+                <object name="menu" class="IBCarbonMenu" id="425">
+                  <string name="title">Popup</string>
+                  <array count="3" name="items">
+                    <object class="IBCarbonMenuItem" id="426">
+                      <boolean name="updateSingleItem">TRUE</boolean>
+                      <string name="title">Item 1</string>
+                    </object>
+                    <object class="IBCarbonMenuItem" id="428">
+                      <boolean name="updateSingleItem">TRUE</boolean>
+                      <string name="title">Item 2</string>
+                    </object>
+                    <object class="IBCarbonMenuItem" id="427">
+                      <boolean name="updateSingleItem">TRUE</boolean>
+                      <string name="title">Item 3</string>
+                    </object>
+                  </array>
+                </object>
+              </object>
+              <object class="IBCarbonStaticText" id="429">
+                <string name="bounds">81 239 92 275 </string>
+                <string name="viewFrame">16 75 36 11 </string>
+                <ostype name="controlSignature">NtCO</ostype>
+                <int name="controlID">22</int>
+                <boolean name="small">TRUE</boolean>
+                <int name="controlSize">3</int>
+                <string name="title">Name:</string>
+              </object>
+              <object class="IBCarbonEditText" id="430">
+                <string name="bounds">81 286 92 387 </string>
+                <string name="viewFrame">63 75 101 11 </string>
+                <ostype name="controlSignature">NtCO</ostype>
+                <int name="controlID">23</int>
+                <boolean name="small">TRUE</boolean>
+                <int name="controlSize">3</int>
+                <boolean name="isUnicode">TRUE</boolean>
+              </object>
+            </array>
+            <ostype name="controlSignature">NtCO</ostype>
+            <int name="controlID">2</int>
+            <boolean name="small">TRUE</boolean>
+            <int name="controlSize">3</int>
+            <string name="title">Intersection Creation</string>
+          </object>
+          <object class="IBCarbonGroupBox" id="406">
+            <string name="bounds">116 223 196 407 </string>
+            <string name="viewFrame">223 116 184 80 </string>
+            <array count="2" name="subviews">
+              <object class="IBCarbonPopupButton" id="431">
+                <string name="bounds">145 238 161 392 </string>
+                <string name="viewFrame">15 29 154 16 </string>
+                <ostype name="controlSignature">NtCO</ostype>
+                <int name="controlID">40</int>
+                <boolean name="small">TRUE</boolean>
+                <int name="controlSize">3</int>
+                <string name="title">Type:</string>
+                <ostype name="command">tEdg</ostype>
+                <object name="menu" class="IBCarbonMenu" id="432">
+                  <string name="title">Popup</string>
+                  <array count="3" name="items">
+                    <object class="IBCarbonMenuItem" id="433">
+                      <boolean name="updateSingleItem">TRUE</boolean>
+                      <string name="title">Item 1</string>
+                    </object>
+                    <object class="IBCarbonMenuItem" id="435">
+                      <boolean name="updateSingleItem">TRUE</boolean>
+                      <string name="title">Item 2</string>
+                    </object>
+                    <object class="IBCarbonMenuItem" id="434">
+                      <boolean name="updateSingleItem">TRUE</boolean>
+                      <string name="title">Item 3</string>
+                    </object>
+                  </array>
+                </object>
+              </object>
+              <object class="IBCarbonPopupButton" id="436">
+                <string name="bounds">166 238 182 392 </string>
+                <string name="viewFrame">15 50 154 16 </string>
+                <ostype name="controlSignature">NtCO</ostype>
+                <int name="controlID">41</int>
+                <boolean name="small">TRUE</boolean>
+                <int name="controlSize">3</int>
+                <string name="title">Subtype:</string>
+                <ostype name="command">sEdg</ostype>
+                <object name="menu" class="IBCarbonMenu" id="437">
+                  <string name="title">Popup</string>
+                  <array count="3" name="items">
+                    <object class="IBCarbonMenuItem" id="438">
+                      <boolean name="updateSingleItem">TRUE</boolean>
+                      <string name="title">Item 1</string>
+                    </object>
+                    <object class="IBCarbonMenuItem" id="440">
+                      <boolean name="updateSingleItem">TRUE</boolean>
+                      <string name="title">Item 2</string>
+                    </object>
+                    <object class="IBCarbonMenuItem" id="439">
+                      <boolean name="updateSingleItem">TRUE</boolean>
+                      <string name="title">Item 3</string>
+                    </object>
+                  </array>
+                </object>
+              </object>
+            </array>
+            <ostype name="controlSignature">NtCO</ostype>
+            <int name="controlID">4</int>
+            <boolean name="small">TRUE</boolean>
+            <int name="controlSize">3</int>
+            <string name="title">Bridge Definition</string>
+          </object>
+          <object class="IBCarbonGroupBox" id="407">
+            <string name="bounds">115 20 198 203 </string>
+            <string name="viewFrame">20 115 183 83 </string>
+            <array count="6" name="subviews">
+              <object class="IBCarbonStaticText" id="441">
+                <string name="bounds">146 33 157 94 </string>
+                <string name="viewFrame">13 31 61 11 </string>
+                <ostype name="controlSignature">NtCO</ostype>
+                <int name="controlID">30</int>
+                <boolean name="small">TRUE</boolean>
+                <int name="controlSize">3</int>
+                <string name="title">Intersections:</string>
+              </object>
+              <object class="IBCarbonStaticText" id="442">
+                <string name="bounds">171 33 182 67 </string>
+                <string name="viewFrame">13 56 34 11 </string>
+                <ostype name="controlSignature">NtCO</ostype>
+                <int name="controlID">33</int>
+                <boolean name="small">TRUE</boolean>
+                <int name="controlSize">3</int>
+                <string name="title">Bridges:</string>
+              </object>
+              <object class="IBCarbonEditText" id="443">
+                <string name="bounds">146 102 157 152 </string>
+                <string name="viewFrame">82 31 50 11 </string>
+                <ostype name="controlSignature">NtCO</ostype>
+                <int name="controlID">31</int>
+                <boolean name="small">TRUE</boolean>
+                <int name="controlSize">3</int>
+                <boolean name="isUnicode">TRUE</boolean>
+              </object>
+              <object class="IBCarbonEditText" id="444">
+                <string name="bounds">171 102 182 152 </string>
+                <string name="viewFrame">82 56 50 11 </string>
+                <ostype name="controlSignature">NtCO</ostype>
+                <int name="controlID">34</int>
+                <boolean name="small">TRUE</boolean>
+                <int name="controlSize">3</int>
+                <boolean name="isUnicode">TRUE</boolean>
+              </object>
+              <object class="IBCarbonStaticText" id="445">
+                <string name="bounds">146 163 157 203 </string>
+                <string name="viewFrame">143 31 40 11 </string>
+                <ostype name="controlSignature">NtCO</ostype>
+                <int name="controlID">32</int>
+                <boolean name="small">TRUE</boolean>
+                <int name="controlSize">3</int>
+                <string name="title">Mini Static Text</string>
+              </object>
+              <object class="IBCarbonStaticText" id="446">
+                <string name="bounds">171 163 182 203 </string>
+                <string name="viewFrame">143 56 40 11 </string>
+                <ostype name="controlSignature">NtCO</ostype>
+                <int name="controlID">35</int>
+                <boolean name="small">TRUE</boolean>
+                <int name="controlSize">3</int>
+                <string name="title">Mini Static Text</string>
+              </object>
+            </array>
+            <ostype name="controlSignature">NtCO</ostype>
+            <int name="controlID">3</int>
+            <boolean name="small">TRUE</boolean>
+            <int name="controlSize">3</int>
+            <string name="title">Intervention Distance</string>
+          </object>
+          <object class="IBCarbonGroupBox" id="408">
+            <string name="bounds">206 20 264 203 </string>
+            <string name="viewFrame">20 206 183 58 </string>
+            <array count="1" name="subviews">
+              <object class="IBCarbonCheckBox" id="447">
+                <string name="bounds">234 36 248 128 </string>
+                <string name="viewFrame">16 28 92 14 </string>
+                <ostype name="controlSignature">NtCO</ostype>
+                <int name="controlID">50</int>
+                <boolean name="small">TRUE</boolean>
+                <int name="controlSize">3</int>
+                <string name="title">Enabled</string>
+              </object>
+            </array>
+            <ostype name="controlSignature">NtCO</ostype>
+            <int name="controlID">5</int>
+            <boolean name="small">TRUE</boolean>
+            <int name="controlSize">3</int>
+            <string name="title">Automatic Cleanup</string>
+          </object>
+        </array>
+      </object>
+      <boolean name="receiveUpdates">FALSE</boolean>
+      <boolean name="isResizable">FALSE</boolean>
+      <boolean name="compositing">TRUE</boolean>
+      <int name="carbonWindowClass">4</int>
+      <int name="windowPosition">1</int>
+      <boolean name="isConstrained">FALSE</boolean>
+    </object>
+    <reference idRef="258"/>
+    <reference idRef="263"/>
+    <reference idRef="274"/>
+    <reference idRef="404"/>
+    <reference idRef="405"/>
+    <reference idRef="406"/>
+    <reference idRef="407"/>
+    <reference idRef="408"/>
+    <reference idRef="419"/>
+    <reference idRef="420"/>
+    <reference idRef="421"/>
+    <reference idRef="422"/>
+    <reference idRef="423"/>
+    <reference idRef="424"/>
+    <reference idRef="425"/>
+    <reference idRef="426"/>
+    <reference idRef="427"/>
+    <reference idRef="428"/>
+    <reference idRef="429"/>
+    <reference idRef="430"/>
+    <reference idRef="431"/>
+    <reference idRef="432"/>
+    <reference idRef="433"/>
+    <reference idRef="434"/>
+    <reference idRef="435"/>
+    <reference idRef="436"/>
+    <reference idRef="437"/>
+    <reference idRef="438"/>
+    <reference idRef="439"/>
+    <reference idRef="440"/>
+    <reference idRef="441"/>
+    <reference idRef="442"/>
+    <reference idRef="443"/>
+    <reference idRef="444"/>
+    <reference idRef="445"/>
+    <reference idRef="446"/>
+    <reference idRef="447"/>
+    <reference idRef="448"/>
+    <reference idRef="449"/>
+    <reference idRef="450"/>
+    <reference idRef="451"/>
+    <reference idRef="452"/>
+    <reference idRef="461"/>
+    <reference idRef="462"/>
+    <reference idRef="463"/>
+    <reference idRef="464"/>
+    <reference idRef="465"/>
+  </array>
+  <array count="48" name="allParents">
+    <reference idRef="1"/>
+    <reference idRef="242"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="258"/>
+    <reference idRef="405"/>
+    <reference idRef="419"/>
+    <reference idRef="420"/>
+    <reference idRef="420"/>
+    <reference idRef="420"/>
+    <reference idRef="405"/>
+    <reference idRef="424"/>
+    <reference idRef="425"/>
+    <reference idRef="425"/>
+    <reference idRef="425"/>
+    <reference idRef="405"/>
+    <reference idRef="405"/>
+    <reference idRef="406"/>
+    <reference idRef="431"/>
+    <reference idRef="432"/>
+    <reference idRef="432"/>
+    <reference idRef="432"/>
+    <reference idRef="406"/>
+    <reference idRef="436"/>
+    <reference idRef="437"/>
+    <reference idRef="437"/>
+    <reference idRef="437"/>
+    <reference idRef="407"/>
+    <reference idRef="407"/>
+    <reference idRef="407"/>
+    <reference idRef="407"/>
+    <reference idRef="407"/>
+    <reference idRef="407"/>
+    <reference idRef="408"/>
+    <reference idRef="404"/>
+    <reference idRef="448"/>
+    <reference idRef="449"/>
+    <reference idRef="449"/>
+    <reference idRef="449"/>
+    <reference idRef="404"/>
+    <reference idRef="461"/>
+    <reference idRef="462"/>
+    <reference idRef="462"/>
+    <reference idRef="462"/>
+  </array>
+  <dictionary count="2" name="nameTable">
+    <string>Files Owner</string>
+    <reference idRef="1"/>
+    <string>Window</string>
+    <reference idRef="242"/>
+  </dictionary>
+  <unsigned_int name="nextObjectID">466</unsigned_int>
+</object>

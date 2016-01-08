@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Transfer of Type…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Transfer of Type… version 1.2, Copyright 2005 Carte Blanche Conseil.";

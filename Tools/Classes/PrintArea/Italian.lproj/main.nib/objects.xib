@@ -1,0 +1,340 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <string name="targetFramework">IBCarbonFramework</string>
+  <object name="rootObject" class="NSCustomObject" id="1">
+    <string name="customClass">NSApplication</string>
+  </object>
+  <array count="38" name="allObjects">
+    <object class="IBCarbonMenu" id="230">
+      <string name="title">Menu</string>
+      <array count="4" name="items">
+        <object class="IBCarbonMenuItem" id="233">
+          <string name="title">Centra</string>
+        </object>
+        <object class="IBCarbonMenuItem" id="249">
+          <string name="title">Adatta alla finestra</string>
+        </object>
+        <object class="IBCarbonMenuItem" id="302">
+          <string name="title">Adatta alla selezione</string>
+        </object>
+        <object class="IBCarbonMenuItem" id="303">
+          <string name="title">Adatta ai contrasti</string>
+        </object>
+      </array>
+    </object>
+    <reference idRef="233"/>
+    <object class="IBCarbonWindow" id="234">
+      <string name="windowRect">83 41 426 317 </string>
+      <string name="title">Strumento area di stampa</string>
+      <object name="rootControl" class="IBCarbonRootControl" id="235">
+        <string name="bounds">0 0 343 276 </string>
+        <string name="viewFrame">0 0 276 343 </string>
+        <array count="5" name="subviews">
+          <object class="IBCarbonButton" id="237">
+            <string name="bounds">303 186 323 256 </string>
+            <string name="viewFrame">186 303 70 20 </string>
+            <ostype name="controlSignature">slct</ostype>
+            <int name="controlID">1</int>
+            <string name="title">OK</string>
+            <ostype name="command">ok  </ostype>
+            <int name="buttonType">1</int>
+          </object>
+          <object class="IBCarbonButton" id="240">
+            <string name="bounds">303 20 323 90 </string>
+            <string name="viewFrame">20 303 70 20 </string>
+            <ostype name="controlSignature">slct</ostype>
+            <int name="controlID">2</int>
+            <string name="title">Annulla</string>
+            <ostype name="command">not!</ostype>
+            <int name="buttonType">2</int>
+          </object>
+          <object class="IBCarbonGroupBox" id="250">
+            <string name="bounds">6 20 92 256 </string>
+            <string name="viewFrame">20 6 236 86 </string>
+            <array count="7" name="subviews">
+              <object class="IBCarbonEditText" id="256">
+                <string name="bounds">35 69 51 189 </string>
+                <string name="viewFrame">49 29 120 16 </string>
+                <ostype name="controlSignature">tZIm</ostype>
+                <int name="controlID">1</int>
+                <string name="helpTagText">Ascissa angolo alto a sinistra</string>
+                <boolean name="isUnicode">TRUE</boolean>
+              </object>
+              <object class="IBCarbonStaticText" id="255">
+                <string name="bounds">35 200 51 240 </string>
+                <string name="viewFrame">180 29 40 16 </string>
+                <ostype name="controlSignature">tZIm</ostype>
+                <int name="controlID">10</int>
+                <string name="title">_</string>
+              </object>
+              <object class="IBCarbonEditText" id="253">
+                <string name="bounds">61 69 77 189 </string>
+                <string name="viewFrame">49 55 120 16 </string>
+                <ostype name="controlSignature">tZIm</ostype>
+                <int name="controlID">2</int>
+                <string name="helpTagText">Ordinata angolo superiore destro</string>
+                <boolean name="isUnicode">TRUE</boolean>
+              </object>
+              <object class="IBCarbonStaticText" id="254">
+                <string name="bounds">4 318 20 358 </string>
+                <string name="viewFrame">298 -2 40 16 </string>
+                <ostype name="controlSignature">xMkR</ostype>
+                <int name="controlID">6</int>
+                <string name="title">_</string>
+              </object>
+              <object class="IBCarbonStaticText" id="252">
+                <string name="bounds">35 36 51 58 </string>
+                <string name="viewFrame">16 29 22 16 </string>
+                <string name="title">x :</string>
+              </object>
+              <object class="IBCarbonStaticText" id="251">
+                <string name="bounds">61 36 77 58 </string>
+                <string name="viewFrame">16 55 22 16 </string>
+                <string name="title">y :</string>
+              </object>
+              <object class="IBCarbonStaticText" id="257">
+                <string name="bounds">60 200 76 240 </string>
+                <string name="viewFrame">180 54 40 16 </string>
+                <ostype name="controlSignature">tZIm</ostype>
+                <int name="controlID">11</int>
+                <string name="title">_</string>
+              </object>
+            </array>
+            <string name="title">Origine</string>
+          </object>
+          <object class="IBCarbonGroupBox" id="258">
+            <string name="bounds">102 20 252 256 </string>
+            <string name="viewFrame">20 102 236 150 </string>
+            <array count="2" name="subviews">
+              <object class="IBCarbonUserPane" id="270">
+                <string name="bounds">126 36 236 240 </string>
+                <string name="viewFrame">16 24 204 110 </string>
+                <array count="6" name="subviews">
+                  <object class="IBCarbonEditText" id="271">
+                    <string name="bounds">149 69 165 189 </string>
+                    <string name="viewFrame">33 23 120 16 </string>
+                    <ostype name="controlSignature">tZIm</ostype>
+                    <int name="controlID">4</int>
+                    <string name="helpTagText">Larghezza</string>
+                    <boolean name="isUnicode">TRUE</boolean>
+                  </object>
+                  <object class="IBCarbonStaticText" id="272">
+                    <string name="bounds">149 200 165 240 </string>
+                    <string name="viewFrame">164 23 40 16 </string>
+                    <ostype name="controlSignature">tZIm</ostype>
+                    <int name="controlID">12</int>
+                    <string name="title">_</string>
+                  </object>
+                  <object class="IBCarbonEditText" id="273">
+                    <string name="bounds">175 69 191 189 </string>
+                    <string name="viewFrame">33 49 120 16 </string>
+                    <ostype name="controlSignature">tZIm</ostype>
+                    <int name="controlID">5</int>
+                    <string name="helpTagText">Altezza</string>
+                    <boolean name="isUnicode">TRUE</boolean>
+                  </object>
+                  <object class="IBCarbonStaticText" id="274">
+                    <string name="bounds">149 36 165 58 </string>
+                    <string name="viewFrame">0 23 22 16 </string>
+                    <string name="title">l :</string>
+                  </object>
+                  <object class="IBCarbonStaticText" id="275">
+                    <string name="bounds">175 36 191 58 </string>
+                    <string name="viewFrame">0 49 22 16 </string>
+                    <string name="title">h :</string>
+                  </object>
+                  <object class="IBCarbonStaticText" id="276">
+                    <string name="bounds">174 200 190 240 </string>
+                    <string name="viewFrame">164 48 40 16 </string>
+                    <ostype name="controlSignature">tZIm</ostype>
+                    <int name="controlID">13</int>
+                    <string name="title">_</string>
+                  </object>
+                </array>
+                <ostype name="controlSignature">tZIm</ostype>
+                <int name="controlID">8</int>
+                <int name="featureBits">2</int>
+              </object>
+              <object class="IBCarbonUserPane" id="277">
+                <string name="bounds">126 36 236 240 </string>
+                <string name="viewFrame">16 24 204 110 </string>
+                <array count="2" name="subviews">
+                  <object class="IBCarbonPopupButton" id="285">
+                    <string name="bounds">146 56 166 220 </string>
+                    <string name="viewFrame">20 20 164 20 </string>
+                    <ostype name="controlSignature">tZIm</ostype>
+                    <int name="controlID">6</int>
+                    <string name="helpTagText">Dimensioni della carta</string>
+                    <object name="menu" class="IBCarbonMenu" id="286">
+                      <string name="title">Popup</string>
+                      <array count="3" name="items">
+                        <object class="IBCarbonMenuItem" id="289">
+                          <boolean name="checked">TRUE</boolean>
+                          <string name="title">Item 1</string>
+                        </object>
+                        <object class="IBCarbonMenuItem" id="288">
+                          <string name="title">Item 2</string>
+                        </object>
+                        <object class="IBCarbonMenuItem" id="287">
+                          <string name="title">Item 3</string>
+                        </object>
+                      </array>
+                    </object>
+                  </object>
+                  <object class="IBCarbonRadioGroup" id="299">
+                    <string name="bounds">174 56 216 220 </string>
+                    <string name="viewFrame">20 48 164 42 </string>
+                    <ostype name="controlSignature">tZIm</ostype>
+                    <int name="controlID">7</int>
+                    <string name="helpTagText">Orientamento della carta</string>
+                    <array count="2" name="radioTitles">
+                      <array count="1">
+                        <string>Ritratto</string>
+                      </array>
+                      <array count="1">
+                        <string>Paesaggio</string>
+                      </array>
+                    </array>
+                  </object>
+                </array>
+                <ostype name="controlSignature">tZIm</ostype>
+                <int name="controlID">9</int>
+                <int name="featureBits">2</int>
+              </object>
+            </array>
+            <ostype name="controlSignature">tZIm</ostype>
+            <int name="controlID">3</int>
+            <boolean name="small">TRUE</boolean>
+            <ostype name="command">PopK</ostype>
+            <int name="titleType">2</int>
+            <int name="selectedItem">3</int>
+            <object name="menu" class="IBCarbonMenu" id="259">
+              <string name="title">PopUp:</string>
+              <array count="4" name="items">
+                <object class="IBCarbonMenuItem" id="260">
+                  <string name="title">Area geografica</string>
+                </object>
+                <object class="IBCarbonMenuItem" id="261">
+                  <string name="title">Dimenzioni in pixel</string>
+                </object>
+                <object class="IBCarbonMenuItem" id="301">
+                  <boolean name="checked">TRUE</boolean>
+                  <string name="title">Dimensioni carta personalizzata</string>
+                </object>
+                <object class="IBCarbonMenuItem" id="262">
+                  <string name="title">Dimensioni carta standard</string>
+                </object>
+              </array>
+            </object>
+          </object>
+          <object class="IBCarbonCheckBox" id="300">
+            <string name="bounds">265 20 283 256 </string>
+            <string name="viewFrame">20 265 236 18 </string>
+            <ostype name="controlSignature">tZIm</ostype>
+            <int name="controlID">14</int>
+            <string name="title">Mostra l&apos;area di stampa</string>
+            <string name="helpTagText">Mostra l&apos;area</string>
+            <int name="initialState">1</int>
+          </object>
+        </array>
+      </object>
+      <boolean name="receiveUpdates">FALSE</boolean>
+      <boolean name="isResizable">FALSE</boolean>
+      <boolean name="compositing">TRUE</boolean>
+      <int name="carbonWindowClass">4</int>
+      <int name="windowPosition">1</int>
+    </object>
+    <reference idRef="235"/>
+    <reference idRef="237"/>
+    <reference idRef="240"/>
+    <reference idRef="249"/>
+    <reference idRef="250"/>
+    <reference idRef="251"/>
+    <reference idRef="252"/>
+    <reference idRef="253"/>
+    <reference idRef="254"/>
+    <reference idRef="255"/>
+    <reference idRef="256"/>
+    <reference idRef="257"/>
+    <reference idRef="258"/>
+    <reference idRef="259"/>
+    <reference idRef="260"/>
+    <reference idRef="261"/>
+    <reference idRef="262"/>
+    <reference idRef="270"/>
+    <reference idRef="271"/>
+    <reference idRef="272"/>
+    <reference idRef="273"/>
+    <reference idRef="274"/>
+    <reference idRef="275"/>
+    <reference idRef="276"/>
+    <reference idRef="277"/>
+    <reference idRef="285"/>
+    <reference idRef="286"/>
+    <reference idRef="287"/>
+    <reference idRef="288"/>
+    <reference idRef="289"/>
+    <reference idRef="299"/>
+    <reference idRef="300"/>
+    <reference idRef="301"/>
+    <reference idRef="302"/>
+    <reference idRef="303"/>
+  </array>
+  <array count="38" name="allParents">
+    <reference idRef="1"/>
+    <reference idRef="230"/>
+    <reference idRef="1"/>
+    <reference idRef="234"/>
+    <reference idRef="235"/>
+    <reference idRef="235"/>
+    <reference idRef="230"/>
+    <reference idRef="235"/>
+    <reference idRef="250"/>
+    <reference idRef="250"/>
+    <reference idRef="250"/>
+    <reference idRef="250"/>
+    <reference idRef="250"/>
+    <reference idRef="250"/>
+    <reference idRef="250"/>
+    <reference idRef="235"/>
+    <reference idRef="258"/>
+    <reference idRef="259"/>
+    <reference idRef="259"/>
+    <reference idRef="259"/>
+    <reference idRef="258"/>
+    <reference idRef="270"/>
+    <reference idRef="270"/>
+    <reference idRef="270"/>
+    <reference idRef="270"/>
+    <reference idRef="270"/>
+    <reference idRef="270"/>
+    <reference idRef="258"/>
+    <reference idRef="277"/>
+    <reference idRef="285"/>
+    <reference idRef="286"/>
+    <reference idRef="286"/>
+    <reference idRef="286"/>
+    <reference idRef="277"/>
+    <reference idRef="235"/>
+    <reference idRef="259"/>
+    <reference idRef="230"/>
+    <reference idRef="230"/>
+  </array>
+  <dictionary count="7" name="nameTable">
+    <string>Files Owner</string>
+    <reference idRef="1"/>
+    <string>IBCarbonMenuItem</string>
+    <reference idRef="233"/>
+    <string>IBCarbonMenuItem111</string>
+    <reference idRef="249"/>
+    <string>IBCarbonMenuItem1111</string>
+    <reference idRef="302"/>
+    <string>IBCarbonMenuItem11111</string>
+    <reference idRef="303"/>
+    <string>Menu</string>
+    <reference idRef="230"/>
+    <string>Window</string>
+    <reference idRef="234"/>
+  </dictionary>
+  <unsigned_int name="nextObjectID">304</unsigned_int>
+</object>

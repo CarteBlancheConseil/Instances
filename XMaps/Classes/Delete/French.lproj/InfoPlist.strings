@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Supprimer";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Supprimer version 1.2, Copyright 2005 Carte Blanche Conseil.";

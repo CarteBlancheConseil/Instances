@@ -1,0 +1,6 @@
+/*MESSAGES*/
+"join to nearest"	="Join at Shortest";
+"too_far"			="Objects too far apart :";
+"already_joined"	="Objects already joined :";
+
+/*ERRORS*/

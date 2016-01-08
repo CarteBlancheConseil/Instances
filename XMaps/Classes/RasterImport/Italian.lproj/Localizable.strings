@@ -1,0 +1,10 @@
+/*MESSAGES*/
+"rasterimport"		="Importa un Raster";
+"IGridNotFoundErr"	="Estensione \"Griglia di importazionet\" introvabile";
+"IGridNotFoundExpl"	="Questa estensione permette di specificare in quale Tipo devono essere importati i dati.";
+"GridErr"			="Errata configurazione della Griglia di importazione";
+
+"GlobalErr"         ="Si è verificato un errore durante la compilazione";
+"GlobalExpl"        ="%d tipi respinto\n%d oggetti respinto\n%d errore di riempimento";
+
+/*ERRORS*/

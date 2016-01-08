@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Maschera la selezione";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Maschera la selezione versione 1.2, Copyright 2005 Carte Blanche Conseil.";

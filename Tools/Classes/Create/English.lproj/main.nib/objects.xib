@@ -1,0 +1,217 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <object name="rootObject" class="NSCustomObject" id="1">
+  </object>
+  <array count="16" name="allObjects">
+    <object class="IBCarbonEditText" id="255">
+      <ostype name="controlSignature">tGwJ</ostype>
+      <int name="controlID">17</int>
+      <boolean name="useInlineInput">TRUE</boolean>
+      <boolean name="isUnicode">TRUE</boolean>
+      <boolean name="isSingleLine">TRUE</boolean>
+      <string name="foreColor">0 0 0 </string>
+      <string name="viewFrame">243 83 24 16 </string>
+      <string name="bounds">83 263 99 287 </string>
+    </object>
+    <object class="IBCarbonCheckBox" id="241">
+      <ostype name="controlSignature">tGwJ</ostype>
+      <int name="controlID">7</int>
+      <ostype name="command">angu</ostype>
+      <string name="title">At Angularities</string>
+      <string name="viewFrame">16 82 150 18 </string>
+      <string name="bounds">82 36 100 186 </string>
+    </object>
+    <object class="IBCarbonCheckBox" id="240">
+      <ostype name="controlSignature">tGwJ</ostype>
+      <int name="controlID">6</int>
+      <ostype name="command">dire</ostype>
+      <string name="title">In the Direction</string>
+      <string name="viewFrame">16 56 150 18 </string>
+      <string name="bounds">56 36 74 186 </string>
+    </object>
+    <object class="IBCarbonDBListView" id="237">
+      <ostype name="controlSignature">tGwJ</ostype>
+      <int name="controlID">9</int>
+      <int name="fontStyle">-2</int>
+      <ostype name="command">typs</ostype>
+      <string name="helpTagExtendedText">Liste des champs du type sélectionné</string>
+      <string name="helpTagText">Field List</string>
+      <array count="2" name="listViewColumns">
+        <object class="IBCarbonDBListViewColumn">
+          <ostype name="propertyID">chck</ostype>
+          <ostype name="propertyType">chbx</ostype>
+          <int name="propertyFlags">0</int>
+          <int name="sortOrder">1</int>
+          <int name="maxWidth">24</int>
+          <int name="minWidth">24</int>
+          <int name="textAlignment">-2</int>
+        </object>
+        <object class="IBCarbonDBListViewColumn">
+          <ostype name="propertyID">name</ostype>
+          <int name="propertyFlags">262144</int>
+          <int name="sortOrder">1</int>
+          <int name="maxWidth">202</int>
+          <int name="minWidth">202</int>
+          <int name="textAlignment">-2</int>
+          <string name="titleString">Types</string>
+        </object>
+      </array>
+      <int name="hiliteStyle">1</int>
+      <int name="selectionFlags">11</int>
+      <boolean name="horzScrollBar">FALSE</boolean>
+      <string name="viewFrame">20 34 246 130 </string>
+      <string name="bounds">184 40 314 286 </string>
+    </object>
+    <object class="IBCarbonCheckBox" id="239">
+      <ostype name="controlSignature">tGwJ</ostype>
+      <int name="controlID">8</int>
+      <ostype name="command">extr</ostype>
+      <string name="title">At Ends</string>
+      <string name="viewFrame">16 108 150 18 </string>
+      <string name="bounds">108 36 126 186 </string>
+    </object>
+    <object class="IBCarbonCheckBox" id="247">
+      <ostype name="controlSignature">tGwJ</ostype>
+      <int name="controlID">10</int>
+      <ostype name="command">fOpn</ostype>
+      <string name="title">Open card</string>
+      <string name="viewFrame">18 350 288 18 </string>
+      <string name="bounds">350 18 368 306 </string>
+    </object>
+    <object class="IBCarbonEditText" id="253">
+      <ostype name="controlSignature">tGwJ</ostype>
+      <int name="controlID">15</int>
+      <boolean name="useInlineInput">TRUE</boolean>
+      <boolean name="isUnicode">TRUE</boolean>
+      <boolean name="isSingleLine">TRUE</boolean>
+      <string name="foreColor">0 0 0 </string>
+      <string name="viewFrame">243 31 24 16 </string>
+      <string name="bounds">31 263 47 287 </string>
+    </object>
+    <object class="IBCarbonCheckBox" id="238">
+      <ostype name="controlSignature">tGwJ</ostype>
+      <int name="controlID">5</int>
+      <ostype name="command">cour</ostype>
+      <string name="title">At Shortest</string>
+      <string name="viewFrame">16 30 150 18 </string>
+      <string name="bounds">30 36 48 186 </string>
+    </object>
+    <object class="IBCarbonEditText" id="254">
+      <ostype name="controlSignature">tGwJ</ostype>
+      <int name="controlID">16</int>
+      <boolean name="useInlineInput">TRUE</boolean>
+      <boolean name="isUnicode">TRUE</boolean>
+      <boolean name="isSingleLine">TRUE</boolean>
+      <string name="foreColor">0 0 0 </string>
+      <string name="viewFrame">243 57 24 16 </string>
+      <string name="bounds">57 263 73 287 </string>
+    </object>
+    <object class="IBCarbonWindow" id="216">
+      <boolean name="hasCloseBox">TRUE</boolean>
+      <boolean name="hasHorizontalZoom">TRUE</boolean>
+      <boolean name="hasVerticalZoom">TRUE</boolean>
+      <boolean name="receiveUpdates">FALSE</boolean>
+      <boolean name="isResizable">FALSE</boolean>
+      <boolean name="compositing">TRUE</boolean>
+      <boolean name="isConstrained">FALSE</boolean>
+      <int name="carbonWindowClass">4</int>
+      <int name="windowPosition">1</int>
+      <string name="title">Entry Tools</string>
+      <object name="rootControl" class="IBCarbonRootControl" id="222">
+        <string name="viewFrame">0 0 326 428 </string>
+        <array count="5" name="subviews">
+          <object class="IBCarbonButton" id="223">
+            <ostype name="controlSignature">stuf</ostype>
+            <int name="controlID">1</int>
+            <ostype name="command">ok  </ostype>
+            <int name="buttonType">1</int>
+            <string name="title">OK</string>
+            <string name="viewFrame">236 388 70 20 </string>
+            <string name="bounds">388 236 408 306 </string>
+          </object>
+          <object class="IBCarbonButton" id="226">
+            <ostype name="controlSignature">stuf</ostype>
+            <int name="controlID">2</int>
+            <ostype name="command">not!</ostype>
+            <int name="buttonType">2</int>
+            <string name="title">Cancel</string>
+            <string name="viewFrame">20 388 70 20 </string>
+            <string name="bounds">388 20 408 90 </string>
+          </object>
+          <object class="IBCarbonGroupBox" id="235">
+            <ostype name="controlSignature">tGwJ</ostype>
+            <int name="controlID">3</int>
+            <string name="title">Use Joins:</string>
+            <string name="viewFrame">20 0 286 138 </string>
+            <array count="8" name="subviews">
+              <reference idRef="238"/>
+              <reference idRef="239"/>
+              <reference idRef="240"/>
+              <reference idRef="241"/>
+              <reference idRef="253"/>
+              <reference idRef="254"/>
+              <reference idRef="255"/>
+              <object class="IBCarbonEditText" id="256">
+                <ostype name="controlSignature">tGwJ</ostype>
+                <int name="controlID">18</int>
+                <boolean name="useInlineInput">TRUE</boolean>
+                <boolean name="isUnicode">TRUE</boolean>
+                <boolean name="isSingleLine">TRUE</boolean>
+                <string name="foreColor">0 0 0 </string>
+                <string name="viewFrame">243 109 24 16 </string>
+                <string name="bounds">109 263 125 287 </string>
+              </object>
+            </array>
+            <string name="bounds">0 20 138 306 </string>
+          </object>
+          <object class="IBCarbonGroupBox" id="236">
+            <ostype name="controlSignature">tGwJ</ostype>
+            <int name="controlID">4</int>
+            <string name="title">On Types:</string>
+            <string name="viewFrame">20 150 286 184 </string>
+            <array count="1" name="subviews">
+              <reference idRef="237"/>
+            </array>
+            <string name="bounds">150 20 334 306 </string>
+          </object>
+          <reference idRef="247"/>
+        </array>
+        <string name="bounds">0 0 428 326 </string>
+      </object>
+      <string name="windowRect">161 282 589 608 </string>
+      <string name="ScreenRectAtEncodeTime">0 0 768 1024 </string>
+    </object>
+    <reference idRef="223"/>
+    <reference idRef="222"/>
+    <reference idRef="236"/>
+    <reference idRef="226"/>
+    <reference idRef="235"/>
+    <reference idRef="256"/>
+  </array>
+  <array count="16" name="allParents">
+    <reference idRef="235"/>
+    <reference idRef="235"/>
+    <reference idRef="235"/>
+    <reference idRef="236"/>
+    <reference idRef="235"/>
+    <reference idRef="222"/>
+    <reference idRef="235"/>
+    <reference idRef="235"/>
+    <reference idRef="235"/>
+    <reference idRef="1"/>
+    <reference idRef="222"/>
+    <reference idRef="216"/>
+    <reference idRef="222"/>
+    <reference idRef="222"/>
+    <reference idRef="222"/>
+    <reference idRef="235"/>
+  </array>
+  <dictionary count="2" name="nameTable">
+    <string>File&apos;s Owner</string>
+    <reference idRef="1"/>
+    <string>Window</string>
+    <reference idRef="216"/>
+  </dictionary>
+  <string name="targetFramework">IBCarbonFramework</string>
+  <unsigned_int name="nextObjectID">257</unsigned_int>
+</object>

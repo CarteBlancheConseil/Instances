@@ -1,0 +1,129 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <string name="targetFramework">IBCarbonFramework</string>
+  <object name="rootObject" class="NSCustomObject" id="1">
+    <string name="customClass">NSApplication</string>
+  </object>
+  <array count="9" name="allObjects">
+    <object class="IBCarbonWindow" id="425">
+      <string name="windowRect">600 662 798 1000 </string>
+      <string name="title">View Manager</string>
+      <object name="rootControl" class="IBCarbonRootControl" id="426">
+        <string name="bounds">0 0 198 338 </string>
+        <array count="7" name="subviews">
+          <object class="IBCarbonDBListView" id="431">
+            <string name="bounds">18 20 138 230 </string>
+            <ostype name="controlSignature">VMgr</ostype>
+            <int name="controlID">1</int>
+            <ostype name="command">List</ostype>
+            <string name="helpTagText">Liste des vues</string>
+            <int name="hiliteStyle">1</int>
+            <boolean name="horzScrollBar">FALSE</boolean>
+            <int name="selectionFlags">3</int>
+            <int name="listViewHeaderBtnHeight">0</int>
+            <array count="1" name="listViewColumns">
+              <object class="IBCarbonDBListViewColumn">
+                <ostype name="propertyID">data</ostype>
+                <int name="propertyFlags">458752</int>
+                <int name="sortOrder">1</int>
+                <int name="minWidth">190</int>
+                <int name="maxWidth">190</int>
+                <int name="textAlignment">-2</int>
+                <string name="titleString">Nom</string>
+              </object>
+            </array>
+          </object>
+          <object class="IBCarbonBevelButton" id="430">
+            <string name="bounds">89 238 113 318 </string>
+            <ostype name="controlSignature">VMgr</ostype>
+            <int name="controlID">5</int>
+            <string name="title">Delete</string>
+            <ostype name="command">VDel</ostype>
+            <string name="helpTagText">Supprimer la vue</string>
+            <int name="contentType">0</int>
+            <int name="contentResID">152</int>
+            <int name="textPlacement">3</int>
+          </object>
+          <object class="IBCarbonBevelButton" id="433">
+            <string name="bounds">43 238 67 318 </string>
+            <ostype name="controlSignature">VMgr</ostype>
+            <int name="controlID">6</int>
+            <string name="title">Duplicate</string>
+            <ostype name="command">VDup</ostype>
+            <string name="helpTagText">Dupliquer la vue</string>
+            <int name="contentType">0</int>
+            <int name="contentResID">153</int>
+            <int name="textPlacement">3</int>
+          </object>
+          <object class="IBCarbonBevelButton" id="427">
+            <string name="bounds">20 238 44 318 </string>
+            <ostype name="controlSignature">VMgr</ostype>
+            <int name="controlID">2</int>
+            <string name="title">New</string>
+            <ostype name="command">VNew</ostype>
+            <string name="helpTagText">Créer une nouvelle vue</string>
+            <int name="contentType">0</int>
+            <int name="contentResID">149</int>
+            <int name="textPlacement">3</int>
+          </object>
+          <object class="IBCarbonButton" id="432">
+            <string name="bounds">158 240 178 318 </string>
+            <ostype name="controlSignature">Stuf</ostype>
+            <int name="controlID">1</int>
+            <string name="title">Close</string>
+            <ostype name="command">ok  </ostype>
+            <int name="buttonType">1</int>
+          </object>
+          <object class="IBCarbonButton" id="428">
+            <string name="bounds">270 240 290 318 </string>
+            <ostype name="controlSignature">Stuf</ostype>
+            <int name="controlID">2</int>
+            <string name="title">Annuler</string>
+            <ostype name="command">not!</ostype>
+            <int name="buttonType">2</int>
+          </object>
+          <object class="IBCarbonBevelButton" id="429">
+            <string name="bounds">66 238 90 318 </string>
+            <ostype name="controlSignature">VMgr</ostype>
+            <int name="controlID">3</int>
+            <string name="title">Rename</string>
+            <ostype name="command">VRen</ostype>
+            <string name="helpTagText">Dupliquer la vue</string>
+            <int name="contentType">0</int>
+            <int name="contentResID">153</int>
+            <int name="textPlacement">3</int>
+          </object>
+        </array>
+      </object>
+      <boolean name="isResizable">FALSE</boolean>
+      <int name="carbonWindowClass">4</int>
+      <int name="windowPosition">1</int>
+    </object>
+    <reference idRef="426"/>
+    <reference idRef="427"/>
+    <reference idRef="428"/>
+    <reference idRef="429"/>
+    <reference idRef="430"/>
+    <reference idRef="431"/>
+    <reference idRef="432"/>
+    <reference idRef="433"/>
+  </array>
+  <array count="9" name="allParents">
+    <reference idRef="1"/>
+    <reference idRef="425"/>
+    <reference idRef="426"/>
+    <reference idRef="426"/>
+    <reference idRef="426"/>
+    <reference idRef="426"/>
+    <reference idRef="426"/>
+    <reference idRef="426"/>
+    <reference idRef="426"/>
+  </array>
+  <dictionary count="2" name="nameTable">
+    <string>Files Owner</string>
+    <reference idRef="1"/>
+    <string>Window</string>
+    <reference idRef="425"/>
+  </dictionary>
+  <unsigned_int name="nextObjectID">434</unsigned_int>
+</object>

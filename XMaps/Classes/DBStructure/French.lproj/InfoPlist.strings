@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Structure des tables…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Structure des tables… version 1.2, Copyright 2005 Carte Blanche Conseil.";

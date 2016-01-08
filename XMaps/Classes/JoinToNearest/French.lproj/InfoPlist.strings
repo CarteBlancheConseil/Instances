@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Joindre au plus court";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Joindre au plus court version 1.2, Copyright 2005 Carte Blanche Conseil.";

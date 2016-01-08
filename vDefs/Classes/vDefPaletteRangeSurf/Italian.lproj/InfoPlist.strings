@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Superfici gradienti";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Superfici gradienti versione 1.2, Copyright 2012 Carte Blanche Conseil.";

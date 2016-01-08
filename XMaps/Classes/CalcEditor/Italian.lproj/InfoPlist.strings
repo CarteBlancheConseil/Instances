@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Editor di formule…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Editor di formule… versione 1.2, Copyright 2005 Carte Blanche Conseil.";

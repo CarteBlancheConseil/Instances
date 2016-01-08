@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Constants…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Constants… version 1.2, Copyright 2015 Carte Blanche Conseil.";

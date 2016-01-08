@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		141158D91A56EB60005110B9 /* 129.png in Resources */ = {isa = PBXBuildFile; fileRef = 141158D51A56EB60005110B9 /* 129.png */; };
+		141158DA1A56EB60005110B9 /* 130.png in Resources */ = {isa = PBXBuildFile; fileRef = 141158D61A56EB60005110B9 /* 130.png */; };
+		141158DB1A56EB60005110B9 /* 131.png in Resources */ = {isa = PBXBuildFile; fileRef = 141158D71A56EB60005110B9 /* 131.png */; };
+		141158DC1A56EB60005110B9 /* 132.png in Resources */ = {isa = PBXBuildFile; fileRef = 141158D81A56EB60005110B9 /* 132.png */; };
+		144859961A54515D00A2A8E1 /* bXBoxTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 144859941A54515D00A2A8E1 /* bXBoxTools.cpp */; };
+		144859991A54516500A2A8E1 /* ToolsWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 144859981A54516500A2A8E1 /* ToolsWindowController.mm */; };
+		14A6BF2C12C21A6400E6FBDB /* Palette.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A6BF2A12C21A6400E6FBDB /* Palette.xib */; };
+		14A6BF4012C21B3600E6FBDB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A6BF3F12C21B3600E6FBDB /* QuartzCore.framework */; };
+		14A6C7A912C26F2C00E6FBDB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14A6C7A712C26F2C00E6FBDB /* Localizable.strings */; };
+		14C3363E0E0BED6300E8813A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14C3363C0E0BED6300E8813A /* InfoPlist.strings */; };
+		14CA52E90DF9640E0080DF70 /* xmap_lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA52E80DF9640E0080DF70 /* xmap_lib.framework */; };
+		14CA540D0DF9642C0080DF70 /* std_ext.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA540C0DF9642C0080DF70 /* std_ext.framework */; };
+		14CA54330DF964320080DF70 /* mox_intf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA54320DF964320080DF70 /* mox_intf.framework */; };
+		14CA54380DF964990080DF70 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14CA54360DF964990080DF70 /* main.cpp */; };
+		14CA54550DF967F30080DF70 /* MacMapStats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA54530DF967F30080DF70 /* MacMapStats.framework */; };
+		14CA54560DF967F30080DF70 /* MacMapSuite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA54540DF967F30080DF70 /* MacMapSuite.framework */; };
+		14EFCE261292E8730038AAD4 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EFCE251292E8730038AAD4 /* Carbon.framework */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		141158D51A56EB60005110B9 /* 129.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 129.png; sourceTree = "<group>"; };
+		141158D61A56EB60005110B9 /* 130.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 130.png; sourceTree = "<group>"; };
+		141158D71A56EB60005110B9 /* 131.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 131.png; sourceTree = "<group>"; };
+		141158D81A56EB60005110B9 /* 132.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 132.png; sourceTree = "<group>"; };
+		144859941A54515D00A2A8E1 /* bXBoxTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXBoxTools.cpp; sourceTree = "<group>"; };
+		144859951A54515D00A2A8E1 /* bXBoxTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXBoxTools.h; sourceTree = "<group>"; };
+		144859971A54516500A2A8E1 /* ToolsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolsWindowController.h; sourceTree = "<group>"; };
+		144859981A54516500A2A8E1 /* ToolsWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ToolsWindowController.mm; sourceTree = "<group>"; };
+		14A6BF2B12C21A6400E6FBDB /* French */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = French; path = French.lproj/Palette.xib; sourceTree = "<group>"; };
+		14A6BF3F12C21B3600E6FBDB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		14A6C7A812C26F2C00E6FBDB /* French */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
+		14BAE91C1A63D7BA0069E3C6 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14BAE91D1A63D7BA0069E3C6 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		14BAE91E1A63D7BA0069E3C6 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Palette.xib; sourceTree = "<group>"; };
+		14BAE91F1A63D7C20069E3C6 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14BAE9201A63D7C20069E3C6 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/Localizable.strings; sourceTree = "<group>"; };
+		14BAE9211A63D7C20069E3C6 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Italian; path = Italian.lproj/Palette.xib; sourceTree = "<group>"; };
+		14C3363D0E0BED6300E8813A /* French */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14CA52E80DF9640E0080DF70 /* xmap_lib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = xmap_lib.framework; path = "../../../../Applis/Current/MacMap®/build/Release/xmap_lib.framework"; sourceTree = SOURCE_ROOT; };
+		14CA540C0DF9642C0080DF70 /* std_ext.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = std_ext.framework; path = "../../../../Applis/Current/MacMap®/build/Release/std_ext.framework"; sourceTree = SOURCE_ROOT; };
+		14CA54320DF964320080DF70 /* mox_intf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mox_intf.framework; path = "../../../../Applis/Current/MacMap®/build/Release/mox_intf.framework"; sourceTree = SOURCE_ROOT; };
+		14CA54360DF964990080DF70 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		14CA54370DF964990080DF70 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		14CA54530DF967F30080DF70 /* MacMapStats.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacMapStats.framework; path = /Library/Frameworks/MacMapStats.framework; sourceTree = "<absolute>"; };
+		14CA54540DF967F30080DF70 /* MacMapSuite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacMapSuite.framework; path = /Library/Frameworks/MacMapSuite.framework; sourceTree = "<absolute>"; };
+		14CA57C20DF973C30080DF70 /* CocoaStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaStuff.h; sourceTree = "<group>"; };
+		14EFCE251292E8730038AAD4 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		32DBCF630370AF2F00C91783 /* CocoaBundle_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaBundle_Prefix.pch; sourceTree = "<group>"; };
+		8D5B49B6048680CD000E48DA /* XBoxTools.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XBoxTools.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+				14CA52E90DF9640E0080DF70 /* xmap_lib.framework in Frameworks */,
+				14CA540D0DF9642C0080DF70 /* std_ext.framework in Frameworks */,
+				14CA54330DF964320080DF70 /* mox_intf.framework in Frameworks */,
+				14CA54550DF967F30080DF70 /* MacMapStats.framework in Frameworks */,
+				14CA54560DF967F30080DF70 /* MacMapSuite.framework in Frameworks */,
+				14EFCE261292E8730038AAD4 /* Carbon.framework in Frameworks */,
+				14A6BF4012C21B3600E6FBDB /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* CocoaBundle */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = CocoaBundle;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				141158D51A56EB60005110B9 /* 129.png */,
+				141158D61A56EB60005110B9 /* 130.png */,
+				141158D71A56EB60005110B9 /* 131.png */,
+				141158D81A56EB60005110B9 /* 132.png */,
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				14C3363C0E0BED6300E8813A /* InfoPlist.strings */,
+				14A6C7A712C26F2C00E6FBDB /* Localizable.strings */,
+				14A6BF2A12C21A6400E6FBDB /* Palette.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				14CA54370DF964990080DF70 /* main.h */,
+				14CA54360DF964990080DF70 /* main.cpp */,
+				144859941A54515D00A2A8E1 /* bXBoxTools.cpp */,
+				144859951A54515D00A2A8E1 /* bXBoxTools.h */,
+				14CA57C20DF973C30080DF70 /* CocoaStuff.h */,
+				144859971A54516500A2A8E1 /* ToolsWindowController.h */,
+				144859981A54516500A2A8E1 /* ToolsWindowController.mm */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14A6BF3F12C21B3600E6FBDB /* QuartzCore.framework */,
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14CA54530DF967F30080DF70 /* MacMapStats.framework */,
+				14CA54540DF967F30080DF70 /* MacMapSuite.framework */,
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+				D2F7E65807B2D6F200F64583 /* CoreData.framework */,
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+				14CA54320DF964320080DF70 /* mox_intf.framework */,
+				14CA540C0DF9642C0080DF70 /* std_ext.framework */,
+				14CA52E80DF9640E0080DF70 /* xmap_lib.framework */,
+				14EFCE251292E8730038AAD4 /* Carbon.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* XBoxTools.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF630370AF2F00C91783 /* CocoaBundle_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* XBoxTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "XBoxTools" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XBoxTools;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = CocoaBundle;
+			productReference = 8D5B49B6048680CD000E48DA /* XBoxTools.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "XBoxTools" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				Italian,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* CocoaBundle */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* XBoxTools */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				141158DA1A56EB60005110B9 /* 130.png in Resources */,
+				14C3363E0E0BED6300E8813A /* InfoPlist.strings in Resources */,
+				14A6BF2C12C21A6400E6FBDB /* Palette.xib in Resources */,
+				141158DB1A56EB60005110B9 /* 131.png in Resources */,
+				141158DC1A56EB60005110B9 /* 132.png in Resources */,
+				141158D91A56EB60005110B9 /* 129.png in Resources */,
+				14A6C7A912C26F2C00E6FBDB /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14CA54380DF964990080DF70 /* main.cpp in Sources */,
+				144859991A54516500A2A8E1 /* ToolsWindowController.mm in Sources */,
+				144859961A54515D00A2A8E1 /* bXBoxTools.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		14A6BF2A12C21A6400E6FBDB /* Palette.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14A6BF2B12C21A6400E6FBDB /* French */,
+				14BAE91E1A63D7BA0069E3C6 /* English */,
+				14BAE9211A63D7C20069E3C6 /* Italian */,
+			);
+			name = Palette.xib;
+			sourceTree = "<group>";
+		};
+		14A6C7A712C26F2C00E6FBDB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14A6C7A812C26F2C00E6FBDB /* French */,
+				14BAE91D1A63D7BA0069E3C6 /* English */,
+				14BAE9201A63D7C20069E3C6 /* Italian */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		14C3363C0E0BED6300E8813A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14C3363D0E0BED6300E8813A /* French */,
+				14BAE91C1A63D7BA0069E3C6 /* English */,
+				14BAE91F1A63D7C20069E3C6 /* Italian */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "$(SRCROOT)/../../../../Applis/Current/MacMap®/build/Release";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+
+				GCC_MODEL_TUNING = G5;
+				GCC_OBJC_CALL_CXX_CDTORS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GENERATE_PKGINFO_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = ../../build;
+				OBJROOT = ../../build;
+				PRODUCT_NAME = XBoxTools;
+				SKIP_INSTALL = YES;
+				SYMROOT = ../../build;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OBJROOT = "../../zXCode Div/buildprod";
+				PREBINDING = YES;
+				SDKROOT = macosx10.8;
+				SYMROOT = ../../build;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "XBoxTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "XBoxTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

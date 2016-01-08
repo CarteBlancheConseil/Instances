@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Topologia…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Topologia… versione 1.2, Copyright 2005 Carte Blanche Conseil.";

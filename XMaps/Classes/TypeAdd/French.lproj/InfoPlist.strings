@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Ajouter un type…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Ajouter un type… version 1.2, Copyright 2005 Carte Blanche Conseil.";

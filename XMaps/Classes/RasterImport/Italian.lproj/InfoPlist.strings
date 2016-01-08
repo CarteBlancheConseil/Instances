@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Importa un raster…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Importa un raster… versione 1.2, Copyright 2005 Carte Blanche Conseil.";

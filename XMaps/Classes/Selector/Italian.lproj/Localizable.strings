@@ -1,0 +1,20 @@
+/*MESSAGES*/
+"CreateMacro"	="Creazione di una macro";
+
+"save"			="Registra";
+
+"equal"			="e uguale a";
+"notequal"		="e diverso da";
+"lower"			="e minore di";
+"lowerorequal"	="e minore o uguale a";
+"higher"		="e maggiore di";
+"higherorequal"	="e maggiore o uguale a";
+"contain"		="contiene";
+"beginwith"		="comincia per";
+"endwith"		="finisce per";
+
+"field"			="il campo";
+"calc"			="la calc";
+
+
+/*ERRORS*/

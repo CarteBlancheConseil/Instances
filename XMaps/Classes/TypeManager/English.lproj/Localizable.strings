@@ -1,0 +1,6 @@
+/*MESSAGES*/
+"close database"		="Make sure you close this database";
+"close database exp"	="Changes will take effect when restarting";
+"type manager"			="Type Manager";
+
+/*ERRORS*/

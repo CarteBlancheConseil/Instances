@@ -1,0 +1,6 @@
+/*MESSAGES*/
+"join to nearest"	="Giunzione al punto più vicino";
+"too_far"			="Oggetti troppo lontani :";
+"already_joined"	="Oggetti già uniti :";
+
+/*ERRORS*/

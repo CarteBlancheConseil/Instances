@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Colora…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Colora… versione 1.2, Copyright 2005 Carte Blanche Conseil.";

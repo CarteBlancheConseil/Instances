@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Che arriva a";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Che arriva a 1.2, Copyright 2005 Carte Blanche Conseil.";

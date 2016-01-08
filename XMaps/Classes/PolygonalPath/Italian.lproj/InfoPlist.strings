@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Percorso poligonale";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Percorso poligonale versione 1.2, Copyright 2005 Carte Blanche Conseil.";

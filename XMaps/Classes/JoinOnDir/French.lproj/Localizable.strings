@@ -1,0 +1,6 @@
+/*MESSAGES*/
+"join on dir"		="Joindre dans la direction";
+"too_far"			="Objets trop éloignés :";
+"already_joined"	="Objets déjà joints :";
+
+/*ERRORS*/
