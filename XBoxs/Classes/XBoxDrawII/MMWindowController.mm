@@ -92,6 +92,51 @@ _tm_((void*)self);
 	[super dealloc];
 }
 
+// ---------------------------------------------------------------------------
+//
+// ------------
+-(void)awakeFromNib{
+_bTrace_("[MMWindowController awakeFromNib]",true);
+bGenericMacMapApp*	gapp=(bGenericMacMapApp*)_ext->getapp();
+bGenericExt*		ext;
+    
+    ext=gapp->xmapMgr()->find('NtCl');
+    if(!ext){
+        [bNet setEnabled:NO];
+    }
+    ext=gapp->xmapMgr()->find('NtCO');
+    if(!ext){
+        [(NSButton*)[mAuto cellAtRow:0 column:0] setEnabled:NO];
+        [bNetC setEnabled:NO];
+    }
+    ext=gapp->xmapMgr()->find('ChTo');
+    if(!ext){
+        [(NSButton*)[mAuto cellAtRow:1 column:0] setEnabled:NO];
+        [bTopC setEnabled:NO];
+    }
+
+    ext=gapp->xmapMgr()->find('bEnd');
+    if(!ext){
+        [bNet setEnabled:NO];
+        [tEnd setEnabled:NO];
+    }
+    ext=gapp->xmapMgr()->find('JAng');
+    if(!ext){
+        [bVertex setEnabled:NO];
+        [tVertex setEnabled:NO];
+    }
+    ext=gapp->xmapMgr()->find('JNea');
+    if(!ext){
+        [bNearest setEnabled:NO];
+        [tNearest setEnabled:NO];
+    }
+    ext=gapp->xmapMgr()->find('JDir');
+    if(!ext){
+        [bDir setEnabled:NO];
+        [tDir setEnabled:NO];
+    }
+}
+
 #pragma mark ---- Actions ----
 // ---------------------------------------------------------------------------
 // 

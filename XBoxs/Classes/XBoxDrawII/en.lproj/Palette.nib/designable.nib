@@ -2,9 +2,9 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1060</int>
-		<string key="IBDocument.SystemVersion">14D136</string>
+		<string key="IBDocument.SystemVersion">14F1509</string>
 		<string key="IBDocument.InterfaceBuilderVersion">7702</string>
-		<string key="IBDocument.AppKitVersion">1347.57</string>
+		<string key="IBDocument.AppKitVersion">1348.17</string>
 		<string key="IBDocument.HIToolboxVersion">758.70</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -51,7 +51,7 @@
 				<nil key="NSUserInterfaceItemIdentifier"/>
 				<string key="NSWindowContentMinSize">{100, 182}</string>
 				<object class="NSView" key="NSWindowView" id="257534956">
-					<reference key="NSNextResponder"/>
+					<nil key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<array class="NSMutableArray" key="NSSubviews">
 						<object class="NSTextField" id="161274766">
@@ -59,7 +59,6 @@
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{32, 160}, {60, 16}}</string>
 							<reference key="NSSuperview" ref="257534956"/>
-							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="89509565">
 								<int key="NSCellFlags">-1804599231</int>
@@ -99,7 +98,6 @@
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{32, 138}, {60, 16}}</string>
 							<reference key="NSSuperview" ref="257534956"/>
-							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="483727112">
 								<int key="NSCellFlags">-1804599231</int>
@@ -119,7 +117,6 @@
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{32, 114}, {60, 16}}</string>
 							<reference key="NSSuperview" ref="257534956"/>
-							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="134916300">
 								<int key="NSCellFlags">-1804599231</int>
@@ -139,7 +136,6 @@
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{32, 90}, {60, 16}}</string>
 							<reference key="NSSuperview" ref="257534956"/>
-							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="347041523">
 								<int key="NSCellFlags">-1804599231</int>
@@ -159,7 +155,6 @@
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{0, 133}, {24, 24}}</string>
 							<reference key="NSSuperview" ref="257534956"/>
-							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="645000879">
 								<int key="NSCellFlags">67108864</int>
@@ -189,7 +184,6 @@
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{0, 110}, {24, 24}}</string>
 							<reference key="NSSuperview" ref="257534956"/>
-							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="596974211">
 								<int key="NSCellFlags">67108864</int>
@@ -215,7 +209,6 @@
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{0, 87}, {24, 24}}</string>
 							<reference key="NSSuperview" ref="257534956"/>
-							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="765296118">
 								<int key="NSCellFlags">67633152</int>
@@ -241,7 +234,6 @@
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{0, 11}, {24, 50}}</string>
 							<reference key="NSSuperview" ref="257534956"/>
-							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 							<int key="NSNumRows">2</int>
@@ -338,7 +330,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{0, 156}, {24, 24}}</string>
 							<reference key="NSSuperview" ref="257534956"/>
-							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="111605563">
 								<int key="NSCellFlags">67108864</int>
@@ -364,7 +355,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{0, 62}, {24, 24}}</string>
 							<reference key="NSSuperview" ref="257534956"/>
-							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="253953647">
 								<int key="NSCellFlags">67108864</int>
@@ -390,7 +380,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{0, -2}, {24, 12}}</string>
 							<reference key="NSSuperview" ref="257534956"/>
-							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="141125473">
 								<int key="NSCellFlags">67108864</int>
@@ -417,7 +406,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{31, 40}, {62, 16}}</string>
 							<reference key="NSSuperview" ref="257534956"/>
-							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="610284621">
 								<int key="NSCellFlags">67108864</int>
@@ -444,7 +432,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{31, 18}, {62, 16}}</string>
 							<reference key="NSSuperview" ref="257534956"/>
-							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="280848074">
 								<int key="NSCellFlags">67108864</int>
@@ -467,7 +454,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{0, 59}, {100, 5}}</string>
 							<reference key="NSSuperview" ref="257534956"/>
-							<reference key="NSWindow"/>
 							<string key="NSOffsets">{0, 0}</string>
 							<object class="NSTextFieldCell" key="NSTitleCell">
 								<int key="NSCellFlags">67108864</int>
@@ -492,7 +478,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{0, 84}, {100, 5}}</string>
 							<reference key="NSSuperview" ref="257534956"/>
-							<reference key="NSWindow"/>
 							<string key="NSOffsets">{0, 0}</string>
 							<object class="NSTextFieldCell" key="NSTitleCell">
 								<int key="NSCellFlags">67108864</int>
@@ -512,7 +497,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{0, 8}, {100, 5}}</string>
 							<reference key="NSSuperview" ref="257534956"/>
-							<reference key="NSWindow"/>
 							<string key="NSOffsets">{0, 0}</string>
 							<object class="NSTextFieldCell" key="NSTitleCell">
 								<int key="NSCellFlags">67108864</int>
@@ -529,8 +513,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 						</object>
 					</array>
 					<string key="NSFrameSize">{100, 180}</string>
-					<reference key="NSSuperview"/>
-					<reference key="NSWindow"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {2560, 1417}}</string>
 				<string key="NSMinSize">{100, 204}</string>
@@ -714,6 +696,62 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 						<reference key="destination" ref="26895427"/>
 					</object>
 					<int key="connectionID">81</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">bTopC</string>
+						<reference key="source" ref="340840564"/>
+						<reference key="destination" ref="505047832"/>
+					</object>
+					<int key="connectionID">113</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">bNetC</string>
+						<reference key="source" ref="340840564"/>
+						<reference key="destination" ref="908603943"/>
+					</object>
+					<int key="connectionID">114</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">bNet</string>
+						<reference key="source" ref="340840564"/>
+						<reference key="destination" ref="60307390"/>
+					</object>
+					<int key="connectionID">115</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">bDir</string>
+						<reference key="source" ref="340840564"/>
+						<reference key="destination" ref="498680057"/>
+					</object>
+					<int key="connectionID">116</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">bEnd</string>
+						<reference key="source" ref="340840564"/>
+						<reference key="destination" ref="38198816"/>
+					</object>
+					<int key="connectionID">117</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">bNearest</string>
+						<reference key="source" ref="340840564"/>
+						<reference key="destination" ref="983304889"/>
+					</object>
+					<int key="connectionID">118</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">bVertex</string>
+						<reference key="source" ref="340840564"/>
+						<reference key="destination" ref="696727531"/>
+					</object>
+					<int key="connectionID">119</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -1157,7 +1195,7 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">110</int>
+			<int key="maxID">119</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1178,213 +1216,6 @@ ARcABAAAAAEAAAACARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 						<string key="majorKey">IBUserSource</string>
 						<string key="minorKey"/>
 					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">MMWindowController</string>
-					<string key="superclassName">bStdNSXBoxWindowController</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="cleanConfig:">id</string>
-						<string key="doClean:">id</string>
-						<string key="joinDir:">id</string>
-						<string key="joinEnds:">id</string>
-						<string key="joinNearest:">id</string>
-						<string key="joinVertex:">id</string>
-						<string key="setAuto:">id</string>
-						<string key="setDirDist:">id</string>
-						<string key="setEndDist:">id</string>
-						<string key="setNearestDist:">id</string>
-						<string key="setVertexDist:">id</string>
-						<string key="topoConfig:">id</string>
-						<string key="windowPop:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="cleanConfig:">
-							<string key="name">cleanConfig:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="doClean:">
-							<string key="name">doClean:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="joinDir:">
-							<string key="name">joinDir:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="joinEnds:">
-							<string key="name">joinEnds:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="joinNearest:">
-							<string key="name">joinNearest:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="joinVertex:">
-							<string key="name">joinVertex:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="setAuto:">
-							<string key="name">setAuto:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="setDirDist:">
-							<string key="name">setDirDist:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="setEndDist:">
-							<string key="name">setEndDist:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="setNearestDist:">
-							<string key="name">setNearestDist:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="setVertexDist:">
-							<string key="name">setVertexDist:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="topoConfig:">
-							<string key="name">topoConfig:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="windowPop:">
-							<string key="name">windowPop:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="bPop">NSButton</string>
-						<string key="mAuto">NSMatrix</string>
-						<string key="tDir">NSTextField</string>
-						<string key="tEnd">NSTextField</string>
-						<string key="tNearest">NSTextField</string>
-						<string key="tVertex">NSTextField</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="bPop">
-							<string key="name">bPop</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="mAuto">
-							<string key="name">mAuto</string>
-							<string key="candidateClassName">NSMatrix</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="tDir">
-							<string key="name">tDir</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="tEnd">
-							<string key="name">tEnd</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="tNearest">
-							<string key="name">tNearest</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="tVertex">
-							<string key="name">tVertex</string>
-							<string key="candidateClassName">NSTextField</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier" id="398005284">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">../MMWindowController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">MMWindowController</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="cleanConfig:">id</string>
-						<string key="doClean:">id</string>
-						<string key="joinDir:">id</string>
-						<string key="joinEnds:">id</string>
-						<string key="joinNearest:">id</string>
-						<string key="joinVertex:">id</string>
-						<string key="setAuto:">id</string>
-						<string key="setDirDist:">id</string>
-						<string key="setEndDist:">id</string>
-						<string key="setNearestDist:">id</string>
-						<string key="setVertexDist:">id</string>
-						<string key="topoConfig:">id</string>
-						<string key="windowPop:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="cleanConfig:">
-							<string key="name">cleanConfig:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="doClean:">
-							<string key="name">doClean:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="joinDir:">
-							<string key="name">joinDir:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="joinEnds:">
-							<string key="name">joinEnds:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="joinNearest:">
-							<string key="name">joinNearest:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="joinVertex:">
-							<string key="name">joinVertex:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="setAuto:">
-							<string key="name">setAuto:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="setDirDist:">
-							<string key="name">setDirDist:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="setEndDist:">
-							<string key="name">setEndDist:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="setNearestDist:">
-							<string key="name">setNearestDist:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="setVertexDist:">
-							<string key="name">setVertexDist:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="topoConfig:">
-							<string key="name">topoConfig:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="windowPop:">
-							<string key="name">windowPop:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">../MMWindowController.mm</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">NSPanelNoKey</string>
-					<string key="superclassName">bStdNSXBoxPanel</string>
-					<reference key="sourceIdentifier" ref="398005284"/>
-				</object>
-			</array>
-			<array class="NSMutableArray" key="referencedPartialClassDescriptionsV3.2+">
-				<object class="IBPartialClassDescription">
-					<string key="className">bStdNSXBoxPanel</string>
-					<string key="superclassName">NSPanel</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier" id="785476407">
-						<string key="majorKey">IBFrameworkSource</string>
-						<string key="minorKey">std_ext.framework/PrivateHeaders/bStdNSXBoxWindowController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">bStdNSXBoxWindowController</string>
-					<string key="superclassName">NSWindowController</string>
-					<reference key="sourceIdentifier" ref="785476407"/>
 				</object>
 			</array>
 		</object>

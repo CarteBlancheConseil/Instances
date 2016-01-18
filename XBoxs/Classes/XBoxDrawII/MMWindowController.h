@@ -50,6 +50,15 @@
 	
     IBOutlet NSMatrix*		mAuto;
     IBOutlet NSButton*		bPop;
+
+    IBOutlet NSButton*		bTopC;
+    IBOutlet NSButton*		bNetC;
+    IBOutlet NSButton*		bNet;
+    
+    IBOutlet NSButton*		bEnd;
+    IBOutlet NSButton*		bVertex;
+    IBOutlet NSButton*		bNearest;
+    IBOutlet NSButton*		bDir;
 }
 
 //----------------------------------------------------------------------------
