@@ -2,7 +2,7 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1080</int>
-		<string key="IBDocument.SystemVersion">14F27</string>
+		<string key="IBDocument.SystemVersion">14F1509</string>
 		<string key="IBDocument.InterfaceBuilderVersion">7702</string>
 		<string key="IBDocument.AppKitVersion">1348.17</string>
 		<string key="IBDocument.HIToolboxVersion">758.70</string>
@@ -34,7 +34,7 @@
 			<object class="NSWindowTemplate" id="972006081">
 				<int key="NSWindowStyleMask">23</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{283, 1117}, {192, 24}}</string>
+				<string key="NSWindowRect">{{900, 1117}, {192, 24}}</string>
 				<int key="NSWTFlags">-1535639552</int>
 				<string key="NSWindowTitle">???</string>
 				<string key="NSWindowClass">bStdNSXMapPanel</string>
@@ -265,6 +265,7 @@
 							<string key="NSFrame">{{168, -1}, {24, 26}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:22</string>
 							<int key="NSTag">8</int>
 							<bool key="NSEnabled">YES</bool>
@@ -600,7 +601,7 @@
 				<string key="-3.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<boolean value="NO" key="371.IBNSWindowAutoPositionCentersHorizontal"/>
 				<boolean value="NO" key="371.IBNSWindowAutoPositionCentersVertical"/>
-				<string key="371.IBPersistedLastKnownCanvasPosition">{280, -131}</string>
+				<string key="371.IBPersistedLastKnownCanvasPosition">{262, 20}</string>
 				<string key="371.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="371.IBWindowTemplateEditedContentRect">{{76, 58}, {670, 565}}</string>
 				<boolean value="NO" key="371.NSWindowTemplate.visibleAtLaunch"/>

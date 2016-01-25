@@ -103,12 +103,25 @@ bGenericXMLBaseElement*	elt;
 }
 
 // ---------------------------------------------------------------------------
+//
+// ------------
+bool bXMapPaint::test(void* prm){
+//_bTrace_("bXMapPaint::test",true);
+//_tm_(_cfname+": "+!_wd_open);
+//_tm_(_cfname+": "+(_gapp->document()!=NULL));
+    return((!_wd_open)&&(_gapp->document()!=NULL));
+}
+
+// ---------------------------------------------------------------------------
 // 
 // -----------
 bool bXMapPaint::edit(void* prm){
+//_bTrace_("bXMapPaint::edit",true);
 	if(!_controller){
+//_tm_("null controller");
         _controller=ccinit();
         if(_controller){
+//_tm_("ccinit succeed");
             _wd_open=true;
         }
 	}

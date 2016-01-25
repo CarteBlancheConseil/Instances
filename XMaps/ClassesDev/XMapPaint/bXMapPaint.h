@@ -49,6 +49,7 @@ public:
 	
     virtual bool process					(	int msg,
                                                 void* prm);
+    virtual bool test						(	void* prm);
 	virtual bool edit						(	void* prm);
 
     virtual bool paint						(	int c,
