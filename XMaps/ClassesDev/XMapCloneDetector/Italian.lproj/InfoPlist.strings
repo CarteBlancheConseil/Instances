@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Ricerca dei cloni…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Ricerca dei cloni… versione 1.2, Copyright 2016 Carte Blanche Conseil.";

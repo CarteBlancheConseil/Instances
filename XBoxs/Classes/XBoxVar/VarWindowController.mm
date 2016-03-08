@@ -96,6 +96,7 @@ _bTrace_("[VarWindowController doAdd]",true);
 bGenericMacMapApp*
     gapp=(bGenericMacMapApp*)_ext->getapp();
 bGenericExt* x=gapp->xmapMgr()->find('VarE');
+//bGenericExt* x=gapp->xmapMgr()->find('Var?');
     if(x==NULL){
         return;
     }
@@ -121,6 +122,7 @@ bGenericExt* ext=_mgr->get(rowNumber+1);
         return;
     }
 bGenericExt* x=gapp->xmapMgr()->find('VarE');
+//bGenericExt* x=gapp->xmapMgr()->find('Var?');
     if(x==NULL){
         return;
     }

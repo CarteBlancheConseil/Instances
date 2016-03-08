@@ -454,6 +454,11 @@ bGenericXMLBaseElement*	chld;
 
 	chld=new bPerpendicularLineElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);	
+
+    chld=new bCollectionElement(*elt,gapp,bndl);
+    gapp->classMgr()->AddXMLClass(chld);
+    chld=new bObjectSetElement(*elt,gapp,bndl);
+    gapp->classMgr()->AddXMLClass(chld);
 }
 
 // ---------------------------------------------------------------------------

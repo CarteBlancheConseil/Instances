@@ -52,10 +52,6 @@ typedef struct MCITp{
 bXMapMakeConstraints::bXMapMakeConstraints(bGenericXMLBaseElement* elt, bGenericMacMapApp* gapp, CFBundleRef bndl) 
 					: bStdXMap(elt,gapp,bndl){
 	setclassname("makeconstraints");
-		
-//char	name[FILENAME_MAX];
-//GetName(this,name);
-//(void)_gapp->menuMgr()->add_item(kMenuMgrMenuPalettesID,name,GetSignature(this));
 }
 
 // ---------------------------------------------------------------------------
@@ -204,9 +200,7 @@ MCITp					pp;
 char	mess[__MESSAGE_STRING_LENGTH_MAX__];
 
 	tp->fields()->get_name(srcfield,mess);
-//_tm_("source="+mess);
 	tp->fields()->get_name(field,mess);
-//_tm_("dest="+mess);
 	
 	get_localized_name(mess,getbundle());
 bProgressWait	wt(mess,NULL,true,true,prm.tp->nb_live()*2);
@@ -271,14 +265,6 @@ _tm_("nouvelle contrainte par intitulé");
 	return(false);
 }
 
-/*// ---------------------------------------------------------------------------
-// 
-// -----------
-void bXMapMakeConstraints::do_beep(){
-_bTrace_("bXMapMakeConstraints::do_beep",true);
-	SysBeep(5);
-}*/
-
 // ---------------------------------------------------------------------------
 // 
 // ------------
@@ -293,9 +279,6 @@ int					index;
 	if(!p->wt->set_progress(p->wtn)){
 		return(-1);
 	}
-/*	if(!p->wt->get_progress()){
-		return(-1);
-	}*/
 	geo->getValue(p->prm->srcfield,val);
 	index=p->prm->tp->fields()->get_constraint_index(p->prm->field,val);
 	if(index==0){

@@ -4,7 +4,7 @@
 // Purpose : Header file : XMap database structure window controller
 // Author : Benoit Ogier, benoit.ogier@macmap.com
 //
-// Copyright (C) 1997-2015 Carte Blanche Conseil.
+// Copyright (C) 2015 Carte Blanche Conseil.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -29,17 +29,11 @@
 
 #import <Cocoa/Cocoa.h>
 #import <mox_intf/bGenericType.h>
-//#import <std_ext/bStdNSAppModalWindowController.h>
+#import <std_ext/bStdNSAppModalWindowController.h>
 #import "bXMapDBStructure.h"
 
 //----------------------------------------------------------------------------
-
-@interface DBStructureWindowController : NSWindowController{
-//@interface DBStructureWindowController : bStdNSAppModalWindowController{
-	IBOutlet NSButton*		_okbtn;
-	IBOutlet NSButton*		_cancelbtn;	
-	bXMapDBStructure*       _ext;
-	long					_code;
+@interface DBStructureWindowController : bStdNSAppModalWindowController{
 
 	IBOutlet NSPopUpButton*	_typepopup;	
 	IBOutlet NSPopUpButton*	_genderpopup;	
@@ -63,18 +57,7 @@
 	IBOutlet NSButton*		_modibtn;
 	
 	bGenericType*			_tp;
-//	long					_findex;
 }
-
-//----------------------------------------------------------------------------
-// Std 
--(id)initWithExt:(bXMapDBStructure*)ext;
--(void)runAppModal:(long*)code;
-
-//----------------------------------------------------------------------------
-// Validation Dialogue 
--(IBAction)validDialog:(id)sender;
--(IBAction)cancelDialog:(id)sender;
 
 //----------------------------------------------------------------------------
 
@@ -83,6 +66,7 @@
 -(IBAction)doRemove:(id)sender;
 -(IBAction)doAdd:(id)sender;
 -(IBAction)doModify:(id)sender;
+-(IBAction)doConstraints:(id)sender;
 
 //----------------------------------------------------------------------------
 // Gestion Interface
@@ -90,8 +74,6 @@
 -(void)checkDel;
 -(void)checkAdd;
 -(void)checkModify;
-//-(void)checkKind;
-//-(void)checkCreate;
 
 //----------------------------------------------------------------------------
 

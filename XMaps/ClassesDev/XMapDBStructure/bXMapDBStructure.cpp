@@ -4,7 +4,7 @@
 // Purpose : C++ source file : XMap database structure class
 // Author : Benoit Ogier, benoit.ogier@macmap.com
 //
-// Copyright (C) 1997-2015 Carte Blanche Conseil.
+// Copyright (C) 2015 Carte Blanche Conseil.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -24,7 +24,8 @@
 //----------------------------------------------------------------------------
 // 
 //----------------------------------------------------------------------------
-// 02/09/2015 creation.
+// 28/04/2005 creation.
+// 02/09/2015 cocoa intf.
 //----------------------------------------------------------------------------
 
 #include "bXMapDBStructure.h"
@@ -74,7 +75,14 @@ bool bXMapDBStructure::test(void* prm){
 // -----------
 bool bXMapDBStructure::edit(void* prm){
 _bTrace_("bXMapDBStructure::edit()",true);	
-	return(process(kExtProcessCallFromIntf,prm));
+long        result=0;
+bEventLog	log(_gapp,this);
+    runCocoaAppModal(this,&result);
+    if(result>0){
+        process(kExtProcessCallFromIntf,prm);
+    }
+    log.close();
+	return(true);
 }
 
 // ---------------------------------------------------------------------------
@@ -83,14 +91,8 @@ _bTrace_("bXMapDBStructure::edit()",true);
 bool bXMapDBStructure::process(int msg, void* prm){
 _bTrace_("bXMapDBStructure::process()",true);	
 	switch(msg){
-        case kExtProcessCallFromIntf:{
-long        result=0;
-bEventLog	log(_gapp,this);
-            runCocoaAppModal(this,&result);
-            if(result<=0){
-            }
-            log.close();
-        }break;
+        case kExtProcessCallFromIntf:
+            break;
 		case kExtProcessCallWithParams:
 			break;
 		case kExtProcessCallWithXMLTree:
@@ -211,241 +213,4 @@ _bTrace_("bXMapDBStructure::set_write_protected",true);
     return noErr;
 }
 
-//// ---------------------------------------------------------------------------
-//// 
-//// -----------
-//bool bXMapDBStructure::do_make_from_field(bGenericType* tp,
-//											  long field,
-//											  long srcfield,
-//											  bool usevalue){
-//_bTrace_("bXMapDBStructure::do_make_from_field",true);
-//int						k;
-//DBStructure_prm		prm;
-//MCITp					pp;
-//
-//	prm.tp=tp;
-//	prm.field=field;
-//	prm.srcfield=srcfield;
-//	prm.srcuse=usevalue?kDBStructureUseValue:kDBStructureUseLabel;
-//
-//	pp.prm=&prm;
-//	pp.init=0;
-//	
-//char	mess[__MESSAGE_STRING_LENGTH_MAX__];
-//
-//	tp->fields()->get_name(srcfield,mess);
-////_tm_("source="+mess);
-//	tp->fields()->get_name(field,mess);
-////_tm_("dest="+mess);
-//	
-//	get_localized_name(mess,getbundle());
-//bProgressWait	wt(mess,NULL,true,true,prm.tp->nb_live()*2);
-//	pp.wt=&wt;
-//	pp.wtn=0;
-// 	
-//	if(prm.tp->fields()->count_constraints(prm.field)==0){
-//		if(prm.srcuse==kDBStructureUseValue){
-//_tm_("nouvelle contrainte par valeur");
-//			prm.tp->fields()->get_kind(prm.field,&k);
-//			switch(k){
-//				case _char:{
-//					char	buff[1024];
-//					pp.val=buff;
-//					prm.tp->iterator()->iterate(&pp,fill_char);
-//				}break;
-//				case _bool:
-//				case _int:{
-//					int	buff;
-//					pp.val=&buff;
-//					prm.tp->iterator()->iterate(&pp,fill_int);
-//				}break;
-//				case _double:
-//				case _date:
-//				case _time:{
-//					double	buff;
-//					pp.val=&buff;
-//					prm.tp->iterator()->iterate(&pp,fill_double);
-//				}break;
-//			}
-//		}
-//		else{
-//_tm_("nouvelle contrainte par intitulé");
-//			int	buff=1;
-//			pp.val=&buff;
-//			pp.init=1;
-//			prm.tp->iterator()->iterate(&pp,fill_int);
-//		}
-//	}
-//	
-//	if(prm.srcuse==kDBStructureUseValue){
-//		prm.tp->fields()->get_kind(prm.field,&k);
-//		switch(k){
-//			case _char:
-//				prm.tp->iterator()->iterate(&pp,analyse_char);
-//				break;
-//			case _bool:
-//			case _int:
-//				prm.tp->iterator()->iterate(&pp,analyse_int);
-//				break;
-//			case _double:
-//			case _date:
-//			case _time:
-//				prm.tp->iterator()->iterate(&pp,analyse_double);
-//				break;
-//		}
-//	}
-//	else{
-//		prm.tp->iterator()->iterate(&pp,analyse_char);
-//	}
-//	
-//	return(false);
-//}
 
-/*// ---------------------------------------------------------------------------
-// 
-// -----------
-void bXMapDBStructure::do_beep(){
-_bTrace_("bXMapDBStructure::do_beep",true);
-	SysBeep(5);
-}*/
-
-//// ---------------------------------------------------------------------------
-//// 
-//// ------------
-//int bXMapDBStructure::analyse_char(void *o, void *prm){
-//_bTrace_("bXMapDBStructure::analyse_char*",false);
-//bGenericGeoElement*	geo=(bGenericGeoElement*)o;
-//MCITp*				p=(MCITp*)prm;
-//char				val[1024];
-//int					index;
-//
-//	p->wtn++;
-//	if(!p->wt->set_progress(p->wtn)){
-//		return(-1);
-//	}
-///*	if(!p->wt->get_progress()){
-//		return(-1);
-//	}*/
-//	geo->getValue(p->prm->srcfield,val);
-//	index=p->prm->tp->fields()->get_constraint_index(p->prm->field,val);
-//	if(index==0){
-//		if(!p->prm->tp->fields()->add_constraint(p->prm->field,_char,val)){
-//_te_("echec ajout contrainte "+val);
-//		}
-//		else{
-//		}
-//	}
-//	if(p->prm->srcuse==kDBStructureUseValue){
-//		geo->setValue(p->prm->field,val);
-//	}
-//	else{
-//		if(index==0){
-//			index=p->prm->tp->fields()->get_constraint_index(p->prm->field,val);
-//		}
-//		geo->setValue(p->prm->field,&index);
-//	}
-//	return(0);
-//}
-//
-//// ---------------------------------------------------------------------------
-//// 
-//// ------------
-//int bXMapDBStructure::analyse_int(void *o, void *prm){
-//bGenericGeoElement*	geo=(bGenericGeoElement*)o;
-//MCITp*				p=(MCITp*)prm;
-//int					val;
-//	
-//	p->wtn++;
-//	if(!p->wt->set_progress(p->wtn)){
-//		return(-1);
-//	}
-//	geo->getValue(p->prm->srcfield,&val);
-//	if(p->prm->tp->fields()->get_constraint_index(p->prm->field,&val)==0){
-//		if(!p->prm->tp->fields()->add_constraint(p->prm->field,_int,&val)){
-//		}
-//		else{
-//		}
-//	}
-//	geo->setValue(p->prm->field,val);
-//	return(0);
-//}
-//
-//// ---------------------------------------------------------------------------
-//// 
-//// ------------
-//int bXMapDBStructure::analyse_double(void *o, void *prm){
-//bGenericGeoElement*	geo=(bGenericGeoElement*)o;
-//MCITp*				p=(MCITp*)prm;
-//double				val;
-//	
-//	p->wtn++;
-//	if(!p->wt->set_progress(p->wtn)){
-//		return(-1);
-//	}
-//	geo->getValue(p->prm->srcfield,&val);
-//	if(p->prm->tp->fields()->get_constraint_index(p->prm->field,&val)==0){
-//		if(!p->prm->tp->fields()->add_constraint(p->prm->field,_double,&val)){
-//		}
-//		else{
-//		}
-//	}
-//	geo->setValue(p->prm->field,val);
-//	return(0);
-//}
-//
-//// ---------------------------------------------------------------------------
-//// 
-//// ------------
-//int bXMapDBStructure::fill_char(void *o, void *prm){
-//bGenericGeoElement*	geo=(bGenericGeoElement*)o;
-//MCITp*				p=(MCITp*)prm;
-//	
-//	p->wtn++;
-//	if(!p->wt->set_progress(p->wtn)){
-//		return(-1);
-//	}
-//	if(p->init==0){
-//		geo->getValue(p->prm->srcfield,(char*)p->val);
-//		p->init=1;
-//	}
-//	geo->setValue(p->prm->field,(char*)p->val);
-//	return(0);
-//}
-//
-//// ---------------------------------------------------------------------------
-//// 
-//// ------------
-//int bXMapDBStructure::fill_int(void *o, void *prm){
-//bGenericGeoElement*	geo=(bGenericGeoElement*)o;
-//MCITp*				p=(MCITp*)prm;
-//	
-//	p->wtn++;
-//	if(!p->wt->set_progress(p->wtn)){
-//		return(-1);
-//	}
-//	if(p->init==0){
-//		geo->getValue(p->prm->srcfield,(int*)p->val);
-//		p->init=1;
-//	}
-//	geo->setValue(p->prm->field,(*((int*)p->val)));
-//	return(0);
-//}
-//
-//// ---------------------------------------------------------------------------
-//// 
-//// ------------
-//int bXMapDBStructure::fill_double(void *o, void *prm){
-//bGenericGeoElement*	geo=(bGenericGeoElement*)o;
-//MCITp*				p=(MCITp*)prm;
-//	
-//	p->wtn++;
-//	if(!p->wt->set_progress(p->wtn)){
-//		return(-1);
-//	}
-//	if(p->init==0){
-//		geo->getValue(p->prm->srcfield,(double*)p->val);
-//		p->init=1;
-//	}
-//	geo->setValue(p->prm->field,(*((double*)p->val)));
-//	return(0);
-//}

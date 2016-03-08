@@ -56,6 +56,10 @@
 		1448EDB60FCAEF5000861CB5 /* bXMLDBAddToMasked.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1448EDB20FCAEF5000861CB5 /* bXMLDBAddToMasked.cpp */; };
 		1448EDB70FCAEF5000861CB5 /* bXMLDBAddToMasked.h in Headers */ = {isa = PBXBuildFile; fileRef = 1448EDB30FCAEF5000861CB5 /* bXMLDBAddToMasked.h */; };
 		1457998E099B8A28009FE4A5 /* MacMapSuite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1457998D099B8A28009FE4A5 /* MacMapSuite.framework */; };
+		1465318D1C5A820E001B7608 /* bXMLCollection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1465318B1C5A820E001B7608 /* bXMLCollection.cpp */; };
+		1465318E1C5A820E001B7608 /* bXMLCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1465318C1C5A820E001B7608 /* bXMLCollection.h */; };
+		146531911C5A83AB001B7608 /* bXMLObjectSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1465318F1C5A83AB001B7608 /* bXMLObjectSet.cpp */; };
+		146531921C5A83AB001B7608 /* bXMLObjectSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 146531901C5A83AB001B7608 /* bXMLObjectSet.h */; };
 		1467C526100B59DA009AC28D /* bXMLPrintAreaGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1467C524100B59DA009AC28D /* bXMLPrintAreaGeometry.cpp */; };
 		1467C527100B59DA009AC28D /* bXMLPrintAreaGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 1467C525100B59DA009AC28D /* bXMLPrintAreaGeometry.h */; };
 		1468A7040EF15ECD00C89A5A /* bXMLLegible.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1468A7020EF15ECD00C89A5A /* bXMLLegible.cpp */; };
@@ -462,6 +466,10 @@
 		1448EDB20FCAEF5000861CB5 /* bXMLDBAddToMasked.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLDBAddToMasked.cpp; sourceTree = "<group>"; };
 		1448EDB30FCAEF5000861CB5 /* bXMLDBAddToMasked.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLDBAddToMasked.h; sourceTree = "<group>"; };
 		1457998D099B8A28009FE4A5 /* MacMapSuite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacMapSuite.framework; path = /Library/Frameworks/MacMapSuite.framework; sourceTree = "<absolute>"; };
+		1465318B1C5A820E001B7608 /* bXMLCollection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLCollection.cpp; sourceTree = "<group>"; };
+		1465318C1C5A820E001B7608 /* bXMLCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLCollection.h; sourceTree = "<group>"; };
+		1465318F1C5A83AB001B7608 /* bXMLObjectSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLObjectSet.cpp; sourceTree = "<group>"; };
+		146531901C5A83AB001B7608 /* bXMLObjectSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLObjectSet.h; sourceTree = "<group>"; };
 		1467C524100B59DA009AC28D /* bXMLPrintAreaGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLPrintAreaGeometry.cpp; sourceTree = "<group>"; };
 		1467C525100B59DA009AC28D /* bXMLPrintAreaGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLPrintAreaGeometry.h; sourceTree = "<group>"; };
 		1468A7020EF15ECD00C89A5A /* bXMLLegible.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLLegible.cpp; sourceTree = "<group>"; };
@@ -906,6 +914,10 @@
 		14D987DA0BFB068D004B2CA3 /* base */ = {
 			isa = PBXGroup;
 			children = (
+				1465318F1C5A83AB001B7608 /* bXMLObjectSet.cpp */,
+				146531901C5A83AB001B7608 /* bXMLObjectSet.h */,
+				1465318B1C5A820E001B7608 /* bXMLCollection.cpp */,
+				1465318C1C5A820E001B7608 /* bXMLCollection.h */,
 				140CE3060F0E001A0000CAD1 /* bXMLString.cpp */,
 				140CE3070F0E001A0000CAD1 /* bXMLString.h */,
 				147DEAF70F0B7C8A0034A3CC /* bXMLScript.cpp */,
@@ -1545,6 +1557,7 @@
 				14D989C10BFB068E004B2CA3 /* bXMLStdGeometry.h in Headers */,
 				14D989C30BFB068E004B2CA3 /* bXMLStyleIdentification.h in Headers */,
 				14D989C50BFB068E004B2CA3 /* bXMLStyleRun.h in Headers */,
+				146531921C5A83AB001B7608 /* bXMLObjectSet.h in Headers */,
 				14D989C70BFB068E004B2CA3 /* bXMLValidity.h in Headers */,
 				14D989C90BFB068E004B2CA3 /* bXMLCircleStyle.h in Headers */,
 				14D989CB0BFB068E004B2CA3 /* bXMLIconStyle.h in Headers */,
@@ -1613,6 +1626,7 @@
 				140FCFF01005CE4A005ACD1F /* bXMLBoxPos.h in Headers */,
 				1467C527100B59DA009AC28D /* bXMLPrintAreaGeometry.h in Headers */,
 				14CE81F21111D65800479A6C /* bXMLfCast.h in Headers */,
+				1465318E1C5A820E001B7608 /* bXMLCollection.h in Headers */,
 				14CE81F41111D65800479A6C /* bXMLiCast.h in Headers */,
 				14E79954125B18EA008A5A1B /* bXMLBgStroke.h in Headers */,
 				14E79970125B1AB0008A5A1B /* bXMLBgHeightMaj.h in Headers */,
@@ -1760,6 +1774,7 @@
 				14D989410BFB068E004B2CA3 /* bXMLArrow.cpp in Sources */,
 				14D989430BFB068E004B2CA3 /* bXMLCentroid.cpp in Sources */,
 				14D989450BFB068E004B2CA3 /* bXMLDecal.cpp in Sources */,
+				146531911C5A83AB001B7608 /* bXMLObjectSet.cpp in Sources */,
 				14D989470BFB068E004B2CA3 /* bXMLLineTo.cpp in Sources */,
 				14D989490BFB068E004B2CA3 /* bXMLOffsetCoord.cpp in Sources */,
 				14D9894B0BFB068E004B2CA3 /* bXMLPointJustification.cpp in Sources */,
@@ -1877,6 +1892,7 @@
 				14CD41CA0E18C0C8006DD04C /* bXMLEndAngle.cpp in Sources */,
 				14CD41CC0E18C0C8006DD04C /* bXMLStartAngle.cpp in Sources */,
 				14CD423D0E18E58B006DD04C /* bXMLPropAngle.cpp in Sources */,
+				1465318D1C5A820E001B7608 /* bXMLCollection.cpp in Sources */,
 				14EC7B650E1919FD009E8CBE /* bXMLPropColor.cpp in Sources */,
 				1468A7040EF15ECD00C89A5A /* bXMLLegible.cpp in Sources */,
 				147DEAF90F0B7C8A0034A3CC /* bXMLScript.cpp in Sources */,

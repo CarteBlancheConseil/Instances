@@ -1,6 +1,6 @@
 /*MESSAGES*/
-"FieldCreate"		="Field Creation...";
-"ObjCreate"			="Object Creation...";
+"FieldCreate"		="Field creation...";
+"ObjCreate"			="Object creation...";
 "OpenErr"			="Error opening file";
 "GridErr"			="Incorrect configuration of import grid";
 "FieldCreateErr"	="Error creating fields";

@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Remplir…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Remplir… version 1.2, Copyright 2016 Carte Blanche Conseil.";

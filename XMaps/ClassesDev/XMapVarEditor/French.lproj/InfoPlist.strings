@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Editeur de constantes…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Editeur de constantes… version 1.2, Copyright 2016 Carte Blanche Conseil.";

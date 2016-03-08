@@ -29,16 +29,11 @@
 
 #import <Cocoa/Cocoa.h>
 #import <mox_intf/bGenericType.h>
+#import <std_ext/bStdNSAppModalWindowController.h>
 #import "bXMapMakeConstraints.h"
 
 //----------------------------------------------------------------------------
-
-@interface MakeConstraintsWindowController : NSWindowController{
-	IBOutlet NSButton*		_okbtn;	
-	IBOutlet NSButton*		_cancelbtn;	
-	bXMapMakeConstraints*	_ext;
-	long					_code;
-
+@interface MakeConstraintsWindowController : bStdNSAppModalWindowController{
 	IBOutlet NSPopUpButton*	_typepopup;	
 	IBOutlet NSPopUpButton*	_genderpopup;	
 
@@ -56,16 +51,6 @@
 	bGenericType*			_tp;
 	long					_findex;
 }
-
-//----------------------------------------------------------------------------
-// Std 
--(id)initWithExt:(bXMapMakeConstraints*)ext;
--(void)runAppModal:(long*)code;
-
-//----------------------------------------------------------------------------
-// Validation Dialogue 
--(IBAction)validDialog:(id)sender;
--(IBAction)cancelDialog:(id)sender;
 
 //----------------------------------------------------------------------------
 

@@ -115,9 +115,9 @@ bGenericExt*		ext;
         [bTopC setEnabled:NO];
     }
 
-    ext=gapp->xmapMgr()->find('bEnd');
+    ext=gapp->xmapMgr()->find('JEnd');
     if(!ext){
-        [bNet setEnabled:NO];
+        [bEnd setEnabled:NO];
         [tEnd setEnabled:NO];
     }
     ext=gapp->xmapMgr()->find('JAng');

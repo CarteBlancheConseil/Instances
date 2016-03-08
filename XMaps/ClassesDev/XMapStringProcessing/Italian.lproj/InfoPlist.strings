@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Trattamento dei testi…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Trattamento dei testi… versione 1.2, Copyright 2016 Carte Blanche Conseil.";

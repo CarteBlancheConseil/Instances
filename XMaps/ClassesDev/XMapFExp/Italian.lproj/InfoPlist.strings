@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Formato di esportazione…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Formato di esportazione… versione 1.2, Copyright 2016 Carte Blanche Conseil.";

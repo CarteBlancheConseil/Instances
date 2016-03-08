@@ -1,0 +1,5 @@
+/*MESSAGES*/
+"CloneFound"	="Les doublons détectés ont été constrastés.";
+"NoCloneFound"	="Les objets sélectionnés n'ont pas de doublons.";
+
+/*ERRORS*/

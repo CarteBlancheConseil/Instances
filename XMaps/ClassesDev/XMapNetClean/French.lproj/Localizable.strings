@@ -1,0 +1,13 @@
+/*MESSAGES*/
+"NetClean"				="Nettoyer";
+"CtrlField"				="Contrôle";
+"AskAddControlField"	="Certains type n'ont pas de champ \"Contrôle\". Désirez-vous créer ce champ ?";
+
+"NodeCreation"			="Création des noeuds";
+"CutEdges"				="Découpage des arêtes";
+"JoinOnNodes"			="Jonction sur les noeuds";
+"JoinOnEdges"			="Jonction sur les arêtes";
+"CheckNodes"			="Examen des noeuds";
+"CheckEdges"			="Examen des arêtes";
+
+/*ERRORS*/

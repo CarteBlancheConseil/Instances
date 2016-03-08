@@ -874,8 +874,7 @@
 							<object class="NSTextFieldCell" key="NSCell" id="762698615">
 								<int key="NSCellFlags">68157504</int>
 								<int key="NSCellFlags2">272761856</int>
-								<string key="NSContents">creation.
-</string>
+								<string key="NSContents">Création</string>
 								<reference key="NSSupport" ref="26"/>
 								<reference key="NSControlView" ref="878826353"/>
 								<reference key="NSBackgroundColor" ref="569209297"/>

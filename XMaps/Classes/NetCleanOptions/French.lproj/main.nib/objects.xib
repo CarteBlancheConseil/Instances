@@ -194,8 +194,7 @@
             <int name="controlID">2</int>
             <boolean name="small">TRUE</boolean>
             <int name="controlSize">3</int>
-            <string name="title">creation.
- des carrefours</string>
+            <string name="title">Création des carrefours</string>
           </object>
           <object class="IBCarbonGroupBox" id="406">
             <string name="bounds">116 223 196 407 </string>

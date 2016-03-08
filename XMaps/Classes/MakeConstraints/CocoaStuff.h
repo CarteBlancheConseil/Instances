@@ -35,17 +35,6 @@
 #import "bXMapMakeConstraints.h"
 
 //----------------------------------------------------------------------------
-// Pour test suite à bug quand on surclasse à partir de bStdNSAppModalWindowController.
-// Dans ce cas, l'appel d'une IBAction vers la classe C++ bXMapMakeConstraint ne
-// pas. La référence à la classe de _ext semble perdue et pointe donc vers 
-// bGenericExt, ce qui provoque le crash.
-// Pourtant le pointeur _ext vers l'instance contient la bonne addresse.
-// Pas trouvé non plus d'action qui aurait pu écraser une partie de l'instance.
-// Problème dans le linker ?
-
-#define	_MCAsSubClasser_ 0
-
-//----------------------------------------------------------------------------
 
 #ifdef __cplusplus
 extern "C" {
@@ -53,11 +42,7 @@ extern "C" {
 
 //----------------------------------------------------------------------------
 
-#if _MCAsSubClasser_
-void	runCocoaAppModal	(	bGenericExt* ext,
-#else
 void	runCocoaAppModal	(	bXMapMakeConstraints* ext,
-#endif
 								long* code);
 
 //----------------------------------------------------------------------------

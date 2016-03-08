@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Importa i dati…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Importa i dati… versione 1.2, Copyright 2016 Carte Blanche Conseil.";

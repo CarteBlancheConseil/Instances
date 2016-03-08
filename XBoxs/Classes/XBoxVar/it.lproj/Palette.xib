@@ -2,13 +2,13 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1080</int>
-		<string key="IBDocument.SystemVersion">13F34</string>
-		<string key="IBDocument.InterfaceBuilderVersion">6254</string>
-		<string key="IBDocument.AppKitVersion">1265.21</string>
-		<string key="IBDocument.HIToolboxVersion">698.00</string>
+		<string key="IBDocument.SystemVersion">14F1509</string>
+		<string key="IBDocument.InterfaceBuilderVersion">7702</string>
+		<string key="IBDocument.AppKitVersion">1348.17</string>
+		<string key="IBDocument.HIToolboxVersion">758.70</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
-			<string key="NS.object.0">6254</string>
+			<string key="NS.object.0">7702</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
 			<string>NSButton</string>
@@ -39,7 +39,7 @@
 			<object class="NSWindowTemplate" id="972006081">
 				<int key="NSWindowStyleMask">27</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{212, 630}, {200, 107}}</string>
+				<string key="NSWindowRect">{{191, 498}, {200, 107}}</string>
 				<int key="NSWTFlags">-1267203072</int>
 				<string key="NSWindowTitle">????</string>
 				<string key="NSWindowClass">VarPanel</string>
@@ -64,10 +64,10 @@
 								<int key="NSCellFlags">67108864</int>
 								<int key="NSCellFlags2">134217728</int>
 								<string key="NSContents">-</string>
-								<object class="NSFont" key="NSSupport" id="47769555">
-									<string key="NSName">LucidaGrande</string>
+								<object class="NSFont" key="NSSupport" id="22">
+									<bool key="IBIsSystemFont">YES</bool>
 									<double key="NSSize">9</double>
-									<int key="NSfFlags">16</int>
+									<int key="NSfFlags">3614</int>
 								</object>
 								<string key="NSCellIdentifier">_NS:1990</string>
 								<reference key="NSControlView" ref="535208254"/>
@@ -99,7 +99,7 @@
 								<int key="NSCellFlags">67108864</int>
 								<int key="NSCellFlags2">134217728</int>
 								<string key="NSContents">E</string>
-								<reference key="NSSupport" ref="47769555"/>
+								<reference key="NSSupport" ref="22"/>
 								<string key="NSCellIdentifier">_NS:1990</string>
 								<reference key="NSControlView" ref="625361566"/>
 								<int key="NSButtonFlags">-2037776384</int>
@@ -126,7 +126,7 @@
 								<int key="NSCellFlags">67108864</int>
 								<int key="NSCellFlags2">134217728</int>
 								<string key="NSContents">D</string>
-								<reference key="NSSupport" ref="47769555"/>
+								<reference key="NSSupport" ref="22"/>
 								<string key="NSCellIdentifier">_NS:1990</string>
 								<reference key="NSControlView" ref="582583912"/>
 								<int key="NSButtonFlags">-2037776384</int>
@@ -153,7 +153,7 @@
 								<int key="NSCellFlags">67108864</int>
 								<int key="NSCellFlags2">134217728</int>
 								<string key="NSContents">+</string>
-								<reference key="NSSupport" ref="47769555"/>
+								<reference key="NSSupport" ref="22"/>
 								<string key="NSCellIdentifier">_NS:1990</string>
 								<reference key="NSControlView" ref="272990304"/>
 								<int key="NSButtonFlags">-2037776384</int>
@@ -211,7 +211,7 @@
 															<int key="NSColorSpace">6</int>
 															<string key="NSCatalogName">System</string>
 															<string key="NSColorName">headerColor</string>
-															<object class="NSColor" key="NSColor" id="615369708">
+															<object class="NSColor" key="NSColor">
 																<int key="NSColorSpace">3</int>
 																<bytes key="NSWhite">MQA</bytes>
 															</object>
@@ -255,7 +255,7 @@
 											</array>
 											<double key="NSIntercellSpacingWidth">3</double>
 											<double key="NSIntercellSpacingHeight">2</double>
-											<reference key="NSBackgroundColor" ref="615369708"/>
+											<reference key="NSBackgroundColor" ref="866728559"/>
 											<object class="NSColor" key="NSGridColor">
 												<int key="NSColorSpace">6</int>
 												<string key="NSCatalogName">System</string>
@@ -285,6 +285,7 @@
 									<reference key="NSDocView" ref="148031766"/>
 									<reference key="NSBGColor" ref="866728559"/>
 									<int key="NScvFlags">4</int>
+									<bool key="NSAutomaticallyAdjustsContentInsets">YES</bool>
 								</object>
 								<object class="NSScroller" id="681050105">
 									<reference key="NSNextResponder" ref="934569640"/>
@@ -295,6 +296,8 @@
 									<reference key="NSNextKeyView" ref="413869810"/>
 									<string key="NSReuseIdentifierKey">_NS:61</string>
 									<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
+									<string key="NSControlAction">_doScroller:</string>
+									<reference key="NSControlTarget" ref="934569640"/>
 									<int key="NSsFlags">1</int>
 									<reference key="NSTarget" ref="934569640"/>
 									<string key="NSAction">_doScroller:</string>
@@ -306,9 +309,10 @@
 									<string key="NSFrame">{{224, 17}, {15, 102}}</string>
 									<reference key="NSSuperview" ref="934569640"/>
 									<reference key="NSWindow"/>
-									<reference key="NSNextKeyView"/>
 									<string key="NSReuseIdentifierKey">_NS:65</string>
 									<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
+									<string key="NSControlAction">_doScroller:</string>
+									<reference key="NSControlTarget" ref="934569640"/>
 									<reference key="NSTarget" ref="934569640"/>
 									<string key="NSAction">_doScroller:</string>
 									<double key="NSPercent">0.9925373134328358</double>

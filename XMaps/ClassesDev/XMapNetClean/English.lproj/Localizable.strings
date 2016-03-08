@@ -1,0 +1,13 @@
+/*MESSAGES*/
+"NetClean"				="Clean";
+"CtrlField"				="Control";
+"AskAddControlField"	="Certain types have no \"Control\" field. Would you like to create this field?";
+
+"NodeCreation"			="Create Nodes";
+"CutEdges"				="Edge Splitting";
+"JoinOnNodes"			="Node Joining";
+"JoinOnEdges"			="Edge Joining";
+"CheckNodes"			="Node Test";
+"CheckEdges"			="Edge Test";
+
+/*ERRORS*/

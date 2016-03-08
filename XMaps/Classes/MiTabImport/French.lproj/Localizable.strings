@@ -1,8 +1,6 @@
 /*MESSAGES*/
-"FieldCreate"		="creation.
- des champs…";
-"ObjCreate"			="creation.
- des objets…";
+"FieldCreate"		="Création des champs…";
+"ObjCreate"			="Création des objets…";
 "FieldCreateErr"	="Erreur à la création des champs";
 "ObjCreateErr"		="Erreur à la création des objets";
 "ExplErr"			="Consultez le fichier log pour plus d'information";

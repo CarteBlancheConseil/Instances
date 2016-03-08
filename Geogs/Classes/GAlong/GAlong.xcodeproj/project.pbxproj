@@ -270,6 +270,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = GAlong;
+				SDKROOT = macosx10.8;
 				SECTORDER_FLAGS = "";
 				SKIP_INSTALL = YES;
 				SYMROOT = ../../build;

@@ -4,7 +4,7 @@
 // Purpose : Header file : XMap paint class
 // Author : Benoit Ogier, benoit.ogier@macmap.com
 //
-// Copyright (C) 1997-2015 Carte Blanche Conseil.
+// Copyright (C) 2015 Carte Blanche Conseil.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -24,7 +24,8 @@
 //----------------------------------------------------------------------------
 // 
 //----------------------------------------------------------------------------
-// 20/08/2015 creation.
+// 08/11/2005 creation.
+// 20/08/2015 cocoa intf (palette).
 //----------------------------------------------------------------------------
 // SCRIPT_COMPATIBLE
 //----------------------------------------------------------------------------

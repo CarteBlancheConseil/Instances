@@ -1,0 +1,14 @@
+/*MESSAGES*/
+"DataImport"			="Import Data";
+"LineNumber"			="Line no";
+"ErrorsOccurs"			="Errors occurred";
+"ReadLog"				="Check the MacMap® log";
+"Continue"				="Would you like to continue?";
+
+/*ERRORS*/
+"-1"					="Unsupported Format";
+"-2"					="An error occurred while opening the table";
+"-3"					="Search key undefined";
+"-4"					="No field to fill";
+"-5"					="No object";
+"-6"					="Several objects";

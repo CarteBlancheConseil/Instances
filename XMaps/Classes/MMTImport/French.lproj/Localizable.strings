@@ -1,8 +1,6 @@
 /*MESSAGES*/
-"FieldCreate"		="creation.
- des champs…";
-"ObjCreate"			="creation.
- des objets…";
+"FieldCreate"		="Création des champs…";
+"ObjCreate"			="Création des objets…";
 "OpenErr"			="Erreur à l'ouverture du fichier";
 "GridErr"			="Configuration de la grille d'import incorrecte";
 "FieldCreateErr"	="Erreur à la création des champs";

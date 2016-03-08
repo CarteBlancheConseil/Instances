@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Configurazione del menu strumenti…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Configurazione del menu strumenti… versione 1.2, Copyright 2016 Carte Blanche Conseil.";

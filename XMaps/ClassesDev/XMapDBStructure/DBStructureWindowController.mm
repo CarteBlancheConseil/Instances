@@ -4,7 +4,7 @@
 // Purpose : Objective C++ source file : XMap database structure window controller
 // Author : Benoit Ogier, benoit.ogier@macmap.com
 //
-// Copyright (C) 1997-2015 Carte Blanche Conseil.
+// Copyright (C) 2015 Carte Blanche Conseil.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -43,61 +43,17 @@
 #import <std_ext/bXMapStdIntf.h>
 
 // ---------------------------------------------------------------------------
-
-NSString* MMLocalizedString(const char* msg_id, int maj){
-char    msg[__MESSAGE_STRING_LENGTH_MAX__];
-    message_string(msg_id,msg,maj);
-    return [NSString stringWithCString:msg encoding:NSMacOSRomanStringEncoding];
-}
-
-// ---------------------------------------------------------------------------
 // 
 // ------------
 @implementation DBStructureWindowController
-
-#if !_MCAsSubClasser_
-// ---------------------------------------------------------------------------
-//  
-// ------------
--(id)initWithExt:(bXMapDBStructure*)ext{
-_bTrace_("[DBStructureWindowController initWithExt]",true);
-	self=[self initWithWindowNibName:@"Palette"];
-	if(self){
-		_ext=ext;
-		_code=-1;
-//_tm_("self ok");
-	}
-	else{
-//_te_("pas de self");
-	}
-    return self;
-}
-
 // ---------------------------------------------------------------------------
 // 
 // ------------
 -(void)dealloc{
 _bTrace_("[DBStructureWindowController dealloc]",true);
-//_tm_((void*)self);
-//long version;
-//	Gestalt(gestaltSystemVersion,&version);
-//	if(version<0x01070){ // Pb plantage en sortie sous 10.6
-//		if([self window]!=nil){
-//			[[self window] dealloc];
-//			[self setWindow:nil];
-//		}
-//	}
+_tm_((void*)self);
 	[super dealloc];
 }
-
-// ---------------------------------------------------------------------------
-// 
-// ------------
--(void)windowDidLoad {
-//_bTrace_("[DBStructureWindowController windowDidLoad]",true);
-	[super windowDidLoad];
-}
-#endif
 
 // ---------------------------------------------------------------------------
 // 
@@ -109,44 +65,20 @@ _bTrace_("[DBStructureWindowController awakeFromNib]",true);
 	NSPopupButtonPopulateWithTypes(_typepopup,(bGenericMacMapApp*)_ext->getapp(),kBaseNoKind,1);
 
 	_tp=((bGenericMacMapApp*)_ext->getapp())->typesMgr()->get(1);
-//	_findex=0;
 	
 	[_fldtblvw reloadData];
-
-//	NSPopupButtonRemoveAllItems(_fieldfrompopup);	
-//	NSPopupButtonPopulateWithFields(_fieldfrompopup,((bGenericType*)_tp),kOBJ_Dir_+1,1);	
-
 	[[_genderpopup menu] setAutoenablesItems:NO];
-
 	[self updateUI];
 }
 
-#if !_MCAsSubClasser_
 // ---------------------------------------------------------------------------
 // 
 // ------------
 -(void)close{
 _bTrace_("[DBStructureWindowController close]",true);
-//_tm_((void*)self);
 	_tp=NULL;
-//	_findex=0;
 	[super close];
 }
-
-#pragma mark ---- Intf Externe/Cocoa ----
-// ---------------------------------------------------------------------------
-// 
-// ------------
--(void)runAppModal:(long*)code{
-_bTrace_("[DBStructureWindowController runAppModal]",true);
-	[[self window] makeKeyAndOrderFront:nil];
-	[[self window] makeFirstResponder:nil];
-    [NSApp runModalForWindow:[self window]];
-	[[self window] setViewsNeedDisplay:NO];
-	[[self window] orderOut:self];
-	*code=_code;
-}
-#endif
 
 #pragma mark ---- Actions ----
 // ---------------------------------------------------------------------------
@@ -233,7 +165,7 @@ _bTrace_("[DBStructureWindowController runAppModal]",true);
 // -----------
 -(IBAction)doRemove:(id)sender{
 _bTrace_("[DBStructureWindowController doRemove]",true);
-bXMapDBStructure*	ext=(bXMapDBStructure*)(void*)_ext;
+bXMapDBStructure*	ext=(bXMapDBStructure*)_ext;
 int                 status;
     for(long i=0;i<[_fldtblvw numberOfRows];i++){
         if([_fldtblvw isRowSelected:i]==YES){
@@ -254,7 +186,11 @@ bAlertStop      alrt(msg,"");
 // -----------
 -(IBAction)doAdd:(id)sender{
 _bTrace_("[DBStructureWindowController doAdd]",true);
-bXMapDBStructure*	ext=(bXMapDBStructure*)(void*)_ext;
+bXMapDBStructure*	ext=(bXMapDBStructure*)/*(void*)*/_ext;
+    if(ext==NULL){
+_te_("ext==NULL");
+        return;
+    }
 int                 status,len,decs,kind,fld;
 char                name[256],buff[256];
 char                msg[__MESSAGE_STRING_LENGTH_MAX__];
@@ -365,7 +301,7 @@ bAlertStop	alrt(msg,"");
 // -----------
 -(IBAction)doModify:(id)sender{
 _bTrace_("[DBStructureWindowController doModify]",true);
-bXMapDBStructure*	ext=(bXMapDBStructure*)(void*)_ext;
+bXMapDBStructure*	ext=(bXMapDBStructure*)_ext;
 int                 status,len,decs,kind,fld;
 char                name[256],buff[256];
 char                msg[__MESSAGE_STRING_LENGTH_MAX__];
@@ -374,7 +310,7 @@ char                exp[__MESSAGE_STRING_LENGTH_MAX__];
     fld=[_fldtblvw selectedRow]+kOBJ_Dir_+1;
     
 // Field kind & name
-   switch([_genderpopup indexOfSelectedItem]){
+    switch([_genderpopup indexOfSelectedItem]){
         case 0:
             kind=_char;
             len=[_lengfld intValue];
@@ -536,28 +472,30 @@ bAlertStop	alrt(msg,"");
 // ---------------------------------------------------------------------------
 //
 // -----------
+-(IBAction)doConstraints:(id)sender{
+_bTrace_("[DBStructureWindowController doConstraints]",true);
+MakeConstraints_prm	prm;
+bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
+    
+    prm.tp=_tp;
+    prm.field=[_fldtblvw selectedRow]+kOBJ_Dir_+1;
+    prm.srcfield=0;
+    prm.srcuse=kMakeConstraintsUseValue;
+    
+bGenericExt*    ext=gapp->xmapMgr()->find('FCnt');
+    if(ext){
+        [[self window] setIsVisible:NO];
+        ext->edit(&prm);
+        [[self window] setIsVisible:YES];
+    }
+}
+
+// ---------------------------------------------------------------------------
+//
+// -----------
 -(IBAction)doUpdate:(id)sender{
     [self checkModify];
 }
-
-#if !_MCAsSubClasser_
-#pragma mark ---- Gestion Modal ----
-// ---------------------------------------------------------------------------
-// 
-// -----------
--(IBAction)validDialog:(id)sender{
-	_code=1;
-	[NSApp stopModal];
-}
-
-// ---------------------------------------------------------------------------
-// 
-// -----------
--(IBAction)cancelDialog:(id)sender{
-	_code=0;
-	[NSApp stopModal];
-}
-#endif
 
 #pragma mark ---- Update Intf ----
 // ---------------------------------------------------------------------------
@@ -673,8 +611,6 @@ _te_("xToChar for (kind==ck)");
     }
     [_valufld setStringValue:[NSString stringWithCString:name encoding:NSMacOSRomanStringEncoding]];
     
-//    -(IBAction)doChooseGender:(id)sender{
-
     [_maskbtn setIntValue:_tp->fields()->is_hidden(fld)];
     [_delpbtn setIntValue:_tp->fields()->is_delprotected(fld)];
     [_edtpbtn setIntValue:_tp->fields()->is_writeprotected(fld)];
@@ -697,7 +633,7 @@ BOOL    flg=[_fldtblvw numberOfSelectedRows]>0;
         if([_fldtblvw isRowSelected:i]==YES){
             if(_tp->fields()->is_dyn_ref(i+kOBJ_Dir_+1)){
                 flg=NO;
-                _tm_(i+": NO");
+_tm_(i+": NO");
                 break;
             }
         }
@@ -882,15 +818,15 @@ _tm_("modif du genre");
                     _tp->fields()->get_len(idx,&ibf);
                     flg=((n>0)&&(n<256));
                 }
-                _tm_("_char "+flg+"/"+n);
+_tm_("_char "+flg+"/"+n);
                 break;
             case 1:
                 flg=(ibf!=_bool);
-                _tm_("_bool "+flg);
+_tm_("_bool "+flg);
                 break;
             case 2:
                 flg=(ibf!=_int);
-                _tm_("_int "+flg);
+_tm_("_int "+flg);
                 break;
             case 3:
                 flg=(ibf!=_double);
@@ -898,15 +834,15 @@ _tm_("modif du genre");
                     _tp->fields()->get_decs(idx,&ibf);
                     flg=((n<30)&&(n>=0));
                 }
-                _tm_("_double "+flg+"/"+n);
+_tm_("_double "+flg+"/"+n);
                 break;
             case 4:
                 flg=(ibf!=_date);
-                _tm_("_date "+flg);
+_tm_("_date "+flg);
                 break;
             case 5:
                 flg=(ibf!=_time);
-                _tm_("_time "+flg);
+_tm_("_time "+flg);
                 break;
         }
 
@@ -925,73 +861,6 @@ _tm_("modif du genre");
     
 	[_modibtn setEnabled:flg];
 }
-
-// ---------------------------------------------------------------------------
-// Disponibilité et valeur du popup Genre
-// -----------
-//-(void)checkKind{
-//_bTrace_("[DBStructureWindowController checkKind]",true);
-//bool		b=false;
-//int			idx=1,ck,fk;
-//	
-//	for(;;){
-//		if(_findex==0){
-//			break;
-//		}
-//		if(((bGenericType*)_tp)->fields()->version()<_kVersion310){
-//			break;
-//		}
-//		((bGenericType*)_tp)->fields()->get_kind(_findex,&fk);
-//		ck=((bGenericType*)_tp)->fields()->get_constraints_kind(_findex);
-//		if(((bGenericType*)_tp)->fields()->count_constraints(_findex)!=0){
-//			if(ck==_bit){
-//				fk=_UBbit;
-//				idx=3;
-//			}
-//			else if(ck!=fk){
-//				idx=2;
-//			}
-//			else{
-//				fk=_UBbit;
-//				idx=1;
-//			}
-//			break;
-//		}
-//		b=true;
-//		switch(fk){
-//			case _int:
-//			case _char:
-//				NSPopupButtonMenuItemEnable(_genderpopup,0);
-//				NSPopupButtonMenuItemEnable(_genderpopup,1);
-//				NSPopupButtonMenuItemEnable(_genderpopup,2);
-//				b=true;
-//				break;
-//			case _double:
-//				NSPopupButtonMenuItemEnable(_genderpopup,0);
-//				NSPopupButtonMenuItemEnable(_genderpopup,1);
-//				NSPopupButtonMenuItemDisable(_genderpopup,2);
-//				b=true;
-//				break;
-//			case _date:
-//			case _time:
-//				NSPopupButtonMenuItemEnable(_genderpopup,0);
-//				NSPopupButtonMenuItemDisable(_genderpopup,1);
-//				NSPopupButtonMenuItemDisable(_genderpopup,2);
-//				b=true;
-//				break;
-//			default:
-//				NSPopupButtonMenuItemDisable(_genderpopup,0);
-//				NSPopupButtonMenuItemDisable(_genderpopup,1);
-//				NSPopupButtonMenuItemDisable(_genderpopup,2);
-//				break;
-//		}
-//		break;
-//	}
-//	[_genderpopup setEnabled:b];
-//	if((idx-1)>=0){
-//		[_genderpopup selectItemAtIndex:(idx-1)];
-//	}
-//}
 
 #pragma mark ---- Gestion TableView ----
 // ---------------------------------------------------------------------------
@@ -1013,13 +882,10 @@ _tm_("modif du genre");
 -(id)	tableView:(NSTableView*)aTableView 
 		objectValueForTableColumn:(NSTableColumn*)aTableColumn 
 		row:(NSInteger)rowIndex{	
-//_bTrace_("[DBStructureWindowController tableView objectValueForTableColumn]",false);
 	if(_code!=-1){
-//		_tw_("(_code!=-1)");
 		return nil;
 	}
 	if(_tp==NULL){
-//		_tw_("(_tp==NULL)");
 		return nil;
 	}
 	
@@ -1035,23 +901,12 @@ char		str[256];
 // 
 // -----------
 -(void)tableViewSelectionDidChange:(NSNotification*)notification{
-//_bTrace_("[DBStructureWindowController tableViewSelectionDidChange]",true);
-
 	if(_code!=-1){
 		return;
 	}
 	if(_tp==NULL){
 		return;
 	}
-    
-//    _findex=[_fldtblvw selectedRow]+kOBJ_Dir_+1;
-//    [_addbtn setEnabled:NO];
-//    [_rmvbtn setEnabled:NO];
-//    [_modibtn setEnabled:NO];
-    
-    
-//    NSTextFieldSetValue(_namefld,"");
-    
     [self updateUI];
 }
 
@@ -1089,15 +944,10 @@ _bTrace_("[DBStructureWindowController controlTextDidChange]",true);
 // ---------------------------------------------------------------------------
 // 
 // ------------
-#if _MCAsSubClasser_
-void runCocoaAppModal(bGenericExt* ext,
-					  long* code){
-#else
 void runCocoaAppModal(bXMapDBStructure* ext,
 					  long* code){
-#endif
 DBStructureWindowController	*controller;
-NSAutoreleasePool				*localPool;
+NSAutoreleasePool			*localPool;
 	
     localPool=[[NSAutoreleasePool alloc] init];   
     controller=[[DBStructureWindowController alloc] initWithExt:ext];

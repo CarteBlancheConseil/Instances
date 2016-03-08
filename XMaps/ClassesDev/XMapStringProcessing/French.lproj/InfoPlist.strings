@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Traitement des chaînes…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Traitement des chaînes… version 1.2, Copyright 2016 Carte Blanche Conseil.";

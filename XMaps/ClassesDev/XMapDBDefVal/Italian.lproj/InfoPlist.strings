@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Valori di default…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Valori di default… versione 1.2, Copyright 2016 Carte Blanche Conseil.";

@@ -33,21 +33,8 @@
 //----------------------------------------------------------------------------
 
 #include <std_ext/bStdXMap.h>
+#include <std_ext/bXMapStdIntf.h>
 #include <Carbon/Carbon.h>
-
-//----------------------------------------------------------------------------
-
-typedef struct MakeConstraints_prm{
-	bGenericType*	tp;
-	int				field;
-	int				srcfield;
-	int				srcuse;
-}MakeConstraints_prm;
-
-enum{
-	kMakeConstraintsUseValue=1,
-	kMakeConstraintsUseLabel=2
-};
 
 //----------------------------------------------------------------------------
 

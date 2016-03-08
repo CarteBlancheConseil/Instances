@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Segmentazione…";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Segmentazione… versione 1.2, Copyright 2016 Carte Blanche Conseil.";

@@ -1,0 +1,6 @@
+/*MESSAGES*/
+"DataJoin"				="Joins Data";
+
+/*ERRORS*/
+"-1"					="Unsupported Format";
+"-3"					="Search key undefined";

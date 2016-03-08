@@ -1,0 +1,39 @@
+First, we have to re-write all Carbon interfaces in a Cocoa (or Swift) way, and prepare 64 bits support. Externs using interfaces need to be extract from xmap_lib framework and build separatly.
+
+
+* Calcs :
+Nothing to do.
+
+* Geogs :
+GAlong, GFarthest, GFrom, GInclude, GInside, GLessThan, GMoreThan, GNearest and GOutside : build a Cocoa interface along with XMap Selector.
+* Tools :
+Alter, Contiguous, Create, Info, Justification, PrintArea, Redraw, Select, Shape, Split, SymbRotation and Zoom : build a Cocoa interface for param dialog.
+
+* UserExts :
+Nothing to do.
+
+* Vars :
+Nothing to do.
+
+* vDefs :
+ScaleRef : build a Cocoa interface.
+
+* XBox :
+XBoxTransform : it could be nice to remove interfaces from transformation XMaps and build a new Cocoa interface for XBoxTransform
+
+* XMaps :
+Association, AssociationWithField, GeometryShift, Line2Surf, LineUp, MakePoly, MakeRect, MakeSquaring, Rotation, Scale, Shake, Simplify and Translation : rewrite in a Cocoa way or move interface to XBoxTransform.
+
+JPGPublisher, PNGPublisher and TIFFPublisher : rewrite options dialog to Cocoa. 
+
+Buffer, CalcEditor, DashPicker, IconPicker, PatternPicker, RasterImport, Selector, TopoCheck : rewrite dialog to Cocoa.
+
+DBStructure, Paint, VarEditor, CloneDetector, DBDefVal, IGrid, DataFill, StringProcessing, TransType, ViewMgr, FExp, DataImport, DataJoin, ToolMenuConfig, Shortcuts, Prefs, NetClean, NetCleanOptions : cocoa rewrite done in ClassesDev.
+
+JoinOnDir : don’t work the proper way, need to fix it.
+
+Print and PrintSetup : still using deprecated PMPrintSession APIs, need to be rewrite.
+
+* XMLClasses :
+Nothing to do.
+

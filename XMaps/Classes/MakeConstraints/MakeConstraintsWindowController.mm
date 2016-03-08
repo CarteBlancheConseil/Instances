@@ -52,99 +52,58 @@
 // ------------
 @implementation MakeConstraintsWindowController
 
-#if !_MCAsSubClasser_
-// ---------------------------------------------------------------------------
-//  
-// ------------
--(id)initWithExt:(bXMapMakeConstraints*)ext{
-_bTrace_("[MakeConstraintsWindowController initWithExt]",true);
-	self=[self initWithWindowNibName:@"Palette"];
-	if(self){
-		_ext=ext;
-		_code=-1;
-//_tm_("self ok");
-	}
-	else{
-//_te_("pas de self");
-	}
-    return self;
-}
-
 // ---------------------------------------------------------------------------
 // 
 // ------------
 -(void)dealloc{
 _bTrace_("[MakeConstraintsWindowController dealloc]",true);
-//_tm_((void*)self);
-long version;
-	Gestalt(gestaltSystemVersion,&version);
-	if(version<0x01070){ // Pb plantage en sortie sous 10.6
-		if([self window]!=nil){
-			[[self window] dealloc];
-			[self setWindow:nil];
-		}
-	}
+_tm_((void*)self);
 	[super dealloc];
 }
 
 // ---------------------------------------------------------------------------
 // 
 // ------------
--(void)windowDidLoad {
-//_bTrace_("[MakeConstraintsWindowController windowDidLoad]",true);
-	[super windowDidLoad];
-}
-#endif
-
-// ---------------------------------------------------------------------------
-// 
-// ------------
 -(void)awakeFromNib{
 _bTrace_("[MakeConstraintsWindowController awakeFromNib]",true);
-
-	NSPopupButtonRemoveAllItems(_typepopup);
-	NSPopupButtonPopulateWithTypes(_typepopup,(bGenericMacMapApp*)_ext->getapp(),kBaseNoKind,1);
-
-	_tp=((bGenericMacMapApp*)_ext->getapp())->typesMgr()->get(1);
-	_findex=0;
+MakeConstraints_prm *prm=(MakeConstraints_prm*)((bXMapMakeConstraints*)_ext)->get_prm();
+        
+    _tp=prm->tp;
+    _findex=prm->field;
 	
-	[_fldtblvw reloadData];
-	[_cnttblvw reloadData];
+    NSPopupButtonRemoveAllItems(_typepopup);
+    NSPopupButtonPopulateWithTypes(_typepopup,(bGenericMacMapApp*)_ext->getapp(),kBaseNoKind,_tp->index());
 
+    if(_findex<=kOBJ_Dir_){
+        _findex=0;
+    }
+    if(_findex>kOBJ_Dir_){
+        [_fldtblvw selectRowIndexes:[NSIndexSet indexSetWithIndex:_findex-kOBJ_Dir_] byExtendingSelection:NO];
+    }
+    else{
+        _findex=0;
+    }
+
+    [_fldtblvw reloadData];
+	[_cnttblvw reloadData];
+    
 	NSPopupButtonRemoveAllItems(_fieldfrompopup);	
-	NSPopupButtonPopulateWithFields(_fieldfrompopup,((bGenericType*)_tp),kOBJ_Dir_+1,1);	
+	NSPopupButtonPopulateWithFields(_fieldfrompopup,((bGenericType*)_tp),kOBJ_Dir_+1,1);
 
 	[[_genderpopup menu] setAutoenablesItems:NO];
 
 	[self updateUI];
 }
 
-#if !_MCAsSubClasser_
 // ---------------------------------------------------------------------------
 // 
 // ------------
 -(void)close{
 _bTrace_("[MakeConstraintsWindowController close]",true);
-//_tm_((void*)self);
 	_tp=NULL;
 	_findex=0;
 	[super close];
 }
-
-#pragma mark ---- Intf Externe/Cocoa ----
-// ---------------------------------------------------------------------------
-// 
-// ------------
--(void)runAppModal:(long*)code{
-_bTrace_("[MakeConstraintsWindowController runAppModal]",true);
-	[[self window] makeKeyAndOrderFront:nil];
-	[[self window] makeFirstResponder:nil];
-    [NSApp runModalForWindow:[self window]];
-	[[self window] setViewsNeedDisplay:NO];
-	[[self window] orderOut:self];
-	*code=_code;
-}
-#endif
 
 #pragma mark ---- Actions ----
 // ---------------------------------------------------------------------------
@@ -179,7 +138,7 @@ _bTrace_("[MakeConstraintsWindowController runAppModal]",true);
 -(IBAction)doRemove:(id)sender{
 //_bTrace_("[MakeConstraintsWindowController doRemove]",true);
 long					cnst=[_cnttblvw selectedRow]+1;
-bXMapMakeConstraints*	ext=(bXMapMakeConstraints*)(void*)_ext;
+bXMapMakeConstraints*	ext=(bXMapMakeConstraints*)_ext;
 
 	if(!ext->do_remove(((bGenericType*)_tp),_findex,cnst)){
 //_te_("remove_constraint failed for "+(int)cnst);		
@@ -223,7 +182,7 @@ int		k,d,ck;
 			return;
 		}
 	}
-bXMapMakeConstraints*	ext=(bXMapMakeConstraints*)(void*)_ext;
+bXMapMakeConstraints*	ext=(bXMapMakeConstraints*)_ext;
 	if(!ext->do_add(((bGenericType*)_tp),_findex,ck,buff)){
 //_te_("add_constraint failed");
 		return;
@@ -257,7 +216,7 @@ int		k,d;
 	}
 	
 long					cnst=[_cnttblvw selectedRow]+1;
-bXMapMakeConstraints*	ext=(bXMapMakeConstraints*)(void*)_ext;
+bXMapMakeConstraints*	ext=(bXMapMakeConstraints*)_ext;
 	if(!ext->do_modify(((bGenericType*)_tp),_findex,cnst,buff)){
 //_te_("set_constraint failed for "+(int)cnst);		
 		return;
@@ -275,7 +234,7 @@ long					src=[_fieldfrompopup indexOfSelectedItem]+kOBJ_Dir_;
 //_tm_("source index="+(int)src);		
 //long					cnst=[_cnttblvw selectedRow]+1;
 //_tm_("constraint index="+(int)cnst);		
-bXMapMakeConstraints*	ext=(bXMapMakeConstraints*)(void*)_ext;
+bXMapMakeConstraints*	ext=(bXMapMakeConstraints*)_ext;
 //_tm_("ext="+(void*)ext);		
 
 	if(!ext->do_make_from_field(((bGenericType*)_tp),_findex,src,([_genderpopup indexOfSelectedItem]==0))){
@@ -286,25 +245,6 @@ bXMapMakeConstraints*	ext=(bXMapMakeConstraints*)(void*)_ext;
 	[_cnttblvw reloadData];
 	[self checkKind];
 }
-
-#if !_MCAsSubClasser_
-#pragma mark ---- Gestion Modal ----
-// ---------------------------------------------------------------------------
-// 
-// -----------
--(IBAction)validDialog:(id)sender{
-	_code=1;
-	[NSApp stopModal];
-}
-
-// ---------------------------------------------------------------------------
-// 
-// -----------
--(IBAction)cancelDialog:(id)sender{
-	_code=0;
-	[NSApp stopModal];
-}
-#endif
 
 #pragma mark ---- Update Intf ----
 // ---------------------------------------------------------------------------
@@ -723,13 +663,8 @@ char	val[256],buff[256];
 // ---------------------------------------------------------------------------
 // 
 // ------------
-#if _MCAsSubClasser_
-void runCocoaAppModal(bGenericExt* ext,
-					  long* code){
-#else
 void runCocoaAppModal(bXMapMakeConstraints* ext,
 					  long* code){
-#endif
 MakeConstraintsWindowController	*controller;
 NSAutoreleasePool				*localPool;
 	

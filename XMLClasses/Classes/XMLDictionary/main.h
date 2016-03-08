@@ -225,8 +225,6 @@
 #include "bXMLfCast.h"
 #include "bXMLiCast.h"
 
-//#include "bXMLGoogleStaticMap.h"
-
 #include "bXMLBgStroke.h"
 #include "bXMLBgWidthMaj.h"
 #include "bXMLBgHeightMaj.h"
@@ -245,6 +243,9 @@
 #include "bXMLTMSRaster.h"
 
 #include "bXMLPerpendicularLine.h"
+
+#include "bXMLCollection.h"
+#include "bXMLObjectSet.h"
 
 //----------------------------------------------------------------------------
 

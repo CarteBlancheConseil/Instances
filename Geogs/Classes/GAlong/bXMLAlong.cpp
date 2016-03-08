@@ -64,7 +64,6 @@ bGenericXMLBaseElement* bAlongElement::create(bGenericXMLBaseElement* elt){
 // 
 // -----------
 void  bAlongElement::init(void* ctx){
-//bTrace trc("bAlongElement::init",false);
 	_ctx=(bSelectSolver*)ctx;
 	bStdXMLGeog::init(ctx);
 	
@@ -108,7 +107,6 @@ bArray*					src=_ctx->get_source();
 bGenericGeoIterator*	it=_ctx->get_type()->iterator();	
 
 	for(int i=1;i<=src->count();i++){
-////trc.msg("%d",i);
 		src->get(i,&_ref);
 		_ref->getBounds(&_vxr);
 		it->iterate(&_vxr,this,process);
@@ -128,6 +126,7 @@ double				dk;
 int					k=0;
 ivx_rect			vr;
 
+    
 	if(geo->flag1()){
 		return(0);
 	}
@@ -155,12 +154,17 @@ ivx_rect			vr;
 	
 	gg->_ref->getVertices(&vsa);
 
-	for(int i=0;i<vsb->nv;i++){
+//_tm_("---------------------------------------------------------------------------");
+//_tm_(geo->getID());
+    
+	for(long i=0;i<vsb->nv;i++){
+        if(i>0&&eq_ivx2(&vsb->vx.vx2[i],&vsb->vx.vx2[i-1])){
+//_tm_("case 1 on "+(int)i);
+            continue;
+        }
 		dk=ivx2ivs_dist(&vsb->vx.vx2[i],vsa);
-////trc.msg("dk=%.6f",dk);
 		if(dk>gg->_dst){
 			if(gg->_full){
-//_m_(geo->getID()+"gg->_full, d>"+dk);
 				break;
 			}
 			else{
@@ -168,6 +172,7 @@ ivx_rect			vr;
 			}
 		}
 		else{
+//_tm_("case 1 : i "+(int)i+" ok");
 			k++;
 			if(k==2){
 				gg->_ctx->valid_object(geo);
@@ -176,12 +181,15 @@ ivx_rect			vr;
 		}
 	}
 	
-	for(int i=0;i<vsa->nv;i++){
+    k=0;
+	for(long i=0;i<vsa->nv;i++){
+        if(i>0&&eq_ivx2(&vsa->vx.vx2[i],&vsa->vx.vx2[i-1])){
+//_tm_("case 2 on "+(int)i);
+            continue;
+        }
 		dk=ivx2ivs_dist(&vsa->vx.vx2[i],vsb);
-////trc.msg("dk=%.6f",dk);
 		if(dk>gg->_dst){
 			if(gg->_full){
-//_m_(geo->getID()+"gg->_full, d>"+dk);
 				break;
 			}
 			else{
@@ -189,6 +197,7 @@ ivx_rect			vr;
 			}
 		}
 		else{
+//_tm_("case 2 : i "+(int)i+" ok");
 			k++;
 			if(k==2){
 				gg->_ctx->valid_object(geo);
@@ -196,6 +205,5 @@ ivx_rect			vr;
 			}
 		}
 	}
-////trc.msg("k==%d",k);
 	return(0);
 }

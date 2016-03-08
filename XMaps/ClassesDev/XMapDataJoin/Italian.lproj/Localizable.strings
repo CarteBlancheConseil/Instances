@@ -1,0 +1,6 @@
+/*MESSAGES*/
+"DataJoin"				="Collegamento dati";
+
+/*ERRORS*/
+"-1"					="Formato non supportato";
+"-3"					="Chiave di ricerca non definita";
