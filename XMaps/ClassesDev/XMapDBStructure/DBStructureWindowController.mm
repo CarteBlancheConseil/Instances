@@ -913,23 +913,6 @@ char		str[256];
 // ---------------------------------------------------------------------------
 // 
 // ------------
--(BOOL)	tableView:(NSTableView *)tableView 
-		shouldEditTableColumn:(NSTableColumn *)tableColumn 
-		row:(NSInteger)row{
-	return NO;
-}
-
-// ---------------------------------------------------------------------------
-// 
-// ------------
--(BOOL)	tableView:(NSTableView *)tableView 
-		shouldSelectTableColumn:(NSTableColumn *)tableColumn{
-	return NO;
-}
-
-// ---------------------------------------------------------------------------
-// 
-// ------------
 -(void)controlTextDidChange:(NSNotification*)notification{
 _bTrace_("[DBStructureWindowController controlTextDidChange]",true);
 	[self checkAdd];

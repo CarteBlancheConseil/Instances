@@ -165,9 +165,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8D5B49AC048680CD000E48DA /* MakeConstraints */ = {
+		8D5B49AC048680CD000E48DA /* XMapVarEditor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "MakeConstraints" */;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "XMapVarEditor" */;
 			buildPhases = (
 				8D5B49AF048680CD000E48DA /* Resources */,
 				8D5B49B1048680CD000E48DA /* Sources */,
@@ -177,7 +177,7 @@
 			);
 			dependencies = (
 			);
-			name = MakeConstraints;
+			name = XMapVarEditor;
 			productInstallPath = "$(HOME)/Library/Bundles";
 			productName = CocoaBundle;
 			productReference = 8D5B49B6048680CD000E48DA /* XMapVarEditor.bundle */;
@@ -205,7 +205,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D5B49AC048680CD000E48DA /* MakeConstraints */,
+				8D5B49AC048680CD000E48DA /* XMapVarEditor */,
 			);
 		};
 /* End PBXProject section */
@@ -314,7 +314,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "MakeConstraints" */ = {
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "XMapVarEditor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB913C08733D840010E9CD /* Release */,

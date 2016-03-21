@@ -116,7 +116,7 @@
 											<int key="NSvFlags">256</int>
 											<string key="NSFrameSize">{198, 142}</string>
 											<reference key="NSSuperview" ref="361072144"/>
-											<reference key="NSNextKeyView" ref="746673176"/>
+											<reference key="NSNextKeyView" ref="46710327"/>
 											<bool key="NSEnabled">YES</bool>
 											<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 											<bool key="NSControlAllowsExpansionToolTips">YES</bool>
@@ -201,7 +201,7 @@
 												</object>
 											</object>
 											<double key="NSRowHeight">17</double>
-											<int key="NSTvFlags">-566231040</int>
+											<int key="NSTvFlags">-633339904</int>
 											<reference key="NSDelegate"/>
 											<reference key="NSDataSource"/>
 											<int key="NSColumnAutoresizingStyle">4</int>
@@ -264,7 +264,7 @@
 							</array>
 							<string key="NSFrame">{{20, 91}, {200, 160}}</string>
 							<reference key="NSSuperview" ref="697493821"/>
-							<reference key="NSNextKeyView" ref="46710327"/>
+							<reference key="NSNextKeyView" ref="361072144"/>
 							<int key="NSsFlags">133682</int>
 							<reference key="NSVScroller" ref="746673176"/>
 							<reference key="NSHScroller" ref="522365944"/>

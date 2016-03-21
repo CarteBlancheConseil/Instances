@@ -7,7 +7,7 @@ Nothing to do.
 * Geogs :
 GAlong, GFarthest, GFrom, GInclude, GInside, GLessThan, GMoreThan, GNearest and GOutside : build a Cocoa interface along with XMap Selector.
 * Tools :
-Alter, Contiguous, Create, Info, Justification, PrintArea, Redraw, Select, Shape, Split, SymbRotation and Zoom : build a Cocoa interface for param dialog.
+Alter, Contiguous, Create, Info, Justification, PrintArea, Redraw, Select, Shape, Split, SymbRotation and Zoom : build a Cocoa interface for param dialogs.
 
 * UserExts :
 Nothing to do.
@@ -24,15 +24,16 @@ XBoxTransform : it could be nice to remove interfaces from transformation XMaps 
 * XMaps :
 Association, AssociationWithField, GeometryShift, Line2Surf, LineUp, MakePoly, MakeRect, MakeSquaring, Rotation, Scale, Shake, Simplify and Translation : rewrite in a Cocoa way or move interface to XBoxTransform.
 
-JPGPublisher, PNGPublisher and TIFFPublisher : rewrite options dialog to Cocoa. 
-
-Buffer, CalcEditor, DashPicker, IconPicker, PatternPicker, RasterImport, Selector, TopoCheck : rewrite dialog to Cocoa.
-
-DBStructure, Paint, VarEditor, CloneDetector, DBDefVal, IGrid, DataFill, StringProcessing, TransType, ViewMgr, FExp, DataImport, DataJoin, ToolMenuConfig, Shortcuts, Prefs, NetClean, NetCleanOptions : cocoa rewrite done in ClassesDev.
+Buffer, Selector : rewrite dialog to Cocoa.
 
 JoinOnDir : don’t work the proper way, need to fix it.
 
 Print and PrintSetup : still using deprecated PMPrintSession APIs, need to be rewrite.
+
+DBStructure, Paint, VarEditor, CloneDetector, DBDefVal, IGrid, DataFill, StringProcessing, TransType, ViewMgr, FExp, DataImport, DataJoin, ToolMenuConfig, Shortcuts, Prefs, NetClean, NetCleanOptions, DashPicker, IconPicker, PatternPicker, RasterImport, CalcEditor, TopoCheck : cocoa rewrite done in ClassesDev. Need to replace actual plugins for further versions.
+
+JPGPublisher, PNGPublisher and TIFFPublisher : cocoa rewrite done in xmap_lib 
+
 
 * XMLClasses :
 Nothing to do.

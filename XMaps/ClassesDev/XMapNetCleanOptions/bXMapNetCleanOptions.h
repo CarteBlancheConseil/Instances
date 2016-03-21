@@ -25,7 +25,7 @@
 //
 //----------------------------------------------------------------------------
 // 08/11/2006 creation.
-// 04/03/2016 cocoa intf.
+// 08/03/2016 cocoa intf.
 //----------------------------------------------------------------------------
 
 #ifndef __bXMapNetCleanOptions__
@@ -41,71 +41,18 @@
 
 class bXMapNetCleanOptions : public bStdXMap{
 public:
-    bXMapNetCleanOptions							(	bGenericXMLBaseElement* elt,
+    bXMapNetCleanOptions					(	bGenericXMLBaseElement* elt,
                                                 bGenericMacMapApp* gapp,
                                                 CFBundleRef bndl);
-    virtual ~bXMapNetCleanOptions					(	);
+    virtual ~bXMapNetCleanOptions			(	);
     virtual bGenericXMLBaseElement* create	(	bGenericXMLBaseElement* elt);
     
-    virtual void open						(	int* flags);
-    virtual void close						(	);
     virtual bool edit						(	void* prm);
-    virtual bool event						(	EventRef evt);
     virtual bool process					(	int msg,
                                                 void* prm);
     virtual bool test						(	void* prm);
     
-//    virtual void get_prm					(	NetCleanOptionsact_prm* prm){*prm=_act_prm;};
-//    virtual void set_prm					(	NetCleanOptionsact_prm prm){_act_prm=prm;};
-				
 protected:
-//    virtual void process_network			(	bool log);
-//    virtual void process_network			(	bArray& nodes,
-//                                                bArray& edges);
-//    virtual void process_network			(	NetCleanOptionsact_prm* prm,
-//                                                int* fields,
-//                                                bArray& nodes,
-//                                                bArray& edges);
-//    
-//    
-//    virtual void check_events				(	);
-//    
-//    
-//    virtual int create_nodes				(	bArray& loop,
-//                                                bArray& added,
-//                                                int* fields,
-//                                                bool report);
-//    virtual int cut_edges					(	bArray& loop,
-//                                                bArray& added,
-//                                                int* fields,
-//                                                bool report);
-//    virtual int join_on_nodes				(	bArray& loop,
-//                                                int* fields,
-//                                                bool report);
-//    virtual int join_on_edges				(   bArray& loop,
-//                                                int* fields,
-//                                                bool report);
-//    virtual int check_nodes					(	bArray& loop,
-//                                                int* fields);
-//    virtual int check_edges					(	bArray& loop,
-//                                                int* fields);
-//    
-//    virtual void get_nodes					(	i2dvertex* vx,
-//                                                bArray& arr);
-//    virtual void get_bridges				(	i2dvertex* vx,
-//                                                bArray& arr);
-//    virtual void get_edges					(	ivx_rect* vr,
-//                                                bArray& arr);
-//    virtual void get_edges					(	i2dvertex* vx,
-//                                                bArray& arr,
-//                                                bool by_end);
-//    
-//    virtual void init_fields				(	NetCleanOptionsact_prm* prm);
-//    
-//    virtual void read_p						(	);
-//    virtual void write_p					(	);
-//    virtual bGenericXMLBaseElement* make_p	(	);
-    
     
 private:
     netcleancfg_prm	_prm;

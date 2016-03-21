@@ -24,7 +24,7 @@
 //----------------------------------------------------------------------------
 // 
 //----------------------------------------------------------------------------
-// 09/02/2016 creation.
+// 08/03/2016 creation.
 //----------------------------------------------------------------------------
 
 #import "NetCleanOptionsWindowController.h"
@@ -41,6 +41,7 @@
 #import <mox_intf/mm_errors.h>
 #import <mox_intf/bStdAlert.h>
 #import <std_ext/bXMapStdIntf.h>
+
 
 // ---------------------------------------------------------------------------
 // 
@@ -80,7 +81,7 @@ char                    msg[__MESSAGE_STRING_LENGTH_MAX__];
     
 bStdXMap*            netext=(bStdXMap*)(void*)gapp->xmapMgr()->find('NtCl');
     if(!netext){
-        b_message_string("",msg,_ext->getbundle(),1);
+        b_message_string(kXMapNetCleanOptionPluginNotFound,msg,_ext->getbundle(),1);
 bAlertStop	alrt(msg,"");
         return;
     }
