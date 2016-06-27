@@ -1,7 +1,7 @@
 //----------------------------------------------------------------------------
-// File : VarEditorWindowController.h
+// File : CocoaStuff.h
 // Project : MacMap
-// Purpose : Header file : Constants editor window controller
+// Purpose : Header file : Cocoa C wrappers
 // Author : Benoit Ogier, benoit.ogier@macmap.com
 //
 // Copyright (C) 2016 Carte Blanche Conseil.
@@ -24,27 +24,34 @@
 //----------------------------------------------------------------------------
 // 
 //----------------------------------------------------------------------------
-// 04/02/2016 creation.
+// 06/04/2016 creation.
 //----------------------------------------------------------------------------
 
-#import <Cocoa/Cocoa.h>
-#import <mox_intf/bGenericType.h>
-#import <std_ext/bStdNSAppModalWindowController.h>
-#import "bXMapVarEditor.h"
+#ifndef __CocoaStuff__
+#define __CocoaStuff__
 
 //----------------------------------------------------------------------------
-@interface VarEditorWindowController : bStdNSAppModalWindowController{
-	IBOutlet NSPopUpButton*	_genderpopup;
-	IBOutlet NSTextField*	_namefld;
-    IBOutlet NSTextField*	_valuefld;
+
+#import "bXMapAssociation.h"
+
+//----------------------------------------------------------------------------
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+//----------------------------------------------------------------------------
+
+
+void	runCocoaAppModal	(	bXMapAssociation* ext,
+								long* code);
+
+//----------------------------------------------------------------------------
+
+#ifdef __cplusplus
 }
-
-//----------------------------------------------------------------------------
-// Gestion Interface
--(void)updateUI;
+#endif
 
 //----------------------------------------------------------------------------
 
-@end
-
-//----------------------------------------------------------------------------
+#endif

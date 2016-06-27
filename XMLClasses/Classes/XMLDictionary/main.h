@@ -247,6 +247,8 @@
 #include "bXMLCollection.h"
 #include "bXMLObjectSet.h"
 
+#include "bXMLVertexGeometry.h"
+
 //----------------------------------------------------------------------------
 
 #ifdef __cplusplus

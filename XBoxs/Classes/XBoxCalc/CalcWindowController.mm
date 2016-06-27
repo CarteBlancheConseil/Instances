@@ -150,8 +150,7 @@ bGenericExt* x=gapp->xmapMgr()->find('ClcE');
 //
 // ------------
 -(void)doubleClick:(id)object{
-bGenericMacMapApp*
-                gapp=(bGenericMacMapApp*)_ext->getapp();
+bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
     
     if(gapp->selMgr()->count()>1){
 NSInteger           rowNumber=[_mgr_viw clickedRow];

@@ -11,6 +11,8 @@
 		14023DCE12717B1F0078B43B /* bXMLBgShiftX.h in Headers */ = {isa = PBXBuildFile; fileRef = 14023DCA12717B1F0078B43B /* bXMLBgShiftX.h */; };
 		14023DCF12717B1F0078B43B /* bXMLBgShiftY.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14023DCB12717B1F0078B43B /* bXMLBgShiftY.cpp */; };
 		14023DD012717B1F0078B43B /* bXMLBgShiftY.h in Headers */ = {isa = PBXBuildFile; fileRef = 14023DCC12717B1F0078B43B /* bXMLBgShiftY.h */; };
+		140C2DC01D142683009A6CD0 /* bXMLVertexGeometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 140C2DBE1D142683009A6CD0 /* bXMLVertexGeometry.cpp */; };
+		140C2DC11D142683009A6CD0 /* bXMLVertexGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 140C2DBF1D142683009A6CD0 /* bXMLVertexGeometry.h */; };
 		140CE3080F0E001A0000CAD1 /* bXMLString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 140CE3060F0E001A0000CAD1 /* bXMLString.cpp */; };
 		140CE3090F0E001A0000CAD1 /* bXMLString.h in Headers */ = {isa = PBXBuildFile; fileRef = 140CE3070F0E001A0000CAD1 /* bXMLString.h */; };
 		140FCFEF1005CE4A005ACD1F /* bXMLBoxPos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 140FCFED1005CE4A005ACD1F /* bXMLBoxPos.cpp */; };
@@ -421,6 +423,8 @@
 		14023DCA12717B1F0078B43B /* bXMLBgShiftX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLBgShiftX.h; sourceTree = "<group>"; };
 		14023DCB12717B1F0078B43B /* bXMLBgShiftY.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLBgShiftY.cpp; sourceTree = "<group>"; };
 		14023DCC12717B1F0078B43B /* bXMLBgShiftY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLBgShiftY.h; sourceTree = "<group>"; };
+		140C2DBE1D142683009A6CD0 /* bXMLVertexGeometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bXMLVertexGeometry.cpp; path = ../styleruns/bXMLVertexGeometry.cpp; sourceTree = "<group>"; };
+		140C2DBF1D142683009A6CD0 /* bXMLVertexGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bXMLVertexGeometry.h; path = ../styleruns/bXMLVertexGeometry.h; sourceTree = "<group>"; };
 		140CE3060F0E001A0000CAD1 /* bXMLString.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLString.cpp; sourceTree = "<group>"; };
 		140CE3070F0E001A0000CAD1 /* bXMLString.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = bXMLString.h; sourceTree = "<group>"; };
 		140FCFED1005CE4A005ACD1F /* bXMLBoxPos.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLBoxPos.cpp; sourceTree = "<group>"; };
@@ -1126,6 +1130,8 @@
 		14D9883F0BFB068D004B2CA3 /* geometry */ = {
 			isa = PBXGroup;
 			children = (
+				140C2DBE1D142683009A6CD0 /* bXMLVertexGeometry.cpp */,
+				140C2DBF1D142683009A6CD0 /* bXMLVertexGeometry.h */,
 				14283D8D18DC5C1E00808913 /* bXMLPerpendicularLine.cpp */,
 				14283D8E18DC5C1E00808913 /* bXMLPerpendicularLine.h */,
 				14EB5EBC14F52B610076415A /* bXMLTextRptJustification.cpp */,
@@ -1563,6 +1569,7 @@
 				14D989CB0BFB068E004B2CA3 /* bXMLIconStyle.h in Headers */,
 				14D989CD0BFB068E004B2CA3 /* bXMLPolygonStyle.h in Headers */,
 				14D989CF0BFB068E004B2CA3 /* bXMLPolylineStyle.h in Headers */,
+				140C2DC11D142683009A6CD0 /* bXMLVertexGeometry.h in Headers */,
 				14D989D10BFB068E004B2CA3 /* bXMLRasterStyle.h in Headers */,
 				14D989D30BFB068E004B2CA3 /* bXMLRectStyle.h in Headers */,
 				14D989D50BFB068E004B2CA3 /* bXMLTextStyle.h in Headers */,
@@ -1863,6 +1870,7 @@
 				14D98C160BFB34F2004B2CA3 /* bXMLFloor.cpp in Sources */,
 				14D98C180BFB34F2004B2CA3 /* bXMLInv.cpp in Sources */,
 				14D98C1A0BFB34F2004B2CA3 /* bXMLLn.cpp in Sources */,
+				140C2DC01D142683009A6CD0 /* bXMLVertexGeometry.cpp in Sources */,
 				14D98C1C0BFB34F2004B2CA3 /* bXMLLog.cpp in Sources */,
 				14D98C1E0BFB34F2004B2CA3 /* bXMLNot.cpp in Sources */,
 				14D98C200BFB34F2004B2CA3 /* bXMLRound.cpp in Sources */,

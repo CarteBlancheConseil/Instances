@@ -1,10 +1,10 @@
 //----------------------------------------------------------------------------
-// File : bXMLPlus.cpp
+// File : main.cpp
 // Project : MacMap
-// Purpose : C++ source file : plus operator tag class, used in formulas
+// Purpose : C++ source file : Plugin entry point
 // Author : Benoit Ogier, benoit.ogier@macmap.com
 //
-// Copyright (C) 1997-2015 Carte Blanche Conseil.
+// Copyright (C) 2016 Carte Blanche Conseil.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -24,45 +24,23 @@
 //----------------------------------------------------------------------------
 // 
 //----------------------------------------------------------------------------
-// 08/01/2007 creation.
-// 10/06/2016 Bug fix : add "delete v" in solve.
+// 06/04/2016 creation.
 //----------------------------------------------------------------------------
 
-#include "bXMLPlus.h"
+#include "main.h"
+#include <MacMapSuite/bTrace.h>
+#include "bXMapAssociation.h"
 
 // ---------------------------------------------------------------------------
-// Constructeur
+// 
 // ------------
-bPlusElement::bPlusElement(bGenericXMLBaseElement* elt, bGenericMacMapApp* gapp, CFBundleRef bndl ) 
-			: bStdXMLOperatorElement(elt,gapp,bndl){
-	setclassname("plus");
-	_dbval=new bDoubleDBValue;
-}
-
-// ---------------------------------------------------------------------------
-// Destructeur
-// -----------
-bPlusElement::~bPlusElement(){
-}
-
-// ---------------------------------------------------------------------------
-// Constructeur
-// ------------
-bGenericXMLBaseElement* bPlusElement::create(bGenericXMLBaseElement* elt){
-	return(new bPlusElement(elt,_gapp,elt->getbundle()));
+void init(bGenericXMLBaseElement **elt,bGenericMacMapApp* gapp, CFBundleRef bndl){
+	(*elt)=new bXMapAssociation(NULL,gapp,bndl);
 }
 
 // ---------------------------------------------------------------------------
 // 
-// -----------
-bool bPlusElement::solve(bStdSolver* ctx){
-	if(!bStdXMLOperatorElement::solve(ctx)){
-		return(false);
-	}
-bStdDBValue*	v=(*_a)+(*_b);
-double			d;
-	v->get(&d);
-    delete v;
-	_dbval->put(d);
-	return(ctx->add(_dbval));
+// ------------
+void destroy(bGenericXMLBaseElement *elt){
+	delete (bXMapAssociation*)(void*)elt;
 }

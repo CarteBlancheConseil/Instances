@@ -5,15 +5,15 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>French</string>
 	<key>CFBundleExecutable</key>
-	<string>XBoxVar</string>
+	<string>XMapAssociation</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>com.cbconseil.xboxvar</string>
+	<string>com.cbconseil.xmapassociation</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
-	<string>XBox</string>
+	<string>XMap</string>
 	<key>CFBundleSignature</key>
 	<string>MaMo</string>
 	<key>CFBundleVersion</key>
@@ -21,7 +21,7 @@
 	<key>MacMapHigh</key>
 	<string>-1</string>
 	<key>MacMapLibSign</key>
-	<string>VarW</string>
+	<string>xAs2</string>
 	<key>MacMapLow</key>
 	<string>-1</string>
 	<key>MacMapMinVers</key>

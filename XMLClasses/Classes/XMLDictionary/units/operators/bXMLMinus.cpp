@@ -25,6 +25,7 @@
 // 
 //----------------------------------------------------------------------------
 // 08/01/2007 creation.
+// 10/06/2016 Bug fix : add "delete v" in solve.
 //----------------------------------------------------------------------------
 
 #include "bXMLMinus.h"
@@ -61,6 +62,7 @@ bool bMinusElement::solve(bStdSolver* ctx){
 bStdDBValue*	v=(*_a)-(*_b);
 double			d;
 	v->get(&d);
+    delete v;
 	_dbval->put(d);
 	return(ctx->add(_dbval));
 }

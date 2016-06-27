@@ -58,7 +58,7 @@ bool bPowElement::solve(bStdSolver* ctx){
 	if(!bStdXMLOperatorElement::solve(ctx)){
 		return(false);
 	}
-double			va,vb;
+double	va,vb;
 	_a->get(&va);
 	_b->get(&vb);
 	_dbval->put(pow(va,vb));

@@ -1,10 +1,10 @@
 //----------------------------------------------------------------------------
-// File : VarEditorWindowController.h
+// File : bXMLVertexGeometry.h
 // Project : MacMap
-// Purpose : Header file : Constants editor window controller
+// Purpose : Header file : vertex geometry tag class, used in styles
 // Author : Benoit Ogier, benoit.ogier@macmap.com
 //
-// Copyright (C) 2016 Carte Blanche Conseil.
+// Copyright (C) 1997-2015 Carte Blanche Conseil.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -24,27 +24,34 @@
 //----------------------------------------------------------------------------
 // 
 //----------------------------------------------------------------------------
-// 04/02/2016 creation.
+// 17/06/2016 creation.
 //----------------------------------------------------------------------------
 
-#import <Cocoa/Cocoa.h>
-#import <mox_intf/bGenericType.h>
-#import <std_ext/bStdNSAppModalWindowController.h>
-#import "bXMapVarEditor.h"
-
-//----------------------------------------------------------------------------
-@interface VarEditorWindowController : bStdNSAppModalWindowController{
-	IBOutlet NSPopUpButton*	_genderpopup;
-	IBOutlet NSTextField*	_namefld;
-    IBOutlet NSTextField*	_valuefld;
-}
-
-//----------------------------------------------------------------------------
-// Gestion Interface
--(void)updateUI;
+#ifndef __bVertexGeometryElement__
+#define __bVertexGeometryElement__
 
 //----------------------------------------------------------------------------
 
-@end
+#include <std_ext/bStdXMLLowRenderElement.h>
 
 //----------------------------------------------------------------------------
+
+class bVertexGeometryElement : public bStdXMLLowRenderElement{
+public:
+	bVertexGeometryElement 					(	bGenericXMLBaseElement* elt, 
+												bGenericMacMapApp* gapp, 
+												CFBundleRef bndl );
+	virtual ~bVertexGeometryElement  		(	);
+	virtual bGenericXMLBaseElement* create	(	bGenericXMLBaseElement* elt);
+	
+    virtual bool actionstd					(   bGenericGraphicContext* ctx);
+    virtual bool actionval					(	bGenericGraphicContext* ctx,
+                                                bStdXMLValueElement* elt,
+                                                bGenericGeoElement* geo);
+
+    virtual bool applyforclass				(	bGenericGraphicContext *ctx);
+};
+
+//----------------------------------------------------------------------------
+
+#endif

@@ -459,6 +459,9 @@ bGenericXMLBaseElement*	chld;
     gapp->classMgr()->AddXMLClass(chld);
     chld=new bObjectSetElement(*elt,gapp,bndl);
     gapp->classMgr()->AddXMLClass(chld);
+
+    chld=new bVertexGeometryElement(*elt,gapp,bndl);
+    gapp->classMgr()->AddXMLClass(chld);
 }
 
 // ---------------------------------------------------------------------------

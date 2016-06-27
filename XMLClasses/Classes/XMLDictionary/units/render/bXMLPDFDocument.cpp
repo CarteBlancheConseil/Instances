@@ -112,8 +112,16 @@ char	val[_values_length_max_];
 		// on pourrait chercher ailleurs 
 	}
 	else{
-		// on pourrait chercher dans le .project pour les styles virtuels 
-		// on pourrait chercher ailleurs 
+        if(!_gapp->document()->readParam(&_data,&_sz,"icons",val)){
+            if(_ispdf){
+                ctx->setPDF(NULL,0,"");
+            }
+            else{
+                ctx->setImage(NULL,0,"");
+            }
+            return(false);
+        }
+		// on pourrait chercher ailleurs
 	}
 	_ispdf=(GetImageKind(val)==kQTFileTypePDF);
 	strcpy(_last,val);
@@ -164,8 +172,16 @@ bStdXMLValueElement*	elt=find_value();
 			// on pourrait chercher ailleurs 
 		}
 		else{
-			// on pourrait chercher dans le .project pour les styles virtuels 
-			// on pourrait chercher ailleurs 
+            if(!_gapp->document()->readParam(&_data,&_sz,"icons",val)){
+                if(_ispdf){
+                    ctx->setPDF(NULL,0,"");
+                }
+                else{
+                    ctx->setImage(NULL,0,"");
+                }
+                return(false);
+            }
+			// on pourrait chercher ailleurs
 		}
 		strcpy(_last,val);
 	}

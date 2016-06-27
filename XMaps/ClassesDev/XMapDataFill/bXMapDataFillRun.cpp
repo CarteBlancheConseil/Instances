@@ -25,6 +25,7 @@
 // 
 //----------------------------------------------------------------------------
 // 17/03/2006 creation.
+// 10/06/2016 Bug fix in bXMapDataFillRunCalc::apply : val was not deallocated.
 //----------------------------------------------------------------------------
 
 #include "bXMapDataFillRun.h"
@@ -130,40 +131,42 @@ bXMapDataFillRunCalc::~bXMapDataFillRunCalc(){
 bool bXMapDataFillRunCalc::apply(bGenericGeoElement* o){
 //_bTrace_("bXMapDataFillRunCalc::apply",false);
 bStdDBValue*	val=_src->solve(o);
-	if(!val){
+bool            ret=false;
+    
+    if(!val){
 //_te_("val==NULL");
-		return(false);
-	}
-	switch(_src->kind()){
-		case _int:
-		case _bool:{
+        return(false);
+    }
+    switch(_src->kind()){
+        case _int:
+        case _bool:{
 //_tm_("_int/_bool");
 int			x;
-			val->get(&x);
-			return(o->setValue(_dst,x));
-			}break;
-		case _double:/*
-		case _date:
-		case _time:*/{
+            val->get(&x);
+            ret=o->setValue(_dst,x);
+        }break;
+        case _double:/*
+        case _date:
+        case _time:*/{
 //_tm_("_double/_date/_time");
 double		x;
-			val->get(&x);
-			return(o->setValue(_dst,x));
-			}break;
-		case _date:
-		case _time:
-		case _char:{
+            val->get(&x);
+            ret=o->setValue(_dst,x);
+        }break;
+        case _date:
+        case _time:
+        case _char:{
 //_tm_("_char");
 char		x[_values_length_max_];
-			val->get(x);
-			return(o->setValue(_dst,x));
-			}break;
-		default:
+            val->get(x);
+            ret=o->setValue(_dst,x);
+        }break;
+        default:
 //_te_("bad kind");
-			break;
-	}
-	delete val;
-	return(false);
+            break;
+    }
+    delete val;
+    return(ret);
 }
 
 // ---------------------------------------------------------------------------
