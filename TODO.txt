@@ -5,7 +5,8 @@ First, we have to re-write all Carbon interfaces in a Cocoa (or Swift) way, and 
 Nothing to do.
 
 * Geogs :
-GAlong, GFarthest, GFrom, GInclude, GInside, GLessThan, GMoreThan, GNearest and GOutside : build a Cocoa interface along with XMap Selector.
+GAlong, GFarthest, GFrom, GInclude, GInside, GLessThan, GMoreThan, GNearest and GOutside : build a Cocoa interface along with XMap Selector.
+
 * Tools :
 Alter, Contiguous, Create, Info, Justification, PrintArea, Redraw, Select, Shape, Split, SymbRotation and Zoom : build a Cocoa interface for param dialogs.
 
@@ -33,7 +34,6 @@ Print and PrintSetup : still using deprecated PMPrintSession APIs, need to be re
 DBStructure, Paint, VarEditor, CloneDetector, DBDefVal, IGrid, DataFill, StringProcessing, TransType, ViewMgr, FExp, DataImport, DataJoin, ToolMenuConfig, Shortcuts, Prefs, NetClean, NetCleanOptions, DashPicker, IconPicker, PatternPicker, RasterImport, CalcEditor, TopoCheck : cocoa rewrite done in ClassesDev. Need to replace actual plugins for further versions.
 
 JPGPublisher, PNGPublisher and TIFFPublisher : cocoa rewrite done in xmap_lib 
-
 
 * XMLClasses :
 Nothing to do.
