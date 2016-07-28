@@ -20,19 +20,14 @@ Nothing to do.
 ScaleRef : build a Cocoa interface.
 
 * XBox :
-XBoxTransform : it could be nice to remove interfaces from transformation XMaps and build a new Cocoa interface for XBoxTransform
+Nothing to do.
 
 * XMaps :
-Association, AssociationWithField, GeometryShift, Line2Surf, LineUp, MakePoly, MakeRect, MakeSquaring, Rotation, Scale, Shake, Simplify and Translation : rewrite in a Cocoa way or move interface to XBoxTransform.
-
-Buffer, Selector : rewrite dialog to Cocoa.
-
+Selector : rewrite dialog to Cocoa.
 JoinOnDir : don’t work the proper way, need to fix it.
 
-Print and PrintSetup : still using deprecated PMPrintSession APIs, need to be rewrite.
-
-DBStructure, Paint, VarEditor, CloneDetector, DBDefVal, IGrid, DataFill, StringProcessing, TransType, ViewMgr, FExp, DataImport, DataJoin, ToolMenuConfig, Shortcuts, Prefs, NetClean, NetCleanOptions, DashPicker, IconPicker, PatternPicker, RasterImport, CalcEditor, TopoCheck : cocoa rewrite done in ClassesDev. Need to replace actual plugins for further versions.
-
+Done :
+DBStructure, Paint, VarEditor, CloneDetector, DBDefVal, IGrid, DataFill, StringProcessing, TransType, ViewMgr, FExp, DataImport, DataJoin, ToolMenuConfig, Shortcuts, Prefs, NetClean, NetCleanOptions, DashPicker, IconPicker, PatternPicker, RasterImport, CalcEditor, TopoCheck, Association, AssociationWithField, GeometryShift, Line2Surf, LineUp, MakePoly, MakeRect, MakeSquaring, Rotation, Scale, Shake, Simplify, Translation, Buffer, Print, PrintSetup : cocoa rewrite done in ClassesDev. Need to replace actual plugins for further versions.
 JPGPublisher, PNGPublisher and TIFFPublisher : cocoa rewrite done in xmap_lib 
 
 * XMLClasses :
