@@ -27,10 +27,7 @@
 // 09/02/2016 creation.
 //----------------------------------------------------------------------------
 
-#import <Cocoa/Cocoa.h>
-#import <mox_intf/bGenericType.h>
 #import <std_ext/bStdNSAppModalWindowController.h>
-#import "bXMapNetClean.h"
 
 //----------------------------------------------------------------------------
 @interface NetCleanWindowController : bStdNSAppModalWindowController{

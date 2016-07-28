@@ -1,5 +1,4 @@
 /*MESSAGES*/
-"rasterimport"		="Import Raster";
 "IGridNotFoundErr"	="Cannot find \"Import Grid\" plug-in";
 "IGridNotFoundExpl"	="This plug-in lets you specify in which type the data should be imported.";
 "GridErr"			="Bad import grid configuration";

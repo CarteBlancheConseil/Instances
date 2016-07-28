@@ -30,15 +30,17 @@
 
 #include "bXMapRasterImport.h"
 #include "CocoaStuff.h"
+
 #include <mox_intf/bEventLog.h>
-#include <mox_intf/Carb_Utils.h>
 #include <mox_intf/mm_messages.h>
 #include <mox_intf/bStdWait.h>
 #include <mox_intf/bStdAlert.h>
 #include <mox_intf/ext_utils.h>
 #include <mox_intf/CGUtils.h>
 #include <mox_intf/NSOpenSavePanelWrappers.h>
+
 #include <xmap_lib/bXMapsGISIOUtils.h>
+
 #include <MacMapSuite/MacMapSuiteCPP.h>
 #include <MacMapSuite/bStdDirectory.h>
 #include <MacMapSuite/bStdFile.h>
@@ -156,7 +158,7 @@ _tm_("createIfNeeded: "+ctin);
     _prm.filErr=0;
 
 	_gapp->layersMgr()->SetObjInvalidation(false);
-b_message_string(kXMapRasterImportMessageID,msg,getbundle(),1);
+    get_localized_name(msg,getbundle());
 bProgressWait	wt("",msg,true,false,paths.count());
 bEventLog       log(_gapp,this);
 char            path[PATH_MAX];

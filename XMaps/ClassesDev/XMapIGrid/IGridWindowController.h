@@ -27,10 +27,8 @@
 // 09/02/2016 creation.
 //----------------------------------------------------------------------------
 
-#import <Cocoa/Cocoa.h>
-#import <mox_intf/bGenericType.h>
 #import <std_ext/bStdNSAppModalWindowController.h>
-#import "bXMapIGrid.h"
+#include <std_ext/bXMapStdIntf.h>
 
 //----------------------------------------------------------------------------
 @interface IGridWindowController : bStdNSAppModalWindowController{

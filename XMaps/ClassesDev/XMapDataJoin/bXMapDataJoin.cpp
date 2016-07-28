@@ -36,7 +36,6 @@
 #include <mox_intf/ext_utils.h>
 #include <mox_intf/mm_messages.h>
 #include <mox_intf/mm_errors.h>
-#include <mox_intf/bStdWait.h>
 #include <mox_intf/bStdAlert.h>
 #include <mox_intf/NSOpenSavePanelWrappers.h>
 

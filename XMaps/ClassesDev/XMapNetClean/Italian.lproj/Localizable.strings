@@ -1,5 +1,4 @@
 /*MESSAGES*/
-"NetClean"				="Segmentazione";
 "CtrlField"				="Controllo";
 "AskAddControlField"	="Alcuni oggetti non hanno il campo \"Controllo\". Vuoi creare questo campo ?";
 

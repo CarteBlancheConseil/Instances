@@ -34,12 +34,9 @@
 //----------------------------------------------------------------------------
 
 #include <std_ext/bStdXMap.h>
-#include <std_ext/bXMapStdIntf.h>
-#include <Carbon/Carbon.h>
 
 //----------------------------------------------------------------------------
 
-#define	kXMapPrefsMessageID		"Prefs"
 #define	kXMapPrefsMsgFillField	"FillField"
 #define	kXMapPrefsMsgWithValue	"WithValue"
 #define	kXMapPrefsMsgWithCalc	"WithCalc"
@@ -51,10 +48,10 @@
 
 class bXMapPrefs : public bStdXMap{
 public:
-    bXMapPrefs                           (	bGenericXMLBaseElement* elt,
+    bXMapPrefs                              (	bGenericXMLBaseElement* elt,
                                                 bGenericMacMapApp* gapp, 
                                                 CFBundleRef bndl);
-    virtual ~bXMapPrefs                  (	);
+    virtual ~bXMapPrefs                     (	);
     virtual bGenericXMLBaseElement* create	(	bGenericXMLBaseElement* elt);
             
     virtual bool edit						(	void* prm);

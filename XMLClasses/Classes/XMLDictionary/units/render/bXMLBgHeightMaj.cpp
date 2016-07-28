@@ -63,7 +63,7 @@ bool bBgHeightMajElement::actionval(bGenericGraphicContext* ctx,
 									bGenericGeoElement* geo){
 double x;
 	elt->getvalue(geo,&x);
-	if(x>=0){
+	if(x>=SHRT_MIN){
 		ctx->setBackgroundHeightMaj(x);
 		return(true);
 	}
@@ -90,7 +90,7 @@ char	val[_values_length_max_];
 		}
 		x=atof(val);
 	}
-	if(x>=0){
+	if(x>=SHRT_MIN){
 		ctx->setBackgroundHeightMaj(x);
 		return(true);
 	}

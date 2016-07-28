@@ -1,5 +1,4 @@
 /*MESSAGES*/
-"NetClean"				="Clean";
 "CtrlField"				="Control";
 "AskAddControlField"	="Certain types have no \"Control\" field. Would you like to create this field?";
 

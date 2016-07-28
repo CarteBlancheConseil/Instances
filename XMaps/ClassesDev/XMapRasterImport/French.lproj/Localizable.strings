@@ -1,5 +1,4 @@
 /*MESSAGES*/
-"rasterimport"		="Importer un raster";
 "IGridNotFoundErr"	="Externe \"Grille d'import\" introuvable";
 "IGridNotFoundExpl"	="Cette externe permet de spécifier dans quels types les données doivent être importées.";
 "GridErr"			="Configuration de la grille d'import incorrecte";

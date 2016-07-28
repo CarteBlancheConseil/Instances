@@ -31,17 +31,9 @@
 #include "bXMapNetCleanOptions.h"
 #include "CocoaStuff.h"
 
-#include <mox_intf/xmldesc_utils.h>
-#include <mox_intf/mm_messages.h>
-#include <mox_intf/Carb_Utils.h>
-#include <mox_intf/bStdAlert.h>
 #include <mox_intf/ext_utils.h>
-#include <mox_intf/bEventLog.h>
-#include <mox_intf/bStdWait.h>
 
 #include <MacMapSuite/bTrace.h>
-#include <MacMapSuite/bArray.h>
-#include <MacMapSuite/vx_measure.h>
 
 // ---------------------------------------------------------------------------
 //

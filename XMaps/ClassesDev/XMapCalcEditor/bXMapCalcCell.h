@@ -33,7 +33,6 @@
 
 //----------------------------------------------------------------------------
 
-#include <std_ext/bStdXMapWithModalIntf.h>
 #include <mox_intf/bGenericMacMapApp.h>
 #include <MacMapSuite/bStdBaseAccessor.h>
 

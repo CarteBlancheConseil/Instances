@@ -51,7 +51,6 @@ bvDefQuickTextStyle	::bvDefQuickTextStyle(bGenericMacMapApp* gapp,
 	_width=0;
 	_fwidth=0;
 	
-// -> NEW
 	_backwidth=0;
 	_fbackwidth=0;
 	_backwidthmaj=0;
@@ -66,7 +65,6 @@ bvDefQuickTextStyle	::bvDefQuickTextStyle(bGenericMacMapApp* gapp,
 	
 	_rradius=0;
 	_frradius=0;
-// <- NEW
 	
 	_fill[0]=0;
 	_fill[1]=0;
@@ -80,21 +78,19 @@ bvDefQuickTextStyle	::bvDefQuickTextStyle(bGenericMacMapApp* gapp,
 	_stroke[3]=1;
 	_stroke[4]=1;
 	_fstroke=0;
+
 	_backfill[0]=0;
 	_backfill[1]=0;
 	_backfill[2]=0;
 	_backfill[3]=0;
 	_backfill[4]=0;
 	_fbackfill=0;
-	
-// -> NEW
 	_backstroke[0]=0;
 	_backstroke[1]=0;
 	_backstroke[2]=0;
 	_backstroke[3]=1;
 	_backstroke[4]=1;
 	_fbackstroke=0;
-// <- NEW
 	
 	_just=0;
 	_fjust=0;
@@ -318,7 +314,6 @@ char						val[_values_length_max_];
 		}
 	}
 	
-	// -> NEW
 	if(chld=_gapp->classMgr()->NthElement(_gstl,1,"bgstroke")){
 		if(elt=_gapp->classMgr()->NthElement(chld,1,"red")){
 			elt->getvalue(val);
@@ -372,7 +367,6 @@ char						val[_values_length_max_];
 			_fbackstroke=_gtp->fields()->get_index(val);
 		}
 	}
-	// <- NEW
 	
 	if(elt=_gapp->classMgr()->NthElement(_gstl,1,"size")){
 		elt->getvalue(val);
@@ -400,7 +394,6 @@ char						val[_values_length_max_];
 		}
 	}
 	
-	// -> NEW
 	if(elt=_gapp->classMgr()->NthElement(_gstl,1,"bgwidth")){
 		elt->getvalue(val);
 		_backwidth=matof(val);
@@ -475,7 +468,6 @@ char						val[_values_length_max_];
 			_rradius=matof(val);
 		}
 	}	
-	// <- NEW
 	
 	if(elt=_gapp->classMgr()->NthElement(_gstl,1,"centroid")){
 		elt->getvalue(val);
@@ -659,7 +651,6 @@ char	nm[256];
 			add_cdesc(arr,indent+4,"colorfield16m",nm);
 		}
 	}
-// -> NEW
 	if(	(	(_fbackwidth>0)				||
 			(_backwidth>0)	)			&&
 		(	(_backstroke[_cc-1]>0)		||
@@ -683,7 +674,6 @@ char	nm[256];
 			   add_cdesc(arr,indent+4,"colorfield16m",nm);
 		   }
 	   }
-// <- NEW
 	
 	add_cdesc(arr,indent+3,"fill","");
 	if(_cc==4){

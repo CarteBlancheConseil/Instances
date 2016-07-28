@@ -27,10 +27,7 @@
 // 19/02/2016 creation.
 //----------------------------------------------------------------------------
 
-#import <Cocoa/Cocoa.h>
-#import <mox_intf/bGenericType.h>
 #import <std_ext/bStdNSAppModalWindowController.h>
-#import "bXMapStringProcessing.h"
 
 //----------------------------------------------------------------------------
 @interface StringProcessingWindowController : bStdNSAppModalWindowController{
@@ -42,15 +39,12 @@
 
     IBOutlet NSTextField*	_septxt;
     
-    
     IBOutlet NSPopUpButton*	_caspop;
     IBOutlet NSTextField*	_rpftxt;
     IBOutlet NSTextField*	_rpttxt;
     IBOutlet NSTextField*	_fmttxt;
-
     
     IBOutlet NSPopUpButton*	_filpop;
-    
 }
 
 //----------------------------------------------------------------------------

@@ -30,18 +30,15 @@
 #import "NetCleanOptionsWindowController.h"
 #import "bXMapNetCleanOptions.h" 
 #import "CocoaStuff.h" 
-#import <MacMapSuite/bTrace.h> 
-#import <mox_intf/bGenericMacMapApp.h> 
-#import <mox_intf/Carb_Utils.h> 
-#import <mox_intf/bEventLog.h>
-#import <mox_intf/ext_utils.h>
-#import <mox_intf/xmldesc_utils.h> 
-#import <mox_intf/NSUIUtils.h> 
+
+#import <mox_intf/NSUIUtils.h>
 #import <mox_intf/mm_messages.h>
 #import <mox_intf/mm_errors.h>
 #import <mox_intf/bStdAlert.h>
+
 #import <std_ext/bXMapStdIntf.h>
 
+#import <MacMapSuite/bTrace.h>
 
 // ---------------------------------------------------------------------------
 // 

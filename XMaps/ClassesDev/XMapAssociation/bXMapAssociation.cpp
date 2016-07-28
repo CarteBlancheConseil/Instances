@@ -33,14 +33,12 @@
 
 #include <mox_intf/ext_utils.h>
 #include <mox_intf/Type_Utils.h>
-#include <mox_intf/xmldesc_utils.h>
 #include <mox_intf/bEventLog.h>
 #include <mox_intf/mm_messages.h>
 #include <mox_intf/mm_errors.h>
 #include <mox_intf/bStdAlert.h>
 #include <mox_intf/MacMapCWrappers.h>
 
-#include <MacMapSuite/vx_lib.h>
 #include <MacMapSuite/bTrace.h>
 
 // ---------------------------------------------------------------------------
@@ -59,7 +57,6 @@ typedef struct check_dist_prm{
 bXMapAssociation::bXMapAssociation(bGenericXMLBaseElement* elt, bGenericMacMapApp* gapp, CFBundleRef bndl)
                 : bStdXMap(elt,gapp,bndl){
 	setclassname("association2");
-		
 char	name[FILENAME_MAX];
 GetName(this,name);
 (void)_gapp->menuMgr()->add_item(kMenuMgrMenuPalettesID,name,GetSignature(this));
@@ -92,17 +89,11 @@ void bXMapAssociation::open(int* flags){
 // -----------
 bool bXMapAssociation::edit(void* prm){
 _bTrace_("bXMapAssociation::edit()",true);	
-//bGenericGeoElement* o;
-long                result=0;
+long    result=0;
     
-//    _gapp->selMgr()->elements()->get(1,&o);
-//    _prm.tp=o->getType();
     runCocoaAppModal(this,&result);
     if(result>0){
         return(process(kExtProcessCallFromIntf,prm));
-    }
-    else{
-//        _arr.reset();
     }
     return false;
 }
@@ -391,7 +382,7 @@ _te_("setVertices");
     }
     
     if(status){
-        bAlertStop	alrt(msg,"");
+bAlertStop	alrt(msg,"");
     }
     
     return(true);

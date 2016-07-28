@@ -30,9 +30,10 @@
 #import "PatternPickerWindowController.h"
 #import "bXMapPatternPicker.h" 
 #import "CocoaStuff.h" 
-#import <mox_intf/CGUtils.h>
+
 #import <mox_intf/ext_utils.h>
 #import <mox_intf/Carb_Utils.h>
+
 #import <MacMapSuite/bTrace.h>
 
 // ---------------------------------------------------------------------------

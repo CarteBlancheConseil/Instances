@@ -35,7 +35,6 @@
 
 #include <std_ext/bStdXMap.h>
 #include <std_ext/bXMapStdIntf.h>
-#include <Carbon/Carbon.h>
 
 //----------------------------------------------------------------------------
 

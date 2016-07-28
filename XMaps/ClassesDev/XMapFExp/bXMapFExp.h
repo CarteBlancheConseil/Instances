@@ -37,17 +37,11 @@
 
 #include <std_ext/bStdXMap.h>
 #include <std_ext/bXMapStdIntf.h>
-#include <Carbon/Carbon.h>
 
 //----------------------------------------------------------------------------
 
-#define kXMapFExpProcessMessageID	"Processing"
-#define kXMapFExpErrorsOccursID		"ErrorsOccurs"
-#define kXMapFExpReadLogID			"ReadLog"
-
 #define	kXMapFExpMessageID		"fmtexp"
 #define	kXMapFExpStdParamID		"std_format.xml"
-
 
 // ---------------------------------------------------------------------------
 

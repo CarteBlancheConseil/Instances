@@ -35,12 +35,10 @@
 
 #include <std_ext/bStdXMap.h>
 #include <std_ext/bXMapStdIntf.h>
-#include <Carbon/Carbon.h>
 
 //----------------------------------------------------------------------------
 
 #define kXMapNetCleanConfig					"netclean_config"
-#define kXMapNetCleanMessageID				"NetClean"
 #define kXMapNetCleanControlField			"CtrlField"
 #define kXMapNetCleanControlFieldDefault	"xxxxxxxx"
 

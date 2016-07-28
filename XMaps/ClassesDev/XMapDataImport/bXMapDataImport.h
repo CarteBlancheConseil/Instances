@@ -51,7 +51,6 @@ enum{
 	kXMapDataImportNotUniqueErr
 };
 
-#define	kXMapDataImportMessageID		"DataImport"
 #define	kXMapDataImportLineNumberID		"LineNumber"
 #define	kXMapDataImportErrorsOccursID	"ErrorsOccurs"
 #define	kXMapDataImportReadLogID		"ReadLog"

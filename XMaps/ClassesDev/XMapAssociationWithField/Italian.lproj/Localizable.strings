@@ -1,0 +1,8 @@
+/*MESSAGES*/
+"IndexErr"					="Indexing error";
+"CloneObjectErr"			="Allocation error";
+"SetVerticesErr"			="Error while writing";
+"VerticesErr"				="These objects cannot be associated";
+"ObjNotAssociatedWarning"	="Some objects were not associated";
+
+/*ERRORS*/

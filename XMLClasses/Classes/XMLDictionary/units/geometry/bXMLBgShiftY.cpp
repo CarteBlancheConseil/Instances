@@ -60,7 +60,7 @@ bool bBgShiftYElement::actionval(	bGenericGraphicContext* ctx,
 									bStdXMLValueElement* elt,
 									bGenericGeoElement* geo){
 	elt->getvalue(geo,&_val);
-	if(_val!=SHRT_MAX){
+	if(_val!=SHRT_MIN){
 		ctx->setBackgroundHeightDec(_val);
 		return(true);
 	}
@@ -83,7 +83,7 @@ char	val[_values_length_max_];
 		getvalue(val);
 		_val=atof(val);		
 	}
-	if(_val!=SHRT_MAX){
+	if(_val!=SHRT_MIN){
 		ctx->setBackgroundHeightDec(_val);
 		return(true);
 	}

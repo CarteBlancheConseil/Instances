@@ -35,12 +35,10 @@
 
 #include <std_ext/bStdXMap.h>
 #include <std_ext/bXMapStdIntf.h>
-#include <MacMapSuite/bArray.h>
-#include <MacMapSuite/bStdFile.h>
 
 //----------------------------------------------------------------------------
 
-#define	kXMapRasterImportMessageID				"rasterimport"
+//#define	kXMapRasterImportMessageID				"rasterimport"
 #define	kXMapRasterImportInvalidGridErrorID		"GridErr"
 #define	kXMapRasterImportIGridNotFoundErrorID	"IGridNotFoundErr"
 #define	kXMapRasterImportIGridNotFoundExplID	"IGridNotFoundExpl"
@@ -54,23 +52,6 @@ enum{
 	kRasterImportKindTAB		=11,
 	kRasterImportKindKML		=12,// unused
 	kRasterImportKindMMR		=20,// unused
-};
-
-enum{
-	kXMapRasterImportSignature			='iRST',
-	kXMapRasterImportKFrameID			=2,
-	kXMapRasterImportXID				=10,
-	kXMapRasterImportXUnitID			=11,
-	kXMapRasterImportYID				=12,
-	kXMapRasterImportYUnitID			=13,
-	kXMapRasterImportKind1ID			=20,
-	kXMapRasterImportKind2ID			=21,
-	kXMapRasterImportXpID				=200,
-	kXMapRasterImportXpUnitID			=201,
-	kXMapRasterImportYpID				=202,
-	kXMapRasterImportYpUnitID			=203,
-	kXMapRasterImportScaleID			=210,
-	kXMapRasterImportPopKindID			='PopK'
 };
 
 //----------------------------------------------------------------------------

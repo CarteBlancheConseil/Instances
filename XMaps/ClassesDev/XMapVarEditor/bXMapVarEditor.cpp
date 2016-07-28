@@ -30,14 +30,13 @@
 
 #include "bXMapVarEditor.h"
 #include "CocoaStuff.h"
+
 #include <mox_intf/ext_utils.h>
 #include <mox_intf/xmldesc_utils.h>
 #include <mox_intf/bEventLog.h>
-#include <mox_intf/mm_messages.h>
-#include <mox_intf/mm_errors.h>
-#include <mox_intf/bStdAlert.h>
 #include <mox_intf/endian.h>
 #include <mox_intf/NSCursorWrappers.h>
+
 #include <MacMapSuite/bTrace.h>
 
 // ---------------------------------------------------------------------------
@@ -133,15 +132,11 @@ void bXMapVarEditor::set_infos(const char* name,
 //
 // -----------
 bool bXMapVarEditor::save_action(){
-//ControlRef	c=get_control(kXMapVarEditorSignature,kXMapVarEditorNameID);
-//    GetTextControlValue(c,_name,FILENAME_MAX);
     if(strlen(_name)==0){
         MMBeep();
         return(false);
     }
     
-//    c=get_control(kXMapVarEditorSignature,kXMapVarEditorValueID);
-//    GetTextControlValue(c,_value,_values_length_max_);
     if(strlen(_value)==0){
         MMBeep();
         return(false);
@@ -157,29 +152,6 @@ bool bXMapVarEditor::save_action(){
     if(_new){
         _fsgn=UniqueSignature(_gapp);
     }
-    
-//    c=get_control(kXMapVarEditorSignature,kXMapVarEditorPopupKindID);
-//    switch(GetControl32BitValue(c)){
-//        case 1:
-//            _fknd=_char;
-//            break;
-//        case 2:
-//            _fknd=_bool;
-//            break;
-//        case 3:
-//            _fknd=_int;
-//            break;
-//        case 4:
-//            _fknd=_double;
-//            break;
-//        case 5:
-//            _fknd=_date;
-//            break;
-//        case 6:
-//            _fknd=_time;
-//            break;
-//    }
-    
     
 bArray	arr(sizeof(xmlelt));
 char	csgn[10];

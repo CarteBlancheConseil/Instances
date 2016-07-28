@@ -38,7 +38,6 @@
 #include <mox_intf/ext_utils.h>
 #include <mox_intf/mm_messages.h>
 #include <mox_intf/mm_errors.h>
-#include <mox_intf/bStdWait.h>
 #include <mox_intf/bStdAlert.h>
 #include <mox_intf/NSOpenSavePanelWrappers.h>
 
@@ -588,10 +587,7 @@ _tm_(i+"b:"+value);
 // 
 // -----------
 void bXMapDataImport::join(){
-bEventLog	log(_gapp,
-				getbundle(),
-				kXMapDataImportMessageID,
-				GetSignature(this));
+bEventLog	log(_gapp,this);
 datajoin_prm	prm;
 	prm.cols=&_cols;
 	prm.tpi=_tpi;
@@ -749,7 +745,7 @@ bool	fill;
 
 char				ttl[__MESSAGE_STRING_LENGTH_MAX__];
 	GetName(this,ttl);
-	b_message_string(kXMapDataImportMessageID,msg,getbundle(),0);
+	message_string(kMsgProgress,msg,0);
 bProgressWait wt(ttl,msg,true,true,_tbl->CountRecords());
 
 _tm_("-- DataImport REPORT BEGIN --");

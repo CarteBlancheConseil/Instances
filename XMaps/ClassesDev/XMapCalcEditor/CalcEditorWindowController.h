@@ -27,10 +27,8 @@
 // 16/03/2016 creation.
 //----------------------------------------------------------------------------
 
-#import <Cocoa/Cocoa.h>
-#import <mox_intf/bGenericType.h>
 #import <std_ext/bStdNSAppModalWindowController.h>
-#import "bXMapCalcEditor.h"
+#import "bXMapCalcCell.h"
 
 //----------------------------------------------------------------------------
 @interface CalcObjView : NSView{

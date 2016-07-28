@@ -31,13 +31,8 @@
 #include "bXMapCalcEditor.h"
 #include "CocoaStuff.h"
 
-#include <mox_intf/CGUtils.h>
 #include <mox_intf/xmldesc_utils.h>
 #include <mox_intf/ext_utils.h>
-#include <mox_intf/Carb_Utils.h>
-#include <mox_intf/Type_Utils.h>
-#include <mox_intf/bSelectSolver.h>
-#include <mox_intf/bGenericCalc.h>
 #include <mox_intf/bEventLog.h>
 #include <mox_intf/endian.h>
 #include <mox_intf/NSCursorWrappers.h>

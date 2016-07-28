@@ -30,8 +30,8 @@
 #import "PaintWindowController.h"
 #import "bXMapPaint.h"
 #import "CocoaStuff.h"
+
 #import <MacMapSuite/bTrace.h>
-#import <mox_intf/bGenericMacMapApp.h>
 
 // ---------------------------------------------------------------------------
 // 

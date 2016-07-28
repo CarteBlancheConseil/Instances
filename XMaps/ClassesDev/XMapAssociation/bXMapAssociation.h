@@ -37,7 +37,6 @@
 
 #include <std_ext/bStdXMap.h>
 #include <std_ext/bXMapStdIntf.h>
-#include <Carbon/Carbon.h>
 
 //----------------------------------------------------------------------------
 
@@ -59,7 +58,6 @@ public:
             
     virtual void open						(	int* flags);
     virtual bool edit						(	void* prm);
-    
     virtual bool process					(	int msg,
                                                 void* prm);
     virtual bool test						(	void* prm);

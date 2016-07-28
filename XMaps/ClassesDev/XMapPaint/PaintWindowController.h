@@ -27,9 +27,7 @@
 // 20/08/2015 creation.
 //----------------------------------------------------------------------------
 
-#import <Cocoa/Cocoa.h>
 #import <std_ext/bStdNSXMapWindowController.h>
-#import <MacMapSuite/bArray.h>
 
 //----------------------------------------------------------------------------
 

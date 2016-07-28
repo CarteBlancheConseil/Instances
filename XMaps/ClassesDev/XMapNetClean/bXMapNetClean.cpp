@@ -33,15 +33,11 @@
 
 #include <mox_intf/xmldesc_utils.h>
 #include <mox_intf/mm_messages.h>
-#include <mox_intf/Carb_Utils.h>
 #include <mox_intf/bStdAlert.h>
 #include <mox_intf/ext_utils.h>
 #include <mox_intf/bEventLog.h>
-#include <mox_intf/bStdWait.h>
 
 #include <MacMapSuite/bTrace.h>
-#include <MacMapSuite/bArray.h>
-#include <MacMapSuite/vx_measure.h>
 
 // ---------------------------------------------------------------------------
 //
@@ -616,7 +612,7 @@ char				ttl[__MESSAGE_STRING_LENGTH_MAX__];
     
     vsp=ivs_new(_2D_VX,1,0);
     
-    b_message_string(kXMapNetCleanMessageID,ttl,getbundle(),0);
+    get_localized_name(ttl,getbundle());
     b_message_string(kXMapNetCleanNodeCreationMessage,msg,getbundle(),0);
 bProgressWait	wt(ttl,msg,true,true,loop.count());
     for(long i=1;i<=loop.count();i++){
@@ -719,7 +715,8 @@ i2dvertex			vr;
 char				msg[__MESSAGE_STRING_LENGTH_MAX__];
 char				ttl[__MESSAGE_STRING_LENGTH_MAX__];
     
-    b_message_string(kXMapNetCleanMessageID,ttl,getbundle(),0);
+    get_localized_name(ttl,getbundle());
+
     b_message_string(kXMapNetCleanCutEdgesMessage,msg,getbundle(),0);
 bProgressWait	wt(ttl,msg,true,true,loop.count());
     for(long i=1;i<=loop.count();i++){
@@ -799,7 +796,8 @@ bool				mod;
 char				msg[__MESSAGE_STRING_LENGTH_MAX__];
 char				ttl[__MESSAGE_STRING_LENGTH_MAX__];
     
-    b_message_string(kXMapNetCleanMessageID,ttl,getbundle(),0);
+    get_localized_name(ttl,getbundle());
+
     b_message_string(kXMapNetCleanJoinOnNodesMessage,msg,getbundle(),0);
 bProgressWait	wt(ttl,msg,true,true,loop.count());
     for(long i=1;i<=loop.count();i++){
@@ -856,7 +854,8 @@ bool				flg;
 char				msg[__MESSAGE_STRING_LENGTH_MAX__];
 char				ttl[__MESSAGE_STRING_LENGTH_MAX__];
     
-    b_message_string(kXMapNetCleanMessageID,ttl,getbundle(),0);
+    get_localized_name(ttl,getbundle());
+
     b_message_string(kXMapNetCleanJoinOnEdgesMessage,msg,getbundle(),0);
 bProgressWait	wt(ttl,msg,true,true,loop.count());
     for(long i=1;i<=loop.count();i++){
@@ -919,7 +918,8 @@ char				ttl[__MESSAGE_STRING_LENGTH_MAX__];
     
     _cfg_prm.dnod=0;
     
-    b_message_string(kXMapNetCleanMessageID,ttl,getbundle(),0);
+    get_localized_name(ttl,getbundle());
+
     b_message_string(kXMapNetCleanCheckNodesMessage,msg,getbundle(),0);
 bProgressWait	wt(ttl,msg,true,true,loop.count());
     for(long i=1;i<=loop.count();i++){
@@ -966,7 +966,8 @@ char				ttl[__MESSAGE_STRING_LENGTH_MAX__];
     
     _cfg_prm.dnod=0;
     
-    b_message_string(kXMapNetCleanMessageID,ttl,getbundle(),0);
+    get_localized_name(ttl,getbundle());
+
     b_message_string(kXMapNetCleanCheckEdgesMessage,msg,getbundle(),0);
 bProgressWait	wt(ttl,msg,true,true,loop.count());
     for(long i=1;i<=loop.count();i++){

@@ -1,5 +1,4 @@
 /*MESSAGES*/
-"rasterimport"		="Importa un Raster";
 "IGridNotFoundErr"	="Estensione \"Griglia di importazionet\" introvabile";
 "IGridNotFoundExpl"	="Questa estensione permette di specificare in quale Tipo devono essere importati i dati.";
 "GridErr"			="Errata configurazione della Griglia di importazione";

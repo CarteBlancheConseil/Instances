@@ -30,9 +30,11 @@
 
 #include "bXMapIGrid.h"
 #include "CocoaStuff.h"
-#include <MacMapSuite/bTrace.h>
+
 #include <mox_intf/xmldesc_utils.h>
 #include <mox_intf/ext_utils.h>
+
+#include <MacMapSuite/bTrace.h>
 
 // ---------------------------------------------------------------------------
 // Constructeur

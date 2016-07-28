@@ -30,8 +30,10 @@
 #import "IconPickerWindowController.h"
 #import "bXMapIconPicker.h" 
 #import "CocoaStuff.h" 
+
 #import <mox_intf/CGUtils.h>
 #import <mox_intf/ext_utils.h>
+
 #import <MacMapSuite/bTrace.h>
 
 // ---------------------------------------------------------------------------
