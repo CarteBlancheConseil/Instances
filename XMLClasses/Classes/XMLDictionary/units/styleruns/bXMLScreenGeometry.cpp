@@ -68,29 +68,17 @@ bool bScreenGeometryElement::applyforclass(bGenericGraphicContext *ctx){
 ivx_rect		vr;
     
     switch(ctx->signature()){
-        case kPDFGraphicContext:
-            vr=*(_gapp->printMgr()->get_print_area());
-            break;
-        case kPrintGraphicContext:
-            vr=*(_gapp->printMgr()->get_print_area());
-            break;
-        case kBitMapGraphicContext:
-            vr=*(_gapp->printMgr()->get_print_area());
-            break;
-        case kKMLGraphicContext:
-            vr=*(_gapp->printMgr()->get_print_area());
-            break;
         case kCtxGraphicContext:
             _gapp->mapIntf()->screenBounds(&vr);
             break;
         default:
-            _gapp->mapIntf()->screenBounds(&vr);
+            vr=*(_gapp->printMgr()->get_print_area());
             break;
     }
 
 ivertices*		vxs;
 	ivr2ivs(&vr,&vxs);
-	ctx->setGeography(vxs,true);
+    ctx->setGeography(vxs,true);
 	ctx->convertGeography();
 
 bGenericXMLRenderingElement*	elt;

@@ -42,6 +42,7 @@ void*	initializeCocoa		(	void* gapp,
 								void* ext);
 void    clickCocoa          (   void* instance,
                                  CGPoint  loc);
+void    refreshCocoa        (   void* instance);
 
 //----------------------------------------------------------------------------
 

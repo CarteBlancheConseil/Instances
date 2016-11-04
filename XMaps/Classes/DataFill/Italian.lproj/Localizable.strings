@@ -1,9 +1,0 @@
-/*MESSAGES*/
-"DataFill"				="Compila";
-"FillField"				="Compila il campo";
-"WithValue"				="con il valore";
-"WithCalc"				="con la calc";
-"WithField"				="con il campo";
-
-/*ERRORS*/
-"-1"					="Si è verificato un errore durante la compilazione.";

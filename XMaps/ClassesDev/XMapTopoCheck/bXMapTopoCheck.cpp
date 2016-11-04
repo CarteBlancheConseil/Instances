@@ -77,13 +77,9 @@ get_prm*			p=(get_prm*)prm;
 bXMapTopoCheck	::bXMapTopoCheck(bGenericXMLBaseElement* elt, bGenericMacMapApp* gapp, CFBundleRef bndl)
                 :bStdXMap(elt,gapp,bndl)
                 ,_types(sizeof(bGenericType*)){
-    setclassname("topocheck2");
+    setclassname("topocheck");
     set_flags(kXMapNeedEvents);
     _prm.types=&_types;
-
-char	name[FILENAME_MAX];
-GetName(this,name);
-(void)_gapp->menuMgr()->add_item(kMenuMgrMenuPalettesID,name,GetSignature(this));
 }
 
 // ---------------------------------------------------------------------------

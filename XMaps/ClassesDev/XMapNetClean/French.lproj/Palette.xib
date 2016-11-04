@@ -2,10 +2,10 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1080</int>
-		<string key="IBDocument.SystemVersion">14F1509</string>
+		<string key="IBDocument.SystemVersion">15G31</string>
 		<string key="IBDocument.InterfaceBuilderVersion">7702</string>
-		<string key="IBDocument.AppKitVersion">1348.17</string>
-		<string key="IBDocument.HIToolboxVersion">758.70</string>
+		<string key="IBDocument.AppKitVersion">1404.47</string>
+		<string key="IBDocument.HIToolboxVersion">807.20</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			<string key="NS.object.0">7702</string>
@@ -45,7 +45,7 @@
 				<nil key="NSViewClass"/>
 				<nil key="NSUserInterfaceItemIdentifier"/>
 				<object class="NSView" key="NSWindowView" id="697493821">
-					<nil key="NSNextResponder"/>
+					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<array class="NSMutableArray" key="NSSubviews">
 						<object class="NSButton" id="913796153">
@@ -53,6 +53,7 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{151, 13}, {96, 32}}</string>
 							<reference key="NSSuperview" ref="697493821"/>
+							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="559331898">
 								<int key="NSCellFlags">67108864</int>
@@ -78,6 +79,7 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{18, 174}, {127, 18}}</string>
 							<reference key="NSSuperview" ref="697493821"/>
+							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="678301152"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
@@ -109,6 +111,7 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{45, 152}, {146, 18}}</string>
 							<reference key="NSSuperview" ref="697493821"/>
+							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="315299286"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
@@ -135,6 +138,7 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{18, 130}, {68, 18}}</string>
 							<reference key="NSSuperview" ref="697493821"/>
+							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="627628269"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
@@ -161,6 +165,7 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{14, 13}, {96, 32}}</string>
 							<reference key="NSSuperview" ref="697493821"/>
+							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="913796153"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="866622258">
@@ -183,6 +188,7 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{45, 100}, {199, 26}}</string>
 							<reference key="NSSuperview" ref="697493821"/>
+							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSPopUpButtonCell" key="NSCell" id="645540972">
 								<int key="NSCellFlags">-2076180416</int>
@@ -244,6 +250,7 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{18, 79}, {150, 18}}</string>
 							<reference key="NSSuperview" ref="697493821"/>
+							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="732496396"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
@@ -270,7 +277,7 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{18, 59}, {143, 18}}</string>
 							<reference key="NSSuperview" ref="697493821"/>
-							<reference key="NSNextKeyView"/>
+							<reference key="NSWindow"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="540367797">
@@ -293,6 +300,8 @@
 						</object>
 					</array>
 					<string key="NSFrameSize">{261, 210}</string>
+					<reference key="NSSuperview"/>
+					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="942374752"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {2560, 1417}}</string>
@@ -590,7 +599,7 @@
 				<string key="-3.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<boolean value="YES" key="784.IBNSWindowAutoPositionCentersHorizontal"/>
 				<boolean value="YES" key="784.IBNSWindowAutoPositionCentersVertical"/>
-				<string key="784.IBPersistedLastKnownCanvasPosition">{226.5, 366}</string>
+				<string key="784.IBPersistedLastKnownCanvasPosition">{269.5, 362}</string>
 				<string key="784.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="784.IBWindowTemplateEditedContentRect">{{648, 500}, {472, 325}}</string>
 				<boolean value="NO" key="784.NSWindowTemplate.visibleAtLaunch"/>
@@ -622,7 +631,122 @@
 			<nil key="sourceID"/>
 			<int key="maxID">1005</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
+		<object class="IBClassDescriber" key="IBDocument.Classes">
+			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">NetCleanWindowController</string>
+					<string key="superclassName">bStdNSAppModalWindowController</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">doUpdate:</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">doUpdate:</string>
+						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">doUpdate:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</object>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="_ckechk">NSButton</string>
+						<string key="_cknchk">NSButton</string>
+						<string key="_crnchk">NSButton</string>
+						<string key="_ctechk">NSButton</string>
+						<string key="_jntpop">NSPopUpButton</string>
+						<string key="_jonchk">NSButton</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="_ckechk">
+							<string key="name">_ckechk</string>
+							<string key="candidateClassName">NSButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="_cknchk">
+							<string key="name">_cknchk</string>
+							<string key="candidateClassName">NSButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="_crnchk">
+							<string key="name">_crnchk</string>
+							<string key="candidateClassName">NSButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="_ctechk">
+							<string key="name">_ctechk</string>
+							<string key="candidateClassName">NSButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="_jntpop">
+							<string key="name">_jntpop</string>
+							<string key="candidateClassName">NSPopUpButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="_jonchk">
+							<string key="name">_jonchk</string>
+							<string key="candidateClassName">NSButton</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">../NetCleanWindowController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">NetCleanWindowController</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="doUpdate:">id</string>
+						<string key="validDialog:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="doUpdate:">
+							<string key="name">doUpdate:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="validDialog:">
+							<string key="name">validDialog:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">../NetCleanWindowController.mm</string>
+					</object>
+				</object>
+			</array>
+			<array class="NSMutableArray" key="referencedPartialClassDescriptionsV3.2+">
+				<object class="IBPartialClassDescription">
+					<string key="className">bStdNSAppModalWindowController</string>
+					<string key="superclassName">NSWindowController</string>
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="cancelDialog:">id</string>
+						<string key="validDialog:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="cancelDialog:">
+							<string key="name">cancelDialog:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="validDialog:">
+							<string key="name">validDialog:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="_cancelbtn">NSButton</string>
+						<string key="_okbtn">NSButton</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="_cancelbtn">
+							<string key="name">_cancelbtn</string>
+							<string key="candidateClassName">NSButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="_okbtn">
+							<string key="name">_okbtn</string>
+							<string key="candidateClassName">NSButton</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBFrameworkSource</string>
+						<string key="minorKey">std_ext.framework/PrivateHeaders/bStdNSAppModalWindowController.h</string>
+					</object>
+				</object>
+			</array>
+		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaFramework</string>
 		<bool key="IBDocument.previouslyAttemptedUpgradeToXcode5">NO</bool>

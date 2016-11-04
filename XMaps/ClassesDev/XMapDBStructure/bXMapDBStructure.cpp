@@ -43,10 +43,6 @@
 bXMapDBStructure::bXMapDBStructure(bGenericXMLBaseElement* elt, bGenericMacMapApp* gapp, CFBundleRef bndl) 
                 : bStdXMap(elt,gapp,bndl){
 	setclassname("dbstructure");
-		
-char	name[FILENAME_MAX];
-GetName(this,name);
-(void)_gapp->menuMgr()->add_item(kMenuMgrMenuPalettesID,name,GetSignature(this));
 }
 
 // ---------------------------------------------------------------------------

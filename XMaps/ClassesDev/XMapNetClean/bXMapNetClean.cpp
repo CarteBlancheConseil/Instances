@@ -91,12 +91,8 @@ bXMapNetClean	::bXMapNetClean(bGenericXMLBaseElement* elt, bGenericMacMapApp* ga
                 ,_edges(sizeof(bGenericType*))
                 ,_nitr(sizeof(it_prm))
                 ,_eitr(sizeof(it_prm)){
-    setclassname("netclean2");
+    setclassname("netclean");
     set_flags(kXMapNeedEvents);
-
-char	name[FILENAME_MAX];
-GetName(this,name);
-(void)_gapp->menuMgr()->add_item(kMenuMgrMenuPalettesID,name,GetSignature(this));
 }
 
 // ---------------------------------------------------------------------------
@@ -117,44 +113,45 @@ bGenericXMLBaseElement* bXMapNetClean::create(bGenericXMLBaseElement* elt){
 // ------------
 void bXMapNetClean::open(int* flags){
     bStdXMap::open(flags);
-    _cfg_prm.nodes=&_nodes;
-    _cfg_prm.edges=&_edges;
-    _cfg_prm.tnod=NULL;
-    _cfg_prm.stnod=1;
-    _cfg_prm.name[0]=0;
-    _cfg_prm.tbdg=NULL;
-    _cfg_prm.stbdg=2;
-    _cfg_prm.dnod=0;
-    _cfg_prm.dbdg=0;
-    _cfg_prm.autoclean=false;
-    
-    _act_prm.create_nodes=true;
-    _act_prm.cut_edges=true;
-    _act_prm.join_on_nodes=true;
-    _act_prm.join_on_edges=false;
-    _act_prm.check_nodes=true;
-    _act_prm.check_edges=true;
-    
-bGenericType*	tp;
-    for(long i=1;i<=_gapp->typesMgr()->count();i++){
-        tp=_gapp->typesMgr()->get(i);
-        if(tp->kind()!=kBaseKindPoint){
-            tp=NULL;
-        }
-        _nodes.add(&tp);
-        if(_cfg_prm.tnod==NULL){
-            _cfg_prm.tnod=tp;
-            _cfg_prm.tbdg=tp;
-        }
-    }
-    for(long i=1;i<=_gapp->typesMgr()->count();i++){
-        tp=_gapp->typesMgr()->get(i);
-        if(tp->kind()!=kBaseKindPolyline){
-            tp=NULL;
-        }
-        _edges.add(&tp);
-    }
-    read_p();
+    init_data();
+//    _cfg_prm.nodes=&_nodes;
+//    _cfg_prm.edges=&_edges;
+//    _cfg_prm.tnod=NULL;
+//    _cfg_prm.stnod=1;
+//    _cfg_prm.name[0]=0;
+//    _cfg_prm.tbdg=NULL;
+//    _cfg_prm.stbdg=2;
+//    _cfg_prm.dnod=0;
+//    _cfg_prm.dbdg=0;
+//    _cfg_prm.autoclean=false;
+//    
+//    _act_prm.create_nodes=true;
+//    _act_prm.cut_edges=true;
+//    _act_prm.join_on_nodes=true;
+//    _act_prm.join_on_edges=false;
+//    _act_prm.check_nodes=true;
+//    _act_prm.check_edges=true;
+//    
+//bGenericType*	tp;
+//    for(long i=1;i<=_gapp->typesMgr()->count();i++){
+//        tp=_gapp->typesMgr()->get(i);
+//        if(tp->kind()!=kBaseKindPoint){
+//            tp=NULL;
+//        }
+//        _nodes.add(&tp);
+//        if(_cfg_prm.tnod==NULL){
+//            _cfg_prm.tnod=tp;
+//            _cfg_prm.tbdg=tp;
+//        }
+//    }
+//    for(long i=1;i<=_gapp->typesMgr()->count();i++){
+//        tp=_gapp->typesMgr()->get(i);
+//        if(tp->kind()!=kBaseKindPolyline){
+//            tp=NULL;
+//        }
+//        _edges.add(&tp);
+//    }
+//    read_p();
 }
 
 // ---------------------------------------------------------------------------
@@ -218,8 +215,54 @@ bool				b;
             _silent=false;
             process_network(false);
             break;
-        case kExtProcessCallWithXMLTree:
-            _silent=true;
+        case kExtProcessCallWithXMLTree:{
+            if(countelements()==6){
+                init_data();
+
+char                    val[_values_length_max_];
+bGenericXMLBaseElement*	elt;
+                elt=getelement(1);
+                elt->getvalue(val);
+                _act_prm.create_nodes=atoi(val);
+
+                if(_act_prm.create_nodes){
+                    elt=getelement(2);
+                    elt->getvalue(val);
+                    _act_prm.cut_edges=atoi(val);
+                }
+                else{
+                    _act_prm.cut_edges=false;
+                }
+
+                elt=getelement(3);
+                elt->getvalue(val);
+                _act_prm.join_on_nodes=atoi(val);
+
+                elt=getelement(4);
+                elt->getvalue(val);
+                _act_prm.join_on_edges=atoi(val);
+                if(_act_prm.join_on_nodes&&_act_prm.join_on_edges){
+                    _act_prm.join_on_edges=false;
+                }
+                
+                elt=getelement(5);
+                elt->getvalue(val);
+                _act_prm.check_nodes=atoi(val);
+
+                elt=getelement(6);
+                elt->getvalue(val);
+                _act_prm.check_edges=atoi(val);
+
+                _silent=true;
+                process_network(false);
+                
+                _nodes.reset();
+                _edges.reset();
+            }
+            else{
+                return(false);
+            }
+            }
             break;
         case kExtProcessCallGetData:
 _tm_("kExtProcessCallGetData");
@@ -273,6 +316,50 @@ _tm_("kExtProcessCallSetData");
 // ------------
 bool bXMapNetClean::test(void* prm){
     return(_gapp->typesMgr()->count()>2);
+}
+
+// ---------------------------------------------------------------------------
+//
+// ------------
+void bXMapNetClean::init_data(){
+    _cfg_prm.nodes=&_nodes;
+    _cfg_prm.edges=&_edges;
+    _cfg_prm.tnod=NULL;
+    _cfg_prm.stnod=1;
+    _cfg_prm.name[0]=0;
+    _cfg_prm.tbdg=NULL;
+    _cfg_prm.stbdg=2;
+    _cfg_prm.dnod=0;
+    _cfg_prm.dbdg=0;
+    _cfg_prm.autoclean=false;
+    
+    _act_prm.create_nodes=true;
+    _act_prm.cut_edges=true;
+    _act_prm.join_on_nodes=true;
+    _act_prm.join_on_edges=false;
+    _act_prm.check_nodes=true;
+    _act_prm.check_edges=true;
+    
+bGenericType*	tp;
+    for(long i=1;i<=_gapp->typesMgr()->count();i++){
+        tp=_gapp->typesMgr()->get(i);
+        if(tp->kind()!=kBaseKindPoint){
+            tp=NULL;
+        }
+        _nodes.add(&tp);
+        if(_cfg_prm.tnod==NULL){
+            _cfg_prm.tnod=tp;
+            _cfg_prm.tbdg=tp;
+        }
+    }
+    for(long i=1;i<=_gapp->typesMgr()->count();i++){
+        tp=_gapp->typesMgr()->get(i);
+        if(tp->kind()!=kBaseKindPolyline){
+            tp=NULL;
+        }
+        _edges.add(&tp);
+    }
+    read_p();
 }
 
 // ---------------------------------------------------------------------------
@@ -361,6 +448,7 @@ bAlertWarningYes	alrt(name,"",_silent);
             b_message_string(kXMapNetCleanAskAddControlField,name,getbundle(),0);
 bAlertWarningYes	alrt(name,"",_silent);
             if(!alrt.result()){
+                _te_("coin coin");
                 _act_prm.check_edges=false;
                 _act_prm.check_nodes=false;
             }
@@ -442,6 +530,7 @@ void bXMapNetClean::process_network(netcleanact_prm* prm,
                                     bArray& edges){
 _bTrace_("bXMapNetClean::process_network(netcleanact_prm,int*,bArray&,bArray&)",true);
     if(_cfg_prm.tnod==NULL){
+_te_("(_cfg_prm.tnod==NULL)");
         return;
     }
     if(	(_cfg_prm.tbdg==_cfg_prm.tnod)		&&
@@ -452,6 +541,7 @@ _bTrace_("bXMapNetClean::process_network(netcleanact_prm,int*,bArray&,bArray&)",
         (_cfg_prm.stnod>_cfg_prm.tnod->fields()->count_constraints(kOBJ_SubType_))	){
         if(	(_cfg_prm.tbdg)		&&
             (_cfg_prm.stbdg==1)	){
+_te_("(_cfg_prm.tbdg)&&(_cfg_prm.stbdg==1)");
             return;
         }
         _cfg_prm.stnod=1;
@@ -496,7 +586,7 @@ _bTrace_("bXMapNetClean::process_network(netcleanact_prm,int*,bArray&,bArray&)",
 //
 // -----------
 void bXMapNetClean::check_events(){
-//_bTrace_("bXMapNetClean::check_events",true);
+_bTrace_("bXMapNetClean::check_events",true);
 bArray*				arr=_gapp->eventMgr()->events();
 bGenericEvent*		evt;
 bGenericType*		tp;

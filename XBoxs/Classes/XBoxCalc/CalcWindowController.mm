@@ -81,6 +81,12 @@ _tm_((void*)self);
 bGenericMacMapApp* gapp=(bGenericMacMapApp*)_ext->getapp();
     _mgr=gapp->calcMgr();
     _xsign=kXMLSubClassExtCalc;
+
+bGenericExt* x=gapp->xmapMgr()->find('ClcE');
+    if(x==NULL){
+        [_add_btn setEnabled:NO];
+        [_edt_btn setEnabled:NO];
+    }
 }
 
 // ---------------------------------------------------------------------------
@@ -138,11 +144,14 @@ bGenericExt* x=gapp->xmapMgr()->find('ClcE');
 //
 // -----------
 -(void)updateUI{
-    [super updateUI];
-//NSInteger rowNumber=[_mgr_viw selectedRow];
-//    [_rmv_btn setEnabled:(rowNumber>-1)];
-//    [_edt_btn setEnabled:(rowNumber>-1)];
-//    [_dup_btn setEnabled:(rowNumber>-1)];
+bGenericMacMapApp*
+    gapp=(bGenericMacMapApp*)_ext->getapp();
+bGenericExt* ext=gapp->xmapMgr()->find('ClcE');
+    
+NSInteger rowNumber=[_mgr_viw selectedRow];
+    [_rmv_btn setEnabled:(rowNumber>-1)];
+    [_edt_btn setEnabled:(rowNumber>-1)&&(ext!=NULL)];
+    [_dup_btn setEnabled:(rowNumber>-1)];
 }
 
 #pragma mark ---- Gestion TableView ----

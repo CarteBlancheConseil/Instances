@@ -201,10 +201,7 @@ l2s_link*	lnk=new l2s_link(vxs,p->it,geo->getID());
 // ------------
 bXMapLine2Surf	::bXMapLine2Surf(bGenericXMLBaseElement* elt, bGenericMacMapApp* gapp, CFBundleRef bndl) 
 				:bStdXMap(elt,gapp,bndl){
-	setclassname("line2surf2");
-char	name[FILENAME_MAX];
-GetName(this,name);
-(void)_gapp->menuMgr()->add_item(kMenuMgrMenuPalettesID,name,GetSignature(this));
+	setclassname("line2surf");
 }
 
 // ---------------------------------------------------------------------------

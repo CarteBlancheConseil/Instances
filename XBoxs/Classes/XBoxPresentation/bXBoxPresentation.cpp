@@ -39,6 +39,7 @@
 bXBoxPresentation	::bXBoxPresentation(bGenericXMLBaseElement* elt, bGenericMacMapApp* gapp, CFBundleRef bndl) 
                     : bStdNSXBox(elt,gapp,bndl){
 	setclassname("xboxpresentation");
+    set_flags(kXMapNeedEvents);
 }
 
 // ---------------------------------------------------------------------------
@@ -69,6 +70,19 @@ bGenericTool*	tool=(bGenericTool*)CurTool(_gapp);
     if((clss==kEventClassMouse)&&(kind==kEventMouseDown)/*&&(_on_get)*/){
         tool->get_cur(&loc);
         clickCocoa(_controller,loc);
+    }
+    else if(clss==kEventClassMacMap){
+bArray*			arr=_gapp->eventMgr()->events();
+bGenericEvent*	mevt;
+        
+        for(long i=1;i<=arr->count();i++){
+            arr->get(i,&mevt);
+            switch(mevt->kind()){
+                case kEventKindTypeElement:{
+                    refreshCocoa(_controller);
+                }
+            }
+        }
     }
     return false;
 }

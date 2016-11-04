@@ -261,8 +261,8 @@ double					bmax=LONG_MAX;
 		if(chld->countelements()>0){
 			elt=chld->getelement(1);
 			elt->getclassname(val);
-			for(i=1;i<=vdef_op_max;i++){
-				if(!strcmp(val,vdef_op_list[i])){
+			for(i=1;i<=nsvdef_op_max;i++){
+				if(!strcmp(val,nsvdef_op_list[i])){
 					chld=elt;
 					if(chld->countelements()==2){
 						elt=chld->getelement(1);
@@ -279,7 +279,7 @@ double					bmax=LONG_MAX;
 					break;
 				}
 			}
-			if(i==vdef_op_max+1){
+			if(i==nsvdef_op_max+1){
 				_cfld=0;
 			}
 			else{
@@ -388,7 +388,7 @@ _tm_("proportionnelle:"+(int)_prop);
 	// Conditions	
 	add_cdesc(arr,1,"condition","");
 	if(_cfld){
-		add_cdesc(arr,2,vdef_op_list[_cop],"");
+		add_cdesc(arr,2,nsvdef_op_list[_cop],"");
 		_tp->fields()->get_name(_cfld,val);
 		add_cdesc(arr,3,"dbfield",val);
 		_tp->fields()->get_kind(_cfld,&n);

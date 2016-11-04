@@ -42,10 +42,6 @@
 bXMapShake	::bXMapShake(bGenericXMLBaseElement* elt, bGenericMacMapApp* gapp, CFBundleRef bndl) 
 				:bStdXMap(elt,gapp,bndl){
 	setclassname("shake");
-                    
-char	name[FILENAME_MAX];
-GetName(this,name);
-(void)_gapp->menuMgr()->add_item(kMenuMgrMenuPalettesID,name,GetSignature(this));
 }
 
 // ---------------------------------------------------------------------------

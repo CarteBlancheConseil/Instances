@@ -55,10 +55,7 @@ static int dummy_ivx_in_ivs(i2dvertex* vx, ivertices* vxs, int limit){
 // ------------
 bXMapLineUp	::bXMapLineUp(bGenericXMLBaseElement* elt, bGenericMacMapApp* gapp, CFBundleRef bndl) 
 			:bStdXMap(elt,gapp,bndl){
-	setclassname("lineup2");
-char	name[FILENAME_MAX];
-GetName(this,name);
-(void)_gapp->menuMgr()->add_item(kMenuMgrMenuPalettesID,name,GetSignature(this));
+	setclassname("lineup");
 }
 
 // ---------------------------------------------------------------------------

@@ -44,14 +44,8 @@
 // ------------
 bXMapPaint	::bXMapPaint(bGenericXMLBaseElement* elt, bGenericMacMapApp* gapp, CFBundleRef bndl) 
 			: bStdNSXMap(elt,gapp,bndl){
-	setclassname("paint2");
+	setclassname("paint");
 	set_flags(kXMapNeedIdle);
-
-/* A RETIRER */
-char	name[FILENAME_MAX];
-    GetName(this,name);
-    (void)_gapp->menuMgr()->add_item(kMenuMgrMenuPalettesID,name,GetSignature(this));
-/* A RETIRER */
 }
 
 // ---------------------------------------------------------------------------

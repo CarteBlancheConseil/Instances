@@ -82,11 +82,7 @@ char	buff2[__MESSAGE_STRING_LENGTH_MAX__*3];
 bXMapStringProcessing   ::bXMapStringProcessing(bGenericXMLBaseElement* elt, bGenericMacMapApp* gapp, CFBundleRef bndl)
                         : bStdXMap(elt,gapp,bndl)
                         ,_arr(sizeof(int)){
-	setclassname("stringprocessing2");
-		
-char	name[FILENAME_MAX];
-GetName(this,name);
-(void)_gapp->menuMgr()->add_item(kMenuMgrMenuPalettesID,name,GetSignature(this));
+	setclassname("stringprocessing");
 }
 
 // ---------------------------------------------------------------------------

@@ -32,8 +32,8 @@
 
 //----------------------------------------------------------------------------
 
-#include <vdef_lib/bvDefPaletteRange.h>
 #include <Carbon/Carbon.h>
+#include <std_ext/bStdNSPalettevDef.h>
 
 //----------------------------------------------------------------------------
 

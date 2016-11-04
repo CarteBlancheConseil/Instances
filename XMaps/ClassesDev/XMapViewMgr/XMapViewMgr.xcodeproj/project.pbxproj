@@ -36,7 +36,7 @@
 		14A6BF2B12C21A6400E6FBDB /* French */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = French; path = French.lproj/Palette.xib; sourceTree = "<group>"; };
 		14A6BF3F12C21B3600E6FBDB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		14A6C7A812C26F2C00E6FBDB /* French */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
-		14B73E6D1C770900009C23F8 /* bXMapViewMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMapViewMgr.cpp; sourceTree = "<group>"; };
+		14B73E6D1C770900009C23F8 /* bXMapViewMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMapViewMgr.cpp; sourceTree = "<group>"; usesTabs = 1; };
 		14B73E6E1C770900009C23F8 /* bXMapViewMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMapViewMgr.h; sourceTree = "<group>"; };
 		14B73E6F1C770900009C23F8 /* ViewMgrWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewMgrWindowController.h; sourceTree = "<group>"; };
 		14B73E701C770900009C23F8 /* ViewMgrWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewMgrWindowController.mm; sourceTree = "<group>"; };

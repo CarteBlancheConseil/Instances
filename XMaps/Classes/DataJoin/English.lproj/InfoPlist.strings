@@ -1,5 +1,0 @@
-/* Localized versions of Info.plist keys */
-
-CFBundleName = "Join Data…";
-CFBundleShortVersionString = "1.2";
-CFBundleGetInfoString = "Join Data… version 1.2, Copyright 2005 Carte Blanche Conseil.";

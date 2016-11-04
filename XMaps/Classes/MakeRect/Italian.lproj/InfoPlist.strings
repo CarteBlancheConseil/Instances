@@ -1,5 +1,0 @@
-/* Localized versions of Info.plist keys */
-
-CFBundleName = "Crea un rettangolo…";
-CFBundleShortVersionString = "1.2";
-CFBundleGetInfoString = "Crea un rettangolo… versione 1.2, Copyright 2005 Carte Blanche Conseil.";

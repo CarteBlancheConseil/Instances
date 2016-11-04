@@ -49,11 +49,7 @@ public:
     virtual bool process					(	int msg,
                                                 void* prm);
     virtual bool edit						(	void* prm);// Possibilité de passer un XML à éditer
-    
-    virtual bool wd_event					(	EventRef evt, 
-                                                WindowRef wd);
-    virtual void wd_init					(	WindowRef wd);
-    
+        
     virtual bXMapCalcCell* get_root         (   ){return _root;};
     virtual void set_root                   (   bXMapCalcCell* root){_root=root;};
 

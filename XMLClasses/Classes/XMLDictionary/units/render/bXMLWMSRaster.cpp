@@ -39,7 +39,7 @@
 // Constructeur
 // ------------
 bWMSRasterElement	::bWMSRasterElement(bGenericXMLBaseElement* elt, bGenericMacMapApp* gapp, CFBundleRef bndl )
-				: bStdXMLLowRenderElement(elt,gapp,bndl){
+                    : bStdXMLLowRenderElement(elt,gapp,bndl){
 	setclassname("wmsraster");
 	setobjectcompliant(false);
 	setclasscompliant(true);
@@ -71,6 +71,7 @@ void bWMSRasterElement::init(void *ctx){
 	_last[0]=0;
 	_sz=0;
 	bStdXMLLowRenderElement::init(ctx);
+    setobjectcompliant(false);
 }
 
 // ---------------------------------------------------------------------------
@@ -78,7 +79,8 @@ void bWMSRasterElement::init(void *ctx){
 // -----------
 bool bWMSRasterElement::actionstd(bGenericGraphicContext* ctx){
 _bTrace_("bWMSRasterElement::actionstd",false);
-char	val1[_values_length_max_];
+char	req[_values_length_max_];
+char	usr[_values_length_max_]="";
 
 	if(_data){
 		free(_data);
@@ -86,31 +88,38 @@ char	val1[_values_length_max_];
 	}
 	_sz=0;
 	
-	getvalue(val1);
-	
+    if(countelements()==0){
+        getvalue(req);
+    }
+    else{
+bStdXMLValueElement*	elt;
+        if(_elts.get(1,&elt)){
+            elt->getvalue(NULL,usr);
+        }
+        else{
+_te_("NULL user:pwd");
+            return(true);
+        }
+        if(_elts.get(2,&elt)){
+            elt->getvalue(NULL,req);
+        }
+        else{
+_te_("NULL request");
+            return(true);
+        }
+    }
+
 ivx_rect	ivr;
 dvx_rect	vr;
 
 CGRect	box=ctx->get_box();
 
     switch(ctx->signature()){
-        case kPDFGraphicContext:
-            ivr=*(_gapp->printMgr()->get_print_area());
-            break;
-        case kPrintGraphicContext:
-            ivr=*(_gapp->printMgr()->get_print_area());
-            break;
-        case kBitMapGraphicContext:
-            ivr=*(_gapp->printMgr()->get_print_area());
-            break;
-        case kKMLGraphicContext:
-            ivr=*(_gapp->printMgr()->get_print_area());
-            break;
         case kCtxGraphicContext:
             _gapp->mapIntf()->screenBounds(&ivr);
             break;
         default:
-            _gapp->mapIntf()->screenBounds(&ivr);
+            ivr=*(_gapp->printMgr()->get_print_area());
             break;
     }
 
@@ -132,17 +141,28 @@ d2dvertex   vx;
     vr.xmax=vx.x;
     vr.ymax=vx.y;
     
-bString	str(val1);
+bString	str(req);
 	str+"&Request=GetMap&BBox="+(int)vr.xmin+","+(int)vr.ymin+","+(int)vr.xmax+","+(int)vr.ymax;
 	str+"&Width="+(int)round(box.size.width)+"&Height="+(int)round(box.size.height);
 	
+_tm_(usr);
 __trc__.msg(str);
 
-	if(mmurl_get((char*)(str.string()),NULL,NULL,&_data,&_sz)!=0){
-_te_("zurl_get failed");
-		ctx->setImage(NULL,0,"");
-		return(objectcompliant());
-	}
+    if(countelements()==0){
+        if(mmurl_get((char*)(str.string()),NULL,NULL,&_data,&_sz)!=0){
+_te_("mmurl_get failed");
+            ctx->setImage(NULL,0,"");
+            return(objectcompliant());
+        }
+    }
+    else{       
+        if(mmurl_userGet(usr,(char*)(str.string()),NULL,NULL,&_data,&_sz)!=0){
+//        if(mmurl_userGet(usr,(char*)(str.string()),NULL,"/Users/benoit/Desktop/test",&_data,&_sz)!=0){
+_te_("mmurl_userGet failed");
+            ctx->setImage(NULL,0,"");
+            return(objectcompliant());
+        }
+    }
 	if(_data==NULL){
 _te_("NULL data");
 		ctx->setImage(NULL,0,"");

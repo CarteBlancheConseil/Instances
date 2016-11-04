@@ -56,10 +56,7 @@ typedef struct check_dist_prm{
 // ------------
 bXMapAssociation::bXMapAssociation(bGenericXMLBaseElement* elt, bGenericMacMapApp* gapp, CFBundleRef bndl)
                 : bStdXMap(elt,gapp,bndl){
-	setclassname("association2");
-char	name[FILENAME_MAX];
-GetName(this,name);
-(void)_gapp->menuMgr()->add_item(kMenuMgrMenuPalettesID,name,GetSignature(this));
+	setclassname("association");
 }
 
 // ---------------------------------------------------------------------------

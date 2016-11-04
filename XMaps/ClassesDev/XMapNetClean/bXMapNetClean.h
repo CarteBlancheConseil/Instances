@@ -73,6 +73,9 @@ public:
     virtual void set_prm					(	netcleanact_prm prm){_act_prm=prm;};
 				
 protected:
+    
+    virtual void init_data                  (   );
+    
     virtual void process_network			(	bool log);
     virtual void process_network			(	bArray& nodes,
                                                 bArray& edges);

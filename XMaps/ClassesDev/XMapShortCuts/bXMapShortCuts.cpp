@@ -128,12 +128,8 @@ bXMapShortCuts  ::bXMapShortCuts(bGenericXMLBaseElement* elt, bGenericMacMapApp*
                 ,_xbox(sizeof(shortcut_prm))
                 ,_macr(sizeof(shortcut_prm))
                 ,_scrp(sizeof(shortcut_prm)){
-	setclassname("shortcuts2");
+	setclassname("shortcuts");
     set_flags(kXMapNeedIdle+kXMapNeedEvents);
-		
-char	name[FILENAME_MAX];
-GetName(this,name);
-(void)_gapp->menuMgr()->add_item(kMenuMgrMenuPalettesID,name,GetSignature(this));
 }
 
 // ---------------------------------------------------------------------------

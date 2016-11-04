@@ -2264,3 +2264,18 @@ PresentationWindowController	*mmc=(PresentationWindowController*)instance;
     [localPool release];
 }
 
+// ---------------------------------------------------------------------------
+//
+// ------------
+void refreshCocoa(void* instance){
+NSAutoreleasePool               *localPool;
+PresentationWindowController	*mmc=(PresentationWindowController*)instance;
+    
+    if(mmc==NULL){
+        return;
+    }
+    localPool=[[NSAutoreleasePool alloc] init];
+    [mmc populateTypes];
+    [localPool release];
+}
+

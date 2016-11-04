@@ -109,7 +109,7 @@ void*			data=CGBitmapContextGetData(ctx);
 // ------------
 static bool CheckCache(int zoom, const char* dir){
 _bTrace_("CheckCache",false);
-	// Accès au dossier "Cache" (du user library)
+// Accès au dossier "Cache" (du user library)
 char	path[PATH_MAX*3];
     if(!NSGetUserCachePath(cNSUTF8StringEncoding,path)){
         return(false);
@@ -122,7 +122,7 @@ bStdUTF8Directory	abs(path);
 	
 mode_t	msk=S_IRWXU|S_IRWXG|S_IROTH|S_IXOTH;
 	
-	// Accès au dossier de cache de MacMap®
+// Accès au dossier de cache de MacMap®
 bString			fstr("com.cbconseil.macmap/");
 bStdDirectory	root(fstr.string());
 	if(root.status()){
@@ -151,7 +151,7 @@ _te_("chdir failed for "+fstr.string());
 		}
 	}
 	
-	// Accès au dossier du zoom
+// Accès au dossier du zoom
 	fstr.reset();
 	fstr+"Z"+zoom;
 	bStdDirectory	zdr(fstr.string());
@@ -293,7 +293,7 @@ bStdXMLValueElement*	elt;
 // 
 // -----------
 bool bTMSRasterElement::actionstd(bGenericGraphicContext* ctx){
-_bTrace_("bTMSRasterElement::actionstd",true);
+_bTrace_("bTMSRasterElement::actionstd",false);
 	if(_data){
 		free(_data);
 		_data=NULL;
@@ -335,23 +335,11 @@ _te_("CheckCache failed for zoom "+zoom);
 		}
 
         switch(ctx->signature()){
-            case kPDFGraphicContext:
-                vr=*(_gapp->printMgr()->get_print_area());
-                break;
-            case kPrintGraphicContext:
-                vr=*(_gapp->printMgr()->get_print_area());
-                break;
-            case kBitMapGraphicContext:
-                vr=*(_gapp->printMgr()->get_print_area());
-                break;
-            case kKMLGraphicContext:
-                vr=*(_gapp->printMgr()->get_print_area());
-                break;
             case kCtxGraphicContext:
                 _gapp->mapIntf()->screenBounds(&vr);
                 break;
             default:
-                _gapp->mapIntf()->screenBounds(&vr);
+                vr=*(_gapp->printMgr()->get_print_area());
                 break;
         }
         
@@ -359,12 +347,8 @@ _te_("CheckCache failed for zoom "+zoom);
 _te_("NULL area");
 			return(true);
 		}
-        
-_tm_(_trrect_(vr));
 
 CGRect	box=ctx->get_box();
-
-_tm_(_trxysz_(box));
 
 		vxo.h=vr.left;
 		vxo.v=vr.bottom;

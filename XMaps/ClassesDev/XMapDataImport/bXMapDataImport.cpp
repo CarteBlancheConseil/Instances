@@ -216,12 +216,8 @@ bXMapDataImport	::bXMapDataImport(bGenericXMLBaseElement* elt,
 								CFBundleRef bndl) 
 				:bStdXMap(elt,gapp,bndl)
 				,_cols(sizeof(datajoin_act)){
-	setclassname("dataimport2");
+	setclassname("dataimport");
 	_report=NULL;
-
-char	name[FILENAME_MAX];
-GetName(this,name);
-(void)_gapp->menuMgr()->add_item(kMenuMgrMenuPalettesID,name,GetSignature(this));
 }
 
 // ---------------------------------------------------------------------------

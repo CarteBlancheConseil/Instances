@@ -1,9 +1,0 @@
-/*MESSAGES*/
-"DataFill"				="Fill";
-"FillField"				="Fill Field";
-"WithValue"				="with value";
-"WithCalc"				="with calc";
-"WithField"				="with field";
-
-/*ERRORS*/
-"-1"					="An error occurred during the fill.";

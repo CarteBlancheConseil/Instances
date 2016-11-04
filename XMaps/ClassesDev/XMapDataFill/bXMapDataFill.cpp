@@ -47,11 +47,7 @@
 bXMapDataFill   ::bXMapDataFill(bGenericXMLBaseElement* elt, bGenericMacMapApp* gapp, CFBundleRef bndl)
                 : bStdXMap(elt,gapp,bndl)
                 ,_runs(sizeof(bXMapDataFillRun*)){
-	setclassname("datafill2");
-		
-char	name[FILENAME_MAX];
-GetName(this,name);
-(void)_gapp->menuMgr()->add_item(kMenuMgrMenuPalettesID,name,GetSignature(this));
+	setclassname("datafill");
 }
 
 // ---------------------------------------------------------------------------

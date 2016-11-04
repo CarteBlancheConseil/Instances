@@ -40,11 +40,7 @@
 // ------------
 bXMapPrefs   ::bXMapPrefs(bGenericXMLBaseElement* elt, bGenericMacMapApp* gapp, CFBundleRef bndl)
                 : bStdXMap(elt,gapp,bndl){
-	setclassname("prefs2");
-		
-char	name[FILENAME_MAX];
-GetName(this,name);
-(void)_gapp->menuMgr()->add_item(kMenuMgrMenuPalettesID,name,GetSignature(this));
+	setclassname("prefs");
 }
 
 // ---------------------------------------------------------------------------

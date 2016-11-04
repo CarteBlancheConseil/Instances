@@ -67,9 +67,6 @@ public:
     virtual bool process					(	int msg, 
                                                 void* prm);
     virtual bool edit						(	void* prm);
-    virtual bool wd_event					(	EventRef evt, 
-                                                WindowRef wd);
-    virtual void wd_init					(	WindowRef wd);
     
     virtual void set_import_type            (   long ik){_ik=ik;};
     virtual long get_import_type            (   ){return _ik;};

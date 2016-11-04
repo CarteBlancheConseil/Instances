@@ -1,5 +1,0 @@
-/* Localized versions of Info.plist keys */
-
-CFBundleName = "Raccourcis clavier…";
-CFBundleShortVersionString = "1.2";
-CFBundleGetInfoString = "Raccourcis clavier… version 1.2, Copyright 2005 Carte Blanche Conseil.";

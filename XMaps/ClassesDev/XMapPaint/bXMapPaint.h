@@ -60,7 +60,6 @@ protected:
 	virtual void* ccinit					(	);
 	
     virtual bool paint						(	int c);
-    virtual void puts						(	);
 
 private:
 

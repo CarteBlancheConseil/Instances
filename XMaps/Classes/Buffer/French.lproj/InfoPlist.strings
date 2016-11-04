@@ -1,5 +1,0 @@
-/* Localized versions of Info.plist keys */
-
-CFBundleName = "Zone tampon…";
-CFBundleShortVersionString = "1.2";
-CFBundleGetInfoString = "Zone tampon… version 1.2, Copyright 2005 Carte Blanche Conseil.";

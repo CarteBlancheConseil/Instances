@@ -1,5 +1,0 @@
-﻿/* Localized versions of Info.plist keys */
-
-CFBundleName = "Associer par un champ…";
-CFBundleShortVersionString = "1.2";
-CFBundleGetInfoString = "Associer par un champ… version 1.2, Copyright 2005 Carte Blanche Conseil.";

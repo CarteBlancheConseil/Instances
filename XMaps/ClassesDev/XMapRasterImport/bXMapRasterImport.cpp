@@ -51,11 +51,7 @@
 // ------------
 bXMapRasterImport	::bXMapRasterImport(bGenericXMLBaseElement* elt, bGenericMacMapApp* gapp, CFBundleRef bndl) 
 					:bStdXMap(elt,gapp,bndl){
-	setclassname("rasterimport2");
-
-char	name[FILENAME_MAX];
-GetName(this,name);
-(void)_gapp->menuMgr()->add_item(kMenuMgrMenuPalettesID,name,GetSignature(this));
+	setclassname("rasterimport");
 }
 
 // ---------------------------------------------------------------------------
@@ -346,136 +342,6 @@ _te_("setName failed");
 	}
 	
 	return(true);
-}
-
-// ---------------------------------------------------------------------------
-// 
-// ------------
-bool bXMapRasterImport::wd_event(EventRef evt, WindowRef wd){
-bool		b=true;
-//HICommand	cmd;
-//UInt32		clss;	
-//ControlRef	c;
-//char		val[256];
-//
-//	clss=GetEventClass(evt);
-//	if(clss==kEventClassCommand){
-//		GetEventParameter(evt,kEventParamDirectObject,typeHICommand,NULL,sizeof(HICommand),NULL,&cmd);
-//		switch(cmd.commandID){
-//			case kHICommandOK:
-//				c=get_control(kXMapRasterImportSignature,kXMapRasterImportXID);
-//				GetTextControlValue(c,val,256);
-//				_tl.x=matof(val);
-//				c=get_control(kXMapRasterImportSignature,kXMapRasterImportYID);
-//				GetTextControlValue(c,val,256);
-//				_tl.y=matof(val);
-//				c=get_control(kXMapRasterImportSignature,kXMapRasterImportXpID);
-//				GetTextControlValue(c,val,256);
-//				_br.x=matof(val);
-//				c=get_control(kXMapRasterImportSignature,kXMapRasterImportYpID);
-//				GetTextControlValue(c,val,256);
-//				_br.y=matof(val);
-//				c=get_control(kXMapRasterImportSignature,kXMapRasterImportScaleID);
-//				GetTextControlValue(c,val,256);
-//				_scl=matof(val);
-//				break;
-//				
-//			case kHICommandCancel:
-//				break;
-//			
-//			case kXMapRasterImportPopKindID:
-//				c=get_control(kXMapRasterImportSignature,kXMapRasterImportKFrameID);
-//				_ik=GetControl32BitValue(c);
-//				switch(_ik){
-//					case kRasterImportKindBotRight:
-//						c=get_control(kXMapRasterImportSignature,kXMapRasterImportKind1ID);
-//						ShowControl(c);
-//						c=get_control(kXMapRasterImportSignature,kXMapRasterImportKind2ID);
-//						HideControl(c);
-//						break;
-//					case kRasterImportKindScale:
-//						c=get_control(kXMapRasterImportSignature,kXMapRasterImportKind1ID);
-//						HideControl(c);
-//						c=get_control(kXMapRasterImportSignature,kXMapRasterImportKind2ID);
-//						ShowControl(c);
-//						break;
-//				}
-//				break;
-//				
-//			default:
-//				b=false;
-//				break;
-//		}
-//	}
-	return(b);
-}
-
-// ---------------------------------------------------------------------------
-// 
-// ------------
-void bXMapRasterImport::wd_init(WindowRef wd){
-//bGenericUnit*		u=_gapp->scaleMgr()->get();
-//
-//	_ik=kRasterImportKindBotRight;
-//	_scl=u->coef();
-//
-//	if(_gapp->cntMgr()->count()>0){
-//bGenericGeoElement*	o;
-//ivertices*			vxs;
-//		_gapp->cntMgr()->elements()->get(1,&o);
-//		o->getVertices(&vxs);
-//		Convert(&_tl,&vxs->vx.vx2[0]);
-//		_br=_tl;
-//	}
-//	else{
-//i2dvertex	vx;
-//		_gapp->mapIntf()->screenCenter(&vx);
-//		Convert(&_tl,&vx);
-//		_br=_tl;
-//	}
-//	
-//ControlRef	c;
-//
-//	c=get_control(kXMapRasterImportSignature,kXMapRasterImportKind2ID);
-//	HideControl(c);
-//	
-//char		val[256];
-//
-//	c=get_control(kXMapRasterImportSignature,kXMapRasterImportXID);
-//	SetTextControlFilter(c,float_filter);
-//	sprintf(val,"%.*f",_gapp->document()->dist_pref_digits(),_tl.x);
-//	SetTextControlValue(c,val);
-//	
-//	c=get_control(kXMapRasterImportSignature,kXMapRasterImportYID);
-//	SetTextControlFilter(c,float_filter);
-//	sprintf(val,"%.*f",_gapp->document()->dist_pref_digits(),_tl.y);
-//	SetTextControlValue(c,val);
-//	
-//	c=get_control(kXMapRasterImportSignature,kXMapRasterImportXpID);
-//	SetTextControlFilter(c,float_filter);
-//	sprintf(val,"%.*f",_gapp->document()->dist_pref_digits(),_br.x);
-//	SetTextControlValue(c,val);
-//	
-//	c=get_control(kXMapRasterImportSignature,kXMapRasterImportYpID);
-//	SetTextControlFilter(c,float_filter);
-//	sprintf(val,"%.*f",_gapp->document()->dist_pref_digits(),_br.y);
-//	SetTextControlValue(c,val);
-//
-//	c=get_control(kXMapRasterImportSignature,kXMapRasterImportScaleID);
-//	SetTextControlFilter(c,ufloat_filter);
-//	sprintf(val,"%.*f",_gapp->document()->dist_pref_digits(),_scl);
-//	SetTextControlValue(c,val);
-//	
-//	u=_gapp->distMgr()->get();
-//	u->short_name(val);
-//	c=get_control(kXMapRasterImportSignature,kXMapRasterImportXUnitID);
-//	SetTextControlValue(c,val);
-//	c=get_control(kXMapRasterImportSignature,kXMapRasterImportYUnitID);
-//	SetTextControlValue(c,val);
-//	c=get_control(kXMapRasterImportSignature,kXMapRasterImportXpUnitID);
-//	SetTextControlValue(c,val);
-//	c=get_control(kXMapRasterImportSignature,kXMapRasterImportYpUnitID);
-//	SetTextControlValue(c,val);
 }
 
 // ---------------------------------------------------------------------------

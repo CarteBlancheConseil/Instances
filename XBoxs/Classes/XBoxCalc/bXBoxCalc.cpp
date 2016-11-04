@@ -36,7 +36,7 @@
 // ------------
 bXBoxCalc	::bXBoxCalc(bGenericXMLBaseElement* elt, bGenericMacMapApp* gapp, CFBundleRef bndl) 
             : bStdNSXBox(elt,gapp,bndl){
-	setclassname("xboxCalc");
+	setclassname("xboxcalc");
 }
 
 // ---------------------------------------------------------------------------

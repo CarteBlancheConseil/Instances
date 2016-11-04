@@ -76,6 +76,12 @@ _tm_((void*)self);
 bGenericMacMapApp* gapp=(bGenericMacMapApp*)_ext->getapp();
     _mgr=gapp->macroMgr();
     _xsign=kXMLSubClassExtMacro;
+    
+bGenericExt* x=gapp->xmapMgr()->find('find');
+    if(x==NULL){
+        [_add_btn setEnabled:NO];
+        [_edt_btn setEnabled:NO];
+    }
 }
 
 // ---------------------------------------------------------------------------
@@ -114,9 +120,8 @@ _tm_(rowNumber);
         return;
     }
     
-bGenericMacMapApp*
-    gapp=(bGenericMacMapApp*)_ext->getapp();
-bGenericExt* ext=_mgr->get(rowNumber+1);
+bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
+bGenericExt*        ext=_mgr->get(rowNumber+1);
     if(ext==NULL){
         return;
     }
@@ -126,6 +131,21 @@ bGenericExt* x=gapp->xmapMgr()->find('find');
     }
     x->edit(ext);
     [_mgr_viw reloadData];
+}
+
+#pragma mark ---- Update Intf ----
+// ---------------------------------------------------------------------------
+//
+// -----------
+-(void)updateUI{
+bGenericMacMapApp*
+    gapp=(bGenericMacMapApp*)_ext->getapp();
+bGenericExt* ext=gapp->xmapMgr()->find('find');
+    
+NSInteger rowNumber=[_mgr_viw selectedRow];
+    [_rmv_btn setEnabled:(rowNumber>-1)];
+    [_edt_btn setEnabled:(rowNumber>-1)&&(ext!=NULL)];
+    [_dup_btn setEnabled:(rowNumber>-1)];
 }
 
 // ---------------------------------------------------------------------------
@@ -140,7 +160,7 @@ bGenericExt* x=gapp->xmapMgr()->find('find');
 void* initializeCocoa(void* gapp, 
 					  void* ext) {
 MacroWindowController	*controller;
-NSAutoreleasePool			*localPool;
+NSAutoreleasePool		*localPool;
 	
     localPool=[[NSAutoreleasePool alloc] init];   
     controller=[[MacroWindowController alloc] init];

@@ -62,7 +62,6 @@ protected:
 private:
     virtual void bufferize					(	);
     virtual void bufferize					(	buffer_prm prm);
-    virtual void puts						(	);
     
     buffer_prm	_prm;
 };

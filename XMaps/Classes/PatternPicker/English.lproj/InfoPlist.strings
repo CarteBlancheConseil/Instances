@@ -1,5 +1,0 @@
-/* Localized versions of Info.plist keys */
-
-CFBundleName = "Pattern Manager…";
-CFBundleShortVersionString = "1.2";
-CFBundleGetInfoString = "Pattern Manager… version 1.2, Copyright 2005 Carte Blanche Conseil.";
