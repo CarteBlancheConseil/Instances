@@ -95,7 +95,6 @@
 							</set>
 							<string key="NSFrame">{{-2, 24}, {404, 316}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
-							<reference key="NSNextKeyView" ref="258933331"/>
 							<array class="NSMutableArray" key="NSTabViewItems">
 								<object class="NSTabViewItem" id="363637803">
 									<string key="NSIdentifier">Defi</string>
@@ -1601,7 +1600,6 @@
 												<int key="NSvFlags">268</int>
 												<string key="NSFrame">{{329, 166}, {41, 19}}</string>
 												<reference key="NSSuperview" ref="258933331"/>
-												<reference key="NSNextKeyView" ref="672709513"/>
 												<array class="NSMutableArray" key="NSTabViewItems">
 													<object class="NSTabViewItem" id="366537618">
 														<string key="NSIdentifier">1</string>

@@ -53,7 +53,7 @@
 				<int key="NSWindowBacking">2</int>
 				<string key="NSWindowRect">{{0, 518}, {400, 360}}</string>
 				<int key="NSWTFlags">-1272446976</int>
-				<string key="NSWindowTitle">Lignes proportionnelles</string>
+				<string key="NSWindowTitle">Proportional Lines</string>
 				<string key="NSWindowClass">vDefPalettePropLinePanel</string>
 				<nil key="NSViewClass"/>
 				<nil key="NSUserInterfaceItemIdentifier"/>
@@ -92,7 +92,6 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{-2, 24}, {404, 316}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
-							<reference key="NSNextKeyView" ref="258933331"/>
 							<array class="NSMutableArray" key="NSTabViewItems">
 								<object class="NSTabViewItem" id="363637803">
 									<string key="NSIdentifier">Defi</string>
@@ -516,23 +515,22 @@
 													<string key="NSKeyEquivalent"/>
 													<int key="NSPeriodicDelay">400</int>
 													<int key="NSPeriodicInterval">75</int>
-													<object class="NSMenuItem" key="NSMenuItem" id="221080147">
-														<reference key="NSMenu" ref="61757171"/>
-														<string key="NSTitle">L=Q</string>
-														<string key="NSKeyEquiv"/>
-														<int key="NSKeyEquivModMask">1048576</int>
-														<int key="NSMnemonicLoc">2147483647</int>
-														<int key="NSState">1</int>
-														<reference key="NSOnImage" ref="973172817"/>
-														<reference key="NSMixedImage" ref="333018118"/>
-														<string key="NSAction">_popUpItemAction:</string>
-														<reference key="NSTarget" ref="1029357725"/>
-													</object>
+													<nil key="NSMenuItem"/>
 													<bool key="NSMenuItemRespectAlignment">YES</bool>
 													<object class="NSMenu" key="NSMenu" id="61757171">
 														<string key="NSTitle">OtherViews</string>
 														<array class="NSMutableArray" key="NSMenuItems">
-															<reference ref="221080147"/>
+															<object class="NSMenuItem" id="221080147">
+																<reference key="NSMenu" ref="61757171"/>
+																<string key="NSTitle">L=Q</string>
+																<string key="NSKeyEquiv"/>
+																<int key="NSKeyEquivModMask">1048576</int>
+																<int key="NSMnemonicLoc">2147483647</int>
+																<reference key="NSOnImage" ref="973172817"/>
+																<reference key="NSMixedImage" ref="333018118"/>
+																<string key="NSAction">_popUpItemAction:</string>
+																<reference key="NSTarget" ref="1029357725"/>
+															</object>
 															<object class="NSMenuItem" id="47717022">
 																<reference key="NSMenu" ref="61757171"/>
 																<string key="NSTitle">L=Q1/100</string>
@@ -601,7 +599,7 @@
 															</object>
 															<object class="NSMenuItem" id="230967701">
 																<reference key="NSMenu" ref="61757171"/>
-																<string key="NSTitle">L=Q3/2</string>
+																<string key="NSTitle">L=Q2/3</string>
 																<string key="NSKeyEquiv"/>
 																<int key="NSKeyEquivModMask">1048576</int>
 																<int key="NSMnemonicLoc">2147483647</int>
@@ -646,6 +644,7 @@
 														</array>
 														<reference key="NSMenuFont" ref="714212711"/>
 													</object>
+													<int key="NSSelectedIndex">-1</int>
 													<int key="NSPreferredEdge">1</int>
 													<bool key="NSUsesItemFromMenu">YES</bool>
 													<bool key="NSAltersState">YES</bool>
@@ -1597,7 +1596,6 @@
 												<int key="NSvFlags">268</int>
 												<string key="NSFrame">{{329, 166}, {41, 19}}</string>
 												<reference key="NSSuperview" ref="258933331"/>
-												<reference key="NSNextKeyView" ref="672709513"/>
 												<array class="NSMutableArray" key="NSTabViewItems">
 													<object class="NSTabViewItem" id="366537618">
 														<string key="NSIdentifier">1</string>
@@ -3452,7 +3450,7 @@
 					<string key="NSFrameSize">{400, 360}</string>
 					<reference key="NSNextKeyView" ref="720185253"/>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
+				<string key="NSScreenRect">{{0, 0}, {2560, 1417}}</string>
 				<string key="NSMinSize">{96, 111}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<bool key="NSWindowIsRestorable">YES</bool>
