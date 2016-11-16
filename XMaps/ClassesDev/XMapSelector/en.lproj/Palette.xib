@@ -2,10 +2,10 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1080</int>
-		<string key="IBDocument.SystemVersion">15A284</string>
+		<string key="IBDocument.SystemVersion">15G31</string>
 		<string key="IBDocument.InterfaceBuilderVersion">7702</string>
-		<string key="IBDocument.AppKitVersion">1404.11</string>
-		<string key="IBDocument.HIToolboxVersion">806.00</string>
+		<string key="IBDocument.AppKitVersion">1404.47</string>
+		<string key="IBDocument.HIToolboxVersion">807.20</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			<string key="NS.object.0">7702</string>
@@ -147,7 +147,6 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{13, 40}, {577, 363}}</string>
 							<reference key="NSSuperview" ref="697493821"/>
-							<reference key="NSNextKeyView" ref="526453487"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<array class="NSMutableArray" key="NSTabViewItems">
 								<object class="NSTabViewItem" id="754705536">
@@ -786,7 +785,7 @@
 																<reference key="NSBackgroundColor" ref="216190287"/>
 																<reference key="NSGridColor" ref="471518630"/>
 																<double key="NSRowHeight">17</double>
-																<int key="NSTvFlags">-633339904</int>
+																<int key="NSTvFlags">-767557632</int>
 																<reference key="NSDelegate"/>
 																<reference key="NSDataSource"/>
 																<int key="NSColumnAutoresizingStyle">4</int>

@@ -236,15 +236,22 @@ int		f,fk,fsz,fd;
 //_bTrace_("[DataFillWindowController doRemove]",true);
 bXMapDataFill*      ext=(bXMapDataFill*)_ext;
 bXMapDataFillRun*	run;
-long                idx=[_fldtbl selectedRow];
+long                idx=[_runtbl selectedRow];
     if(idx<0){
         return;
     }
     idx++;
-    ext->get_runs().get(idx,&run);
-    ext->get_runs().rmv(idx);
-    delete run;
-    [_runtbl reloadData];
+//_tm_(idx);
+
+    if(ext->get_runs().get(idx,&run)){
+//_tm_("ok");
+        ext->get_runs().rmv(idx);
+        delete run;
+        [_runtbl reloadData];
+    }
+//    else{
+//_te_("get failed");
+//    }
 }
 
 #pragma mark ---- Gestion TableView ----

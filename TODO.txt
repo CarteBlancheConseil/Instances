@@ -5,7 +5,7 @@ First, we have to re-write all Carbon interfaces in a Cocoa (or Swift) way, and 
 Nothing to do.
 
 * Geogs :
-GAlong, GFarthest, GFrom, GInclude, GInside, GLessThan, GMoreThan, GNearest and GOutside : build a Cocoa interface along with XMap Selector.
+Nothing to do.
 
 * Tools :
 Alter, Contiguous, Create, Info, Justification, PrintArea, Redraw, Select, Shape, Split, SymbRotation and Zoom : build a Cocoa interface for param dialogs.
@@ -23,12 +23,7 @@ ScaleRef : build a Cocoa interface.
 Nothing to do.
 
 * XMaps :
-Selector : rewrite dialog to Cocoa.
 JoinOnDir : don’t work the proper way, need to fix it.
-
-Done :
-DBStructure, Paint, VarEditor, CloneDetector, DBDefVal, IGrid, DataFill, StringProcessing, TransType, ViewMgr, FExp, DataImport, DataJoin, ToolMenuConfig, Shortcuts, Prefs, NetClean, NetCleanOptions, DashPicker, IconPicker, PatternPicker, RasterImport, CalcEditor, TopoCheck, Association, AssociationWithField, GeometryShift, Line2Surf, LineUp, MakePoly, MakeRect, MakeSquaring, Rotation, Scale, Shake, Simplify, Translation, Buffer, Print, PrintSetup : cocoa rewrite done in ClassesDev. Need to replace actual plugins for further versions.
-JPGPublisher, PNGPublisher and TIFFPublisher : cocoa rewrite done in xmap_lib 
 
 * XMLClasses :
 Nothing to do.

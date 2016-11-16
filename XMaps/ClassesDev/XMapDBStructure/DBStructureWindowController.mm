@@ -165,7 +165,8 @@ _bTrace_("[DBStructureWindowController close]",true);
 _bTrace_("[DBStructureWindowController doRemove]",true);
 bXMapDBStructure*	ext=(bXMapDBStructure*)_ext;
 int                 status;
-    for(long i=0;i<[_fldtblvw numberOfRows];i++){
+//    for(long i=0;i<[_fldtblvw numberOfRows];i++){
+    for(long i=[_fldtblvw numberOfRows];i>-1;i--){
         if([_fldtblvw isRowSelected:i]==YES){
             if((status=ext->remove(_tp,i+kOBJ_Dir_+1))){
 char			msg[__MESSAGE_STRING_LENGTH_MAX__];
