@@ -97,6 +97,9 @@ bXMapFExp*  ext=(bXMapFExp*)_ext;
     NSPopupButtonRemoveAllItems(_typpop);
     NSPopupButtonPopulateWithTypes(_typpop,(bGenericMacMapApp*)ext->getapp(),kBaseNoKind,1);
 
+//    [_flftbl setFrameOrigin:NSZeroPoint];
+//    [_flttbl setFrameOrigin:NSZeroPoint];
+    
 bGenericType*   tp;
 type_p*         p;
     for(long i=1;i<=((bGenericMacMapApp*)ext->getapp())->typesMgr()->count();i++){
@@ -233,18 +236,11 @@ fexp_field		fld={0,""};
 _bTrace_("[FExpWindowController doRemove]",true);
 NSIndexSet*     set=[_flttbl selectedRowIndexes];
 NSUInteger      idx=[set lastIndex];
-bGenericType*   tp=((bGenericMacMapApp*)_ext->getapp())->typesMgr()->get([_typpop indexOfSelectedItem]+1);
 type_p*         p;
-fexp_field		fld={0,""};
-int             iidx;
     
     _arr->get([_typpop indexOfSelectedItem]+1,&p);
     while(idx!=NSNotFound){
-        fld.fid=tp->fields()->get_id(idx+kOBJ_Name_);
-        iidx=p->_flds.search(&fld,fexp_field_comp);
-        if(iidx){
-            p->_flds.rmv(iidx);
-        }
+        p->_flds.rmv(idx+1);
         idx=[set indexLessThanIndex:idx];
     }
     [_flttbl reloadData];

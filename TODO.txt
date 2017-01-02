@@ -23,7 +23,7 @@ ScaleRef : build a Cocoa interface.
 Nothing to do.
 
 * XMaps :
-JoinOnDir : don’t work the proper way, need to fix it.
+Nothing to do.
 
 * XMLClasses :
 Nothing to do.

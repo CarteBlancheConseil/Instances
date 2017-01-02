@@ -61,7 +61,8 @@ bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
 
 bGenericType*	tp=gapp->typesMgr()->get(ext->get_type_index());
     NSPopupButtonRemoveAllItems(_fldpop);
-    NSPopupButtonPopulateWithFields(_fldpop,tp,kOBJ_Dir_+1,1);
+//    NSPopupButtonPopulateWithFields(_fldpop,tp,kOBJ_Dir_+1,1);
+    NSPopupButtonPopulateWithFields(_fldpop,tp,kOBJ_Name_,1);
     [self updateUI];
 }
 
@@ -83,7 +84,8 @@ bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
     ext->set_type_index([_typpop indexOfSelectedItem]+1);
 bGenericType*       tp=gapp->typesMgr()->get(ext->get_type_index());
     NSPopupButtonRemoveAllItems(_fldpop);
-    NSPopupButtonPopulateWithFields(_fldpop,tp,kOBJ_Dir_+1,1);
+//    NSPopupButtonPopulateWithFields(_fldpop,tp,kOBJ_Dir_+1,1);
+    NSPopupButtonPopulateWithFields(_fldpop,tp,kOBJ_Name_,1);
     [self updateUI];
 }
 
@@ -106,7 +108,8 @@ datajoin_act    action;
 bXMapDataJoin*  ext=(bXMapDataJoin*)_ext;
 datajoin_act    action;
     ext->actions().get([_fcltbl selectedRow]+1,&action);
-    action.fidx=[_fldpop indexOfSelectedItem]+kOBJ_Dir_+1;
+//    action.fidx=[_fldpop indexOfSelectedItem]+kOBJ_Dir_+1;
+    action.fidx=[_fldpop indexOfSelectedItem]+kOBJ_Name_;
     ext->actions().put([_fcltbl selectedRow]+1,&action);
     [self updateUI];
 }
@@ -184,9 +187,12 @@ datajoin_act    action;
         [_fldlbl setHidden:NO];
         [_fldpop setHidden:NO];
         [_fldpop setEnabled:YES];
-        [_fldpop selectItemAtIndex: action.fidx<kOBJ_Dir_+1?
+//        [_fldpop selectItemAtIndex: action.fidx<kOBJ_Dir_+1?
+//                                    0:
+//                                    action.fidx-kOBJ_Dir_-1];
+        [_fldpop selectItemAtIndex: action.fidx<kOBJ_Name_?
                                     0:
-                                    action.fidx-kOBJ_Dir_-1];
+                                    action.fidx-kOBJ_Name_];
     }
     else{
         [_fldlbl setHidden:YES];

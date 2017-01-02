@@ -1,5 +1,5 @@
 /* Localized versions of Info.plist keys */
 
-CFBundleName = "Rotazione…";
+CFBundleName = "Ruota…";
 CFBundleShortVersionString = "1.2";
-CFBundleGetInfoString = "Rotazione… versione 1.2, Copyright 2005 Carte Blanche Conseil.";
+CFBundleGetInfoString = "Ruota… versione 1.2, Copyright 2005 Carte Blanche Conseil.";

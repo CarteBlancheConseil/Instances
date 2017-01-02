@@ -61,7 +61,7 @@ bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
 
 bGenericType*	tp=gapp->typesMgr()->get(ext->get_type_index());
     NSPopupButtonRemoveItemsFrom(_fldpop,1);
-    NSPopupButtonPopulateWithFields(_fldpop,tp,kOBJ_Vertices_,1);
+    NSPopupButtonPopulateWithEditableFields(_fldpop,tp,kOBJ_Vertices_,1);
     if(ext->table()->signature()!=kTableMMText){
         NSPopupButtonMenuItemDisable(_fldpop,2);
     }
@@ -102,6 +102,7 @@ bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
     ext->set_type_index([_typpop indexOfSelectedItem]+1);
 bGenericType*       tp=gapp->typesMgr()->get(ext->get_type_index());
     NSPopupButtonRemoveItemsFrom(_fldpop,1);
+    
     NSPopupButtonPopulateWithFields(_fldpop,tp,kOBJ_Vertices_,1);
     if(ext->table()->signature()!=kTableMMText){
         NSPopupButtonMenuItemDisable(_fldpop,2);

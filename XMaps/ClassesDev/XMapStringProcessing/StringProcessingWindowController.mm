@@ -57,7 +57,7 @@ _tm_((void*)self);
 _bTrace_("[StringProcessingWindowController awakeFromNib]",true);
 bXMapStringProcessing*  ext=(bXMapStringProcessing*)_ext;
     NSPopupButtonRemoveAllItems(_filpop);
-    NSPopupButtonPopulateWithFields(_filpop,ext->get_type(),kOBJ_Name_,1);
+    NSPopupButtonPopulateWithEditableFields(_filpop,ext->get_type(),kOBJ_Name_,1);
     [self updateUI];
 }
 

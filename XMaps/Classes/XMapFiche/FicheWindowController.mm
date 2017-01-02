@@ -512,6 +512,7 @@ char					value[_values_length_max_];
 	}
 	
 XMapFicheCell*	cell;
+NSRect			nsr;
 	if(_addNew){
 		for(long i=kOBJ_Vertices_;i<=_tp->fields()->count();i++){
 bool			breaked=false;
@@ -525,7 +526,12 @@ NSEnumerator*	numer=[_cells objectEnumerator];
 			if(breaked){
 				continue;
 			}
-			(void)makeCell(_gapp,_tp,_cells,i,CGPointZero,true,true,kCellNoKind);
+            cell=makeCell(_gapp,_tp,_cells,i,CGPointZero,true,true,kCellNoKind);
+            if(cell){
+                nsr=[cell frame];
+                nsr.origin.x+=5;
+                [cell setFrame:nsr];
+            }
 		}
 	}
 	

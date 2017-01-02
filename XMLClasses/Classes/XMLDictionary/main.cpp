@@ -51,6 +51,8 @@ bGenericXMLBaseElement*	chld;
 	gapp->classMgr()->AddXMLClass(chld);
 	chld=new bNameElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
+    chld=new bAlternativeNameElement(*elt,gapp,bndl);
+    gapp->classMgr()->AddXMLClass(chld);
 	chld=new bParamElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
 	chld=new bPathElement(*elt,gapp,bndl);

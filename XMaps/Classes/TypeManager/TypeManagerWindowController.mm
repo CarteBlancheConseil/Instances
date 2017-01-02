@@ -46,29 +46,6 @@
 
 // ---------------------------------------------------------------------------
 // 
-// -----------
-/*@implementation NSControl (NSControlAdditions)
-
-// ---------------------------------------------------------------------------
-// 
-// -----------
--(void)setTypeManagerCharValue:(const char *)aString{
-	if(aString!=NULL){
-NSString*	nsstr=[NSString stringWithCString:aString encoding:NSMacOSRomanStringEncoding];
-		[self setStringValue:nsstr];
-	}
-	else{
-		[self setStringValue:@""];
-	}
-}
-
-// ---------------------------------------------------------------------------
-// 
-// -----------
-@end*/
-
-// ---------------------------------------------------------------------------
-// 
 // ------------
 static void getUnitShortLib(bGenericMacMapApp* gapp, double coef, char *lib){
 bGenericUnitMgr*	mgr=gapp->distMgr();
@@ -108,48 +85,8 @@ bGenericUnit*		lu;
 // ---------------------------------------------------------------------------
 // 
 // ------------
--(void)dealloc{
-//_bTrace_("[MakeConstraintsWindowController dealloc]",true);
-//_tm_((void*)self);
-//long version;
-//	Gestalt(gestaltSystemVersion,&version);
-//	if(version<0x01070){ // Pb plantage en sortie sous 10.6
-//		[[self window] dealloc];
-//		[self setWindow:nil];
-//	}
-	[super dealloc];
-}
-
-// ---------------------------------------------------------------------------
-// 
-// ------------
-//-(void)windowDidLoad {
-//_bTrace_("[MakeConstraintsWindowController windowDidLoad]",true);
-//	[super windowDidLoad];
-//}
-
-// ---------------------------------------------------------------------------
-// 
-// ------------
 -(void)awakeFromNib{	
 	[self updateUI];
-}
-
-// ---------------------------------------------------------------------------
-// 
-// ------------
--(void)close{
-//_bTrace_("[MakeConstraintsWindowController close]",true);
-//_tm_((void*)self);
-//long version;
-//	Gestalt(gestaltSystemVersion,&version);
-//	if(version<0x01070){ // Pb plantage en sortie sous 10.6
-//		if([self window]!=nil){
-//			[[self window] dealloc];
-//			[self setWindow:nil];
-//		}
-//	}
-	[super close];
 }
 
 #pragma mark ---- Intf Externe/Cocoa ----
@@ -171,11 +108,14 @@ _bTrace_("[MakeConstraintsWindowController runTypeManagerCocoaAppModal]",true);
 // 
 // -----------
 -(IBAction)doNew:(id)sender{
-bXMapTypeManager*	ext=(bXMapTypeManager*)(void*)_ext;
+bGenericMacMapApp*	gapp=(bGenericMacMapApp*)_ext->getapp();
+bXMapTypeManager*	ext=(bXMapTypeManager*)_ext;
 	if(!ext->new_action()){
 	}
 	[_typetbl reloadData];
-	[_typetbl selectRowIndexes:[NSIndexSet indexSetWithIndex:0] byExtendingSelection:NO];
+	[_typetbl selectRowIndexes:[NSIndexSet indexSetWithIndex:(gapp->typesMgr()->count()-1)]
+          byExtendingSelection:NO];
+    [_typetbl scrollRowToVisible:(gapp->typesMgr()->count()-1)];
 	[self checkRemove];
 	[self checkRename];
 	[self checkProtect];
@@ -186,11 +126,14 @@ bXMapTypeManager*	ext=(bXMapTypeManager*)(void*)_ext;
 // 
 // -----------
 -(IBAction)doOpen:(id)sender{
+bGenericMacMapApp*	gapp=(bGenericMacMapApp*)_ext->getapp();
 bXMapTypeManager*	ext=(bXMapTypeManager*)(void*)_ext;
 	if(!ext->add_action()){
 	}
-	[_typetbl reloadData];
-	[_typetbl selectRowIndexes:[NSIndexSet indexSetWithIndex:0] byExtendingSelection:NO];
+    [_typetbl reloadData];
+    [_typetbl selectRowIndexes:[NSIndexSet indexSetWithIndex:(gapp->typesMgr()->count()-1)]
+          byExtendingSelection:NO];
+    [_typetbl scrollRowToVisible:(gapp->typesMgr()->count()-1)];
 	[self checkRemove];
 	[self checkRename];
 	[self checkProtect];
@@ -202,7 +145,7 @@ bXMapTypeManager*	ext=(bXMapTypeManager*)(void*)_ext;
 // -----------
 -(IBAction)doRemove:(id)sender{
 long				index=[_typetbl selectedRow]+1;
-bXMapTypeManager*	ext=(bXMapTypeManager*)(void*)_ext;
+bXMapTypeManager*	ext=(bXMapTypeManager*)_ext;
 	if(!ext->rmv_action(index)){
 	}
 	[self checkRemove];
@@ -229,7 +172,7 @@ bAlertStop	alrt(msg,exp);
 // -----------
 -(IBAction)doProtect:(id)sender{
 long				index=[_typetbl selectedRow]+1;
-bXMapTypeManager*	ext=(bXMapTypeManager*)(void*)_ext;
+bXMapTypeManager*	ext=(bXMapTypeManager*)_ext;
 	if(!ext->prot_action(index)){
 	}
 	[self checkRemove];
@@ -243,7 +186,7 @@ bXMapTypeManager*	ext=(bXMapTypeManager*)(void*)_ext;
 // -----------
 -(IBAction)doUnprotect:(id)sender{
 long				index=[_typetbl selectedRow]+1;
-bXMapTypeManager*	ext=(bXMapTypeManager*)(void*)_ext;
+bXMapTypeManager*	ext=(bXMapTypeManager*)_ext;
 	if(!ext->unprot_action(index)){
 	}
 	[self checkRemove];

@@ -337,7 +337,7 @@ fexp_field				fld;
             break;
         }
         
-        chld=_gapp->classMgr()->NthElement(elt,1,"int");
+        chld=_gapp->classMgr()->NthElement(elt,1,"name");
         if(!chld){
             return(false);
         }
@@ -347,7 +347,7 @@ fexp_field				fld;
             return(false);
         }
         
-        nb=_gapp->classMgr()->CountElements(elt,"name");
+        nb=_gapp->classMgr()->CountElements(elt,"string");
         arr.reset();
         for(long j=1;j<=nb;j++){
             chld=_gapp->classMgr()->NthElement(elt,j,"name");
@@ -357,7 +357,7 @@ fexp_field				fld;
                 return(false);
             }
             fld.fname[0]=0;
-            chld=_gapp->classMgr()->NthElement(elt,j,"string");
+            chld=_gapp->classMgr()->NthElement(elt,j,"alternativename");
             if(chld){
                 chld->getvalue(fld.fname);
             }

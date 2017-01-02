@@ -69,7 +69,7 @@ bGenericTool*	tool=(bGenericTool*)CurTool(_gapp);
     
     if((clss==kEventClassMouse)&&(kind==kEventMouseDown)/*&&(_on_get)*/){
         tool->get_cur(&loc);
-        clickCocoa(_controller,loc);
+        clickCocoa(_controller,loc);// return true ?
     }
     else if(clss==kEventClassMacMap){
 bArray*			arr=_gapp->eventMgr()->events();

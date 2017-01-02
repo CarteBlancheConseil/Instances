@@ -148,20 +148,21 @@ int bXMapDBStructure::set_default_value(	bGenericType* tp,
                                             void* value,
                                             bool init){
 _bTrace_("bXMapDBStructure::set_default_value",true);
-char	msg[__MESSAGE_STRING_LENGTH_MAX__];
-char	exp[__MESSAGE_STRING_LENGTH_MAX__];
+//char	msg[__MESSAGE_STRING_LENGTH_MAX__];
+//char	exp[__MESSAGE_STRING_LENGTH_MAX__];
    
     if(init&&tp->nb_live()>0){
-b_message_string("init existing",msg,getbundle(),1);
-b_message_string("init existing exp",exp,getbundle(),1);
-bAlertWarningYes	alrt(msg,exp);
-        if(alrt.result()){
+_tm_("init ok");
+//b_message_string("init existing",msg,getbundle(),1);
+//b_message_string("init existing exp",exp,getbundle(),1);
+//bAlertWarningYes	alrt(msg,exp);
+//        if(alrt.result()){
             for(long i=1;i<=tp->fields()->count_records();i++){
                 if(tp->fields()->write(i,field,value)){
                     return _bDataBaseSetDefaultValueErr_;
                 }
             }
-        }
+//        }
     }
     if(!tp->fields()->set_default_value(field,value)){
         return _bDataBaseSetDefaultValueErr_;

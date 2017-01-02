@@ -275,9 +275,9 @@ bXMapDataFill*  ext=(bXMapDataFill*)_ext;
 // ---------------------------------------------------------------------------
 //
 // -----------
--(id)	tableView:(NSTableView*)aTableView
+-(id)           tableView:(NSTableView*)aTableView
 objectValueForTableColumn:(NSTableColumn*)aTableColumn
-            row:(NSInteger)rowIndex{
+                      row:(NSInteger)rowIndex{
 bXMapDataFill*  ext=(bXMapDataFill*)_ext;
 NSString*       nsstr;
 char            str[256];
@@ -350,7 +350,11 @@ int		d;
 // -----------
 -(void)updateUI{
 //_bTrace_("[MakeConstraintsWindowController updateUI]",true);
-    [_addbtn setEnabled:([_fldtbl selectedRow]>=0)];
+bXMapDataFill*  ext=(bXMapDataFill*)_ext;
+    [_addbtn setEnabled:(   ([_fldtbl selectedRow]>=0)&&
+                            (!ext->get_type()->fields()->is_writeprotected([_fldtbl selectedRow]+kOBJ_Name_))&&
+                            (!ext->get_type()->fields()->is_hidden([_fldtbl selectedRow]+kOBJ_Name_))&&
+                            (!ext->get_type()->fields()->is_dyn([_fldtbl selectedRow]+kOBJ_Name_)))];
     [_rmvbtn setEnabled:([_runtbl selectedRow]>=0)];
 }
 

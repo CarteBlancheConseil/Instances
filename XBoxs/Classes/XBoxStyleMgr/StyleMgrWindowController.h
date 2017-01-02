@@ -58,6 +58,7 @@
 		
 	NSInteger				_tp_index;
 	unsigned int			_vdef_sgn;
+    long                    _last_count;
 }
 
 //----------------------------------------------------------------------------

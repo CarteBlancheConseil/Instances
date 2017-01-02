@@ -120,9 +120,11 @@ bGenericStyle*	stl=gapp->layersAccessCtx()->get(idx);
 		tp=stl->gettype();
 		if(tp){
 			_tp_index=stl->gettype()->index();
+            _last_count=tp->styles()->count();
 		}
 		else{
 			_tp_index=-1;
+            _last_count=gapp->document()->styles()->count();
 		}
 	}
 	NSPopupButtonPopulateWithTypes(_typ_pop,(bGenericMacMapApp*)_ext->getapp(),kBaseNoKind,_tp_index==-1?1:_tp_index+2);
@@ -409,6 +411,7 @@ NSInteger			nr=0;
 -(id)	tableView:(NSTableView*)aTableView 
 		objectValueForTableColumn:(NSTableColumn*)aTableColumn 
 		row:(NSInteger)rowIndex{
+_bTrace_("[StyleMgrWindowController tableView:objectValueForTableColumn:row]",true);
 bGenericMacMapApp*	gapp=(bGenericMacMapApp*)_ext->getapp();
 bGenericType*		tp=gapp->typesMgr()->get(_tp_index);
 NSInteger			nr=0;
@@ -431,15 +434,18 @@ char				name[256]="uninit";
    setObjectValue:(id)anObject
    forTableColumn:(NSTableColumn*)aTableColumn
 			  row:(NSInteger)rowIndex{
+_bTrace_("[StyleMgrWindowController tableView:setObjectValue:forTableColumn:row]",true);
 bGenericMacMapApp*	gapp=(bGenericMacMapApp*)_ext->getapp();
 bGenericType*		tp=gapp->typesMgr()->get(_tp_index);
 NSInteger			nr=0;
 char				name[256]="uninit";
 NSString*			nsstr=(NSString*)anObject;
+_tm_(rowIndex);
 	
 	[nsstr getCString:name maxLength:255 encoding:NSMacOSRomanStringEncoding];
 	nr=[self getStyleIndex:rowIndex];
 	if(tp){
+_tm_(nr);
 		if(!tp->styles()->set_name(nr,name)){
 			NSBeep();
 		}
@@ -520,7 +526,8 @@ NSInteger			nr=0;
     else{
         nr=gapp->document()->styles()->count();
     }
-    if(nr!=[_stl_tbl numberOfRows]){
+    if(nr!=_last_count){
+        _last_count=nr;
         [_stl_tbl reloadData];
     }
 }

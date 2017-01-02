@@ -108,7 +108,6 @@ _bTrace_("[DBStructureWindowController close]",true);
             [_edtpbtn setEnabled:YES];
             [_lenmfld setStringValue:MMLocalizedString(kMsgLength,1)];
             break;
-        case 1:
         case 4:
         case 5:
             [_namefld setEnabled:YES];
@@ -121,6 +120,7 @@ _bTrace_("[DBStructureWindowController close]",true);
             [_edtpbtn setEnabled:YES];
             [_lenmfld setStringValue:MMLocalizedString(kMsgLength,1)];
             break;
+        case 1:
         case 2:
             [_namefld setEnabled:YES];
             [_lengfld setEnabled:NO];
@@ -185,7 +185,7 @@ bAlertStop      alrt(msg,"");
 // -----------
 -(IBAction)doAdd:(id)sender{
 _bTrace_("[DBStructureWindowController doAdd]",true);
-bXMapDBStructure*	ext=(bXMapDBStructure*)/*(void*)*/_ext;
+bXMapDBStructure*	ext=(bXMapDBStructure*)_ext;
     if(ext==NULL){
 _te_("ext==NULL");
         return;
@@ -240,59 +240,61 @@ char                exp[__MESSAGE_STRING_LENGTH_MAX__];
 bAlertStop	alrt(msg,exp);
         return;
     }
-    
-    [_fldtblvw reloadData];
-    [self updateUI];
-    
+
 // New field index
     fld=_tp->fields()->get_index(name);
-    [_fldtblvw selectRowIndexes:[NSIndexSet indexSetWithIndex:fld-kOBJ_Dir_-1] byExtendingSelection:NO];
-
-// Masked flag
-    if((status=ext->set_masked(_tp,fld,[_maskbtn intValue]))){
-        error_string(error_num(_bDataBaseErr_,status),msg);
-bAlertStop	alrt(msg,"");
-        return;
-    }
-// Delete protected flag
-    if((status=ext->set_delete_protected(_tp,fld,[_delpbtn intValue]))){
-        error_string(error_num(_bDataBaseErr_,status),msg);
-bAlertStop	alrt(msg,"");
-        return;
-    }
-// Write protected flag
-    if((status=ext->set_write_protected(_tp,fld,[_edtpbtn intValue]))){
-        error_string(error_num(_bDataBaseErr_,status),msg);
-bAlertStop	alrt(msg,"");
-        return;
-    }
     
+    for(;;){
+// Masked flag
+        if((status=ext->set_masked(_tp,fld,[_maskbtn intValue]))){
+            error_string(error_num(_bDataBaseErr_,status),msg);
+bAlertStop	alrt(msg,"");
+            break;
+        }
+// Delete protected flag
+        if((status=ext->set_delete_protected(_tp,fld,[_delpbtn intValue]))){
+            error_string(error_num(_bDataBaseErr_,status),msg);
+bAlertStop	alrt(msg,"");
+            break;
+        }
+// Write protected flag
+        if((status=ext->set_write_protected(_tp,fld,[_edtpbtn intValue]))){
+            error_string(error_num(_bDataBaseErr_,status),msg);
+bAlertStop	alrt(msg,"");
+            break;
+        }
 
 // Default value
-    if([[_valufld stringValue] getCString:name maxLength:255 encoding:NSMacOSRomanStringEncoding]==NO){
-        return;
-    }
-    if(strlen(name)==0){
-        return;
-    }
-    if(!charToX(kind,decs,name,buff)){
-        error_string(error_num(_bDataBaseErr_,_bDataBaseSetDefaultValueErr_),msg);
-        b_message_string("unsupported def val err exp",exp,ext->getbundle(),1);
+        if([[_valufld stringValue] getCString:name maxLength:255 encoding:NSMacOSRomanStringEncoding]==NO){
+            break;
+        }
+        if(strlen(name)==0){
+            break;
+        }
+        if(!charToX(kind,decs,name,buff)){
+            error_string(error_num(_bDataBaseErr_,_bDataBaseSetDefaultValueErr_),msg);
+            b_message_string("unsupported def val err exp",exp,ext->getbundle(),1);
 bAlertStop	alrt(msg,"");
-        return;
-    }
+            break;
+        }
 bool    init=false;
-    if((strlen(name)>0)&&(_tp->nb_live()>0)){
-        b_message_string("init existing",msg,ext->getbundle(),1);
-        b_message_string("init existing exp",exp,ext->getbundle(),1);
+        if((strlen(name)>0)&&(_tp->nb_live()>0)){
+            b_message_string("init existing",msg,ext->getbundle(),1);
+            b_message_string("init existing exp",exp,ext->getbundle(),1);
 bAlertWarningYes	alrt(msg,exp);
-        init=alrt.result();
-    }
-    if((status=ext->set_default_value(_tp,fld,buff,init))){
-        error_string(error_num(_bDataBaseErr_,status),msg);
+            init=alrt.result();
+        }
+        if((status=ext->set_default_value(_tp,fld,buff,init))){
+            error_string(error_num(_bDataBaseErr_,status),msg);
 bAlertStop	alrt(msg,"");
-        return;
+            break;
+        }
+        break;
     }
+    
+    [_fldtblvw reloadData];
+    [_fldtblvw selectRowIndexes:[NSIndexSet indexSetWithIndex:fld-kOBJ_Dir_-1] byExtendingSelection:NO];
+    [_fldtblvw scrollRowToVisible:(fld-kOBJ_Dir_-1)];
 }
 
 // ---------------------------------------------------------------------------

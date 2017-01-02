@@ -2,9 +2,9 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1080</int>
-		<string key="IBDocument.SystemVersion">15E65</string>
+		<string key="IBDocument.SystemVersion">15G31</string>
 		<string key="IBDocument.InterfaceBuilderVersion">7702</string>
-		<string key="IBDocument.AppKitVersion">1404.46</string>
+		<string key="IBDocument.AppKitVersion">1404.47</string>
 		<string key="IBDocument.HIToolboxVersion">807.20</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -43,7 +43,7 @@
 				<int key="NSWindowBacking">2</int>
 				<string key="NSWindowRect">{{944, 950}, {288, 245}}</string>
 				<int key="NSWTFlags">-1267204096</int>
-				<string key="NSWindowTitle">Rotazione…</string>
+				<string key="NSWindowTitle">Ruota…</string>
 				<string key="NSWindowClass">NSWindow</string>
 				<nil key="NSViewClass"/>
 				<nil key="NSUserInterfaceItemIdentifier"/>
@@ -84,6 +84,7 @@
 							<string key="NSFrame">{{178, 13}, {96, 32}}</string>
 							<reference key="NSSuperview" ref="697493821"/>
 							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="559331898">
 								<int key="NSCellFlags">67108864</int>
@@ -182,7 +183,7 @@
 								<int key="NSPeriodicInterval">75</int>
 								<object class="NSMenuItem" key="NSMenuItem" id="901192380">
 									<reference key="NSMenu" ref="1056736996"/>
-									<string key="NSTitle">oriario</string>
+									<string key="NSTitle">orario</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<int key="NSState">1</int>
@@ -209,7 +210,6 @@
 									</array>
 									<reference key="NSMenuFont" ref="817366365"/>
 								</object>
-								<int key="NSSelectedIndex">-1</int>
 								<int key="NSPreferredEdge">1</int>
 								<bool key="NSUsesItemFromMenu">YES</bool>
 								<bool key="NSAltersState">YES</bool>

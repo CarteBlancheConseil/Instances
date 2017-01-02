@@ -190,6 +190,7 @@ bXMapMakeConstraints*	ext=(bXMapMakeConstraints*)_ext;
 long	cindex=((bGenericType*)_tp)->fields()->count_constraints(_findex);
 	[_cnttblvw reloadData];
 	[_cnttblvw selectRowIndexes:[NSIndexSet indexSetWithIndex:cindex-1] byExtendingSelection:NO];
+    [_cnttblvw scrollRowToVisible:(cindex-1)];
 	[self checkKind];
 }
 

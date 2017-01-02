@@ -228,7 +228,8 @@ bool bXMapRasterImport::import(){
 // ------------
 bool bXMapRasterImport::import(import_prm* prm){
 _bTrace_("bXMapRasterImport::import",false);
-bGenericType*	tp=_gapp->typesMgr()->get(_gapp->typesMgr()->index(_prm.grid.t_raster));
+    prm->ctin=false;
+bGenericType*	tp=GISIOImport_getImportType(_gapp,kBaseKindRaster,_prm);/*_gapp->typesMgr()->get(_gapp->typesMgr()->index(_prm.grid.t_raster));*/
 	if(tp==NULL){
 _te_("tp==NULL");
         prm->typErr++;

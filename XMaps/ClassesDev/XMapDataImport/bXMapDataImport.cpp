@@ -419,6 +419,14 @@ int				k;
 			else{
 				action.k=kDataJoinActionFill;
 			}
+            if(action.k==kDataJoinActionFill){
+                if(bse->is_writeprotected(action.fidx)  ||
+                   bse->is_hidden(action.fidx)          ||
+                   bse->is_dyn(action.fidx)             ){
+                    action.k=kDataJoinActionIgnore;
+                    action.fidx=0;
+                }
+            }
 		}
 		else{
 			if(	(k==_char)	||
