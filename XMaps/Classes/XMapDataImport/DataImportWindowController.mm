@@ -136,6 +136,23 @@ datajoin_act        action;
     [self updateUI];
 }
 
+// ---------------------------------------------------------------------------
+//
+// -----------
+-(IBAction)doIgnoreAll:(id)sender{
+_bTrace_("[DataImportWindowController doIgnoreAll]",true);
+bXMapDataImport*    ext=(bXMapDataImport*)_ext;
+datajoin_act        action;
+    
+    for(long i=1;i<=ext->actions().count();i++){
+        ext->actions().get(i,&action);
+        action.k=kDataJoinActionIgnore;
+        ext->actions().put(i,&action);
+    }
+    [self updateUI];
+}
+
+
 #pragma mark ---- Gestion TableView ----
 // -------------------------------------------------------------------------;--
 //

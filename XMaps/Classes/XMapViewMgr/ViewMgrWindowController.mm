@@ -92,7 +92,7 @@ _bTrace_("[ViewMgrWindowController doRemove]",true);
 // -----------
 -(IBAction)doDuplicate:(id)sender{
 _bTrace_("[ViewMgrWindowController doDuplicate]",true);
-    if(((bXMapViewMgr*)_ext)->remove([_viwtbl selectedRow]+1)!=noErr){
+    if(((bXMapViewMgr*)_ext)->duplicate([_viwtbl selectedRow]+1)!=noErr){
         NSBeep();
     }
     [_viwtbl reloadData];

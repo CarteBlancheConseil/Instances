@@ -46,6 +46,7 @@
 -(IBAction)doChooseType:(id)sender;
 -(IBAction)doChooseAction:(id)sender;
 -(IBAction)doChooseField:(id)sender;
+-(IBAction)doIgnoreAll:(id)sender;
 
 //----------------------------------------------------------------------------
 -(void)updateUI;
