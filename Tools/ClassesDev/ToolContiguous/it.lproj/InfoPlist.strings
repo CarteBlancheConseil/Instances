@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Strumento Contiguo";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Strumento Contiguo versione 1.2, Copyright 2005 Carte Blanche Conseil.";
