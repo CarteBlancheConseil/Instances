@@ -57,14 +57,14 @@ type_p	::~type_p(){
 //
 // ------------
 bool type_p::load(bGenericMacMapApp* gapp){
-_bTrace_("type_p::load",true);
+//_bTrace_("type_p::load",true);
 bGenericXMLBaseElement*	root=GetXMLParamFromType(gapp,_tp,kXMapFExpMessageID,kXMapFExpStdParamID);
 fexp_field				fld;
     if(!root){
-_te_("root==NULL");
+//_te_("root==NULL");
 //int		fid;
         for(long i=kOBJ_Name_;i<=_tp->fields()->count();i++){
-            _tm_(i);
+//_tm_(i);
             fld.fid=_tp->fields()->get_id(i);
             //_tp->fields()->get_name(i,fld.fname);
             fld.fname[0]=0;
@@ -129,6 +129,7 @@ fexp_field	fld;
     if(!strcmp(name,"int")){
         elt->getvalue(value);
         fld.fid=atoi(value);
+        fld.fname[0]=0;
         p->_flds.add(&fld);
     }
     else if(!strcmp(name,"name")){
@@ -188,7 +189,7 @@ void bXMapFExp::open(int* flags){
 // 
 // -----------
 bool bXMapFExp::process(int msg, void* prm){
-_bTrace_("bXMapFExp::process()",true);	
+//_bTrace_("bXMapFExp::process()",true);	
 fexp_prm* p=(fexp_prm*)prm;
     switch(msg){
         case kExtProcessCallFromIntf:
