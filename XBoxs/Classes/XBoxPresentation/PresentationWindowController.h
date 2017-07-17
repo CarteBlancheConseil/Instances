@@ -109,6 +109,7 @@
 -(void)populateViews;
 -(void)askForViewSave;
 
+-(void)modify;
 -(void)redraw;
 -(bGenericExt*)getExt;
 

@@ -1209,6 +1209,7 @@ bGenericStyle*      styl=(bGenericStyle*)CurLayer(gapp);
     if(!styl){
         return NO;
     }
+    [(PresentationWindowController*)[[self window] windowController] modify];
 bGenericType*       tp=(bGenericType*)CurType(gapp);
     if(!tp){
         return [self popupStyleDocument];
@@ -1464,6 +1465,13 @@ _tm_((void*)self);
 // -----------
 -(void)redraw{
     _reload=YES;
+}
+
+// ---------------------------------------------------------------------------
+//
+// -----------
+-(void)modify{
+    _modi=YES;
 }
 
 // ---------------------------------------------------------------------------

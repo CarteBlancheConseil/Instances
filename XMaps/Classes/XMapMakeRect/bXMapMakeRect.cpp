@@ -236,7 +236,7 @@ _te_("new_object");
 		ivs_free(vxs);
 		return(false);
 	}
-	if(!InitWithStyle(_gapp,_gapp->layersAccessCtx()->get_current(),o)){
+    if(!InitWithStyle(_gapp,_gapp->layersAccessCtx()->get_current(),o)){
 		MMBeep();
 	}
 	if(!o->setVertices(vxs)){

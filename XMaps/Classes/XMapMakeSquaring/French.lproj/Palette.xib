@@ -2,9 +2,9 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1080</int>
-		<string key="IBDocument.SystemVersion">15E65</string>
+		<string key="IBDocument.SystemVersion">15G1421</string>
 		<string key="IBDocument.InterfaceBuilderVersion">7702</string>
-		<string key="IBDocument.AppKitVersion">1404.46</string>
+		<string key="IBDocument.AppKitVersion">1404.47</string>
 		<string key="IBDocument.HIToolboxVersion">807.20</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -1341,7 +1341,7 @@
 				<string key="1227.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<boolean value="YES" key="784.IBNSWindowAutoPositionCentersHorizontal"/>
 				<boolean value="YES" key="784.IBNSWindowAutoPositionCentersVertical"/>
-				<string key="784.IBPersistedLastKnownCanvasPosition">{272, 269.5}</string>
+				<string key="784.IBPersistedLastKnownCanvasPosition">{276, 276.5}</string>
 				<string key="784.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="784.IBWindowTemplateEditedContentRect">{{648, 500}, {472, 325}}</string>
 				<boolean value="NO" key="784.NSWindowTemplate.visibleAtLaunch"/>
