@@ -110,6 +110,7 @@
 -(void)askForViewSave;
 -(void)setModified;
 
+-(void)modify;
 -(void)redraw;
 -(bGenericExt*)getExt;
 

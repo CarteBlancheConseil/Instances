@@ -237,7 +237,11 @@ d2dvertex			co=*dvx,c;
 int					i,j;
 char				msg[__MESSAGE_STRING_LENGTH_MAX__];
 	message_string(kMsgProgress,msg,1);
+<<<<<<< HEAD
 bProgressWait wt("",msg,true,(nh*nv));
+=======
+bProgressWait wt("",msg,true,true,(nh*nv));
+>>>>>>> origin/master
    
 	_gapp->layersMgr()->SetObjInvalidation(false);
 	co.y+=sz;
@@ -264,7 +268,11 @@ _te_("new_object");
                 _gapp->layersMgr()->SetObjInvalidation(true);
                 return(false);
 			}
+<<<<<<< HEAD
             if(!InitWithStyle(_gapp,_gapp->layersMgr()->get_current(),o)){
+=======
+            if(!InitWithStyle(_gapp,_gapp->layersAccessCtx()->get_current(),o)){
+>>>>>>> origin/master
                 MMBeep();
             }
 			if(!o->setVertices(vxs)){
@@ -301,7 +309,11 @@ int					i,j;
 double				d=(sz/sin(M_PI/3.0))/2.0;
 char				msg[__MESSAGE_STRING_LENGTH_MAX__];
 	message_string(kMsgProgress,msg,1);
+<<<<<<< HEAD
 bProgressWait wt("",msg,true,(nh*nv));
+=======
+bProgressWait wt("",msg,true,true,(nh*nv));
+>>>>>>> origin/master
 
 	_gapp->layersMgr()->SetObjInvalidation(false);
 	co.y-=d;
@@ -346,7 +358,11 @@ _te_("new_object");
                 _gapp->layersMgr()->SetObjInvalidation(true);
                 return(false);
 			}
+<<<<<<< HEAD
             if(!InitWithStyle(_gapp,_gapp->layersMgr()->get_current(),o)){
+=======
+            if(!InitWithStyle(_gapp,_gapp->layersAccessCtx()->get_current(),o)){
+>>>>>>> origin/master
                 MMBeep();
 			}
 			if(!o->setVertices(vxs)){
