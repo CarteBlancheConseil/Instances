@@ -110,13 +110,13 @@ _tm_((void*)self);
 -(void)awakeFromNib{
 _bTrace_("[StyleMgrWindowController awakeFromNib]",true);
 bGenericMacMapApp*	gapp=(bGenericMacMapApp*)_ext->getapp();
-int					idx=gapp->layersAccessCtx()->get_current();
+long				idx=gapp->layersMgr()->get_current();
 bGenericType*		tp=NULL;
 	if(idx==0){
 		_tp_index=-1;
 	}
 	else{
-bGenericStyle*	stl=gapp->layersAccessCtx()->get(idx);
+bGenericStyle*	stl=gapp->layersMgr()->get(idx);
 		tp=stl->gettype();
 		if(tp){
 			_tp_index=stl->gettype()->index();
@@ -326,9 +326,9 @@ int					idx=[self getStyleIndex:[_stl_tbl selectedRow]];
 	if(idx<0){
 		return;
 	}
-	if(gapp->layersAccessCtx()->add(_tp_index,idx)){
-		gapp->layersAccessCtx()->set_current(gapp->layersAccessCtx()->count());
-	}
+    if(gapp->layersMgr()->add(_tp_index,idx)){
+        gapp->layersMgr()->set_current(gapp->layersMgr()->count());
+    }
 }
 
 #pragma mark ---- Update Intf ----

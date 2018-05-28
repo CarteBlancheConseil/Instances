@@ -144,9 +144,7 @@ bArray& bXMapDataFill::get_runs(){
 // -----------
 void bXMapDataFill::fill_data(){
 bEventLog	log(_gapp,this);
-    _gapp->layersMgr()->SetObjInvalidation(false);
     fill_data(false);
-    _gapp->layersMgr()->SetObjInvalidation(true);
     log.close();
 }
 
@@ -163,10 +161,12 @@ char				msg[__MESSAGE_STRING_LENGTH_MAX__];
 char				ttl[__MESSAGE_STRING_LENGTH_MAX__];
     GetName(this,ttl);
     
+    _gapp->layersMgr()->SetObjInvalidation(false);
+
     _gapp->selMgr()->flush();
     
     message_string(kMsgProgress,msg,1);
-bProgressWait wt(ttl,msg,true,true,sel.count());
+bProgressWait wt(ttl,msg,true,sel.count());
     for(long i=1;i<=sel.count();i++){
         if(!wt.set_progress(i)){
             _tm_("user break");
@@ -190,6 +190,8 @@ _te_("run->apply failed at ("+i+":"+j+")");
     _gapp->selMgr()->flush();
     _gapp->selMgr()->add(&sel);
     
+    _gapp->layersMgr()->SetObjInvalidation(true);
+
     reset();
     if(err){
         b_error_string(kXMapDataFillErrorCode,msg,getbundle());

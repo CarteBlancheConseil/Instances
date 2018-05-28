@@ -38,23 +38,23 @@
 //----------------------------------------------------------------------------
 
 class bvDefPaletteQuickSymb : public bvDefPaletteQuick{
-	public:		
-		bvDefPaletteQuickSymb					(	bGenericXMLBaseElement* elt, 
-													bGenericMacMapApp* gapp, 
-													CFBundleRef bndl);
-		virtual ~bvDefPaletteQuickSymb			(	);
-		virtual bGenericXMLBaseElement* create	(	bGenericXMLBaseElement* elt);
-		
-		virtual bool test						(	bGenericType* tp);
-		
-	
-	protected:
-		virtual void* ccinit					(	);
-		
-		virtual void stl_alloc					(	);
-		virtual void stl_free					(	);
+public:		
+    bvDefPaletteQuickSymb					(	bGenericXMLBaseElement* elt, 
+                                                bGenericMacMapApp* gapp, 
+                                                CFBundleRef bndl);
+    virtual ~bvDefPaletteQuickSymb			(	);
+    virtual bGenericXMLBaseElement* create	(	bGenericXMLBaseElement* elt);
+    
+    virtual bool test						(	bGenericType* tp);
+    
 
-	private:
+protected:
+    virtual void* ccinit					(	);
+    
+    virtual void stl_alloc					(	);
+    virtual void stl_free					(	);
+
+private:
 
 	
 };

@@ -131,7 +131,7 @@ bArray				sel(*(_gapp->selMgr()->elements()));
 bArray*				arr;
 char				msg[__MESSAGE_STRING_LENGTH_MAX__];
     message_string(kMsgProgress,msg,1);
-bProgressWait wt("",msg,true,true,sel.count());
+bProgressWait wt("",msg,true,sel.count());
     _gapp->cntMgr()->flush();
     
 bGenericGeoElement	*oa,*ob;

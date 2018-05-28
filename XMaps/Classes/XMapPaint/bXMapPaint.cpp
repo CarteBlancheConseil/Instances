@@ -137,7 +137,7 @@ bool bXMapPaint::paint(int c){
 char	msg[__MESSAGE_STRING_LENGTH_MAX__];
 bArray	sel(*(_gapp->selMgr()->elements()));
     message_string(kMsgProgress,msg,1);
-bProgressWait       wt("",msg,true,true,sel.count());
+bProgressWait       wt("",msg,true,sel.count());
 bGenericGeoElement*	o;
     for(int i=1;i<=sel.count();i++){
         if(!wt.set_progress(i)){

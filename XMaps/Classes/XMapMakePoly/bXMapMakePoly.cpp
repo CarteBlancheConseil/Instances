@@ -255,7 +255,7 @@ _te_("new_object");
 		ivs_free(vxs);
 		return(false);
 	}
-	if(!InitWithStyle(_gapp,_gapp->layersAccessCtx()->get_current(),go)){
+    if(!InitWithStyle(_gapp,_gapp->layersMgr()->get_current(),go)){
 		MMBeep();
 	}
 	if(!go->setVertices(vxs)){

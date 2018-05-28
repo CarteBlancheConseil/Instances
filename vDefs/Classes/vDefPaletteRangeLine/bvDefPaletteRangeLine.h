@@ -55,7 +55,7 @@ protected:
 	virtual void stl_free					(	);
 	virtual void rebuild_limits				(	);
 	virtual bool read						(	);
-
+    
 private:
 };
 

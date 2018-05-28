@@ -145,8 +145,8 @@ bGenericMacMapApp*	gapp=(bGenericMacMapApp*)_ext->getapp();
 		_lc=gapp->selMgr()->getState();
 		[self updateUI];
 	}
-    else if(_lcs!=gapp->layersAccessCtx()->get_current()){
-        _lcs=gapp->layersAccessCtx()->get_current();
+    else if(_lcs!=gapp->layersMgr()->get_current()){
+        _lcs=gapp->layersMgr()->get_current();
         [self updateUI];
     }
 }

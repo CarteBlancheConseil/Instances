@@ -45,6 +45,7 @@
 @interface vDefPaletteHistoWindowController : bStdNSPalettevDefWindowController{
 // Interface
 // Std Cocoa Palette vDef
+    IBOutlet NSTabView*             _tab_viw;	// Tab
 	IBOutlet NSTableView*			_run_tbl;	// StyleRuns
 	IBOutlet vDefPalettePreview*	_prvw;		// Preview
 	IBOutlet NSTextField*			_tnm_fld;	// Nom du type

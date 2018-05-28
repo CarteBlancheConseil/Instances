@@ -4,7 +4,7 @@
 // Purpose : C++ source file : Contiguous tool class (Select a set of connected lines having same value in a field, usefull for roadmaps).
 // Author : Benoit Ogier, benoit.ogier@macmap.com
 //
-// Copyright (C) 1997-2015 Carte Blanche Conseil.
+// Copyright (C) 2006 Carte Blanche Conseil.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -31,13 +31,11 @@
 
 #include "bToolContiguous.h"
 #include "CocoaStuff.h"
+
 #include <mox_intf/xmldesc_utils.h>
-#include <mox_intf/ext_utils.h>
 #include <mox_intf/MacMapCWrappers.h>
 #include <mox_intf/Type_Utils.h>
-#include <mox_intf/Carb_Utils.h>
-#include <mox_intf/bStdWait.h>
-#include <MacMapSuite/bArray.h>
+
 #include <MacMapSuite/bTrace.h>
 
 // ---------------------------------------------------------------------------
@@ -46,7 +44,7 @@
 bToolContiguous	::bToolContiguous(bGenericXMLBaseElement* elt, bGenericMacMapApp* gapp, CFBundleRef bndl) 
 				: bStdToolNav(elt,gapp,bndl)
 				,_types(sizeof(int)){
-	setclassname("contiguoustool_dev");
+	setclassname("contiguoustool");
 }
 
 // ---------------------------------------------------------------------------
@@ -60,21 +58,6 @@ bToolContiguous::~bToolContiguous(){
 // ------------
 bGenericXMLBaseElement* bToolContiguous::create(bGenericXMLBaseElement* elt){
 	return(new bToolContiguous(elt,_gapp,elt->getbundle()));
-}
-
-// ---------------------------------------------------------------------------
-// 
-// -----------
-void bToolContiguous::open(int* flags){	
-	_cur=0;
-bGenericType*	tp;
-int				cid;
-	for(int i=1;i<=_gapp->typesMgr()->count();i++){
-		tp=_gapp->typesMgr()->get(i);
-		cid=tp->fields()->get_id(kOBJ_Name_);
-		_types.add(&cid);
-	}
-	bStdToolNav::open(flags);
 }
 
 // ---------------------------------------------------------------------------
@@ -156,94 +139,16 @@ int				fid;
     set_on_edit(true);
     runCocoaAppModal(this,&result);
     if(result>0){
-        //save();
+        _tm_("save");
+        save();
+    }
+    else{
+        _tm_("load");
+        load();
     }
     set_on_edit(false);
     
     return(true);
-}
-
-// ---------------------------------------------------------------------------
-// 
-// -----------
-bool bToolContiguous::edit_event(EventRef evt, WindowRef wd){
-bool		b=true;
-HICommand	cmd;
-ControlRef	c;
-ControlID	cid={kContiguousEditSign,0};
-
-	if(GetEventClass(evt)==kEventClassCommand){
-		GetEventParameter(evt,kEventParamDirectObject,typeHICommand,NULL,sizeof(HICommand),NULL,&cmd);
-		switch(cmd.commandID){
-			case kHICommandOK:
-			case kHICommandCancel:
-				cid.id=kContiguousFieldsID;
-				GetControlByID(wd,&cid,&c);
-				DataBrowserClose(c);
-				break;
-			case kContiguousTypesCmd:
-				cid.id=kContiguousTypesID;
-				GetControlByID(wd,&cid,&c);
-				_cur=GetControl32BitValue(c);
-				flush_fields(wd);
-				populate_fields(wd);
-				break;
-			case kContiguousFieldsCmd:
-				break;
-			default:
-				b=false;
-				break;
-		}
-	}
-	return(b);
-}
-
-// ---------------------------------------------------------------------------
-// attention : crash quand la base ne contient pas de type linéaire
-// -----------
-void bToolContiguous::edit_init(WindowRef wd){
-ControlRef		c;
-ControlID		cid={kContiguousEditSign,kContiguousTypesID};
-	
-/* A GERER PAR UN MAP EVENT*/
-bGenericType*	tp;
-int				fid;
-	for(int i=_types.count()+1;i<=_gapp->typesMgr()->count();i++){
-		tp=_gapp->typesMgr()->get(i);
-		fid=tp->fields()->get_id(kOBJ_Name_);
-		_types.add(&fid);
-	}
-	for(int i=_types.count();i>_gapp->typesMgr()->count();i--){
-		_types.rmv(i);
-	}
-	for(int i=1;i<=_types.count();i++){
-		tp=_gapp->typesMgr()->get(i);
-		_types.get(i,&fid);
-		if(!tp->fields()->get_index(fid)){
-			fid=tp->fields()->get_id(kOBJ_Name_);
-			_types.put(i,&fid);
-		}
-	}
-/* A GERER PAR UN MAP EVENT*/
-
-	GetControlByID(wd,&cid,&c);
-	ClearPopupControl(c,1);
-	PopulatePopupControlWithType(_gapp,c,kBaseKindPolyline,1);
-	if(_cur==0){
-bGenericType*	tp=NthTypeOfKind(_gapp,1,kBaseKindPolyline);
-		_cur=tp->index();
-	}
-	SetControl32BitValue(c,_cur);
-	
-	cid.id=kContiguousFieldsID;
-	GetControlByID(wd,&cid,&c);
-	DataBrowserInit(c,dtb_proc,dtb_notifier,(long)this);
-	
-	if(!_cur){
-		return;
-	}
-	
-	populate_fields(wd);
 }
 
 // ---------------------------------------------------------------------------
@@ -263,7 +168,9 @@ char			va[1024],vb[1024];
 bCursWait		wt(true);
 
 	i=tp->index();
-	_types.get(i,&j);
+    if(!_types.get(i,&j)){
+        return;
+    }
 	fidx=tp->fields()->get_index(j);
 	o->getValue(fidx,va);
 	if(strlen(va)==0){
@@ -361,41 +268,6 @@ bCursWait		wt(true);
 // ---------------------------------------------------------------------------
 // 
 // -----------
-void bToolContiguous::populate_fields(WindowRef wd){
-ControlRef	c;
-ControlID	cid={kContiguousEditSign,kContiguousTypesID};
-	
-	GetControlByID(wd,&cid,&c);
-bGenericType*	tp=_gapp->typesMgr()->get(_cur);
-	if(!tp){
-		return;
-	}
-	
-	cid.id=kContiguousFieldsID;
-	GetControlByID(wd,&cid,&c);
-DataBrowserItemID	item;
-	for(int i=kOBJ_Name_;i<=tp->fields()->count();i++){
-		item=tp->fields()->get_id(i);
-		AddDataBrowserItems(c,kDataBrowserNoItem,1,&item,kContiguousFieldsNameProperty);
-	}
-	_types.get(_cur,&item);
-	(void)SetDataBrowserSelectedItems(c,1,&item,kDataBrowserItemsAssign);
-}
-
-// ---------------------------------------------------------------------------
-// 
-// -----------
-void bToolContiguous::flush_fields(WindowRef wd){
-ControlRef				c;
-ControlID				cid={kContiguousEditSign,kContiguousFieldsID};
-DataBrowserPropertyID	pid=kContiguousFieldsNameProperty;
-	GetControlByID(wd,&cid,&c);
-	DataBrowserReset(c,1,&pid);
-}
-
-// ---------------------------------------------------------------------------
-// 
-// -----------
 bGenericXMLBaseElement* bToolContiguous::load(){
 bGenericXMLBaseElement* groot=bStdToolNav::load();
 	
@@ -488,84 +360,4 @@ _te_("!elt");
 	}
 	_types.add(&fid);
 	_gapp->classMgr()->ReleaseXMLInstance(root);
-}
-
-// ---------------------------------------------------------------------------
-// 
-// -----------
-pascal OSStatus bToolContiguous::dtb_proc(	ControlRef browser, 
-											DataBrowserItemID itemID, 
-											DataBrowserPropertyID property, 
-											DataBrowserItemDataRef itemData, 
-											Boolean changeValue){
-bToolContiguous*	t=(bToolContiguous*)GetControlReference(browser);
-CFStringRef			cfs;
-bGenericType*		tp;
-int					idx;
-char				name[256];
-
-	switch(property){
-		case kContiguousFieldsNameProperty:
-			if(!changeValue&&t->_cur){
-				tp=_gapp->typesMgr()->get(t->_cur);
-				idx=tp->fields()->get_index(itemID);
-				tp->fields()->get_name(idx,name);
-				cfs=CFStringCreateWithCString(kCFAllocatorDefault,name,CFStringGetSystemEncoding());
-				SetDataBrowserItemDataText(itemData,cfs);
-				CFRelease(cfs);
-			}
-			break;
-	
-		case kDataBrowserItemIsEditableProperty:
-			if(SetDataBrowserItemDataBooleanValue(itemData,true)){
-			}
-			break;
-			
-		case kDataBrowserItemIsSelectableProperty:
-			if(SetDataBrowserItemDataBooleanValue(itemData,true)){
-			}
-			break;
-			
-		default:
-			break;			
-	}
-	return(noErr);
-}
-
-
-// ---------------------------------------------------------------------------
-// Notifier
-// -----------
-void bToolContiguous::dtb_notifier(	ControlRef browser, 
-									DataBrowserItemID item, 
-									DataBrowserItemNotification msg){
-bToolContiguous*	t=(bToolContiguous*)GetControlReference(browser);
-bGenericMacMapApp*	xapp=(bGenericMacMapApp*)t->getapp();
-bGenericType*		tp=xapp->typesMgr()->get(t->_cur);
-	if(!t){
-		return;
-	}
-int					idx=tp->index();
-    switch(msg){  
-        case kDataBrowserItemAdded:
-			break;
-        case kDataBrowserItemRemoved:
-            break;
-        case kDataBrowserContainerOpened:
-            break;
-        case kDataBrowserContainerClosing:
-            break;
-        case kDataBrowserContainerClosed:
-			break;
-        case kDataBrowserItemSelected:
-			if(!t->_types.put(idx,&item)){
-//_te_("index %d out of range [1..%d]",idx,t->_tmp->count());
-			}
-			else{
-//_tm_("field %d selected for type %d",item,idx);
-			}
-            break;
-        case kDataBrowserItemDeselected:
-			break;
-    }
 }

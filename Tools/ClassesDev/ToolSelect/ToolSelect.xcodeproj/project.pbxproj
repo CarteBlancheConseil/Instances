@@ -50,12 +50,12 @@
 		14F6A7AA1E65809C00E57B26 /* ShiftCursor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShiftCursor.png; sourceTree = "<group>"; };
 		14F6A7AB1E65809C00E57B26 /* ShitfCursor.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ShitfCursor.xml; sourceTree = "<group>"; };
 		14F6A7AC1E65809C00E57B26 /* StdCursor.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = StdCursor.xml; sourceTree = "<group>"; };
-		14F6A7B11E6580C400E57B26 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14F6A7B11E6580C400E57B26 /* fr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		14F6A7B31E6580C400E57B26 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/Palette.xib; sourceTree = "<group>"; };
 		14F6A7B61E6580CB00E57B26 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Palette.xib; sourceTree = "<group>"; };
 		14F6A7B71E6580D000E57B26 /* it */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = it; path = it.lproj/Palette.xib; sourceTree = "<group>"; };
-		14F6A7B81E6580D600E57B26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		14F6A7B91E6580D900E57B26 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14F6A7B81E6580D600E57B26 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14F6A7B91E6580D900E57B26 /* it */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		14F6A7BA1E65810700E57B26 /* bToolSelect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bToolSelect.cpp; sourceTree = "<group>"; };
 		14F6A7BB1E65810700E57B26 /* bToolSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bToolSelect.h; sourceTree = "<group>"; };
 		14F6A7BC1E65810700E57B26 /* ToolSelectWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolSelectWindowController.h; sourceTree = "<group>"; };

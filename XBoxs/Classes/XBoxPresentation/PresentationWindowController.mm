@@ -64,6 +64,8 @@
 #define kXMapStyleWdAskViewNameMsgID	"NameView"
 #define kXMapStyleWdLineHeigth          26
 #define kXMapStyleWdMidLineHeigth       kXMapStyleWdLineHeigth/2
+#define SRefSign 'SRef'
+
 
 // ---------------------------------------------------------------------------
 //
@@ -967,8 +969,8 @@ long    low=res%10000;
 #endif
             if(count==high){
                 if(tp->styles()->create(sign)){
-                    if(gapp->layersAccessCtx()->change(gapp->layersAccessCtx()->get_current(),
-                                                       tp->styles()->count())){
+                    if(gapp->layersMgr()->change(gapp->layersMgr()->get_current(),
+                                                 tp->styles()->count())){
                     }
                 }
                 break;
@@ -981,8 +983,8 @@ long    low=res%10000;
             arr.get(i,&desc);
             if((desc.sub==high)&&(desc.subidx==(low-1))){
                 if(!desc.current){
-                    if(gapp->layersAccessCtx()->change(gapp->layersAccessCtx()->get_current(),
-                                                       desc.idx)){
+                    if(gapp->layersMgr()->change(gapp->layersMgr()->get_current(),
+                                                 desc.idx)){
                     }
                 }
             }
@@ -1175,8 +1177,8 @@ long    low=res%10000;
 #endif
             if(count==high){
                 if(gapp->document()->styles()->create(sign)){
-                    if(gapp->layersAccessCtx()->change(gapp->layersAccessCtx()->get_current(),
-                                                       gapp->document()->styles()->count())){
+                    if(gapp->layersMgr()->change(gapp->layersMgr()->get_current(),
+                                                 gapp->document()->styles()->count())){
                     }
                 }
                 break;
@@ -1189,8 +1191,8 @@ long    low=res%10000;
             arr.get(i,&desc);
             if((desc.sub==high)&&(desc.subidx==(low-1))){
                 if(!desc.current){
-                    if(gapp->layersAccessCtx()->change(gapp->layersAccessCtx()->get_current(),
-                                                       desc.idx)){
+                    if(gapp->layersMgr()->change(gapp->layersMgr()->get_current(),
+                                                 desc.idx)){
                     }
                 }
             }
@@ -1283,7 +1285,7 @@ _bTrace_("[PresentationTableCellView mouseDownForCell]",false);
 // Test pour éviter les problèmes d'incohérence entre le style courant
 // et la ligne sélectionnée lors l'un clic dans la fenêtre désactivée
 // Ne devrait plus survenir avec le changement de sélection
-// au firstClic (cf mouseDown de PresentationTableView
+// au firstClic (cf mouseDown de PresentationTableView)
 /**/
 NSTableView*        tvw=[[self superview] superview];
     if([tvw rowViewAtRow:[tvw selectedRow] makeIfNecessary:NO]!=[self superview]){
@@ -1304,7 +1306,8 @@ NSPoint             pt=[self convertPoint:[theEvent locationInWindow] fromView:n
         if(pt.y<=kXMapStyleWdMidLineHeigth){
 // Bouton popup style
             if([self popupStyle]){
-            }
+                [(PresentationWindowController*)[[self window] windowController] setModified];
+           }
         }
         else{
 // Bouton popup classe
@@ -1388,7 +1391,7 @@ NSInteger   row=[self rowAtPoint:pt];
         if([self isRowSelected:row]==NO){
 bGenericExt*        ext=[(PresentationWindowController*)[[self window] windowController] getExt];
 bGenericMacMapApp*  gapp=(bGenericMacMapApp*)ext->getapp();
-            gapp->layersAccessCtx()->set_current(row+1);
+            gapp->layersMgr()->set_current(row+1);
             [self selectRowIndexes:[NSIndexSet indexSetWithIndex:row] byExtendingSelection:NO];
         }
 /**/
@@ -1479,7 +1482,7 @@ _tm_((void*)self);
 // ------------
 -(IBAction)doMoveUp:(id)sender{
 bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
-    if(gapp->layersAccessCtx()->move(gapp->layersAccessCtx()->get_current(),-1)){
+    if(gapp->layersMgr()->move(gapp->layersMgr()->get_current(),-1)){
         _reload=YES;
         _modi=YES;
     }
@@ -1490,7 +1493,7 @@ bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
 // ------------
 -(IBAction)doMoveDown:(id)sender{
 bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
-    if(gapp->layersAccessCtx()->move(gapp->layersAccessCtx()->get_current(),1)){
+    if(gapp->layersMgr()->move(gapp->layersMgr()->get_current(),1)){
         _reload=YES;
         _modi=YES;
     }
@@ -1501,7 +1504,7 @@ bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
 // ------------
 -(IBAction)doRemove:(id)sender{
 bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
-    if(gapp->layersAccessCtx()->remove(gapp->layersAccessCtx()->get_current())){
+    if(gapp->layersMgr()->remove(gapp->layersMgr()->get_current())){
         _reload=YES;
         _modi=YES;
     }
@@ -1520,45 +1523,45 @@ bGenericStyle*      styl=(bGenericStyle*)CurLayer(gapp);
     _modi=YES;
    _ld--;
     
-    gapp->layersAccessCtx()->setselectable(!styl->selectable());
+    gapp->layersMgr()->setselectable(!styl->selectable());
     
 bool            status=styl->selectable();
-int				idx= gapp->layersAccessCtx()->get_current();
+int				idx= gapp->layersMgr()->get_current();
 bGenericType*	tp=(bGenericType*)CurType(gapp);
 bGenericStyle*	stl;
     
 NSUInteger      modifiers=[[NSApp currentEvent] modifierFlags];
 
     if(modifiers&NSCommandKeyMask){
-        for(int i=1;i<= gapp->layersAccessCtx()->count();i++){
+        for(int i=1;i<= gapp->layersMgr()->count();i++){
             if(i==idx){
                 continue;
             }
-            stl= gapp->layersAccessCtx()->get(i);
+            stl= gapp->layersMgr()->get(i);
             if(stl==NULL){
                 continue;
             }
-             gapp->layersAccessCtx()->set_current(i);
-             gapp->layersAccessCtx()->setselectable(!status);
+            gapp->layersMgr()->set_current(i);
+            gapp->layersMgr()->setselectable(!status);
         }
-         gapp->layersAccessCtx()->set_current(idx);
+        gapp->layersMgr()->set_current(idx);
     }
 
     if(modifiers&NSShiftKeyMask){
-        for(int i=1;i<= gapp->layersAccessCtx()->count();i++){
+        for(int i=1;i<= gapp->layersMgr()->count();i++){
             if(i==idx){
                 continue;
             }
-            stl= gapp->layersAccessCtx()->get(i);
+            stl= gapp->layersMgr()->get(i);
             if(stl==NULL){
                 continue;
             }
             if(stl->gettype()==tp){
-                 gapp->layersAccessCtx()->set_current(i);
-                 gapp->layersAccessCtx()->setselectable(status);
+                 gapp->layersMgr()->set_current(i);
+                 gapp->layersMgr()->setselectable(status);
             }
         }
-         gapp->layersAccessCtx()->set_current(idx);
+         gapp->layersMgr()->set_current(idx);
     }
 }
 
@@ -1575,44 +1578,44 @@ bGenericStyle*      styl=(bGenericStyle*)CurLayer(gapp);
     _modi=YES;
 
     gapp->layersMgr()->StopDraw();
-    gapp->layersAccessCtx()->setvisible(!styl->visible());
+    gapp->layersMgr()->setvisible(!styl->visible());
     
 bool            status=styl->visible();
-int				idx=gapp->layersAccessCtx()->get_current();
+int				idx=gapp->layersMgr()->get_current();
 bGenericType*	tp=(bGenericType*)CurType(gapp);
 bGenericStyle*	stl;
 NSUInteger      modifiers=[[NSApp currentEvent] modifierFlags];
     
     if(modifiers&NSCommandKeyMask){
-        for(int i=1;i<=gapp->layersAccessCtx()->count();i++){
+        for(int i=1;i<=gapp->layersMgr()->count();i++){
             if(i==idx){
                 continue;
             }
-            stl=gapp->layersAccessCtx()->get(i);
+            stl=gapp->layersMgr()->get(i);
             if(stl==NULL){
                 continue;
             }
-            gapp->layersAccessCtx()->set_current(i);
-            gapp->layersAccessCtx()->setvisible(!status);
+            gapp->layersMgr()->set_current(i);
+            gapp->layersMgr()->setvisible(!status);
         }
-        gapp->layersAccessCtx()->set_current(idx);
+        gapp->layersMgr()->set_current(idx);
     }
     
     if(modifiers&NSShiftKeyMask){
-        for(int i=1;i<=gapp->layersAccessCtx()->count();i++){
+        for(int i=1;i<=gapp->layersMgr()->count();i++){
             if(i==idx){
                 continue;
             }
-            stl=gapp->layersAccessCtx()->get(i);
+            stl=gapp->layersMgr()->get(i);
             if(stl==NULL){
                 continue;
             }
             if(stl->gettype()==tp){
-                gapp->layersAccessCtx()->set_current(i);
-                gapp->layersAccessCtx()->setvisible(status);
+                gapp->layersMgr()->set_current(i);
+                gapp->layersMgr()->setvisible(status);
             }
         }
-        gapp->layersAccessCtx()->set_current(idx);
+        gapp->layersMgr()->set_current(idx);
     }
 }
 
@@ -1638,8 +1641,8 @@ bGenericExt*        ext=gapp->xboxMgr()->find('MgrS');
 // ------------
 -(IBAction)doAddStyle:(id)sender{
 bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
-    if(gapp->layersAccessCtx()->add([sender tag],1)){
-        gapp->layersAccessCtx()->set_current(gapp->layersAccessCtx()->count());
+    if(gapp->layersMgr()->add([sender tag],1)){
+        gapp->layersMgr()->set_current(gapp->layersMgr()->count());
         _reload=YES;
         _ld=-1;
         _modi=true;
@@ -1672,25 +1675,25 @@ bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
 // ------------
 -(IBAction)doScaleRef:(id)sender{
 bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
-bGenericExt*        ext=gapp->vdefMgr()->find('SRef');
+bGenericExt*        ext=gapp->vdefMgr()->find(SRefSign);
 bGenericType*       tp;
 bGenericStyle*      styl;
 int                 sidx;
     
     if(ext){
         if(ext->process(kExtProcessCallFromIntf,NULL)){
-            for(int i=1;i<=gapp->layersAccessCtx()->count();i++){
-                styl=gapp->layersAccessCtx()->get(i);
+            for(long i=1;i<=gapp->layersMgr()->count();i++){
+                styl=gapp->layersMgr()->get(i);
                 if(styl->visible()){
                     tp=styl->gettype();
                     if(tp){
                         sidx=tp->styles()->index(styl->root());
-                        if(!tp->styles()->edit(sidx,'SRef')){
+                        if(!tp->styles()->edit(sidx,SRefSign)){
                         }
                     }
                     else{
                         sidx=gapp->document()->styles()->index(styl->root());
-                        if(!gapp->document()->styles()->edit(sidx,'SRef')){
+                        if(!gapp->document()->styles()->edit(sidx,SRefSign)){
                         }
                     }
                 }
@@ -1708,7 +1711,6 @@ _bTrace_("[PresentationWindowController doLegend]",false);
 bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
 bGenericStyle*	styl;
 int				nlines=0;
-//CGSize			sz;
 CGRect			bbox;
     
     bbox.origin.x=0;
@@ -1716,19 +1718,11 @@ CGRect			bbox;
     bbox.size.width=[[self window] frame].size.width;
     bbox.size.height=0;
     
-    for(int i=1;i<=gapp->layersAccessCtx()->count();i++){
-        styl=gapp->layersAccessCtx()->get(i);
+    for(long i=1;i<=gapp->layersMgr()->count();i++){
+        styl=gapp->layersMgr()->get(i);
         if(styl->visible()){
-/*			if(styl->legend_size(&sz)){
-             if(sz.width>bbox.size.width){
-             bbox.size.width=sz.width;
-             }
-             bbox.size.height+=sz.height;
-             }
-             else{*/
             nlines=(styl->getclasscount());
             bbox.size.height+=(nlines*kXMapStyleWdLineHeigth);
-//			}
         }
     }
     
@@ -1775,18 +1769,12 @@ _te_("CGPDFContextCreateWithURL failed");
     bbox.size.width=kXMapStyleWdLineHeigth;
     
 int	cur;
-    for(int i=1;i<=gapp->layersAccessCtx()->count();i++){
-        styl=gapp->layersAccessCtx()->get(i);
+    for(int i=1;i<=gapp->layersMgr()->count();i++){
+        styl=gapp->layersMgr()->get(i);
         if(!styl->visible()){
             continue;
         }
-        
-/*		if(styl->legend_size(&sz)){
-         bbox.origin.y-=sz.height;
-         styl->legend(ctx,bbox.origin);
-         continue;
-         }*/
-        
+                
         bbox.origin.y-=kXMapStyleWdLineHeigth;
         CGContextSetRGBFillColor(ctx,0,0,0,1);
         tp=styl->gettype();
@@ -1851,7 +1839,6 @@ int	cur;
                                            "Helvetica",
                                            9);
             }
-            //bbox.origin.y-=kXMapStyleWdLineHeigth;
         }
         styl->set_curclass(cur);
     }
@@ -1880,7 +1867,7 @@ bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
 // -----------
 -(void)updateUI{
 bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
-bGenericStyle*      styl=gapp->layersAccessCtx()->get([_stl_viw selectedRow]+1);
+bGenericStyle*      styl=gapp->layersMgr()->get([_stl_viw selectedRow]+1);
     [_mup_btn setEnabled:(styl!=NULL)];
     [_mdn_btn setEnabled:(styl!=NULL)];
     [_rmv_btn setEnabled:(styl!=NULL)];
@@ -1898,6 +1885,7 @@ bGenericStyle*      styl=gapp->layersAccessCtx()->get([_stl_viw selectedRow]+1);
 -(void)askForViewSave{
 _bTrace_("[PresentationWindowController askForViewSave]",true);
     if(!_modi){
+_tm_("pas de modif");
         return;
     }
 bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
@@ -1919,24 +1907,12 @@ bAlertWarningYes	alrt(msg,"",false,SHRT_MAX,btn1,btn2,btn3);
     }
     else if(alrt.hit_button()==kAlertStdAlertOtherButton){
         b_message_string(kXMapStyleWdAskViewNameMsgID,msg,_ext->getbundle(),0);
-
-
-//#error En procédant comme ça on duplique la vue non modifiée
         gapp->viewMgr()->duplicate(gapp->viewMgr()->get_current());
-
-//		_gapp->viewMgr()->get_name(_gapp->viewMgr()->count(),btn1);
-//		if(GetAName(btn1,msg)){
-//_tm_("saving as:"+btn1);
-//			_gapp->viewMgr()->set_name(_gapp->viewMgr()->count(),btn1);
-//		}
-
         gapp->viewMgr()->save();
         gapp->viewMgr()->get_name(btn2);
         gapp->viewMgr()->get_name(gapp->viewMgr()->count(),btn1);
         gapp->viewMgr()->set_name(gapp->viewMgr()->count(),"$$tmp$$");
-
         if(!GetAName(btn1,msg,true)){
-//_gapp->viewMgr()->get_name(_gapp->viewMgr()->count(),btn1);
             gapp->viewMgr()->remove(gapp->viewMgr()->count());
             return;
         }
@@ -1947,6 +1923,14 @@ bAlertWarningYes	alrt(msg,"",false,SHRT_MAX,btn1,btn2,btn3);
         gapp->viewMgr()->set_name(gapp->viewMgr()->count(),btn2);
     }
     _modi=NO;
+}
+
+// ---------------------------------------------------------------------------
+//
+// -----------
+-(void)setModified{
+_bTrace_("[PresentationWindowController setModified]",true);
+    _modi=YES;
 }
 
 // ---------------------------------------------------------------------------
@@ -2007,15 +1991,15 @@ NSMenuItem*         item;
 // ------------
 -(void)idle{
 bGenericMacMapApp* gapp=(bGenericMacMapApp*)_ext->getapp();
-    if(gapp->layersAccessCtx()->get_current()!=_lv){
-        if(gapp->layersAccessCtx()->get_current()>0){
-            [_stl_viw selectRowIndexes:[NSIndexSet indexSetWithIndex:gapp->layersAccessCtx()->get_current()-1]
+    if(gapp->layersMgr()->get_current()!=_lv){
+        if(gapp->layersMgr()->get_current()>0){
+            [_stl_viw selectRowIndexes:[NSIndexSet indexSetWithIndex:gapp->layersMgr()->get_current()-1]
                   byExtendingSelection:NO];
         }
-        _lv=gapp->layersAccessCtx()->get_current();
+        _lv=gapp->layersMgr()->get_current();
         [self populateViews];
     }
-    if(_ld<gapp->mapIntf()->drawCount()||_reload){
+   if(_ld<gapp->mapIntf()->drawCount()||_reload){
         [_stl_viw reloadData];
         _refresh=YES;
         _reload=NO;
@@ -2053,11 +2037,11 @@ bGenericEvent*		evt;
     if([_trk_btn intValue]==1){
 bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
 bArray*             ga;
-int                 i,n=gapp->layersAccessCtx()->count();
+long                i,n=gapp->layersMgr()->count();
 bGenericStyle*      stl;
 
         for(i=n;i>0;i--){
-            stl=gapp->layersAccessCtx()->get(i);
+            stl=gapp->layersMgr()->get(i);
             if(!stl){
                 continue;
             }
@@ -2070,7 +2054,7 @@ bGenericStyle*      stl;
                 continue;
             }
             if(ga->count()>=1){
-                gapp->layersAccessCtx()->set_current(i);
+                gapp->layersMgr()->set_current(i);
                 delete ga;
                 _reload=YES;
                 break;
@@ -2086,7 +2070,7 @@ bGenericStyle*      stl;
 // -----------
 -(NSInteger)numberOfRowsInTableView:(NSTableView*)aTableView{
 bGenericMacMapApp* gapp=(bGenericMacMapApp*)_ext->getapp();
-    return gapp->layersAccessCtx()->count();
+    return gapp->layersMgr()->count();
 }
 
 // ---------------------------------------------------------------------------
@@ -2096,7 +2080,7 @@ bGenericMacMapApp* gapp=(bGenericMacMapApp*)_ext->getapp();
  viewForTableColumn:(NSTableColumn *)tableColumn
                 row:(NSInteger)rowIndex{
 bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
-bGenericStyle*      styl=gapp->layersAccessCtx()->get(rowIndex+1);
+bGenericStyle*      styl=gapp->layersMgr()->get(rowIndex+1);
     if(!styl){
         return nil;
     }
@@ -2173,13 +2157,13 @@ CGRect          hir=CGRectMake(0,0,kXMapStyleWdLineHeigth,kXMapStyleWdLineHeigth
 -(void)tableViewSelectionDidChange:(NSNotification*)notification{
 bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
     if([_stl_viw selectedRow]<0){
-        if(gapp->layersAccessCtx()->get_current()!=0){
-            [_stl_viw selectRowIndexes:[NSIndexSet indexSetWithIndex:gapp->layersAccessCtx()->get_current()-1]
+        if(gapp->layersMgr()->get_current()!=0){
+            [_stl_viw selectRowIndexes:[NSIndexSet indexSetWithIndex:gapp->layersMgr()->get_current()-1]
                   byExtendingSelection:NO];
        }
     }
     else{
-        gapp->layersAccessCtx()->set_current([_stl_viw selectedRow]+1);
+        gapp->layersMgr()->set_current([_stl_viw selectedRow]+1);
     }
     [self updateUI];
 }
@@ -2222,7 +2206,7 @@ long                n=rowIndex-[rowIndexes firstIndex];
         n--;
     }
     gapp->layersMgr()->StopDraw();
-    gapp->layersAccessCtx()->move([rowIndexes firstIndex]+1,n);
+    gapp->layersMgr()->move([rowIndexes firstIndex]+1,n);
     _reload=YES;
     return YES;
 }

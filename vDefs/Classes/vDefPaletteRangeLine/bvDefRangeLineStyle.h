@@ -37,29 +37,30 @@
 //----------------------------------------------------------------------------
 
 class bvDefRangeLineStyle : public bvDefPaletteRangeStyle{
-	public:
-		bvDefRangeLineStyle			(	bGenericMacMapApp* gapp,
-										bGenericType* gtp,
-										int clss);
-		bvDefRangeLineStyle			(	bvDefRangeLineStyle* stl,
-											int clss);
-	virtual ~bvDefRangeLineStyle	(	);
-		
-		virtual bool load			(	bGenericXMLBaseElement* root);
-		virtual bool dump			(	bArray& arr, 
-										int indent);
-											
-		double	_width;
-		int		_cap;
-		int		_join;
-		char	_dsh[256];
-		bool	_smooth;
-		double	_dec;
-		double	_limit;
-	
-	protected:													
-	
-	private:
+public:
+    bvDefRangeLineStyle			(	bGenericMacMapApp* gapp,
+                                    bGenericType* gtp,
+                                    int clss);
+    bvDefRangeLineStyle			(	bvDefRangeLineStyle* stl,
+                                        int clss);
+virtual ~bvDefRangeLineStyle	(	);
+    
+    virtual bool load			(	bGenericXMLBaseElement* root);
+    virtual bool dump			(	bArray& arr, 
+                                    int indent);
+                                        
+    double	_width;
+    int		_cap;
+    int		_join;
+    char	_dsh[256];
+    bool	_smooth;
+    double	_dec;
+    bool	_wdec;
+    double	_limit;
+
+protected:													
+
+private:
 	
 };
 

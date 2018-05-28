@@ -320,7 +320,7 @@ bArray				sel(*(_gapp->selMgr()->elements()));
 bGenericGeoElement*	o;
     
     b_message_string(kXMapStringProcessingProcessMessageID,val,getbundle(),1);
-bProgressWait wt("",val,true,true,sel.count());
+bProgressWait wt("",val,true,sel.count());
     
 int	fpos=0;
 int	flen=formatinfo(prm->fmt,&fpos);

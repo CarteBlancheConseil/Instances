@@ -33,8 +33,6 @@
 @interface ToolContiguousWindowController : bStdNSAppToolModalWindowController{
     IBOutlet NSPopUpButton* _typ_pop;
     IBOutlet NSTableView*	_fld_viw;
-    
-    bArray*  _arr;
 }
 
 //----------------------------------------------------------------------------

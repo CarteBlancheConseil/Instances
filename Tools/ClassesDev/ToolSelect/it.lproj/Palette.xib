@@ -877,14 +877,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
-						<string key="label">_rbt_btn</string>
-						<reference key="source" ref="1021"/>
-						<reference key="destination" ref="1032582405"/>
-					</object>
-					<int key="connectionID">1239</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
 						<string key="label">_alo_chk</string>
 						<reference key="source" ref="1021"/>
 						<reference key="destination" ref="1032582405"/>

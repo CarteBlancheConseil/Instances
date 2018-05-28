@@ -206,7 +206,7 @@ char					msg[__MESSAGE_STRING_LENGTH_MAX__];
 int						count=0;
     
     message_string(kMsgProgress,msg,1);
-bProgressWait wt("",msg,true,true,sel.count()*2);
+bProgressWait wt("",msg,true,sel.count()*2);
     
     FlushSelection(_gapp);
     FlushContrasts(_gapp);
@@ -231,7 +231,7 @@ gi_init_p	gp={&bounds,&status,SetFlagWrapper,GetFlagWrapper,GetBoundsWrapper};
         iter=(bGenericGeoIterator*)(_gapp->extMgr()->get_component(kComponentGeoIterator)->i_allocate(_kNULLSign_,_gapp,&gp));
         if(!iter){
             status=1;
-            _te_("gIterator not allocated");
+_te_("gIterator not allocated");
             break;
         }
         for(long i=1;i<=sel.count();i++){
@@ -408,7 +408,7 @@ char					msg[__MESSAGE_STRING_LENGTH_MAX__];
 int						count=0;
     
     message_string(kMsgProgress,msg,1);
-bProgressWait wt("",msg,true,true,sel.count()*2);
+bProgressWait wt("",msg,true,sel.count()*2);
     
     FlushSelection(_gapp);
     FlushContrasts(_gapp);

@@ -4,7 +4,7 @@
 // Purpose : C++ source file : Plugin entry point
 // Author : Benoit Ogier, benoit.ogier@macmap.com
 //
-// Copyright (C) 1997-2015 Carte Blanche Conseil.
+// Copyright (C) 1997-2017 Carte Blanche Conseil.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -147,6 +147,8 @@ bGenericXMLBaseElement*	chld;
 	gapp->classMgr()->AddXMLClass(chld);
 	chld=new bDecalElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
+    chld=new bWidthDecalElement(*elt,gapp,bndl);
+    gapp->classMgr()->AddXMLClass(chld);
 	chld=new bLineToElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
 	chld=new bOffsetCoordElement(*elt,gapp,bndl);
@@ -309,7 +311,6 @@ bGenericXMLBaseElement*	chld;
 	gapp->classMgr()->AddXMLClass(chld);
 	chld=new bSubClassNameElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
-
 	chld=new bFactElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
 	chld=new bCeilElement(*elt,gapp,bndl);
@@ -338,7 +339,6 @@ bGenericXMLBaseElement*	chld;
 	gapp->classMgr()->AddXMLClass(chld);
 	chld=new bSqrtElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
-
 	chld=new bAverageElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
 	chld=new bFirstElement(*elt,gapp,bndl);
@@ -361,19 +361,16 @@ bGenericXMLBaseElement*	chld;
 	gapp->classMgr()->AddXMLClass(chld);
 	chld=new bVarianceElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
-
 	chld=new bModuloElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
 	chld=new bXOrElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
-
 	chld=new bShiftXElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
 	chld=new bShiftYElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
 	chld=new bLegibleElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
-
 	chld=new bStartAngleElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
 	chld=new bEndAngleElement(*elt,gapp,bndl);
@@ -382,40 +379,32 @@ bGenericXMLBaseElement*	chld;
 	gapp->classMgr()->AddXMLClass(chld);
 	chld=new bPropColorElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
-
 	chld=new bScriptElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
 	chld=new bStringElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
-
 	chld=new bVirtualLayerElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
-
 	chld=new bDBQuestionElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
-	
 	chld=new bDBSetNextElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
 	chld=new bDBAddToContrastElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
 	chld=new bDBAddToMaskedElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
-
 	chld=new bScreenGeometryElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
 	chld=new bPrintAreaGeometryElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
 	chld=new bWMSRasterElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
-	
 	chld=new bBoxPosElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
-
 	chld=new bfCastElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
 	chld=new biCastElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
-
 	chld=new bBgFillElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);	
 	chld=new bBgStrokeElement(*elt,gapp,bndl);
@@ -431,37 +420,29 @@ bGenericXMLBaseElement*	chld;
 	chld=new bBgShiftXElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);	
 	chld=new bBgShiftYElement(*elt,gapp,bndl);
-	gapp->classMgr()->AddXMLClass(chld);	
-
+	gapp->classMgr()->AddXMLClass(chld);
 	chld=new bPropHSizeElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
 	chld=new bPropVSizeElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
-	
 	chld=new bHSizeJustificationElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
 	chld=new bVSizeJustificationElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
-
 	chld=new bNthCharElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
-
 	chld=new bTextRptJustificationElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);
-
 	chld=new bGoogleMapElement(*elt,gapp,bndl);
 	gapp->classMgr()->AddXMLClass(chld);	
 	chld=new bTMSRasterElement(*elt,gapp,bndl);
-	gapp->classMgr()->AddXMLClass(chld);	
-
+	gapp->classMgr()->AddXMLClass(chld);
 	chld=new bPerpendicularLineElement(*elt,gapp,bndl);
-	gapp->classMgr()->AddXMLClass(chld);	
-
+	gapp->classMgr()->AddXMLClass(chld);
     chld=new bCollectionElement(*elt,gapp,bndl);
     gapp->classMgr()->AddXMLClass(chld);
     chld=new bObjectSetElement(*elt,gapp,bndl);
     gapp->classMgr()->AddXMLClass(chld);
-
     chld=new bVertexGeometryElement(*elt,gapp,bndl);
     gapp->classMgr()->AddXMLClass(chld);
 }

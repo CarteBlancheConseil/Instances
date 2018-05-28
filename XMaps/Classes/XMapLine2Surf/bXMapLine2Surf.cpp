@@ -315,7 +315,7 @@ char			msg[__MESSAGE_STRING_LENGTH_MAX__];
 char			ttl[__MESSAGE_STRING_LENGTH_MAX__];
     get_localized_name(ttl,getbundle());
 	message_string(kMsgProgress,msg,1);
-bProgressWait	wt(ttl,msg,true,true,arr.count());	
+bProgressWait	wt(ttl,msg,true,arr.count());	
 	for(long i=1;i<=arr.count();i++){
 		if(!wt.set_progress(i)){
 _tm_("user break");

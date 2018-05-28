@@ -1,0 +1,5 @@
+﻿/* Localized versions of Info.plist keys */
+
+CFBundleName = "Visubulle";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Visubulle version 1.2, Copyright 2005 Carte Blanche Conseil.";

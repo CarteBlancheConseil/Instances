@@ -1,5 +1,0 @@
-/* Localized versions of Info.plist keys */
-
-CFBundleName = "Forme semplici";
-CFBundleShortVersionString = "1.2";
-CFBundleGetInfoString = "Forme semplici versione 1.2, Copyright 2005 Carte Blanche Conseil.";

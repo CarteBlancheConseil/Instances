@@ -37,36 +37,37 @@
 //----------------------------------------------------------------------------
 
 class bvDefQuickLineStyle : public bvDefPaletteQuickStyle{
-	public:
-		bvDefQuickLineStyle				(	bGenericMacMapApp* gapp,
-											bGenericType* gtp,
-											int clss);
-		virtual ~bvDefQuickLineStyle		(	);
-		
-		virtual bool load				(	bGenericXMLBaseElement* root);
-		virtual bool dump				(	bArray& arr, 
-											int indent);
-	
-		double	_width[3];
-		int		_fwidth[3];
-		double	_stroke[3][5];
-		int		_fstroke[3];
-		int		_cap[3];
-		int		_fcap[3];
-		int		_join[3];
-		int		_fjoin[3];
-		char	_dsh[3][256];
-		int		_fdsh[3];
-		bool	_smooth[3];
-		int		_fsmooth[3];
-		double	_dec[3];
-		int		_fdec[3];
-		double	_limit[3];
-		int		_flimit[3];
-	
-	protected:													
-	
-	private:
+public:
+    bvDefQuickLineStyle				(	bGenericMacMapApp* gapp,
+                                        bGenericType* gtp,
+                                        int clss);
+    virtual ~bvDefQuickLineStyle    (	);
+    
+    virtual bool load				(	bGenericXMLBaseElement* root);
+    virtual bool dump				(	bArray& arr, 
+                                        int indent);
+
+    double	_width[3];
+    int		_fwidth[3];
+    double	_stroke[3][5];
+    int		_fstroke[3];
+    int		_cap[3];
+    int		_fcap[3];
+    int		_join[3];
+    int		_fjoin[3];
+    char	_dsh[3][256];
+    int		_fdsh[3];
+    bool	_smooth[3];
+    int		_fsmooth[3];
+    double	_dec[3];
+    int		_fdec[3];
+    bool    _wdec[3];
+    double	_limit[3];
+    int		_flimit[3];
+
+protected:													
+
+private:
 	
 };
 

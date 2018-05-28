@@ -218,7 +218,7 @@ char	msg[__MESSAGE_STRING_LENGTH_MAX__];
     GetName(this,ttl);
     message_string(kMsgProgress,msg,1);
 
-bProgressWait wt(ttl,msg,true,true,p->objects->count());
+bProgressWait wt(ttl,msg,true,p->objects->count());
     
     _gapp->layersMgr()->SetObjInvalidation(false);
     for(int i=1;i<=p->objects->count();i++){

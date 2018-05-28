@@ -25,6 +25,7 @@
 // 
 //----------------------------------------------------------------------------
 // 02/04/2003 creation.
+// 15/11/2017 ajout widthdecal.
 //----------------------------------------------------------------------------
 
 #include "bXMLDecal.h"
@@ -184,5 +185,95 @@ float	*newxpts,*newypts;
 		free(newoffsets);
 	}
 	return(true);
+}
+
+
+// ---------------------------------------------------------------------------
+// Constructeur
+// ------------
+bWidthDecalElement	::bWidthDecalElement(bGenericXMLBaseElement* elt, bGenericMacMapApp* gapp, CFBundleRef bndl )
+                    : bDecalElement(elt,gapp,bndl){
+    setclassname("widthdecal");
+}
+
+// ---------------------------------------------------------------------------
+// Constructeur
+// ------------
+bGenericXMLBaseElement* bWidthDecalElement::create(bGenericXMLBaseElement* elt){
+    return(new bWidthDecalElement(elt,_gapp,elt->getbundle()));
+}
+
+// ---------------------------------------------------------------------------
+// Destructeur
+// ------------
+bWidthDecalElement::~bWidthDecalElement(){
+}
+
+// ---------------------------------------------------------------------------
+//
+// -----------
+bool bWidthDecalElement::actionval(	bGenericGraphicContext* ctx,
+                                    bStdXMLValueElement* elt,
+                                    bGenericGeoElement* geo){
+double  d;
+double  w=ctx->getWidth();
+    w/=ctx->getFixConv();
+    w/=ctx->getUnitCoef();
+    w/=2.0;
+
+    elt->getvalue(geo,&d);
+    
+    if(d==0){
+        _val=0;
+    }
+    else if(d<0){
+        _val=-(w-d);
+    }
+    else{
+        _val=w+d;
+    }
+    if(_val!=0){
+        return(decal(ctx));
+    }
+    return(false);
+}
+
+// ---------------------------------------------------------------------------
+//
+// -----------
+bool bWidthDecalElement::actionstd(bGenericGraphicContext* ctx){
+double  d;
+double  w=ctx->getWidth();
+    w/=ctx->getFixConv();
+    w/=ctx->getUnitCoef();
+    w/=2.0;
+    
+    if(_elts.count()>0){
+bStdXMLValueElement*	elt=find_value();
+        if(elt==NULL){
+            return(true);
+        }
+        elt->getvalue(NULL,&d);
+    }
+    else{
+char	val[_values_length_max_];
+        getvalue(val);
+        d=atof(val);
+    }
+    
+    if(d==0){
+        _val=0;
+    }
+    else if(d<0){
+        _val=-(w-d);
+    }
+    else{
+        _val=w+d;
+    }
+    
+    if(_val!=0){
+        return(decal(ctx));
+    }
+    return(true);
 }
 

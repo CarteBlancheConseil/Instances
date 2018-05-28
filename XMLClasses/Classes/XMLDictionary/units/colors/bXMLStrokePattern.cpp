@@ -120,11 +120,13 @@ bStdXMLValueElement*	elt=find_value();
 	if(_data==NULL){
 		if(strlen(val)==0){
 			ctx->setStrokePattern(NULL,0,"");
-			return(objectcompliant());
-		}	
+            //return(objectcompliant());
+            return(false);
+		}
 		if(!_tp->fields()->get_param("patterns",val,&_data,&_sz)){
 			ctx->setStrokePattern(NULL,0,"");
-			return(objectcompliant());
+            //return(objectcompliant());
+            return(false);
 		}
 		strcpy(_last,val);
 	}

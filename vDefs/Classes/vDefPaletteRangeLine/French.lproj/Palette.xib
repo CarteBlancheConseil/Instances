@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
-		<int key="IBDocument.SystemTarget">101000</int>
-		<string key="IBDocument.SystemVersion">14F1509</string>
+		<int key="IBDocument.SystemTarget">1080</int>
+		<string key="IBDocument.SystemVersion">15G1611</string>
 		<string key="IBDocument.InterfaceBuilderVersion">7702</string>
-		<string key="IBDocument.AppKitVersion">1348.17</string>
-		<string key="IBDocument.HIToolboxVersion">758.70</string>
+		<string key="IBDocument.AppKitVersion">1404.47</string>
+		<string key="IBDocument.HIToolboxVersion">807.20</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			<string key="NS.object.0">7702</string>
@@ -263,7 +263,7 @@
 													</object>
 												</object>
 												<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-												<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+												<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 											</object>
 											<object class="NSTextField" id="764360191">
 												<reference key="NSNextResponder" ref="258933331"/>
@@ -294,7 +294,7 @@
 													</object>
 												</object>
 												<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-												<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+												<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 											</object>
 											<object class="NSScrollView" id="840668727">
 												<reference key="NSNextResponder" ref="258933331"/>
@@ -465,8 +465,6 @@
 														<reference key="NSSuperview" ref="840668727"/>
 														<reference key="NSNextKeyView" ref="250123216"/>
 														<reference key="NSDocView" ref="250123216"/>
-														<reference key="NSBGColor" ref="994727664"/>
-														<int key="NScvFlags">4</int>
 														<bool key="NSAutomaticallyAdjustsContentInsets">YES</bool>
 													</object>
 												</array>
@@ -523,7 +521,7 @@
 													<reference key="NSTextColor" ref="266471005"/>
 												</object>
 												<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-												<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+												<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 											</object>
 											<object class="NSPopUpButton" id="847293944">
 												<reference key="NSNextResponder" ref="258933331"/>
@@ -585,7 +583,7 @@
 													<reference key="NSTextColor" ref="266471005"/>
 												</object>
 												<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-												<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+												<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 											</object>
 											<object class="NSCustomView" id="942108645">
 												<reference key="NSNextResponder" ref="258933331"/>
@@ -610,7 +608,7 @@
 													<reference key="NSTextColor" ref="266471005"/>
 												</object>
 												<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-												<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+												<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 											</object>
 											<object class="NSBox" id="837661565">
 												<reference key="NSNextResponder" ref="258933331"/>
@@ -647,7 +645,7 @@
 													<reference key="NSTextColor" ref="266471005"/>
 												</object>
 												<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-												<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+												<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 											</object>
 											<object class="NSPopUpButton" id="878534310">
 												<reference key="NSNextResponder" ref="258933331"/>
@@ -709,7 +707,7 @@
 													<reference key="NSTextColor" ref="266471005"/>
 												</object>
 												<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-												<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+												<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 											</object>
 											<object class="NSPopUpButton" id="224936595">
 												<reference key="NSNextResponder" ref="258933331"/>
@@ -895,7 +893,7 @@
 													<reference key="NSTextColor" ref="648323714"/>
 												</object>
 												<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-												<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+												<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 											</object>
 											<object class="NSTextField" id="352314023">
 												<reference key="NSNextResponder" ref="258933331"/>
@@ -913,7 +911,7 @@
 													<reference key="NSTextColor" ref="266471005"/>
 												</object>
 												<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-												<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+												<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 											</object>
 											<object class="NSPopUpButton" id="292633797">
 												<reference key="NSNextResponder" ref="258933331"/>
@@ -1057,7 +1055,7 @@
 													<reference key="NSTextColor" ref="648323714"/>
 												</object>
 												<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-												<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+												<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 											</object>
 											<object class="NSPopUpButton" id="923425290">
 												<reference key="NSNextResponder" ref="258933331"/>
@@ -1201,7 +1199,7 @@
 													<reference key="NSTextColor" ref="648323714"/>
 												</object>
 												<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-												<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+												<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 											</object>
 											<object class="NSButton" id="719520743">
 												<reference key="NSNextResponder" ref="258933331"/>
@@ -1290,7 +1288,7 @@
 													<reference key="NSTextColor" ref="266471005"/>
 												</object>
 												<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-												<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+												<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 											</object>
 											<object class="NSPopUpButton" id="289416617">
 												<reference key="NSNextResponder" ref="258933331"/>
@@ -1352,7 +1350,7 @@
 													<reference key="NSTextColor" ref="266471005"/>
 												</object>
 												<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-												<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+												<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 											</object>
 											<object class="NSPopUpButton" id="54723206">
 												<reference key="NSNextResponder" ref="258933331"/>
@@ -1414,7 +1412,7 @@
 													<reference key="NSTextColor" ref="266471005"/>
 												</object>
 												<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-												<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+												<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 											</object>
 											<object class="NSBox" id="765532146">
 												<reference key="NSNextResponder" ref="258933331"/>
@@ -1451,7 +1449,7 @@
 													<reference key="NSTextColor" ref="266471005"/>
 												</object>
 												<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-												<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+												<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 											</object>
 											<object class="NSButton" id="904175178">
 												<reference key="NSNextResponder" ref="258933331"/>
@@ -1533,7 +1531,7 @@
 													<reference key="NSTextColor" ref="648323714"/>
 												</object>
 												<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-												<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+												<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 											</object>
 											<object class="NSTextField" id="845787998">
 												<reference key="NSNextResponder" ref="258933331"/>
@@ -1551,7 +1549,7 @@
 													<reference key="NSTextColor" ref="266471005"/>
 												</object>
 												<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-												<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+												<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 											</object>
 											<object class="NSTextField" id="391055556">
 												<reference key="NSNextResponder" ref="258933331"/>
@@ -1605,7 +1603,7 @@
 													<reference key="NSTextColor" ref="648323714"/>
 												</object>
 												<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-												<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+												<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 											</object>
 											<object class="NSTextField" id="396585098">
 												<reference key="NSNextResponder" ref="258933331"/>
@@ -1623,7 +1621,7 @@
 													<reference key="NSTextColor" ref="266471005"/>
 												</object>
 												<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-												<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+												<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 											</object>
 											<object class="NSPopUpButton" id="555995901">
 												<reference key="NSNextResponder" ref="258933331"/>
@@ -1707,7 +1705,7 @@
 													<reference key="NSTextColor" ref="266471005"/>
 												</object>
 												<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-												<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+												<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 											</object>
 											<object class="NSPopUpButton" id="795952701">
 												<reference key="NSNextResponder" ref="258933331"/>
@@ -1791,7 +1789,7 @@
 													<reference key="NSTextColor" ref="266471005"/>
 												</object>
 												<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-												<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+												<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 											</object>
 											<object class="NSPopUpButton" id="1010646718">
 												<reference key="NSNextResponder" ref="258933331"/>
@@ -1865,7 +1863,7 @@
 													<reference key="NSTextColor" ref="266471005"/>
 												</object>
 												<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-												<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+												<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 											</object>
 											<object class="NSButton" id="101888999">
 												<reference key="NSNextResponder" ref="258933331"/>
@@ -2023,7 +2021,7 @@
 																	<reference key="NSTextColor" ref="266471005"/>
 																</object>
 																<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-																<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+																<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 															</object>
 															<object class="NSPopUpButton" id="518290936">
 																<reference key="NSNextResponder" ref="782423249"/>
@@ -2097,7 +2095,7 @@
 																	<reference key="NSTextColor" ref="266471005"/>
 																</object>
 																<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-																<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+																<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 															</object>
 															<object class="NSPopUpButton" id="950911262">
 																<reference key="NSNextResponder" ref="782423249"/>
@@ -2247,7 +2245,7 @@
 																	<reference key="NSTextColor" ref="648323714"/>
 																</object>
 																<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-																<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+																<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 															</object>
 															<object class="NSPopUpButton" id="352658958">
 																<reference key="NSNextResponder" ref="459929305"/>
@@ -2441,7 +2439,7 @@
 																	<reference key="NSTextColor" ref="266471005"/>
 																</object>
 																<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-																<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+																<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 															</object>
 														</array>
 														<string key="NSFrame">{{1, 1}, {368, 61}}</string>
@@ -2556,7 +2554,7 @@
 																	<reference key="NSTextColor" ref="266471005"/>
 																</object>
 																<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-																<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+																<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 															</object>
 															<object class="NSPopUpButton" id="1004063691">
 																<reference key="NSNextResponder" ref="993428225"/>
@@ -2618,7 +2616,7 @@
 																	<reference key="NSTextColor" ref="266471005"/>
 																</object>
 																<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-																<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+																<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 															</object>
 														</array>
 														<string key="NSFrame">{{1, 1}, {368, 60}}</string>
@@ -2698,7 +2696,7 @@
 								<reference key="NSTextColor" ref="266471005"/>
 							</object>
 							<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-							<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+							<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 						</object>
 						<object class="NSTextField" id="116738849">
 							<reference key="NSNextResponder" ref="439893737"/>
@@ -2716,7 +2714,7 @@
 								<reference key="NSTextColor" ref="266471005"/>
 							</object>
 							<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-							<int key="NSTextFieldAlignmentRectInsetsVersion">1</int>
+							<int key="NSTextFieldAlignmentRectInsetsVersion">2</int>
 						</object>
 					</array>
 					<string key="NSFrameSize">{401, 445}</string>
@@ -3360,6 +3358,14 @@
 						<reference key="destination" ref="17706679"/>
 					</object>
 					<int key="connectionID">1275</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">_tab_viw</string>
+						<reference key="source" ref="1021"/>
+						<reference key="destination" ref="1012686094"/>
+					</object>
+					<int key="connectionID">1276</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -5203,7 +5209,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">1275</int>
+			<int key="maxID">1276</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>

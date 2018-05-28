@@ -35,12 +35,12 @@
 		1417ABF90C4631630066091D /* OutCursor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OutCursor.png; sourceTree = "<group>"; };
 		1417ABFA0C4631630066091D /* StdCursor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StdCursor.png; sourceTree = "<group>"; };
 		1417ABFB0C4631630066091D /* StdSymb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StdSymb.png; sourceTree = "<group>"; };
-		1488627C1E686CFD0060CDEE /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1488627C1E686CFD0060CDEE /* fr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		148862801E686CFD0060CDEE /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/Palette.xib; sourceTree = "<group>"; };
 		148862841E686D100060CDEE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Palette.xib; sourceTree = "<group>"; };
 		148862851E686D120060CDEE /* it */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = it; path = it.lproj/Palette.xib; sourceTree = "<group>"; };
-		148862881E686D2E0060CDEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		148862891E686D310060CDEE /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		148862881E686D2E0060CDEE /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		148862891E686D310060CDEE /* it */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1488628A1E686DD90060CDEE /* bToolZoom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bToolZoom.cpp; sourceTree = "<group>"; };
 		1488628B1E686DD90060CDEE /* bToolZoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bToolZoom.h; sourceTree = "<group>"; };
 		1488628C1E686DD90060CDEE /* CocoaBundle_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaBundle_Prefix.pch; sourceTree = "<group>"; };

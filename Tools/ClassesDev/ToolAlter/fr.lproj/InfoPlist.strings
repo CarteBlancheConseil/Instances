@@ -1,0 +1,5 @@
+﻿/* Localized versions of Info.plist keys */
+
+CFBundleName = "Retoucher";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Retoucher version 1.2, Copyright 2006 Carte Blanche Conseil.";

@@ -1,0 +1,5 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Linee proporzionali";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Linee proporzionali versione 1.2, Copyright 2013 Carte Blanche Conseil.";

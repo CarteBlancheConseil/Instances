@@ -1,5 +1,5 @@
 /* Localized versions of Info.plist keys */
 
-CFBundleName = "Selection tool";
+CFBundleName = "Selection";
 CFBundleShortVersionString = "1.2";
-CFBundleGetInfoString = "Selection tool version 1.2, Copyright 2005 Carte Blanche Conseil.";
+CFBundleGetInfoString = "Selection version 1.2, Copyright 2004 Carte Blanche Conseil.";

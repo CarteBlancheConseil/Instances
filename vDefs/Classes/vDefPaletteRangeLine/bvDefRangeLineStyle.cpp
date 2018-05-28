@@ -46,6 +46,7 @@ _bTrace_("bvDefRangeLineStyle::bvDefRangeLineStyle",true);
 	strcpy(_dsh,"");
 	_smooth=false;
 	_dec=0;
+    _wdec=false;
 	_limit=0;
 }
 
@@ -62,6 +63,7 @@ _bTrace_("bvDefRangeLineStyle::bvDefRangeLineStyle",true);
 	strcpy(_dsh,stl->_dsh);
 	_smooth=stl->_smooth;
 	_dec=stl->_dec;
+    _wdec=stl->_wdec;
 	_limit=stl->_limit;
 }
 
@@ -112,7 +114,14 @@ char						val[_values_length_max_];
 	if(elt=_gapp->classMgr()->NthElement(_gstl,1,"decal")){
 		elt->getvalue(val);
 		_dec=matof(val);
+        _wdec=false;
 	}
+    else if(elt=_gapp->classMgr()->NthElement(_gstl,1,"widthdecal")){
+        elt->getvalue(val);
+        _dec=matof(val);
+        _wdec=true;
+    }
+    
 	if(elt=_gapp->classMgr()->NthElement(_gstl,1,"smooth")){
 		elt->getvalue(val);
 		_smooth=atoi(val);
@@ -156,7 +165,7 @@ bool bvDefRangeLineStyle::dump(bArray& arr, int indent){
 	}
 	add_ddesc(arr,indent+3,"width",_width,2);
 	if(_dec!=0){
-		add_ddesc(arr,indent+3,"decal",_dec,2);
+		add_ddesc(arr,indent+3,_wdec?"widthdecal":"decal",_dec,2);
 	}
 	if(_smooth){
 		add_idesc(arr,indent+3,"smooth",1);

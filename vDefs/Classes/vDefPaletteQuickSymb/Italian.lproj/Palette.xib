@@ -2,7 +2,7 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1080</int>
-		<string key="IBDocument.SystemVersion">15G31</string>
+		<string key="IBDocument.SystemVersion">15G1611</string>
 		<string key="IBDocument.InterfaceBuilderVersion">7702</string>
 		<string key="IBDocument.AppKitVersion">1404.47</string>
 		<string key="IBDocument.HIToolboxVersion">807.20</string>
@@ -95,7 +95,6 @@
 							<string key="NSFrame">{{-2, 26}, {439, 515}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="258933331"/>
 							<array class="NSMutableArray" key="NSTabViewItems">
 								<object class="NSTabViewItem" id="363637803">
 									<string key="NSIdentifier">1</string>
@@ -3650,6 +3649,14 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
+						<string key="label">_tab_viw</string>
+						<reference key="source" ref="1021"/>
+						<reference key="destination" ref="1012686094"/>
+					</object>
+					<int key="connectionID">1292</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
 						<string key="label">delegate</string>
 						<reference key="source" ref="244729520"/>
 						<reference key="destination" ref="1021"/>
@@ -5547,7 +5554,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">1291</int>
+			<int key="maxID">1292</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -6097,6 +6104,7 @@
 						<string key="_run_tbl">NSTableView</string>
 						<string key="_smn_pop">NSPopUpButton</string>
 						<string key="_smx_pop">NSPopUpButton</string>
+						<string key="_tab_viw">NSTabView</string>
 						<string key="_tnm_fld">NSTextField</string>
 						<string key="_upd_btn">NSButton</string>
 					</dictionary>
@@ -6164,6 +6172,10 @@
 						<object class="IBToOneOutletInfo" key="_smx_pop">
 							<string key="name">_smx_pop</string>
 							<string key="candidateClassName">NSPopUpButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="_tab_viw">
+							<string key="name">_tab_viw</string>
+							<string key="candidateClassName">NSTabView</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="_tnm_fld">
 							<string key="name">_tnm_fld</string>

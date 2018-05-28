@@ -1,0 +1,5 @@
+﻿/* Localized versions of Info.plist keys */
+
+CFBundleName = "Zone d'impression";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Zone d'impression version 1.2, Copyright 2006 Carte Blanche Conseil.";

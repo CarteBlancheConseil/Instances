@@ -1,0 +1,5 @@
+﻿/* Localized versions of Info.plist keys */
+
+CFBundleName = "Simple Shapes";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Simple Shapes version 1.2, Copyright 2007 Carte Blanche Conseil.";

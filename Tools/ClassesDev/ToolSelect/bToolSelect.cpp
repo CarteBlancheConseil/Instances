@@ -4,7 +4,7 @@
 // Purpose : C++ source file : Select tool class
 // Author : Benoit Ogier, benoit.ogier@macmap.com
 //
-// Copyright (C) 2017 Carte Blanche Conseil.
+// Copyright (C) 2004 Carte Blanche Conseil.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -38,6 +38,7 @@
 #include <mox_intf/Type_Utils.h>
 #include <mox_intf/Carb_Utils.h>
 #include <mox_intf/MacMapCWrappers.h>
+
 #include <MacMapSuite/bArray.h>
 #include <MacMapSuite/bTrace.h>
 #include <MacMapSuite/C_Utils.h>
@@ -45,7 +46,7 @@
 // ---------------------------------------------------------------------------
 // 
 // -------------
-#define _TOOLNAME_ "selecttool_dev"
+#define _TOOLNAME_ "selecttool"
 
 // ---------------------------------------------------------------------------
 // 
@@ -512,7 +513,7 @@ void bToolSelect::rect_select(){
 bArray*			ga;
 bArray			gh(sizeof(bGenericGeoElement*));
 bGenericStyle*	style;
-long			i,n=_gapp->layersAccessCtx()->count();
+long			i,n=_gapp->layersMgr()->count();
 CGPoint			a,b;
 CGRect			r;
 bool			toggles=is_modifiers(shiftKey);
@@ -525,7 +526,7 @@ bool			toggles=is_modifiers(shiftKey);
 		FlushSelection(_gapp);
 	}
 	for(i=n;i>0;i--){
-		style=_gapp->layersAccessCtx()->get(i);
+        style=_gapp->layersMgr()->get(i);
 		if(!style){
 			continue;
 		}	
@@ -558,7 +559,7 @@ void bToolSelect::circle_select(){
 bArray*			ga;
 bArray			gh(sizeof(bGenericGeoElement*));
 bGenericStyle*	style;
-long			i,n=_gapp->layersAccessCtx()->count();
+long			i,n=_gapp->layersMgr()->count();
 CGPoint			a,b;
 CGRect			r;
 bool			toggles=is_modifiers(shiftKey);
@@ -578,7 +579,7 @@ float			d;
 		FlushSelection(_gapp);
 	}
 	for(i=n;i>0;i--){
-		style=_gapp->layersAccessCtx()->get(i);
+        style=_gapp->layersMgr()->get(i);
 		if(!style){
 			continue;
 		}	
@@ -631,9 +632,9 @@ bool			toggles=is_modifiers(shiftKey);
 	if(!toggles){
 		FlushSelection(_gapp);
 	}
-	n=_gapp->layersAccessCtx()->count();
+    n=_gapp->layersMgr()->count();
 	for(i=n;i>0;i--){
-		style=_gapp->layersAccessCtx()->get(i);
+        style=_gapp->layersMgr()->get(i);
 		if(!style){
 			continue;
 		}	
@@ -668,7 +669,7 @@ bArray*				ga;
 bArray				gh(sizeof(bGenericGeoElement*));
 bGenericStyle*		style;
 bGenericGeoElement*	o=NULL;
-long				i,n=_gapp->layersAccessCtx()->count();
+long				i,n=_gapp->layersMgr()->count();
 CGPoint				pt;
 bool				toggles=is_modifiers(shiftKey);
 
@@ -677,7 +678,7 @@ bool				toggles=is_modifiers(shiftKey);
 		FlushSelection(_gapp);
 	}
 	for(i=n;i>0;i--){
-		style=_gapp->layersAccessCtx()->get(i);
+        style=_gapp->layersMgr()->get(i);
 		if(!style){
 			continue;
 		}

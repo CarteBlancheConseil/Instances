@@ -146,6 +146,7 @@ _bTrace_("[vDefPalettePieChartWindowController awakeFromNib]",true);
 char str[256];
 	_ext->type_get()->name(str);
 	[_tnm_fld setCharValue:str];
+    [_tab_viw selectTabViewItemAtIndex:0];
 	
 	[_prvw installController:self];
 		

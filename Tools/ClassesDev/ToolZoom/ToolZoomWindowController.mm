@@ -86,15 +86,8 @@ _tm_((void*)self);
 // ------------
 -(void)awakeFromNib{
 _bTrace_("[ToolZoomWindowController awakeFromNib]",true);
+    [super awakeFromNib];
     [self updateUI];
-}
-
-// ---------------------------------------------------------------------------
-// 
-// ------------
--(void)close{
-_bTrace_("[ToolZoomWindowController close]",true);
-	[super close];
 }
 
 #pragma mark ---- Gestion Interface ----

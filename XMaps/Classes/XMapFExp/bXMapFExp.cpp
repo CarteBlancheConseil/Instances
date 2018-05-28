@@ -57,14 +57,14 @@ type_p	::~type_p(){
 //
 // ------------
 bool type_p::load(bGenericMacMapApp* gapp){
-_bTrace_("type_p::load",true);
+//_bTrace_("type_p::load",true);
 bGenericXMLBaseElement*	root=GetXMLParamFromType(gapp,_tp,kXMapFExpMessageID,kXMapFExpStdParamID);
 fexp_field				fld;
     if(!root){
-_te_("root==NULL");
+//_te_("root==NULL");
 //int		fid;
         for(long i=kOBJ_Name_;i<=_tp->fields()->count();i++){
-            _tm_(i);
+//_tm_(i);
             fld.fid=_tp->fields()->get_id(i);
             //_tp->fields()->get_name(i,fld.fname);
             fld.fname[0]=0;
@@ -90,7 +90,7 @@ _te_("root==NULL");
 //
 // ------------
 bool type_p::dump(bGenericMacMapApp* gapp){
-_bTrace_("type_p::dump",false);
+//_bTrace_("type_p::dump",true);
 bArray		arr(sizeof(xmlelt));
 fexp_field	fld;
     
@@ -100,15 +100,16 @@ fexp_field	fld;
         _flds.get(i,&fld);
         add_idesc(arr,1,"int",fld.fid);
         add_cdesc(arr,1,"name",fld.fname);
+//_tm_(i);
     }
 bGenericXMLBaseElement*			root=gapp->classMgr()->ParseXMLDescriptors(&arr);
     free_descs(arr);
     if(!root){
-_te_("root == NULL");
+//_te_("root == NULL");
         return(false);
     }
     if(!SetXMLParamToType(_tp,kXMapFExpMessageID,kXMapFExpStdParamID,root)){
-_te_("SetXMLParamToType failed");
+//_te_("SetXMLParamToType failed");
     }
     gapp->classMgr()->ReleaseXMLInstance(root);
     return(true);
@@ -129,6 +130,7 @@ fexp_field	fld;
     if(!strcmp(name,"int")){
         elt->getvalue(value);
         fld.fid=atoi(value);
+        fld.fname[0]=0;
         p->_flds.add(&fld);
     }
     else if(!strcmp(name,"name")){
@@ -188,7 +190,7 @@ void bXMapFExp::open(int* flags){
 // 
 // -----------
 bool bXMapFExp::process(int msg, void* prm){
-_bTrace_("bXMapFExp::process()",true);	
+//_bTrace_("bXMapFExp::process()",true);	
 fexp_prm* p=(fexp_prm*)prm;
     switch(msg){
         case kExtProcessCallFromIntf:
@@ -238,8 +240,10 @@ void bXMapFExp::set(int tidx, bArray* arr, int srid){
 bGenericType*	tp=_gapp->typesMgr()->get(tidx);
     if(tp){
 type_p	p(tp);
-        p._flds+(*arr);
-        p.dump(_gapp);
+ bool  b=(p._flds)+(*arr);
+       p.dump(_gapp);
+    }
+    else{
     }
     if(_gapp->document()->srid()!=-1){
         _srid=srid;
@@ -316,12 +320,13 @@ bGenericXMLBaseElement*	root=_gapp->classMgr()->ParseXMLDescriptors(&arr);
 //
 // ------------
 bool bXMapFExp::parse(){
+//_bTrace_("bXMapFExp::parse",false);
 bGenericXMLBaseElement*	elt;
 bGenericXMLBaseElement*	chld;
 char					val[_values_length_max_];
 bGenericType*			tp;
-bArray					arr(sizeof(int));
-int						nb;
+bArray					arr(sizeof(fexp_field));
+long					nb;
 fexp_field				fld;
     
     elt=_gapp->classMgr()->NthElement(this,1,"int");
@@ -331,29 +336,39 @@ fexp_field				fld;
         write_p();
     }
     
-    for(long i=1;;i++){
+long nbcont=_gapp->classMgr()->CountElements(this,"container");
+    for(long i=1;i<=nbcont;i++){
         elt=_gapp->classMgr()->NthElement(this,i,"container");
         if(!elt){
+//_te_("no container");
             break;
         }
+//_tm_("container");
         
         chld=_gapp->classMgr()->NthElement(elt,1,"name");
         if(!chld){
+//_te_("no type name");
             return(false);
         }
+//_tm_("name");
         chld->getvalue(val);
+//_tm_(val);
         tp=_gapp->typesMgr()->get(_gapp->typesMgr()->index(val));
         if(!tp){
-            return(false);
+//_te_("no type named : "+val);
+           return(false);
         }
         
         nb=_gapp->classMgr()->CountElements(elt,"string");
         arr.reset();
         for(long j=1;j<=nb;j++){
-            chld=_gapp->classMgr()->NthElement(elt,j,"name");
+//_tm_("string");
+            chld=_gapp->classMgr()->NthElement(elt,j,"string");
             chld->getvalue(val);
+//_tm_(val);
             fld.fid=tp->fields()->get_id(tp->fields()->get_index(val));
             if(fld.fid==0){
+//_te_("bad field ID");
                 return(false);
             }
             fld.fname[0]=0;

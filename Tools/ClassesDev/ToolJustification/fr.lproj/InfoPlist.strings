@@ -1,0 +1,5 @@
+﻿/* Localized versions of Info.plist keys */
+
+CFBundleName = "Justification";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Justification version 1.2, Copyright 2007 Carte Blanche Conseil.";

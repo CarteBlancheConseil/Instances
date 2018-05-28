@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		140DDCA2099BA7140089C24B /* MacMapSuite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140DDCA1099BA7140089C24B /* MacMapSuite.framework */; };
+		1417AB8F0C462D7F0066091D /* HotSpot.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1417AB8C0C462D7F0066091D /* HotSpot.strings */; };
+		1417AB900C462D7F0066091D /* StdCursor.png in Resources */ = {isa = PBXBuildFile; fileRef = 1417AB8D0C462D7F0066091D /* StdCursor.png */; };
+		1417AB910C462D7F0066091D /* StdSymb.png in Resources */ = {isa = PBXBuildFile; fileRef = 1417AB8E0C462D7F0066091D /* StdSymb.png */; };
+		146269631E8517BA0089F862 /* CocoaBundle_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 1462695F1E8517BA0089F862 /* CocoaBundle_Prefix.pch */; };
+		146269641E8517BA0089F862 /* CocoaStuff.h in Headers */ = {isa = PBXBuildFile; fileRef = 146269601E8517BA0089F862 /* CocoaStuff.h */; };
+		146269651E8517BA0089F862 /* ToolShapeWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 146269611E8517BA0089F862 /* ToolShapeWindowController.h */; };
+		146269661E8517BA0089F862 /* ToolShapeWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 146269621E8517BA0089F862 /* ToolShapeWindowController.mm */; };
+		1462696F1E8517EB0089F862 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 146269671E8517EB0089F862 /* InfoPlist.strings */; };
+		146269711E8517EB0089F862 /* Palette.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1462696B1E8517EB0089F862 /* Palette.xib */; };
+		146269721E8517EB0089F862 /* toolmenu.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1462696D1E8517EB0089F862 /* toolmenu.xml */; };
+		146269751E8518210089F862 /* bToolShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 146269731E8518210089F862 /* bToolShape.cpp */; };
+		146269761E8518210089F862 /* bToolShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 146269741E8518210089F862 /* bToolShape.h */; };
+		146269781E851A470089F862 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146269771E851A470089F862 /* Cocoa.framework */; };
+		1497571308C381270084C913 /* main.h in Headers */ = {isa = PBXBuildFile; fileRef = 1497571208C381270084C913 /* main.h */; };
+		1497636A08C5A5A900F9E7F8 /* tool_lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1497636908C5A5A900F9E7F8 /* tool_lib.framework */; };
+		1499702E0729169F00742B1A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1499702D0729169F00742B1A /* main.cpp */; };
+		14C29AF008C3851700E8920D /* mox_intf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C29AEB08C3851700E8920D /* mox_intf.framework */; };
+		14C29AF108C3851700E8920D /* std_ext.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C29AEC08C3851700E8920D /* std_ext.framework */; };
+		8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		140DDCA1099BA7140089C24B /* MacMapSuite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacMapSuite.framework; path = /Library/Frameworks/MacMapSuite.framework; sourceTree = "<absolute>"; };
+		1417AB8C0C462D7F0066091D /* HotSpot.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = HotSpot.strings; sourceTree = "<group>"; };
+		1417AB8D0C462D7F0066091D /* StdCursor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StdCursor.png; sourceTree = "<group>"; };
+		1417AB8E0C462D7F0066091D /* StdSymb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StdSymb.png; sourceTree = "<group>"; };
+		1462695F1E8517BA0089F862 /* CocoaBundle_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaBundle_Prefix.pch; sourceTree = "<group>"; };
+		146269601E8517BA0089F862 /* CocoaStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaStuff.h; sourceTree = "<group>"; };
+		146269611E8517BA0089F862 /* ToolShapeWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolShapeWindowController.h; sourceTree = "<group>"; };
+		146269621E8517BA0089F862 /* ToolShapeWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ToolShapeWindowController.mm; sourceTree = "<group>"; };
+		146269681E8517EB0089F862 /* fr */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1462696C1E8517EB0089F862 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/Palette.xib; sourceTree = "<group>"; };
+		1462696E1E8517EB0089F862 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = fr; path = fr.lproj/toolmenu.xml; sourceTree = "<group>"; };
+		146269731E8518210089F862 /* bToolShape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bToolShape.cpp; sourceTree = "<group>"; };
+		146269741E8518210089F862 /* bToolShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bToolShape.h; sourceTree = "<group>"; };
+		146269771E851A470089F862 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		146269791E851D4A0089F862 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1462697A1E851D4C0089F862 /* it */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1462697B1E851D520089F862 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Palette.xib; sourceTree = "<group>"; };
+		1462697C1E851D550089F862 /* it */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = it; path = it.lproj/Palette.xib; sourceTree = "<group>"; };
+		1462697D1E851D5D0089F862 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = en; path = en.lproj/toolmenu.xml; sourceTree = "<group>"; };
+		1462697E1E851D610089F862 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = it; path = it.lproj/toolmenu.xml; sourceTree = "<group>"; };
+		1497571208C381270084C913 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		1497636908C5A5A900F9E7F8 /* tool_lib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = tool_lib.framework; path = "../../../../Applis/Current/MacMap®/build/Release/tool_lib.framework"; sourceTree = SOURCE_ROOT; };
+		1499702D0729169F00742B1A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		14C29AEB08C3851700E8920D /* mox_intf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mox_intf.framework; path = "../../../../Applis/Current/MacMap®/build/Release/mox_intf.framework"; sourceTree = SOURCE_ROOT; };
+		14C29AEC08C3851700E8920D /* std_ext.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = std_ext.framework; path = "../../../../Applis/Current/MacMap®/build/Release/std_ext.framework"; sourceTree = SOURCE_ROOT; };
+		8D01CCD10486CAD60068D4B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D01CCD20486CAD60068D4B7 /* ToolShape.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolShape.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D01CCCD0486CAD60068D4B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				146269781E851A470089F862 /* Cocoa.framework in Frameworks */,
+				8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */,
+				140DDCA2099BA7140089C24B /* MacMapSuite.framework in Frameworks */,
+				1497636A08C5A5A900F9E7F8 /* tool_lib.framework in Frameworks */,
+				14C29AF108C3851700E8920D /* std_ext.framework in Frameworks */,
+				14C29AF008C3851700E8920D /* mox_intf.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77ADFE841716C02AAC07 /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				19C28FB4FE9D528D11CA2CBB /* Products */,
+			);
+			name = Template;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				146269771E851A470089F862 /* Cocoa.framework */,
+				08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */,
+				140DDCA1099BA7140089C24B /* MacMapSuite.framework */,
+				1497636908C5A5A900F9E7F8 /* tool_lib.framework */,
+				14C29AEC08C3851700E8920D /* std_ext.framework */,
+				14C29AEB08C3851700E8920D /* mox_intf.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D01CCD10486CAD60068D4B7 /* Info.plist */,
+				146269671E8517EB0089F862 /* InfoPlist.strings */,
+				1462696B1E8517EB0089F862 /* Palette.xib */,
+				1462696D1E8517EB0089F862 /* toolmenu.xml */,
+				1417AB8C0C462D7F0066091D /* HotSpot.strings */,
+				1417AB8D0C462D7F0066091D /* StdCursor.png */,
+				1417AB8E0C462D7F0066091D /* StdSymb.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77ADFE841716C02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				146269731E8518210089F862 /* bToolShape.cpp */,
+				146269741E8518210089F862 /* bToolShape.h */,
+				146269611E8517BA0089F862 /* ToolShapeWindowController.h */,
+				146269621E8517BA0089F862 /* ToolShapeWindowController.mm */,
+				1462695F1E8517BA0089F862 /* CocoaBundle_Prefix.pch */,
+				146269601E8517BA0089F862 /* CocoaStuff.h */,
+				1499702D0729169F00742B1A /* main.cpp */,
+				1497571208C381270084C913 /* main.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		19C28FB4FE9D528D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D01CCD20486CAD60068D4B7 /* ToolShape.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8D01CCC70486CAD60068D4B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				146269761E8518210089F862 /* bToolShape.h in Headers */,
+				146269651E8517BA0089F862 /* ToolShapeWindowController.h in Headers */,
+				1497571308C381270084C913 /* main.h in Headers */,
+				146269631E8517BA0089F862 /* CocoaBundle_Prefix.pch in Headers */,
+				146269641E8517BA0089F862 /* CocoaStuff.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D01CCC60486CAD60068D4B7 /* ToolShape */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1497562008C380AF0084C913 /* Build configuration list for PBXNativeTarget "ToolShape" */;
+			buildPhases = (
+				8D01CCC70486CAD60068D4B7 /* Headers */,
+				8D01CCC90486CAD60068D4B7 /* Resources */,
+				8D01CCCB0486CAD60068D4B7 /* Sources */,
+				8D01CCCD0486CAD60068D4B7 /* Frameworks */,
+				8D01CCCF0486CAD60068D4B7 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToolShape;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = Template;
+			productReference = 8D01CCD20486CAD60068D4B7 /* ToolShape.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1497562408C380AF0084C913 /* Build configuration list for PBXProject "ToolShape" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				Italian,
+				Spanish,
+				fr,
+				en,
+				it,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* Template */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D01CCC60486CAD60068D4B7 /* ToolShape */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D01CCC90486CAD60068D4B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				146269711E8517EB0089F862 /* Palette.xib in Resources */,
+				1417AB8F0C462D7F0066091D /* HotSpot.strings in Resources */,
+				1462696F1E8517EB0089F862 /* InfoPlist.strings in Resources */,
+				1417AB900C462D7F0066091D /* StdCursor.png in Resources */,
+				1417AB910C462D7F0066091D /* StdSymb.png in Resources */,
+				146269721E8517EB0089F862 /* toolmenu.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		8D01CCCF0486CAD60068D4B7 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D01CCCB0486CAD60068D4B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1499702E0729169F00742B1A /* main.cpp in Sources */,
+				146269661E8517BA0089F862 /* ToolShapeWindowController.mm in Sources */,
+				146269751E8518210089F862 /* bToolShape.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		146269671E8517EB0089F862 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				146269681E8517EB0089F862 /* fr */,
+				146269791E851D4A0089F862 /* en */,
+				1462697A1E851D4C0089F862 /* it */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1462696B1E8517EB0089F862 /* Palette.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1462696C1E8517EB0089F862 /* fr */,
+				1462697B1E851D520089F862 /* en */,
+				1462697C1E851D550089F862 /* it */,
+			);
+			name = Palette.xib;
+			sourceTree = "<group>";
+		};
+		1462696D1E8517EB0089F862 /* toolmenu.xml */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1462696E1E8517EB0089F862 /* fr */,
+				1462697D1E851D5D0089F862 /* en */,
+				1462697E1E851D610089F862 /* it */,
+			);
+			name = toolmenu.xml;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1497562208C380AF0084C913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_LOCATION = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"/Users/benoit/Encours/MacMap2005/Sources/Applis/Current/MacMap®/build/Release",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CocoaBundle_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = ../../build;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = Bundle;
+				OBJROOT = ../../build;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = ToolShape;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				SYMROOT = ../../build;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1497562608C380AF0084C913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				SDKROOT = macosx10.8;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1497562008C380AF0084C913 /* Build configuration list for PBXNativeTarget "ToolShape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1497562208C380AF0084C913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1497562408C380AF0084C913 /* Build configuration list for PBXProject "ToolShape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1497562608C380AF0084C913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

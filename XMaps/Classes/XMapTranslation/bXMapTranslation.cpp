@@ -154,67 +154,6 @@ long    result=0;
     return(false);
 }
 
-// ---------------------------------------------------------------------------
-// 
-// ------------
-//bool bXMapTranslation::wd_event(EventRef evt, WindowRef wd){
-//bool		b=true;
-//HICommand	cmd;
-//UInt32		clss=GetEventClass(evt);
-//
-//	if(clss==kEventClassCommand){
-//		GetEventParameter(evt,kEventParamDirectObject,typeHICommand,NULL,sizeof(HICommand),NULL,&cmd);
-//		switch(cmd.commandID){
-//			case kHICommandOK:
-//				puts();
-//				break;
-//			case kHICommandCancel:
-//				break;
-//			case kXMapTranslationPopKindCmd:
-//				break;
-//			default:
-//				b=false;
-//				break;
-//		}
-//	}
-//	return(b);
-//}
-
-// ---------------------------------------------------------------------------
-// 
-// ------------
-//void bXMapTranslation::wd_init(WindowRef wd){
-//ControlRef			c;
-//char				val[256];
-//
-//	c=get_control(kXMapTranslationSignature,kXMapTranslationPopKindID);	
-//	SetControl32BitValue(c,_prm.kind);
-//	if((_prm.kind==kXMapTranslationToCoord)&&(_gapp->cntMgr()->count()>0)){
-//bGenericGeoElement*	o;
-//ivertices*			vxs;
-//d2dvertex			dvx;
-//		_gapp->cntMgr()->elements()->get(1,&o);
-//		o->getVertices(&vxs);
-//		_gapp->locConverter()->convert(&dvx,&vxs->vx.vx2[0]);
-//		_prm.x=dvx.x;
-//		_prm.y=dvx.y;
-//	}
-//	c=get_control(kXMapTranslationSignature,kXMapTranslationXID);	
-//	SetTextControlFilter(c,float_filter);
-//	sprintf(val,"%.*f",_gapp->document()->dist_pref_digits(),_prm.x);
-//	SetTextControlValue(c,val);	
-//	SetKeyboardFocus(wd,c,kControlFocusNextPart);
-//
-//	c=get_control(kXMapTranslationSignature,kXMapTranslationYID);	
-//	SetTextControlFilter(c,float_filter);
-//	sprintf(val,"%.*f",_gapp->document()->dist_pref_digits(),_prm.y);
-//	SetTextControlValue(c,val);	
-//
-//bGenericUnit*		u=_gapp->distMgr()->get();
-//	c=get_control(kXMapTranslationSignature,kXMapTranslationUnitID);
-//	u->short_name(val);
-//	SetTextControlValue(c,val);	
-//}
 
 // ---------------------------------------------------------------------------
 // 
@@ -281,23 +220,3 @@ int					dh,dv;
 	}
 	return(true);
 }
-
-// ---------------------------------------------------------------------------
-// 
-// ------------
-//void bXMapTranslation::puts(){
-//ControlRef		c;
-//char			val[256];
-//Size			sz;
-//		
-//	c=get_control(kXMapTranslationSignature,kXMapTranslationXID);
-//	GetControlData(c,kControlEditTextPart,kControlEditTextTextTag,sizeof(val),val,&sz);
-//	val[sz]=0;
-//	_prm.x=matof(val);
-//	c=get_control(kXMapTranslationSignature,kXMapTranslationYID);
-//	GetControlData(c,kControlEditTextPart,kControlEditTextTextTag,sizeof(val),val,&sz);
-//	val[sz]=0;
-//	_prm.y=matof(val);
-//	c=get_control(kXMapTranslationSignature,kXMapTranslationPopKindID);
-//	_prm.kind=GetControl32BitValue(c);
-//}

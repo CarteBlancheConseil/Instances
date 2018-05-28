@@ -1,0 +1,5 @@
+﻿/* Localized versions of Info.plist keys */
+
+CFBundleName = "Scinder";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Scinder version 1.2, Copyright 2006 Carte Blanche Conseil.";

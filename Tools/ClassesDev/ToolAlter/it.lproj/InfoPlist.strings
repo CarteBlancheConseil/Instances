@@ -1,0 +1,5 @@
+﻿/* Localized versions of Info.plist keys */
+
+CFBundleName = "Ritocca";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Ritocca versione 1.2, Copyright 2006 Carte Blanche Conseil.";

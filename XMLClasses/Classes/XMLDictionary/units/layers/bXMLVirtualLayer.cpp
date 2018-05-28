@@ -58,7 +58,8 @@ bVirtualLayerElement::~bVirtualLayerElement(){
 // Init
 // ------------
 void bVirtualLayerElement::init(void* ctx){
-	if(((bGenericLayerAccessContext*)ctx)->addvirtuallayer(this)){
+//    if(((bGenericLayerAccessContext*)ctx)->addvirtuallayer(this)){
+    if(((bGenericLayersMgr*)ctx)->addvirtuallayer(this)){
 		bStdXMLLayerElement::init(ctx);
 	}
 	else{

@@ -194,7 +194,7 @@ double				d=Measure_d2i(_gapp,prm.d);
 		}
 		if(vsc){
 			if(prm.tp->new_object(&oc)){
-				if(!InitWithStyle(_gapp,_gapp->layersAccessCtx()->get_current(),oc)){
+                if(!InitWithStyle(_gapp,_gapp->layersMgr()->get_current(),oc)){
 					MMBeep();
 				}
 				oc->setVertices(vsc);

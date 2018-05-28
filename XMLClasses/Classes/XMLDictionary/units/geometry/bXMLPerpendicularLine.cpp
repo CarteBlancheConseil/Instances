@@ -176,7 +176,7 @@ float	sz=ctx->getHSize();
 // 
 // -----------
 bool bPerpendicularLineElement::make_line(float* xpts, float* ypts, int npts, float sz, float* xout, float* yout){
-_bTrace_("bPerpendicularLineElement::make_line(...)",false);
+//_bTrace_("bPerpendicularLineElement::make_line(...)",false);
 CGPoint	pa,pb;
 long	i=0;
 double	a,l=0.0,w,r,tl,pl;

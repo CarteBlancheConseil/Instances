@@ -155,7 +155,7 @@ _tm_("createIfNeeded: "+ctin);
 
 	_gapp->layersMgr()->SetObjInvalidation(false);
     get_localized_name(msg,getbundle());
-bProgressWait	wt("",msg,true,false,paths.count());
+bProgressWait	wt("",msg,false,paths.count());
 bEventLog       log(_gapp,this);
 char            path[PATH_MAX];
     for(long i=1;i<=paths.count();i++){

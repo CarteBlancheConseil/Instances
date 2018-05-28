@@ -1,0 +1,5 @@
+﻿/* Localized versions of Info.plist keys */
+
+CFBundleName = "Symbol rotation";
+CFBundleShortVersionString = "1.2";
+CFBundleGetInfoString = "Symbol rotation version 1.2, Copyright 2007 Carte Blanche Conseil.";

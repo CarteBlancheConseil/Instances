@@ -28,7 +28,7 @@
 //----------------------------------------------------------------------------
 
 #include "bXMLDBField.h"
-#include <MacMapSuite/bTrace.h>
+//#include <MacMapSuite/bTrace.h>
 
 // ---------------------------------------------------------------------------
 // Constructeur
@@ -155,9 +155,13 @@ void bDBFieldElement::io_int(	bGenericGeoElement* o,
 								int idx,
 								bStdDBValue* v){
 //_bTrace_("bDBFieldElement::io_int()",false);
-int	vl;
-	o->getValue(idx,&vl);
-	v->put(vl);
+int	vl=0;
+    if(o->getValue(idx,&vl)==true){
+        v->put(vl);
+    }
+    else{
+        v->put(LONG_MIN);
+    }
 }
 
 // ---------------------------------------------------------------------------
@@ -167,10 +171,13 @@ void bDBFieldElement::io_dbl(	bGenericGeoElement* o,
 								int idx,
 								bStdDBValue* v){
 //_bTrace_("bDBFieldElement::io_dbl()",false);
-double	vl;
-	o->getValue(idx,&vl);
-	v->put(vl);
-//_tm_(vl);
+double	vl=0;
+    if(o->getValue(idx,&vl)==true){
+        v->put(vl);
+    }
+    else{
+        v->put(nan(""));
+    }
 }
 
 // ---------------------------------------------------------------------------
@@ -180,7 +187,7 @@ void bDBFieldElement::io_chr(	bGenericGeoElement* o,
 								int idx,
 								bStdDBValue* v){
 //_bTrace_("bDBFieldElement::io_chr()",false);
-char	vl[_values_length_max_];
+char	vl[_values_length_max_]="";
 	o->getValue(idx,vl);
 	v->put(vl);
 }

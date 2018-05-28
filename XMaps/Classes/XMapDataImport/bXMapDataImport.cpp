@@ -750,7 +750,7 @@ bool	fill;
 char				ttl[__MESSAGE_STRING_LENGTH_MAX__];
 	GetName(this,ttl);
 	message_string(kMsgProgress,msg,0);
-bProgressWait wt(ttl,msg,true,true,_tbl->CountRecords());
+bProgressWait wt(ttl,msg,true,_tbl->CountRecords());
 
 _tm_("-- DataImport REPORT BEGIN --");
 	for(i=1;i<=prm->tbl->CountRecords();i++){

@@ -56,7 +56,8 @@ bvDefQuickLineStyle	::bvDefQuickLineStyle(bGenericMacMapApp* gapp,
 		_smooth[i]=false;
 		_fsmooth[i]=0;
 		_dec[i]=0;
-		_fdec[i]=0;
+        _fdec[i]=0;
+        _wdec[i]=false;
 		_limit[i]=0;
 		_flimit[i]=0;
 	}
@@ -72,8 +73,8 @@ bvDefQuickLineStyle::~bvDefQuickLineStyle(){
 // 
 // ------------
 bool bvDefQuickLineStyle::load(bGenericXMLBaseElement* root){
-bGenericXMLBaseElement		*elt,*chld;
-char						val[_values_length_max_];
+bGenericXMLBaseElement  *elt,*chld;
+char                    val[_values_length_max_];
 	
 	for(_pass=1;_pass<=3;_pass++){
 		if(!std_load(root)){
@@ -200,6 +201,7 @@ char						val[_values_length_max_];
 		if(elt=_gapp->classMgr()->NthElement(_gstl,1,"decal")){
 			elt->getvalue(val);
 			_dec[_pass-1]=matof(val);
+            _wdec[_pass-1]=false;
 			if(chld=_gapp->classMgr()->NthElement(elt,1,"field")){
 				chld->getvalue(val);
 				_fdec[_pass-1]=_gtp->fields()->get_index(val);
@@ -209,7 +211,20 @@ char						val[_values_length_max_];
 				_dec[_pass-1]=matof(val);
 			}
 		}
-		
+        else if(elt=_gapp->classMgr()->NthElement(_gstl,1,"widthdecal")){
+            elt->getvalue(val);
+            _dec[_pass-1]=matof(val);
+            _wdec[_pass-1]=true;
+            if(chld=_gapp->classMgr()->NthElement(elt,1,"field")){
+                chld->getvalue(val);
+                _fdec[_pass-1]=_gtp->fields()->get_index(val);
+            }
+            if(chld=_gapp->classMgr()->NthElement(elt,1,"value")){
+                chld->getvalue(val);
+                _dec[_pass-1]=matof(val);
+            }
+        }
+        
 		if(elt=_gapp->classMgr()->NthElement(_gstl,1,"smooth")){
 			elt->getvalue(val);
 			_smooth[_pass-1]=atoi(val);
@@ -320,13 +335,13 @@ char	nm[256];
 		}
 		
 		if(_fdec[_pass-1]){
-			add_cdesc(arr,indent+3,"decal","");
+			add_cdesc(arr,indent+3,_wdec[_pass-1]?"widthdecal":"decal","");
 			_gtp->fields()->get_name(_fdec[_pass-1],nm);
 			add_cdesc(arr,indent+4,"field",nm);
 			add_ddesc(arr,indent+4,"value",_dec[_pass-1],2);
 		}
 		else if(_dec[_pass-1]!=0){
-			add_ddesc(arr,indent+3,"decal",_dec[_pass-1],2);
+			add_ddesc(arr,indent+3,_wdec[_pass-1]?"widthdecal":"decal",_dec[_pass-1],2);
 		}
 		
 		if(_fsmooth[_pass-1]){

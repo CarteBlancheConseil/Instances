@@ -41,29 +41,11 @@
 // ------------
 @implementation ToolContiguousWindowController
 // ---------------------------------------------------------------------------
-//
-// ------------
--(id)initWithExt:(bStdExt *)ext{
-_bTrace_("[ToolContiguousWindowController init]",true);
-    self=[super initWithExt:ext];
-    _arr=NULL;
-    if(self){
-        _arr=new bArray(sizeof(int));
-    }
-_tm_((void*)self);
-    return self;
-}
-
-// ---------------------------------------------------------------------------
 // 
 // ------------
 -(void)dealloc{
 _bTrace_("[ToolContiguousWindowController dealloc]",true);
 _tm_((void*)self);
-    if(_arr){
-        delete _arr;
-        _arr=NULL;
-    }
 	[super dealloc];
 }
 
@@ -72,6 +54,8 @@ _tm_((void*)self);
 // ------------
 -(void)awakeFromNib{
 _bTrace_("[ToolContiguousWindowController awakeFromNib]",true);
+    [super awakeFromNib];
+    
 bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
 bGenericType*       tp=NthTypeOfKind(gapp,1,kBaseKindPolyline);
 long                i=tp?tp->index():0;
@@ -80,16 +64,10 @@ long                i=tp?tp->index():0;
     NSPopupButtonPopulateWithTypes(_typ_pop,gapp,kBaseKindPolyline,i);
     
 bToolContiguous*    ext=(bToolContiguous*)_ext;
-    if(!_arr){
-        _arr=new bArray(sizeof(int));
-    }
-bool    b=(*_arr)+ext->types();
-_tm_("ext->types().count()="+ext->types().count());
-_tm_("_arr->count()="+_arr->count());
     tp=gapp->typesMgr()->get([_typ_pop indexOfSelectedItem]+1);
     if(tp){
 int     x;
-        if(_arr->get(tp->index(),&x)){
+        if(ext->types().get(tp->index(),&x)){
             x=tp->fields()->get_index(x);
             if(x>0){
                 [_fld_viw selectRowIndexes:[NSIndexSet indexSetWithIndex:x-kOBJ_Name_]
@@ -98,14 +76,6 @@ int     x;
             }
         }
     }
-}
-
-// ---------------------------------------------------------------------------
-// 
-// ------------
--(void)close{
-_bTrace_("[ToolContiguousWindowController close]",true);
-	[super close];
 }
 
 #pragma mark ---- Gestion TableView ----
@@ -143,68 +113,37 @@ char    value[256];
 //
 // -----------
 -(void)tableViewSelectionDidChange:(NSNotification*)notification{
-_bTrace_("[ToolContiguousWindowController doChooseType]",true);
+_bTrace_("[ToolContiguousWindowController tableViewSelectionDidChange]",true);
 bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
 bGenericType*       tp=gapp->typesMgr()->get([_typ_pop indexOfSelectedItem]+1);
+bToolContiguous*    ext=(bToolContiguous*)_ext;
     if(tp){
 int     x=tp->fields()->get_id([_fld_viw selectedRow]+kOBJ_Name_);
-_tm_("x="+x);
-        _arr->put(tp->index(),&x);
+        ext->types().put(tp->index(),&x);
     }
 }
 
 #pragma mark ---- Actions ----
 // ---------------------------------------------------------------------------
 //
-// -----------
--(IBAction)validDialog:(id)sender{
-bToolContiguous*    ext=(bToolContiguous*)_ext;
-
-//bToolContiguous*    ext=(bToolContiguous*)_ext;
-//        ext->set_pt_all_obj([_alo_chk intValue]);
-//        ext->set_pt_all_typ([_alt_chk intValue]);
-//        ext->set_full_include([_flo_chk intValue]);
-//        ext->set_poly_angle([_act_chk intValue]);
-//        ext->set_angle([_ang_txt doubleValue]);
-//        if(ext->get_mnu_cmd()==kContiguousDragPoly){
-//            ext->set_use_angle([_act_chk intValue]);
-//        }
-    [super validDialog:sender];
-}
-
-// ---------------------------------------------------------------------------
-//
 // ------------
 -(IBAction)doChooseType:(id)sender{
 _bTrace_("[ToolContiguousWindowController doChooseType]",true);
     [_fld_viw reloadData];
-
-_tm_("pop index="+([_typ_pop indexOfSelectedItem]+1));
     
 bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
 bGenericType*       tp=gapp->typesMgr()->get([_typ_pop indexOfSelectedItem]+1);
+bToolContiguous*    ext=(bToolContiguous*)_ext;
     if(tp){
-_tm_("tp->index()="+tp->index());
-
 int     x;
-        if(_arr->get(tp->index(),&x)){
-_tm_("x="+x);
+        if(ext->types().get(tp->index(),&x)){
             x=tp->fields()->get_index(x);
-_tm_("x="+x);
             if(x>0){
                 [_fld_viw selectRowIndexes:[NSIndexSet indexSetWithIndex:x-kOBJ_Name_]
                       byExtendingSelection:NO];
                 [_fld_viw scrollRowToVisible:x-kOBJ_Name_];
             }
         }
-        else{
-_te_("arr->get failed, arr->count()="+_arr->count());
-
-        }
-    }
-    else{
-_te_("tp=NULL");
-
     }
 }
 

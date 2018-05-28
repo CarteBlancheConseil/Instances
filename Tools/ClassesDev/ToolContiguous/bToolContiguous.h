@@ -4,7 +4,7 @@
 // Purpose : Header file : Contiguous tool class (Select a set of connected lines having same value in a field, usefull for roadmaps). 
 // Author : Benoit Ogier, benoit.ogier@macmap.com
 //
-// Copyright (C) 1997-2015 Carte Blanche Conseil.
+// Copyright (C) 2006 Carte Blanche Conseil.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -38,17 +38,6 @@
 
 //----------------------------------------------------------------------------
 
-enum{
-	kContiguousEditSign				='Cont',
-	kContiguousTypesID				=1,
-	kContiguousTypesCmd				='popt',
-	kContiguousFieldsID				=2,
-	kContiguousFieldsCmd			='flds',
-	kContiguousFieldsNameProperty	='name'
-};
-
-//----------------------------------------------------------------------------
-
 class bToolContiguous : public bStdToolNav{
 public:		
 	bToolContiguous							(	bGenericXMLBaseElement* elt, 
@@ -57,16 +46,11 @@ public:
 	virtual ~bToolContiguous				(	);
 	virtual bGenericXMLBaseElement* create	(	bGenericXMLBaseElement* elt);
 	
-	virtual void open						(	int* flags);
 	virtual void close						(	);
 	
 	virtual void clic						(	CGPoint pt, int count);
 	
     virtual bool edit						(	void* prm);
-
-    virtual bool edit_event					(	EventRef evt,
-												WindowRef wd);
-	virtual void edit_init					(	WindowRef wd);
 
 	virtual bGenericXMLBaseElement* load	(	);
 	virtual bGenericXMLBaseElement* make	(	bArray& arr);
@@ -78,22 +62,10 @@ protected:
 
 private:
 	virtual void line_propagate				(	bGenericGeoElement* o);
-	virtual void populate_fields			(	WindowRef wd);
-	virtual void flush_fields				(	WindowRef wd);
 
 	virtual bGenericXMLBaseElement* make	(	int tidx);
 	virtual void load_type					(	int tidx);
 
-	static OSStatus dtb_proc				(	ControlRef browser, 
-												DataBrowserItemID itemID, 
-												DataBrowserPropertyID property, 
-												DataBrowserItemDataRef itemData, 
-												Boolean changeValue);
-	static void dtb_notifier				(	ControlRef browser, 
-												DataBrowserItemID item, 
-												DataBrowserItemNotification msg);
-								
-	int		_cur;
 	bArray	_types;
 };
 

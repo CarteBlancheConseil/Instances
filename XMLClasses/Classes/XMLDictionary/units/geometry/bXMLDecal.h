@@ -25,6 +25,7 @@
 // 
 //----------------------------------------------------------------------------
 // 02/04/2003 creation.
+// 15/11/2017 ajout widthdecal.
 //----------------------------------------------------------------------------
 
 #ifndef __XMLDECALCLASSE__
@@ -39,21 +40,40 @@
 //----------------------------------------------------------------------------
 
 class bDecalElement : public bStdXMLLowRenderElement{
-	public:
-		bDecalElement 							(bGenericXMLBaseElement* elt, bGenericMacMapApp* gapp, CFBundleRef bndl );
-		virtual ~bDecalElement  				();
-		virtual bGenericXMLBaseElement* create	(bGenericXMLBaseElement* elt);
-		
-		virtual bool actionstd					(bGenericGraphicContext* ctx);
-		virtual bool actionval					(	bGenericGraphicContext* ctx,
-													bStdXMLValueElement* elt,
-													bGenericGeoElement* geo);
-		
-	protected:
-		bool decal								(bGenericGraphicContext *ctx);
+public:
+    bDecalElement 							(   bGenericXMLBaseElement* elt,
+                                                bGenericMacMapApp* gapp,
+                                                CFBundleRef bndl);
+    virtual ~bDecalElement  				(   );
+    virtual bGenericXMLBaseElement* create	(   bGenericXMLBaseElement* elt);
+    
+    virtual bool actionstd					(   bGenericGraphicContext* ctx);
+    virtual bool actionval					(	bGenericGraphicContext* ctx,
+                                                bStdXMLValueElement* elt,
+                                                bGenericGeoElement* geo);
+    
+protected:
+    bool decal								(   bGenericGraphicContext *ctx);
 
-	private:
-		double	_val;	
+    double	_val;
+
+private:
+};
+
+//----------------------------------------------------------------------------
+
+class bWidthDecalElement : public bDecalElement{
+public:
+    bWidthDecalElement 						(   bGenericXMLBaseElement* elt,
+                                                bGenericMacMapApp* gapp,
+                                                CFBundleRef bndl);
+    virtual ~bWidthDecalElement  			(   );
+    virtual bGenericXMLBaseElement* create	(   bGenericXMLBaseElement* elt);
+    
+    virtual bool actionstd					(   bGenericGraphicContext* ctx);
+    virtual bool actionval					(	bGenericGraphicContext* ctx,
+                                                bStdXMLValueElement* elt,
+                                                bGenericGeoElement* geo);
 };
 
 //----------------------------------------------------------------------------

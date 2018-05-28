@@ -704,7 +704,7 @@ char				ttl[__MESSAGE_STRING_LENGTH_MAX__];
     
     get_localized_name(ttl,getbundle());
     b_message_string(kXMapNetCleanNodeCreationMessage,msg,getbundle(),0);
-bProgressWait	wt(ttl,msg,true,true,loop.count());
+bProgressWait	wt(ttl,msg,true,loop.count());
     for(long i=1;i<=loop.count();i++){
         if(!wt.set_progress(i)){
             break;
@@ -808,7 +808,7 @@ char				ttl[__MESSAGE_STRING_LENGTH_MAX__];
     get_localized_name(ttl,getbundle());
 
     b_message_string(kXMapNetCleanCutEdgesMessage,msg,getbundle(),0);
-bProgressWait	wt(ttl,msg,true,true,loop.count());
+bProgressWait	wt(ttl,msg,true,loop.count());
     for(long i=1;i<=loop.count();i++){
         if(!wt.set_progress(i)){
             break;
@@ -889,7 +889,7 @@ char				ttl[__MESSAGE_STRING_LENGTH_MAX__];
     get_localized_name(ttl,getbundle());
 
     b_message_string(kXMapNetCleanJoinOnNodesMessage,msg,getbundle(),0);
-bProgressWait	wt(ttl,msg,true,true,loop.count());
+bProgressWait	wt(ttl,msg,true,loop.count());
     for(long i=1;i<=loop.count();i++){
         if(!wt.set_progress(i)){
             break;
@@ -947,7 +947,7 @@ char				ttl[__MESSAGE_STRING_LENGTH_MAX__];
     get_localized_name(ttl,getbundle());
 
     b_message_string(kXMapNetCleanJoinOnEdgesMessage,msg,getbundle(),0);
-bProgressWait	wt(ttl,msg,true,true,loop.count());
+bProgressWait	wt(ttl,msg,true,loop.count());
     for(long i=1;i<=loop.count();i++){
         if(!wt.set_progress(i)){
             break;
@@ -1011,7 +1011,7 @@ char				ttl[__MESSAGE_STRING_LENGTH_MAX__];
     get_localized_name(ttl,getbundle());
 
     b_message_string(kXMapNetCleanCheckNodesMessage,msg,getbundle(),0);
-bProgressWait	wt(ttl,msg,true,true,loop.count());
+bProgressWait	wt(ttl,msg,true,loop.count());
     for(long i=1;i<=loop.count();i++){
         if(!wt.set_progress(i)){
             break;
@@ -1059,7 +1059,7 @@ char				ttl[__MESSAGE_STRING_LENGTH_MAX__];
     get_localized_name(ttl,getbundle());
 
     b_message_string(kXMapNetCleanCheckEdgesMessage,msg,getbundle(),0);
-bProgressWait	wt(ttl,msg,true,true,loop.count());
+bProgressWait	wt(ttl,msg,true,loop.count());
     for(long i=1;i<=loop.count();i++){
         if(!wt.set_progress(i)){
             break;

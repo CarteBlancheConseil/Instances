@@ -57,6 +57,7 @@ bLayerArrayElement::~bLayerArrayElement(){
 // Init
 // ------------
 void bLayerArrayElement::init(void* ctx){
-	((bGenericLayerAccessContext*)ctx)->setarray(this);
+//    ((bGenericLayerAccessContext*)ctx)->setarray(this);
+    ((bGenericLayersMgr*)ctx)->setarray(this);
 	bStdXMLLayerElement::init(ctx);
 }

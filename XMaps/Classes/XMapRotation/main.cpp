@@ -28,8 +28,8 @@
 //----------------------------------------------------------------------------
 
 #include "main.h"
-#include <MacMapSuite/bTrace.h>
 #include "bXMapRotation.h"
+#include <MacMapSuite/bTrace.h>
 
 // ---------------------------------------------------------------------------
 // 

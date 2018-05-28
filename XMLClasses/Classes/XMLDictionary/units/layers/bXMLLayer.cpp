@@ -57,7 +57,8 @@ bLayerElement::~bLayerElement(){
 // Init
 // ------------
 void bLayerElement::init(void* ctx){
-	if(((bGenericLayerAccessContext*)ctx)->addlayer(this)){
+//    if(((bGenericLayerAccessContext*)ctx)->addlayer(this)){
+    if(((bGenericLayersMgr*)ctx)->addlayer(this)){
 		bStdXMLLayerElement::init(ctx);
 	}
 	else{

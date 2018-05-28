@@ -51,18 +51,6 @@ _tm_((void*)self);
 	[super dealloc];
 }
 
-
-//enum{
-//    kXMapTranslationWithOffset		=1,
-//    kXMapTranslationToCoord			=2,
-//};
-//
-//typedef struct translation_prm{
-//    double	x;
-//    double	y;
-//    int		kind;
-//}translation_prm;
-
 // ---------------------------------------------------------------------------
 // 
 // ------------

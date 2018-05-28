@@ -251,7 +251,7 @@ bool					b;
 	_sfhier=fhier;
 	
 	message_string(kMsgProgress,msg,1);
-bProgressWait wt("",msg,true,true,sel.count()*3);
+bProgressWait wt("",msg,true,sel.count()*3);
 	
 	_gapp->layersMgr()->SetObjInvalidation(false);
 	

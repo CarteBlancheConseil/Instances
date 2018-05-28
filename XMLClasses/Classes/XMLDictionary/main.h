@@ -4,7 +4,7 @@
 // Purpose : Header file : Plugin entry point
 // Author : Benoit Ogier, benoit.ogier@macmap.com
 //
-// Copyright (C) 1997-2015 Carte Blanche Conseil.
+// Copyright (C) 1997-2017 Carte Blanche Conseil.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -166,7 +166,6 @@
 #include "bXMLSubClassBoundsArray.h"
 #include "bXMLSubClassField.h"
 #include "bXMLSubClassName.h"
-
 #include "bXMLFact.h"
 #include "bXMLCeil.h"
 #include "bXMLCos.h"
@@ -181,7 +180,6 @@
 #include "bXMLSqr.h"
 #include "bXMLTan.h"
 #include "bXMLSqrt.h"
-
 #include "bXMLAverage.h"
 #include "bXMLFirst.h"
 #include "bXMLLast.h"
@@ -193,38 +191,28 @@
 #include "bXMLStdDeviation.h"
 #include "bXMLSum.h"
 #include "bXMLVariance.h"
-
 #include "bXMLModulo.h"
 #include "bXMLXOr.h"
-
 #include "bXMLShiftX.h"
 #include "bXMLShiftY.h"
 #include "bXMLLegible.h"
-
 #include "bXMLStartAngle.h"
 #include "bXMLEndAngle.h"
 #include "bXMLPropAngle.h"
 #include "bXMLPropColor.h"
-
 #include "bXMLScript.h"
 #include "bXMLString.h"
-
 #include "bXMLVirtualLayer.h"
-
 #include "bXMLDBQuestion.h"
 #include "bXMLDBSetNext.h"
 #include "bXMLDBAddToContrast.h"
 #include "bXMLDBAddToMasked.h"
-
 #include "bXMLScreenGeometry.h"
 #include "bXMLPrintAreaGeometry.h"
 #include "bXMLWMSRaster.h"
-
 #include "bXMLBoxPos.h"
-
 #include "bXMLfCast.h"
 #include "bXMLiCast.h"
-
 #include "bXMLBgStroke.h"
 #include "bXMLBgWidthMaj.h"
 #include "bXMLBgHeightMaj.h"
@@ -232,21 +220,15 @@
 #include "bXMLRoundedRadius.h"
 #include "bXMLBgShiftX.h"
 #include "bXMLBgShiftY.h"
-
 #include "bXMLPropHVSize.h"
 #include "bXMLHVSizeJustification.h"
-
 #include "bXMLNthChar.h"
 #include "bXMLTextRptJustification.h"
-
 #include "bXMLGoogleMap.h"
 #include "bXMLTMSRaster.h"
-
 #include "bXMLPerpendicularLine.h"
-
 #include "bXMLCollection.h"
 #include "bXMLObjectSet.h"
-
 #include "bXMLVertexGeometry.h"
 
 //----------------------------------------------------------------------------

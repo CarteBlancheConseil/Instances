@@ -4,7 +4,7 @@
 // Purpose : Header file : Plugin entry point
 // Author : Benoit Ogier, benoit.ogier@macmap.com
 //
-// Copyright (C) 2017 Carte Blanche Conseil.
+// Copyright (C) 2006 Carte Blanche Conseil.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by

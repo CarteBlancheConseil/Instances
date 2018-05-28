@@ -148,7 +148,7 @@ bGenericXMLBaseElement*	elt;
 				elt->getvalue(val);
 				p.nv=atoi(val);
 
-				elt=getelement(3);
+				elt=getelement(7);
 				if(!elt){
 					return(false);
 				}
@@ -237,15 +237,15 @@ d2dvertex			co=*dvx,c;
 int					i,j;
 char				msg[__MESSAGE_STRING_LENGTH_MAX__];
 	message_string(kMsgProgress,msg,1);
-bProgressWait wt("",msg,true,true,nh*nv);
-
+bProgressWait wt("",msg,true,(nh*nv));
+   
 	_gapp->layersMgr()->SetObjInvalidation(false);
 	co.y+=sz;
 	for(i=1;i<=nv;i++){
 		co.x=dvx->x;
 		co.y-=sz;
 		for(j=1;j<=nh;j++){
-			if(!wt.set_progress((i-1)*nv+j)){
+			if(!wt.set_progress(((i-1)*nh+j))){
 				break;
 			}
 			c.x=co.x+sz*(j-1);
@@ -261,13 +261,18 @@ bProgressWait wt("",msg,true,true,nh*nv);
 			if(!tp->new_object(&o)){
 _te_("new_object");
 				ivs_free(vxs);
-				return(false);
+                _gapp->layersMgr()->SetObjInvalidation(true);
+                return(false);
 			}
+            if(!InitWithStyle(_gapp,_gapp->layersMgr()->get_current(),o)){
+                MMBeep();
+            }
 			if(!o->setVertices(vxs)){
 _te_("setVertices");
 				tp->kill_object(o);
 				ivs_free(vxs);
-				return(false);
+                _gapp->layersMgr()->SetObjInvalidation(true);
+                return(false);
 			}
 		}
 		if(!wt.get_progress()){
@@ -296,14 +301,14 @@ int					i,j;
 double				d=(sz/sin(M_PI/3.0))/2.0;
 char				msg[__MESSAGE_STRING_LENGTH_MAX__];
 	message_string(kMsgProgress,msg,1);
-bProgressWait wt("",msg,true,true,nh*nv);
+bProgressWait wt("",msg,true,(nh*nv));
 
 	_gapp->layersMgr()->SetObjInvalidation(false);
 	co.y-=d;
 	for(i=1;i<=nv;i++){
 		co.x=(i&1)?(dvx->x+sz):(dvx->x+(sz/2.0));
 		for(j=1;j<=nh;j++){
-			if(!wt.set_progress((i-1)*nh+j)){
+			if(!wt.set_progress(((i-1)*nh+j))){
 				break;
 			}
 			
@@ -338,16 +343,18 @@ bProgressWait wt("",msg,true,true,nh*nv);
 			if(!tp->new_object(&o)){
 _te_("new_object");
 				ivs_free(vxs);
-				return(false);
+                _gapp->layersMgr()->SetObjInvalidation(true);
+                return(false);
 			}
-			if(!InitWithStyle(_gapp,_gapp->layersAccessCtx()->get_current(),o)){
+            if(!InitWithStyle(_gapp,_gapp->layersMgr()->get_current(),o)){
                 MMBeep();
 			}
 			if(!o->setVertices(vxs)){
 _te_("setVertices");
 				tp->kill_object(o);
 				ivs_free(vxs);
-				return(false);
+                _gapp->layersMgr()->SetObjInvalidation(true);
+                return(false);
 			}
 		}
 		co.y-=(d*2.0*0.75);

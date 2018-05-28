@@ -203,7 +203,7 @@ char	mess[__MESSAGE_STRING_LENGTH_MAX__];
 	tp->fields()->get_name(field,mess);
 	
 	get_localized_name(mess,getbundle());
-bProgressWait	wt(mess,NULL,true,true,prm.tp->nb_live()*2);
+bProgressWait	wt(mess,"",true,prm.tp->nb_live()*2);
 	pp.wt=&wt;
 	pp.wtn=0;
  	

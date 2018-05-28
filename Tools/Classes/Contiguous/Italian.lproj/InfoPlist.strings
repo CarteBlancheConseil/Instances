@@ -1,5 +1,0 @@
-/* Localized versions of Info.plist keys */
-
-CFBundleName = "Contiguo";
-CFBundleShortVersionString = "1.2";
-CFBundleGetInfoString = "Contiguo versione 1.2, Copyright 2005 Carte Blanche Conseil.";

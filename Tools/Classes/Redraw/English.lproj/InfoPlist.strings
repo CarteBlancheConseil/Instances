@@ -1,5 +1,0 @@
-/* Localized versions of Info.plist keys */
-
-CFBundleName = "Redraw";
-CFBundleShortVersionString = "1.2";
-CFBundleGetInfoString = "Redraw version 1.2, Copyright 2005 Carte Blanche Conseil.";

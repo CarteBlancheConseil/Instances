@@ -4,7 +4,7 @@
 // Purpose : C++ source file : Zoom tool class
 // Author : Benoit Ogier, benoit.ogier@macmap.com
 //
-// Copyright (C) 2017 Carte Blanche Conseil.
+// Copyright (C) 2005 Carte Blanche Conseil.
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -41,7 +41,7 @@
 bToolZoom	::bToolZoom(bGenericXMLBaseElement* elt, bGenericMacMapApp* gapp, CFBundleRef bndl) 
 			: bStdToolNav(elt,gapp,bndl)
 			,_scales(sizeof(scale)){
-	setclassname("zoomtool_dev");
+	setclassname("zoomtool");
 }
 
 // ---------------------------------------------------------------------------
