@@ -32,7 +32,7 @@
 #import "CocoaStuff.h" 
 
 #import <mox_intf/ext_utils.h>
-#import <mox_intf/Carb_Utils.h>
+#import <mox_intf/CGUtils.h>
 
 #import <MacMapSuite/bTrace.h>
 
@@ -203,7 +203,7 @@ _te_("pdf==NULL");
 
 CGPDFPageRef		pg=CGPDFDocumentGetPage(pdf,1);
 CGRect				box=CGPDFPageGetBoxRect(pg,kCGPDFCropBox);
-float				color[4]={0,0,0,1 };
+CGFloat				color[4]={0,0,0,1 };
 CGPatternCallbacks	callbacks={0,&PDFPatternPlot,NULL};
 CGColorSpaceRef		bspc=CGColorSpaceCreateDeviceRGB();
 CGColorSpaceRef		pspc=CGColorSpaceCreatePattern(bspc);

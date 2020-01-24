@@ -59,5 +59,5 @@ bSortElement::~bSortElement(){
 void bSortElement::init(void* ctx){
 char	val[_values_length_max_];
 	getvalue(val);
-	((bGenericStyle*)ctx)->setsortkind(atoi(val));
+	((bGenericStyle*)ctx)->setsortkind(atol(val));
 }

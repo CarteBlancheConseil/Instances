@@ -59,5 +59,6 @@ bClassMaxElement::~bClassMaxElement(){
 void bClassMaxElement::init(void* ctx){
 char	val[_values_length_max_];
 	getvalue(val);
-	((bGenericStyle*)ctx)->setrunclassmax(atoi(val));
+//    ((bGenericStyle*)ctx)->setrunclassmax(atoi(val));
+    ((bGenericStyle*)ctx)->setrunclassmax(atol(val));
 }

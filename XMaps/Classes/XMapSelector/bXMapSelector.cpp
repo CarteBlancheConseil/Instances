@@ -34,7 +34,6 @@
 
 #include <mox_intf/xmldesc_utils.h>
 #include <mox_intf/ext_utils.h>
-#include <mox_intf/Carb_Utils.h>
 #include <mox_intf/Type_Utils.h>
 #include <mox_intf/bSelectSolver.h>
 #include <mox_intf/bGenericCalc.h>
@@ -139,7 +138,7 @@ _bTrace_("bXMapSelector::edit",true);
 	_fsgn=0;
 	_idx=0;
 	if(prm){
-		if((int)prm==kXMapSelectorCreateMacroCall){
+		if((long)prm==kXMapSelectorCreateMacroCall){
 			_act=kXMapSelectorCreateMacro;
 		}
 		else if(!parse((bGenericXMLBaseElement*)prm)){

@@ -34,7 +34,6 @@
 #import <MacMapSuite/bTrace.h>
 
 #import <mox_intf/bGenericMacMapApp.h>
-#import <mox_intf/Carb_Utils.h>
 #import <mox_intf/bEventLog.h>
 #import <mox_intf/ext_utils.h>
 #import <mox_intf/Color_Utils.h>
@@ -463,7 +462,7 @@ _tm_("pattern");
 			if(pdf){
 CGPDFPageRef			pg=CGPDFDocumentGetPage(pdf,1);
 CGRect					box=CGPDFPageGetBoxRect(pg,kCGPDFCropBox);
-float					color[4]={1,0,0,1 };
+CGFloat					color[4]={1,0,0,1 };
 CGPatternCallbacks		callbacks={0,&PDFPatternPlot,NULL};
 CGColorSpaceRef			bspc=CGColorSpaceCreateDeviceRGB();
 CGColorSpaceRef			pspc=CGColorSpaceCreatePattern(bspc);

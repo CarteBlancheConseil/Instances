@@ -32,7 +32,6 @@
 #include "CocoaStuff.h"
 
 #include <mox_intf/bEventLog.h>
-#include <mox_intf/Carb_Utils.h>
 #include <mox_intf/ext_Utils.h>
 #include <mox_intf/MacMapCWrappers.h>
 #include <mox_intf/NSCursorWrappers.h>
@@ -236,11 +235,7 @@ _te_("new_object");
 		ivs_free(vxs);
 		return(false);
 	}
-<<<<<<< HEAD
     if(!InitWithStyle(_gapp,_gapp->layersMgr()->get_current(),o)){
-=======
-    if(!InitWithStyle(_gapp,_gapp->layersAccessCtx()->get_current(),o)){
->>>>>>> origin/master
 		MMBeep();
 	}
 	if(!o->setVertices(vxs)){

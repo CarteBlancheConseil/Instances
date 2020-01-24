@@ -31,7 +31,6 @@
 #include <MacMapSuite/bTrace.h>
 #include <MacMapSuite/valconv.h>
 #include <mox_intf/ext_utils.h>
-#include <mox_intf/Carb_Utils.h>
 
 // ---------------------------------------------------------------------------
 // Constructeur

@@ -31,7 +31,6 @@
 #import "bXBoxCoord.h"
 #import "CocoaStuff.h"
 
-#import <mox_intf/Carb_Utils.h>
 #import <mox_intf/endian.h>
 #import <mox_intf/NSUIUtils.h>
 #import <mox_intf/ext_utils.h>

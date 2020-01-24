@@ -67,9 +67,9 @@ public:
 	
 	virtual void setrunscalemin					(	double d);
 	virtual void setrunscalemax					(	double d);
-	virtual void setrunclassmin					(	int idx);
-	virtual void setrunclassmax					(	int idx);
-	virtual void setrunpass						(	int idx);
+	virtual void setrunclassmin					(	long idx);
+	virtual void setrunclassmax					(	long idx);
+	virtual void setrunpass						(	long idx);
 	
 	virtual void settype						(	const char *name);
 	virtual void setname						(	const char *name);

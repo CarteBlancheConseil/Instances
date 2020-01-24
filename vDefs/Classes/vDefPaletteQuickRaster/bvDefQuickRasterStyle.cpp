@@ -29,7 +29,7 @@
 
 #include "bvDefQuickRasterStyle.h"
 #include <limits.h>
-#include <Carbon/Carbon.h>
+
 #include <mox_intf/ext_utils.h>
 
 // ---------------------------------------------------------------------------

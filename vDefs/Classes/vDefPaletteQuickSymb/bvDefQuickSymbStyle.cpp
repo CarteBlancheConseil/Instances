@@ -29,7 +29,7 @@
 
 #include "bvDefQuickSymbStyle.h"
 #include <limits.h>
-#include <Carbon/Carbon.h>
+
 #include <mox_intf/ext_utils.h>
 
 // ---------------------------------------------------------------------------
@@ -403,7 +403,7 @@ char	nm[256];
 	}
 // Render
 	add_cdesc(arr,indent+2,"render","");
-	if(GetImageKind(_smb)==kQTFileTypePDF){
+	if(GetImageKind(_smb)==kFileTypePDF){
 		if(_fsmb){
 			add_cdesc(arr,indent+3,"pdfdocument","");
 			_gtp->fields()->get_name(_fsmb,nm);
@@ -552,7 +552,7 @@ char	nm[256];
 
     
     
-    if(GetImageKind(_smb)==kQTFileTypePDF){
+    if(GetImageKind(_smb)==kFileTypePDF){
 		if(_fsmb){
 			add_cdesc(arr,indent+3,"pdfdocument","");
 			_gtp->fields()->get_name(_fsmb,nm);

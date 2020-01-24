@@ -1,5 +1,0 @@
-/* Localized versions of Info.plist keys */
-
-CFBundleName = "ScaleRef";
-CFBundleShortVersionString = "1.2";
-CFBundleGetInfoString = "ScaleRef versione 1.2, Copyright 2006 Carte Blanche Conseil.";

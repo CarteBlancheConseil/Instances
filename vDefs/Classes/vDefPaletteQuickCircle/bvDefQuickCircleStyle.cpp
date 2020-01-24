@@ -29,7 +29,7 @@
 
 #include "bvDefQuickCircleStyle.h"
 #include <limits.h>
-#include <Carbon/Carbon.h>
+
 
 // ---------------------------------------------------------------------------
 // 

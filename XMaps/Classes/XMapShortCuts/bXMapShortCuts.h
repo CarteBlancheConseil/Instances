@@ -47,7 +47,7 @@ public:
     virtual bGenericXMLBaseElement* create	(	bGenericXMLBaseElement* elt);
             
     virtual void open						(	int* flags);
-    virtual bool event						(	EventRef evt);
+    virtual bool nsevent					(	void* nsevt);
     virtual void idle						(	void* prm);
 
     virtual bool edit						(	void* prm);
@@ -67,8 +67,8 @@ public:
                                                 UInt32 modi,
                                                 bool* inmenu);
 protected:
-    void scan_read_menu						(	MenuRef mnu);
-    void scan_write_menu					(	MenuRef mnu);
+//    void scan_read_menu						(	MenuRef mnu);
+//    void scan_write_menu					(	MenuRef mnu);
     void read_p								(	);
     void write_p							(	);
     

@@ -195,7 +195,7 @@ CGRect              box;
     if(!(prm.tp->fields()->get_param_name("icons",idx+1,str))){
         return;
     }
-    if(GetImageKind(str)==kQTFileTypePDF){
+    if(GetImageKind(str)==kFileTypePDF){
 CGPDFDocumentRef	pdf=GetPDFIcon(gapp,prm.tp,str);
         if(pdf!=NULL){
 CGPDFPageRef

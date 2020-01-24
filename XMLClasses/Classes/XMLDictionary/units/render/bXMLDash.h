@@ -56,7 +56,7 @@ class bDashElement : public bStdXMLLowRenderElement{
 		bool read								(	char* name);
 		
 		char			_last[_values_length_max_];
-		float*			_dsh;
+		CGFloat*		_dsh;
 		int				_ndsh;
 		bGenericType*	_tp;
 };

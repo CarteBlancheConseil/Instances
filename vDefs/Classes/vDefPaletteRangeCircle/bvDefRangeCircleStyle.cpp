@@ -29,7 +29,7 @@
 
 #include "bvDefRangeCircleStyle.h"
 #include <limits.h>
-#include <Carbon/Carbon.h>
+
 #include <MacMapSuite/bTrace.h>
 
 // ---------------------------------------------------------------------------

@@ -33,7 +33,7 @@
 //----------------------------------------------------------------------------
 
 #include <std_ext/bStdNSXBox.h>
-#include <Carbon/Carbon.h>
+
 
 //----------------------------------------------------------------------------
 
@@ -44,7 +44,7 @@ public:
                                                 CFBundleRef bndl);
     virtual ~bXBoxPresentation              (	);
     virtual bGenericXMLBaseElement* create	(	bGenericXMLBaseElement* elt);
-    virtual bool event						(	EventRef evt);
+    virtual bool nsevent					(	void* nsevt);
     
 protected:
     virtual void* ccinit					(	);

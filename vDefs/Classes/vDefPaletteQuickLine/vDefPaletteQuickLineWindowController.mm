@@ -35,7 +35,6 @@
 #import <MacMapSuite/bTrace.h>
 
 #import <mox_intf/bGenericMacMapApp.h>
-#import <mox_intf/Carb_Utils.h>
 #import <mox_intf/bEventLog.h>
 #import <mox_intf/ext_utils.h>
 #import <mox_intf/Color_Utils.h>
@@ -584,7 +583,7 @@ int						nsv;
 		nsv=0;
 		CGContextSaveGState(ctx);
 		for(long j=0;j<3;j++){
-			if(stl->_width>0){
+			if(stl->_width[j]>0.0){
 				CGContextSetLineWidth(ctx,stl->_width[j]*_ext->coef_get());
 				MMCGContextSetStrokeColor64(ctx,
 											stl->_stroke[j],

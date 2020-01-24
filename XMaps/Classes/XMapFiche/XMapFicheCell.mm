@@ -258,10 +258,11 @@ NSString*	nstr;
 // 
 // -----------
 -(BOOL)rightMouse:(NSEvent*)evt inView:(NSView*)view{
+_bTrace_("[XMapFicheCell:rightMouse:inView]",true);
 	if(NSPointInRect([view convertPoint:[evt locationInWindow] fromView:nil],_value_area)){
 		[view scrollRectToVisible:_frame];
 long			n=_gapp->calcMgr()->count();
-menuitem_desc*	desc=new menuitem_desc[n];		
+menuitem_desc	desc[n];//=new menuitem_desc[n];
 		
 		for(long i=1;i<=_gapp->calcMgr()->count();i++){
 			_gapp->calcMgr()->ext_name(i,desc[i-1].name);
@@ -270,12 +271,16 @@ menuitem_desc*	desc=new menuitem_desc[n];
             desc[i-1].index=0;
 		}
 
-CGPoint	location=NSPointToCGPoint([view convertPointToBase:_value_area.origin]);
+//CGPoint	location=NSPointToCGPoint([view convertPointToBase:_value_area.origin]);
+//CGPoint	location=NSPointToCGPoint([view convertPointToBacking:_value_area.origin]);
+//        location.y-=_value_area.size.height;
+CGPoint	location=NSPointToCGPoint(NSViewConvertPointTo(view,_value_area.origin));
 long which=popUpContextMenuWithCGPointAndNSWindow(location,
 												  [view window],
 												  desc,
-												  n);
-		delete desc;
+												  n,
+                                                  0.5);
+//		delete desc;
 		
 		if(which>0){
 bGenericCalc*	clc=(bGenericCalc*)(void*)_gapp->calcMgr()->get(which);
@@ -307,11 +312,11 @@ bEventLog	log(_gapp,
 				case _time:
 					val->get(&dval);
 					b=_geo->setValue(_field,dval);
-					break;
+                    break;
 				case _char:
-					val->get(&cval);
+					val->get(cval);
 					b=_geo->setValue(_field,cval);
-					break;
+                    break;
 			}
 			log.close();
 			if(!b){
@@ -695,8 +700,10 @@ CGFloat	wdt=(bnds.size.width-16)/2.0;
 // generally you want to add at least one column to the table view.
 		[_tbl addTableColumn:_clx];
 		[_tbl addTableColumn:_cly];
-		[_tbl setDelegate:self];
-		[_tbl setDataSource:self];
+/*        [_tbl setDelegate:self];
+        [_tbl setDataSource:self];*/
+        [_tbl setDelegate:nil];
+        [_tbl setDataSource:nil];
 		[_tbl reloadData];
 		
 // embed the table view in the scroll view, and add the scroll view
@@ -1001,7 +1008,7 @@ bEventLog	log(_gapp,
 // -----------
 -(void)pop:(NSView*)view{
 long			i,idx,n=_gtp->fields()->count_constraints(_field);
-menuitem_desc*	desc=new menuitem_desc[n];
+    menuitem_desc	desc[n];//=new menuitem_desc[n];
 int				k,d,ck,fk;
 char			cval[256];
 int				ival;
@@ -1078,14 +1085,14 @@ double			dval;
 			}
 			break;
 	}
-	
-CGPoint	location=NSPointToCGPoint([view convertPointToBase:_value_area.origin]);
-	
-long which=popUpContextMenuWithCGPointAndNSWindow(location,
-												  [view window],
-												  desc,
-												  n);
-	delete desc;
+
+CGPoint	location=NSPointToCGPoint(NSViewConvertPointTo(view,_value_area.origin));
+long    which=popUpContextMenuWithCGPointAndNSWindow(location,
+                                                     [view window],
+                                                     desc,
+                                                     n,
+                                                     0.5);
+//	delete desc;
 	
 	if(which>0){
 bool b;	

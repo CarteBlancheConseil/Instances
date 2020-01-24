@@ -176,19 +176,19 @@ void bSubStyle::setrunscalemax(double d){
 // ---------------------------------------------------------------------------
 // 
 // ------------
-void bSubStyle::setrunclassmin(int idx){
+void bSubStyle::setrunclassmin(long idx){
 }
 
 // ---------------------------------------------------------------------------
 // 
 // ------------
-void bSubStyle::setrunclassmax(int idx){
+void bSubStyle::setrunclassmax(long idx){
 }
 
 // ---------------------------------------------------------------------------
 // 
 // ------------
-void bSubStyle::setrunpass(int idx){
+void bSubStyle::setrunpass(long idx){
 }
 
 // ---------------------------------------------------------------------------

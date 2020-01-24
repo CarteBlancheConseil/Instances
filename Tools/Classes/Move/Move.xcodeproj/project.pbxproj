@@ -14,7 +14,6 @@
 		1417AAD00C4627100066091D /* StdSymb.png in Resources */ = {isa = PBXBuildFile; fileRef = 1417AACC0C4627100066091D /* StdSymb.png */; };
 		1497571308C381270084C913 /* main.h in Headers */ = {isa = PBXBuildFile; fileRef = 1497571208C381270084C913 /* main.h */; };
 		149761B208C59D1F00F9E7F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 149761B008C59D1F00F9E7F8 /* Localizable.strings */; };
-		1497636808C5A59300F9E7F8 /* main.nib in Resources */ = {isa = PBXBuildFile; fileRef = 1497636608C5A59300F9E7F8 /* main.nib */; };
 		1497636A08C5A5A900F9E7F8 /* tool_lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1497636908C5A5A900F9E7F8 /* tool_lib.framework */; };
 		1499702E0729169F00742B1A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1499702D0729169F00742B1A /* main.cpp */; };
 		14997030072916AB00742B1A /* XML_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 1499702F072916AB00742B1A /* XML_Prefix.pch */; };
@@ -33,7 +32,6 @@
 		1417AACC0C4627100066091D /* StdSymb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StdSymb.png; sourceTree = "<group>"; };
 		1497571208C381270084C913 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 		149761B108C59D1F00F9E7F8 /* French */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
-		1497636708C5A59300F9E7F8 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/main.nib; sourceTree = "<group>"; };
 		1497636908C5A5A900F9E7F8 /* tool_lib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = tool_lib.framework; path = "../../../../Applis/Current/MacMap®/build/Release/tool_lib.framework"; sourceTree = SOURCE_ROOT; };
 		149970220729167500742B1A /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1499702D0729169F00742B1A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -42,10 +40,8 @@
 		14C29AEC08C3851700E8920D /* std_ext.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = std_ext.framework; path = "../../../../Applis/Current/MacMap®/build/Release/std_ext.framework"; sourceTree = SOURCE_ROOT; };
 		14D5C3650CD1CD910003D1AA /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		14D5C3660CD1CD910003D1AA /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/Localizable.strings; sourceTree = "<group>"; };
-		14D5C3670CD1CD910003D1AA /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/main.nib; sourceTree = "<group>"; };
 		14D75DBF0C4E10C500EA64F2 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		14D75DC00C4E10C500EA64F2 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
-		14D75DC10C4E10C500EA64F2 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/main.nib; sourceTree = "<group>"; };
 		8D01CCD10486CAD60068D4B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D01CCD20486CAD60068D4B7 /* Move.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Move.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -95,7 +91,6 @@
 				8D01CCD10486CAD60068D4B7 /* Info.plist */,
 				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
 				149761B008C59D1F00F9E7F8 /* Localizable.strings */,
-				1497636608C5A59300F9E7F8 /* main.nib */,
 				1417AACA0C4627100066091D /* HotSpot.strings */,
 				1417AAC90C4627100066091D /* CopyCursor.png */,
 				1417AACB0C4627100066091D /* StdCursor.png */,
@@ -162,6 +157,8 @@
 /* Begin PBXProject section */
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 1497562408C380AF0084C913 /* Build configuration list for PBXProject "Move" */;
 			compatibilityVersion = "Xcode 2.4";
 			developmentRegion = English;
@@ -190,7 +187,6 @@
 			files = (
 				8D01CCCA0486CAD60068D4B7 /* InfoPlist.strings in Resources */,
 				149761B208C59D1F00F9E7F8 /* Localizable.strings in Resources */,
-				1497636808C5A59300F9E7F8 /* main.nib in Resources */,
 				1417AACD0C4627100066091D /* CopyCursor.png in Resources */,
 				1417AACE0C4627100066091D /* HotSpot.strings in Resources */,
 				1417AACF0C4627100066091D /* StdCursor.png in Resources */,
@@ -242,23 +238,13 @@
 			name = Localizable.strings;
 			sourceTree = SOURCE_ROOT;
 		};
-		1497636608C5A59300F9E7F8 /* main.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1497636708C5A59300F9E7F8 /* French */,
-				14D75DC10C4E10C500EA64F2 /* English */,
-				14D5C3670CD1CD910003D1AA /* Italian */,
-			);
-			name = main.nib;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1497562208C380AF0084C913 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = ppc;
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = YES;
 				DEPLOYMENT_LOCATION = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -288,6 +274,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = Move;
+				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
 				SKIP_INSTALL = YES;
 				SYMROOT = ../../build;
@@ -304,6 +291,7 @@
 		1497562608C380AF0084C913 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 			};
 			name = Release;
 		};

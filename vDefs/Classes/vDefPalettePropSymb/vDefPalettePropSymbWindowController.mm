@@ -34,7 +34,7 @@
 #import <MacMapSuite/bTrace.h>
 
 #import <mox_intf/bGenericMacMapApp.h>
-#import <mox_intf/Carb_Utils.h>
+
 #import <mox_intf/bEventLog.h>
 #import <mox_intf/ext_utils.h>
 #import <mox_intf/Color_Utils.h>
@@ -118,7 +118,7 @@ double				ratio=1;
 	}	
 	if(strlen(prm.name)>0){
 CGRect	box={{0,0},{0,0}};
-		if(GetImageKind(stl->_smb)==kQTFileTypePDF){
+		if(GetImageKind(stl->_smb)==kFileTypePDF){
 CGPDFDocumentRef	pdf=GetPDFIcon(gapp,_ext->type_get(),prm.name);
 			if(pdf!=NULL){
 				box=CGPDFDocumentGetMediaBox(pdf,1);
@@ -191,7 +191,7 @@ bvDefPropSymbStyle*	stl=NULL;
 	if(strlen(stl->_smb)>0){
 char	val[256];
 CGRect	box={{0,0},{0,0}};
-		if(GetImageKind(stl->_smb)==kQTFileTypePDF){
+		if(GetImageKind(stl->_smb)==kFileTypePDF){
 CGPDFDocumentRef	pdf=GetPDFIcon((bGenericMacMapApp*)_ext->getapp(),_ext->type_get(),stl->_smb);
 			if(pdf!=NULL){
 				box=CGPDFPageGetBoxRect(CGPDFDocumentGetPage(pdf,1),kCGPDFMediaBox);
@@ -270,7 +270,7 @@ int					nsv=0;
 			shape.size.height=stl->_rref*_ext->coef_get();
 		}
 				
-		if(GetImageKind(stl->_smb)==kQTFileTypePDF){
+		if(GetImageKind(stl->_smb)==kFileTypePDF){
 			pdf=GetPDFIcon(gapp,_ext->type_get(),stl->_smb);
 			if(pdf!=NULL){
 				CGContextDrawPDFDocument(ctx,shape,pdf,1);

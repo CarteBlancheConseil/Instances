@@ -53,7 +53,7 @@ public:
     virtual void open						(	int* flags);
     virtual void close						(	);
     virtual bool edit						(	void* prm);
-    virtual bool event						(	EventRef evt);
+    virtual bool nsevent                    (	void* nsevt);
     virtual bool process					(	int msg,
                                                 void* prm);
 

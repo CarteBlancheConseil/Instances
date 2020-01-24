@@ -36,7 +36,6 @@
 #import <MacMapSuite/bTrace.h>
 
 #import <mox_intf/bGenericMacMapApp.h>
-#import <mox_intf/Carb_Utils.h>
 #import <mox_intf/bEventLog.h>
 #import <mox_intf/ext_utils.h>
 #import <mox_intf/xmldesc_utils.h>

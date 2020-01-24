@@ -29,7 +29,7 @@
 
 #include "bvDefPropSymbStyle.h"
 #include <limits.h>
-#include <Carbon/Carbon.h>
+
 #include <mox_intf/ext_utils.h>
 #include <MacMapSuite/bTrace.h>
 
@@ -113,7 +113,7 @@ bool bvDefPropSymbStyle::dump(bArray& arr, int indent){
 		sub_dump(arr,indent+2);
 	}
 	else{
-		if(GetImageKind(_smb)==kQTFileTypePDF){
+		if(GetImageKind(_smb)==kFileTypePDF){
 			add_cdesc(arr,indent+3,"pdfdocument",_smb);
 		}
 		else{

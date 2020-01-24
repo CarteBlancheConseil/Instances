@@ -17,7 +17,7 @@
 		14CA54380DF964990080DF70 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14CA54360DF964990080DF70 /* main.cpp */; };
 		14CA54550DF967F30080DF70 /* MacMapStats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA54530DF967F30080DF70 /* MacMapStats.framework */; };
 		14CA54560DF967F30080DF70 /* MacMapSuite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA54540DF967F30080DF70 /* MacMapSuite.framework */; };
-		14EC173E1C8EE59B00B6A0E6 /* bXMapTopoCheck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14EC173A1C8EE59B00B6A0E6 /* bXMapTopoCheck.cpp */; };
+		14EC173E1C8EE59B00B6A0E6 /* bXMapTopoCheck.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14EC173A1C8EE59B00B6A0E6 /* bXMapTopoCheck.mm */; };
 		14EC173F1C8EE59B00B6A0E6 /* TopoCheckWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14EC173D1C8EE59B00B6A0E6 /* TopoCheckWindowController.mm */; };
 		14EFCE261292E8730038AAD4 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EFCE251292E8730038AAD4 /* Carbon.framework */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
@@ -45,7 +45,7 @@
 		14CA54530DF967F30080DF70 /* MacMapStats.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacMapStats.framework; path = /Library/Frameworks/MacMapStats.framework; sourceTree = "<absolute>"; };
 		14CA54540DF967F30080DF70 /* MacMapSuite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacMapSuite.framework; path = /Library/Frameworks/MacMapSuite.framework; sourceTree = "<absolute>"; };
 		14CA57C20DF973C30080DF70 /* CocoaStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaStuff.h; sourceTree = "<group>"; };
-		14EC173A1C8EE59B00B6A0E6 /* bXMapTopoCheck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMapTopoCheck.cpp; sourceTree = "<group>"; };
+		14EC173A1C8EE59B00B6A0E6 /* bXMapTopoCheck.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = bXMapTopoCheck.mm; sourceTree = "<group>"; };
 		14EC173B1C8EE59B00B6A0E6 /* bXMapTopoCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMapTopoCheck.h; sourceTree = "<group>"; };
 		14EC173C1C8EE59B00B6A0E6 /* TopoCheckWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopoCheckWindowController.h; sourceTree = "<group>"; };
 		14EC173D1C8EE59B00B6A0E6 /* TopoCheckWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TopoCheckWindowController.mm; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		08FB77AFFE84173DC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				14EC173A1C8EE59B00B6A0E6 /* bXMapTopoCheck.cpp */,
+				14EC173A1C8EE59B00B6A0E6 /* bXMapTopoCheck.mm */,
 				14EC173B1C8EE59B00B6A0E6 /* bXMapTopoCheck.h */,
 				14EC173C1C8EE59B00B6A0E6 /* TopoCheckWindowController.h */,
 				14EC173D1C8EE59B00B6A0E6 /* TopoCheckWindowController.mm */,
@@ -230,7 +230,7 @@
 			files = (
 				14EC173F1C8EE59B00B6A0E6 /* TopoCheckWindowController.mm in Sources */,
 				14CA54380DF964990080DF70 /* main.cpp in Sources */,
-				14EC173E1C8EE59B00B6A0E6 /* bXMapTopoCheck.cpp in Sources */,
+				14EC173E1C8EE59B00B6A0E6 /* bXMapTopoCheck.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

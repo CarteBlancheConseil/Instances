@@ -29,7 +29,7 @@
 
 #include "bvDefQuickSurfStyle.h"
 #include <limits.h>
-#include <Carbon/Carbon.h>
+
 
 // ---------------------------------------------------------------------------
 // Constructeur

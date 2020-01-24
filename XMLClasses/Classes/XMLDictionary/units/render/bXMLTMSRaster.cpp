@@ -417,8 +417,8 @@ _te_("GetImage failed");
 				}
             }
 		}
-		
-		(void)CGBitmapContextGetOutputData(ctx,kQTFileTypePNG,72,5,&_data,&_sz);
+//#warning COMMENTE
+		(void)CGBitmapContextGetOutputData(ctx,kFileTypePNG,72,5,&_data,&_sz);
 // Libération de l'offscreen
 		ReleaseBitmap(ctx);
 	}

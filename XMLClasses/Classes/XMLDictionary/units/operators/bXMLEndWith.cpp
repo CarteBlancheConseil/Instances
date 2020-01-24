@@ -80,7 +80,7 @@ int		blen=strlen(vb);
 			b2=b1;
 		}
 		if(b2){
-int			where=(int)b2-(int)va;
+long		where=(long)b2-(long)va;
 			bv=(where==strlen(va));
 		}
 	}

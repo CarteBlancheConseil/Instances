@@ -29,7 +29,7 @@
 
 #include "bvDefQuickRectStyle.h"
 #include <limits.h>
-#include <Carbon/Carbon.h>
+
 
 // ---------------------------------------------------------------------------
 // 

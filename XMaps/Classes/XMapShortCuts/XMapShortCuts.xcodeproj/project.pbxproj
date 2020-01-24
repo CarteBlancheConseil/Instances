@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1434180D1C844EE800385D24 /* bXMapShortCuts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 143418091C844EE800385D24 /* bXMapShortCuts.cpp */; };
+		1434180D1C844EE800385D24 /* bXMapShortCuts.mm in Sources */ = {isa = PBXBuildFile; fileRef = 143418091C844EE800385D24 /* bXMapShortCuts.mm */; };
 		1434180E1C844EE800385D24 /* ShortCutsWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1434180C1C844EE800385D24 /* ShortCutsWindowController.mm */; };
 		14A6BF2C12C21A6400E6FBDB /* Palette.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A6BF2A12C21A6400E6FBDB /* Palette.xib */; };
 		14A6BF4012C21B3600E6FBDB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A6BF3F12C21B3600E6FBDB /* QuartzCore.framework */; };
@@ -33,7 +33,7 @@
 		140D4FC31489304600E8BDAD /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		140D4FC41489304600E8BDAD /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/Localizable.strings; sourceTree = "<group>"; };
 		140D4FC51489304600E8BDAD /* Italian */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Italian; path = Italian.lproj/Palette.xib; sourceTree = "<group>"; };
-		143418091C844EE800385D24 /* bXMapShortCuts.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMapShortCuts.cpp; sourceTree = "<group>"; };
+		143418091C844EE800385D24 /* bXMapShortCuts.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = bXMapShortCuts.mm; sourceTree = "<group>"; };
 		1434180A1C844EE800385D24 /* bXMapShortCuts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMapShortCuts.h; sourceTree = "<group>"; };
 		1434180B1C844EE800385D24 /* ShortCutsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortCutsWindowController.h; sourceTree = "<group>"; };
 		1434180C1C844EE800385D24 /* ShortCutsWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ShortCutsWindowController.mm; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		08FB77AFFE84173DC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				143418091C844EE800385D24 /* bXMapShortCuts.cpp */,
+				143418091C844EE800385D24 /* bXMapShortCuts.mm */,
 				1434180A1C844EE800385D24 /* bXMapShortCuts.h */,
 				1434180B1C844EE800385D24 /* ShortCutsWindowController.h */,
 				1434180C1C844EE800385D24 /* ShortCutsWindowController.mm */,
@@ -229,7 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1434180E1C844EE800385D24 /* ShortCutsWindowController.mm in Sources */,
-				1434180D1C844EE800385D24 /* bXMapShortCuts.cpp in Sources */,
+				1434180D1C844EE800385D24 /* bXMapShortCuts.mm in Sources */,
 				14CA54380DF964990080DF70 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +273,7 @@
 		1DEB913C08733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 					"$(SRCROOT)/../../../../Applis/Current/MacMap®/build/Release",
@@ -301,12 +301,13 @@
 		1DEB914008733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_WARN_ABOUT_RETURN_TYPE = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OBJROOT = "../../zXCode Div/buildprod";
 				PREBINDING = YES;
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx10.12;
 				SYMROOT = ../../build;
 			};
 			name = Release;

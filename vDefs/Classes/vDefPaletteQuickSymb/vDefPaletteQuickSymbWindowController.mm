@@ -34,7 +34,7 @@
 #import <MacMapSuite/bTrace.h>
 
 #import <mox_intf/bGenericMacMapApp.h>
-#import <mox_intf/Carb_Utils.h>
+
 #import <mox_intf/bEventLog.h>
 #import <mox_intf/ext_utils.h>
 #import <mox_intf/Color_Utils.h>
@@ -682,7 +682,7 @@ long	cur=[_run_tbl selectedRow]+1;
 		if(strlen(stl->_smb)>0){
 			char	val[256];
 			CGRect				box={{0,0},{0,0}};
-			if(GetImageKind(stl->_smb)==kQTFileTypePDF){
+			if(GetImageKind(stl->_smb)==kFileTypePDF){
 				CGPDFDocumentRef	pdf=GetPDFIcon((bGenericMacMapApp*)_ext->getapp(),_ext->type_get(),stl->_smb);
 				if(pdf!=NULL){
 					box=CGPDFPageGetBoxRect(CGPDFDocumentGetPage(pdf,1),kCGPDFMediaBox);
@@ -843,7 +843,7 @@ CGRect					shape,cgr;
 		if((stl->_h==0)||(stl->_v==0)){
 			CGContextSetEmptyStyle(ctx,hir);
 		}
-		else if(GetImageKind(stl->_smb)==kQTFileTypePDF){
+		else if(GetImageKind(stl->_smb)==kFileTypePDF){
 CGPDFDocumentRef	pdf=GetPDFIcon(gapp,_ext->type_get(),stl->_smb);
 			if(pdf!=NULL){
 				CGContextDrawPDFDocument(ctx,shape,pdf,1);

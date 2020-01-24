@@ -32,7 +32,6 @@
 #include "CocoaStuff.h"
 
 #include <mox_intf/bEventLog.h>
-#include <mox_intf/Carb_Utils.h>
 #include <mox_intf/ext_Utils.h>
 #include <mox_intf/MacMapCWrappers.h>
 #include <mox_intf/NSCursorWrappers.h>

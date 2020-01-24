@@ -27,7 +27,7 @@
 // 22/10/2004 creation.
 //----------------------------------------------------------------------------
 
-#include <Carbon/Carbon.h>
+
 
 #include <stdlib.h>
 #include <stdio.h>

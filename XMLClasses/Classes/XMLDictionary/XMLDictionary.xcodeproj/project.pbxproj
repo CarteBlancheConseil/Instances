@@ -17,6 +17,8 @@
 		140CE3090F0E001A0000CAD1 /* bXMLString.h in Headers */ = {isa = PBXBuildFile; fileRef = 140CE3070F0E001A0000CAD1 /* bXMLString.h */; };
 		140FCFEF1005CE4A005ACD1F /* bXMLBoxPos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 140FCFED1005CE4A005ACD1F /* bXMLBoxPos.cpp */; };
 		140FCFF01005CE4A005ACD1F /* bXMLBoxPos.h in Headers */ = {isa = PBXBuildFile; fileRef = 140FCFEE1005CE4A005ACD1F /* bXMLBoxPos.h */; };
+		1411711221904E890006978D /* mox_intf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411711021904E890006978D /* mox_intf.framework */; };
+		1411711321904E890006978D /* std_ext.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1411711121904E890006978D /* std_ext.framework */; };
 		1413DAD50F30904E00C70B11 /* bXMLVirtualLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1413DAD30F30904E00C70B11 /* bXMLVirtualLayer.cpp */; };
 		1413DAD60F30904E00C70B11 /* bXMLVirtualLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1413DAD40F30904E00C70B11 /* bXMLVirtualLayer.h */; };
 		141FB1260C017E6F00C8C8B7 /* bXMLAverage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 141FB1240C017E6F00C8C8B7 /* bXMLAverage.cpp */; };
@@ -73,8 +75,6 @@
 		1497571308C381270084C913 /* main.h in Headers */ = {isa = PBXBuildFile; fileRef = 1497571208C381270084C913 /* main.h */; };
 		1499702E0729169F00742B1A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1499702D0729169F00742B1A /* main.cpp */; };
 		14997030072916AB00742B1A /* XML_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 1499702F072916AB00742B1A /* XML_Prefix.pch */; };
-		14C29AF008C3851700E8920D /* mox_intf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C29AEB08C3851700E8920D /* mox_intf.framework */; };
-		14C29AF108C3851700E8920D /* std_ext.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C29AEC08C3851700E8920D /* std_ext.framework */; };
 		14CD41CA0E18C0C8006DD04C /* bXMLEndAngle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14CD41C60E18C0C8006DD04C /* bXMLEndAngle.cpp */; };
 		14CD41CB0E18C0C8006DD04C /* bXMLEndAngle.h in Headers */ = {isa = PBXBuildFile; fileRef = 14CD41C70E18C0C8006DD04C /* bXMLEndAngle.h */; };
 		14CD41CC0E18C0C8006DD04C /* bXMLStartAngle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14CD41C80E18C0C8006DD04C /* bXMLStartAngle.cpp */; };
@@ -429,6 +429,8 @@
 		140CE3070F0E001A0000CAD1 /* bXMLString.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = bXMLString.h; sourceTree = "<group>"; };
 		140FCFED1005CE4A005ACD1F /* bXMLBoxPos.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLBoxPos.cpp; sourceTree = "<group>"; };
 		140FCFEE1005CE4A005ACD1F /* bXMLBoxPos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLBoxPos.h; sourceTree = "<group>"; };
+		1411711021904E890006978D /* mox_intf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mox_intf.framework; path = "../../../../Applis/Current/MacMap®/build/Release/mox_intf.framework"; sourceTree = "<group>"; };
+		1411711121904E890006978D /* std_ext.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = std_ext.framework; path = "../../../../Applis/Current/MacMap®/build/Release/std_ext.framework"; sourceTree = "<group>"; };
 		1413DAD30F30904E00C70B11 /* bXMLVirtualLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLVirtualLayer.cpp; sourceTree = "<group>"; };
 		1413DAD40F30904E00C70B11 /* bXMLVirtualLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLVirtualLayer.h; sourceTree = "<group>"; };
 		141FB1240C017E6F00C8C8B7 /* bXMLAverage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLAverage.cpp; sourceTree = "<group>"; };
@@ -486,8 +488,6 @@
 		149970220729167500742B1A /* French */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1499702D0729169F00742B1A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1499702F072916AB00742B1A /* XML_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XML_Prefix.pch; sourceTree = "<group>"; };
-		14C29AEB08C3851700E8920D /* mox_intf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mox_intf.framework; path = "../../../../Applis/Current/MacMap®/build/Release/mox_intf.framework"; sourceTree = SOURCE_ROOT; };
-		14C29AEC08C3851700E8920D /* std_ext.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = std_ext.framework; path = "../../../../Applis/Current/MacMap®/build/Release/std_ext.framework"; sourceTree = SOURCE_ROOT; };
 		14CD41C60E18C0C8006DD04C /* bXMLEndAngle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLEndAngle.cpp; sourceTree = "<group>"; };
 		14CD41C70E18C0C8006DD04C /* bXMLEndAngle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMLEndAngle.h; sourceTree = "<group>"; };
 		14CD41C80E18C0C8006DD04C /* bXMLStartAngle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMLStartAngle.cpp; sourceTree = "<group>"; };
@@ -837,9 +837,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1411711221904E890006978D /* mox_intf.framework in Frameworks */,
+				1411711321904E890006978D /* std_ext.framework in Frameworks */,
 				8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */,
-				14C29AF008C3851700E8920D /* mox_intf.framework in Frameworks */,
-				14C29AF108C3851700E8920D /* std_ext.framework in Frameworks */,
 				1457998E099B8A28009FE4A5 /* MacMapSuite.framework in Frameworks */,
 				14D98C3F0BFB3F3B004B2CA3 /* MacMapStats.framework in Frameworks */,
 			);
@@ -862,10 +862,10 @@
 		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				1411711021904E890006978D /* mox_intf.framework */,
+				1411711121904E890006978D /* std_ext.framework */,
 				14D98C3E0BFB3F3B004B2CA3 /* MacMapStats.framework */,
 				1457998D099B8A28009FE4A5 /* MacMapSuite.framework */,
-				14C29AEB08C3851700E8920D /* mox_intf.framework */,
-				14C29AEC08C3851700E8920D /* std_ext.framework */,
 				08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */,
 			);
 			name = "External Frameworks and Libraries";
@@ -1952,7 +1952,7 @@
 		1497562208C380AF0084C913 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = YES;
 				DEPLOYMENT_LOCATION = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1980,8 +1980,6 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
 				);
-				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../../ThirdPart/UXLibs/INTEL-LIBS/CURL\"";
-				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../../../ThirdPart/UXLibs/PPC-LIBS/CURL\"";
 				LIBRARY_STYLE = Bundle;
 				OBJROOT = ../../build;
 				OTHER_CFLAGS = "-xobjective-c++";
@@ -2004,8 +2002,8 @@
 		1497562608C380AF0084C913 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				SDKROOT = macosx10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};

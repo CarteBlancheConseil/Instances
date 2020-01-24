@@ -33,17 +33,17 @@
 //----------------------------------------------------------------------------
 
 #include <std_ext/bStdNSXBox.h>
-#include <Carbon/Carbon.h>
+
 
 //----------------------------------------------------------------------------
 
 class bXBoxCalc : public bStdNSXBox{
 public:
-    bXBoxCalc                             (	bGenericXMLBaseElement* elt,
+    bXBoxCalc                               (	bGenericXMLBaseElement* elt,
                                                 bGenericMacMapApp* gapp, 
                                                 CFBundleRef bndl);
-    virtual ~bXBoxCalc                    (	);
-    virtual bGenericXMLBaseElement* create	(	bGenericXMLBaseElement* elt);
+    virtual ~bXBoxCalc                      (	);
+    virtual bGenericXMLBaseElement* create  (	bGenericXMLBaseElement* elt);
                     
 protected:
     virtual void* ccinit					(	);

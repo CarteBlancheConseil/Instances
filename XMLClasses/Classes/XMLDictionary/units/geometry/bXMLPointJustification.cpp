@@ -185,7 +185,7 @@ int		o[2]={0,ng};
 		}
 	}
 	ctx->setGeometry(x,y,a,ng,o,2);
-	delete x;
+    delete x;
 	delete y;
 	delete a;
 	return(true);

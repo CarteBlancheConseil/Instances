@@ -123,7 +123,9 @@ char	val[_values_length_max_];
         }
 		// on pourrait chercher ailleurs
 	}
-	_ispdf=(GetImageKind(val)==kQTFileTypePDF);
+    
+//#warning COMMENTE
+	_ispdf=(GetImageKind(val)==kFileTypePDF);
 	strcpy(_last,val);
 	if(_ispdf){
 		ctx->setPDF(_data,_sz,val);
@@ -185,7 +187,8 @@ bStdXMLValueElement*	elt=find_value();
 		}
 		strcpy(_last,val);
 	}
-	_ispdf=(GetImageKind(val)==kQTFileTypePDF);
+//#warning COMMENTE
+	_ispdf=(GetImageKind(val)==kFileTypePDF);
 	if(_ispdf){
 		ctx->setPDF(_data,_sz,val);
 	}

@@ -29,7 +29,7 @@
 
 #include "bvDefQuickTextStyle.h"
 #include <limits.h>
-#include <Carbon/Carbon.h>
+
 
 // ---------------------------------------------------------------------------
 // Globals

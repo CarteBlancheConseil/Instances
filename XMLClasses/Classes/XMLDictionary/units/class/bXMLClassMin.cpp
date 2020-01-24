@@ -59,5 +59,6 @@ bClassMinElement::~bClassMinElement(){
 void bClassMinElement::init(void* ctx){
 char	val[_values_length_max_];
 	getvalue(val);
-	((bGenericStyle*)ctx)->setrunclassmin(atoi(val));
+//    ((bGenericStyle*)ctx)->setrunclassmin(atoi(val));
+    ((bGenericStyle*)ctx)->setrunclassmin(atol(val));
 }

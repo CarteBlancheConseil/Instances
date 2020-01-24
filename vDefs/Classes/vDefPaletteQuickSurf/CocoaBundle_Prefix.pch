@@ -31,5 +31,5 @@
     #import <Cocoa/Cocoa.h>
 #endif
 
-#include <Carbon/Carbon.h>
+
 #include <Foundation/Foundation.h>

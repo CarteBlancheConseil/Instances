@@ -63,7 +63,7 @@
 
 //----------------------------------------------------------------------------
 
-@interface PresentationWindowController : bStdNSXBoxWindowController{	
+@interface PresentationWindowController : bStdNSXBoxWindowController{
     IBOutlet NSTableView*	_stl_viw;
 
     IBOutlet NSButton*      _mup_btn;

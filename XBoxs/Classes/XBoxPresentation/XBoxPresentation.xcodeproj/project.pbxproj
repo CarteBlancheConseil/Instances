@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1415C8B51AD561CB0004DFDD /* 136.png in Resources */ = {isa = PBXBuildFile; fileRef = 1415C8B41AD561CA0004DFDD /* 136.png */; };
-		141E41791ACBEEB6003C60AF /* bXBoxPresentation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 141E41751ACBEEB6003C60AF /* bXBoxPresentation.cpp */; };
+		141E41791ACBEEB6003C60AF /* bXBoxPresentation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 141E41751ACBEEB6003C60AF /* bXBoxPresentation.mm */; };
 		141E417A1ACBEEB6003C60AF /* PresentationWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 141E41781ACBEEB6003C60AF /* PresentationWindowController.mm */; };
 		141E41881ACC1AB0003C60AF /* 128.png in Resources */ = {isa = PBXBuildFile; fileRef = 141E417C1ACC1AB0003C60AF /* 128.png */; };
 		141E41891ACC1AB0003C60AF /* 129.png in Resources */ = {isa = PBXBuildFile; fileRef = 141E417D1ACC1AB0003C60AF /* 129.png */; };
@@ -44,7 +44,7 @@
 		1415C8B41AD561CA0004DFDD /* 136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 136.png; sourceTree = "<group>"; };
 		1417ACB31AD7D94E00E38FF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Palette.xib; sourceTree = "<group>"; };
 		1417ACB41AD7D95000E38FF1 /* it */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = it; path = it.lproj/Palette.xib; sourceTree = "<group>"; };
-		141E41751ACBEEB6003C60AF /* bXBoxPresentation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXBoxPresentation.cpp; sourceTree = "<group>"; };
+		141E41751ACBEEB6003C60AF /* bXBoxPresentation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = bXBoxPresentation.mm; sourceTree = "<group>"; };
 		141E41761ACBEEB6003C60AF /* bXBoxPresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXBoxPresentation.h; sourceTree = "<group>"; };
 		141E41771ACBEEB6003C60AF /* PresentationWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationWindowController.h; sourceTree = "<group>"; };
 		141E41781ACBEEB6003C60AF /* PresentationWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PresentationWindowController.mm; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 			children = (
 				14CA54370DF964990080DF70 /* main.h */,
 				14CA54360DF964990080DF70 /* main.cpp */,
-				141E41751ACBEEB6003C60AF /* bXBoxPresentation.cpp */,
+				141E41751ACBEEB6003C60AF /* bXBoxPresentation.mm */,
 				141E41761ACBEEB6003C60AF /* bXBoxPresentation.h */,
 				14CA57C20DF973C30080DF70 /* CocoaStuff.h */,
 				141E41771ACBEEB6003C60AF /* PresentationWindowController.h */,
@@ -252,6 +252,7 @@
 				Italian,
 				en,
 				it,
+				fr,
 			);
 			mainGroup = 089C166AFE841209C02AAC07 /* CocoaBundle */;
 			projectDirPath = "";
@@ -295,7 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14CA54380DF964990080DF70 /* main.cpp in Sources */,
-				141E41791ACBEEB6003C60AF /* bXBoxPresentation.cpp in Sources */,
+				141E41791ACBEEB6003C60AF /* bXBoxPresentation.mm in Sources */,
 				141E417A1ACBEEB6003C60AF /* PresentationWindowController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,7 +340,7 @@
 		1DEB913C08733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
@@ -357,6 +358,7 @@
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = ../../build;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OBJROOT = ../../build;
 				PRODUCT_NAME = XBoxPresentation;
 				SKIP_INSTALL = YES;
@@ -368,13 +370,13 @@
 		1DEB914008733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_WARN_ABOUT_RETURN_TYPE = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OBJROOT = "../../zXCode Div/buildprod";
 				PREBINDING = YES;
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 				SYMROOT = ../../build;
 			};
 			name = Release;

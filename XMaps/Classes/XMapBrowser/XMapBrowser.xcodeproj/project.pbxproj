@@ -10,7 +10,7 @@
 		140BBCDF1934A0DB0099308B /* CocoaStuff.mm in Sources */ = {isa = PBXBuildFile; fileRef = 140BBCDE1934A0DB0099308B /* CocoaStuff.mm */; };
 		1421DE3219C81B7A00BBE812 /* EditBrowserWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1421DE3119C81B7A00BBE812 /* EditBrowserWindowController.mm */; };
 		146829FC190E27FB007EFA36 /* bXMapBrowser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 146829F7190E27FB007EFA36 /* bXMapBrowser.cpp */; };
-		14682EBF190E3D6F007EFA36 /* bXMapBrowserContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14682EBE190E3D6F007EFA36 /* bXMapBrowserContainer.cpp */; };
+		14682EBF190E3D6F007EFA36 /* bXMapBrowserContainer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14682EBE190E3D6F007EFA36 /* bXMapBrowserContainer.mm */; };
 		14A6BF2C12C21A6400E6FBDB /* Palette.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A6BF2A12C21A6400E6FBDB /* Palette.xib */; };
 		14A6BF4012C21B3600E6FBDB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A6BF3F12C21B3600E6FBDB /* QuartzCore.framework */; };
 		14A6C7A912C26F2C00E6FBDB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14A6C7A712C26F2C00E6FBDB /* Localizable.strings */; };
@@ -36,7 +36,7 @@
 		146829F7190E27FB007EFA36 /* bXMapBrowser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMapBrowser.cpp; sourceTree = "<group>"; };
 		146829F8190E27FB007EFA36 /* bXMapBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMapBrowser.h; sourceTree = "<group>"; };
 		14682EBB190E3D33007EFA36 /* bXMapBrowserContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMapBrowserContainer.h; sourceTree = "<group>"; };
-		14682EBE190E3D6F007EFA36 /* bXMapBrowserContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMapBrowserContainer.cpp; sourceTree = "<group>"; };
+		14682EBE190E3D6F007EFA36 /* bXMapBrowserContainer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = bXMapBrowserContainer.mm; sourceTree = "<group>"; };
 		147BC6091992109B008AECAA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		147BC60A1992109B008AECAA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		147BC60B1992109B008AECAA /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Palette.xib; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 				140BBCDE1934A0DB0099308B /* CocoaStuff.mm */,
 				146829F7190E27FB007EFA36 /* bXMapBrowser.cpp */,
 				146829F8190E27FB007EFA36 /* bXMapBrowser.h */,
-				14682EBE190E3D6F007EFA36 /* bXMapBrowserContainer.cpp */,
+				14682EBE190E3D6F007EFA36 /* bXMapBrowserContainer.mm */,
 				14682EBB190E3D33007EFA36 /* bXMapBrowserContainer.h */,
 				14CA54370DF964990080DF70 /* main.h */,
 				14CA54360DF964990080DF70 /* main.cpp */,
@@ -238,7 +238,7 @@
 			files = (
 				14CA54380DF964990080DF70 /* main.cpp in Sources */,
 				146829FC190E27FB007EFA36 /* bXMapBrowser.cpp in Sources */,
-				14682EBF190E3D6F007EFA36 /* bXMapBrowserContainer.cpp in Sources */,
+				14682EBF190E3D6F007EFA36 /* bXMapBrowserContainer.mm in Sources */,
 				140BBCDF1934A0DB0099308B /* CocoaStuff.mm in Sources */,
 				1421DE3219C81B7A00BBE812 /* EditBrowserWindowController.mm in Sources */,
 			);
@@ -283,7 +283,7 @@
 		1DEB913C08733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 					"$(SRCROOT)/../../../../Applis/Current/MacMap®/build/Release",
@@ -311,12 +311,13 @@
 		1DEB914008733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_WARN_ABOUT_RETURN_TYPE = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OBJROOT = "../../zXCode Div/buildprod";
 				PREBINDING = YES;
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 				SYMROOT = ../../build;
 			};
 			name = Release;

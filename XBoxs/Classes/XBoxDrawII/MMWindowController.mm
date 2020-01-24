@@ -33,10 +33,10 @@
 
 #import <MacMapSuite/bTrace.h> 
 #import <mox_intf/bGenericMacMapApp.h> 
-#import <mox_intf/Carb_Utils.h> 
-#import <mox_intf/CGUtils.h> 
-#import <mox_intf/NSUIUtils.h> 
-#import <std_ext/bXMapStdIntf.h> 
+#import <mox_intf/CGUtils.h>
+#import <mox_intf/NSUIUtils.h>
+#import <mox_intf/ext_utils.h>
+#import <std_ext/bXMapStdIntf.h>
 
 // ---------------------------------------------------------------------------
 // 

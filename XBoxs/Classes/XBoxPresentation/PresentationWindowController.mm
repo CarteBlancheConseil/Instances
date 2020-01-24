@@ -33,7 +33,6 @@
 
 #import <mox_intf/bGenericMacMapApp.h>
 #import <mox_intf/bGenericExtLib.h>
-#import <mox_intf/Carb_Utils.h>
 #import <mox_intf/bStdAlert.h>
 #import <mox_intf/ext_utils.h>
 #import <mox_intf/NSUIUtils.h>
@@ -132,11 +131,11 @@ float*				clr=mgt->getColor(&cspace,_fill);
 
 CGPDFPageRef		pg=CGPDFDocumentGetPage(mgt->getFillPattern(),1);
 CGRect				box=CGPDFPageGetBoxRect(pg,kCGPDFCropBox);
-float				color[4]={1,0,0,clr[_alpha]};
+CGFloat				color[4]={1,0,0,clr[_alpha]};
 CGPatternCallbacks	callbacks={0,&PDFFillPatternPlot,NULL};
 CGColorSpaceRef		bspc=CGColorSpaceCreateDeviceRGB();
 CGColorSpaceRef		pspc=CGColorSpaceCreatePattern(bspc);
-float				cf=mgt->getUnitCoef()*mgt->getFixConv();
+CGFloat				cf=mgt->getUnitCoef()*mgt->getFixConv();
     CGContextSetFillColorSpace(ctx,pspc);
     CGColorSpaceRelease(pspc);
     CGColorSpaceRelease(bspc);
@@ -185,11 +184,11 @@ int					cspace;
 float*				clr=mgt->getColor(&cspace,_stroke);
 CGPDFPageRef		pg=CGPDFDocumentGetPage(mgt->getStrokePattern(),1);
 CGRect				box=CGPDFPageGetBoxRect(pg,kCGPDFCropBox);
-float				color[4]={1,0,0,clr[_alpha]};
+CGFloat				color[4]={1,0,0,clr[_alpha]};
 CGPatternCallbacks	callbacks={0,&PDFStrokePatternPlot,NULL};
 CGColorSpaceRef		bspc=CGColorSpaceCreateDeviceRGB();
 CGColorSpaceRef		pspc=CGColorSpaceCreatePattern(bspc);
-float				cf=mgt->getUnitCoef()*mgt->getFixConv();
+CGFloat				cf=mgt->getUnitCoef()*mgt->getFixConv();
     CGContextSetStrokeColorSpace(ctx,pspc);
     CGColorSpaceRelease(pspc);
     CGColorSpaceRelease(bspc);
@@ -945,7 +944,8 @@ CGPoint pt=CGPointMake(nspt.x,nspt.y);
 long    res=popUpContextMenuWithCGPointAndNSWindow(pt,
                                                    (void*)[self window],
                                                    midesc,
-                                                   nmidesc);
+                                                   nmidesc,
+                                                   0.5);
     free(midesc);
     if(res<10000){
         return NO;
@@ -1153,7 +1153,8 @@ CGPoint pt=CGPointMake(nspt.x,nspt.y);
 long    res=popUpContextMenuWithCGPointAndNSWindow(pt,
                                                    (void*)[self window],
                                                    midesc,
-                                                   nmidesc);
+                                                   nmidesc,
+                                                   0.5);
     free(midesc);
     if(res<10000){
         return NO;
@@ -1270,7 +1271,8 @@ CGPoint pt=CGPointMake(nspt.x,nspt.y);
 long    res=popUpContextMenuWithCGPointAndNSWindow(pt,
                                                    (void*)[self window],
                                                    midesc,
-                                                   nmidesc);
+                                                   nmidesc,
+                                                   0.5);
     delete midesc;
     if(res>0){
         styl->set_curclass(res);
@@ -1451,8 +1453,22 @@ _bTrace_("[PresentationWindowController awakeFromNib]",true);
 
     [_stl_viw registerForDraggedTypes:[NSArray arrayWithObjects:PresentationDraggedDatatype,nil]];
     
+/*    [[self window] setDelegate:self];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(windowWillClose:)
+                                                 name:NSWindowWillCloseNotification
+                                               object:[self window]];*/
+
 _tm_("tableView :"+(void*)_stl_viw);
 }
+
+// ---------------------------------------------------------------------------
+//
+// ------------
+/*-(void)windowWillClose:(NSNotification *)notification{
+_bTrace_("[PresentationWindowController windowWillClose]",true);
+    [self askForViewSave];
+}*/
 
 // ---------------------------------------------------------------------------
 // 
@@ -1909,7 +1925,7 @@ char	btn3[__MESSAGE_STRING_LENGTH_MAX__];
     b_message_string(kXMapStyleWdSaveAsMsgID,btn3,_ext->getbundle(),0);
 
 bAlertWarningYes	alrt(msg,"",false,SHRT_MAX,btn1,btn2,btn3);
-
+    
     if(alrt.hit_button()==kAlertStdAlertOKButton){
         gapp->viewMgr()->save();
     }
@@ -2216,6 +2232,7 @@ long                n=rowIndex-[rowIndexes firstIndex];
     gapp->layersMgr()->StopDraw();
     gapp->layersMgr()->move([rowIndexes firstIndex]+1,n);
     _reload=YES;
+    _modi=YES;
     return YES;
 }
 

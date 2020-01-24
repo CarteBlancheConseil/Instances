@@ -192,8 +192,8 @@ char                str[256];
     if(!(prm.tp->fields()->get_param_name("dashes",idx+1,str))){
         return;
     }
-int		n;
-float*	dsh=GetDash(gapp,prm.tp,str,&n);
+int         n;
+CGFloat*	dsh=GetDash(gapp,prm.tp,str,&n);
     if(!dsh){
 _te_("GetDash==NULL");
         return;

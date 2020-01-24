@@ -117,7 +117,8 @@ CGPoint	res;
 	}
 	res.x=min.x+(max.x-min.x)*_xval;
 	res.y=min.y+(max.y-min.y)*_yval;
-	ctx->setGeometry(&res.x,&res.y,1,NULL,0);	
+#warning CAST
+	ctx->setGeometry((float*)&res.x,(float*)&res.y,1,NULL,0);
 	return(true);
 }
 
