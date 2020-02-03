@@ -33,6 +33,8 @@
 
 #include <mox_intf/bEventLog.h>
 #include <mox_intf/ext_utils.h>
+#include <mox_intf/Type_Utils.h>
+#include <mox_intf/MacMapCWrappers.h>
 
 #include <MacMapSuite/bTrace.h>
 
@@ -100,7 +102,12 @@ bGenericXMLBaseElement*	elt;
 // 
 // ------------
 bool bXMapSimplify::test(void* prm){
-	return(_gapp->selMgr()->count()>0);
+//	return(_gapp->selMgr()->count()>0);
+int knd=SelectionIsMonoGender(_gapp);
+    if((knd==kBaseKindPolyline)||(kBaseKindPolygon)){
+        return true;
+    }
+    return false;
 }
 
 // ---------------------------------------------------------------------------
@@ -130,16 +137,41 @@ bEventLog	log(_gapp,this);
 // ------------
 bool bXMapSimplify::simplify(double d){
 ivertices			*vxo,*vxs;
+bGenericType*       tp;
 bGenericGeoElement*	o;
 bArray				sel(*(_gapp->selMgr()->elements()));
-
-	_gapp->layersMgr()->SetObjInvalidation(false);
+bool                flg=false;
+    
+    FlushContrasts(_gapp);
+    _gapp->layersMgr()->SetObjInvalidation(false);
 	for(int i=1;i<=sel.count();i++){
 		sel.get(i,&o);
 		o->getVertices(&vxs);
-		ivs2ivs(vxs,&vxo);
-		ivs_simplify_with_angle(&vxo,deg2rad(_a));
-		if(vxo->nv!=vxs->nv){
+
+        tp=_gapp->typesMgr()->get(o->getType());
+        if(ivs_integrity(tp->kind(),vxs)){
+            if(tp->kind()==kBaseKindPolyline){
+                vxo=ivs_polylineFix(vxs);
+            }
+            else if(tp->kind()==kBaseKindPolygon){
+                vxo=ivs_polygonFix(vxs);
+            }
+            else{
+                vxo=NULL;
+            }
+            flg=true;
+        }
+        else{
+            ivs2ivs(vxs,&vxo);
+        }
+        if(vxo==NULL){
+            o->setcontrast(true,true);
+            continue;
+        }
+
+        ivs_simplify_with_angle(&vxo,deg2rad(_a));
+        
+		if((flg)||(vxo->nv!=vxs->nv)){
 			o->setVertices(vxo);
 		}
 		ivs_free(vxo);

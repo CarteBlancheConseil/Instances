@@ -145,8 +145,8 @@ bArray				sel(*(_gapp->selMgr()->elements()));
 			p=ivs2_part(vxs,j,&nv);
 			(void)ivx2_closed(p,nv);
 			for(int k=0;k<nv;k++){
-				p[k].h+=round((rand()-((double)LONG_MAX/2.0))/(double)LONG_MAX*d);
-				p[k].v+=round((rand()-((double)LONG_MAX/2.0))/(double)LONG_MAX*d);
+				p[k].h+=round((rand()-((double)INT_MAX/2.0))/(double)INT_MAX*d);
+				p[k].v+=round((rand()-((double)INT_MAX/2.0))/(double)INT_MAX*d);
 			}
 		}
 		o->setVertices(vxs);

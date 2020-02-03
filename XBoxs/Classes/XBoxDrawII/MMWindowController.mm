@@ -363,11 +363,11 @@ topocheck_prm		p;
 	if(ext){
 		ext->process(kExtProcessCallGetData,&p);
 		p.activated=val;
-		_tm_("topo set to "+val);
+_tm_("topo set to "+val);
 		ext->process(kExtProcessCallSetData,&p);
 	}
 	else{
-		_te_("ext not found");
+_te_("ext not found");
 	}
 }
 

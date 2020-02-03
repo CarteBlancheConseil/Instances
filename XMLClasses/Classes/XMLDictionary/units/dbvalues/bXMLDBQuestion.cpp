@@ -58,7 +58,7 @@ bGenericXMLBaseElement* bDBQuestionElement::create(bGenericXMLBaseElement* elt){
 // 
 // -----------
 void  bDBQuestionElement::init(void* ctx){
-//_bTrace_("bDBQuestionElement::init",true);	
+//_bTrace_("bDBQuestionElement::init",true);
 	bStdXMLConstant::init(ctx);
 
 bStdSolver*		solver=(bStdSolver*)ctx;
@@ -67,6 +67,8 @@ bGenericType*	tp=solver->get_type();
 		return;
 	}
 char			vl[_values_length_max_];
+char            tmp[_values_length_max_];
+
 	strcpy(vl,_cfvalue);
 char*			adr1=strchr(vl,':');
 char*			adr2=NULL;
@@ -87,8 +89,12 @@ int				idx=0;
 			tp=solver->get_type();
 		}
 		idx=tp->fields()->get_index(adr1);
-//		sprintf(vl,adr2);
-		strcpy(vl,adr2);
+        strcpy(tmp,adr2);
+        strcpy(vl,tmp);
+        adr1=strrchr(vl,'?');
+        if(adr1){
+            adr1[1]=0;
+        }
 //_tm_(adr1+"->"+adr1+"->"+vl);
 //_tm_("idx="+idx);
 	}
@@ -97,8 +103,12 @@ int				idx=0;
 		idx=tp->fields()->get_index(vl);
 //_tm_(adr1+"->"+vl);
 //_tm_("idx="+idx);
-//		sprintf(vl,adr1);
-		strcpy(vl,adr1);
+        strcpy(tmp,adr1);
+        strcpy(vl,tmp);
+        adr1=strrchr(vl,'?');
+        if(adr1){
+            adr1[1]=0;
+        }
 	}
 	else{// Houla ! Bon ben on va considérer que c'est le prompt
 //_tm_("!adr1&&!adr2");
@@ -107,6 +117,9 @@ int				idx=0;
 	}
 	
 char			value[_values_length_max_]="";
+    
+//    _tm_(vl);
+
 	GetAValue(tp,idx,vl,value);
 	_dbval->put(value);
 }

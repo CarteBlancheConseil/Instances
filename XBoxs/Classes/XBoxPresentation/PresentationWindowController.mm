@@ -1926,10 +1926,12 @@ char	btn3[__MESSAGE_STRING_LENGTH_MAX__];
 
 bAlertWarningYes	alrt(msg,"",false,SHRT_MAX,btn1,btn2,btn3);
     
-    if(alrt.hit_button()==kAlertStdAlertOKButton){
+    if(alrt.hit_button()==NSAlertFirstButtonReturn/*kAlertStdAlertOKButton*/){
+_tm_("SAVE");
         gapp->viewMgr()->save();
     }
-    else if(alrt.hit_button()==kAlertStdAlertOtherButton){
+    else if(alrt.hit_button()==NSAlertThirdButtonReturn/*kAlertStdAlertOtherButton*/){
+_tm_("RENAME");
         b_message_string(kXMapStyleWdAskViewNameMsgID,msg,_ext->getbundle(),0);
         gapp->viewMgr()->duplicate(gapp->viewMgr()->get_current());
         gapp->viewMgr()->save();
@@ -1945,6 +1947,9 @@ bAlertWarningYes	alrt(msg,"",false,SHRT_MAX,btn1,btn2,btn3);
         }
         gapp->viewMgr()->set_name(btn1);
         gapp->viewMgr()->set_name(gapp->viewMgr()->count(),btn2);
+    }
+    else{
+_tm_("AUTRE ?");
     }
     _modi=NO;
 }

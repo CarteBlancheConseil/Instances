@@ -342,10 +342,9 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(SRCROOT)/../../../../Applis/Current/MacMap®/build/Release",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "$(SRCROOT)/../../../../Applis/Current/MacMap®/build/Release";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OBJC_CALL_CXX_CDTORS = YES;
@@ -373,10 +372,10 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_WARN_ABOUT_RETURN_TYPE = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OBJROOT = "../../zXCode Div/buildprod";
 				PREBINDING = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.12;
 				SYMROOT = ../../build;
 			};
 			name = Release;

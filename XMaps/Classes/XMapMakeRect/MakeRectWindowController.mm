@@ -80,7 +80,7 @@ i2dvertex	vx;
     [_xxxtxt setDoubleValue:prm.o.x];
     [_yyytxt setDoubleValue:prm.o.y];
     [_llltxt setDoubleValue:prm.w];
-    [_hhhtxt setIntValue:prm.h];
+    [_hhhtxt setDoubleValue:prm.h];
     
 bGenericUnit*	u=((bGenericMacMapApp*)ext->getapp())->distMgr()->get();
 char			val[256];
@@ -113,7 +113,7 @@ makerect_prm    prm=ext->get_data();
     prm.o.x=[_xxxtxt doubleValue];
     prm.o.y=[_yyytxt doubleValue];
     prm.w=[_llltxt doubleValue];
-    prm.h=[_hhhtxt intValue];
+    prm.h=[_hhhtxt doubleValue];
    
     ext->set_data(prm);
 

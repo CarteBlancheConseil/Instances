@@ -197,7 +197,7 @@ NSImage*        img;
                 [btn setAction:@selector(doTool:)];
                 
                 [btn setContinuous:YES];
-                [btn setPeriodicDelay:0.25 interval:1];
+//[btn setPeriodicDelay:0.25 interval:1];
 
                 k++;
             }
@@ -364,6 +364,7 @@ CGFloat     heightOtherBoxWithMargin=frameOtherBox.size.height;
 //
 // ------------
 -(IBAction)doTool:(id)sender{
+_bTrace_("[ToolsWindowController doTool]",false);
 bGenericMacMapApp* gapp=(bGenericMacMapApp*)_ext->getapp();
     
     gapp->toolMgr()->set_current([sender tag]);
@@ -387,13 +388,16 @@ NSEvent*        event=[NSApp currentEvent];
 //                }
 //                break;
             case NSLeftMouseDown:
-//                _tm_("NSLeftMouseDown");
+_tm_("NSLeftMouseDown");
                 break;
             case NSLeftMouseUp:
-//                _tm_("NSLeftMouseUp");
-                [sender setContinuous:YES];
+//_tm_("NSLeftMouseUp");
+//              [sender setContinuous:YES];
                 if([event clickCount]==2){
-                    ext->edit(NULL);
+                    //ext->edit(NULL);
+UInt32              sgn=GetSignature(ext);
+                    LBSwapWord(&sgn,sizeof(UInt32));
+                    SendCommandToApplication(sgn);
                 }
                 else if(_pop){
 NSPoint             pt=[sender frame].origin;
@@ -410,7 +414,7 @@ cocoaMenuPrm        prm;
                 _pop=NO;
                 break;
             case NSPeriodic:
-//                _tm_("NSPeriodic");
+//_tm_("NSPeriodic");
                 _pop=YES;
                 break;
         }

@@ -1432,9 +1432,11 @@ long			i;
         add_idesc(arr,2,"int",0);
     }
     d=Measure_d2i(_gapp,_cfg_prm.dnod);
-    add_ddesc(arr,2,"float",_cfg_prm.dnod,_gapp->document()->dist_pref_digits());
+//    add_ddesc(arr,2,"float",_cfg_prm.dnod,_gapp->document()->dist_pref_digits());
+    add_ddesc(arr,2,"float",d,_gapp->document()->dist_pref_digits());
     d=Measure_d2i(_gapp,_cfg_prm.dbdg);
-    add_ddesc(arr,2,"float",_cfg_prm.dbdg,_gapp->document()->dist_pref_digits());
+//    add_ddesc(arr,2,"float",_cfg_prm.dbdg,_gapp->document()->dist_pref_digits());
+    add_ddesc(arr,2,"float",d,_gapp->document()->dist_pref_digits());
     add_idesc(arr,2,"bool",_cfg_prm.autoclean);
     
     bGenericXMLBaseElement*	root=_gapp->classMgr()->ParseXMLDescriptors(&arr);

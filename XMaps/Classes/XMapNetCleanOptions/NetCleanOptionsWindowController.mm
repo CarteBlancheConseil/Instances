@@ -155,11 +155,16 @@ bStdXMap*               netext=(bStdXMap*)(void*)gapp->xmapMgr()->find('NtCl');
 bAlertStop	alrt(msg,"");
         return;
     }
-    netcleancfg_prm	prm;
+netcleancfg_prm	prm;
+    
+    prm.nodes=NULL;
+    prm.edges=NULL;
+    netext->process(kExtProcessCallGetData,&prm);
     
     prm.nodes=new bArray(sizeof(bGenericType*));
     prm.edges=new bArray(sizeof(bGenericType*));
     
+
 bGenericType*	tp;
     
     for(long i=1;i<[_ndspop numberOfItems];i++){
