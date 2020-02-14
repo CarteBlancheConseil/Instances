@@ -204,9 +204,7 @@
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
-				Japanese,
 				French,
-				German,
 				Italian,
 			);
 			mainGroup = 089C166AFE841209C02AAC07 /* CocoaBundle */;
@@ -317,7 +315,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OBJROOT = "../../zXCode Div/buildprod";
 				PREBINDING = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.12;
 				SYMROOT = ../../build;
 			};
 			name = Release;

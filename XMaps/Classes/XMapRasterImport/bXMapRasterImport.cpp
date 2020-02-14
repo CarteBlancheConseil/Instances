@@ -167,11 +167,15 @@ char            path[PATH_MAX];
         splitPath(path,_prm.path,_prm.name);
         
 		sprintf(name,"%s",_prm.name);
-		for(int j=strlen(name)-1;j>=0;j--){
+		/*for(int j=strlen(name)-1;j>=0;j--){
 			if(name[j]=='.'){
 				name[j]=0;
 			}
-		}
+		}*/
+char*   s=strrchr(name,'.');
+        if(s){
+            s[0]=0;
+        }
 		
 bStdDirectory	dr(_prm.path);
 		if(dr.status()){
