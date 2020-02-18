@@ -33,6 +33,7 @@
 #include <mox_intf/xmldesc_utils.h>
 #include <mox_intf/ext_utils.h>
 #include <mox_intf/bGenericCalc.h>
+#include <mox_intf/NSUIUtils.h>
 #include <std_ext/bStdUserExt.h>
 #include <MacMapSuite/bTrace.h>
 
@@ -45,6 +46,15 @@
 #define kCellMargin			2
 #define kCellInterMargin	15
 #define kCellDeadEndSize	5
+
+void biduleMachin(char* letexte, CGPoint ici){
+NSMutableDictionary*    _strAttr=[NSMutableDictionary dictionary];
+    [_strAttr setObject:[NSFont fontWithName:@"Geneva" size:kCellFontSize*13.0] forKey:NSFontAttributeName];
+    [_strAttr setObject:[NSColor blackColor] forKey:NSForegroundColorAttributeName];
+//    [_strAttr retain];
+NSString*    nstr=[NSString stringWithCString:letexte encoding:NSMacOSRomanStringEncoding];
+    [nstr drawAtPoint:(NSPoint)ici withAttributes:_strAttr];
+}
 
 // ---------------------------------------------------------------------------
 // 
@@ -191,12 +201,15 @@ CGRect	cgr;
 // 
 // -----------
 void bXMapCalcCell::draw(CGContextRef ctx, CGPoint go){
+//_bTrace_("bXMapCalcCell::draw(CGContextRef,CGPoint)",true);
     _o=go;
 	_o.x-=_go.x;
 	_o.y-=_go.y;
 CGRect	cgr;
 	rect(&cgr);
-		
+
+//_tm_(_trxy_(_o));
+    
 	CGContextSetLineWidth(ctx,1);
 	
 	CGContextSetRGBFillColor(ctx,_r,_g,_b,1);
@@ -205,15 +218,17 @@ CGRect	cgr;
 	CGContextStrokeRect(ctx,cgr);
 	
 	CGContextSetRGBFillColor(ctx,0,0,0,1);
-	CGContextSelectFont(ctx,kCellFont,kCellFontSize,kCGEncodingMacRoman);
-	CGContextSetTextDrawingMode(ctx,kCGTextFill);
+    CGContextSetTextDrawingMode(ctx,kCGTextFill);
+
+    biduleMachin(_name,CGPointMake(cgr.origin.x+kCellMargin,cgr.origin.y));
+/*    CGContextSelectFont(ctx,kCellFont,kCellFontSize,kCGEncodingMacRoman);
 	CGContextShowStringAtPoint(	ctx,
 								cgr.origin.x+kCellMargin,
 								cgr.origin.y+(cgr.size.height*2/3),
 								_name,
 								kCellFont,
-								kCellFontSize);
-								
+								kCellFontSize);*/
+    
 CGPoint	cgp[2];
 	cgp[0].x=_o.x+cgr.size.width;
 	cgp[0].y=_o.y;
