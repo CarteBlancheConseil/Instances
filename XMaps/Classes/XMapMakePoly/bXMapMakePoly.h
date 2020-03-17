@@ -66,7 +66,8 @@ private:
                                                 double r, 
                                                 int n,
                                                 int sui,
-                                                int justo);
+                                                int justo,
+                                                bGenericGeoElement** go);
     
     makepoly_prm	_prm;
 };

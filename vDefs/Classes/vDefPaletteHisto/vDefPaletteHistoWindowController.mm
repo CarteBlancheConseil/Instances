@@ -81,7 +81,7 @@ double	b=matof(d);
 static long val2index(double val, NSPopUpButton* c){
 char	str[256];
 long	best=0;
-double	v,d,dmin=LONG_MAX;
+double	v,d,dmin=INT_MAX;
 	
 	for(long i=1;i<=[c numberOfItems];i++){
 		NSPopupButtonGetMenuItemValue(c,i,str,sizeof(str)-1);

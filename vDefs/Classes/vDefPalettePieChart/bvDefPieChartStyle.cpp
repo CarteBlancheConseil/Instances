@@ -50,7 +50,7 @@ bvDefPieChartStyle	::bvDefPieChartStyle(bGenericMacMapApp* gapp,
 	_exp=1;
 	
 	_smin=1;
-	_smax=LONG_MAX;
+	_smax=INT_MAX;
 	
 	_offx=0;
 	_offy=0;
@@ -95,45 +95,45 @@ int						fid,n;
 		return(false);
 	}
 	
-	if(chld=_gapp->classMgr()->NthElement(_gstl,1,"stroke")){	
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"red")){
+	if((chld=_gapp->classMgr()->NthElement(_gstl,1,"stroke"))){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"red"))){
 			elt->getvalue(val);
 			_stroke[0]=matof(val);
 			_cc=4;
 		}
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"green")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"green"))){
 			elt->getvalue(val);
 			_stroke[1]=matof(val);
 			_cc=4;
 		}
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"blue")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"blue"))){
 			elt->getvalue(val);
 			_stroke[2]=matof(val);
 			_cc=4;
 		}
 		
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"cyan")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"cyan"))){
 			elt->getvalue(val);
 			_stroke[0]=matof(val);
 			_cc=5;
 		}
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"magenta")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"magenta"))){
 			elt->getvalue(val);
 			_stroke[1]=matof(val);
 			_cc=5;
 		}
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"yellow")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"yellow"))){
 			elt->getvalue(val);
 			_stroke[2]=matof(val);
 			_cc=5;
 		}
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"black")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"black"))){
 			elt->getvalue(val);
 			_stroke[3]=matof(val);
 			_cc=5;
 		}
 		
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"alpha")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"alpha"))){
 			elt->getvalue(val);
 			if(_cc==4){
 				_stroke[3]=matof(val);
@@ -144,45 +144,45 @@ int						fid,n;
 		}
 	}
 	
-	if(chld=_gapp->classMgr()->NthElement(_gstl,1,"fill")){	
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"red")){
+	if((chld=_gapp->classMgr()->NthElement(_gstl,1,"fill"))){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"red"))){
 			elt->getvalue(val);
 			_fill[0]=matof(val);
 			_cc=4;
 		}
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"green")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"green"))){
 			elt->getvalue(val);
 			_fill[1]=matof(val);
 			_cc=4;
 		}
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"blue")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"blue"))){
 			elt->getvalue(val);
 			_fill[2]=matof(val);
 			_cc=4;
 		}
 		
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"cyan")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"cyan"))){
 			elt->getvalue(val);
 			_fill[0]=matof(val);
 			_cc=5;
 		}
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"magenta")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"magenta"))){
 			elt->getvalue(val);
 			_fill[1]=matof(val);
 			_cc=5;
 		}
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"yellow")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"yellow"))){
 			elt->getvalue(val);
 			_fill[2]=matof(val);
 			_cc=5;
 		}
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"black")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"black"))){
 			elt->getvalue(val);
 			_fill[3]=matof(val);
 			_cc=5;
 		}
 		
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"alpha")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"alpha"))){
 			elt->getvalue(val);
 			if(_cc==4){
 				_fill[3]=matof(val);
@@ -193,7 +193,7 @@ int						fid,n;
 		}
 	}
 	
-	if(elt=_gapp->classMgr()->NthElement(_gstl,1,"stdgeometry")){		
+	if((elt=_gapp->classMgr()->NthElement(_gstl,1,"stdgeometry"))){
 		chld=_gapp->classMgr()->NthElement(elt,1,"propangle");
 		if(chld){
 			_isstrk=false;
@@ -221,11 +221,11 @@ int						fid,n;
 		}
 		prop_load(elt);
 		
-		if(chld=_gapp->classMgr()->NthElement(elt,1,"width")){
+		if((chld=_gapp->classMgr()->NthElement(elt,1,"width"))){
 			chld->getvalue(val);
 			_width=matof(val);
 		}
-		if(chld=_gapp->classMgr()->NthElement(elt,1,"centroid")){
+		if((chld=_gapp->classMgr()->NthElement(elt,1,"centroid"))){
 			chld->getvalue(val);
 			_centro=atoi(val);
 		}
@@ -367,9 +367,9 @@ bool bvDefPieChartStyle::std_dump(bArray& arr, int indent){
 	add_cdesc(arr,indent+1,"stylerun","");
 	add_cdesc(arr,indent+2,"validity","");
 	add_idesc(arr,indent+3,"classmin",1);
-	add_idesc(arr,indent+3,"classmax",LONG_MAX);
+	add_idesc(arr,indent+3,"classmax",INT_MAX);
 	add_ddesc(arr,indent+3,"scalemin",_smin,6);
-	add_ddesc(arr,indent+3,"scalemax",(_smax==LONG_MAX)?_smax:_smax+1,6);
+	add_ddesc(arr,indent+3,"scalemax",(_smax==INT_MAX)?_smax:_smax+1,6);
 	add_idesc(arr,indent+3,"pass",1);
 	return(true);
 }

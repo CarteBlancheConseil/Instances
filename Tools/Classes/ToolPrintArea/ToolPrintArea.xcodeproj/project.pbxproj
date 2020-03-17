@@ -200,15 +200,9 @@
 			};
 			buildConfigurationList = 1497562408C380AF0084C913 /* Build configuration list for PBXProject "ToolPrintArea" */;
 			compatibilityVersion = "Xcode 2.4";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
-				Italian,
-				Spanish,
 				fr,
 				en,
 				it,
@@ -331,7 +325,7 @@
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ToolPrintArea;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.12;
 				SECTORDER_FLAGS = "";
 				SKIP_INSTALL = YES;
 				SYMROOT = ../../build;
@@ -349,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				SDKROOT = macosx10.12;
 			};
 			name = Release;
 		};

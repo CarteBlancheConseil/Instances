@@ -140,7 +140,7 @@ UInt32	sign=_sign;
 // Identification		
 	add_cdesc(arr,1,"styleidentification","");
 	add_cdesc(arr,2,"name",_name);
-	sprintf(val,"%.4s",&sign);
+	sprintf(val,"%.4s",(char*)&sign);
 	add_cdesc(arr,2,"sign",val);
 	add_cdesc(arr,2,"version",_vers);
 	
@@ -156,7 +156,7 @@ bGenericUnit*	u=_gapp->scaleMgr()->get();
 	add_cdesc(arr,2,"classboundsarray","");
 	add_ddesc(arr,3,"classbound",1,0);
 	add_cdesc(arr,3,"classname","min");
-	add_ddesc(arr,3,"classbound",LONG_MAX,0);
+	add_ddesc(arr,3,"classbound",INT_MAX,0);
 	add_cdesc(arr,3,"classname","max");
 	
 // Condition	
@@ -198,7 +198,7 @@ bGenericXMLBaseElement* elt;
 bvDefHistoStyle*		stl;
 char					val[_values_length_max_];
 int						i,n;
-double					bmax=LONG_MAX;
+double					bmax=INT_MAX;
 	
 	for(;;){
 // Identification		
@@ -374,7 +374,7 @@ UInt32			sign=_sign;
 	add_cdesc(arr,2,"classboundsarray","");
 	add_idesc(arr,3,"classbound",1);
 	add_cdesc(arr,3,"classname","min");
-	add_idesc(arr,3,"classbound",LONG_MAX);
+	add_idesc(arr,3,"classbound",INT_MAX);
 	add_cdesc(arr,3,"classname","max");
 	
 // Conditions	

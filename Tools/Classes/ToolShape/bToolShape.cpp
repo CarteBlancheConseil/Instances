@@ -102,7 +102,13 @@ makerect_prm	prm;
 			prm.w=_cm?10:100;
 			prm.tp=_tp;
 			prm.sui=_cm;
+            prm.go=NULL;
 			_gapp->xmapMgr()->edit(NULL,'xMkR',&prm);
+            if(_opn&&prm.go){
+                _gapp->selMgr()->flush();
+                prm.go->setselect(true,true);
+                SendCommandToApplication('fich');
+            }
 		}
 		else{
 makepoly_prm	prm;
@@ -113,7 +119,13 @@ makepoly_prm	prm;
 			prm.sz=_cm?10:100;
 			prm.tp=_tp;
 			prm.sui=_cm;
+            prm.go=NULL;
 			_gapp->xmapMgr()->edit(NULL,'xMkP',&prm);
+            if(_opn&&prm.go){
+                _gapp->selMgr()->flush();
+                prm.go->setselect(true,true);
+                SendCommandToApplication('fich');
+            }
 		}
 		return;
 	}

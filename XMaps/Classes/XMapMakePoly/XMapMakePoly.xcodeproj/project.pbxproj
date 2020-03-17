@@ -27,20 +27,20 @@
 		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		140D4FC01489303A00E8BDAD /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		140D4FC11489303A00E8BDAD /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
-		140D4FC21489303A00E8BDAD /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Palette.xib; sourceTree = "<group>"; };
-		140D4FC31489304600E8BDAD /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		140D4FC41489304600E8BDAD /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/Localizable.strings; sourceTree = "<group>"; };
-		140D4FC51489304600E8BDAD /* Italian */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Italian; path = Italian.lproj/Palette.xib; sourceTree = "<group>"; };
 		14144D391D2A8F74003E00A5 /* bXMapMakePoly.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXMapMakePoly.cpp; sourceTree = "<group>"; };
 		14144D3A1D2A8F74003E00A5 /* bXMapMakePoly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXMapMakePoly.h; sourceTree = "<group>"; };
 		14144D3B1D2A8F74003E00A5 /* MakePolyWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakePolyWindowController.h; sourceTree = "<group>"; };
 		14144D3C1D2A8F74003E00A5 /* MakePolyWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MakePolyWindowController.mm; sourceTree = "<group>"; };
-		14A6BF2B12C21A6400E6FBDB /* French */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = French; path = French.lproj/Palette.xib; sourceTree = "<group>"; };
+		14323E7A2417D19D00FB8A15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14323E7B2417D19E00FB8A15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		14323E7C2417D19E00FB8A15 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Palette.xib; sourceTree = "<group>"; };
+		14323E7D2417D1A100FB8A15 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14323E7E2417D1A100FB8A15 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		14323E7F2417D1A100FB8A15 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/Palette.xib; sourceTree = "<group>"; };
+		14323E802417D1A400FB8A15 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14323E812417D1A400FB8A15 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		14323E822417D1A500FB8A15 /* it */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = it; path = it.lproj/Palette.xib; sourceTree = "<group>"; };
 		14A6BF3F12C21B3600E6FBDB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		14A6C7A812C26F2C00E6FBDB /* French */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
-		14C3363D0E0BED6300E8813A /* French */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		14CA52E80DF9640E0080DF70 /* xmap_lib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = xmap_lib.framework; path = "../../../../Applis/Current/MacMap®/build/Release/xmap_lib.framework"; sourceTree = SOURCE_ROOT; };
 		14CA540C0DF9642C0080DF70 /* std_ext.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = std_ext.framework; path = "../../../../Applis/Current/MacMap®/build/Release/std_ext.framework"; sourceTree = SOURCE_ROOT; };
 		14CA54320DF964320080DF70 /* mox_intf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mox_intf.framework; path = "../../../../Applis/Current/MacMap®/build/Release/mox_intf.framework"; sourceTree = SOURCE_ROOT; };
@@ -192,14 +192,12 @@
 			};
 			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "XMapMakePoly" */;
 			compatibilityVersion = "Xcode 2.4";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
-				Italian,
+				en,
+				fr,
+				it,
 			);
 			mainGroup = 089C166AFE841209C02AAC07 /* CocoaBundle */;
 			projectDirPath = "";
@@ -240,9 +238,9 @@
 		14A6BF2A12C21A6400E6FBDB /* Palette.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				14A6BF2B12C21A6400E6FBDB /* French */,
-				140D4FC21489303A00E8BDAD /* English */,
-				140D4FC51489304600E8BDAD /* Italian */,
+				14323E7C2417D19E00FB8A15 /* en */,
+				14323E7F2417D1A100FB8A15 /* fr */,
+				14323E822417D1A500FB8A15 /* it */,
 			);
 			name = Palette.xib;
 			sourceTree = "<group>";
@@ -250,9 +248,9 @@
 		14A6C7A712C26F2C00E6FBDB /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				14A6C7A812C26F2C00E6FBDB /* French */,
-				140D4FC11489303A00E8BDAD /* English */,
-				140D4FC41489304600E8BDAD /* Italian */,
+				14323E7B2417D19E00FB8A15 /* en */,
+				14323E7E2417D1A100FB8A15 /* fr */,
+				14323E812417D1A400FB8A15 /* it */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -260,9 +258,9 @@
 		14C3363C0E0BED6300E8813A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				14C3363D0E0BED6300E8813A /* French */,
-				140D4FC01489303A00E8BDAD /* English */,
-				140D4FC31489304600E8BDAD /* Italian */,
+				14323E7A2417D19D00FB8A15 /* en */,
+				14323E7D2417D1A100FB8A15 /* fr */,
+				14323E802417D1A400FB8A15 /* it */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -273,7 +271,7 @@
 		1DEB913C08733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 					"$(SRCROOT)/../../../../Applis/Current/MacMap®/build/Release",
@@ -301,12 +299,13 @@
 		1DEB914008733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_WARN_ABOUT_RETURN_TYPE = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OBJROOT = "../../zXCode Div/buildprod";
 				PREBINDING = YES;
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx10.12;
 				SYMROOT = ../../build;
 			};
 			name = Release;

@@ -214,7 +214,7 @@ int		i,n;
 		add_idesc(arr,3,"classmax",2);
 	}
 	add_ddesc(arr,3,"scalemin",1,0);
-	add_ddesc(arr,3,"scalemax",LONG_MAX,0);
+	add_ddesc(arr,3,"scalemax",INT_MAX,0);
 	add_idesc(arr,3,"pass",1);
 	add_cdesc(arr,2,"render","");
 	add_cdesc(arr,3,"stroke","");

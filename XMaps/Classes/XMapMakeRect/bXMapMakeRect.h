@@ -66,7 +66,8 @@ private:
                                                 double w, 
                                                 double h,
                                                 int sui,
-                                                int justo);
+                                                int justo,
+                                                bGenericGeoElement** go);
     
     makerect_prm	_prm;
 };

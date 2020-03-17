@@ -70,7 +70,8 @@ void bXMapMakePoly::open(int* flags){
 	_prm.nb=5;
 	_prm.sz=100;
 	_prm.tp=NULL;
-	_prm.sui=0;
+    _prm.sui=0;
+    _prm.go=NULL;
 }
 
 // ---------------------------------------------------------------------------
@@ -83,7 +84,7 @@ bool bXMapMakePoly::process(int msg, void* prm){
 			break;
 		case kExtProcessCallWithParams:{
 makepoly_prm* p=(makepoly_prm*)prm;
-				return(make(p->tp,&p->o,p->sz,p->nb,p->sui,p->justo));
+				return(make(p->tp,&p->o,p->sz,p->nb,p->sui,p->justo,&p->go));
 			}
 			break;
 		case kExtProcessCallWithXMLTree:{
@@ -137,7 +138,7 @@ bGenericXMLBaseElement*	elt;
 					p.sui=0;
 				}
 			
-				return(make(p.tp,&p.o,p.sz,p.nb,p.sui,p.justo));
+				return(make(p.tp,&p.o,p.sz,p.nb,p.sui,p.justo,&p.go));
 			}	
 			break;
 		default:
@@ -189,7 +190,7 @@ bool bXMapMakePoly::make(){
 		return(true);
 	}
 bEventLog	log(_gapp,this);
-	(void)make(_prm.tp,&_prm.o,_prm.sz,_prm.nb,_prm.sui,_prm.justo);
+	(void)make(_prm.tp,&_prm.o,_prm.sz,_prm.nb,_prm.sui,_prm.justo,&_prm.go);
 	log.close();
 	return(true);
 }
@@ -197,10 +198,11 @@ bEventLog	log(_gapp,this);
 // ---------------------------------------------------------------------------
 // 
 // ------------
-bool bXMapMakePoly::make(bGenericType* tp, d2dvertex* o, double r, int n, int sui, int justo){
+bool bXMapMakePoly::make(bGenericType* tp, d2dvertex* o, double r, int n, int sui, int justo, bGenericGeoElement** go){
 _bTrace_("bXMapMakePoly::make",false);
+    *go=NULL;
+    
 double		a,a0;
-	
 	if(n&0x00000001){
 		a0=M_PI/2.0;
 	}
@@ -248,21 +250,22 @@ d2dvertex	dvx;
 		ivs_free(vxs);
 		return(false);
 	}
-bGenericGeoElement*	go;
-	if(!tp->new_object(&go)){
+bGenericGeoElement*	geo;
+	if(!tp->new_object(&geo)){
 _te_("new_object");
 		ivs_free(vxs);
 		return(false);
 	}
-    if(!InitWithStyle(_gapp,_gapp->layersMgr()->get_current(),go)){
+    if(!InitWithStyle(_gapp,_gapp->layersMgr()->get_current(),geo)){
 		MMBeep();
 	}
-	if(!go->setVertices(vxs)){
+	if(!geo->setVertices(vxs)){
 _te_("setVertices");
-		tp->kill_object(go);
+		tp->kill_object(geo);
 		ivs_free(vxs);
 		return(false);
 	}
 	ivs_free(vxs);
+    *go=geo;
 	return(true);
 }

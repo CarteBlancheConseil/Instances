@@ -71,6 +71,7 @@ void bXMapMakeRect::open(int* flags){
 	_prm.h=100;
 	_prm.tp=NULL;
 	_prm.sui=0;
+    _prm.go=NULL;
 }
 
 // ---------------------------------------------------------------------------
@@ -83,7 +84,7 @@ bool bXMapMakeRect::process(int msg, void* prm){
 			break;
 		case kExtProcessCallWithParams:{
 makerect_prm* p=(makerect_prm*)prm;
-			return(make(p->tp,&p->o,p->w,p->h,p->sui,p->justo));
+			return(make(p->tp,&p->o,p->w,p->h,p->sui,p->justo,&p->go));
 			}break;
 		case kExtProcessCallWithXMLTree:{
 makerect_prm			p;
@@ -136,7 +137,7 @@ bGenericXMLBaseElement*	elt;
 					p.sui=0;
 				}
 			
-				return(make(p.tp,&p.o,p.w,p.h,p.sui,p.justo));
+				return(make(p.tp,&p.o,p.w,p.h,p.sui,p.justo,&p.go));
 			}	
 			break;
 		default:
@@ -188,7 +189,7 @@ bool bXMapMakeRect::make(){
 		return(true);
 	}
 bEventLog	log(_gapp,this);
-	(void)make(_prm.tp,&_prm.o,_prm.w,_prm.h,_prm.sui,_prm.justo);
+	(void)make(_prm.tp,&_prm.o,_prm.w,_prm.h,_prm.sui,_prm.justo,&_prm.go);
 	log.close();
 	return(true);
 }
@@ -196,8 +197,9 @@ bEventLog	log(_gapp,this);
 // ---------------------------------------------------------------------------
 // 
 // ------------
-bool bXMapMakeRect::make(bGenericType* tp, d2dvertex* dvx, double w, double h, int sui, int justo){
+bool bXMapMakeRect::make(bGenericType* tp, d2dvertex* dvx, double w, double h, int sui, int justo, bGenericGeoElement** go){
 _bTrace_("bXMapMakeRect::make",false);
+    *go=NULL;
 ivertices*	vxs=ivs_new(_2D_VX,5,0);
 	if(!vxs){
 _te_("ivs_new");
@@ -229,21 +231,22 @@ double			c=0.01/GetRawPrecisionCoef(_gapp)*scl->coef();
 	_gapp->locConverter()->convert(&(vxs->vx.vx2[3]),dvx);
 	vxs->vx.vx2[4]=vxs->vx.vx2[0];
 
-bGenericGeoElement*	o;
-	if(!tp->new_object(&o)){
+bGenericGeoElement*	geo;
+	if(!tp->new_object(&geo)){
 _te_("new_object");
 		ivs_free(vxs);
 		return(false);
 	}
-    if(!InitWithStyle(_gapp,_gapp->layersMgr()->get_current(),o)){
+    if(!InitWithStyle(_gapp,_gapp->layersMgr()->get_current(),geo)){
 		MMBeep();
 	}
-	if(!o->setVertices(vxs)){
+	if(!geo->setVertices(vxs)){
 _te_("setVertices");
-		tp->kill_object(o);
+		tp->kill_object(geo);
 		ivs_free(vxs);
 		return(false);
 	}
 	ivs_free(vxs);
+    *go=geo;
 	return(true);
 }

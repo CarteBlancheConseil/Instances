@@ -452,27 +452,37 @@ int			idx=1,ck,fk;
 		b=true;
 		switch(fk){
 			case _int:
+_tm_("_int field");
+                NSPopupButtonMenuItemEnable(_genderpopup,0);
+                NSPopupButtonMenuItemEnable(_genderpopup,1);
+                NSPopupButtonMenuItemEnable(_genderpopup,2);
+                b=true;
+                break;
 			case _char:
-				NSPopupButtonMenuItemEnable(_genderpopup,0);
-				NSPopupButtonMenuItemEnable(_genderpopup,1);
+_tm_("_char field");
+                NSPopupButtonMenuItemEnable(_genderpopup,0);
+				NSPopupButtonMenuItemDisable(_genderpopup,1);
 				NSPopupButtonMenuItemEnable(_genderpopup,2);
 				b=true;
 				break;
 			case _double:
-				NSPopupButtonMenuItemEnable(_genderpopup,0);
+_tm_("_double field");
+                NSPopupButtonMenuItemEnable(_genderpopup,0);
 				NSPopupButtonMenuItemEnable(_genderpopup,1);
 				NSPopupButtonMenuItemDisable(_genderpopup,2);
 				b=true;
 				break;
 			case _date:
 			case _time:
-				NSPopupButtonMenuItemEnable(_genderpopup,0);
+_tm_("_date/_time field");
+                NSPopupButtonMenuItemEnable(_genderpopup,0);
 				NSPopupButtonMenuItemDisable(_genderpopup,1);
 				NSPopupButtonMenuItemDisable(_genderpopup,2);
 				b=true;
 				break;
 			default:
-				NSPopupButtonMenuItemDisable(_genderpopup,0);
+_tm_("???? field");
+                NSPopupButtonMenuItemDisable(_genderpopup,0);
 				NSPopupButtonMenuItemDisable(_genderpopup,1);
 				NSPopupButtonMenuItemDisable(_genderpopup,2);
 				break;

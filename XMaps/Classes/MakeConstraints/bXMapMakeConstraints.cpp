@@ -185,9 +185,9 @@ bool bXMapMakeConstraints::do_make_from_field(bGenericType* tp,
 											  long srcfield,
 											  bool usevalue){
 _bTrace_("bXMapMakeConstraints::do_make_from_field",true);
-int						k;
-MakeConstraints_prm		prm;
-MCITp					pp;
+int                 k;
+MakeConstraints_prm prm;
+MCITp               pp;
 
 	prm.tp=tp;
 	prm.field=field;
@@ -262,7 +262,7 @@ _tm_("nouvelle contrainte par intitulé");
 		prm.tp->iterator()->iterate(&pp,analyse_char);
 	}
 	
-	return(false);
+	return(true);
 }
 
 // ---------------------------------------------------------------------------

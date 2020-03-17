@@ -44,7 +44,7 @@ bvDefHistoStyle	::bvDefHistoStyle(bGenericMacMapApp* gapp,
 	_fld=kOBJ_SubType_;
 	
 	_smin=1;
-	_smax=LONG_MAX;
+	_smax=INT_MAX;
 
 	_dimx=0;
 	_dimy=0;
@@ -326,45 +326,45 @@ char					val[_values_length_max_];
 	elt->getvalue(val);
 	_smax=matof(val);
 	
-	if(chld=_gapp->classMgr()->NthElement(_gstl,1,"stroke")){	
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"red")){
+	if((chld=_gapp->classMgr()->NthElement(_gstl,1,"stroke"))){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"red"))){
 			elt->getvalue(val);
 			_stroke[0]=matof(val);
 			_cc=4;
 		}
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"green")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"green"))){
 			elt->getvalue(val);
 			_stroke[1]=matof(val);
 			_cc=4;
 		}
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"blue")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"blue"))){
 			elt->getvalue(val);
 			_stroke[2]=matof(val);
 			_cc=4;
 		}
 		
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"cyan")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"cyan"))){
 			elt->getvalue(val);
 			_stroke[0]=matof(val);
 			_cc=5;
 		}
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"magenta")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"magenta"))){
 			elt->getvalue(val);
 			_stroke[1]=matof(val);
 			_cc=5;
 		}
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"yellow")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"yellow"))){
 			elt->getvalue(val);
 			_stroke[2]=matof(val);
 			_cc=5;
 		}
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"black")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"black"))){
 			elt->getvalue(val);
 			_stroke[3]=matof(val);
 			_cc=5;
 		}
 		
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"alpha")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"alpha"))){
 			elt->getvalue(val);
 			if(_cc==4){
 				_stroke[3]=matof(val);
@@ -375,45 +375,45 @@ char					val[_values_length_max_];
 		}
 	}
 	
-	if(chld=_gapp->classMgr()->NthElement(_gstl,1,"fill")){	
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"red")){
+	if((chld=_gapp->classMgr()->NthElement(_gstl,1,"fill"))){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"red"))){
 			elt->getvalue(val);
 			_fill[0]=matof(val);
 			_cc=4;
 		}
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"green")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"green"))){
 			elt->getvalue(val);
 			_fill[1]=matof(val);
 			_cc=4;
 		}
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"blue")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"blue"))){
 			elt->getvalue(val);
 			_fill[2]=matof(val);
 			_cc=4;
 		}
 		
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"cyan")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"cyan"))){
 			elt->getvalue(val);
 			_fill[0]=matof(val);
 			_cc=5;
 		}
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"magenta")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"magenta"))){
 			elt->getvalue(val);
 			_fill[1]=matof(val);
 			_cc=5;
 		}
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"yellow")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"yellow"))){
 			elt->getvalue(val);
 			_fill[2]=matof(val);
 			_cc=5;
 		}
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"black")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"black"))){
 			elt->getvalue(val);
 			_fill[3]=matof(val);
 			_cc=5;
 		}
 		
-		if(elt=_gapp->classMgr()->NthElement(chld,1,"alpha")){
+		if((elt=_gapp->classMgr()->NthElement(chld,1,"alpha"))){
 			elt->getvalue(val);
 			if(_cc==4){
 				_fill[3]=matof(val);
@@ -454,9 +454,9 @@ bool bvDefHistoStyle::std_dump(bArray& arr, int indent){
 	add_cdesc(arr,indent+1,"stylerun","");
 	add_cdesc(arr,indent+2,"validity","");
 	add_idesc(arr,indent+3,"classmin",1);
-	add_idesc(arr,indent+3,"classmax",LONG_MAX);
+	add_idesc(arr,indent+3,"classmax",INT_MAX);
 	add_ddesc(arr,indent+3,"scalemin",_smin,6);
-	add_ddesc(arr,indent+3,"scalemax",(_smax==LONG_MAX)?_smax:_smax+1,6);
+	add_ddesc(arr,indent+3,"scalemax",(_smax==INT_MAX)?_smax:_smax+1,6);
 	add_idesc(arr,indent+3,"pass",1);
 	add_cdesc(arr,indent+2,"render","");
 	if(_width>0){

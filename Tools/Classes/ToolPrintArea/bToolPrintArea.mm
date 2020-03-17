@@ -287,10 +287,10 @@ ivx_rect	vr=*(_gapp->printMgr()->get_print_area());
 ivx_rect	scr;
 	_gapp->mapIntf()->screenBounds(&scr);
 	
-	get_clic(&a);
+/*	get_clic(&a);
 	if(!ivx2_in_ivr(&scr,&a)){
 		return;
-	}
+	}*/
 	get_last(&a);
 	if(!ivx2_in_ivr(&scr,&a)){
 		return;
