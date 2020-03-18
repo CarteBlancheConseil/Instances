@@ -145,7 +145,7 @@ _bTrace_("[vDefPaletteHistoWindowController awakeFromNib]",true);
 char str[256];
 	_ext->type_get()->name(str);
 	[_tnm_fld setCharValue:str];
-    [_tab_viw selectTabViewItemAtIndex:0];
+    [_tab_viw selectTabViewItemAtIndex:1];
 
 	[_prvw installController:self];
 		
@@ -235,6 +235,8 @@ double	off=	(bstl->_onx)	?
 		bstl->_spc=0;
 	}
 	
+    [_tab_viw selectTabViewItemAtIndex:0];
+
 	
 	[self plot2Intf];
 }
@@ -282,7 +284,11 @@ long				fld=[_fld_pop indexOfSelectedItem]+1+kOBJ_Dir_;
 	[self doChooseOrientation:sender];
 	[self doPutDx:sender];
 	[self doPutDy:sender];
-		
+    
+    if([_cks_btn intValue]==0){
+        [self doNormalize:sender];
+    }
+    
 	[_run_tbl reloadData];
 	[self updateUI];
 	
@@ -990,7 +996,23 @@ bvDefHistoStyle	*std;
 		[_spc_fld setFloatValue:stl->_spc];
 		[_hov_pop selectItemAtIndex:stl->_onx];		
 	}
-	
+
+BOOL    chk=YES;
+    if(_ext->runs().count()>0){
+double  first;
+        _ext->runs().get(1,&stl);
+        first=stl->_vmax;
+        chk=NO;
+        for(long i=2;i<=_ext->runs().count();i++){
+            _ext->runs().get(i,&stl);
+            if(first!=stl->_vmax){
+                chk=YES;
+                break;
+            }
+        }
+    }
+    [_cks_btn setIntValue:chk];
+    
 	if(!_ext->runs().get(1,&stl)){
 		return;
 	}
