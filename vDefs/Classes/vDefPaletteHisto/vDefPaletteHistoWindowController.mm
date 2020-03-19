@@ -413,11 +413,15 @@ _tm_([_dy__fld floatValue]);
 -(IBAction)doCalcSeriesMinMax:(id)sender{
 _bTrace_("[vDefPaletteHistoWindowController calcSeriesMinMax]",true);
 bvDefHistoStyle*	stl;
-	for(long i=1;i<=_ext->runs().count();i++){
+	
+    for(long i=1;i<=_ext->runs().count();i++){
 		_ext->runs().get(i,&stl);
 		getBornes((bGenericMacMapApp*)_ext->getapp(),_ext->type_get(),stl->_fld,&stl->_vmin,&stl->_vmax);
 _tm_(i+":"+stl->_fld+"=["+stl->_vmin+";"+stl->_vmax+"]");
 	}
+    
+    [self doNormalize:sender];
+
 	[self updateUI];
 }
 
@@ -453,7 +457,14 @@ double	min,max;
 		for(long i=1;i<=_ext->runs().count();i++){
 			_ext->runs().get(i,&stl);
 			getBornes((bGenericMacMapApp*)_ext->getapp(),_ext->type_get(),stl->_fld,&stl->_vmin,&stl->_vmax);
-		}	
+		}
+long    cur=[_run_tbl selectedRow]+1;
+        if(cur){
+            if(_ext->runs().get(cur,&stl)){
+                [_min_fld setFloatValue:stl->_vmin];
+                [_max_fld setFloatValue:stl->_vmax];
+            }
+        }
 	}
 }
 
