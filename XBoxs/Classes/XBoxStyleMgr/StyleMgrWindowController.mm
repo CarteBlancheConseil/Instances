@@ -110,6 +110,10 @@ _tm_((void*)self);
 _bTrace_("[StyleMgrWindowController awakeFromNib]",true);
 bGenericMacMapApp*	gapp=(bGenericMacMapApp*)_ext->getapp();
 long				idx=gapp->layersMgr()->get_current();
+    if(gapp->typesMgr()->count()==0){
+        idx=0;
+    }
+_tm_(idx);
 bGenericType*		tp=NULL;
 	if(idx==0){
 		_tp_index=-1;
