@@ -155,7 +155,7 @@ CGFloat	d=CGPointsDist(&pa,&pb);
 		return;
 	}
 	
-	clearTempPathContext(true);
+	//clearTempPathContext(true);
 	validTempPathContext();
 	if(get_mnu_cmd()==kShapeRect){
 		create_rect();
@@ -169,9 +169,9 @@ CGFloat	d=CGPointsDist(&pa,&pb);
 // 
 // -----------
 void bToolShape::update(bool global){
-	if(!global){
+	/*if(!global){
 		clearTempPathContext(false);
-	}
+	}*/
 	if((get_active())&&(get_on_drag())){
 		if(get_mnu_cmd()==kShapeRect){
 			if(_ctr){

@@ -1357,6 +1357,7 @@ i2dvertex           vx;
                 }
                 else if([theEvent modifierFlags]&NSCommandKeyMask){
 // + cmd : sélectionner les objets du type
+                    gapp->selMgr()->flush();
 bGenericExt*        ext=gapp->xmapMgr()->find('sall');
                     if(ext){
                         ext->process(kExtProcessCallWithParams,tp);

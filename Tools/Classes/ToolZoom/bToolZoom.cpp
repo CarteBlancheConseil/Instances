@@ -145,9 +145,9 @@ i2dvertex	vx;
 // -----------
 void bToolZoom::update(bool global){
 	if(get_active()&&get_use_track()){
-		if(!global){
+		/*if(!global){
 			clearTempPathContext(false);
-		}
+		}*/
 CGPoint	a;
 		get_cur(&a);
 		if((a.x!=SHRT_MIN)&&(_gapp->scaleMgr()->get_current()>1)){
@@ -176,12 +176,12 @@ void bToolZoom::set_modifiers(int k){
 	if(is_modifiers(shiftKey)||is_modifiers(optionKey)){
 		set_curs(_cminus);
 		set_use_track(false);
-		clearTempPathContext(true);
+		//clearTempPathContext(true);
 	}
 	else{
 		set_curs();
 		set_use_track(true);
-		clearTempPathContext(true);
+		//clearTempPathContext(true);
 		update(false);
 	}
 	validTempPathContext();

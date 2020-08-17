@@ -117,7 +117,7 @@ i2dvertex			vx;
 					if(_idx){
 						_vxs=ivx2_insert(_vxs,&vx,_idx-1);
 					}
-					clearTempPathContext(true);
+					//clearTempPathContext(true);
 					update(true);
 					validTempPathContext();
 				}
@@ -140,7 +140,7 @@ bGenericGeoElement* o=get_obj();
 		return;
 	}
 	set_use_sel(false);
-	clearTempPathContext(true);
+	//clearTempPathContext(true);
 	update(true);
 	validTempPathContext();
 }
@@ -159,9 +159,9 @@ void bToolAlter::end_clic(){
 // 
 // -----------
 void bToolAlter::update(bool global){
-	if(!global){
+	/*if(!global){
 		clearTempPathContext(false);
-	}
+	}*/
 bGenericGeoElement*	o=get_obj();
 	if(o&&_vxs){
 		draw_poly(_vxs,true);
@@ -196,7 +196,7 @@ bool	b=false;
 			set_use_sel(true);
 			_kind=kBaseNoKind;
 			_idx=0;
-			clearTempPathContext(true);
+			//clearTempPathContext(true);
 			validTempPathContext();				
 			b=true;
 			break;
@@ -207,7 +207,7 @@ bool	b=false;
 			else{
 				remove(_vxs->nv,false);
 			}
-			clearTempPathContext(true);
+			//clearTempPathContext(true);
 			update(true);
 			validTempPathContext();				
 			b=true;
@@ -248,7 +248,7 @@ void bToolAlter::set_modifiers(int k){
 // -----------
 void bToolAlter::drag(CGPoint pt){
 	if((_vxs)&&(_idx)){
-		clearTempPathContext(true);
+		//clearTempPathContext(true);
 		set_use_drag(false);
 		bToolNSGeomWithJoin::drag(pt);
 		bToolNSGeomWithJoin::track_join();
@@ -450,7 +450,7 @@ int		n=_vxs->nv-2;
 		for(int i=0;i<n;i++){
 			_vxs=ivx_remove(_vxs,1);
 		}
-		clearTempPathContext(true);
+		//clearTempPathContext(true);
 		update(true);
 		validTempPathContext();
 	}
@@ -478,7 +478,7 @@ int		n=_vxs->nv-2;
 				_vxs->vx.vx2[0]=_vxs->vx.vx2[_vxs->nv-1];
 			}
 		}
-		clearTempPathContext(true);
+		//clearTempPathContext(true);
 		update(true);
 		validTempPathContext();
 	}

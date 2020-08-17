@@ -196,6 +196,8 @@
 				Italian,
 				Spanish,
 				fr,
+				en,
+				it,
 			);
 			mainGroup = 089C166AFE841209C02AAC07 /* Template */;
 			projectDirPath = "";

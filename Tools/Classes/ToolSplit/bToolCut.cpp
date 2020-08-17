@@ -166,9 +166,9 @@ ivertices*	vxs;
 // 
 // -----------
 void bToolCut::update(bool global){
-	if(!global){
+	/*if(!global){
 		clearTempPathContext(false);
-	}
+	}*/
 	if(get_use_locs()){
 		draw_poly(true,true);
 	}
@@ -187,7 +187,7 @@ bool	b=false;
 		switch(k){
 			case kEnterCharCode:
 			case kReturnCharCode:
-				clearTempPathContext(true);
+				//clearTempPathContext(true);
 				validTempPathContext();
 				if(get_locs()->count()>1){
 					action(0);
@@ -200,7 +200,7 @@ bool	b=false;
 				b=true;
 				break;
 			case kEscapeCharCode:
-				clearTempPathContext(true);
+				//clearTempPathContext(true);
 				validTempPathContext();				
 				(void)bToolNSGeomWithJoin::set_key(k);
 				set_use_locs(false);
@@ -211,7 +211,7 @@ bool	b=false;
 				break;
 			case kBackspaceCharCode:
 				(void)bToolNSGeomWithJoin::set_key(k);
-				clearTempPathContext(true);
+				//clearTempPathContext(true);
 				update(true);
 				validTempPathContext();
 				k=0;

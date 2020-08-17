@@ -121,7 +121,7 @@ CGPoint	t;
 
 	if((count>1)&&(get_use_locs())){
 		action(0);
-		clearTempPathContext(true);
+//		clearTempPathContext(true);
 		validTempPathContext();
 	}
 
@@ -150,7 +150,7 @@ CGPoint	t;
 	bToolNSGeomWithJoin::drag(pt);
 	
 	if(get_use_locs()){
-		clearTempPathContext(true);
+//		clearTempPathContext(true);
 		bToolNSGeomWithJoin::track_join();
 i2dvertex	va,vb;
 		get_last(&va);
@@ -179,9 +179,9 @@ CGPoint		cga,cgb;
 // 
 // -----------
 void bToolCreate::update(bool global){
-	if(!global){
+	/*if(!global){
 		clearTempPathContext(false);
-	}
+	}*/
 	if(get_use_locs()){
 		draw_poly(true,true);
 	}
@@ -209,7 +209,7 @@ bool	b=false;
 				break;
 			case kEscapeCharCode:
 				(void)bToolNSGeomWithJoin::set_key(k);
-				clearTempPathContext(true);
+				//clearTempPathContext(true);
 				validTempPathContext();
 				k=0;
 				_tp=NULL;
@@ -223,7 +223,7 @@ bool	b=false;
 					break;
 				}
 				(void)bToolNSGeomWithJoin::set_key(k);
-				clearTempPathContext(true);
+				//clearTempPathContext(true);
 				update(true);
 				validTempPathContext();
 				k=0;

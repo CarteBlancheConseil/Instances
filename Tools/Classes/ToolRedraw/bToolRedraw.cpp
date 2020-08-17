@@ -201,9 +201,9 @@ bGenericType*	tp;
 // -----------
 void bToolRedraw::update(bool global){
 	if(get_active()){
-		if(!global){
+		/*if(!global){
 			clearTempPathContext(false);
-		}
+		}*/
 		if(get_use_locs()){
 			if(_ec>1){
 i2dvertex		bck;
@@ -234,7 +234,7 @@ bool	b=false;
 		switch(k){
 			case kEnterCharCode:
 			case kReturnCharCode:
-				clearTempPathContext(true);
+				//clearTempPathContext(true);
 				validTempPathContext();
 				if(get_locs()->count()>1){
 					action(0);
@@ -249,7 +249,7 @@ bool	b=false;
 				break;
 				
 			case kEscapeCharCode:
-				clearTempPathContext(true);
+				//clearTempPathContext(true);
 				validTempPathContext();				
 				(void)bToolNSGeomWithJoin::set_key(k);
 				k=0;
@@ -261,7 +261,7 @@ bool	b=false;
 				break;
 			case kBackspaceCharCode:
 				(void)bToolNSGeomWithJoin::set_key(k);
-				clearTempPathContext(true);
+				//clearTempPathContext(true);
 				update(true);
 				validTempPathContext();
 				k=0;

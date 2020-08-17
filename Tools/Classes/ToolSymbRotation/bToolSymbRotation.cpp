@@ -175,7 +175,7 @@ i2dvertex	vxa,vxb;
 	get_cur(&vxa);
 double		a=rad2deg(vx_angle(&vxb,&vxa));
 
-	clearTempPathContext(true);
+	//clearTempPathContext(true);
 
 // Pour avoir la valeur prŽcŽdente en annulation
 	o->setValue(_fa,&_ia);
@@ -200,12 +200,12 @@ bEventLog	log(_gapp,this);
 // 
 // -----------
 void bToolSymbRotation::update(bool global){
-	if(!global){
+	/*if(!global){
 		clearTempPathContext(false);
-	}
+	}*/
 bGenericGeoElement*	o=get_obj();
 	if(o){
-		clearTempPathContext(true);
+		//clearTempPathContext(true);
 		_gapp->layersMgr()->SwitchContext(kCtxGraphicContext,getTempPathContext());
 		_styl->draw(o);
 		_gapp->layersMgr()->SwitchContext(kCGGraphicContext,NULL);

@@ -418,12 +418,12 @@ bEventLog	log(_gapp,this);
 // 
 // -----------
 void bToolJustification::update(bool global){
-	if(!global){
+	/*if(!global){
 		clearTempPathContext(false);
-	}
+	}*/
 bGenericGeoElement*	o=get_obj();
 	if(o){
-		clearTempPathContext(true);
+		//clearTempPathContext(true);
 		_gapp->layersMgr()->SwitchContext(kCtxGraphicContext,getTempPathContext());
 		_styl->draw(o);
 		_gapp->layersMgr()->SwitchContext(kCGGraphicContext,NULL);

@@ -261,7 +261,7 @@ void bToolSelect::end_clic(){
 		case kSelectDragPoly:
 			break;
 	}
-	clearTempPathContext(true);
+//	clearTempPathContext(true);
 }
 
 // ---------------------------------------------------------------------------
@@ -269,9 +269,9 @@ void bToolSelect::end_clic(){
 // -----------
 void bToolSelect::update(bool global){
 //_bTrace_("bToolSelect::update",true);
-	if(!global){
+/*	if(!global){
 		clearTempPathContext(false);
-	}
+	}*/
 	switch(get_mnu_cmd()){
 		case kSelectDragRect:
 //_tm_("kSelectDragRect");

@@ -85,7 +85,7 @@ int						i,j,k,np,nv;
 // 
 // -----------
 int bToElement::process(void* o, void* prm){
-bToElement*		gg=(bToElement*)prm;
+bToElement*		    gg=(bToElement*)prm;
 bGenericGeoElement* geo=(bGenericGeoElement*)o;
 ivertices*			vsb;
 i2dvertex*			vxp;

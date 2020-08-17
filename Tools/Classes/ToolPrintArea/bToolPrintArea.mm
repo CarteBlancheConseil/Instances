@@ -130,7 +130,7 @@ void bToolPrintArea::close(){
 void bToolPrintArea::pop(cocoaMenuPrm prm){
 	set_mnu_cmd(0);
 	bStdToolPres::pop(prm);
-	clearTempPathContext(true);
+	//clearTempPathContext(true);
 	switch(get_mnu_cmd()){
 		case kPrintAreaMenuCommandCenter:
 			center_to_screen();
@@ -253,9 +253,9 @@ void bToolPrintArea::activate(){
 // 
 // -----------
 void bToolPrintArea::update(bool global){
-	if(!global){
+	/*if(!global){
 		clearTempPathContext(false);
-	}
+	}*/
 	if(_draw||get_on_drag()){
 ivx_rect	vxr=*(_gapp->printMgr()->get_print_area());
 		if(ivr_ok(&vxr)){
@@ -357,7 +357,7 @@ double		rv=(double)(vr.bottom-vr.top)/(double)(bkvr.bottom-bkvr.top);
 	_gapp->printMgr()->set_print_area(&vr);
     _vxr=vr;
     
-	clearTempPathContext(true);
+	//clearTempPathContext(true);
 	update(true);
 	validTempPathContext();
 }
@@ -408,7 +408,7 @@ long    result=0;
     set_on_edit(true);
     runCocoaAppModal(this,&result);
     if(result>0){
-        clearTempPathContext(true);
+        //clearTempPathContext(true);
         _gapp->printMgr()->set_print_area(&_vxr);
         update(true);
         validTempPathContext();

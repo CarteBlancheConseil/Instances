@@ -700,10 +700,12 @@ CGFloat	wdt=(bnds.size.width-16)/2.0;
 // generally you want to add at least one column to the table view.
 		[_tbl addTableColumn:_clx];
 		[_tbl addTableColumn:_cly];
-/*        [_tbl setDelegate:self];
-        [_tbl setDataSource:self];*/
-        [_tbl setDelegate:nil];
-        [_tbl setDataSource:nil];
+/**/
+        [_tbl setDelegate:self];
+        [_tbl setDataSource:self];
+/**/
+/*        [_tbl setDelegate:nil];
+        [_tbl setDataSource:nil];*/
 		[_tbl reloadData];
 		
 // embed the table view in the scroll view, and add the scroll view
