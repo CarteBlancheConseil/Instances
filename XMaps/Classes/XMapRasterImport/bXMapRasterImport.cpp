@@ -127,13 +127,13 @@ i2dvertex	vx;
 		_br=_tl;
 	}
 
-const char*		nsft[5]={"PNG","TIF","TIFF","JPG","JPEG"};
+const char*		nsft[6]={"PNG","TIF","TIFF","JPG","JPEG","JP2"};
 const char**	pnsft=nsft;
 bArray          paths(sizeof(char[PATH_MAX]));
 void*           ctrlr=GISIOImport_getAccessoryViewController(true);
     
     if(NSGetFilePaths(pnsft,
-                      5,
+                      6,
                       cNSMacOSRomanStringEncoding,
                       false,
                       true,

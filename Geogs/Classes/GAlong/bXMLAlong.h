@@ -37,24 +37,24 @@
 //----------------------------------------------------------------------------
 
 class bAlongElement : public bStdXMLGeog{
-	public:		
-		bAlongElement							(	bGenericXMLBaseElement* elt, 
-													bGenericMacMapApp* gapp, 
-													CFBundleRef bndl );
-		virtual ~bAlongElement					(	);
-		virtual bGenericXMLBaseElement* create	(	bGenericXMLBaseElement* elt);
-		
-		virtual void init						(	void* ctx);
-		static int process						(	void* o, 
-													void* prm);
-				
-	private:
-		bool					_full;
-		bool					_strict;
-		double					_dst;		
-		bSelectSolver*			_ctx;
-		bGenericGeoElement*		_ref;
-		ivx_rect				_vxr;
+public:		
+    bAlongElement							(	bGenericXMLBaseElement* elt, 
+                                                bGenericMacMapApp* gapp, 
+                                                CFBundleRef bndl );
+    virtual ~bAlongElement					(	);
+    virtual bGenericXMLBaseElement* create	(	bGenericXMLBaseElement* elt);
+    
+    virtual void init						(	void* ctx);
+    static int process						(	void* o, 
+                                                void* prm);
+            
+private:
+    bool					_full;
+    bool					_strict;
+    double					_dst;		
+    bSelectSolver*			_ctx;
+    bGenericGeoElement*		_ref;
+    ivx_rect				_vxr;
 };
 
 //----------------------------------------------------------------------------

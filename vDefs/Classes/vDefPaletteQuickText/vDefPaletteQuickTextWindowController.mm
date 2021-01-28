@@ -98,6 +98,7 @@ _bTrace_("[vDefPaletteQuickTextWindowController awakeFromNib]",true);
 	NSPopupButtonPopulateWithFields(_fffl_pop,_ext->type_get(),kOBJ_Name_,1);
 	NSPopupButtonPopulateWithFields(_ffst_pop,_ext->type_get(),kOBJ_Name_,1);
 	NSPopupButtonPopulateWithFields(_fbfl_pop,_ext->type_get(),kOBJ_Name_,1);
+    NSPopupButtonPopulateWithFields(_fbst_pop,_ext->type_get(),kOBJ_Name_,1);
 	NSPopupButtonPopulateWithFields(_fbwd_pop,_ext->type_get(),kOBJ_Name_,1);
 	NSPopupButtonPopulateWithFields(_fbmv_pop,_ext->type_get(),kOBJ_Name_,1);
 	NSPopupButtonPopulateWithFields(_fbmh_pop,_ext->type_get(),kOBJ_Name_,1);
