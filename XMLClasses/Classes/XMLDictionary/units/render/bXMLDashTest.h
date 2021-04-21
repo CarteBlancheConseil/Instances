@@ -38,27 +38,27 @@
 //----------------------------------------------------------------------------
 
 class bDashElement : public bStdXMLLowRenderElement{
-public:
-    bDashElement 							(	bGenericXMLBaseElement* elt, 
-                                                bGenericMacMapApp* gapp, 
-                                                CFBundleRef bndl );
-    virtual ~bDashElement  					(	);
-    virtual bGenericXMLBaseElement* create	(	bGenericXMLBaseElement* elt);
-    
-    virtual void init						(	void* ctx);
+	public:
+		bDashElement 							(	bGenericXMLBaseElement* elt, 
+													bGenericMacMapApp* gapp, 
+													CFBundleRef bndl );
+		virtual ~bDashElement  					(	);
+		virtual bGenericXMLBaseElement* create	(	bGenericXMLBaseElement* elt);
+		
+		virtual void init						(	void* ctx);
 
-    virtual bool actionstd					(	bGenericGraphicContext* ctx);
-    virtual bool actionval					(	bGenericGraphicContext* ctx,
-                                                bStdXMLValueElement* elt,
-                                                bGenericGeoElement* geo);
-
-private:
-    bool read								(	char* name);
-    
-    char			_last[_values_length_max_];
-    CGFloat*		_dsh;
-    int				_ndsh;
-    bGenericType*	_tp;
+		virtual bool actionstd					(	bGenericGraphicContext* ctx);
+		virtual bool actionval					(	bGenericGraphicContext* ctx,
+													bStdXMLValueElement* elt,
+													bGenericGeoElement* geo);
+	
+	private:
+		bool read								(	char* name);
+		
+		char			_last[_values_length_max_];
+		CGFloat*		_dsh;
+		int				_ndsh;
+		bGenericType*	_tp;
 };
 
 //----------------------------------------------------------------------------

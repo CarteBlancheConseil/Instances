@@ -78,39 +78,25 @@ void bDashElement::init(void *ctx){
 bool bDashElement::actionval(	bGenericGraphicContext* ctx,
 								bStdXMLValueElement* elt,
 								bGenericGeoElement* geo){
-//_bTrace_("bDashElement::actionval",true);
+//bTrace trc("bDashElement::actionval",true);
 char	val[_values_length_max_];
-//_tm_(geo->getID());
-	elt->getvalue(geo,val);
+	elt->getvalue(geo,val);	
 	if(strlen(val)==0){
-//_tw_("(strlen(val)==0)");
-//        ctx->setDash(_dsh,_ndsh,val);
-bStdXMLValueElement*    eltstd=find_value();
-        if(eltstd==NULL){
-//_tw_("(eltstd==NULL)");
-            val[0]=0;
-        }
-        else{
-            eltstd->getvalue(NULL,val);
-        }
-//_tm_("default value ="+val);
+		return(false);
 	}
 	if(!strcmp(_last,val)){
-//_tm_(_last+" > "+val);
-        ctx->setDash(_dsh,_ndsh,val);
+		ctx->setDash(_dsh,_ndsh,val);
 		return(true);
 	}
-    if(_dsh){
+	if(_dsh){
+		strcpy(_last,"");
 		delete _dsh;
+		_dsh=NULL;
+		_ndsh=0;
 	}
-    strcpy(_last,"");
-    _dsh=NULL;
-    _ndsh=0;
-    if(!read(val)){
-//_te_("Read error for "+val);
-        ctx->setDash(_dsh,_ndsh,val);
-        return(true);
-    }
+	if(!read(val)){
+		return(false);
+	}
 	strcpy(_last,val);
 	ctx->setDash(_dsh,_ndsh,val);
 	return(true);
@@ -120,7 +106,6 @@ bStdXMLValueElement*    eltstd=find_value();
 // 
 // -----------
 bool bDashElement::actionstd(bGenericGraphicContext* ctx){
-//_bTrace_("bDashElement::actionstd",true);
 char	val[_values_length_max_];
 	if(objectcompliant()){
 bStdXMLValueElement*	elt=find_value();
@@ -132,37 +117,81 @@ bStdXMLValueElement*	elt=find_value();
 	else{
 		getvalue(val);
 	}
-//_tm_(val);
 	if(_dsh==NULL){
 		if(strlen(val)==0){
-            strcpy(_last,"");
 			ctx->setDash(NULL,0,"");
-            return(true);
-		}
+//return(true);
+			return(objectcompliant());
+		}	
 		if(!read(val)){
-            strcpy(_last,val);
 			ctx->setDash(NULL,0,"");
-            return(true);
-		}
-        strcpy(_last,val);
+//return(true);
+			return(objectcompliant());
+		}	
+		strcpy(_last,val);
 	}
+//trc.msg("setting \"%s\"",val);
 	ctx->setDash(_dsh,_ndsh,val);
-    return(true);
+	if(_dsh==NULL){
+//return(true);
+		return(objectcompliant());
+	}
+    return(objectcompliant());
+//	return(true);
 }
 
 // ---------------------------------------------------------------------------
 // 
 // -----------
 bool bDashElement::read(char* name){
-//_bTrace_("bDashElement::read",true);
-//_tm_(name);
 	_dsh=GetDash(_gapp,_tp,name,&_ndsh);
-//_tm_("dash="+(long)_dsh);
-//_tm_("ndash="+(long)_ndsh);
-//_tm_("name="+name);
 	if(_dsh){
-//_tm_("read ok, nb = "+_ndsh);
 		return(true);
 	}
 	return(false);
 }
+
+
+/*
+// ---------------------------------------------------------------------------
+//
+// -----------
+bool bAngleElement::actionval(    bGenericGraphicContext* ctx,
+                                bStdXMLValueElement* elt,
+                                bGenericGeoElement* geo){
+double    x;
+    elt->getvalue(geo,&x);
+    if((x>=0)&&(x<=360)){
+        ctx->setAngle(x*M_PI/180.0);
+        return(true);
+    }
+    return(false);
+}
+
+// ---------------------------------------------------------------------------
+//
+// -----------
+bool bAngleElement::actionstd(bGenericGraphicContext* ctx){
+double    x;
+    if(objectcompliant()){
+bStdXMLValueElement*    elt=find_value();
+        if(elt==NULL){
+            return(true);
+        }
+        elt->getvalue(NULL,&x);
+    }
+    else{
+char    val[_values_length_max_];
+        getvalue(val);
+        if(strlen(val)==0){
+            return(false);
+        }
+        x=atof(val);
+    }
+    if((x>=0)&&(x<=360)){
+        ctx->setAngle(x*M_PI/180.0);
+        return(true);
+    }
+    return(objectcompliant());
+}
+*/

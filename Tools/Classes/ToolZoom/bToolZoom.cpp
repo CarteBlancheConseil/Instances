@@ -144,10 +144,15 @@ i2dvertex	vx;
 // 
 // -----------
 void bToolZoom::update(bool global){
+//_bTrace_("bToolZoom::update(update, bool)",true);
+//_tm_(global);
 	if(get_active()&&get_use_track()){
-		/*if(!global){
-			clearTempPathContext(false);
-		}*/
+		if(!global){
+CGContextRef    ctx=getTempPathContext();
+CGRect          cgr=getTempPathContextRect();
+            CGContextClipToRect(ctx,cgr);
+            CGContextClearRect(ctx,cgr);
+		}
 CGPoint	a;
 		get_cur(&a);
 		if((a.x!=SHRT_MIN)&&(_gapp->scaleMgr()->get_current()>1)){
@@ -156,12 +161,14 @@ bGenericUnit*	scl2=_gapp->scaleMgr()->get(_gapp->scaleMgr()->get_current()-1);
 double			d=scl2->coef()/scl->coef();
 CGRect			cgr=getTempPathContextRect();
 			cgr.size.width*=d;
-			cgr.size.height*=d;	
-			hilite_rect(getTempPathContext(),CGRectOffset(cgr,a.x-CGRectGetMidX(cgr),a.y-CGRectGetMidY(cgr)),true,true);
+			cgr.size.height*=d;
+//_tm_("hilite_rect");
+            hilite_rect(getTempPathContext(),CGRectOffset(cgr,a.x-CGRectGetMidX(cgr),a.y-CGRectGetMidY(cgr)),true,true);
 		}
-		if(!global){
+		/*if(!global){
+_tm_("validTempPathContext because not global");
 			validTempPathContext();
-		}
+		}*/
 	}
 }
 
@@ -169,6 +176,7 @@ CGRect			cgr=getTempPathContextRect();
 // 
 // -----------
 void bToolZoom::set_modifiers(int k){
+//_bTrace_("bToolZoom::set_modifiers(set_modifiers)",true);
 	bStdToolNav::set_modifiers(k);
 	if(!get_active()){
 		return;

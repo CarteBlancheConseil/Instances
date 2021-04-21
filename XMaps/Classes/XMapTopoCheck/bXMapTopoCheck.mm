@@ -73,6 +73,21 @@ get_prm*			p=(get_prm*)prm;
 }
 
 // ---------------------------------------------------------------------------
+//
+// ------------
+int compare(const void* a, const void* b){
+mod_prm* ta=(mod_prm*)a;
+mod_prm* tb=(mod_prm*)b;
+    if(ta->o>tb->o){
+        return(1);
+    }
+    if(ta->o<tb->o){
+        return(-1);
+    }
+    return(0);
+}
+
+// ---------------------------------------------------------------------------
 // Constructeur
 // ------------
 bXMapTopoCheck	::bXMapTopoCheck(bGenericXMLBaseElement* elt, bGenericMacMapApp* gapp, CFBundleRef bndl)
@@ -200,7 +215,6 @@ ivertices			*mvxs,*vxs;
 long                i,j;
 int					sign=GetSignature(this)/*,esign*/,cln='NtCl';
 bArray				objs(sizeof(bGenericGeoElement*));
-
     
     for(i=1;i<=arr->count();i++){
         arr->get(i,&evt);
@@ -263,7 +277,7 @@ bArray				objs(sizeof(bGenericGeoElement*));
 // -----------
 void bXMapTopoCheck::process_objects(bArray& objects){
 //_bTrace_("bXMapTopoCheck::process_objects",true);
-int					i,j,k,l,m;
+int					i,j,k,l,m,n;
 bGenericGeoElement	*a,*b,*t;
 ivertices			*vsa,*vsb,*vst;
 ivx_rect			vr;
@@ -295,6 +309,11 @@ mod_prm				mod;
                 tgt.get(k,&t);
                 t->getVertices(&vst);
                 mod.vxs=NULL;
+                mod.o=t;
+                n=modifs.search(&mod,compare);
+                if(n>0){
+                    modifs.get(n,&mod);
+                }
                 for(l=0;l<vsa->nv;l++){
                     for(m=0;m<vst->nv;m++){
                         if(eq_ivx2(&vsa->vx.vx2[l],&vst->vx.vx2[m])){
@@ -306,8 +325,12 @@ mod_prm				mod;
                     }
                 }
                 if(mod.vxs!=NULL){
-                    mod.o=t;
-                    modifs.add(&mod);
+                    if(n>0){
+                        modifs.put(n,&mod);
+                    }
+                    else{
+                        modifs.add(&mod);
+                    }
                 }
             }
         }
