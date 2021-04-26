@@ -78,7 +78,24 @@ void bToolZoom::close(){
 }
 
 // ---------------------------------------------------------------------------
-// 
+//
+// -----------
+void bToolZoom::activate(){
+    bStdTool::activate();
+    if(is_modifiers(shiftKey)||is_modifiers(optionKey)){
+        set_curs(_cminus);
+        set_use_track(false);
+    }
+    else{
+        set_curs();
+        set_use_track(true);
+        update(false);
+    }
+    validTempPathContext();
+}
+
+// ---------------------------------------------------------------------------
+//
 // -----------
 void bToolZoom::pop(cocoaMenuPrm prm){
 int				cmd,x;
@@ -144,15 +161,23 @@ i2dvertex	vx;
 // 
 // -----------
 void bToolZoom::update(bool global){
-//_bTrace_("bToolZoom::update(update, bool)",true);
-//_tm_(global);
+/*_bTrace_("bToolZoom::update(update, bool)",true);
+_tm_(global);
+_tm_(get_active());
+_tm_(get_use_track());*/
 	if(get_active()&&get_use_track()){
-		if(!global){
+		/*if(!global){
+_tm_("clear");
 CGContextRef    ctx=getTempPathContext();
+_tm_("getTempPathContext Ok, ctx="+(long)ctx);
+_tm_("type="+(long)CGContextGetTypeID());
 CGRect          cgr=getTempPathContextRect();
+_tm_("getTempPathContextRect Ok"+_trxysz_(cgr));
             CGContextClipToRect(ctx,cgr);
+_tm_("CGContextClipToRect Ok");
             CGContextClearRect(ctx,cgr);
-		}
+_tm_("CGContextClearRect Ok");
+		}*/
 CGPoint	a;
 		get_cur(&a);
 		if((a.x!=SHRT_MIN)&&(_gapp->scaleMgr()->get_current()>1)){
@@ -179,14 +204,17 @@ void bToolZoom::set_modifiers(int k){
 //_bTrace_("bToolZoom::set_modifiers(set_modifiers)",true);
 	bStdToolNav::set_modifiers(k);
 	if(!get_active()){
+//_tm_("not active");
 		return;
 	}
 	if(is_modifiers(shiftKey)||is_modifiers(optionKey)){
+//_tm_("set minus");
 		set_curs(_cminus);
 		set_use_track(false);
 		//clearTempPathContext(true);
 	}
 	else{
+//_tm_("set std");
 		set_curs();
 		set_use_track(true);
 		//clearTempPathContext(true);
@@ -199,7 +227,7 @@ void bToolZoom::set_modifiers(int k){
 //
 // -----------
 bool bToolZoom::edit(void* prm){
-_bTrace_("bToolZoom::edit",true);
+//_bTrace_("bToolZoom::edit",true);
 long            result=0;
 bGenericUnit*	u;
 scale			scl;

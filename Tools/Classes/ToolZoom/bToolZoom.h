@@ -57,7 +57,8 @@ public:
 	virtual bGenericXMLBaseElement* create	(	bGenericXMLBaseElement* elt);
 	
 	virtual void open						(	int* flags);
-	virtual void close						(	);
+    virtual void close						(	);
+    virtual void activate					(	);
 	
 	virtual void pop						(	cocoaMenuPrm prm);
 	virtual void clic						(	CGPoint pt, 
