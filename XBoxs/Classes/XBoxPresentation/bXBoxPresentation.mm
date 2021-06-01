@@ -63,8 +63,6 @@ bool bXBoxPresentation::nsevent(void* nsevt){
     if(!_controller){
         return(false);
     }
-/*UInt32			clss=GetEventClass(evt);
-UInt32			kind=GetEventKind(evt);*/
 NSEvent*        evt=(NSEvent*)nsevt;
 CGPoint         loc;
 bGenericTool*	tool=(bGenericTool*)CurTool(_gapp);
@@ -87,28 +85,13 @@ bGenericEvent*	mevt;
                         }
                     }
                 }
-               
+            }
+            else if([evt subtype]==NSEventSubtypeDrawMap){
+                updateCocoa(_controller);
             }
             break;
     }
     
-/*    if((clss==kEventClassMouse)&&(kind==kEventMouseDown)*//*&&(_on_get)*//*){
-        tool->get_cur(&loc);
-        clickCocoa(_controller,loc);// return true ?
-    }
-    else if(clss==kEventClassMacMap){
-bArray*			arr=_gapp->eventMgr()->events();
-bGenericEvent*	mevt;
-        
-        for(long i=1;i<=arr->count();i++){
-            arr->get(i,&mevt);
-            switch(mevt->kind()){
-                case kEventKindTypeElement:{
-                    refreshCocoa(_controller);
-                }
-            }
-        }
-    }*/
     return false;
 }
 

@@ -41,8 +41,9 @@ extern "C" {
 void*	initializeCocoa		(	void* gapp,
 								void* ext);
 void    clickCocoa          (   void* instance,
-                                 CGPoint  loc);
+                                CGPoint loc);
 void    refreshCocoa        (   void* instance);
+void    updateCocoa         (   void* instance);
 
 //----------------------------------------------------------------------------
 

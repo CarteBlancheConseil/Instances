@@ -285,7 +285,7 @@ CGRect					box;
         box.size.height=mgt->getVSize();
         
         if(mgt->getAngle()!=0){
-            CGContextTranslateCTM(	ctx,
+            CGContextTranslateCTM(ctx,
                                   box.origin.x+(mgt->getHSize()/2.0),
                                   box.origin.y+(mgt->getVSize()/2.0));
             CGContextRotateCTM(ctx,mgt->getAngle());
@@ -1290,7 +1290,7 @@ _bTrace_("[PresentationTableCellView mouseDownForCell]",false);
 // Ne devrait plus survenir avec le changement de sélection
 // au firstClic (cf mouseDown de PresentationTableView)
 /**/
-NSTableView*        tvw=[[self superview] superview];
+NSTableView*        tvw=(NSTableView*)[[self superview] superview];
     if([tvw rowViewAtRow:[tvw selectedRow] makeIfNecessary:NO]!=[self superview]){
 _tw_("SACREBLEU !!!");
         return;
@@ -1348,14 +1348,14 @@ int				sidx;
 bGenericType*	tp=(bGenericType*)CurType(gapp);
             if(tp){
 // + shift : centrer sur les objets
-                if([theEvent modifierFlags]&NSShiftKeyMask){
+                if([theEvent modifierFlags]&NSEventModifierFlagShift){
 ivx_rect            bnd;
 i2dvertex           vx;
                     tp->iterator()->bounds(&bnd);
                     ivr_mid(&bnd,&vx);
                     gapp->mapIntf()->setScreenCenter(vx);
                 }
-                else if([theEvent modifierFlags]&NSCommandKeyMask){
+                else if([theEvent modifierFlags]&NSEventModifierFlagCommand){
 // + cmd : sélectionner les objets du type
                     gapp->selMgr()->flush();
 bGenericExt*        ext=gapp->xmapMgr()->find('sall');
@@ -1391,17 +1391,23 @@ NSInteger   row=[self rowAtPoint:pt];
     
     if(row>=0){
 // firstClic en réactivation de fenêtre, dans le cas ou la cellule cliquée n'est pas celle sélectionnée
-/**/
-        if([self isRowSelected:row]==NO){
+        if(([self isRowSelected:row]==NO)&&(_ondrop==NO)){
 bGenericExt*        ext=[(PresentationWindowController*)[[self window] windowController] getExt];
 bGenericMacMapApp*  gapp=(bGenericMacMapApp*)ext->getapp();
             gapp->layersMgr()->set_current(row+1);
             [self selectRowIndexes:[NSIndexSet indexSetWithIndex:row] byExtendingSelection:NO];
         }
-/**/
 PresentationTableCellView*  cell=[self viewAtColumn:0 row:row makeIfNecessary:NO];
         [cell mouseDownForCell:theEvent];
     }
+    _ondrop=NO;
+}
+
+// ---------------------------------------------------------------------------
+//
+// ------------
+-(void)setOnDrop:(BOOL)flag{
+    _ondrop=flag;
 }
 
 // ---------------------------------------------------------------------------
@@ -1426,7 +1432,6 @@ _bTrace_("[PresentationWindowController init]",true);
 	if(self){
         _ld=-1;
         _lv=-1;
-        _reload=NO;
         _refresh=NO;
         _modi=NO;
 	}
@@ -1484,7 +1489,7 @@ _tm_((void*)self);
 //
 // -----------
 -(void)redraw{
-    _reload=YES;
+    [self updateList];
 }
 
 // ---------------------------------------------------------------------------
@@ -1508,7 +1513,6 @@ _tm_((void*)self);
 -(IBAction)doMoveUp:(id)sender{
 bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
     if(gapp->layersMgr()->move(gapp->layersMgr()->get_current(),-1)){
-        _reload=YES;
         _modi=YES;
     }
 }
@@ -1519,7 +1523,6 @@ bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
 -(IBAction)doMoveDown:(id)sender{
 bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
     if(gapp->layersMgr()->move(gapp->layersMgr()->get_current(),1)){
-        _reload=YES;
         _modi=YES;
     }
 }
@@ -1530,7 +1533,6 @@ bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
 -(IBAction)doRemove:(id)sender{
 bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
     if(gapp->layersMgr()->remove(gapp->layersMgr()->get_current())){
-        _reload=YES;
         _modi=YES;
     }
 }
@@ -1544,7 +1546,6 @@ bGenericStyle*      styl=(bGenericStyle*)CurLayer(gapp);
     if(!styl){
         return;
     }
-    _reload=YES;
     _modi=YES;
    _ld--;
     
@@ -1557,7 +1558,7 @@ bGenericStyle*	stl;
     
 NSUInteger      modifiers=[[NSApp currentEvent] modifierFlags];
 
-    if(modifiers&NSCommandKeyMask){
+    if(modifiers&NSEventModifierFlagCommand){
         for(int i=1;i<= gapp->layersMgr()->count();i++){
             if(i==idx){
                 continue;
@@ -1572,7 +1573,7 @@ NSUInteger      modifiers=[[NSApp currentEvent] modifierFlags];
         gapp->layersMgr()->set_current(idx);
     }
 
-    if(modifiers&NSShiftKeyMask){
+    if(modifiers&NSEventModifierFlagShift){
         for(int i=1;i<= gapp->layersMgr()->count();i++){
             if(i==idx){
                 continue;
@@ -1588,6 +1589,7 @@ NSUInteger      modifiers=[[NSApp currentEvent] modifierFlags];
         }
          gapp->layersMgr()->set_current(idx);
     }
+    [self updateList];
 }
 
 // ---------------------------------------------------------------------------
@@ -1599,7 +1601,6 @@ bGenericStyle*      styl=(bGenericStyle*)CurLayer(gapp);
     if(!styl){
         return;
     }
-    _reload=YES;
     _modi=YES;
 
     gapp->layersMgr()->StopDraw();
@@ -1611,7 +1612,7 @@ bGenericType*	tp=(bGenericType*)CurType(gapp);
 bGenericStyle*	stl;
 NSUInteger      modifiers=[[NSApp currentEvent] modifierFlags];
     
-    if(modifiers&NSCommandKeyMask){
+    if(modifiers&NSEventModifierFlagCommand){
         for(int i=1;i<=gapp->layersMgr()->count();i++){
             if(i==idx){
                 continue;
@@ -1626,7 +1627,7 @@ NSUInteger      modifiers=[[NSApp currentEvent] modifierFlags];
         gapp->layersMgr()->set_current(idx);
     }
     
-    if(modifiers&NSShiftKeyMask){
+    if(modifiers&NSEventModifierFlagShift){
         for(int i=1;i<=gapp->layersMgr()->count();i++){
             if(i==idx){
                 continue;
@@ -1665,10 +1666,10 @@ bGenericExt*        ext=gapp->xboxMgr()->find('MgrS');
 //
 // ------------
 -(IBAction)doAddStyle:(id)sender{
+//_bTrace_("[PresentationWindowController doAddStyle]",true);
 bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
     if(gapp->layersMgr()->add([sender tag],1)){
         gapp->layersMgr()->set_current(gapp->layersMgr()->count());
-        _reload=YES;
         _ld=-1;
         _modi=true;
     }
@@ -1882,8 +1883,8 @@ bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
 // pour que l'on soit sûr de retrouver la vue avant modification
 // si nécessaire
     gapp->viewMgr()->set_current([sender tag]);
-    _reload=YES;
     _ld=-1;
+    [self updateList];
 }
 
 #pragma mark ---- Update Intf ----
@@ -1901,6 +1902,19 @@ bGenericStyle*      styl=gapp->layersMgr()->get([_stl_viw selectedRow]+1);
     if(styl){
         [_lck_btn setIntValue:!styl->selectable()];
         [_hid_btn setIntValue:!styl->visible()];
+    }
+}
+
+// ---------------------------------------------------------------------------
+//
+// -----------
+-(void)updateList{
+bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
+    [_stl_viw reloadData];
+    [[[self window] contentView] setNeedsDisplay:YES];
+    if(gapp->layersMgr()->get_current()>0){
+        [_stl_viw selectRowIndexes:[NSIndexSet indexSetWithIndex:gapp->layersMgr()->get_current()-1]
+              byExtendingSelection:NO];
     }
 }
 
@@ -1959,8 +1973,8 @@ _tm_("AUTRE ?");
 //
 // -----------
 -(void)setModified{
-_bTrace_("[PresentationWindowController setModified]",true);
     _modi=YES;
+    [self updateList];
 }
 
 // ---------------------------------------------------------------------------
@@ -2029,13 +2043,10 @@ bGenericMacMapApp* gapp=(bGenericMacMapApp*)_ext->getapp();
         _lv=gapp->layersMgr()->get_current();
         [self populateViews];
     }
-   if(_ld<gapp->mapIntf()->drawCount()||_reload){
-        [_stl_viw reloadData];
+   if(_ld<gapp->mapIntf()->drawCount()){
         _refresh=YES;
-        _reload=NO;
         _lv=-1;
         if(_refresh){
-            [[[self window] contentView] setNeedsDisplay:YES];
             _refresh=NO;
         }
         _ld=gapp->mapIntf()->drawCount();
@@ -2086,7 +2097,7 @@ bGenericStyle*      stl;
             if(ga->count()>=1){
                 gapp->layersMgr()->set_current(i);
                 delete ga;
-                _reload=YES;
+                [self updateList];
                 break;
             }
             delete ga;
@@ -2207,6 +2218,7 @@ bGenericMacMapApp*  gapp=(bGenericMacMapApp*)_ext->getapp();
 NSData* data=[NSKeyedArchiver archivedDataWithRootObject:rowIndexes];
     [pasteBoard declareTypes:[NSArray arrayWithObjects:PresentationDraggedDatatype,nil] owner:self];
     [pasteBoard setData:data forType:PresentationDraggedDatatype];
+    [((PresentationTableView*)_stl_viw) setOnDrop:YES];
     return YES;
 }
 
@@ -2237,7 +2249,6 @@ long                n=rowIndex-[rowIndexes firstIndex];
     }
     gapp->layersMgr()->StopDraw();
     gapp->layersMgr()->move([rowIndexes firstIndex]+1,n);
-    _reload=YES;
     _modi=YES;
     return YES;
 }
@@ -2291,6 +2302,21 @@ PresentationWindowController	*mmc=(PresentationWindowController*)instance;
     }
     localPool=[[NSAutoreleasePool alloc] init];
     [mmc populateTypes];
+    [localPool release];
+}
+
+// ---------------------------------------------------------------------------
+//
+// ------------
+void updateCocoa(void* instance){
+NSAutoreleasePool               *localPool;
+PresentationWindowController    *mmc=(PresentationWindowController*)instance;
+    
+    if(mmc==NULL){
+        return;
+    }
+    localPool=[[NSAutoreleasePool alloc] init];
+    [mmc redraw];
     [localPool release];
 }
 

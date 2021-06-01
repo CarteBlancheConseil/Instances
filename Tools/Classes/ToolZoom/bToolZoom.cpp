@@ -126,6 +126,7 @@ menuitem_desc*	desc=new menuitem_desc[nb];
 													(WindowRef)prm.inWindow,
 													desc,
 													nb);*/
+        cmd=0;
 	}
 	delete[] desc;
 	if((cmd>0)&&(cmd!=x)){
@@ -161,23 +162,8 @@ i2dvertex	vx;
 // 
 // -----------
 void bToolZoom::update(bool global){
-/*_bTrace_("bToolZoom::update(update, bool)",true);
-_tm_(global);
-_tm_(get_active());
-_tm_(get_use_track());*/
+/*_bTrace_("bToolZoom::update(update, bool)",true);*/
 	if(get_active()&&get_use_track()){
-		/*if(!global){
-_tm_("clear");
-CGContextRef    ctx=getTempPathContext();
-_tm_("getTempPathContext Ok, ctx="+(long)ctx);
-_tm_("type="+(long)CGContextGetTypeID());
-CGRect          cgr=getTempPathContextRect();
-_tm_("getTempPathContextRect Ok"+_trxysz_(cgr));
-            CGContextClipToRect(ctx,cgr);
-_tm_("CGContextClipToRect Ok");
-            CGContextClearRect(ctx,cgr);
-_tm_("CGContextClearRect Ok");
-		}*/
 CGPoint	a;
 		get_cur(&a);
 		if((a.x!=SHRT_MIN)&&(_gapp->scaleMgr()->get_current()>1)){
@@ -187,13 +173,8 @@ double			d=scl2->coef()/scl->coef();
 CGRect			cgr=getTempPathContextRect();
 			cgr.size.width*=d;
 			cgr.size.height*=d;
-//_tm_("hilite_rect");
             hilite_rect(getTempPathContext(),CGRectOffset(cgr,a.x-CGRectGetMidX(cgr),a.y-CGRectGetMidY(cgr)),true,true);
 		}
-		/*if(!global){
-_tm_("validTempPathContext because not global");
-			validTempPathContext();
-		}*/
 	}
 }
 
@@ -211,13 +192,11 @@ void bToolZoom::set_modifiers(int k){
 //_tm_("set minus");
 		set_curs(_cminus);
 		set_use_track(false);
-		//clearTempPathContext(true);
 	}
 	else{
 //_tm_("set std");
 		set_curs();
 		set_use_track(true);
-		//clearTempPathContext(true);
 		update(false);
 	}
 	validTempPathContext();

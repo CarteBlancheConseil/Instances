@@ -55,7 +55,10 @@
 //----------------------------------------------------------------------------
 // TableView subclass
 @interface PresentationTableView : NSTableView{
+    BOOL    _ondrop;
 }
+//----------------------------------------------------------------------------
+-(void)setOndrop:(BOOL)flg;
 //----------------------------------------------------------------------------
 @end
 
@@ -65,7 +68,7 @@
 
 @interface PresentationWindowController : bStdNSXBoxWindowController{
     IBOutlet NSTableView*	_stl_viw;
-
+    
     IBOutlet NSButton*      _mup_btn;
     IBOutlet NSButton*      _mdn_btn;
     IBOutlet NSButton*      _rmv_btn;
@@ -79,7 +82,7 @@
     long    _ld;
     long    _lv;
     
-    BOOL    _reload;
+ //   BOOL    _reload;
     BOOL    _refresh;
     BOOL    _modi;
 }
