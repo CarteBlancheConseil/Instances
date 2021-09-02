@@ -79,6 +79,7 @@ private:
 	
 	CursorRef		_cminus;
 	bArray			_scales;
+    time_t          _clickT;
 };
 
 //----------------------------------------------------------------------------

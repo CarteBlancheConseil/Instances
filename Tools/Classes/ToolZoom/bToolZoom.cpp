@@ -42,6 +42,7 @@ bToolZoom	::bToolZoom(bGenericXMLBaseElement* elt, bGenericMacMapApp* gapp, CFBu
 			: bStdToolNav(elt,gapp,bndl)
 			,_scales(sizeof(scale)){
 	setclassname("zoomtool");
+    _clickT=time(NULL);
 }
 
 // ---------------------------------------------------------------------------
@@ -143,6 +144,8 @@ i2dvertex	vx;
 // -----------
 void bToolZoom::clic(CGPoint pt, int count){
 //_bTrace_("bToolZoom::clic(CGPoint, int)",true);
+    _clickT=time(NULL);
+    set_use_track(false);
 	bStdToolNav::clic(pt,count);
 i2dvertex	vx;
 	get_clic(&vx);
@@ -156,14 +159,17 @@ i2dvertex	vx;
 	}
 	_gapp->mapIntf()->setScreenCenter(vx);
 	set_cur(&pt);
+    set_use_track(true);
 }
 
 // ---------------------------------------------------------------------------
 // 
 // -----------
 void bToolZoom::update(bool global){
-/*_bTrace_("bToolZoom::update(update, bool)",true);*/
-	if(get_active()&&get_use_track()){
+	if(get_active()&&get_use_track()&&(time(NULL)-_clickT>1)){
+        if(is_modifiers(shiftKey)||is_modifiers(optionKey)){
+            return;
+        }
 CGPoint	a;
 		get_cur(&a);
 		if((a.x!=SHRT_MIN)&&(_gapp->scaleMgr()->get_current()>1)){
