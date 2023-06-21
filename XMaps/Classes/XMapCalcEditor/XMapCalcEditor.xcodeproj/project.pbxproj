@@ -310,7 +310,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OBJROOT = "../../zXCode Div/buildprod";
 				PREBINDING = YES;
-				SDKROOT = macosx10.12;
+				SDKROOT = macosx;
 				SYMROOT = ../../build;
 			};
 			name = Release;

@@ -105,16 +105,23 @@ bool bvDefVirtualWMSStyle::dump(bArray& arr, int indent){
 		return(false);
 	}
 char	fullurl[2048];
-	
+char    service[256]="WMS";
+char    version[256]="1.1.1";
+
+    /*if(strstr(_url,"wmts")){
+        strcpy(service,"WMTS");
+        strcpy(version,"1.0.0");
+    }*/
+    
 	if(_srs>0){
 		sprintf(fullurl,
-				"http%s://%s?Service=WMS&Version=1.1.1&Layers=%s&Styles=%s&Format=%s&SRS=EPSG:%d",
-				(_https?"s":""),_url,_layer,_style,_fmt,_srs);
+				"http%s://%s?Service=%s&Version=%s&Layers=%s&Styles=%s&Format=%s&SRS=EPSG:%d",
+				(_https?"s":""),_url,service,version,_layer,_style,_fmt,_srs);
 	}
 	else{
 		sprintf(fullurl,
-				"http%s://%s?Service=WMS&Version=1.1.1&Layers=%s&Styles=%s&Format=%s",
-				(_https?"s":""),_url,_layer,_style,_fmt);
+				"http%s://%s?Service=WMS&Version=%s&Layers=%s&Styles=%s&Format=%s",
+				(_https?"s":""),_url,service,version,_layer,_style,_fmt);
 	}
     
     

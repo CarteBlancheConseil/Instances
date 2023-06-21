@@ -385,7 +385,7 @@ int bSubStyle::getclasscount(){
 // 
 // ------------
 double bSubStyle::getclassbound(int idx){
-double	v=__nan();
+    double	v=NAN;//__nan();
 	_valbounds.get(idx,&v);
 	return(v);
 }

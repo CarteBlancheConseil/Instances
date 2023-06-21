@@ -217,8 +217,15 @@ char					val[_values_length_max_];
 	}
 	
 	if(strlen(_url)>0){
-char		url[2048],fullurl[2048];	
+char    url[2048],fullurl[2048];
+char    service[256]="WMS";
+char    version[256]="1.1.1";
 
+        /*if(strstr(_url,"wmts")){
+            strcpy(service,"WMTS");
+            strcpy(version,"1.0.0");
+        }*/
+            
         _https=(strstr(_url,"https://")==_url);
         
 		sprintf(url,_url);
@@ -226,7 +233,7 @@ char		url[2048],fullurl[2048];
         strrep(url,"https://","");
         strrep(url,"?","");
 		
-		sprintf(fullurl,"http%s://%s?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetCapabilities",(_https?"s":""),url);
+		sprintf(fullurl,"http%s://%s?SERVICE=%s&VERSION=%s&REQUEST=GetCapabilities",(_https?"s":""),url,service,version);
 _tm_("trying to connect to :"+fullurl);
 		
 void*	buffer=NULL;

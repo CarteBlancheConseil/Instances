@@ -133,6 +133,15 @@ NSString*	nsstr=[_url_fld stringValue];
 long	max=[nsstr length]*3+1;
 char*	url=(char*)malloc(max);
 		if([nsstr getCString:url maxLength:max-1 encoding:NSUTF8StringEncoding]==YES){
+
+char    service[256]="WMS";
+char    version[256]="1.1.1";
+
+            /*if(strstr(url,"wmts")){
+                strcpy(service,"WMTS");
+                strcpy(version,"1.0.0");
+            }*/
+
             
 bool        https=(strstr(url,"https://")==url);
             
@@ -140,7 +149,7 @@ bool        https=(strstr(url,"https://")==url);
             strrep(url,"https://","");
 			strrep(url,"?","");
 			
-			sprintf(fullurl,"http%s://%s?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetCapabilities",(https?"s":""),url);
+			sprintf(fullurl,"http%s://%s?SERVICE=%s&VERSION=%s&REQUEST=GetCapabilities",(https?"s":""),url,service,version);
 _tm_("trying to connect to :"+fullurl);
 			
 void*	buffer=NULL;
@@ -176,10 +185,13 @@ _te_("WMSCapabilitiesParser failed");
 _te_("mmurl_get failed");
                 }
                 else{
+_tm_("mmurl_get succed "+(int)sz);
                     if(WMSCapabilitiesParser(buffer,sz,((bvDefPaletteVirtualWMS*)_ext)->layers())){
 _te_("WMSCapabilitiesParser failed");
                     }
                 }
+((char*)buffer)[sz-1]=0;
+_tm_(buffer);
             }
             if(buffer){
 				free(buffer);
@@ -554,20 +566,27 @@ char*		url;
 				url=(char*)malloc(max);
 				if([nsstr getCString:url maxLength:max-1 encoding:NSUTF8StringEncoding]==YES){
                     
-bool                https=(strstr(url,"https://")==url);
-                    
+bool    https=(strstr(url,"https://")==url);
+char    service[256]="WMS";
+char    version[256]="1.1.1";
+
+                    /*if(strstr(url,"wmts")){
+                        strcpy(service,"WMTS");
+                        strcpy(version,"1.0.0");
+                    }*/
+
                     strrep(url,"http://","");
                     strrep(url,"https://","");
                     strrep(url,"?","");
                     
-                    sprintf(fullurl,"http%s://%s?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetCapabilities",(https?"s":""),url);
+                    sprintf(fullurl,"http%s://%s?SERVICE=%s&VERSION=%s&REQUEST=GetCapabilities",(https?"s":""),url,service,version);
 _tm_("trying to connect to :"+fullurl);
 
                     
                     strrep(url,"http://","");
 					strrep(url,"?","");
 					
-					sprintf(fullurl,"http://%s?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetCapabilities",url);
+					sprintf(fullurl,"http://%s?SERVICE=%s&VERSION=%s&REQUEST=GetCapabilities",url,service,version);
 _tm_("trying to connect to :"+fullurl);
 					
                     

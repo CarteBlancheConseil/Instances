@@ -149,9 +149,14 @@
 /* Begin PBXProject section */
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 1497562408C380AF0084C913 /* Build configuration list for PBXProject "AgregateIntoPoly" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
+				en,
 				English,
 				Japanese,
 				French,
@@ -161,6 +166,7 @@
 			);
 			mainGroup = 089C166AFE841209C02AAC07 /* Template */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				8D01CCC60486CAD60068D4B7 /* AgregateIntoPoly */,
 			);
@@ -249,12 +255,9 @@
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = ../../build;
-				LIBRARY_SEARCH_PATHS = "";
-				LIBRARY_STYLE = Bundle;
 				OBJROOT = ../../build;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = AgregateIntoPoly;
 				SECTORDER_FLAGS = "";
 				SKIP_INSTALL = YES;
@@ -265,13 +268,14 @@
 					"-Wno-unknown-pragmas",
 				);
 				WRAPPER_EXTENSION = bundle;
-				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
 		1497562608C380AF0084C913 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SDKROOT = macosx;
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;
 		};
