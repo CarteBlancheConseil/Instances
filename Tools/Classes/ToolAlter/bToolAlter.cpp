@@ -269,6 +269,7 @@ void bToolAlter::drag(CGPoint pt){
 // 
 // -----------
 void bToolAlter::track_obj(){
+//_bTrace_("bToolAlter::track_obj",true);
 bArray*				ga;
 bGenericStyle*		style;
 bGenericGeoElement	*o=NULL,*prev;
@@ -303,9 +304,11 @@ CGPoint				pt;
 				set_obj(o);
 				_kind=tp->kind();
 				if(o!=prev){
+//_tm_("FlushSelection");
 					FlushSelection(_gapp);
 				}
 				if(o!=NULL){
+//_tm_("get_obj()->setselect");
 					get_obj()->setselect(true,true);
 				}					
 			}

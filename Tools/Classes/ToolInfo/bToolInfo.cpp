@@ -411,6 +411,10 @@ float	rad=3;
 	}
 	
 CGContextRef	ctx=getTempPathContext();
+    if(ctx==NULL){
+        return;
+    }
+    
 CGPoint			pt;
 	
 	get_cur(&pt);
@@ -584,6 +588,9 @@ bool bToolInfoParams::update(bArray& arr,
 // 
 // ------------
 void bToolInfoParams::applyFont(CGContextRef ctx){
+    if(ctx==NULL){
+        return;
+    }
 	CGContextSetRGBFillColor(ctx,_fnt_fill[0],_fnt_fill[1],_fnt_fill[2],_fnt_fill[3]);
 	CGContextSelectFont(ctx,_fnt,_fnt_sz,kCGEncodingMacRoman);
 	CGContextSetTextDrawingMode(ctx,kCGTextFill);

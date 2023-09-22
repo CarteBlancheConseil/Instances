@@ -275,7 +275,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				SDKROOT = macosx;
-				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;
 		};
