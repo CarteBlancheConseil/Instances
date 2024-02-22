@@ -1,944 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
-	<data>
-		<int key="IBDocument.SystemTarget">1080</int>
-		<string key="IBDocument.SystemVersion">14F27</string>
-		<string key="IBDocument.InterfaceBuilderVersion">7702</string>
-		<string key="IBDocument.AppKitVersion">1348.17</string>
-		<string key="IBDocument.HIToolboxVersion">758.70</string>
-		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
-			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
-			<string key="NS.object.0">7702</string>
-		</object>
-		<array key="IBDocument.IntegratedClassDependencies">
-			<string>NSCustomObject</string>
-			<string>NSCustomView</string>
-			<string>NSMenu</string>
-			<string>NSMenuItem</string>
-			<string>NSPopUpButton</string>
-			<string>NSPopUpButtonCell</string>
-			<string>NSScrollView</string>
-			<string>NSScroller</string>
-			<string>NSView</string>
-		</array>
-		<array key="IBDocument.PluginDependencies">
-			<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-		</array>
-		<dictionary class="NSMutableDictionary" key="IBDocument.Metadata"/>
-		<array class="NSMutableArray" key="IBDocument.RootObjects" id="1048">
-			<object class="NSCustomObject" id="1021">
-				<string key="NSClassName">NSViewController</string>
-			</object>
-			<object class="NSCustomObject" id="1014">
-				<string key="NSClassName">FirstResponder</string>
-			</object>
-			<object class="NSCustomObject" id="1050">
-				<string key="NSClassName">NSApplication</string>
-			</object>
-			<object class="NSView" id="588697238">
-				<reference key="NSNextResponder"/>
-				<int key="NSvFlags">256</int>
-				<array class="NSMutableArray" key="NSSubviews">
-					<object class="NSScrollView" id="1001839317">
-						<reference key="NSNextResponder" ref="588697238"/>
-						<int key="NSvFlags">274</int>
-						<array class="NSMutableArray" key="NSSubviews">
-							<object class="NSClipView" id="287262704">
-								<reference key="NSNextResponder" ref="1001839317"/>
-								<int key="NSvFlags">2322</int>
-								<array class="NSMutableArray" key="NSSubviews">
-									<object class="NSCustomView" id="879039682">
-										<reference key="NSNextResponder" ref="287262704"/>
-										<int key="NSvFlags">274</int>
-										<string key="NSFrame">{{-279, -693}, {869, 1020}}</string>
-										<reference key="NSSuperview" ref="287262704"/>
-										<reference key="NSWindow"/>
-										<reference key="NSNextKeyView" ref="607925533"/>
-										<string key="NSClassName">MatrixBrowserObjView</string>
-									</object>
-								</array>
-								<string key="NSFrame">{{1, 1}, {524, 532}}</string>
-								<string key="NSBounds">{{-279, -205}, {524, 532}}</string>
-								<reference key="NSSuperview" ref="1001839317"/>
-								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="879039682"/>
-								<reference key="NSDocView" ref="879039682"/>
-								<object class="NSColor" key="NSBGColor">
-									<int key="NSColorSpace">6</int>
-									<string key="NSCatalogName">System</string>
-									<string key="NSColorName">controlColor</string>
-									<object class="NSColor" key="NSColor">
-										<int key="NSColorSpace">3</int>
-										<bytes key="NSWhite">MC42NjY2NjY2NjY3AA</bytes>
-									</object>
-								</object>
-								<int key="NScvFlags">4</int>
-								<bool key="NSAutomaticallyAdjustsContentInsets">YES</bool>
-							</object>
-							<object class="NSScroller" id="1070334631">
-								<reference key="NSNextResponder" ref="1001839317"/>
-								<int key="NSvFlags">256</int>
-								<string key="NSFrame">{{509, 1}, {16, 532}}</string>
-								<reference key="NSSuperview" ref="1001839317"/>
-								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="230406704"/>
-								<bool key="NSEnabled">YES</bool>
-								<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-								<string key="NSControlAction">_doScroller:</string>
-								<reference key="NSControlTarget" ref="1001839317"/>
-								<reference key="NSTarget" ref="1001839317"/>
-								<string key="NSAction">_doScroller:</string>
-								<double key="NSPercent">0.52156862745098043</double>
-							</object>
-							<object class="NSScroller" id="607925533">
-								<reference key="NSNextResponder" ref="1001839317"/>
-								<int key="NSvFlags">256</int>
-								<string key="NSFrame">{{1, 517}, {524, 16}}</string>
-								<reference key="NSSuperview" ref="1001839317"/>
-								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="1070334631"/>
-								<bool key="NSEnabled">YES</bool>
-								<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-								<string key="NSControlAction">_doScroller:</string>
-								<reference key="NSControlTarget" ref="1001839317"/>
-								<int key="NSsFlags">1</int>
-								<reference key="NSTarget" ref="1001839317"/>
-								<string key="NSAction">_doScroller:</string>
-								<double key="NSPercent">0.60299194476409668</double>
-							</object>
-						</array>
-						<string key="NSFrame">{{150, -2}, {526, 534}}</string>
-						<reference key="NSSuperview" ref="588697238"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="287262704"/>
-						<int key="NSsFlags">133362</int>
-						<reference key="NSVScroller" ref="1070334631"/>
-						<reference key="NSHScroller" ref="607925533"/>
-						<reference key="NSContentView" ref="287262704"/>
-						<double key="NSMinMagnification">0.25</double>
-						<double key="NSMaxMagnification">4</double>
-						<double key="NSMagnification">1</double>
-					</object>
-					<object class="NSCustomView" id="230406704">
-						<reference key="NSNextResponder" ref="588697238"/>
-						<int key="NSvFlags">266</int>
-						<string key="NSFrame">{{151, 531}, {527, 12}}</string>
-						<reference key="NSSuperview" ref="588697238"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
-						<string key="NSClassName">MatrixBrowserIndicatorsHeaderView</string>
-					</object>
-					<object class="NSCustomView" id="48632248">
-						<reference key="NSNextResponder" ref="588697238"/>
-						<int key="NSvFlags">268</int>
-						<array class="NSMutableArray" key="NSSubviews">
-							<object class="NSPopUpButton" id="84078302">
-								<reference key="NSNextResponder" ref="48632248"/>
-								<int key="NSvFlags">12</int>
-								<string key="NSFrame">{{0, -6}, {152, 25}}</string>
-								<reference key="NSSuperview" ref="48632248"/>
-								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="691523137"/>
-								<bool key="NSEnabled">YES</bool>
-								<object class="NSPopUpButtonCell" key="NSCell" id="22930060">
-									<int key="NSCellFlags">71303232</int>
-									<int key="NSCellFlags2">133120</int>
-									<object class="NSFont" key="NSSupport">
-										<bool key="IBIsSystemFont">YES</bool>
-										<double key="NSSize">11</double>
-										<int key="NSfFlags">3100</int>
-									</object>
-									<reference key="NSControlView" ref="84078302"/>
-									<int key="NSButtonFlags">1211650304</int>
-									<int key="NSButtonFlags2">2</int>
-									<object class="NSCustomResource" key="NSNormalImage">
-										<string key="NSClassName">NSImage</string>
-										<string key="NSResourceName">NSSwitch</string>
-									</object>
-									<object class="NSButtonImageSource" key="NSAlternateImage">
-										<string key="NSImageName">NSSwitch</string>
-									</object>
-									<string key="NSAlternateContents"/>
-									<string key="NSKeyEquivalent"/>
-									<int key="NSPeriodicDelay">400</int>
-									<int key="NSPeriodicInterval">75</int>
-									<object class="NSMenuItem" key="NSMenuItem" id="63166100">
-										<reference key="NSMenu" ref="710871812"/>
-										<bool key="NSIsHidden">YES</bool>
-										<string key="NSTitle"/>
-										<string key="NSKeyEquiv"/>
-										<int key="NSKeyEquivModMask">1048576</int>
-										<int key="NSMnemonicLoc">2147483647</int>
-										<int key="NSState">1</int>
-										<object class="NSCustomResource" key="NSOnImage" id="346408995">
-											<string key="NSClassName">NSImage</string>
-											<string key="NSResourceName">NSMenuCheckmark</string>
-										</object>
-										<object class="NSCustomResource" key="NSMixedImage" id="783754148">
-											<string key="NSClassName">NSImage</string>
-											<string key="NSResourceName">NSMenuMixedState</string>
-										</object>
-										<string key="NSAction">_popUpItemAction:</string>
-										<reference key="NSTarget" ref="22930060"/>
-									</object>
-									<bool key="NSMenuItemRespectAlignment">YES</bool>
-									<object class="NSMenu" key="NSMenu" id="710871812">
-										<string key="NSTitle">OtherViews</string>
-										<array class="NSMutableArray" key="NSMenuItems">
-											<reference ref="63166100"/>
-											<object class="NSMenuItem" id="594248521">
-												<reference key="NSMenu" ref="710871812"/>
-												<string key="NSTitle">Seleziona tutte le colonne</string>
-												<string key="NSKeyEquiv"/>
-												<int key="NSKeyEquivModMask">1048576</int>
-												<int key="NSMnemonicLoc">2147483647</int>
-												<reference key="NSOnImage" ref="346408995"/>
-												<reference key="NSMixedImage" ref="783754148"/>
-												<string key="NSAction">_popUpItemAction:</string>
-												<reference key="NSTarget" ref="22930060"/>
-											</object>
-											<object class="NSMenuItem" id="403076379">
-												<reference key="NSMenu" ref="710871812"/>
-												<string key="NSTitle">Seleziona tutte le righe</string>
-												<string key="NSKeyEquiv"/>
-												<int key="NSKeyEquivModMask">1048576</int>
-												<int key="NSMnemonicLoc">2147483647</int>
-												<reference key="NSOnImage" ref="346408995"/>
-												<reference key="NSMixedImage" ref="783754148"/>
-												<string key="NSAction">_popUpItemAction:</string>
-												<reference key="NSTarget" ref="22930060"/>
-											</object>
-											<object class="NSMenuItem" id="666831465">
-												<reference key="NSMenu" ref="710871812"/>
-												<string key="NSTitle">Esporta…</string>
-												<string key="NSKeyEquiv"/>
-												<int key="NSKeyEquivModMask">1048576</int>
-												<int key="NSMnemonicLoc">2147483647</int>
-												<reference key="NSOnImage" ref="346408995"/>
-												<reference key="NSMixedImage" ref="783754148"/>
-												<string key="NSAction">_popUpItemAction:</string>
-												<reference key="NSTarget" ref="22930060"/>
-											</object>
-										</array>
-										<object class="NSFont" key="NSMenuFont" id="282448198">
-											<bool key="IBIsSystemFont">YES</bool>
-											<double key="NSSize">13</double>
-											<int key="NSfFlags">1044</int>
-										</object>
-									</object>
-									<bool key="NSPullDown">YES</bool>
-									<int key="NSPreferredEdge">1</int>
-									<bool key="NSUsesItemFromMenu">YES</bool>
-									<bool key="NSAltersState">YES</bool>
-									<int key="NSArrowPosition">1</int>
-								</object>
-								<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-							</object>
-						</array>
-						<string key="NSFrame">{{1, 531}, {150, 12}}</string>
-						<reference key="NSSuperview" ref="588697238"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="84078302"/>
-						<string key="NSClassName">BrowserCornerView</string>
-					</object>
-					<object class="NSCustomView" id="691523137">
-						<reference key="NSNextResponder" ref="588697238"/>
-						<int key="NSvFlags">272</int>
-						<string key="NSFrame">{{1, 0}, {150, 531}}</string>
-						<reference key="NSSuperview" ref="588697238"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="1001839317"/>
-						<string key="NSClassName">MatrixBrowserNameNonGeoLeftView</string>
-					</object>
-				</array>
-				<string key="NSFrameSize">{677, 544}</string>
-				<reference key="NSSuperview"/>
-				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="48632248"/>
-			</object>
-			<object class="NSPopUpButton" id="226178327">
-				<nil key="NSNextResponder"/>
-				<int key="NSvFlags">268</int>
-				<string key="NSFrameSize">{126, 26}</string>
-				<bool key="NSEnabled">YES</bool>
-				<object class="NSPopUpButtonCell" key="NSCell" id="382969976">
-					<int key="NSCellFlags">-2076180416</int>
-					<int key="NSCellFlags2">2048</int>
-					<reference key="NSSupport" ref="282448198"/>
-					<reference key="NSControlView" ref="226178327"/>
-					<int key="NSButtonFlags">109199360</int>
-					<int key="NSButtonFlags2">129</int>
-					<string key="NSAlternateContents"/>
-					<string key="NSKeyEquivalent"/>
-					<int key="NSPeriodicDelay">400</int>
-					<int key="NSPeriodicInterval">75</int>
-					<object class="NSMenuItem" key="NSMenuItem" id="93872393">
-						<reference key="NSMenu" ref="48342321"/>
-						<string key="NSTitle">Testo tabulato</string>
-						<string key="NSKeyEquiv"/>
-						<int key="NSKeyEquivModMask">1048576</int>
-						<int key="NSMnemonicLoc">2147483647</int>
-						<int key="NSState">1</int>
-						<reference key="NSOnImage" ref="346408995"/>
-						<reference key="NSMixedImage" ref="783754148"/>
-						<string key="NSAction">_popUpItemAction:</string>
-						<reference key="NSTarget" ref="382969976"/>
-					</object>
-					<bool key="NSMenuItemRespectAlignment">YES</bool>
-					<object class="NSMenu" key="NSMenu" id="48342321">
-						<string key="NSTitle">OtherViews</string>
-						<array class="NSMutableArray" key="NSMenuItems">
-							<reference ref="93872393"/>
-							<object class="NSMenuItem" id="633719362">
-								<reference key="NSMenu" ref="48342321"/>
-								<string key="NSTitle">CSV</string>
-								<string key="NSKeyEquiv"/>
-								<int key="NSKeyEquivModMask">1048576</int>
-								<int key="NSMnemonicLoc">2147483647</int>
-								<reference key="NSOnImage" ref="346408995"/>
-								<reference key="NSMixedImage" ref="783754148"/>
-								<string key="NSAction">_popUpItemAction:</string>
-								<reference key="NSTarget" ref="382969976"/>
-							</object>
-							<object class="NSMenuItem" id="69049917">
-								<reference key="NSMenu" ref="48342321"/>
-								<string key="NSTitle">DBF</string>
-								<string key="NSKeyEquiv"/>
-								<int key="NSKeyEquivModMask">1048576</int>
-								<int key="NSMnemonicLoc">2147483647</int>
-								<reference key="NSOnImage" ref="346408995"/>
-								<reference key="NSMixedImage" ref="783754148"/>
-								<string key="NSAction">_popUpItemAction:</string>
-								<reference key="NSTarget" ref="382969976"/>
-							</object>
-							<object class="NSMenuItem" id="278175706">
-								<reference key="NSMenu" ref="48342321"/>
-								<string key="NSTitle">SQL</string>
-								<string key="NSKeyEquiv"/>
-								<int key="NSKeyEquivModMask">1048576</int>
-								<int key="NSMnemonicLoc">2147483647</int>
-								<reference key="NSOnImage" ref="346408995"/>
-								<reference key="NSMixedImage" ref="783754148"/>
-								<string key="NSAction">_popUpItemAction:</string>
-								<reference key="NSTarget" ref="382969976"/>
-							</object>
-						</array>
-						<reference key="NSMenuFont" ref="282448198"/>
-					</object>
-					<int key="NSPreferredEdge">1</int>
-					<bool key="NSUsesItemFromMenu">YES</bool>
-					<bool key="NSAltersState">YES</bool>
-					<int key="NSArrowPosition">2</int>
-				</object>
-				<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
-			</object>
-		</array>
-		<object class="IBObjectContainer" key="IBDocument.Objects">
-			<array key="connectionRecords">
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">view</string>
-						<reference key="source" ref="1021"/>
-						<reference key="destination" ref="588697238"/>
-					</object>
-					<int key="connectionID">1243</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">_crn</string>
-						<reference key="source" ref="588697238"/>
-						<reference key="destination" ref="48632248"/>
-					</object>
-					<int key="connectionID">1224</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">_hdr</string>
-						<reference key="source" ref="588697238"/>
-						<reference key="destination" ref="230406704"/>
-					</object>
-					<int key="connectionID">1225</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">_lft</string>
-						<reference key="source" ref="588697238"/>
-						<reference key="destination" ref="691523137"/>
-					</object>
-					<int key="connectionID">1226</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">doExport:</string>
-						<reference key="source" ref="588697238"/>
-						<reference key="destination" ref="666831465"/>
-					</object>
-					<int key="connectionID">1231</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">doSelectColumns:</string>
-						<reference key="source" ref="588697238"/>
-						<reference key="destination" ref="594248521"/>
-					</object>
-					<int key="connectionID">1234</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">_mnu</string>
-						<reference key="source" ref="588697238"/>
-						<reference key="destination" ref="84078302"/>
-					</object>
-					<int key="connectionID">1237</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">doSelectObjects:</string>
-						<reference key="source" ref="588697238"/>
-						<reference key="destination" ref="403076379"/>
-					</object>
-					<int key="connectionID">1239</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">_obj</string>
-						<reference key="source" ref="588697238"/>
-						<reference key="destination" ref="879039682"/>
-					</object>
-					<int key="connectionID">1240</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">_fmt</string>
-						<reference key="source" ref="588697238"/>
-						<reference key="destination" ref="226178327"/>
-					</object>
-					<int key="connectionID">1252</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">_obj</string>
-						<reference key="source" ref="691523137"/>
-						<reference key="destination" ref="879039682"/>
-					</object>
-					<int key="connectionID">1230</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">_hdr</string>
-						<reference key="source" ref="691523137"/>
-						<reference key="destination" ref="230406704"/>
-					</object>
-					<int key="connectionID">1235</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">_obj</string>
-						<reference key="source" ref="230406704"/>
-						<reference key="destination" ref="879039682"/>
-					</object>
-					<int key="connectionID">1238</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">_hdr</string>
-						<reference key="source" ref="879039682"/>
-						<reference key="destination" ref="230406704"/>
-					</object>
-					<int key="connectionID">1229</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">_lft</string>
-						<reference key="source" ref="879039682"/>
-						<reference key="destination" ref="691523137"/>
-					</object>
-					<int key="connectionID">1241</int>
-				</object>
-			</array>
-			<object class="IBMutableOrderedSet" key="objectRecords">
-				<array key="orderedObjects">
-					<object class="IBObjectRecord">
-						<int key="objectID">0</int>
-						<array key="object" id="0"/>
-						<reference key="children" ref="1048"/>
-						<nil key="parent"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">-2</int>
-						<reference key="object" ref="1021"/>
-						<reference key="parent" ref="0"/>
-						<string key="objectName">File's Owner</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">-1</int>
-						<reference key="object" ref="1014"/>
-						<reference key="parent" ref="0"/>
-						<string key="objectName">First Responder</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">-3</int>
-						<reference key="object" ref="1050"/>
-						<reference key="parent" ref="0"/>
-						<string key="objectName">Application</string>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1199</int>
-						<reference key="object" ref="588697238"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="691523137"/>
-							<reference ref="48632248"/>
-							<reference ref="230406704"/>
-							<reference ref="1001839317"/>
-						</array>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1200</int>
-						<reference key="object" ref="691523137"/>
-						<reference key="parent" ref="588697238"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1201</int>
-						<reference key="object" ref="48632248"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="84078302"/>
-						</array>
-						<reference key="parent" ref="588697238"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1202</int>
-						<reference key="object" ref="230406704"/>
-						<reference key="parent" ref="588697238"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1203</int>
-						<reference key="object" ref="1001839317"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="879039682"/>
-							<reference ref="607925533"/>
-							<reference ref="1070334631"/>
-						</array>
-						<reference key="parent" ref="588697238"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1204</int>
-						<reference key="object" ref="879039682"/>
-						<reference key="parent" ref="1001839317"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1205</int>
-						<reference key="object" ref="607925533"/>
-						<reference key="parent" ref="1001839317"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1206</int>
-						<reference key="object" ref="1070334631"/>
-						<reference key="parent" ref="1001839317"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1207</int>
-						<reference key="object" ref="84078302"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="22930060"/>
-						</array>
-						<reference key="parent" ref="48632248"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1208</int>
-						<reference key="object" ref="22930060"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="710871812"/>
-						</array>
-						<reference key="parent" ref="84078302"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1209</int>
-						<reference key="object" ref="710871812"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="63166100"/>
-							<reference ref="594248521"/>
-							<reference ref="403076379"/>
-							<reference ref="666831465"/>
-						</array>
-						<reference key="parent" ref="22930060"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1212</int>
-						<reference key="object" ref="63166100"/>
-						<reference key="parent" ref="710871812"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1215</int>
-						<reference key="object" ref="594248521"/>
-						<reference key="parent" ref="710871812"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1219</int>
-						<reference key="object" ref="403076379"/>
-						<reference key="parent" ref="710871812"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1223</int>
-						<reference key="object" ref="666831465"/>
-						<reference key="parent" ref="710871812"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1244</int>
-						<reference key="object" ref="226178327"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="382969976"/>
-						</array>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1245</int>
-						<reference key="object" ref="382969976"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="48342321"/>
-						</array>
-						<reference key="parent" ref="226178327"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1246</int>
-						<reference key="object" ref="48342321"/>
-						<array class="NSMutableArray" key="children">
-							<reference ref="633719362"/>
-							<reference ref="69049917"/>
-							<reference ref="278175706"/>
-							<reference ref="93872393"/>
-						</array>
-						<reference key="parent" ref="382969976"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1247</int>
-						<reference key="object" ref="633719362"/>
-						<reference key="parent" ref="48342321"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1248</int>
-						<reference key="object" ref="69049917"/>
-						<reference key="parent" ref="48342321"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1249</int>
-						<reference key="object" ref="278175706"/>
-						<reference key="parent" ref="48342321"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">1250</int>
-						<reference key="object" ref="93872393"/>
-						<reference key="parent" ref="48342321"/>
-					</object>
-				</array>
-			</object>
-			<dictionary class="NSMutableDictionary" key="flattenedProperties">
-				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="-3.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="1199.CustomClassName">MatrixBrowserView</string>
-				<string key="1199.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="1200.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="1201.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="1202.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="1203.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="1204.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="1205.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="1206.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="1207.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<real value="0.0" key="1207.IBViewIntegration.shadowBlurRadius"/>
-				<object class="NSColor" key="1207.IBViewIntegration.shadowColor">
-					<int key="NSColorSpace">1</int>
-					<bytes key="NSRGB">MC40OTU5Njc3NDU4IDAuMTAxMTg0Nzc3OSAwLjI1NzY2Mzc1NjYAA</bytes>
-				</object>
-				<real value="0.0" key="1207.IBViewIntegration.shadowOffsetHeight"/>
-				<real value="0.0" key="1207.IBViewIntegration.shadowOffsetWidth"/>
-				<string key="1208.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="1209.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="1212.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="1215.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="1219.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="1223.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="1244.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="1245.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="1246.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="1247.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="1248.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="1249.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="1250.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-			</dictionary>
-			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
-			<nil key="activeLocalization"/>
-			<dictionary class="NSMutableDictionary" key="localizations"/>
-			<nil key="sourceID"/>
-			<int key="maxID">1252</int>
-		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes">
-			<array class="NSMutableArray" key="referencedPartialClassDescriptionsV3.2+">
-				<object class="IBPartialClassDescription">
-					<string key="className">BrowserCornerView</string>
-					<string key="superclassName">NSView</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier" id="486388693">
-						<string key="majorKey">IBFrameworkSource</string>
-						<string key="minorKey">xmap_lib.framework/PrivateHeaders/BrowserView.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">BrowserHeaderView</string>
-					<string key="superclassName">NSView</string>
-					<object class="NSMutableDictionary" key="outlets">
-						<string key="NS.key.0">_obj</string>
-						<string key="NS.object.0">NSView</string>
-					</object>
-					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<string key="NS.key.0">_obj</string>
-						<object class="IBToOneOutletInfo" key="NS.object.0">
-							<string key="name">_obj</string>
-							<string key="candidateClassName">NSView</string>
-						</object>
-					</object>
-					<reference key="sourceIdentifier" ref="486388693"/>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">BrowserLeftView</string>
-					<string key="superclassName">NSView</string>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="_hdr">BrowserHeaderView</string>
-						<string key="_obj">NSView</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="_hdr">
-							<string key="name">_hdr</string>
-							<string key="candidateClassName">BrowserHeaderView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="_obj">
-							<string key="name">_obj</string>
-							<string key="candidateClassName">NSView</string>
-						</object>
-					</dictionary>
-					<reference key="sourceIdentifier" ref="486388693"/>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">BrowserNameLeftView</string>
-					<string key="superclassName">BrowserLeftView</string>
-					<reference key="sourceIdentifier" ref="486388693"/>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">BrowserObjView</string>
-					<string key="superclassName">NSView</string>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="_hdr">BrowserHeaderView</string>
-						<string key="_lft">BrowserLeftView</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="_hdr">
-							<string key="name">_hdr</string>
-							<string key="candidateClassName">BrowserHeaderView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="_lft">
-							<string key="name">_lft</string>
-							<string key="candidateClassName">BrowserLeftView</string>
-						</object>
-					</dictionary>
-					<reference key="sourceIdentifier" ref="486388693"/>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">BrowserView</string>
-					<string key="superclassName">NSView</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="doChooseColumn:">id</string>
-						<string key="doChooseSortKind:">id</string>
-						<string key="doChooseSortOrder:">id</string>
-						<string key="doExport:">id</string>
-						<string key="doInsertColumn:">id</string>
-						<string key="doInsertObjects:">id</string>
-						<string key="doPutFileType:">id</string>
-						<string key="doRemoveColumn:">id</string>
-						<string key="doRemoveObjects:">id</string>
-						<string key="doResetColumns:">id</string>
-						<string key="doSelectColumns:">id</string>
-						<string key="doSelectObjects:">id</string>
-						<string key="doSortCancel:">id</string>
-						<string key="doSortOk:">id</string>
-						<string key="doStartSort:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="doChooseColumn:">
-							<string key="name">doChooseColumn:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="doChooseSortKind:">
-							<string key="name">doChooseSortKind:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="doChooseSortOrder:">
-							<string key="name">doChooseSortOrder:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="doExport:">
-							<string key="name">doExport:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="doInsertColumn:">
-							<string key="name">doInsertColumn:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="doInsertObjects:">
-							<string key="name">doInsertObjects:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="doPutFileType:">
-							<string key="name">doPutFileType:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="doRemoveColumn:">
-							<string key="name">doRemoveColumn:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="doRemoveObjects:">
-							<string key="name">doRemoveObjects:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="doResetColumns:">
-							<string key="name">doResetColumns:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="doSelectColumns:">
-							<string key="name">doSelectColumns:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="doSelectObjects:">
-							<string key="name">doSelectObjects:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="doSortCancel:">
-							<string key="name">doSortCancel:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="doSortOk:">
-							<string key="name">doSortOk:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="doStartSort:">
-							<string key="name">doStartSort:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="_col">NSPopUpButton</string>
-						<string key="_crn">BrowserCornerView</string>
-						<string key="_fmt">NSPopUpButton</string>
-						<string key="_hdr">BrowserHeaderView</string>
-						<string key="_knd">NSPopUpButton</string>
-						<string key="_lft">BrowserLeftView</string>
-						<string key="_mnu">NSPopUpButton</string>
-						<string key="_obj">BrowserObjView</string>
-						<string key="_ord">NSPopUpButton</string>
-						<string key="_srt">NSPanel</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="_col">
-							<string key="name">_col</string>
-							<string key="candidateClassName">NSPopUpButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="_crn">
-							<string key="name">_crn</string>
-							<string key="candidateClassName">BrowserCornerView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="_fmt">
-							<string key="name">_fmt</string>
-							<string key="candidateClassName">NSPopUpButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="_hdr">
-							<string key="name">_hdr</string>
-							<string key="candidateClassName">BrowserHeaderView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="_knd">
-							<string key="name">_knd</string>
-							<string key="candidateClassName">NSPopUpButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="_lft">
-							<string key="name">_lft</string>
-							<string key="candidateClassName">BrowserLeftView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="_mnu">
-							<string key="name">_mnu</string>
-							<string key="candidateClassName">NSPopUpButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="_obj">
-							<string key="name">_obj</string>
-							<string key="candidateClassName">BrowserObjView</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="_ord">
-							<string key="name">_ord</string>
-							<string key="candidateClassName">NSPopUpButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="_srt">
-							<string key="name">_srt</string>
-							<string key="candidateClassName">NSPanel</string>
-						</object>
-					</dictionary>
-					<reference key="sourceIdentifier" ref="486388693"/>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">MatrixBrowserHeaderView</string>
-					<string key="superclassName">BrowserHeaderView</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier" id="922476166">
-						<string key="majorKey">IBFrameworkSource</string>
-						<string key="minorKey">xmap_lib.framework/PrivateHeaders/MatrixBrowserView.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">MatrixBrowserIndicatorsHeaderView</string>
-					<string key="superclassName">MatrixBrowserNonGeoHeaderView</string>
-					<reference key="sourceIdentifier" ref="922476166"/>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">MatrixBrowserNameNonGeoLeftView</string>
-					<string key="superclassName">BrowserNameLeftView</string>
-					<reference key="sourceIdentifier" ref="922476166"/>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">MatrixBrowserNonGeoHeaderView</string>
-					<string key="superclassName">MatrixBrowserHeaderView</string>
-					<reference key="sourceIdentifier" ref="922476166"/>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">MatrixBrowserObjView</string>
-					<string key="superclassName">BrowserObjView</string>
-					<reference key="sourceIdentifier" ref="922476166"/>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">MatrixBrowserView</string>
-					<string key="superclassName">BrowserView</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">doBackDataFill:</string>
-						<string key="NS.object.0">id</string>
-					</object>
-					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">doBackDataFill:</string>
-						<object class="IBActionInfo" key="NS.object.0">
-							<string key="name">doBackDataFill:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</object>
-					<reference key="sourceIdentifier" ref="922476166"/>
-				</object>
-			</array>
-		</object>
-		<int key="IBDocument.localizationMode">0</int>
-		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaFramework</string>
-		<bool key="IBDocument.previouslyAttemptedUpgradeToXcode5">NO</bool>
-		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDevelopmentDependencies">
-			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin.InterfaceBuilder3</string>
-			<integer value="4600" key="NS.object.0"/>
-		</object>
-		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
-		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NSMenuCheckmark">{12, 12}</string>
-			<string key="NSMenuMixedState">{10, 2}</string>
-			<string key="NSSwitch">{15, 15}</string>
-		</dictionary>
-	</data>
-</archive>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSViewController">
+            <connections>
+                <outlet property="view" destination="1199" id="1243"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <view id="1199" customClass="MatrixBrowserView">
+            <rect key="frame" x="0.0" y="0.0" width="677" height="544"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1203">
+                    <rect key="frame" x="150" y="-2" width="526" height="534"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <clipView key="contentView" id="wK2-st-0yD">
+                        <rect key="frame" x="1" y="1" width="509" height="517"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <customView id="1204" customClass="MatrixBrowserObjView">
+                                <rect key="frame" x="-279" y="-693" width="839" height="990"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="_hdr" destination="1202" id="1229"/>
+                                    <outlet property="_lft" destination="1200" id="1241"/>
+                                </connections>
+                            </customView>
+                        </subviews>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="1205">
+                        <rect key="frame" x="1" y="518" width="509" height="15"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="1206">
+                        <rect key="frame" x="510" y="1" width="15" height="517"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1202" customClass="MatrixBrowserIndicatorsHeaderView">
+                    <rect key="frame" x="151" y="531" width="527" height="12"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <connections>
+                        <outlet property="_obj" destination="1204" id="1238"/>
+                    </connections>
+                </customView>
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1201" customClass="BrowserCornerView">
+                    <rect key="frame" x="1" y="531" width="150" height="12"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <popUpButton autoresizesSubviews="NO" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1207">
+                            <rect key="frame" x="0.0" y="-6" width="152" height="25"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <popUpButtonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="bezel" inset="2" pullsDown="YES" arrowPosition="arrowAtCenter" selectedItem="1212" id="1208">
+                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                <font key="font" metaFont="message" size="11"/>
+                                <menu key="menu" title="OtherViews" id="1209">
+                                    <items>
+                                        <menuItem state="on" hidden="YES" id="1212"/>
+                                        <menuItem title="Seleziona tutte le colonne" id="1215">
+                                            <connections>
+                                                <action selector="doSelectColumns:" target="1199" id="1234"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Seleziona tutte le righe" id="1219">
+                                            <connections>
+                                                <action selector="doSelectObjects:" target="1199" id="1239"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Esporta…" id="1223">
+                                            <connections>
+                                                <action selector="doExport:" target="1199" id="1231"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </popUpButtonCell>
+                        </popUpButton>
+                    </subviews>
+                </customView>
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1200" customClass="MatrixBrowserNameNonGeoLeftView">
+                    <rect key="frame" x="1" y="0.0" width="150" height="531"/>
+                    <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
+                    <connections>
+                        <outlet property="_hdr" destination="1202" id="1235"/>
+                        <outlet property="_obj" destination="1204" id="1230"/>
+                    </connections>
+                </customView>
+            </subviews>
+            <connections>
+                <outlet property="_crn" destination="1201" id="1224"/>
+                <outlet property="_fmt" destination="1244" id="1252"/>
+                <outlet property="_hdr" destination="1202" id="1225"/>
+                <outlet property="_lft" destination="1200" id="1226"/>
+                <outlet property="_mnu" destination="1207" id="1237"/>
+                <outlet property="_obj" destination="1204" id="1240"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="154"/>
+        </view>
+        <popUpButton verticalHuggingPriority="750" id="1244">
+            <rect key="frame" x="0.0" y="0.0" width="126" height="26"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <popUpButtonCell key="cell" type="push" title="Testo tabulato" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="1250" id="1245">
+                <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                <font key="font" metaFont="system"/>
+                <menu key="menu" title="OtherViews" id="1246">
+                    <items>
+                        <menuItem title="Testo tabulato" state="on" id="1250"/>
+                        <menuItem title="CSV" id="1247"/>
+                        <menuItem title="DBF" id="1248"/>
+                        <menuItem title="SQL" id="1249"/>
+                    </items>
+                </menu>
+            </popUpButtonCell>
+        </popUpButton>
+    </objects>
+</document>

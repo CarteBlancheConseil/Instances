@@ -45,7 +45,7 @@
 _bTrace_("[StatUniWindowController init]",true);
 	_anap=(mmx_analysis*)&_ana;
 	self=[super init];
-_tm_((void*)self);	
+_tm_((void*)self);
     return self;
 }
 

@@ -207,9 +207,9 @@ bGenericMacMapApp*	gapp=(bGenericMacMapApp*)_ext->getapp();
 void* initializeCocoa(void* gapp, 
 					  void* ext) {
 TransformWindowController	*controller;
-NSAutoreleasePool	*localPool;
-	
-    localPool=[[NSAutoreleasePool alloc] init];   
+NSAutoreleasePool           *localPool;
+
+    localPool=[[NSAutoreleasePool alloc] init];
     controller=[[TransformWindowController alloc] init];
     [controller setExt:(bStdNSXBox*)ext];
     [localPool release];

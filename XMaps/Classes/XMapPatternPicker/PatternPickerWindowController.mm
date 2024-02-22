@@ -39,6 +39,14 @@
 // ---------------------------------------------------------------------------
 //
 // ------------
+void PDFPatternRelease(void* info){
+_bTrace_("PDFPatternRelease",true);
+_tm_(info);
+}
+
+// ---------------------------------------------------------------------------
+//
+// ------------
 @implementation PatternPickerPreview
 
 // ---------------------------------------------------------------------------
@@ -200,11 +208,13 @@ CGPDFDocumentRef	pdf=GetPDFPattern(gapp,prm.tp,str);
 _te_("pdf==NULL");
         return;
     }
-
+_tm_("CGPDFDocumentRef = "+(void*)pdf);
+    
 CGPDFPageRef		pg=CGPDFDocumentGetPage(pdf,1);
 CGRect				box=CGPDFPageGetBoxRect(pg,kCGPDFCropBox);
 CGFloat				color[4]={0,0,0,1 };
-CGPatternCallbacks	callbacks={0,&PDFPatternPlot,NULL};
+//CGPatternCallbacks    callbacks={0,&PDFPatternPlot,NULL};
+CGPatternCallbacks    callbacks={0,PDFPatternPlot,PDFPatternRelease};
 CGColorSpaceRef		bspc=CGColorSpaceCreateDeviceRGB();
 CGColorSpaceRef		pspc=CGColorSpaceCreatePattern(bspc);
     CGContextSetFillColorSpace(ctx,pspc);
@@ -219,9 +229,11 @@ CGPatternRef		pat=CGPatternCreate(pdf,
                                         false, 
                                         &callbacks);   
     CGContextSetFillPattern(ctx,pat,color);
+    CGPatternRetain(pat);
     CGPatternRelease(pat);
     cgr=CGRectInset(cgr,1,1);
     CGContextFillRect(ctx,cgr);
+    CGPDFDocumentRetain(pdf);
     CGPDFDocumentRelease(pdf);
 }
 

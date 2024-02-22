@@ -7,13 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		143C34B01420B010001A9C39 /* bXBoxTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 143C34AC1420B010001A9C39 /* bXBoxTransform.cpp */; };
-		143C34B11420B010001A9C39 /* TransformWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 143C34AF1420B010001A9C39 /* TransformWindowController.mm */; };
-		143D743318FBCBAD0098EB5D /* Palette.xib in Resources */ = {isa = PBXBuildFile; fileRef = 143D743218FBCBAD0098EB5D /* Palette.xib */; };
-		14A6BF4012C21B3600E6FBDB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A6BF3F12C21B3600E6FBDB /* QuartzCore.framework */; };
-		14B168E3142335390017A945 /* ic01.png in Resources */ = {isa = PBXBuildFile; fileRef = 14B168E0142335390017A945 /* ic01.png */; };
-		14B168E4142335390017A945 /* ic02.png in Resources */ = {isa = PBXBuildFile; fileRef = 14B168E1142335390017A945 /* ic02.png */; };
-		14B168E5142335390017A945 /* ic03.png in Resources */ = {isa = PBXBuildFile; fileRef = 14B168E2142335390017A945 /* ic03.png */; };
+		143D74C018FBD3550098EB5D /* Palette.xib in Resources */ = {isa = PBXBuildFile; fileRef = 143D74BF18FBD3550098EB5D /* Palette.xib */; };
+		14AAC5AE14741F3B001C31D7 /* ic01.png in Resources */ = {isa = PBXBuildFile; fileRef = 14AAC59914741F3B001C31D7 /* ic01.png */; };
+		14AAC5B114741F3B001C31D7 /* ic02.png in Resources */ = {isa = PBXBuildFile; fileRef = 14AAC59C14741F3B001C31D7 /* ic02.png */; };
+		14AAC5B414741F3B001C31D7 /* ic03.png in Resources */ = {isa = PBXBuildFile; fileRef = 14AAC59F14741F3B001C31D7 /* ic03.png */; };
 		14C3363E0E0BED6300E8813A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14C3363C0E0BED6300E8813A /* InfoPlist.strings */; };
 		14CA52E90DF9640E0080DF70 /* xmap_lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA52E80DF9640E0080DF70 /* xmap_lib.framework */; };
 		14CA540D0DF9642C0080DF70 /* std_ext.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA540C0DF9642C0080DF70 /* std_ext.framework */; };
@@ -21,7 +18,9 @@
 		14CA54380DF964990080DF70 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14CA54360DF964990080DF70 /* main.cpp */; };
 		14CA54550DF967F30080DF70 /* MacMapStats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA54530DF967F30080DF70 /* MacMapStats.framework */; };
 		14CA54560DF967F30080DF70 /* MacMapSuite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA54540DF967F30080DF70 /* MacMapSuite.framework */; };
-		14EFCE261292E8730038AAD4 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EFCE251292E8730038AAD4 /* Carbon.framework */; };
+		14EB03201BB150D1003D5895 /* loader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EB031F1BB150D1003D5895 /* loader.framework */; };
+		14F572AB2AC339F500BA52E0 /* TransformWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14F572A92AC339F500BA52E0 /* TransformWindowController.mm */; };
+		14F572AE2AC33A0200BA52E0 /* bXBoxTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14F572AC2AC33A0200BA52E0 /* bXBoxTransform.cpp */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,18 +28,10 @@
 		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		143C34AC1420B010001A9C39 /* bXBoxTransform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXBoxTransform.cpp; sourceTree = "<group>"; };
-		143C34AD1420B010001A9C39 /* bXBoxTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXBoxTransform.h; sourceTree = "<group>"; };
-		143C34AE1420B010001A9C39 /* TransformWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformWindowController.h; sourceTree = "<group>"; };
-		143C34AF1420B010001A9C39 /* TransformWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TransformWindowController.mm; sourceTree = "<group>"; };
-		143C35991420DB73001A9C39 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		143C359B1420DB73001A9C39 /* Italian */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		143D743218FBCBAD0098EB5D /* Palette.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Palette.xib; sourceTree = "<group>"; };
-		14A6BF3F12C21B3600E6FBDB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		14B168E0142335390017A945 /* ic01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic01.png; sourceTree = "<group>"; };
-		14B168E1142335390017A945 /* ic02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic02.png; sourceTree = "<group>"; };
-		14B168E2142335390017A945 /* ic03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic03.png; sourceTree = "<group>"; };
-		14C3363D0E0BED6300E8813A /* French */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		143D74BF18FBD3550098EB5D /* Palette.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Palette.xib; sourceTree = "<group>"; };
+		14AAC59914741F3B001C31D7 /* ic01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic01.png; sourceTree = "<group>"; };
+		14AAC59C14741F3B001C31D7 /* ic02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic02.png; sourceTree = "<group>"; };
+		14AAC59F14741F3B001C31D7 /* ic03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic03.png; sourceTree = "<group>"; };
 		14CA52E80DF9640E0080DF70 /* xmap_lib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = xmap_lib.framework; path = "../../../../Applis/Current/MacMap®/build/Release/xmap_lib.framework"; sourceTree = SOURCE_ROOT; };
 		14CA540C0DF9642C0080DF70 /* std_ext.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = std_ext.framework; path = "../../../../Applis/Current/MacMap®/build/Release/std_ext.framework"; sourceTree = SOURCE_ROOT; };
 		14CA54320DF964320080DF70 /* mox_intf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mox_intf.framework; path = "../../../../Applis/Current/MacMap®/build/Release/mox_intf.framework"; sourceTree = SOURCE_ROOT; };
@@ -49,7 +40,14 @@
 		14CA54530DF967F30080DF70 /* MacMapStats.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacMapStats.framework; path = /Library/Frameworks/MacMapStats.framework; sourceTree = "<absolute>"; };
 		14CA54540DF967F30080DF70 /* MacMapSuite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacMapSuite.framework; path = /Library/Frameworks/MacMapSuite.framework; sourceTree = "<absolute>"; };
 		14CA57C20DF973C30080DF70 /* CocoaStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaStuff.h; sourceTree = "<group>"; };
-		14EFCE251292E8730038AAD4 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		14EB031F1BB150D1003D5895 /* loader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = loader.framework; path = "../../../../Applis/Current/MacMap®Giga/build/Release/loader.framework"; sourceTree = "<group>"; };
+		14F572A92AC339F500BA52E0 /* TransformWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TransformWindowController.mm; sourceTree = "<group>"; };
+		14F572AA2AC339F500BA52E0 /* TransformWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformWindowController.h; sourceTree = "<group>"; };
+		14F572AC2AC33A0200BA52E0 /* bXBoxTransform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bXBoxTransform.cpp; sourceTree = "<group>"; };
+		14F572AD2AC33A0200BA52E0 /* bXBoxTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bXBoxTransform.h; sourceTree = "<group>"; };
+		14F572AF2AC410A100BA52E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14F572B02AC410AC00BA52E0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14F572B12AC410B800BA52E0 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		32DBCF630370AF2F00C91783 /* CocoaBundle_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaBundle_Prefix.pch; sourceTree = "<group>"; };
 		8D5B49B6048680CD000E48DA /* XBoxTransform.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XBoxTransform.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,14 +59,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14EB03201BB150D1003D5895 /* loader.framework in Frameworks */,
 				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
 				14CA52E90DF9640E0080DF70 /* xmap_lib.framework in Frameworks */,
 				14CA540D0DF9642C0080DF70 /* std_ext.framework in Frameworks */,
 				14CA54330DF964320080DF70 /* mox_intf.framework in Frameworks */,
 				14CA54550DF967F30080DF70 /* MacMapStats.framework in Frameworks */,
 				14CA54560DF967F30080DF70 /* MacMapSuite.framework in Frameworks */,
-				14EFCE261292E8730038AAD4 /* Carbon.framework in Frameworks */,
-				14A6BF4012C21B3600E6FBDB /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,10 +96,10 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				143D743218FBCBAD0098EB5D /* Palette.xib */,
 				8D5B49B7048680CD000E48DA /* Info.plist */,
+				143D74BF18FBD3550098EB5D /* Palette.xib */,
 				14C3363C0E0BED6300E8813A /* InfoPlist.strings */,
-				143C353B1420CC81001A9C39 /* Images */,
+				14AAC59714741F3B001C31D7 /* Images */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -112,11 +109,11 @@
 			children = (
 				14CA54370DF964990080DF70 /* main.h */,
 				14CA54360DF964990080DF70 /* main.cpp */,
-				143C34AC1420B010001A9C39 /* bXBoxTransform.cpp */,
-				143C34AD1420B010001A9C39 /* bXBoxTransform.h */,
+				14F572AC2AC33A0200BA52E0 /* bXBoxTransform.cpp */,
+				14F572AD2AC33A0200BA52E0 /* bXBoxTransform.h */,
 				14CA57C20DF973C30080DF70 /* CocoaStuff.h */,
-				143C34AE1420B010001A9C39 /* TransformWindowController.h */,
-				143C34AF1420B010001A9C39 /* TransformWindowController.mm */,
+				14F572AA2AC339F500BA52E0 /* TransformWindowController.h */,
+				14F572A92AC339F500BA52E0 /* TransformWindowController.mm */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -124,7 +121,6 @@
 		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				14A6BF3F12C21B3600E6FBDB /* QuartzCore.framework */,
 				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
@@ -133,6 +129,7 @@
 		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				14EB031F1BB150D1003D5895 /* loader.framework */,
 				14CA54530DF967F30080DF70 /* MacMapStats.framework */,
 				14CA54540DF967F30080DF70 /* MacMapSuite.framework */,
 				089C167FFE841241C02AAC07 /* AppKit.framework */,
@@ -141,17 +138,16 @@
 				14CA54320DF964320080DF70 /* mox_intf.framework */,
 				14CA540C0DF9642C0080DF70 /* std_ext.framework */,
 				14CA52E80DF9640E0080DF70 /* xmap_lib.framework */,
-				14EFCE251292E8730038AAD4 /* Carbon.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		143C353B1420CC81001A9C39 /* Images */ = {
+		14AAC59714741F3B001C31D7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				14B168E0142335390017A945 /* ic01.png */,
-				14B168E1142335390017A945 /* ic02.png */,
-				14B168E2142335390017A945 /* ic03.png */,
+				14AAC59914741F3B001C31D7 /* ic01.png */,
+				14AAC59C14741F3B001C31D7 /* ic02.png */,
+				14AAC59F14741F3B001C31D7 /* ic03.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -198,16 +194,17 @@
 /* Begin PBXProject section */
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "XBoxTransform" */;
 			compatibilityVersion = "Xcode 2.4";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
-				Japanese,
-				French,
-				German,
-				Italian,
+				en,
+				fr,
+				it,
 			);
 			mainGroup = 089C166AFE841209C02AAC07 /* CocoaBundle */;
 			projectDirPath = "";
@@ -224,10 +221,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				14C3363E0E0BED6300E8813A /* InfoPlist.strings in Resources */,
-				14B168E3142335390017A945 /* ic01.png in Resources */,
-				14B168E4142335390017A945 /* ic02.png in Resources */,
-				14B168E5142335390017A945 /* ic03.png in Resources */,
-				143D743318FBCBAD0098EB5D /* Palette.xib in Resources */,
+				14AAC5AE14741F3B001C31D7 /* ic01.png in Resources */,
+				14AAC5B114741F3B001C31D7 /* ic02.png in Resources */,
+				14AAC5B414741F3B001C31D7 /* ic03.png in Resources */,
+				143D74C018FBD3550098EB5D /* Palette.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,9 +235,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14F572AB2AC339F500BA52E0 /* TransformWindowController.mm in Sources */,
 				14CA54380DF964990080DF70 /* main.cpp in Sources */,
-				143C34B01420B010001A9C39 /* bXBoxTransform.cpp in Sources */,
-				143C34B11420B010001A9C39 /* TransformWindowController.mm in Sources */,
+				14F572AE2AC33A0200BA52E0 /* bXBoxTransform.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +247,9 @@
 		14C3363C0E0BED6300E8813A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				14C3363D0E0BED6300E8813A /* French */,
-				143C35991420DB73001A9C39 /* English */,
-				143C359B1420DB73001A9C39 /* Italian */,
+				14F572AF2AC410A100BA52E0 /* en */,
+				14F572B02AC410AC00BA52E0 /* fr */,
+				14F572B12AC410B800BA52E0 /* it */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -260,49 +257,23 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1DEB913B08733D840010E9CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
-					"$(LOCAL_LIBRARY_DIR)/Frameworks",
-				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "$(SRCROOT)/../../../../Applis/Current/MacMap®/build/Release";
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = CocoaBundle_Prefix.pch;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				PRODUCT_NAME = CocoaBundle;
-				WRAPPER_EXTENSION = bundle;
-				ZERO_LINK = YES;
-			};
-			name = Debug;
-		};
 		1DEB913C08733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"/Users/benoit/Encours/MacMap2005/Sources/Applis/Current/MacMap®Giga/build/Release",
+					"/Users/benoit/Encours/MacMap2005/Sources/Applis/Current/MacMap®/build/Release",
 				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "$(SRCROOT)/../../../../Applis/Current/MacMap®/build/Release";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GENERATE_PKGINFO_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/include/libxml2",
 				);
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-
-				GCC_MODEL_TUNING = G5;
-				GCC_OBJC_CALL_CXX_CDTORS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
-				GENERATE_PKGINFO_FILE = YES;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = ../../build;
 				OBJROOT = ../../build;
@@ -313,25 +284,16 @@
 			};
 			name = Release;
 		};
-		1DEB913F08733D840010E9CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.8.sdk;
-			};
-			name = Debug;
-		};
 		1DEB914008733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_WARN_ABOUT_RETURN_TYPE = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				OBJROOT = "../../zXCode Div/buildprod";
 				PREBINDING = YES;
-				SDKROOT = /Developer/SDKs/MacOSX10.8.sdk;
+				SDKROOT = macosx;
 				SYMROOT = ../../build;
 			};
 			name = Release;
@@ -342,7 +304,6 @@
 		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "XBoxTransform" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB913B08733D840010E9CD /* Debug */,
 				1DEB913C08733D840010E9CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -351,7 +312,6 @@
 		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "XBoxTransform" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB913F08733D840010E9CD /* Debug */,
 				1DEB914008733D840010E9CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

@@ -13,7 +13,6 @@
 		140DD36D1594AF240018B1BF /* vDefPaletteQuickSurfWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 140DD36A1594AF240018B1BF /* vDefPaletteQuickSurfWindowController.mm */; };
 		1498EEEF14D93338006E920C /* DefPat.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1498EEEE14D93338006E920C /* DefPat.pdf */; };
 		14A6BF2C12C21A6400E6FBDB /* Palette.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A6BF2A12C21A6400E6FBDB /* Palette.xib */; };
-		14A6BF4012C21B3600E6FBDB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A6BF3F12C21B3600E6FBDB /* QuartzCore.framework */; };
 		14A6C7A912C26F2C00E6FBDB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14A6C7A712C26F2C00E6FBDB /* Localizable.strings */; };
 		14C3363E0E0BED6300E8813A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14C3363C0E0BED6300E8813A /* InfoPlist.strings */; };
 		14CA52E90DF9640E0080DF70 /* xmap_lib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA52E80DF9640E0080DF70 /* xmap_lib.framework */; };
@@ -22,7 +21,6 @@
 		14CA54380DF964990080DF70 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 14CA54360DF964990080DF70 /* main.cpp */; };
 		14CA54550DF967F30080DF70 /* MacMapStats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA54530DF967F30080DF70 /* MacMapStats.framework */; };
 		14CA54560DF967F30080DF70 /* MacMapSuite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14CA54540DF967F30080DF70 /* MacMapSuite.framework */; };
-		14EFCE261292E8730038AAD4 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EFCE251292E8730038AAD4 /* Carbon.framework */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,8 +72,6 @@
 				14CA54330DF964320080DF70 /* mox_intf.framework in Frameworks */,
 				14CA54550DF967F30080DF70 /* MacMapStats.framework in Frameworks */,
 				14CA54560DF967F30080DF70 /* MacMapSuite.framework in Frameworks */,
-				14EFCE261292E8730038AAD4 /* Carbon.framework in Frameworks */,
-				14A6BF4012C21B3600E6FBDB /* QuartzCore.framework in Frameworks */,
 				140DCD53159461AE0018B1BF /* vdef_lib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,6 +188,8 @@
 /* Begin PBXProject section */
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "vDefPaletteQuickSurf" */;
 			compatibilityVersion = "Xcode 2.4";
 			developmentRegion = English;
@@ -274,49 +272,25 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1DEB913B08733D840010E9CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
-					"$(LOCAL_LIBRARY_DIR)/Frameworks",
-				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "$(SRCROOT)/../../../../Applis/Current/MacMap®/build/Release";
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = CocoaBundle_Prefix.pch;
-				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				PRODUCT_NAME = CocoaBundle;
-				WRAPPER_EXTENSION = bundle;
-				ZERO_LINK = YES;
-			};
-			name = Debug;
-		};
 		1DEB913C08733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "$(SRCROOT)/../../../../Applis/Current/MacMap®/build/Release";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SDKROOT)/usr/include/libxml2",
-				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-
 				GCC_MODEL_TUNING = G5;
 				GCC_OBJC_CALL_CXX_CDTORS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = ../../build;
 				OBJROOT = ../../build;
@@ -327,28 +301,16 @@
 			};
 			name = Release;
 		};
-		1DEB913F08733D840010E9CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
-				SDKROOT = /Developer/SDKs/MacOSX10.8.sdk;
-			};
-			name = Debug;
-		};
 		1DEB914008733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_WARN_ABOUT_RETURN_TYPE = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				OBJROOT = "../../zXCode Div/buildprod";
 				PREBINDING = YES;
-				SDKROOT = /Developer/SDKs/MacOSX10.8.sdk;
+				SDKROOT = macosx;
 				SYMROOT = ../../build;
 			};
 			name = Release;
@@ -359,7 +321,6 @@
 		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "vDefPaletteQuickSurf" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB913B08733D840010E9CD /* Debug */,
 				1DEB913C08733D840010E9CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -368,7 +329,6 @@
 		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "vDefPaletteQuickSurf" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB913F08733D840010E9CD /* Debug */,
 				1DEB914008733D840010E9CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
